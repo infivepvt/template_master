@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /template_master/  
+
+# If it's not a real file or directory, send to router
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)$ router.php [L,QSA]
