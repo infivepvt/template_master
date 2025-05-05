@@ -192,7 +192,7 @@
             <div class="design-title">Design 1</div>
             <div class="design-image-container">
                 <!-- template_pic -->
-                <a href="http://localhost/template_master/template1">
+                <a href="https://tapilinq.com/template1">
                     <img src="Images/template_pic/template1.png" alt="Design 1" class="design-image" />
                 </a>
             </div>
@@ -207,7 +207,7 @@
         <div class="design-card">
             <div class="design-title">Design 2</div>
             <div class="design-image-container">
-                <a href="http://localhost/template_master/template2">
+                <a href="https://tapilinq.com/template2">
                     <!-- template_pic -->
                     <img src="Images/template_pic/template2.png" alt="Design 2" class="design-image" />
                 </a>
@@ -223,7 +223,7 @@
         <div class="design-card">
             <div class="design-title">Design 3</div>
             <div class="design-image-container">
-                <a href="http://localhost/template_master/template3">
+                <a href="https://tapilinq.com/template3">
                     <!-- template_pic -->
                     <img src="Images/template_pic/template3.png" alt="Design 3" class="design-image" />
                 </a>
@@ -239,7 +239,7 @@
         <div class="design-card">
             <div class="design-title">Design 4</div>
             <div class="design-image-container">
-                <a href="http://localhost/template_master/template4">
+                <a href="https://tapilinq.com/template4">
                     <!-- template_pic -->
                     <img src="Images/template_pic/template4.png" alt="Design 4" class="design-image" />
                 </a>
@@ -255,7 +255,7 @@
         <div class="design-card">
             <div class="design-title">Design 5</div>
             <div class="design-image-container">
-                <a href="http://localhost/template_master/template5">
+                <a href="https://tapilinq.com/template5">
                     <!-- template_pic -->
                     <img src="Images/template_pic/template5.png" alt="Design 5" class="design-image" />
                 </a>
@@ -271,7 +271,7 @@
         <div class="design-card">
             <div class="design-title">Design 6</div>
             <div class="design-image-container">
-                <a href="http://localhost/template_master/template6">
+                <a href="https://tapilinq.com/template6">
                     <!-- template_pic -->
                     <img src="Images/template_pic/template6.png" alt="Design 6" class="design-image" />
                 </a>
@@ -287,7 +287,7 @@
         <div class="design-card">
             <div class="design-title">Design 7</div>
             <div class="design-image-container">
-                <a href="http://localhost/template_master/template7">
+                <a href="https://tapilinq.com/template7">
                     <!-- template_pic -->
                     <img src="Images/template_pic/template7.png" alt="Design 7" class="design-image" />
                 </a>
@@ -303,7 +303,7 @@
         <div class="design-card">
             <div class="design-title">Design 8</div>
             <div class="design-image-container">
-                <a href="http://localhost/template_master/template8">
+                <a href="https://tapilinq.com/template8">
                     <!-- template_pic -->
                     <img src="Images/template_pic/template8.png" alt="Design 8" class="design-image" />
                 </a>
@@ -319,7 +319,7 @@
         <div class="design-card">
             <div class="design-title">Design 9</div>
             <div class="design-image-container">
-                <a href="http://localhost/template_master/template9">
+                <a href="https://tapilinq.com/template9">
                     <!-- template_pic -->
                     <img src="Images/template_pic/template9.png" alt="Design 9" class="design-image" />
                 </a>
@@ -335,7 +335,7 @@
         <div class="design-card">
             <div class="design-title">Design 10</div>
             <div class="design-image-container">
-                <a href="http://localhost/template_master/template10">
+                <a href="https://tapilinq.com/template10">
                     <!-- template_pic -->
                     <img src="Images/template_pic/template10.png" alt="Design 10" class="design-image" />
                 </a>
@@ -351,7 +351,7 @@
         <div class="design-card">
             <div class="design-title">Design 11</div>
             <div class="design-image-container">
-                <a href="http://localhost/template_master/template11">
+                <a href="https://tapilinq.com/template11">
                     <!-- template_pic -->
                     <img src="Images/template_pic/template11.png" alt="Design 11" class="design-image" />
                 </a>
@@ -367,7 +367,7 @@
         <div class="design-card">
             <div class="design-title">Design 12</div>
             <div class="design-image-container">
-                <a href="http://localhost/template_master/template12">
+                <a href="https://tapilinq.com/template12">
                     <!-- template_pic -->
                     <img src="Images/template_pic/template12.png" alt="Design 12" class="design-image" />
                 </a>
@@ -383,7 +383,7 @@
         <div class="design-card">
             <div class="design-title">Design 13</div>
             <div class="design-image-container">
-                <a href="http://localhost/template_master/template13">
+                <a href="https://tapilinq.com/template13">
                     <!-- template_pic -->
                     <img src="Images/template_pic/template13.png" alt="Design 13" class="design-image" />
                 </a>
@@ -399,7 +399,7 @@
         <div class="design-card">
             <div class="design-title">Design 14</div>
             <div class="design-image-container">
-                <a href="http://localhost/template_master/template14">
+                <a href="https://tapilinq.com/template14">
                     <!-- template_pic -->
                     <img src="Images/template_pic/template14.png" alt="Design 14" class="design-image" />
                 </a>
@@ -415,7 +415,7 @@
         <div class="design-card">
             <div class="design-title">Design 15</div>
             <div class="design-image-container">
-                <a href="http://localhost/template_master/template15">
+                <a href="https://tapilinq.com/template15">
                     <!-- template_pic -->
                     <img src="Images/template_pic/template15.png" alt="Design 15" class="design-image" />
                 </a>
