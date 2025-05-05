@@ -19,7 +19,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
     $password = $_POST['password'];
 
     $valid_email = 'infivellc@gmail.com';
-    $valid_password = '12345';
+    $valid_password = 'Infive@2025';
 
     if ($email === $valid_email && $password === $valid_password) {
         $_SESSION['logged_id'] = 1;

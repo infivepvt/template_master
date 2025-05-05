@@ -110,7 +110,7 @@ if (!isset($_SESSION['logged_id']) || $_SESSION['logged_id'] !== 1) {
         <div class="header">
             <img src="Images/logo.png"
                 style="height: auto; width: 200px; border-radius:20px; background: linear-gradient(135deg, #2e7d32, #4caf50); " />
-                <br>
+            <br>
             <div class="container d-flex justify-content-end mb-3" style="margin-top: 10px;">
                 <a href="logout.php" class="btn btn-outline-danger">
                     <i class="fas fa-sign-out-alt me-1"></i> Logout
@@ -145,7 +145,7 @@ if (!isset($_SESSION['logged_id']) || $_SESSION['logged_id'] !== 1) {
 
             foreach ($templates as $template) {
                 $template_name = basename($template, ".php");
-                $full_url = "http://" . $_SERVER['HTTP_HOST'] . dirname($_SERVER['PHP_SELF']) . "/" . $template_name;
+                $full_url = "http://" . $_SERVER['HTTP_HOST'] . dirname($_SERVER['PHP_SELF']) . $template_name;
                 $display_name = ucfirst($template_name);
                 ?>
                 <div class="col-md-6 col-lg-4 template-item" data-name="<?php echo strtolower($display_name); ?>">
