@@ -141,6 +141,7 @@
             font-weight: bold;
             text-align: start;
             margin-left: 40px;
+            text-decoration: none;
         }
 
         .contact-d {
@@ -148,6 +149,7 @@
             font-family: 'Roboto', sans-serif;
             font-size: 16px;
             text-decoration: none;
+            
         }
         .social-icons {
             display: flex;
@@ -223,6 +225,7 @@
                 pulvinar dapibus leo.</p> -->
 
             <div class="image-gallery">
+                <img src="gallery_img/client_gallerys/rovenrich-g17.jpeg" alt="Business man back view">
                 <img src="gallery_img/client_gallerys/rovenrich-g1.jpeg" alt="Business man back view">
                 <img src="gallery_img/client_gallerys/rovenrich-g2.jpeg" alt="Business man back view">
                 <img src="gallery_img/client_gallerys/rovenrich-g3.jpeg" alt="Business man back view">
