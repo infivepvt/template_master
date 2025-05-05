@@ -181,13 +181,13 @@
             <!-- logo & banner image )-->
             <div class="card-header custom-header text-center">
                 <div style="background-color: #292b51; height: 200px; opacity: 1; ;border-radius:10px ">
-                    <img src="logo_img/template10-l.png" alt="Company Logo" class="custom-logo" height="90px"
+                    <img src="logo_img/main_logo/template10-l.png" alt="Company Logo" class="custom-logo" height="90px"
                     style="width: 102px; opacity: 1; margin-top:30px;">
                 </div>
                 
                     <!-- profile image -->
                     <div class="profile-picture">
-                    <img src="profile_img/template10-p.png" alt="" class="rounded-circle">
+                    <img src="profile_img/main_profile/template10-p.png" alt="" class="rounded-circle">
                     </div> 
             </div>
             <br>
