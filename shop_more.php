@@ -448,7 +448,7 @@
             <div class="design-image-container">
                 <a href="https://tapilinq.com/template17">
                     <!-- template_pic -->
-                    <img src="Images/template_pic/template16.png" alt="Design 17" class="design-image" />
+                    <img src="Images/template_pic/template17.png" alt="Design 17" class="design-image" />
                 </a>
             </div>
             <div class="qr-container">
