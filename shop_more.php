@@ -346,14 +346,95 @@
                 <div class="scan-text">Scan with your mobile</div>
             </div>
         </div>
+
+        <!-- Design 11 -->
+        <div class="design-card">
+            <div class="design-title">Design 11</div>
+            <div class="design-image-container">
+                <a href="http://localhost/template_master/template11">
+                    <!-- template_pic -->
+                    <img src="Images/template_pic/template11.png" alt="Design 11" class="design-image" />
+                </a>
+            </div>
+            <div class="qr-container">
+                <!-- template_qr -->
+                <img src="Images/template_qr/t1.png" alt="QR Code" class="qr-image" />
+                <div class="scan-text">Scan with your mobile</div>
+            </div>
+        </div>
+
+        <!-- Design 12 -->
+        <div class="design-card">
+            <div class="design-title">Design 12</div>
+            <div class="design-image-container">
+                <a href="http://localhost/template_master/template12">
+                    <!-- template_pic -->
+                    <img src="Images/template_pic/template12.png" alt="Design 12" class="design-image" />
+                </a>
+            </div>
+            <div class="qr-container">
+                <!-- template_qr -->
+                <img src="Images/template_qr/t1.png" alt="QR Code" class="qr-image" />
+                <div class="scan-text">Scan with your mobile</div>
+            </div>
+        </div>
+
+        <!-- Design 13 -->
+        <div class="design-card">
+            <div class="design-title">Design 13</div>
+            <div class="design-image-container">
+                <a href="http://localhost/template_master/template13">
+                    <!-- template_pic -->
+                    <img src="Images/template_pic/template13.png" alt="Design 13" class="design-image" />
+                </a>
+            </div>
+            <div class="qr-container">
+                <!-- template_qr -->
+                <img src="Images/template_qr/t1.png" alt="QR Code" class="qr-image" />
+                <div class="scan-text">Scan with your mobile</div>
+            </div>
+        </div>
+
+        <!-- Design 14 -->
+        <div class="design-card">
+            <div class="design-title">Design 14</div>
+            <div class="design-image-container">
+                <a href="http://localhost/template_master/template14">
+                    <!-- template_pic -->
+                    <img src="Images/template_pic/template14.png" alt="Design 14" class="design-image" />
+                </a>
+            </div>
+            <div class="qr-container">
+                <!-- template_qr -->
+                <img src="Images/template_qr/t1.png" alt="QR Code" class="qr-image" />
+                <div class="scan-text">Scan with your mobile</div>
+            </div>
+        </div>
+
+        <!-- Design 15 -->
+        <div class="design-card">
+            <div class="design-title">Design 15</div>
+            <div class="design-image-container">
+                <a href="http://localhost/template_master/template15">
+                    <!-- template_pic -->
+                    <img src="Images/template_pic/template15.png" alt="Design 15" class="design-image" />
+                </a>
+            </div>
+            <div class="qr-container">
+                <!-- template_qr -->
+                <img src="Images/template_qr/t1.png" alt="QR Code" class="qr-image" />
+                <div class="scan-text">Scan with your mobile</div>
+            </div>
+        </div>
+
     </div>
 
     <script>
         document.querySelectorAll('.design-title').forEach(title => {
-    title.innerHTML = title.textContent.split('').map(char => 
-        `<span style="animation-delay: ${0.1 * index}s">${char}</span>`
-    ).join('');
-});
+            title.innerHTML = title.textContent.split('').map(char =>
+                `<span style="animation-delay: ${0.1 * index}s">${char}</span>`
+            ).join('');
+        });
     </script>
 </body>
 

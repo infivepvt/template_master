@@ -27,6 +27,11 @@ $routes = [
     'template8' => 'main_templates/template8.php',
     'template9' => 'main_templates/template9.php',
     'template10' => 'main_templates/template10.php',
+    'template11' => 'main_templates/template11.php',
+    'template12' => 'main_templates/template12.php',
+    'template13' => 'main_templates/template13.php',
+    'template14' => 'main_templates/template14.php',
+    'template15' => 'main_templates/template15.php',
     
 ];
 
