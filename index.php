@@ -165,7 +165,7 @@
       <p class="card-subtitle">Business<br>Card</p>
       <div class="typing-demo">One Card For Everything....</div>
       <div class="buttons">
-        <a href="shop_more">Shop More</a>
+        <a href="shop">Shop More</a>
         <a href="https://wa.me/+94714994579">Contact Us</a>
       </div>
     </div>
