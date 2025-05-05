@@ -147,6 +147,7 @@
             color: white;
             font-family: 'Roboto', sans-serif;
             font-size: 16px;
+            text-decoration: none;
         }
         .social-icons {
             display: flex;
@@ -197,7 +198,7 @@
 
             <div class="contact-section">
                 <div class="contact-icon">
-                    <i class="fas fa-envelope" onclick="window.open('Rovenrich@outlook.com', '_self')"></i>
+                    <i class="fas fa-envelope" onclick="window.open('mailto:Rovenrich@outlook.com', '_self')"></i>
                 </div>
                 <div class="contact-details">
                     <p class="contact-d">Rovenrich@outlook.com</p>
