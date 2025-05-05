@@ -194,7 +194,7 @@
                     <i class="fas fa-mobile-alt" onclick="window.open('tel:+94716529934', '_self')"></i>
                 </div>
                 <div class="contact-details">
-                    <p class="contact-d">+94716529934</p>
+                    <p class="contact-d">+94 716529934</p>
                 </div>
             </div>
 
