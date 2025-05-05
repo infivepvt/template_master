@@ -179,7 +179,7 @@
 <body>
     <div class="container">
         <header class="profile-header">
-            <img src="profile_img/client_profile/rovenrich-p.png" alt="Carl Protton" class="profile-image">
+            <img src="profile_img/client_profile/rovenrich1-p.png" alt="Carl Protton" class="profile-image">
             <h1 style="color: white;"> Niranjala Udagama</h1>
             <p class="title" style="color: white; font-size: 13px; text-transform: uppercase;">
             156A, Shalawa road, Mirihana, Nugegoda.
