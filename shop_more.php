@@ -442,6 +442,22 @@
             </div>
         </div>
 
+        <!-- Design 17 -->
+        <div class="design-card">
+            <div class="design-title">Design 17</div>
+            <div class="design-image-container">
+                <a href="https://tapilinq.com/template17">
+                    <!-- template_pic -->
+                    <img src="Images/template_pic/template16.png" alt="Design 17" class="design-image" />
+                </a>
+            </div>
+            <div class="qr-container">
+                <!-- template_qr -->
+                <img src="Images/template_qr/t1.png" alt="QR Code" class="qr-image" />
+                <div class="scan-text">Scan with your mobile</div>
+            </div>
+        </div>
+
     </div>
 
     <script>
