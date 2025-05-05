@@ -49,6 +49,7 @@ $routes = [
     
     // Client templates
     'Test' => 'templates/Test.php',
+    'rovenrich' => 'templates/rovenrich.php',
 ];
 
 // Handle the request
