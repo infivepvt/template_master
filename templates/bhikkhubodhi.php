@@ -186,11 +186,11 @@
     <div class="d-flex justify-content-center mt-5">
         <div class="card custom-card shadow-lg" style="background-color: #FFFFFF;">
             <div class="card-header custom-header text-center"
-                style="background-image:  url('banner_img/client_banner/Bhikkhubodidhamma/Bhikkhubodidhamma-b.jpeg'); height: 200px; opacity: 1;">
+                style="background-image:  url('banner_img/client_banner/Bhikkhubodidhamma-b.jpeg'); height: 200px; opacity: 1;">
                 <!-- <img src="logo_img/main_logo/Main_Design-l.png" alt="Company Logo" class="custom-logo" height="80px"
                     style="width: 245px; height: auto; opacity: 1;"> -->
                 <div class="profile-picture">
-                    <img src="profile_img/client_profile/Bhikkhubodidhamma/Bhikkhubodidhamma-p.png" alt="Saliya Pathum" class="rounded-circle">
+                    <img src="profile_img/client_profile/Bhikkhubodidhamma-p.png" alt="Saliya Pathum" class="rounded-circle">
                 </div>
             </div>
             <br>
