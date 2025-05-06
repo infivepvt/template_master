@@ -100,7 +100,7 @@
         }
 
         .save-button:hover {
-            background-color:rgb(218, 31, 7);
+            background-color: rgb(218, 31, 7);
         }
 
         /* Footer */
@@ -149,14 +149,15 @@
             font-family: 'Roboto', sans-serif;
             font-size: 16px;
             text-decoration: none;
-            
+
         }
+
         .social-icons {
             display: flex;
             justify-content: center;
             gap: 15px;
         }
-        
+
         .social-icon {
             width: 40px;
             height: 40px;
@@ -165,14 +166,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color:rgb(0, 0, 0);
+            color: rgb(0, 0, 0);
             font-size: 18px;
             transition: all 0.3s ease;
             text-decoration: none;
         }
-        
+
         .social-icon:hover {
-            background:rgb(238, 97, 92);
+            background: rgb(238, 97, 92);
             color: white;
         }
     </style>
@@ -185,7 +186,7 @@
             <img src="profile_img/client_profile/rovenrich1-p.png" alt="Carl Protton" class="profile-image">
             <h1 style="color: white;"> Niranjala Udagama</h1>
             <p class="title" style="color: white; font-size: 13px; text-transform: uppercase;">
-            156A, Shalawa road, Mirihana, Nugegoda.
+                156A, Shalawa road, Mirihana, Nugegoda.
             </p>
 
 
@@ -207,13 +208,16 @@
                 </div>
             </div>
 
-           
+
             <p style="color:white">Connect with me on</p>
             <br>
             <div class="social-icons">
-                <a href="https://www.facebook.com/share/16N3HwxMYD/?mibextid=qi2Omg" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/rovenrich?igsh=MWh2YWcxaHZvNmw5cw==" class="social-icon"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.tiktok.com/@rovenrichcakes?_t=ZS-8w6DFvnymOo&_r=1" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.facebook.com/share/16N3HwxMYD/?mibextid=qi2Omg" class="social-icon"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/rovenrich?igsh=MWh2YWcxaHZvNmw5cw==" class="social-icon"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@rovenrichcakes?_t=ZS-8w6DFvnymOo&_r=1" class="social-icon"><i
+                        class="fab fa-tiktok"></i></a>
             </div>
             <a href="#" class="save-button" id="saveContact">Save to contact</a>
         </header>
@@ -225,27 +229,26 @@
                 pulvinar dapibus leo.</p> -->
 
             <div class="image-gallery">
-                <img src="gallery_img/client_gallerys/rovenrich-g17.jpeg" alt="Business man back view">
-                <img src="gallery_img/client_gallerys/rovenrich-g1.jpeg" alt="Business man back view">
-                <img src="gallery_img/client_gallerys/rovenrich-g2.jpeg" alt="Business man back view">
-                <img src="gallery_img/client_gallerys/rovenrich-g3.jpeg" alt="Business man back view">
-                <img src="gallery_img/client_gallerys/rovenrich-g4.jpeg" alt="Business man back view">
-                <img src="gallery_img/client_gallerys/rovenrich-g5.jpeg" alt="Business man back view">
-                <img src="gallery_img/client_gallerys/rovenrich-g6.jpeg" alt="Business man back view">
-                <img src="gallery_img/client_gallerys/rovenrich-g7.jpeg" alt="Business man back view">
-                <img src="gallery_img/client_gallerys/rovenrich-g8.jpeg" alt="Business man back view">
-                <img src="gallery_img/client_gallerys/rovenrich-g9.jpeg" alt="Business man back view">
-                <img src="gallery_img/client_gallerys/rovenrich-g10.jpeg" alt="Business man back view">
-                <img src="gallery_img/client_gallerys/rovenrich-g11.jpeg" alt="Business man back view">
-                <img src="gallery_img/client_gallerys/rovenrich-g12.jpeg" alt="Business man back view">
-                <img src="gallery_img/client_gallerys/rovenrich-g13.jpeg" alt="Business man back view">
-                <img src="gallery_img/client_gallerys/rovenrich-g14.jpeg" alt="Business man back view">
-                <img src="gallery_img/client_gallerys/rovenrich-g15.jpeg" alt="Business man back view">
-                <img src="gallery_img/client_gallerys/rovenrich-g16.jpeg" alt="Business man back view">
-               
+                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g1.jpeg" alt="Business man back view">
+                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g2.jpeg" alt="Business man back view">
+                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g3.jpeg" alt="Business man back view">
+                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g4.jpeg" alt="Business man back view">
+                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g5.jpeg" alt="Business man back view">
+                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g6.jpeg" alt="Business man back view">
+                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g7.jpeg" alt="Business man back view">
+                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g8.jpeg" alt="Business man back view">
+                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g9.jpeg" alt="Business man back view">
+                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g10.jpeg" alt="Business man back view">
+                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g11.jpeg" alt="Business man back view">
+                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g12.jpeg" alt="Business man back view">
+                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g13.jpeg" alt="Business man back view">
+                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g14.jpeg" alt="Business man back view">
+                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g15.jpeg" alt="Business man back view">
+                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g16.jpeg" alt="Business man back view">
+
             </div>
 
-            
+
         </section>
     </div>
 
@@ -254,11 +257,11 @@
     </footer>
 
     <script>
-       document.getElementById('saveContact').addEventListener('click', function(e) {
-    e.preventDefault();
-    
-    // Create VCF content
-    const vcfContent = `BEGIN:VCARD
+        document.getElementById('saveContact').addEventListener('click', function (e) {
+            e.preventDefault();
+
+            // Create VCF content
+            const vcfContent = `BEGIN:VCARD
 VERSION:3.0
 FN:Niranjala Udagama
 N:Udagama;Niranjala;;;
@@ -268,21 +271,22 @@ EMAIL;TYPE=PERSONAL,INTERNET:Rovenrich@outlook.com
 URL:carlprotton.com
 REV:${new Date().toISOString().split('T')[0].replace(/-/g, '')}
 END:VCARD`;
-    
-    // Create download link
-    const blob = new Blob([vcfContent], { type: 'text/vcard' });
-    const url = URL.createObjectURL(blob);
-    
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = 'Niranjala_Udagama.vcf';
-    document.body.appendChild(link);
-    link.click();
-    
-    // Clean up
-    document.body.removeChild(link);
-    URL.revokeObjectURL(url);
-});
+
+            // Create download link
+            const blob = new Blob([vcfContent], { type: 'text/vcard' });
+            const url = URL.createObjectURL(blob);
+
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'Niranjala_Udagama.vcf';
+            document.body.appendChild(link);
+            link.click();
+
+            // Clean up
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+        });
     </script>
 </body>
+
 </html>
