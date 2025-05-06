@@ -50,6 +50,7 @@ $routes = [
     // Client templates
     'Test' => 'templates/Test.php',
     'rovenrich' => 'templates/rovenrich.php',
+    'infinity' => 'templates/infinity.php',
 ];
 
 // Handle the request
