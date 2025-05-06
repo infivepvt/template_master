@@ -321,7 +321,7 @@
                 address2: "",
                 about: "",
                 logo: "",
-                profileImage: "profile_img/client_profile/Bhikkhubodidhamma/Bhikkhubodidhamma-p.png"
+                profileImage: "profile_img/client_profile/Bhikkhubodidhamma-p.png"
             };
 
             // Create VCF content
