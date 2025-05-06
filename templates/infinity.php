@@ -203,7 +203,7 @@
                 width: 95%;
                 margin-top: 20px;
             }
-            
+
             .image-gallery a {
                 width: calc(100% - 10px);
                 height: 200px;
@@ -216,7 +216,8 @@
     <div class="d-flex justify-content-center mt-5">
         <div class="card custom-card shadow-lg" style="background-color: #FFFFFF;">
             <div class="image-gallery">
-                <a href="https://www.facebook.com/share/1C7CLaATZZ/" target="_blank">
+                <a href="https://www.facebook.com/share/1C7CLaATZZ/" target="_blank"
+                    style="border: 0.5px solid rgb(255, 255, 255);">
                     <img src="gallery_img/client_gallerys/infinity/infinity-g1.png" alt="Business man back view">
                 </a>
                 <a href="https://www.facebook.com/share/1FsLHWFhoo/" target="_blank">
@@ -244,7 +245,7 @@
 
             <div class="list-group mb-3">
 
-            
+
                 <button type="button" class="list-group-item d-flex align-items-center justify-content-between contact"
                     onclick="window.open('tel:0761231212', '_self')">
                     <img src="Images/icon/phone.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
@@ -316,7 +317,7 @@
                     <img src="Images/Social_Media_Icon/pinterest.png" alt="" style="width: 50px; height: 50px;">
                 </a>
             </div> -->
-          
+
             <button class="btn w-100 custom-save-button" onclick="generateVCF()"
                 style="font-family: 'Montserrat', sans-serif; font-size:19px; border: 2px solid orange;">
                 <img src="Images/Social_Media_Icon/save.png" alt=""
@@ -328,11 +329,11 @@
     </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-    function generateVCF() {
-        // Create vCard content
-        const vcard = `BEGIN:VCARD
+        function generateVCF() {
+            // Create vCard content
+            const vcard = `BEGIN:VCARD
 VERSION:3.0
 FN:Infinity Rovers
 ORG:Infinity Rovers;
@@ -340,24 +341,24 @@ TEL;TYPE=CELL:0771210812
 URL:https://synergysuccessacademy.lk/
 END:VCARD`;
 
-        // Create a Blob with the vCard data
-        const blob = new Blob([vcard], { type: 'text/vcard' });
-        
-        // Create a download link
-        const url = URL.createObjectURL(blob);
-        const link = document.createElement('a');
-        link.href = url;
-        link.download = 'infinity_rovers.vcf';
-        
-        // Trigger the download
-        document.body.appendChild(link);
-        link.click();
-        
-        // Clean up
-        document.body.removeChild(link);
-        URL.revokeObjectURL(url);
-    }
-</script>
+            // Create a Blob with the vCard data
+            const blob = new Blob([vcard], { type: 'text/vcard' });
+
+            // Create a download link
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'infinity_rovers.vcf';
+
+            // Trigger the download
+            document.body.appendChild(link);
+            link.click();
+
+            // Clean up
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+        }
+    </script>
 </body>
 
 </html>
