@@ -51,6 +51,7 @@ $routes = [
     'Test' => 'templates/Test.php',
     'rovenrich' => 'templates/rovenrich.php',
     'infinity' => 'templates/infinity.php',
+    'bhikkhubodhi' => 'templates/bhikkhubodhi.php',
 ];
 
 // Handle the request
