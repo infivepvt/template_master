@@ -186,7 +186,7 @@
     <div class="d-flex justify-content-center mt-5">
         <div class="card custom-card shadow-lg" style="background-color: #FFFFFF;">
             <div class="card-header custom-header text-center"
-                style="background-image:  url('banner_img/client_banner/Bhikkhubodidhamma-b.jpeg'); height: 200px; opacity: 1;">
+                style="background-image:  url('banner_img/client_banner/Bhikkhubodidhamma-b.jpg'); height: 200px; opacity: 1;">
                 <!-- <img src="logo_img/main_logo/Main_Design-l.png" alt="Company Logo" class="custom-logo" height="80px"
                     style="width: 245px; height: auto; opacity: 1;"> -->
                 <div class="profile-picture">
@@ -197,8 +197,9 @@
             <br>
             <div class="card-body text-center"
                 style="background-color: #FFFFFF; color: #000000; text-decoration: none; ">
-                <h2 class="card-title" style="font-size: 27px; text-transform: uppercase;">Kammatthanacariya <br>Ven. Kandane Bodhidhamma Thero</h2>
-                <p style="color: #000000; font-size: 15px; text-transform: uppercase;">Chief Incumbent of Niweema soya Forest Monastery <br>& Gallen Pokuna Forest Monastery <br>Justice of peace (22-03-WP-WI-546)</p>
+                <h2 class="card-title" style="font-size: 15px; text-transform: uppercase; font-weight:400">Kammaṭṭhānācariya</h2>
+                <h2 class="card-title" style="font-size: 27px; text-transform: uppercase;">Ven. Kandane Bodhidhamma Thero</h2>
+                <p style="color: #000000; font-size: 15px; text-transform: uppercase;">Chief Incumbent of Niweema soyā Forest Monastery <br>& Gallen Pokuna Forest Monastery <br>Justice of peace - whole Island (22-03-WP-WI-546)</p>
 
                 <a href="https://wa.me/+94776995455" target="_blank" rel="noopener noreferrer"
                     style="text-decoration: none;">
@@ -211,9 +212,17 @@
                 </a>
 
                 <div class="list-group mb-3">
+                <button type="button"
+                        class="list-group-item d-flex align-items-center justify-content-between contact"
+                        onclick="window.open('tel:+94776995455', '_self')">
+                        <img src="Images/icon/mobile-phone.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
+                        <span class="text-center flex-grow-1 text-truncate custom-phone"
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;"> +94776995455</span>
+                    </button> 
+
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
-                        onclick="window.open('tel:0761231212', '_self')">
+                        onclick="window.open('tel:+94740 855 455', '_self')">
                         <img src="Images/icon/phone.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
                             style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;"> +94740 855 455</span>
@@ -221,7 +230,7 @@
 
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
-                        onclick="window.open('mailto:youremail@yourwebsite.com', '_self')">
+                        onclick="window.open('mailto:Bhikkhubodidhamma@gmail.com', '_self')">
                         <img src="Images/icon/mail.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
                             style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">Bhikkhubodidhamma@gmail.com</span>
@@ -229,7 +238,7 @@
 
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
-                        onclick="window.open('mailto:youremail@yourwebsite.com', '_self')">
+                        onclick="window.open('mailto:Niweemasoya@gmail.com', '_self')">
                         <img src="Images/icon/mail.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
                             style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">Niweemasoya@gmail.com</span>
