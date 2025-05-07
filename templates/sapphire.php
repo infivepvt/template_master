@@ -39,6 +39,7 @@
             top: 95%;
             left: 50%;
             transform: translate(-50%, -50%);
+            margin-top: 20px;
         }
 
         .profile-picture img {
@@ -455,16 +456,16 @@
     <div class="d-flex justify-content-center mt-5">
         <div class="card custom-card15 shadow-lg" style="background-color: #000000;">
             <div class="card-header custom-header text-center"
-                style="background-image: url('banner_img/client_banner/sapphire-b.jpg'); height: 200px; opacity: 100%;">
+                style="background-image: url('banner_img/client_banner/sapphire-b.png'); height: 200px; opacity: 100%;">
                 <div class="profile-picture">
-                    <img src="profile_img/client_profile/sapphire-p.png" alt="Linkin Park" class="rounded-circle">
+                    <img src="profile_img/client_profile/default-p.jpg" alt="Linkin Park" class="rounded-circle">
                 </div>
             </div>
             <br>
             <br>
-            <div class="card-body text-center" style="background-color: #000000; color: #000000;">
+            <div class="card-body text-center" style="background-color: #000000; color: #000000; margin-top: 15px;">
                 <h2 style="font-size: 30px; color: white;">Mufla Bhanu</h2>
-                <p style="color:rgb(255, 255, 255); font-size: 20px;">Owner</p>
+                <p style="color:rgb(255, 255, 255); font-size: 20px;">Director finance and Sales</p>
 
                 <div>
                     <p></p>
@@ -493,7 +494,13 @@
                             </button>
                             <p class="contact-icon-label">Office Number</p>
                         </div>
-
+                        <div class="contact-icon-container">
+                            <button type="button" class="contact-icon-button"
+                                onclick="window.open('https://wa.me/94777554542', '_blank')">
+                                <i class="fab fa-whatsapp contact-icon" style="color:rgb(0, 0, 0);"></i>
+                            </button>
+                            <p class="contact-icon-label">WhatsApp</p>
+                        </div>
 
                         <!-- Email Button with Label -->
                         <div class="contact-icon-container">
@@ -501,7 +508,15 @@
                                 onclick="window.open('mailto:info@sapphirecreation.com', '_self')">
                                 <i class="fas fa-envelope contact-icon"></i>
                             </button>
-                            <p class="contact-icon-label">Email</p>
+                            <p class="contact-icon-label">Email 1</p>
+                        </div>
+                        <!-- Email Button with Label -->
+                        <div class="contact-icon-container">
+                            <button type="button" class="contact-icon-button"
+                                onclick="window.open('mailto:banuaffinitygems@gmail.com', '_self')">
+                                <i class="fas fa-envelope contact-icon"></i>
+                            </button>
+                            <p class="contact-icon-label">Email 2</p>
                         </div>
 
                         <!-- Website Button with Label -->
@@ -515,10 +530,10 @@
                         <!-- Address Button with Label -->
                         <div class="contact-icon-container">
                             <button type="button" class="contact-icon-button"
-                                onclick="window.open('https://maps.app.goo.gl/HpUWHaeEDFcL2BcD9', '_blank')">
+                                onclick="window.open('https://maps.app.goo.gl/R7jjb1DmTPrnEBBw6?g_st=iw', '_blank')">
                                 <i class="fas fa-map-marker-alt contact-icon"></i>
                             </button>
-                            <p class="contact-icon-label">Address</p>
+                            <p class="contact-icon-label">Location</p>
                         </div>
                     </div>
 
@@ -565,7 +580,14 @@
                             </div> -->
                         </div>
                     </div>
-
+                    <div class="featured-image-container"
+                        style="margin: 20px auto; max-width: 50%; text-align: center;">
+                        <img src="gallery_img/client_gallerys/sapphire1/sapphire-g1.jpeg" alt="Business showcase" style="width: 100%; 
+                border-radius: 15px; 
+                box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+                border: 3px solid #EEF1FF;">
+                        <p style="color: white; margin-top: 10px; font-size: 14px;">Brand line of Affinity Gems</p>
+                    </div>
                     <!-- Enhanced Lightbox -->
                     <div class="lightbox" id="lightbox">
                         <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
