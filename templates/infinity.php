@@ -198,6 +198,16 @@
             border-radius: 8px;
         }
 
+        .section-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2rem;
+            color: white;
+            text-align: center;
+            margin: 15px 0;
+            width: 100%;
+            font-weight: bold;
+        }
+
         @media (max-width: 480px) {
             .custom-card {
                 width: 95%;
@@ -209,14 +219,71 @@
                 height: 200px;
             }
         }
+         /* New animation styles for MEMBER LOGIN */
+         .login-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2rem;
+            color: white;
+            text-align: center;
+            margin: 15px 0;
+            width: 100%;
+            font-weight: bold;
+            position: relative;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                text-shadow: 0 0 5px rgba(255,255,255,0.5);
+            }
+            50% {
+                transform: scale(1.05);
+                text-shadow: 0 0 15px rgba(255,165,0,0.8);
+                color: #FFA500;
+            }
+            100% {
+                transform: scale(1);
+                text-shadow: 0 0 5px rgba(255,255,255,0.5);
+            }
+        }
+
+        .login-title::after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #FFA500, transparent);
+            animation: linePulse 2s infinite;
+        }
+
+        @keyframes linePulse {
+            0% {
+                width: 50px;
+                opacity: 0.5;
+            }
+            50% {
+                width: 100px;
+                opacity: 1;
+            }
+            100% {
+                width: 50px;
+                opacity: 0.5;
+            }
+        }
     </style>
 </head>
 
 <body>
     <div class="d-flex justify-content-center mt-5">
         <div class="card custom-card shadow-lg" style="background-color: #FFFFFF;">
+            <!-- Social Media Links Section -->
+            <div class="section-title">CONNECT WITH US</div>
             <div class="image-gallery">
-                <a href="https://www.facebook.com/share/1C7CLaATZZ/" target="_blank">
+            <a href="https://www.facebook.com/share/1C7CLaATZZ/" target="_blank">
                     <img src="gallery_img/client_gallerys/infinity/infinity-g1.png" alt="Business man back view">
                 </a>
                 <a href="https://www.facebook.com/share/1FsLHWFhoo/" target="_blank">
@@ -237,33 +304,34 @@
                 <a href="https://www.facebook.com/share/15Efe7xeGr/" target="_blank">
                     <img src="gallery_img/client_gallerys/infinity/infinity-g7.png" alt="Business man back view">
                 </a>
+            </div>
+
+            <!-- Website Links Section -->
+            <div class="section-title">VISIT OUR WEBSITES</div>
+            <div class="image-gallery">
                 <a href="https://infinityroversnet.com/" target="_blank">
-                    <img src="gallery_img/client_gallerys/infinity/infinity-g8.png" alt="Business man back view">
+                    <img src="gallery_img/client_gallerys/infinity/infinity-g8.png" alt="Infinity Rovers Website">
                 </a>
                 <a href="https://synergysuccessacademy.lk/" target="_blank">
-                    <img src="gallery_img/client_gallerys/infinity/infinity-g9.png" alt="Business man back view">
+                    <img src="gallery_img/client_gallerys/infinity/infinity-g9.png" alt="Synergy Success Academy Website">
                 </a>
+            </div>
+
+            <!-- Login Section -->
+            <div class="login-title">MEMBER LOGIN</div>
+            <div class="image-gallery">
                 <a href="https://infinityrover.com/v2/profile/login" target="_blank">
-                    <img src="gallery_img/client_gallerys/infinity/infinity-g10.png" alt="Business man back view">
+                    <img src="gallery_img/client_gallerys/infinity/infinity-g10.png" alt="Member Login">
                 </a>
             </div>
 
             <div class="list-group mb-3">
-
-
                 <button type="button" class="list-group-item d-flex align-items-center justify-content-between contact"
                     onclick="window.open('tel:0761231212', '_self')">
                     <img src="Images/icon/phone.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                     <span class="text-center flex-grow-1 text-truncate custom-phone"
                         style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">0771210812</span>
                 </button>
-
-                <!-- <button type="button" class="list-group-item d-flex align-items-center justify-content-between contact"
-                    onclick="window.open('mailto:youremail@yourwebsite.com', '_self')">
-                    <img src="Images/icon/mail.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
-                    <span class="text-center flex-grow-1 text-truncate custom-phone"
-                        style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">youremail@yourwebsite.com</span>
-                </button> -->
 
                 <a href="https://wa.me/94714193898" target="_blank" rel="noopener noreferrer"
                     style="text-decoration: none;">
@@ -274,47 +342,7 @@
                             WHATSAPP</span>
                     </button>
                 </a>
-
-                <!-- <button type="button" class="list-group-item d-flex align-items-center justify-content-between contact"
-                    onclick="window.open('https://www.google.com/maps/search/?api=1&query=919+Oaktree+Crescent,+Newmarket', '_blank')">
-                    <img src="Images/icon/map.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
-                    <span class="text-center flex-grow-1 text-truncate custom-phone"
-                        style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">919
-                        Oaktree Crescent, Newmarket Oaktree Crescent, Newmarket</span>
-                </button> -->
             </div>
-
-            <!-- <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:19px; color:white;">CONNECT WITH SOCIAL MEDIA
-            </p>
-            <div class="d-flex flex-wrap justify-content-center">
-                <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
-                    <img src="Images/Social_Media_Icon/instagram.png" alt="" style="width: 50px; height: 50px;">
-                </a>
-                <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
-                    <img src="Images/Social_Media_Icon/facebook.png" alt="" style="width: 50px; height: 50px;">
-                </a>
-                <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
-                    <img src="Images/Social_Media_Icon/youtube.png" alt="" style="width: 50px; height: 50px;">
-                </a>
-                <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
-                    <img src="Images/Social_Media_Icon/tiktok.png" alt="" style="width: 50px; height: 50px;">
-                </a>
-            </div>
-
-            <div class="d-flex flex-wrap justify-content-center">
-                <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
-                    <img src="Images/Social_Media_Icon/linkedin.png" alt="" style="width: 50px; height: 50px;">
-                </a>
-                <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
-                    <img src="Images/Social_Media_Icon/twitter.png" alt="" style="width: 50px; height: 50px;">
-                </a>
-                <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
-                    <img src="Images/Social_Media_Icon/social.png" alt="" style="width: 50px; height: 50px;">
-                </a>
-                <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
-                    <img src="Images/Social_Media_Icon/pinterest.png" alt="" style="width: 50px; height: 50px;">
-                </a>
-            </div> -->
 
             <button class="btn w-100 custom-save-button" onclick="generateVCF()"
                 style="font-family: 'Montserrat', sans-serif; font-size:19px; border: 2px solid orange;">
@@ -330,38 +358,36 @@
             </footer>
         </div>
     </div>
-    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        function generateVCF() {
-            // Create vCard content
-            const vcard = `BEGIN:VCARD
+    function generateVCF() {
+        // Create vCard content
+        const vcard = `BEGIN:VCARD
 VERSION:3.0
-FN:Infinity Rovers
-ORG:Infinity Rovers;
-TEL;TYPE=CELL:0771210812
-URL:https://synergysuccessacademy.lk/
+FN:Thakshila Madushan
+TEL;TYPE=CELL,VOICE:0771210812
+TEL;TYPE=CELL,WHATSAPP:0714193898
 END:VCARD`;
 
-            // Create a Blob with the vCard data
-            const blob = new Blob([vcard], { type: 'text/vcard' });
+        // Create a Blob with the vCard data
+        const blob = new Blob([vcard], { type: 'text/vcard' });
 
-            // Create a download link
-            const url = URL.createObjectURL(blob);
-            const link = document.createElement('a');
-            link.href = url;
-            link.download = 'infinity_rovers.vcf';
+        // Create a download link
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = 'thakshila_madushan.vcf';
 
-            // Trigger the download
-            document.body.appendChild(link);
-            link.click();
+        // Trigger the download
+        document.body.appendChild(link);
+        link.click();
 
-            // Clean up
-            document.body.removeChild(link);
-            URL.revokeObjectURL(url);
-        }
-    </script>
+        // Clean up
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url);
+    }
+</script>
 </body>
 
 </html>
