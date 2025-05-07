@@ -216,8 +216,7 @@
     <div class="d-flex justify-content-center mt-5">
         <div class="card custom-card shadow-lg" style="background-color: #FFFFFF;">
             <div class="image-gallery">
-                <a href="https://www.facebook.com/share/1C7CLaATZZ/" target="_blank"
-                    style="border: 0.5px solid rgb(255, 255, 255);">
+                <a href="https://www.facebook.com/share/1C7CLaATZZ/" target="_blank">
                     <img src="gallery_img/client_gallerys/infinity/infinity-g1.png" alt="Business man back view">
                 </a>
                 <a href="https://www.facebook.com/share/1FsLHWFhoo/" target="_blank">
@@ -241,6 +240,12 @@
                 <a href="https://infinityroversnet.com/" target="_blank">
                     <img src="gallery_img/client_gallerys/infinity/infinity-g8.png" alt="Business man back view">
                 </a>
+                <a href="https://synergysuccessacademy.lk/" target="_blank">
+                    <img src="gallery_img/client_gallerys/infinity/infinity-g9.png" alt="Business man back view">
+                </a>
+                <a href="https://infinityrover.com/v2/profile/login" target="_blank">
+                    <img src="gallery_img/client_gallerys/infinity/infinity-g10.png" alt="Business man back view">
+                </a>
             </div>
 
             <div class="list-group mb-3">
@@ -259,13 +264,6 @@
                     <span class="text-center flex-grow-1 text-truncate custom-phone"
                         style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">youremail@yourwebsite.com</span>
                 </button> -->
-
-                <button type="button" class="list-group-item d-flex align-items-center justify-content-between contact"
-                    onclick="window.open('https://synergysuccessacademy.lk/', '_blank')">
-                    <img src="Images/icon/internet.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
-                    <span class="text-center flex-grow-1 text-truncate custom-phone"
-                        style="color: #FFFFFF; 'Montserrat', sans-serif; font-size:16px; font-size:16px;">https://synergysuccessacademy.lk/</span>
-                </button>
 
                 <a href="https://wa.me/94714193898" target="_blank" rel="noopener noreferrer"
                     style="text-decoration: none;">
