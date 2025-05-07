@@ -178,6 +178,63 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+
+        /*Accordian*/
+        .accordion {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+        }
+        
+        .accordion-item {
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .accordion-header {
+            padding: 15px 20px;
+            background-color: #333;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s;
+            color: #ffffff;
+        }
+        
+        .accordion-header:hover {
+            background-color:rgb(70, 70, 70);
+        }
+        
+        .accordion-header::after {
+            /* content: '+'; */
+            font-size: 20px;
+            transition: transform 0.3s;
+        }
+        
+        .accordion-content {
+            padding: 20 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background-color: white;
+        }
+        
+        .accordion-item.active .accordion-content {
+            padding: 0 20px 15px;
+            max-height: 500px;
+        }
+        
+        .accordion-item.active .accordion-header {
+            background-color:rgb(54, 54, 54);
+        }
+        
+        .accordion-item.active .accordion-header::after {
+            /* content: '-'; */
+        }
     </style>
 
 </head>
@@ -190,21 +247,16 @@
                 <!-- <img src="logo_img/main_logo/Main_Design-l.png" alt="Company Logo" class="custom-logo" height="80px"
                     style="width: 245px; height: auto; opacity: 1;"> -->
                 <div class="profile-picture">
-                    <img src="profile_img/client_profile/Bhikkhubodidhamma-p.png" alt="Saliya Pathum"
-                        class="rounded-circle">
+                    <img src="profile_img/client_profile/Bhikkhubodidhamma-p.png" alt="Saliya Pathum" class="rounded-circle">
                 </div>
             </div>
             <br>
             <br>
             <div class="card-body text-center"
                 style="background-color: #FFFFFF; color: #000000; text-decoration: none; ">
-                <h2 class="card-title" style="font-size: 15px; text-transform: uppercase; font-weight:400">
-                    Kammaṭṭhānācariya</h2>
-                <h2 class="card-title" style="font-size: 27px; text-transform: uppercase;">Ven. Kandane Bodhidhamma
-                    Thero</h2>
-                <p style="color: #000000; font-size: 15px; text-transform: uppercase;">Chief Incumbent of Niweema soyā
-                    Forest Monastery <br>& Gallen Pokuna Forest Monastery <br>Justice of peace - whole Island
-                    (22-03-WP-WI-546)</p>
+                <h2 class="card-title" style="font-size: 27px; text-transform: uppercase; font-weight:400">Kammaṭṭhānācariya</h2>
+                <h2 class="card-title" style="font-size: 27px; text-transform: uppercase;">Ven. Kandane Bodhidhamma Thero</h2>
+                <p style="color: #000000; font-size: 15px; text-transform: uppercase;">Chief Incumbent of Niweema soyā Forest Monastery <br>& Gallen Pokuna Forest Monastery <br><span style="font-size:13px">Justice of peace - whole Island (22-03-WP-WI-546)</span></p>
 
                 <a href="https://wa.me/+94776995455" target="_blank" rel="noopener noreferrer"
                     style="text-decoration: none;">
@@ -217,14 +269,13 @@
                 </a>
 
                 <div class="list-group mb-3">
-                    <button type="button"
+                <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
                         onclick="window.open('tel:+94776995455', '_self')">
-                        <img src="Images/icon/mobile-phone.png" alt=""
-                            style="width: 30px; height: 30px; margin-right:25px;">
+                        <img src="Images/icon/mobile-phone.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
                             style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;"> +94776995455</span>
-                    </button>
+                    </button> 
 
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
@@ -264,9 +315,19 @@
                         onclick="window.open('https://www.google.com/maps/place/Niweema+soy%C3%A0+Forest+Monastery+%7C+%E0%B6%B1%E0%B7%92%E0%B7%80%E0%B7%93%E0%B6%B8+%E0%B7%83%E0%B7%9C%E0%B6%BA%E0%B7%8F+%E0%B7%80%E0%B6%B1+%E0%B6%85%E0%B6%BB%E0%B6%AB/@7.4938821,79.953835,9z/data=!4m10!1m2!2m1!1sNiweema+Soy%C3%A0+Forest+Monastery,Katupothana,Thabutta,Galgamuwa!3m6!1s0x3afce56ee898e9d1:0x9f471e9270e16f84!8m2!3d8.1077329!4d80.2478538!15sCjtOaXdlZW1hIFNvecOgIEZvcmVzdCBNb25hc3RlcnksS2F0dXBvdGhhLFRoYWJ1dHRhLEdhbGdhbXV3YVo9IjtuaXdlZW1hIHNvecOgIGZvcmVzdCBtb25hc3Rlcnkga2F0dXBvdGhhIHRoYWJ1dHRhIGdhbGdhbXV3YZIBCW1vbmFzdGVyeZoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VReGFreDZOR3QzUlJBQuABAPoBBAgAECo!16s%2Fg%2F11rvjg96f1?authuser=0&entry=ttu&g_ep=EgoyMDI1MDUwMy4wIKXMDSoASAFQAw%3D%3D', '_blank')">
                         <img src="Images/icon/map.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">Niweema Soya
-                            Forest Monastery,<br>Katupothana,Thabutta,Galgamuwa</span>
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">Niweema Soya Forest Monastery,<br>Katupothana,Thabutta,Galgamuwa</span>
                     </button>
+                </div>
+
+                <!--accordian-->
+                <div class="accordion">
+                    <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header" style="justify-content:center">SEE MORE</div>
+                        <div class="accordion-content">
+                            <p style="margin-top:10px">Ven. K. Bodhidhamma Thero<br>8014393910<br>Commercial Bank Thambuththegama Branch</p>
+                        </div>
+                    </div>
                 </div>
 
                 <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:19px">CONNECT WITH SOCIAL MEDIA
@@ -275,22 +336,17 @@
                     <!-- <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
                         <img src="Images/Social_Media_Icon/instagram.png" alt="" style="width: 50px; height: 50px;">
                     </a> -->
-                    <a href="https://www.facebook.com/share/15TiQupSmM/" target="_blank" rel="noopener noreferrer"
-                        class="m-3">
+                    <a href="https://www.facebook.com/share/15TiQupSmM/" target="_blank" rel="noopener noreferrer" class="m-3">
                         <img src="Images/Social_Media_Icon/facebook.png" alt="" style="width: 50px; height: 50px;">
                     </a>
-                    <a href="https://youtube.com/@niweemasoyaa9372?si=pR4X4GLew9BtgaQ5" target="_blank"
-                        rel="noopener noreferrer" class="m-3">
+                    <a href="https://youtube.com/@niweemasoyaa9372?si=pR4X4GLew9BtgaQ5" target="_blank" rel="noopener noreferrer" class="m-3">
                         <img src="Images/Social_Media_Icon/youtube.png" alt="" style="width: 50px; height: 50px;">
                     </a>
-                    <a href="https://www.tiktok.com/@niweema.soy.fores?_t=ZS-8w5xtsqz3Xc&_r=1" target="_blank"
-                        rel="noopener noreferrer" class="m-3">
+                    <a href="https://www.tiktok.com/@niweema.soy.fores?_t=ZS-8w5xtsqz3Xc&_r=1" target="_blank" rel="noopener noreferrer" class="m-3">
                         <img src="Images/Social_Media_Icon/tiktok.png" alt="" style="width: 50px; height: 50px;">
                     </a>
                 </div>
-                <div class="accinfo" style="border:1px solid ; padding: 10px;">
-                    <p>Ven. K. Bodhidhamma Thero<br>8014393910<br>Commercial Bank Thambuththegama Branch</p>
-                </div>
+
                 <br>
                 <button class="btn w-100 custom-save-button" onclick="generateVCF()"
                     style="font-family: 'Montserrat', sans-serif; font-size:19px; border: 2px solid orange;">
@@ -300,39 +356,45 @@
                 </button>
 
                 <section class="about-section">
-                    <!-- <h2 style="color: white;">About Me</h2>
+            <!-- <h2 style="color: white;">About Me</h2>
             <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
                 ullamcorper mattis,
                 pulvinar dapibus leo.</p> -->
 
-                    <div class="image-gallery">
-                        <img src="gallery_img/client_gallerys/bhikkhubodhi/bhikkhubodhi-g1.jpeg"
-                            alt="Business man back view">
-                        <img src="gallery_img/client_gallerys/bhikkhubodhi/bhikkhubodhi-g2.jpeg"
-                            alt="Business man back view">
-                        <img src="gallery_img/client_gallerys/bhikkhubodhi/bhikkhubodhi-g3.jpeg"
-                            alt="Business man back view">
-                        <img src="gallery_img/client_gallerys/bhikkhubodhi/bhikkhubodhi-g4.jpeg"
-                            alt="Business man back view">
-                        <img src="gallery_img/client_gallerys/bhikkhubodhi/bhikkhubodhi-g5.jpeg"
-                            alt="Business man back view">
-                        <img src="gallery_img/client_gallerys/bhikkhubodhi/bhikkhubodhi-g6.jpeg"
-                            alt="Business man back view">
-                        <img src="gallery_img/client_gallerys/bhikkhubodhi/bhikkhubodhi-g7.jpeg"
-                            alt="Business man back view">
-                    </div>
+            <div class="image-gallery">
+                <img src="gallery_img/client_gallerys/bhikkhubodhi/bhikkhubodhi-g1.jpeg" alt="Business man back view">
+                <img src="gallery_img/client_gallerys/bhikkhubodhi/bhikkhubodhi-g2.jpeg" alt="Business man back view">
+                <img src="gallery_img/client_gallerys/bhikkhubodhi/bhikkhubodhi-g3.jpeg" alt="Business man back view">
+                <img src="gallery_img/client_gallerys/bhikkhubodhi/bhikkhubodhi-g4.jpeg" alt="Business man back view">
+                <img src="gallery_img/client_gallerys/bhikkhubodhi/bhikkhubodhi-g5.jpeg" alt="Business man back view">
+                <img src="gallery_img/client_gallerys/bhikkhubodhi/bhikkhubodhi-g6.jpeg" alt="Business man back view">
+                <img src="gallery_img/client_gallerys/bhikkhubodhi/bhikkhubodhi-g7.jpeg" alt="Business man back view">
+            </div>
 
-                    <br>
-                    <footer style="text-align:center; padding:10px; font-size:14px; color:black;">
-                        <a href="https://tapilinq.lk" target="_blank" style="text-decoration:none; color:black;">
-                            Made with ❤️ by Tapilinq | Click now
-                        </a>
-                    </footer>
-                </section>
+            
+        </section>
             </div>
         </div>
     </div>
-
+    
+    <script>
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const item = header.parentNode;
+                const accordion = item.parentNode;
+                
+                // Close all other items
+                accordion.querySelectorAll('.accordion-item').forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
@@ -354,7 +416,7 @@
                 address2: "",
                 about: "",
                 logo: "",
-                profileImage: "profile_img/client_profile/Bhikkhubodidhamma-p.png"
+                profileImage: "profile_img/client_profile/Bhikkhubodidhamma/Bhikkhubodidhamma-p.png"
             };
 
             // Create VCF content
