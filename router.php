@@ -58,6 +58,7 @@ $routes = [
     'sapphire1' => 'templates/sapphire1.php',
     'rasikamobile' => 'templates/rasikamobile.php',
     'abdullahali' => 'templates/abdullahali.php',
+    'highhydro' => 'templates/highhydro.php',
 ];
 
 // Handle the request
