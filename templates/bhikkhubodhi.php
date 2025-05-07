@@ -254,7 +254,7 @@
             <br>
             <div class="card-body text-center"
                 style="background-color: #FFFFFF; color: #000000; text-decoration: none; ">
-                <h2 class="card-title" style="font-size: 27px; text-transform: uppercase; font-weight:400">Kammaṭṭhānācariya</h2>
+                <h2 class="card-title" style="font-size: 15px; text-transform: uppercase; font-weight:400">Kammaṭṭhānācariya</h2>
                 <h2 class="card-title" style="font-size: 27px; text-transform: uppercase;">Ven. Kandane Bodhidhamma Thero</h2>
                 <p style="color: #000000; font-size: 15px; text-transform: uppercase;">Chief Incumbent of Niweema soyā Forest Monastery <br>& Gallen Pokuna Forest Monastery <br><span style="font-size:13px">Justice of peace - whole Island (22-03-WP-WI-546)</span></p>
 
@@ -323,7 +323,7 @@
                 <div class="accordion">
                     <div class="accordion">
                     <div class="accordion-item">
-                        <div class="accordion-header" style="justify-content:center">SEE MORE</div>
+                        <div class="accordion-header" style="justify-content:center">ACCOUNT DETAILS</div>
                         <div class="accordion-content">
                             <p style="margin-top:10px">Ven. K. Bodhidhamma Thero<br>8014393910<br>Commercial Bank Thambuththegama Branch</p>
                         </div>
@@ -365,10 +365,9 @@
                 <img src="gallery_img/client_gallerys/bhikkhubodhi/bhikkhubodhi-g1.jpeg" alt="Business man back view">
                 <img src="gallery_img/client_gallerys/bhikkhubodhi/bhikkhubodhi-g2.jpeg" alt="Business man back view">
                 <img src="gallery_img/client_gallerys/bhikkhubodhi/bhikkhubodhi-g3.jpeg" alt="Business man back view">
-                <img src="gallery_img/client_gallerys/bhikkhubodhi/bhikkhubodhi-g4.jpeg" alt="Business man back view">
+                <img src="gallery_img/client_gallerys/bhikkhubodhi/bhikkhubodhi-g4.jpeg" alt="Business man back view">              
                 <img src="gallery_img/client_gallerys/bhikkhubodhi/bhikkhubodhi-g5.jpeg" alt="Business man back view">
                 <img src="gallery_img/client_gallerys/bhikkhubodhi/bhikkhubodhi-g6.jpeg" alt="Business man back view">
-                <img src="gallery_img/client_gallerys/bhikkhubodhi/bhikkhubodhi-g7.jpeg" alt="Business man back view">
             </div>
 
             
