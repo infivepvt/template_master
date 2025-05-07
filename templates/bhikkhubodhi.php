@@ -397,46 +397,41 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        function generateVCF() {
+    async function generateVCF() {
+        try {
             // Updated contact information to match the business card
             const contactData = {
                 firstName: "Kammatthanacariya Ven. Kandane Bodhidhamma Thero ",
                 lastName: "",
                 title: "",
                 phoneWork: "0740855455",
-                phoneMobile: "",
+                phoneMobile: "0776995455",
                 email: "Bhikkhubodidhamma@gmail.com",
                 email2: "Niweemasoya@gmail.com",
-                email3: "",
                 website: "www.niweemasoya.com",
-                website2: "",
-                website3: "",
                 address: "Niweema Soyà Forest Monastery,Katupothana,Thabutta,Galgamuwa",
-                address2: "",
-                about: "",
-                logo: "",
-                profileImage: "profile_img/client_profile/Bhikkhubodidhamma/Bhikkhubodidhamma-p.png"
+                about: "Chief Incumbent of Niweema soyā Forest Monastery & Gallen Pokuna Forest Monastery",
+                profileImage: "profile_img/client_profile/Bhikkhubodidhamma-p.png"
             };
 
-            // Create VCF content
+            // Convert image to base64
+            const base64Image = await getBase64Image(contactData.profileImage);
+
+            // Create VCF content with image
             let vcfContent = `BEGIN:VCARD
 VERSION:3.0
-FN:${contactData.firstName} ${contactData.lastName}
+FN:${contactData.firstName}${contactData.lastName}
 N:${contactData.lastName};${contactData.firstName};;;
 TITLE:${contactData.title}
 TEL;TYPE=WORK,VOICE:${contactData.phoneWork}
 TEL;TYPE=CELL:${contactData.phoneMobile}
 EMAIL:${contactData.email}
 EMAIL:${contactData.email2}
-EMAIL:${contactData.email3}
 URL:${contactData.website}
-URL:${contactData.website2}
-URL:${contactData.website3}
 ADR;TYPE=WORK:;;${contactData.address}
-ADR;TYPE=HOME:;;${contactData.address2}
 NOTE:${contactData.about}
-PHOTO;VALUE=URL:${contactData.profileImage}
-LOGO;VALUE=URL:${contactData.logo}
+PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}
+REV:${new Date().toISOString()}
 END:VCARD`;
 
             // Create download link
@@ -445,15 +440,82 @@ END:VCARD`;
 
             const a = document.createElement('a');
             a.href = url;
-            a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+            a.download = `${contactData.firstName.replace(/\s+/g, '_')}.vcf`;
             document.body.appendChild(a);
             a.click();
 
             // Clean up
             document.body.removeChild(a);
             URL.revokeObjectURL(url);
+        } catch (error) {
+            console.error('Error generating vCard:', error);
+            // Fallback to vCard without image if there's an error
+            generateFallbackVCF();
         }
-    </script>
+    }
+
+    // Function to convert image to base64
+    function getBase64Image(url) {
+        return new Promise((resolve, reject) => {
+            const img = new Image();
+            img.crossOrigin = 'Anonymous';
+            img.onload = function() {
+                const canvas = document.createElement('canvas');
+                canvas.width = this.naturalWidth;
+                canvas.height = this.naturalHeight;
+                const ctx = canvas.getContext('2d');
+                ctx.drawImage(this, 0, 0);
+                const dataURL = canvas.toDataURL('image/jpeg');
+                resolve(dataURL.split(',')[1]); // Remove the data URL prefix
+            };
+            img.onerror = function() {
+                reject(new Error('Could not load image'));
+            };
+            img.src = url;
+        });
+    }
+
+    // Fallback vCard without image
+    function generateFallbackVCF() {
+        const contactData = {
+            firstName: "Kammatthanacariya Ven. Kandane Bodhidhamma Thero ",
+            lastName: "",
+            title: "",
+            phoneWork: "0740855455",
+            phoneMobile: "0776995455",
+            email: "Bhikkhubodidhamma@gmail.com",
+            email2: "Niweemasoya@gmail.com",
+            website: "www.niweemasoya.com",
+            address: "Niweema Soyà Forest Monastery,Katupothana,Thabutta,Galgamuwa",
+            about: "Chief Incumbent of Niweema soyā Forest Monastery & Gallen Pokuna Forest Monastery"
+        };
+
+        let vcfContent = `BEGIN:VCARD
+VERSION:3.0
+FN:${contactData.firstName}${contactData.lastName}
+N:${contactData.lastName};${contactData.firstName};;;
+TITLE:${contactData.title}
+TEL;TYPE=WORK,VOICE:${contactData.phoneWork}
+TEL;TYPE=CELL:${contactData.phoneMobile}
+EMAIL:${contactData.email}
+EMAIL:${contactData.email2}
+URL:${contactData.website}
+ADR;TYPE=WORK:;;${contactData.address}
+NOTE:${contactData.about}
+REV:${new Date().toISOString()}
+END:VCARD`;
+
+        const blob = new Blob([vcfContent], { type: 'text/vcard' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${contactData.firstName.replace(/\s+/g, '_')}.vcf`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    }
+</script>
 </body>
 
 </html>
