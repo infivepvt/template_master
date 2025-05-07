@@ -531,7 +531,7 @@
                             </div>
                         </div>
                         <div class="gallery-container" id="galleryContainer">
-                            <!-- <div class="gallery-item"
+                            <div class="gallery-item"
                                 onclick="openLightbox('gallery_img/client_gallerys/sapphire/sapphire-g2.jpeg', 0)">
                                 <img src="gallery_img/client_gallerys/sapphire/sapphire-g2.jpeg" alt="Gallery Image 2"
                                     class="gallery-image">
@@ -562,7 +562,7 @@
                                 <div class="gallery-overlay">
                                     <i class="fas fa-search-plus"></i>
                                 </div>
-                            </div> -->
+                            </div>
                         </div>
                     </div>
 
