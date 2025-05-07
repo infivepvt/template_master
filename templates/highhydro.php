@@ -568,6 +568,12 @@
                         <i class="fas fa-save me-2"></i>
                         SAVE TO CONTACTS
                     </button>
+                    <br>
+                <footer style="text-align:center; padding:10px; font-size:14px; color:black;">
+                    <a href="https://tapilinq.com/" target="_blank" style="text-decoration:none; color:black;">
+                        Made with ❤️ by Tapilinq | Click now
+                    </a>
+                </footer>
                 </div>
                 <p style="font-weight:600; text-align:center">Where Technology Meets Nature</p>
 

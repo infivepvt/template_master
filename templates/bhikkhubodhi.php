@@ -355,6 +355,13 @@
                     SAVE TO CONTACTS
                 </button>
 
+                <br>
+                <footer style="text-align:center; padding:10px; font-size:14px; color:black;">
+                    <a href="https://tapilinq.com/" target="_blank" style="text-decoration:none; color:black;">
+                        Made with ❤️ by Tapilinq | Click now
+                    </a>
+                </footer>
+
                 <section class="about-section">
             <!-- <h2 style="color: white;">About Me</h2>
             <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
