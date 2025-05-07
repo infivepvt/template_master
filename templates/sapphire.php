@@ -765,18 +765,27 @@
             }
         });
 
-        // Save to contacts functionality
-        document.querySelector('.custom-save-button').addEventListener('click', function () {
-            // Create vCard content
+            // Save to contacts functionality with profile image
+    document.querySelector('.custom-save-button').addEventListener('click', async function () {
+        try {
+            // Get the profile image URL
+            const profileImageUrl = 'profile_img/client_profile/default-p.jpg';
+            
+            // Convert image to base64
+            const base64Image = await getBase64Image(profileImageUrl);
+            
+            // Create vCard content with image
             const vcard = `BEGIN:VCARD
 VERSION:3.0
 FN:Mufla Bhanu
-TITLE:Owner
+TITLE:Director finance and Sales
 TEL;TYPE=CELL:+94770030431
 TEL;TYPE=WORK,FAX:+94112767333
 EMAIL;TYPE=WORK:info@sapphirecreation.com
+EMAIL;TYPE=PERSONAL:banuaffinitygems@gmail.com
 URL:https://www.sapphirecreation.com
 ADR;TYPE=WORK:;;Sapphire Creation;;Colombo;Western;Sri Lanka
+PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}
 REV:${new Date().toISOString()}
 END:VCARD`;
 
@@ -794,7 +803,59 @@ END:VCARD`;
             // Clean up
             document.body.removeChild(link);
             URL.revokeObjectURL(url);
+        } catch (error) {
+            console.error('Error generating vCard:', error);
+            // Fallback to vCard without image if there's an error
+            generateFallbackVCard();
+        }
+    });
+
+    // Function to convert image to base64
+    function getBase64Image(url) {
+        return new Promise((resolve, reject) => {
+            const img = new Image();
+            img.crossOrigin = 'Anonymous';
+            img.onload = function() {
+                const canvas = document.createElement('canvas');
+                canvas.width = this.naturalWidth;
+                canvas.height = this.naturalHeight;
+                const ctx = canvas.getContext('2d');
+                ctx.drawImage(this, 0, 0);
+                const dataURL = canvas.toDataURL('image/jpeg');
+                resolve(dataURL.split(',')[1]); // Remove the data URL prefix
+            };
+            img.onerror = function() {
+                reject(new Error('Could not load image'));
+            };
+            img.src = url;
         });
+    }
+
+    // Fallback vCard without image
+    function generateFallbackVCard() {
+        const vcard = `BEGIN:VCARD
+VERSION:3.0
+FN:Mufla Bhanu
+TITLE:Director finance and Sales
+TEL;TYPE=CELL:+94770030431
+TEL;TYPE=WORK,FAX:+94112767333
+EMAIL;TYPE=WORK:info@sapphirecreation.com
+EMAIL;TYPE=PERSONAL:banuaffinitygems@gmail.com
+URL:https://www.sapphirecreation.com
+ADR;TYPE=WORK:;;Sapphire Creation;;Colombo;Western;Sri Lanka
+REV:${new Date().toISOString()}
+END:VCARD`;
+
+        const blob = new Blob([vcard], { type: 'text/vcard' });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = 'Mufla Bhanu.vcf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url);
+    }
     </script>
 </body>
 
