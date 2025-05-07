@@ -59,7 +59,7 @@ $routes = [
     'rasikamobile' => 'templates/rasikamobile.php',
     'abdullahali' => 'templates/abdullahali.php',
     'highhydro' => 'templates/highhydro.php',
-    'icmpd.php' => 'templates/icmpd.php.php',
+    'icmpd' => 'templates/icmpd.php',
 ];
 
 // Handle the request
