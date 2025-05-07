@@ -325,6 +325,11 @@
                 SAVE TO CONTACTS
             </button>
             <br>
+            <footer style="text-align:center; padding:10px; font-size:14px; color:white;">
+                <a href="https://tapilinq.lk" target="_blank" style="text-decoration:none; color:white;">
+                    Made with ❤️ by Tapilinq | Click now
+                </a>
+            </footer>
         </div>
     </div>
     </div>
