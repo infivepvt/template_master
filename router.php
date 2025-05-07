@@ -28,6 +28,7 @@ $routes = [
     'gallery' => 'template_gallery.php',
     'shop' => 'shop_more.php',
     'maintenance' => 'maintenance.php',
+    'abdullahali.php' => 'abdullahali.php',
     
     // Template routes
     'template1' => 'main_templates/template1.php',
