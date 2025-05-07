@@ -168,21 +168,22 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            border: none;
+            border: 2px solid #ccc;
+            /* Added border */
             cursor: pointer;
         }
 
         .contact-icon-label {
             margin-top: 5px;
             font-size: 0.8rem;
-            color: #FFFFFF;
+            color: rgb(0, 0, 0);
             text-align: center;
             width: 90px;
         }
 
         .contact-icon {
             font-size: 1.5rem;
-            color: rgb(0, 0, 0);
+            color: rgb(238, 185, 78);
         }
 
         /* Enhanced Gallery Styles */
@@ -420,13 +421,13 @@
                 width: 100%;
                 height: 100%;
             }
-            
+
             .lightbox-nav {
                 top: auto;
                 bottom: 20px;
                 transform: none;
             }
-            
+
             .lightbox-nav button {
                 position: fixed;
                 bottom: 20px;
@@ -434,15 +435,15 @@
                 height: 40px;
                 font-size: 24px;
             }
-            
+
             .lightbox-nav button:first-child {
                 left: 20px;
             }
-            
+
             .lightbox-nav button:last-child {
                 right: 20px;
             }
-            
+
             .lightbox-close {
                 top: 10px;
                 right: 10px;
@@ -454,18 +455,19 @@
 
 <body>
     <div class="d-flex justify-content-center mt-5">
-        <div class="card custom-card15 shadow-lg" style="background-color: #000000;">
+        <div class="card custom-card15 shadow-lg" style="background-color:rgb(255, 255, 255);">
             <div class="card-header custom-header text-center"
                 style="background-image: url('banner_img/client_banner/sapphire-b.png'); height: 200px; opacity: 100%;">
                 <div class="profile-picture">
-                    <img src="profile_img/client_profile/default-p.jpg" alt="Linkin Park" class="rounded-circle">
+                    <img src="profile_img/client_profile/sapphire-p1.png" alt="Linkin Park" class="rounded-circle">
                 </div>
             </div>
             <br>
             <br>
-            <div class="card-body text-center" style="background-color: #000000; color: #000000; margin-top: 15px;">
-                <h2 style="font-size: 30px; color: white;">Mufla Bhanu</h2>
-                <p style="color:rgb(255, 255, 255); font-size: 20px;">Director finance and Sales</p>
+            <div class="card-body text-center"
+                style="background-color:rgb(255, 255, 255); color:rgb(255, 255, 255); margin-top: 15px;">
+                <h2 style="font-size: 30px; color: black;">Mufla Bhanu</h2>
+                <p style="color:rgb(0, 0, 0); font-size: 20px;">Director finance and Sales</p>
 
                 <div>
                     <p></p>
@@ -475,7 +477,7 @@
                 <br>
 
                 <div class="profile-header13"
-                    style="background-color:rgb(0, 0, 0); border-radius: 30px; max-width: 95%; margin: 0 auto; padding: 20px; margin-top: -50px;">
+                    style="background-color:rgb(255, 255, 255); border-radius: 30px; max-width: 95%; margin: 0 auto; padding: 20px; margin-top: -50px;">
                     <div class="profile-contact-icons13">
                         <!-- Phone Work Button with Label -->
                         <div class="contact-icon-container">
@@ -497,7 +499,7 @@
                         <div class="contact-icon-container">
                             <button type="button" class="contact-icon-button"
                                 onclick="window.open('https://wa.me/94777554542', '_blank')">
-                                <i class="fab fa-whatsapp contact-icon" style="color:rgb(0, 0, 0);"></i>
+                                <i class="fab fa-whatsapp contact-icon" style="color:rgb(238, 185, 78);"></i>
                             </button>
                             <p class="contact-icon-label">WhatsApp</p>
                         </div>
@@ -538,7 +540,7 @@
                     </div>
 
                     <!-- Enhanced Gallery Section -->
-                    <div class="gallery-section">
+                    <!-- <div class="gallery-section">
                         <div class="gallery-header" onclick="toggleGallery()">
                             <div class="gallery-title">Gallery</div>
                             <div class="gallery-toggle" id="galleryToggle">
@@ -546,7 +548,7 @@
                             </div>
                         </div>
                         <div class="gallery-container" id="galleryContainer">
-                            <!-- <div class="gallery-item"
+                            <div class="gallery-item"
                                 onclick="openLightbox('gallery_img/client_gallerys/sapphire/sapphire-g2.jpeg', 0)">
                                 <img src="gallery_img/client_gallerys/sapphire/sapphire-g2.jpeg" alt="Gallery Image 2"
                                     class="gallery-image">
@@ -577,16 +579,16 @@
                                 <div class="gallery-overlay">
                                     <i class="fas fa-search-plus"></i>
                                 </div>
-                            </div> -->
+                            </div>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="featured-image-container"
                         style="margin: 20px auto; max-width: 50%; text-align: center;">
                         <img src="gallery_img/client_gallerys/sapphire1/sapphire-g1.jpeg" alt="Business showcase" style="width: 100%; 
                 border-radius: 15px; 
                 box-shadow: 0 4px 15px rgba(0,0,0,0.2);
                 border: 3px solid #EEF1FF;">
-                        <p style="color: white; margin-top: 10px; font-size: 14px;">Brand line of Affinity Gems</p>
+                        <p style="color: black; margin-top: 10px; font-size: 14px;">Brand line of Affinity Gems</p>
                     </div>
                     <!-- Enhanced Lightbox -->
                     <div class="lightbox" id="lightbox">
@@ -601,7 +603,7 @@
                         </div>
                     </div>
 
-                    <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:15px; color:white;">CONNECT
+                    <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:15px; color:black;">CONNECT
                         WITH SOCIAL MEDIA
                     </p>
                     <div class="d-flex flex-wrap justify-content-center">
@@ -629,7 +631,7 @@
 
                 <br>
                 <footer style="text-align:center; padding:10px; font-size:14px; color:white;">
-                    <a href="https://tapilinq.lk" target="_blank" style="text-decoration:none; color:white;">
+                    <a href="https://tapilinq.lk" target="_blank" style="text-decoration:none; color:black;">
                         Made with ❤️ by Tapilinq | Click now
                     </a>
                 </footer>
@@ -673,15 +675,15 @@
             const lightboxCounter = document.getElementById('lightboxCounter');
 
             currentImageIndex = index;
-            
+
             // Create a new image to handle loading
             const img = new Image();
-            img.onload = function() {
+            img.onload = function () {
                 lightboxImage.src = imageSrc;
                 lightboxCounter.textContent = `${currentImageIndex + 1} / ${galleryImages.length}`;
                 lightbox.style.display = 'flex';
                 document.body.style.overflow = 'hidden';
-                
+
                 // Add class to handle mobile viewport
                 if (window.innerWidth <= 768) {
                     lightboxImage.classList.add('mobile-view');
@@ -689,7 +691,7 @@
                     lightboxImage.classList.remove('mobile-view');
                 }
             };
-            img.onerror = function() {
+            img.onerror = function () {
                 console.error('Failed to load image:', imageSrc);
             };
             img.src = imageSrc;
@@ -715,10 +717,10 @@
 
             const lightboxImage = document.getElementById('lightbox-image');
             const img = new Image();
-            img.onload = function() {
+            img.onload = function () {
                 lightboxImage.src = galleryImages[currentImageIndex];
                 document.getElementById('lightboxCounter').textContent = `${currentImageIndex + 1} / ${galleryImages.length}`;
-                
+
                 // Update mobile view class
                 if (window.innerWidth <= 768) {
                     lightboxImage.classList.add('mobile-view');
@@ -726,7 +728,7 @@
                     lightboxImage.classList.remove('mobile-view');
                 }
             };
-            img.onerror = function() {
+            img.onerror = function () {
                 console.error('Failed to load image:', galleryImages[currentImageIndex]);
             };
             img.src = galleryImages[currentImageIndex];
@@ -754,7 +756,7 @@
         });
 
         // Handle window resize
-        window.addEventListener('resize', function() {
+        window.addEventListener('resize', function () {
             const lightboxImage = document.getElementById('lightbox-image');
             if (lightboxImage && document.getElementById('lightbox').style.display === 'flex') {
                 if (window.innerWidth <= 768) {
@@ -765,27 +767,18 @@
             }
         });
 
-            // Save to contacts functionality with profile image
-    document.querySelector('.custom-save-button').addEventListener('click', async function () {
-        try {
-            // Get the profile image URL
-            const profileImageUrl = 'profile_img/client_profile/default-p.jpg';
-            
-            // Convert image to base64
-            const base64Image = await getBase64Image(profileImageUrl);
-            
-            // Create vCard content with image
+        // Save to contacts functionality
+        document.querySelector('.custom-save-button').addEventListener('click', function () {
+            // Create vCard content
             const vcard = `BEGIN:VCARD
 VERSION:3.0
 FN:Mufla Bhanu
-TITLE:Director finance and Sales
+TITLE:Owner
 TEL;TYPE=CELL:+94770030431
 TEL;TYPE=WORK,FAX:+94112767333
 EMAIL;TYPE=WORK:info@sapphirecreation.com
-EMAIL;TYPE=PERSONAL:banuaffinitygems@gmail.com
 URL:https://www.sapphirecreation.com
 ADR;TYPE=WORK:;;Sapphire Creation;;Colombo;Western;Sri Lanka
-PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}
 REV:${new Date().toISOString()}
 END:VCARD`;
 
@@ -803,59 +796,7 @@ END:VCARD`;
             // Clean up
             document.body.removeChild(link);
             URL.revokeObjectURL(url);
-        } catch (error) {
-            console.error('Error generating vCard:', error);
-            // Fallback to vCard without image if there's an error
-            generateFallbackVCard();
-        }
-    });
-
-    // Function to convert image to base64
-    function getBase64Image(url) {
-        return new Promise((resolve, reject) => {
-            const img = new Image();
-            img.crossOrigin = 'Anonymous';
-            img.onload = function() {
-                const canvas = document.createElement('canvas');
-                canvas.width = this.naturalWidth;
-                canvas.height = this.naturalHeight;
-                const ctx = canvas.getContext('2d');
-                ctx.drawImage(this, 0, 0);
-                const dataURL = canvas.toDataURL('image/jpeg');
-                resolve(dataURL.split(',')[1]); // Remove the data URL prefix
-            };
-            img.onerror = function() {
-                reject(new Error('Could not load image'));
-            };
-            img.src = url;
         });
-    }
-
-    // Fallback vCard without image
-    function generateFallbackVCard() {
-        const vcard = `BEGIN:VCARD
-VERSION:3.0
-FN:Mufla Bhanu
-TITLE:Director finance and Sales
-TEL;TYPE=CELL:+94770030431
-TEL;TYPE=WORK,FAX:+94112767333
-EMAIL;TYPE=WORK:info@sapphirecreation.com
-EMAIL;TYPE=PERSONAL:banuaffinitygems@gmail.com
-URL:https://www.sapphirecreation.com
-ADR;TYPE=WORK:;;Sapphire Creation;;Colombo;Western;Sri Lanka
-REV:${new Date().toISOString()}
-END:VCARD`;
-
-        const blob = new Blob([vcard], { type: 'text/vcard' });
-        const url = URL.createObjectURL(blob);
-        const link = document.createElement('a');
-        link.href = url;
-        link.download = 'Mufla Bhanu.vcf';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-        URL.revokeObjectURL(url);
-    }
     </script>
 </body>
 
