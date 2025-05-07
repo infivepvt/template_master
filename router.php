@@ -54,6 +54,7 @@ $routes = [
     'infinity' => 'templates/infinity.php',
     'bhikkhubodhi' => 'templates/bhikkhubodhi.php',
     'sapphire' => 'templates/sapphire.php',
+    'rasikamobile' => 'templates/rasikamobile.php',
 ];
 
 // Handle the request
