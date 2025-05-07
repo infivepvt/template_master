@@ -28,7 +28,7 @@ $routes = [
     'gallery' => 'template_gallery.php',
     'shop' => 'shop_more.php',
     'maintenance' => 'maintenance.php',
-    'abdullahali.php' => 'abdullahali.php',
+    
     
     // Template routes
     'template1' => 'main_templates/template1.php',
@@ -57,6 +57,7 @@ $routes = [
     'sapphire' => 'templates/sapphire.php',
     'sapphire1' => 'templates/sapphire1.php',
     'rasikamobile' => 'templates/rasikamobile.php',
+    'abdullahali' => 'templates/abdullahali.php',
 ];
 
 // Handle the request
