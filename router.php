@@ -53,6 +53,7 @@ $routes = [
     'rovenrich' => 'templates/rovenrich.php',
     'infinity' => 'templates/infinity.php',
     'bhikkhubodhi' => 'templates/bhikkhubodhi.php',
+    'sapphire' => 'templates/sapphire.php',
 ];
 
 // Handle the request
