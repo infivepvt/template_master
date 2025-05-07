@@ -39,6 +39,7 @@
             top: 95%;
             left: 50%;
             transform: translate(-50%, -50%);
+            margin-top: 20px;
         }
 
         .profile-picture img {
@@ -419,13 +420,13 @@
                 width: 100%;
                 height: 100%;
             }
-            
+
             .lightbox-nav {
                 top: auto;
                 bottom: 20px;
                 transform: none;
             }
-            
+
             .lightbox-nav button {
                 position: fixed;
                 bottom: 20px;
@@ -433,15 +434,15 @@
                 height: 40px;
                 font-size: 24px;
             }
-            
+
             .lightbox-nav button:first-child {
                 left: 20px;
             }
-            
+
             .lightbox-nav button:last-child {
                 right: 20px;
             }
-            
+
             .lightbox-close {
                 top: 10px;
                 right: 10px;
@@ -455,17 +456,16 @@
     <div class="d-flex justify-content-center mt-5">
         <div class="card custom-card15 shadow-lg" style="background-color: #000000;">
             <div class="card-header custom-header text-center"
-                style="background-image: url('banner_img/client_banner/sapphire-b.jpg'); height: 200px; opacity: 100%;">
+                style="background-image: url('banner_img/client_banner/sapphire-b.png'); height: 200px; opacity: 100%;">
                 <div class="profile-picture">
                     <img src="profile_img/client_profile/sapphire-p.png" alt="Linkin Park" class="rounded-circle">
                 </div>
             </div>
             <br>
             <br>
-            <div class="card-body text-center" style="background-color: #000000; color: #000000;">
-                <h2 style="font-size: 30px; color: white;">Mufla Bhanu</h2>
-                <p style="color:rgb(255, 255, 255); font-size: 20px;">Owner</p>
-
+            <div class="card-body text-center" style="background-color: #000000; color: #000000; margin-top: 15px;">
+                <h2 style="font-size: 30px; color: white;">Murshid Munzeer</h2>
+                <p style="color:rgb(255, 255, 255); font-size: 20px;">Director | CEO</p>
                 <div>
                     <p></p>
                 </div>
@@ -479,7 +479,7 @@
                         <!-- Phone Work Button with Label -->
                         <div class="contact-icon-container">
                             <button type="button" class="contact-icon-button"
-                                onclick="window.open('tel:+94770030431', '_self')">
+                                onclick="window.open('tel:+94777554542', '_self')">
                                 <i class="fas fa-phone contact-icon rotated-90"></i>
                             </button>
                             <p class="contact-icon-label">Mobile Number</p>
@@ -494,6 +494,13 @@
                             <p class="contact-icon-label">Office Number</p>
                         </div>
 
+                        <div class="contact-icon-container">
+                            <button type="button" class="contact-icon-button"
+                                onclick="window.open('https://wa.me/94777554542', '_blank')">
+                                <i class="fab fa-whatsapp contact-icon" style="color:rgb(0, 0, 0);"></i>
+                            </button>
+                            <p class="contact-icon-label">WhatsApp</p>
+                        </div>
 
                         <!-- Email Button with Label -->
                         <div class="contact-icon-container">
@@ -501,7 +508,16 @@
                                 onclick="window.open('mailto:info@sapphirecreation.com', '_self')">
                                 <i class="fas fa-envelope contact-icon"></i>
                             </button>
-                            <p class="contact-icon-label">Email</p>
+                            <p class="contact-icon-label">Email 1</p>
+                        </div>
+
+                        <!-- Email Button with Label -->
+                        <div class="contact-icon-container">
+                            <button type="button" class="contact-icon-button"
+                                onclick="window.open('mailto:murshidmunzeer@gmail.com', '_self')">
+                                <i class="fas fa-envelope contact-icon"></i>
+                            </button>
+                            <p class="contact-icon-label">Email 2</p>
                         </div>
 
                         <!-- Website Button with Label -->
@@ -515,10 +531,10 @@
                         <!-- Address Button with Label -->
                         <div class="contact-icon-container">
                             <button type="button" class="contact-icon-button"
-                                onclick="window.open('https://maps.app.goo.gl/HpUWHaeEDFcL2BcD9', '_blank')">
+                                onclick="window.open('https://maps.app.goo.gl/R7jjb1DmTPrnEBBw6?g_st=iw', '_blank')">
                                 <i class="fas fa-map-marker-alt contact-icon"></i>
                             </button>
-                            <p class="contact-icon-label">Address</p>
+                            <p class="contact-icon-label">Location</p>
                         </div>
                     </div>
 
@@ -532,32 +548,32 @@
                         </div>
                         <div class="gallery-container" id="galleryContainer">
                             <div class="gallery-item"
-                                onclick="openLightbox('gallery_img/client_gallerys/sapphire/sapphire-g2.jpeg', 0)">
-                                <img src="gallery_img/client_gallerys/sapphire/sapphire-g2.jpeg" alt="Gallery Image 2"
+                                onclick="openLightbox('gallery_img/client_gallerys/sapphire1/sapphire-g2.jpeg', 0)">
+                                <img src="gallery_img/client_gallerys/sapphire1/sapphire-g2.jpeg" alt="Gallery Image 2"
                                     class="gallery-image">
                                 <div class="gallery-overlay">
                                     <i class="fas fa-search-plus"></i>
                                 </div>
                             </div>
                             <div class="gallery-item"
-                                onclick="openLightbox('gallery_img/client_gallerys/sapphire/sapphire-g3.jpeg', 1)">
-                                <img src="gallery_img/client_gallerys/sapphire/sapphire-g3.jpeg" alt="Gallery Image 3"
+                                onclick="openLightbox('gallery_img/client_gallerys/sapphire1/sapphire-g3.jpeg', 1)">
+                                <img src="gallery_img/client_gallerys/sapphire1/sapphire-g3.jpeg" alt="Gallery Image 3"
                                     class="gallery-image">
                                 <div class="gallery-overlay">
                                     <i class="fas fa-search-plus"></i>
                                 </div>
                             </div>
                             <div class="gallery-item"
-                                onclick="openLightbox('gallery_img/client_gallerys/sapphire/sapphire-g4.jpeg', 2)">
-                                <img src="gallery_img/client_gallerys/sapphire/sapphire-g4.jpeg" alt="Gallery Image 4"
+                                onclick="openLightbox('gallery_img/client_gallerys/sapphire1/sapphire-g4.jpeg', 2)">
+                                <img src="gallery_img/client_gallerys/sapphire1/sapphire-g4.jpeg" alt="Gallery Image 4"
                                     class="gallery-image">
                                 <div class="gallery-overlay">
                                     <i class="fas fa-search-plus"></i>
                                 </div>
                             </div>
                             <div class="gallery-item"
-                                onclick="openLightbox('gallery_img/client_gallerys/sapphire/sapphire-g5.jpeg', 3)">
-                                <img src="gallery_img/client_gallerys/sapphire/sapphire-g5.jpeg" alt="Gallery Image 5"
+                                onclick="openLightbox('gallery_img/client_gallerys/sapphire1/sapphire-g5.jpeg', 3)">
+                                <img src="gallery_img/client_gallerys/sapphire1/sapphire-g5.jpeg" alt="Gallery Image 5"
                                     class="gallery-image">
                                 <div class="gallery-overlay">
                                     <i class="fas fa-search-plus"></i>
@@ -565,7 +581,14 @@
                             </div>
                         </div>
                     </div>
-
+                    <div class="featured-image-container"
+                        style="margin: 20px auto; max-width: 50%; text-align: center;">
+                        <img src="gallery_img/client_gallerys/sapphire1/sapphire-g1.jpeg" alt="Business showcase" style="width: 100%; 
+                border-radius: 15px; 
+                box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+                border: 3px solid #EEF1FF;">
+                        <p style="color: white; margin-top: 10px; font-size: 14px;">Brand line of Affinity Gems</p>
+                    </div>
                     <!-- Enhanced Lightbox -->
                     <div class="lightbox" id="lightbox">
                         <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
@@ -619,10 +642,10 @@
     <script>
         // Gallery functionality
         const galleryImages = [
-            'gallery_img/client_gallerys/sapphire/sapphire-g2.jpeg',
-            'gallery_img/client_gallerys/sapphire/sapphire-g3.jpeg',
-            'gallery_img/client_gallerys/sapphire/sapphire-g4.jpeg',
-            'gallery_img/client_gallerys/sapphire/sapphire-g5.jpeg'
+            'gallery_img/client_gallerys/sapphire1/sapphire-g2.jpeg',
+            'gallery_img/client_gallerys/sapphire1/sapphire-g3.jpeg',
+            'gallery_img/client_gallerys/sapphire1/sapphire-g4.jpeg',
+            'gallery_img/client_gallerys/sapphire1/sapphire-g5.jpeg'
         ];
 
         let currentImageIndex = 0;
@@ -651,15 +674,15 @@
             const lightboxCounter = document.getElementById('lightboxCounter');
 
             currentImageIndex = index;
-            
+
             // Create a new image to handle loading
             const img = new Image();
-            img.onload = function() {
+            img.onload = function () {
                 lightboxImage.src = imageSrc;
                 lightboxCounter.textContent = `${currentImageIndex + 1} / ${galleryImages.length}`;
                 lightbox.style.display = 'flex';
                 document.body.style.overflow = 'hidden';
-                
+
                 // Add class to handle mobile viewport
                 if (window.innerWidth <= 768) {
                     lightboxImage.classList.add('mobile-view');
@@ -667,7 +690,7 @@
                     lightboxImage.classList.remove('mobile-view');
                 }
             };
-            img.onerror = function() {
+            img.onerror = function () {
                 console.error('Failed to load image:', imageSrc);
             };
             img.src = imageSrc;
@@ -693,10 +716,10 @@
 
             const lightboxImage = document.getElementById('lightbox-image');
             const img = new Image();
-            img.onload = function() {
+            img.onload = function () {
                 lightboxImage.src = galleryImages[currentImageIndex];
                 document.getElementById('lightboxCounter').textContent = `${currentImageIndex + 1} / ${galleryImages.length}`;
-                
+
                 // Update mobile view class
                 if (window.innerWidth <= 768) {
                     lightboxImage.classList.add('mobile-view');
@@ -704,7 +727,7 @@
                     lightboxImage.classList.remove('mobile-view');
                 }
             };
-            img.onerror = function() {
+            img.onerror = function () {
                 console.error('Failed to load image:', galleryImages[currentImageIndex]);
             };
             img.src = galleryImages[currentImageIndex];
@@ -732,7 +755,7 @@
         });
 
         // Handle window resize
-        window.addEventListener('resize', function() {
+        window.addEventListener('resize', function () {
             const lightboxImage = document.getElementById('lightbox-image');
             if (lightboxImage && document.getElementById('lightbox').style.display === 'flex') {
                 if (window.innerWidth <= 768) {
@@ -743,18 +766,27 @@
             }
         });
 
-        // Save to contacts functionality
-        document.querySelector('.custom-save-button').addEventListener('click', function () {
-            // Create vCard content
+         // Save to contacts functionality with profile image
+    document.querySelector('.custom-save-button').addEventListener('click', async function () {
+        try {
+            // Get the profile image URL
+            const profileImageUrl = 'profile_img/client_profile/sapphire-p.png';
+            
+            // Convert image to base64
+            const base64Image = await getBase64Image(profileImageUrl);
+            
+            // Create vCard content with image
             const vcard = `BEGIN:VCARD
 VERSION:3.0
-FN:Mufla Bhanu
-TITLE:Owner
-TEL;TYPE=CELL:+94770030431
+FN:Murshid Munzeer
+TITLE:Director | CEO
+TEL;TYPE=CELL:+94777554542
 TEL;TYPE=WORK,FAX:+94112767333
 EMAIL;TYPE=WORK:info@sapphirecreation.com
+EMAIL;TYPE=PERSONAL:murshidmunzeer@gmail.com
 URL:https://www.sapphirecreation.com
 ADR;TYPE=WORK:;;Sapphire Creation;;Colombo;Western;Sri Lanka
+PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}
 REV:${new Date().toISOString()}
 END:VCARD`;
 
@@ -765,14 +797,66 @@ END:VCARD`;
             // Create download link
             const link = document.createElement('a');
             link.href = url;
-            link.download = 'Mufla Bhanu.vcf';
+            link.download = 'Murshid Munzeer.vcf';
             document.body.appendChild(link);
             link.click();
 
             // Clean up
             document.body.removeChild(link);
             URL.revokeObjectURL(url);
+        } catch (error) {
+            console.error('Error generating vCard:', error);
+            // Fallback to vCard without image if there's an error
+            generateFallbackVCard();
+        }
+    });
+
+    // Function to convert image to base64
+    function getBase64Image(url) {
+        return new Promise((resolve, reject) => {
+            const img = new Image();
+            img.crossOrigin = 'Anonymous';
+            img.onload = function() {
+                const canvas = document.createElement('canvas');
+                canvas.width = this.naturalWidth;
+                canvas.height = this.naturalHeight;
+                const ctx = canvas.getContext('2d');
+                ctx.drawImage(this, 0, 0);
+                const dataURL = canvas.toDataURL('image/jpeg');
+                resolve(dataURL.split(',')[1]); // Remove the data URL prefix
+            };
+            img.onerror = function() {
+                reject(new Error('Could not load image'));
+            };
+            img.src = url;
         });
+    }
+
+    // Fallback vCard without image
+    function generateFallbackVCard() {
+        const vcard = `BEGIN:VCARD
+VERSION:3.0
+FN:Murshid Munzeer
+TITLE:Director | CEO
+TEL;TYPE=CELL:+94777554542
+TEL;TYPE=WORK,FAX:+94112767333
+EMAIL;TYPE=WORK:info@sapphirecreation.com
+EMAIL;TYPE=PERSONAL:murshidmunzeer@gmail.com
+URL:https://www.sapphirecreation.com
+ADR;TYPE=WORK:;;Sapphire Creation;;Colombo;Western;Sri Lanka
+REV:${new Date().toISOString()}
+END:VCARD`;
+
+        const blob = new Blob([vcard], { type: 'text/vcard' });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = 'Murshid Munzeer.vcf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url);
+    }
     </script>
 </body>
 
