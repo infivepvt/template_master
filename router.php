@@ -61,6 +61,7 @@ $routes = [
     'highhydro' => 'templates/highhydro.php',
     'icmpd' => 'templates/icmpd.php',
     'luzara' => 'templates/luzara.php',
+    'abeywickrama' => 'templates/abeywickrama.php',
 ];
 
 // Handle the request
