@@ -674,7 +674,7 @@
                     </a>
                     <br>
                     <br>
-                    <button class="btn w-100 custom-save-button">
+                    <button class="btn w-100 custom-save-button" onclick="generateVCF()">
                         <i class="fas fa-save me-2"></i>
                         SAVE TO CONTACTS
                     </button>
@@ -819,42 +819,77 @@
             }
         });
 
-        // Save to contacts functionality
-        document.querySelector('.custom-save-button').addEventListener('click', function () {
-            // Create vCard content
-            const vcard = `BEGIN:VCARD
-VERSION:3.0
-FN:Mufla Bhanu
-TITLE:Owner
-TEL;TYPE=CELL:+94770030431
-TEL;TYPE=WORK,FAX:+94112767333
-EMAIL;TYPE=WORK:info@sapphirecreation.com
-URL:https://www.sapphirecreation.com
-ADR;TYPE=WORK:;;Sapphire Creation;;Colombo;Western;Sri Lanka
-REV:${new Date().toISOString()}
-END:VCARD`;
-
-            // Create Blob with vCard content
-            const blob = new Blob([vcard], { type: 'text/vcard' });
-            const url = URL.createObjectURL(blob);
-
-            // Create download link
-            const link = document.createElement('a');
-            link.href = url;
-            link.download = 'Mufla Bhanu.vcf';
-            document.body.appendChild(link);
-            link.click();
-
-            // Clean up
-            document.body.removeChild(link);
-            URL.revokeObjectURL(url);
-        });
-
         function openQRModal() {
             document.getElementById("qrModal").style.display = "block";
         }
+        
         function closeQRModal() {
             document.getElementById("qrModal").style.display = "none";
+        }
+
+        // Function to convert image to base64
+        function getBase64Image(imgUrl, callback) {
+            const img = new Image();
+            img.crossOrigin = 'Anonymous'; // Handle CORS if needed
+            img.onload = function() {
+                const canvas = document.createElement('canvas');
+                canvas.width = img.width;
+                canvas.height = img.height;
+                const ctx = canvas.getContext('2d');
+                ctx.drawImage(img, 0, 0);
+                const dataURL = canvas.toDataURL('image/jpeg');
+                callback(dataURL);
+            };
+            img.onerror = function() {
+                console.error('Failed to load image for VCF:', imgUrl);
+                callback(null);
+            };
+            img.src = imgUrl;
+        }
+
+        // Enhanced VCF generation function with profile picture
+        function generateVCF() {
+            // Get the profile picture URL
+            const profilePicUrl = 'profile_img/client_profile/sapphire-p1.png';
+            
+            // Convert image to base64 for VCF
+            getBase64Image(profilePicUrl, function(base64Image) {
+                // Create vCard content
+                let vcard = `BEGIN:VCARD
+VERSION:3.0
+FN:Mufla Bhanu
+TITLE:Director | Finance & Sales
+TEL;TYPE=CELL:+94770030431
+TEL;TYPE=WORK,FAX:+94112767333
+EMAIL;TYPE=WORK:info@sapphirecreation.com
+EMAIL;TYPE=WORK:banuaffinitygems@gmail.com
+URL:https://www.sapphirecreation.com
+ADR;TYPE=WORK:;;44/6 Jayasamagi Mawatha, Kalubowila, Dehiwala 10350, Srilanka;;Colombo;Western;Sri Lanka
+REV:${new Date().toISOString()}`;
+
+                // Add photo if available
+                if (base64Image) {
+                    vcard += `\nPHOTO;ENCODING=b;TYPE=JPEG:${base64Image.split(',')[1]}`;
+                }
+
+                // Complete vCard
+                vcard += '\nEND:VCARD';
+
+                // Create Blob with vCard content
+                const blob = new Blob([vcard], { type: 'text/vcard' });
+                const url = URL.createObjectURL(blob);
+
+                // Create download link
+                const link = document.createElement('a');
+                link.href = url;
+                link.download = 'Mufla Bhanu.vcf';
+                document.body.appendChild(link);
+                link.click();
+
+                // Clean up
+                document.body.removeChild(link);
+                URL.revokeObjectURL(url);
+            });
         }
     </script>
 </body>
