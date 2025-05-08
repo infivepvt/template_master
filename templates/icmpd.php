@@ -234,7 +234,7 @@
                         <img src="Images/Social_Media_Icon/linkedin.png" alt="" style="width: 50px; height: 50px;">
                     </a>
                     <a href="https://x.com/ICMPD" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/x-2.png" alt="" style="width: 50px; height: 50px;">
+                        <img src="Images/Social_Media_Icon/x-2.jpeg" alt="" style="width: 50px; height: 50px;">
                     </a>
                 </div>
 
