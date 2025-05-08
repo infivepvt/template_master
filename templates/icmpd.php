@@ -152,8 +152,6 @@
             background-color: #373938;
         }
     </style>
-
-
 </head>
 
 <body>
@@ -238,21 +236,6 @@
                     </a>
                 </div>
 
-                <!-- <div class="d-flex flex-wrap justify-content-center">
-                    <a href="https://x.com/ICMPD" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/linkedin.png" alt="" style="width: 50px; height: 50px;">
-                    </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/twitter.png" alt="" style="width: 50px; height: 50px;">
-                    </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/social.png" alt="" style="width: 50px; height: 50px;">
-                    </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/pinterest.png" alt="" style="width: 50px; height: 50px;">
-                    </a>
-                </div> -->
-
                 <br>
                 <button class="btn w-100 custom-save-button" onclick="generateVCF()"
                     style="font-family: 'Montserrat', sans-serif; font-size:19px; border: 2px solid orange;">
@@ -267,24 +250,28 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        function generateVCF() {
-            // Get the profile image URL
-            const profileImage = document.getElementById('profileImage').src;
-            
-            // Contact information
-            const contactData = {
-                firstName: "H G Sarath",
-                lastName: "Pallegama",
-                title: "Counsellor",
-                organization: "Migrant Information Centre- Sri Lanka",
-                phoneWork: "0761231212",
-                email: "Sarath.Pallegama@mrc-srilanka.org",
-                website: "https://www.icmpd.org/our-work/projects/migrant-resource-centres-mrcs",
-                profileImage: profileImage
-            };
+        async function generateVCF() {
+            try {
+                // Get the profile image URL
+                const profileImageUrl = document.getElementById('profileImage').src;
+                
+                // Fetch the image and convert to Base64
+                const base64Image = await fetchImageAsBase64(profileImageUrl);
+                
+                // Contact information
+                const contactData = {
+                    firstName: "H G Sarath",
+                    lastName: "Pallegama",
+                    title: "Counsellor",
+                    organization: "Migrant Information Centre- Sri Lanka",
+                    phoneWork: "0773599757",
+                    email: "Sarath.Pallegama@mrc-srilanka.org",
+                    website: "https://www.icmpd.org/our-work/projects/migrant-resource-centres-mrcs",
+                    address: "No 12, Sri Lanka Bureau of Foreign Employment, New Pioneer Road, Batticaloa"
+                };
 
-            // Create VCF content with proper photo encoding
-            let vcfContent = `BEGIN:VCARD
+                // Create VCF content with photo
+                let vcfContent = `BEGIN:VCARD
 VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
 N:${contactData.lastName};${contactData.firstName};;;
@@ -293,40 +280,47 @@ ORG:${contactData.organization}
 TEL;TYPE=WORK,VOICE:${contactData.phoneWork}
 EMAIL;TYPE=WORK:${contactData.email}
 URL:${contactData.website}
-PHOTO;ENCODING=b;TYPE=JPEG:${encodeImageToBase64(contactData.profileImage)}
+ADR;TYPE=WORK:;;${contactData.address.replace(/\n/g, ' ')}
+PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}
 END:VCARD`;
 
-            // Create download link
-            const blob = new Blob([vcfContent], { type: 'text/vcard' });
-            const url = URL.createObjectURL(blob);
+                // Create download link
+                const blob = new Blob([vcfContent], { type: 'text/vcard' });
+                const url = URL.createObjectURL(blob);
 
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-            document.body.appendChild(a);
-            a.click();
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+                document.body.appendChild(a);
+                a.click();
 
-            // Clean up
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
+                // Clean up
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+            } catch (error) {
+                console.error("Error generating VCF:", error);
+                alert("Error generating contact card. Please try again.");
+            }
         }
 
-        // Helper function to encode image to Base64
-        function encodeImageToBase64(imageUrl) {
-            // In a real implementation, you would need to fetch the image and convert it to Base64
-            // This is a simplified version - in production you would need proper CORS handling
-            return "[Base64-encoded-image-data]";
-            
-            /* For a complete implementation, you would need:
-            return fetch(imageUrl)
-                .then(response => response.blob())
-                .then(blob => new Promise((resolve, reject) => {
+        async function fetchImageAsBase64(url) {
+            try {
+                const response = await fetch(url);
+                const blob = await response.blob();
+                return new Promise((resolve, reject) => {
                     const reader = new FileReader();
-                    reader.onloadend = () => resolve(reader.result.split(',')[1]);
+                    reader.onloadend = () => {
+                        // Remove the data:image/*;base64, prefix
+                        const base64data = reader.result.split(',')[1];
+                        resolve(base64data);
+                    };
                     reader.onerror = reject;
                     reader.readAsDataURL(blob);
-                }));
-            */
+                });
+            } catch (error) {
+                console.error("Error fetching image:", error);
+                return ""; // Return empty string if image can't be loaded
+            }
         }
     </script>
 </body>
