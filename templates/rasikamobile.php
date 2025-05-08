@@ -159,7 +159,7 @@
         }
 
         .contact-icon-button {
-            background-color: #ff7300;
+            background-color:rgb(255, 255, 255);
             border-radius: 50px;
             width: 50px;
             height: 50px;
@@ -173,14 +173,14 @@
         .contact-icon-label {
             margin-top: 5px;
             font-size: 0.8rem;
-            color: #FFFFFF;
+            color:rgb(255, 255, 255);
             text-align: center;
             width: 90px;
         }
 
         .contact-icon {
             font-size: 1.5rem;
-            color: rgb(255, 255, 255);
+            color:  #ed1d24;
         }
 
         /* Enhanced Gallery Styles */
@@ -408,14 +408,14 @@
     <div class="d-flex justify-content-center mt-5">
         <div class="card custom-card15 shadow-lg" style="background-color:rgb(255, 255, 255);">
             <div class="card-header custom-header text-center"
-                style="background-image: url(''); height: 200px; opacity: 100%; background-color: #ff8926;  border-radius: 0 0 90px 90px;">
+            style="background-image: url('banner_img/client_banner/rasika-b.jpg'); height: 200px; opacity: 100%;   border-radius: 0 0 90px 90px;">
                 <div class="profile-picture">
                     <img src="profile_img/main_profile/template1-p.png" alt="Linkin Park" class="rounded-circle">
                 </div>
             </div>
             <br>
             <br>
-            <div class="card-body text-center" style="background-color: #000f56; color: #000000; ">
+            <div class="card-body text-center" style="background-color:rgb(0, 0, 0); color: #000000; ">
                 <h2 style="font-size: 30px; color: white;">Rasika mobile center</h2>
                 <p style="color:rgb(255, 255, 255); font-size: 20px;">Owner</p>
 
@@ -427,7 +427,7 @@
                 <br>
 
                 <div class="profile-header13"
-                    style="background-color: #000f56; border-radius: 30px; max-width: 95%; margin: 0 auto; padding: 20px; margin-top: -50px;">
+                    style="background-color:rgb(0, 0, 0); border-radius: 30px; max-width: 95%; margin: 0 auto; padding: 20px; margin-top: -50px;">
                     <div class="profile-contact-icons13">
                         <!-- Phone Work Button with Label -->
                         <div class="contact-icon-container">
@@ -462,20 +462,20 @@
                         </div>
 
                         <!-- Email Button with Label -->
-                        <!-- <div class="contact-icon-container">
-                            <button type="button" class="contact-icon-button" onclick="window.open('mailto:', '_self')">
-                                <i class="fas fa-map-marker-alt contact-icon"></i>
-                            </button>
-                            <p class="contact-icon-label">Location</p>
-                        </div> -->
+                        <div class="contact-icon-container">
+                                <button type="button" class="contact-icon-button" onclick="window.open('mailto:', '_self')">
+                                    <i class="fas fa-envelope contact-icon"></i>
+                                </button>
+                                <p class="contact-icon-label">Email 1</p>
+                            </div>
 
                         <!-- Email 2 Button with Label -->
-                        <!-- <div class="contact-icon-container">
-                            <button type="button" class="contact-icon-button" onclick="window.open('mailto:', '_self')">
-                                <i class="fas fa-envelope contact-icon"></i>
-                            </button>
-                            <p class="contact-icon-label">Email 2</p>
-                        </div> -->
+                            <div class="contact-icon-container">
+                                <button type="button" class="contact-icon-button" onclick="window.open('mailto:', '_self')">
+                                    <i class="fas fa-envelope contact-icon"></i>
+                                </button>
+                                <p class="contact-icon-label">Email 2</p>
+                            </div>
                     </div>
 
                     <!-- Enhanced Gallery Section -->
