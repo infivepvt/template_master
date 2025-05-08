@@ -410,7 +410,7 @@
             <div class="card-header custom-header text-center"
             style="background-image: url('banner_img/client_banner/rasika-b.jpg'); height: 200px; opacity: 100%;   border-radius: 0 0 90px 90px;">
                 <div class="profile-picture">
-                    <img src="profile_img/main_profile/template1-p.png" alt="Linkin Park" class="rounded-circle">
+                    <img src="profile_img/client_profile/rasika-p.png" alt="Linkin Park" class="rounded-circle">
                 </div>
             </div>
             <br>
