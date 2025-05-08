@@ -168,26 +168,26 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            border: none;
+            border: 2px solid #ccc;
             cursor: pointer;
         }
 
         .contact-icon-label {
             margin-top: 5px;
             font-size: 0.8rem;
-            color: #FFFFFF;
+            color: rgb(0, 0, 0);
             text-align: center;
             width: 90px;
         }
 
         .contact-icon {
             font-size: 1.5rem;
-            color: rgb(0, 0, 0);
+            color: rgb(238, 185, 78);
         }
 
         /* Enhanced Gallery Styles */
         .gallery-section {
-            background-color: #1a1a1a;
+            background-color: rgb(236, 236, 236);
             border-radius: 15px;
             padding: 15px;
             margin-top: 20px;
@@ -201,7 +201,7 @@
             padding: 10px 15px;
             color: #fff;
             cursor: pointer;
-            background-color: #2a2a2a;
+            background-color: rgb(255, 255, 255);
             border-radius: 10px;
             margin-bottom: 15px;
         }
@@ -210,11 +210,12 @@
             font-size: 18px;
             font-weight: 600;
             letter-spacing: 0.5px;
+            color: black;
         }
 
         .gallery-toggle {
             font-size: 18px;
-            color: #ffffff;
+            color: rgb(0, 0, 0);
             transition: transform 0.3s ease;
         }
 
@@ -449,12 +450,42 @@
                 font-size: 24px;
             }
         }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content {
+            background-color: #fff;
+            margin: 10% auto;
+            padding: 20px;
+            width: 300px;
+            border-radius: 8px;
+            text-align: center;
+            position: relative;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 24px;
+            cursor: pointer;
+            color: black;
+        }
     </style>
 </head>
 
 <body>
     <div class="d-flex justify-content-center mt-5">
-        <div class="card custom-card15 shadow-lg" style="background-color: #000000;">
+        <div class="card custom-card15 shadow-lg" style="background-color:rgb(255, 255, 255);">
             <div class="card-header custom-header text-center"
                 style="background-image: url('banner_img/client_banner/sapphire-b.png'); height: 200px; opacity: 100%;">
                 <div class="profile-picture">
@@ -463,9 +494,10 @@
             </div>
             <br>
             <br>
-            <div class="card-body text-center" style="background-color: #000000; color: #000000; margin-top: 15px;">
-                <h2 style="font-size: 30px; color: white;">Murshid Munzeer</h2>
-                <p style="color:rgb(255, 255, 255); font-size: 20px;">Director | CEO</p>
+            <div class="card-body text-center"
+                style="background-color:rgb(255, 255, 255); color:rgb(255, 255, 255); margin-top: 15px;">
+                <h2 style="font-size: 30px; color: black;">Murshid Munzeer</h2>
+                <p style="color:rgb(0, 0, 0); font-size: 20px;">Director | CEO</p>
                 <div>
                     <p></p>
                 </div>
@@ -474,7 +506,7 @@
                 <br>
 
                 <div class="profile-header13"
-                    style="background-color:rgb(0, 0, 0); border-radius: 30px; max-width: 95%; margin: 0 auto; padding: 20px; margin-top: -50px;">
+                    style="background-color:rgb(255, 255, 255); border-radius: 30px; max-width: 95%; margin: 0 auto; padding: 20px; margin-top: -50px;">
                     <div class="profile-contact-icons13">
                         <!-- Phone Work Button with Label -->
                         <div class="contact-icon-container">
@@ -497,9 +529,26 @@
                         <div class="contact-icon-container">
                             <button type="button" class="contact-icon-button"
                                 onclick="window.open('https://wa.me/94777554542', '_blank')">
-                                <i class="fab fa-whatsapp contact-icon" style="color:rgb(0, 0, 0);"></i>
+                                <i class="fab fa-whatsapp contact-icon" style="color:rgb(238, 185, 78);"></i>
                             </button>
                             <p class="contact-icon-label">WhatsApp</p>
+                        </div>
+                        <!-- Contact Icon Container -->
+                        <div class="contact-icon-container">
+                            <!-- WeChat -->
+                            <button type="button" class="contact-icon-button" onclick="openQRModal()">
+                                <i class="fab fa-weixin contact-icon" style="color:rgb(238, 185, 78);"></i>
+                            </button>
+                            <p class="contact-icon-label">WeChat</p>
+                        </div>
+
+                        <!-- Modal -->
+                        <div id="qrModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeQRModal()">&times;</span>
+                                <img src="gallery_img/client_gallerys/sapphire1/wechat1.jpeg" alt="WeChat QR Code"
+                                    style="max-width: 100%; height: auto;">
+                            </div>
                         </div>
 
                         <!-- Email Button with Label -->
@@ -587,7 +636,8 @@
                 border-radius: 15px; 
                 box-shadow: 0 4px 15px rgba(0,0,0,0.2);
                 border: 3px solid #EEF1FF;">
-                        <p style="color: white; margin-top: 10px; font-size: 14px;">Sapphire Creation is a Brand Line of Affinity Gems Pvt Ltd</p>
+                        <p style="color: black; margin-top: 10px; font-size: 14px;">Sapphire Creation is a Brand Line of
+                            Affinity Gems Pvt Ltd</p>
                     </div>
                     <!-- Enhanced Lightbox -->
                     <div class="lightbox" id="lightbox">
@@ -602,7 +652,7 @@
                         </div>
                     </div>
 
-                    <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:15px; color:white;">CONNECT
+                    <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:15px; color:black;">CONNECT
                         WITH SOCIAL MEDIA
                     </p>
                     <div class="d-flex flex-wrap justify-content-center">
@@ -619,7 +669,12 @@
                             <img src="Images/Social_Media_Icon/tiktok.png" alt="" style="width: 55px; height: 55px;">
                         </a>
                     </div>
-
+                    <a style="text-decoration:none; color:black;"
+                        href="https://maps.app.goo.gl/R7jjb1DmTPrnEBBw6?g_st=iw" target="_blank">
+                        <i class="fas fa-map-marker-alt" style="margin-right: 5px;"></i>
+                        44/6 Jayasamagi Mawatha, Kalubowila, Dehiwala 10350, Srilanka
+                    </a>
+                    <br>
                     <br>
                     <button class="btn w-100 custom-save-button">
                         <i class="fas fa-save me-2"></i>
@@ -630,7 +685,7 @@
 
                 <br>
                 <footer style="text-align:center; padding:10px; font-size:14px; color:white;">
-                    <a href="https://tapilinq.com/" target="_blank" style="text-decoration:none; color:white;">
+                    <a href="https://tapilinq.com/" target="_blank" style="text-decoration:none; color:black;">
                         Made with ❤️ by Tapilinq | Click now
                     </a>
                 </footer>
@@ -766,17 +821,17 @@
             }
         });
 
-         // Save to contacts functionality with profile image
-    document.querySelector('.custom-save-button').addEventListener('click', async function () {
-        try {
-            // Get the profile image URL
-            const profileImageUrl = 'profile_img/client_profile/sapphire-p.png';
-            
-            // Convert image to base64
-            const base64Image = await getBase64Image(profileImageUrl);
-            
-            // Create vCard content with image
-            const vcard = `BEGIN:VCARD
+        // Save to contacts functionality with profile image
+        document.querySelector('.custom-save-button').addEventListener('click', async function () {
+            try {
+                // Get the profile image URL
+                const profileImageUrl = 'profile_img/client_profile/sapphire-p.png';
+
+                // Convert image to base64
+                const base64Image = await getBase64Image(profileImageUrl);
+
+                // Create vCard content with image
+                const vcard = `BEGIN:VCARD
 VERSION:3.0
 FN:Murshid Munzeer
 TITLE:Director | CEO
@@ -790,51 +845,51 @@ PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}
 REV:${new Date().toISOString()}
 END:VCARD`;
 
-            // Create Blob with vCard content
-            const blob = new Blob([vcard], { type: 'text/vcard' });
-            const url = URL.createObjectURL(blob);
+                // Create Blob with vCard content
+                const blob = new Blob([vcard], { type: 'text/vcard' });
+                const url = URL.createObjectURL(blob);
 
-            // Create download link
-            const link = document.createElement('a');
-            link.href = url;
-            link.download = 'Murshid Munzeer.vcf';
-            document.body.appendChild(link);
-            link.click();
+                // Create download link
+                const link = document.createElement('a');
+                link.href = url;
+                link.download = 'Murshid Munzeer.vcf';
+                document.body.appendChild(link);
+                link.click();
 
-            // Clean up
-            document.body.removeChild(link);
-            URL.revokeObjectURL(url);
-        } catch (error) {
-            console.error('Error generating vCard:', error);
-            // Fallback to vCard without image if there's an error
-            generateFallbackVCard();
-        }
-    });
-
-    // Function to convert image to base64
-    function getBase64Image(url) {
-        return new Promise((resolve, reject) => {
-            const img = new Image();
-            img.crossOrigin = 'Anonymous';
-            img.onload = function() {
-                const canvas = document.createElement('canvas');
-                canvas.width = this.naturalWidth;
-                canvas.height = this.naturalHeight;
-                const ctx = canvas.getContext('2d');
-                ctx.drawImage(this, 0, 0);
-                const dataURL = canvas.toDataURL('image/jpeg');
-                resolve(dataURL.split(',')[1]); // Remove the data URL prefix
-            };
-            img.onerror = function() {
-                reject(new Error('Could not load image'));
-            };
-            img.src = url;
+                // Clean up
+                document.body.removeChild(link);
+                URL.revokeObjectURL(url);
+            } catch (error) {
+                console.error('Error generating vCard:', error);
+                // Fallback to vCard without image if there's an error
+                generateFallbackVCard();
+            }
         });
-    }
 
-    // Fallback vCard without image
-    function generateFallbackVCard() {
-        const vcard = `BEGIN:VCARD
+        // Function to convert image to base64
+        function getBase64Image(url) {
+            return new Promise((resolve, reject) => {
+                const img = new Image();
+                img.crossOrigin = 'Anonymous';
+                img.onload = function () {
+                    const canvas = document.createElement('canvas');
+                    canvas.width = this.naturalWidth;
+                    canvas.height = this.naturalHeight;
+                    const ctx = canvas.getContext('2d');
+                    ctx.drawImage(this, 0, 0);
+                    const dataURL = canvas.toDataURL('image/jpeg');
+                    resolve(dataURL.split(',')[1]); // Remove the data URL prefix
+                };
+                img.onerror = function () {
+                    reject(new Error('Could not load image'));
+                };
+                img.src = url;
+            });
+        }
+
+        // Fallback vCard without image
+        function generateFallbackVCard() {
+            const vcard = `BEGIN:VCARD
 VERSION:3.0
 FN:Murshid Munzeer
 TITLE:Director | CEO
@@ -847,16 +902,22 @@ ADR;TYPE=WORK:;;Sapphire Creation;;Colombo;Western;Sri Lanka
 REV:${new Date().toISOString()}
 END:VCARD`;
 
-        const blob = new Blob([vcard], { type: 'text/vcard' });
-        const url = URL.createObjectURL(blob);
-        const link = document.createElement('a');
-        link.href = url;
-        link.download = 'Murshid Munzeer.vcf';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-        URL.revokeObjectURL(url);
-    }
+            const blob = new Blob([vcard], { type: 'text/vcard' });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'Murshid Munzeer.vcf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+        }
+        function openQRModal() {
+            document.getElementById("qrModal").style.display = "block";
+        }
+        function closeQRModal() {
+            document.getElementById("qrModal").style.display = "none";
+        }
     </script>
 </body>
 

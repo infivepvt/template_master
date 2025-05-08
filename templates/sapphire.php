@@ -169,7 +169,6 @@
             align-items: center;
             justify-content: center;
             border: 2px solid #ccc;
-            /* Added border */
             cursor: pointer;
         }
 
@@ -450,6 +449,36 @@
                 font-size: 24px;
             }
         }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content {
+            background-color: #fff;
+            margin: 10% auto;
+            padding: 20px;
+            width: 300px;
+            border-radius: 8px;
+            text-align: center;
+            position: relative;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 24px;
+            cursor: pointer;
+            color: black;
+        }
     </style>
 </head>
 
@@ -502,6 +531,23 @@
                                 <i class="fab fa-whatsapp contact-icon" style="color:rgb(238, 185, 78);"></i>
                             </button>
                             <p class="contact-icon-label">WhatsApp</p>
+                        </div>
+                        <!-- Contact Icon Container -->
+                        <div class="contact-icon-container">
+                            <!-- WeChat -->
+                            <button type="button" class="contact-icon-button" onclick="openQRModal()">
+                                <i class="fab fa-weixin contact-icon" style="color:rgb(238, 185, 78);"></i>
+                            </button>
+                            <p class="contact-icon-label">WeChat</p>
+                        </div>
+
+                        <!-- Modal -->
+                        <div id="qrModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeQRModal()">&times;</span>
+                                <img src="gallery_img/client_gallerys/sapphire/wechat2.jpeg" alt="WeChat QR Code"
+                                    style="max-width: 100%; height: auto;">
+                            </div>
                         </div>
 
                         <!-- Email Button with Label -->
@@ -588,7 +634,8 @@
                 border-radius: 15px; 
                 box-shadow: 0 4px 15px rgba(0,0,0,0.2);
                 border: 3px solid #EEF1FF;">
-                        <p style="color: black; margin-top: 10px; font-size: 14px;">Sapphire Creation is a Brand Line of Affinity Gems Pvt Ltd</p>
+                        <p style="color: black; margin-top: 10px; font-size: 14px;">Sapphire Creation is a Brand Line of
+                            Affinity Gems Pvt Ltd</p>
                     </div>
                     <!-- Enhanced Lightbox -->
                     <div class="lightbox" id="lightbox">
@@ -620,7 +667,12 @@
                             <img src="Images/Social_Media_Icon/tiktok.png" alt="" style="width: 55px; height: 55px;">
                         </a>
                     </div>
-
+                    <a style="text-decoration:none; color:black;"
+                        href="https://maps.app.goo.gl/R7jjb1DmTPrnEBBw6?g_st=iw" target="_blank">
+                        <i class="fas fa-map-marker-alt" style="margin-right: 5px;"></i>
+                        44/6 Jayasamagi Mawatha, Kalubowila, Dehiwala 10350, Srilanka
+                    </a>
+                    <br>
                     <br>
                     <button class="btn w-100 custom-save-button">
                         <i class="fas fa-save me-2"></i>
@@ -797,6 +849,13 @@ END:VCARD`;
             document.body.removeChild(link);
             URL.revokeObjectURL(url);
         });
+
+        function openQRModal() {
+            document.getElementById("qrModal").style.display = "block";
+        }
+        function closeQRModal() {
+            document.getElementById("qrModal").style.display = "none";
+        }
     </script>
 </body>
 
