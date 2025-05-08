@@ -60,6 +60,7 @@ $routes = [
     'abdullahali' => 'templates/abdullahali.php',
     'highhydro' => 'templates/highhydro.php',
     'icmpd' => 'templates/icmpd.php',
+    'luzara' => 'templates/luzara.php',
 ];
 
 // Handle the request
