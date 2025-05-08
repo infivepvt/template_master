@@ -183,7 +183,7 @@
 <body>
     <div class="container">
         <header class="profile-header">
-            <img src="profile_img/client_profile/rovenrich1-p.png" alt="Carl Protton" class="profile-image">
+            <img src="profile_img/client_profile/rovenrich1-p.png" alt="Niranjala Udagama" class="profile-image" id="profileImage">
             <h1 style="color: white;"> Niranjala Udagama</h1>
             <p class="title" style="color: white; font-size: 13px; text-transform: uppercase;">
                 156A, Shalawa road, Mirihana, Nugegoda.
@@ -223,32 +223,25 @@
         </header>
 
         <section class="about-section">
-            <!-- <h2 style="color: white;">About Me</h2>
-            <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
-                ullamcorper mattis,
-                pulvinar dapibus leo.</p> -->
-
             <div class="image-gallery">
-                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g17.jpg" alt="Business man back view">
-                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g1.jpg" alt="Business man back view">
-                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g2.jpg" alt="Business man back view">
-                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g3.jpg" alt="Business man back view">
-                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g4.jpg" alt="Business man back view">
-                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g5.jpg" alt="Business man back view">
-                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g6.jpg" alt="Business man back view">
-                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g7.jpg" alt="Business man back view">
-                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g8.jpg" alt="Business man back view">
-                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g9.jpg" alt="Business man back view">
-                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g10.jpg" alt="Business man back view">
-                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g11.jpg" alt="Business man back view">
-                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g12.jpg" alt="Business man back view">
-                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g13.jpg" alt="Business man back view">
-                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g14.jpg" alt="Business man back view">
-                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g15.jpg" alt="Business man back view">
-                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g16.jpg" alt="Business man back view">
+                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g17.jpg" alt="Rovenrich cakes">
+                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g1.jpg" alt="Rovenrich cakes">
+                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g2.jpg" alt="Rovenrich cakes">
+                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g3.jpg" alt="Rovenrich cakes">
+                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g4.jpg" alt="Rovenrich cakes">
+                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g5.jpg" alt="Rovenrich cakes">
+                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g6.jpg" alt="Rovenrich cakes">
+                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g7.jpg" alt="Rovenrich cakes">
+                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g8.jpg" alt="Rovenrich cakes">
+                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g9.jpg" alt="Rovenrich cakes">
+                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g10.jpg" alt="Rovenrich cakes">
+                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g11.jpg" alt="Rovenrich cakes">
+                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g12.jpg" alt="Rovenrich cakes">
+                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g13.jpg" alt="Rovenrich cakes">
+                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g14.jpg" alt="Rovenrich cakes">
+                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g15.jpg" alt="Rovenrich cakes">
+                <img src="gallery_img/client_gallerys/rovenrich/rovenrich-g16.jpg" alt="Rovenrich cakes">
             </div>
-
-
         </section>
     </div>
 
@@ -259,34 +252,53 @@
     </footer>
 
     <script>
-        document.getElementById('saveContact').addEventListener('click', function (e) {
+        document.getElementById('saveContact').addEventListener('click', async function (e) {
             e.preventDefault();
-
-            // Create VCF content
-            const vcfContent = `BEGIN:VCARD
+            
+            try {
+                // Get the profile image
+                const profileImage = document.getElementById('profileImage');
+                const imageUrl = profileImage.src;
+                
+                // Fetch the image and convert to base64
+                const response = await fetch(imageUrl);
+                const blob = await response.blob();
+                const base64Image = await new Promise((resolve) => {
+                    const reader = new FileReader();
+                    reader.onloadend = () => resolve(reader.result.split(',')[1]);
+                    reader.readAsDataURL(blob);
+                });
+                
+                // Create VCF content with photo
+                const vcfContent = `BEGIN:VCARD
 VERSION:3.0
 FN:Niranjala Udagama
 N:Udagama;Niranjala;;;
 ADR:;;156A Shalawa Road;Mirihana;Nugegoda;;Sri Lanka
 TEL;TYPE=CELL,VOICE:+94716529934
 EMAIL;TYPE=PERSONAL,INTERNET:Rovenrich@outlook.com
-URL:carlprotton.com
+URL:https://www.facebook.com/share/16N3HwxMYD/?mibextid=qi2Omg
+PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}
 REV:${new Date().toISOString().split('T')[0].replace(/-/g, '')}
 END:VCARD`;
 
-            // Create download link
-            const blob = new Blob([vcfContent], { type: 'text/vcard' });
-            const url = URL.createObjectURL(blob);
+                // Create download link
+                const vcfBlob = new Blob([vcfContent], { type: 'text/vcard' });
+                const url = URL.createObjectURL(vcfBlob);
 
-            const link = document.createElement('a');
-            link.href = url;
-            link.download = 'Niranjala_Udagama.vcf';
-            document.body.appendChild(link);
-            link.click();
+                const link = document.createElement('a');
+                link.href = url;
+                link.download = 'Niranjala_Udagama.vcf';
+                document.body.appendChild(link);
+                link.click();
 
-            // Clean up
-            document.body.removeChild(link);
-            URL.revokeObjectURL(url);
+                // Clean up
+                document.body.removeChild(link);
+                URL.revokeObjectURL(url);
+            } catch (error) {
+                console.error('Error generating vCard:', error);
+                alert('Error saving contact. Please try again.');
+            }
         });
     </script>
 </body>

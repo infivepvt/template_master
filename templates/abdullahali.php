@@ -238,12 +238,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        function generateVCF() {
+       function generateVCF() {
     // Contact information matching the business card
     const contactData = {
         firstName: "Abdullah",
         lastName: "Ali",
-        title: "Director",
+        title: "Founder",
         phoneMobile: "94777172079", // WhatsApp number with country code
         phoneWork: "0777172079",   // Local phone number
         email: "",
@@ -252,8 +252,26 @@
         profileImage: "profile_img/client_profile/abdullahali-p.png"
     };
 
-    // Create VCF content
-    let vcfContent = `BEGIN:VCARD
+    // Create a function to convert image to base64
+    function getBase64Image(imgUrl, callback) {
+        const img = new Image();
+        img.crossOrigin = 'Anonymous';
+        img.onload = function() {
+            const canvas = document.createElement('canvas');
+            canvas.width = this.naturalWidth;
+            canvas.height = this.naturalHeight;
+            const ctx = canvas.getContext('2d');
+            ctx.drawImage(this, 0, 0);
+            const dataURL = canvas.toDataURL('image/png');
+            callback(dataURL);
+        };
+        img.src = imgUrl;
+    }
+
+    // Get base64 image and then generate VCF
+    getBase64Image(contactData.profileImage, function(base64Image) {
+        // Create VCF content with base64 image
+        let vcfContent = `BEGIN:VCARD
 VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
 N:${contactData.lastName};${contactData.firstName};;;
@@ -263,22 +281,23 @@ TEL;TYPE=CELL,WA:${contactData.phoneMobile}
 EMAIL:${contactData.email}
 URL:${contactData.website}
 ADR:;;${contactData.address}
-PHOTO;VALUE=URL:${contactData.profileImage}
+PHOTO;ENCODING=b;TYPE=PNG:${base64Image.split(',')[1]}
 END:VCARD`;
 
-    // Create download link
-    const blob = new Blob([vcfContent], { type: 'text/vcard' });
-    const url = URL.createObjectURL(blob);
+        // Create download link
+        const blob = new Blob([vcfContent], { type: 'text/vcard' });
+        const url = URL.createObjectURL(blob);
 
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-    document.body.appendChild(a);
-    a.click();
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+        document.body.appendChild(a);
+        a.click();
 
-    // Clean up
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
+        // Clean up
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    });
 }
     </script>
 </body>
