@@ -467,7 +467,7 @@
             <div class="card-body text-center"
                 style="background-color:rgb(255, 255, 255); color:rgb(255, 255, 255); margin-top: 15px;">
                 <h2 style="font-size: 30px; color: black;">Mufla Bhanu</h2>
-                <p style="color:rgb(0, 0, 0); font-size: 20px;">Director finance and Sales</p>
+                <p style="color:rgb(0, 0, 0); font-size: 20px;">Director | Finance & Sales</p>
 
                 <div>
                     <p></p>
@@ -588,7 +588,7 @@
                 border-radius: 15px; 
                 box-shadow: 0 4px 15px rgba(0,0,0,0.2);
                 border: 3px solid #EEF1FF;">
-                        <p style="color: black; margin-top: 10px; font-size: 14px;">Brand line of Affinity Gems</p>
+                        <p style="color: black; margin-top: 10px; font-size: 14px;">Sapphire Creation is a Brand Line of Affinity Gems Pvt Ltd</p>
                     </div>
                     <!-- Enhanced Lightbox -->
                     <div class="lightbox" id="lightbox">

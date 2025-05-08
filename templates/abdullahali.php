@@ -168,7 +168,7 @@
             <br>
             <div class="card-body text-center">
                 <h2 class="card-title" style="font-size: 27px; text-transform: uppercase; color:rgb(255, 255, 255);">Abdullah Ali</h2>
-                <p style="color:rgb(255, 255, 255); font-size: 21px; text-transform: uppercase;">Director</p>
+                <p style="color:rgb(255, 255, 255); font-size: 21px; text-transform: uppercase;">Founder</p>
 
                 <a href="https://wa.me/94777172079" target="_blank" rel="noopener noreferrer"
                     style="text-decoration: none;">

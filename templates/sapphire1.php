@@ -587,7 +587,7 @@
                 border-radius: 15px; 
                 box-shadow: 0 4px 15px rgba(0,0,0,0.2);
                 border: 3px solid #EEF1FF;">
-                        <p style="color: white; margin-top: 10px; font-size: 14px;">Brand line of Affinity Gems</p>
+                        <p style="color: white; margin-top: 10px; font-size: 14px;">Sapphire Creation is a Brand Line of Affinity Gems Pvt Ltd</p>
                     </div>
                     <!-- Enhanced Lightbox -->
                     <div class="lightbox" id="lightbox">
