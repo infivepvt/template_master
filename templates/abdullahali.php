@@ -446,7 +446,7 @@
             <div class="card-header custom-header text-center"
                 style="background-image:  url('banner_img/client_banner/abdullahali-b.jpeg'); height: 220px; opacity: 1;">
                 <div class="profile-picture">
-                    <img src="profile_img/client_profile/abdullahali-p.png" alt="Saliya Pathum" class="rounded-circle">
+                    <img src="profile_img/client_profile/abdullahali-p.png" alt="Abdullah Ali" class="rounded-circle">
                 </div>
             </div>
             <br>
@@ -584,7 +584,6 @@
             'gallery_img/client_gallerys/abdullahali/abdullahali-g4.jpeg',
             'gallery_img/client_gallerys/abdullahali/abdullahali-g5.jpeg',
             'gallery_img/client_gallerys/abdullahali/abdullahali-g6.jpeg',
-
         ];
 
         let currentImageIndex = 0;
@@ -667,13 +666,13 @@
             const contactData = {
                 firstName: "Abdullah",
                 lastName: "Ali",
-                title: "Director",
-                phoneMobile: "94777172079", // WhatsApp number with country code
-                phoneWork: "0777172079",   // Local phone number
-                email: "",
+                title: "Founder",
+                organization: "Luxette.lk",
+                phoneMobile: "+94777172079", // WhatsApp number with country code
+                phoneWork: "+94777172079",   // Local phone number
+                instagram: "https://www.instagram.com/luxette.lk",
                 website: "",
-                address: "",
-                profileImage: "profile_img/client_profile/abdullahali-p.png"
+                note: "Authentic luxury shopping made convenient"
             };
 
             // Create VCF content
@@ -682,12 +681,12 @@ VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
 N:${contactData.lastName};${contactData.firstName};;;
 TITLE:${contactData.title}
+ORG:${contactData.organization}
 TEL;TYPE=CELL,VOICE:${contactData.phoneWork}
 TEL;TYPE=CELL,WA:${contactData.phoneMobile}
-EMAIL:${contactData.email}
-URL:${contactData.website}
-ADR:;;${contactData.address}
-PHOTO;VALUE=URL:${contactData.profileImage}
+URL:${contactData.instagram}
+NOTE:${contactData.note}
+X-SOCIALPROFILE;TYPE=instagram:${contactData.instagram}
 END:VCARD`;
 
             // Create download link
