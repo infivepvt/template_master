@@ -243,7 +243,7 @@
     <div class="d-flex justify-content-center mt-5">
         <div class="card custom-card shadow-lg" style="background-color: #FFFFFF;">
             <div class="card-header custom-header text-center"
-                style="background-image:  url('banner_img/client_banner/Bhikkhubodidhamma-b.jpg'); height: 200px; opacity: 1;">
+                style="background-image:  url('banner_img/client_banner/Bhikkhubodidhamma-b.png'); height: 200px; opacity: 1;">
                 <!-- <img src="logo_img/main_logo/Main_Design-l.png" alt="Company Logo" class="custom-logo" height="80px"
                     style="width: 245px; height: auto; opacity: 1;"> -->
                 <div class="profile-picture">
@@ -274,7 +274,7 @@
                         onclick="window.open('tel:+94776995455', '_self')">
                         <img src="Images/icon/mobile-phone.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;"> +94776995455</span>
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;"> +94776 995 455</span>
                     </button> 
 
                     <button type="button"
