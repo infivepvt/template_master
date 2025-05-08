@@ -495,7 +495,7 @@
             <br>
             <div class="card-body text-center"
                 style="background-color:rgb(255, 255, 255); color:rgb(255, 255, 255); margin-top: 15px;">
-                <h2 style="font-size: 30px; color: black;">Mufla Bhanu</h2>
+                <h2 style="font-size: 30px; color: black;">Mufla Banu</h2>
                 <p style="color:rgb(0, 0, 0); font-size: 20px;">Director | Finance & Sales</p>
 
                 <div>
@@ -857,7 +857,7 @@
                 // Create vCard content
                 let vcard = `BEGIN:VCARD
 VERSION:3.0
-FN:Mufla Bhanu
+FN:Mufla Banu
 TITLE:Director | Finance & Sales
 TEL;TYPE=CELL:+94770030431
 TEL;TYPE=WORK,FAX:+94112767333
