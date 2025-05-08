@@ -657,7 +657,7 @@
     document.querySelector('.custom-save-button').addEventListener('click', async function () {
         try {
             // Get the profile image URL
-            const profileImageUrl = 'profile_img/main_profile/template1-p.png';
+            const profileImageUrl = 'profile_img/client_profile/rasika-p.png';
             
             // Convert image to base64
             const base64Image = await getBase64Image(profileImageUrl);
