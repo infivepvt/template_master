@@ -62,6 +62,8 @@ $routes = [
     'icmpd' => 'templates/icmpd.php',
     'luzara' => 'templates/luzara.php',
     'abeywickrama' => 'templates/abeywickrama.php',
+    'sandunedirisinghe' => 'templates/sandunedirisinghe.php',
+    'travelglobal' => 'templates/travelglobal.php',
 ];
 
 // Handle the request
