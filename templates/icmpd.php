@@ -38,7 +38,7 @@
 
         .profile-picture {
             position: absolute;
-            top: 95%;
+            top: 100%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
@@ -46,7 +46,7 @@
         .profile-picture img {
             width: 130px;
             height: 130px;
-            border: 4px solid #fff;
+            border: 0px solid #fff;
             border-radius: 50%;
         }
 
@@ -153,6 +153,7 @@
         }
     </style>
 
+
 </head>
 
 <body>
@@ -171,7 +172,7 @@
                 <h2 class="card-title" style="font-size: 27px; text-transform: uppercase;">H G Sarath Pallegama</h2>
                 <p style="color: #000000; font-size: 21px; text-transform: uppercase;">Counsellor <br><span style="font-size:15px">Migrant Information Centre- Sri Lanka</span> </p>
 
-                <a href="https://wa.me/94761231212" target="_blank" rel="noopener noreferrer"
+                <a href="https://whatsapp.com/channel/0029VainhQXKLaHsnil51t2z" target="_blank" rel="noopener noreferrer"
                     style="text-decoration: none;">
                     <button class="btn w-100 mb-3 custom-phone1 d-flex align-items-center justify-content-center"
                         style="background-color: #25D366; color: white; height: 60px; border: 2px solid orange; border-radius: 10px; gap: 10px;">
@@ -184,10 +185,10 @@
                 <div class="list-group mb-3">
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
-                        onclick="window.open('tel:0761231212', '_self')">
+                        onclick="window.open('tel:0773599757', '_self')">
                         <img src="Images/icon/phone.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">0761231212</span>
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">0773599757</span>
                     </button>
 
                     <button type="button"
@@ -205,6 +206,15 @@
                             style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
                             style="color: #FFFFFF; 'Montserrat', sans-serif; font-size:16px; font-size:16px;">www.icmpd.org</span>
+                    </button>
+
+                    <button type="button"
+                        class="list-group-item d-flex align-items-center justify-content-between contact"
+                        onclick="window.open('https://www.google.com/maps/search/No+12,+Sri+Lanka+Bureau+of+Foreign+Employment+Premises,+New+Pioneer+Road,+Batticaloa/@7.7175006,81.6993063,17z/data=!3m1!4b1?authuser=0&entry=ttu&g_ep=EgoyMDI1MDUwNS4wIKXMDSoASAFQAw%3D%3D', '_blank')">
+                        <img src="Images/icon/map.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
+                        <span class="text-center flex-grow-1 text-truncate custom-phone"
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:14px;">No 12, <br>Sri Lanka Bureau of Foreign Employment ,<br> New Pioneer Road,  
+                            <br> Batticaloa</span>
                     </button>
                 </div>
 
@@ -224,9 +234,24 @@
                         <img src="Images/Social_Media_Icon/linkedin.png" alt="" style="width: 50px; height: 50px;">
                     </a>
                     <a href="https://x.com/ICMPD" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/twitter.png" alt="" style="width: 50px; height: 50px;">
+                        <img src="Images/Social_Media_Icon/x-2.png" alt="" style="width: 50px; height: 50px;">
                     </a>
                 </div>
+
+                <!-- <div class="d-flex flex-wrap justify-content-center">
+                    <a href="https://x.com/ICMPD" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/linkedin.png" alt="" style="width: 50px; height: 50px;">
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/twitter.png" alt="" style="width: 50px; height: 50px;">
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/social.png" alt="" style="width: 50px; height: 50px;">
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/pinterest.png" alt="" style="width: 50px; height: 50px;">
+                    </a>
+                </div> -->
 
                 <br>
                 <button class="btn w-100 custom-save-button" onclick="generateVCF()"
