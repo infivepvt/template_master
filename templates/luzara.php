@@ -337,7 +337,7 @@
     <div class="profile-card">
         <div class="profile-banner">
             <div class="imagepro">
-                <img class="profile-photo" src="profile_img/client_profile/luzara-p.jpeg" alt="Profile">
+                <img class="profile-photo" src="profile_img/client_profile/luzara-p.jpeg" alt="Profile" id="profileImage">
             </div>
             <div class="profile-info">
                 <h2 style="font-family: Verdana, sans-serif;">Niroshan Gajamuthuge</h2>
@@ -366,7 +366,7 @@
                 <div class="text-wrapper">
                     <span class="platform-name">Facebook</span>
                     <br>
-                    <span class="user-name">Lucile R. Grondin</span>
+                    <span class="user-name">Niroshan Gajamuthuge</span>
                 </div>
             </a>
             <a href="#" class="social-media-button">
@@ -374,7 +374,7 @@
                 <div class="text-wrapper">
                     <span class="platform-name">Instagram</span>
                     <br>
-                    <span class="user-name">Lucile R. Grondin</span>
+                    <span class="user-name">Niroshan Gajamuthuge</span>
                 </div>
             </a>
             <a href="#" class="social-media-button">
@@ -382,7 +382,7 @@
                 <div class="text-wrapper">
                     <span class="platform-name">Twitter</span>
                     <br>
-                    <span class="user-name">Lucile R. Grondin</span>
+                    <span class="user-name">Niroshan Gajamuthuge</span>
                 </div>
             </a>
 
@@ -519,7 +519,56 @@
     });
 
     function downloadVCF() {
-      const vCardData = `BEGIN:VCARD
+      // Get the profile image
+      const profileImage = document.getElementById('profileImage');
+      const imageUrl = profileImage.src;
+      
+      // Create a canvas to convert the image to base64
+      const canvas = document.createElement('canvas');
+      const ctx = canvas.getContext('2d');
+      const img = new Image();
+      
+      // Handle cross-origin images if needed
+      img.crossOrigin = 'Anonymous';
+      
+      img.onload = function() {
+        canvas.width = img.width;
+        canvas.height = img.height;
+        ctx.drawImage(img, 0, 0);
+        
+        // Convert to JPEG (you can also use 'image/png')
+        const imageData = canvas.toDataURL('image/jpeg');
+        
+        // Extract base64 data
+        const base64Data = imageData.split(',')[1];
+        
+        // Create the vCard with photo
+        const vCardData = `BEGIN:VCARD
+VERSION:3.0
+FN:Niroshan Gajamuthuge
+ORG:luzara
+TEL:0771175274
+EMAIL:
+URL:
+ADR:
+NOTE:.
+PHOTO;ENCODING=b;TYPE=JPEG:${base64Data}
+END:VCARD`;
+
+        const blob = new Blob([vCardData], { type: 'text/vcard' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'Niroshan.vcf';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+      };
+      
+      img.onerror = function() {
+        // If image fails to load, create vCard without photo
+        const vCardData = `BEGIN:VCARD
 VERSION:3.0
 FN:Niroshan Gajamuthuge
 ORG:luzara
@@ -530,15 +579,18 @@ ADR:
 NOTE:.
 END:VCARD`;
 
-      const blob = new Blob([vCardData], { type: 'text/vcard' });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = 'Niroshan.vcf';
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-      URL.revokeObjectURL(url);
+        const blob = new Blob([vCardData], { type: 'text/vcard' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'Niroshan.vcf';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+      };
+      
+      img.src = imageUrl;
     }
   </script>
 </body>
