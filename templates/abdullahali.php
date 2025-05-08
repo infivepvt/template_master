@@ -446,7 +446,7 @@
             <div class="card-header custom-header text-center"
                 style="background-image:  url('banner_img/client_banner/abdullahali-b.jpeg'); height: 220px; opacity: 1;">
                 <div class="profile-picture">
-                    <img src="profile_img/client_profile/abdullahali-p.png" alt="Abdullah Ali" class="rounded-circle">
+                    <img src="profile_img/client_profile/abdullahali-p.png" alt="Saliya Pathum" class="rounded-circle">
                 </div>
             </div>
             <br>
@@ -584,6 +584,7 @@
             'gallery_img/client_gallerys/abdullahali/abdullahali-g4.jpeg',
             'gallery_img/client_gallerys/abdullahali/abdullahali-g5.jpeg',
             'gallery_img/client_gallerys/abdullahali/abdullahali-g6.jpeg',
+
         ];
 
         let currentImageIndex = 0;
@@ -662,47 +663,62 @@
         });
 
         function generateVCF() {
-            // Contact information matching the business card
-            const contactData = {
-                firstName: "Abdullah",
-                lastName: "Ali",
-                title: "Founder",
-                organization: "Luxette.lk",
-                phoneMobile: "+94777172079", // WhatsApp number with country code
-                phoneWork: "+94777172079",   // Local phone number
-                instagram: "https://www.instagram.com/luxette.lk",
-                website: "",
-                note: "Authentic luxury shopping made convenient"
-            };
+    // Contact information matching the business card
+    const contactData = {
+        firstName: "Abdullah",
+        lastName: "Ali",
+        title: "Founder",
+        phoneMobile: "94777172079",
+        phoneWork: "0777172079",
+        email: "",
+        website: "https://www.instagram.com/luxette.lk",
+        address: ""
+    };
 
-            // Create VCF content
-            let vcfContent = `BEGIN:VCARD
+    // Create VCF content
+    let vcfContent = `BEGIN:VCARD
 VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
 N:${contactData.lastName};${contactData.firstName};;;
 TITLE:${contactData.title}
-ORG:${contactData.organization}
 TEL;TYPE=CELL,VOICE:${contactData.phoneWork}
 TEL;TYPE=CELL,WA:${contactData.phoneMobile}
-URL:${contactData.instagram}
-NOTE:${contactData.note}
-X-SOCIALPROFILE;TYPE=instagram:${contactData.instagram}
+EMAIL:${contactData.email}
+URL:${contactData.website}
+ADR:;;${contactData.address}`;
+
+    // Get the profile image and convert to base64
+    const profileImg = document.querySelector('.profile-picture img');
+    if (profileImg) {
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = profileImg.naturalWidth;
+        canvas.height = profileImg.naturalHeight;
+        ctx.drawImage(profileImg, 0, 0);
+        
+        // Convert to base64
+        const imageData = canvas.toDataURL('image/jpeg');
+        vcfContent += `
+PHOTO;ENCODING=b;TYPE=JPEG:${imageData.split(',')[1]}`;
+    }
+
+    vcfContent += `
 END:VCARD`;
 
-            // Create download link
-            const blob = new Blob([vcfContent], { type: 'text/vcard' });
-            const url = URL.createObjectURL(blob);
+    // Create download link
+    const blob = new Blob([vcfContent], { type: 'text/vcard' });
+    const url = URL.createObjectURL(blob);
 
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-            document.body.appendChild(a);
-            a.click();
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+    document.body.appendChild(a);
+    a.click();
 
-            // Clean up
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
-        }
+    // Clean up
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+}
     </script>
 </body>
 
