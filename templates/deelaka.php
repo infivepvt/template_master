@@ -266,28 +266,46 @@
 
     <script>
         function generateVCF() {
-            // Updated contact information to match the business card
-            const contactData = {
-                firstName: "J G DEELAKA",
-                lastName: "DEVANJITH",
-                title: "Proprietor",
-                phoneWork: "0761231212",
-                phoneMobile: "",
-                email: "deelakag@premiumautoparts.lk",
-                email2: "",
-                email3: "",
-                website: "www.premiumautoparts.lk",
-                website2: "",
-                website3: "",
-                address: "127, Wellawaya Road,Monaragala,Sri Lanka",
-                address2: "",
-                about: "",
-                logo: "logo_img/Main_Design-l.png",
-                profileImage: "profile_img/client_profile/deelaka-p.png"
-            };
+    // Updated contact information to match the business card
+    const contactData = {
+        firstName: "J G DEELAKA",
+        lastName: "DEVANJITH",
+        title: "Proprietor",
+        phoneWork: "0761231212",
+        phoneMobile: "",
+        email: "deelakag@premiumautoparts.lk",
+        email2: "",
+        email3: "",
+        website: "www.premiumautoparts.lk",
+        website2: "",
+        website3: "",
+        address: "127, Wellawaya Road,Monaragala,Sri Lanka",
+        address2: "",
+        about: "",
+        logo: "logo_img/Main_Design-l.png",
+        profileImage: "profile_img/client_profile/deelaka-p.png"
+    };
 
-            // Create VCF content
-            let vcfContent = `BEGIN:VCARD
+    // Function to convert image to base64
+    function getBase64Image(imgUrl, callback) {
+        const img = new Image();
+        img.crossOrigin = 'Anonymous';
+        img.onload = function() {
+            const canvas = document.createElement('canvas');
+            canvas.width = this.naturalWidth;
+            canvas.height = this.naturalHeight;
+            const ctx = canvas.getContext('2d');
+            ctx.drawImage(this, 0, 0);
+            const dataURL = canvas.toDataURL('image/png');
+            callback(dataURL);
+        };
+        img.src = imgUrl;
+    }
+
+    // Get the profile image as base64
+    getBase64Image(contactData.profileImage, function(base64Image) {
+        // Create VCF content with embedded image
+        let vcfContent = `BEGIN:VCARD
 VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
 N:${contactData.lastName};${contactData.firstName};;;
@@ -303,24 +321,24 @@ URL:${contactData.website3}
 ADR;TYPE=WORK:;;${contactData.address}
 ADR;TYPE=HOME:;;${contactData.address2}
 NOTE:${contactData.about}
-PHOTO;VALUE=URL:${contactData.profileImage}
-LOGO;VALUE=URL:${contactData.logo}
+PHOTO;ENCODING=b;TYPE=PNG:${base64Image.split(',')[1]}
 END:VCARD`;
 
-            // Create download link
-            const blob = new Blob([vcfContent], { type: 'text/vcard' });
-            const url = URL.createObjectURL(blob);
+        // Create download link
+        const blob = new Blob([vcfContent], { type: 'text/vcard' });
+        const url = URL.createObjectURL(blob);
 
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-            document.body.appendChild(a);
-            a.click();
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+        document.body.appendChild(a);
+        a.click();
 
-            // Clean up
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
-        }
+        // Clean up
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    });
+}
     </script>
 </body>
 
