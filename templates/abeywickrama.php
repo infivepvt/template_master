@@ -212,7 +212,7 @@
             <!-- logo & banner image )-->
             <div class="card-header custom-header text-center">
                 <div style="background-color:#292b51; height: 200px; opacity: 1; ;border-radius:10px ">
-                    <img src="logo_img/client_logo/Branding-copy.png" alt="Company Logo" class="custom-logo"
+                    <img src="logo_img/client_logo/abeywickrama-l.png" alt="Company Logo" class="custom-logo"
                         height="120px" style="width: 122px; opacity: 1; margin-top:10px;">
                 </div>
 
