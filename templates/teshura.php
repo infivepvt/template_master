@@ -348,7 +348,7 @@ END:VCARD`;
 
         const a = document.createElement('a');
         a.href = url;
-        a.download = ${contactData.firstName}_${contactData.lastName}.vcf;
+        a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;  // Fixed: Added backticks
         document.body.appendChild(a);
         a.click();
 
