@@ -275,29 +275,29 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        function generateVCF() {
-            // Updated contact information to match the business card
-            const contactData = {
-                firstName: "Teshura ",
-                lastName: "Wallace",
-                title: "Owner",
-                phoneWork: "2423254664",
-                phoneMobile: "9546237424",
-                email: "Twallace@wallysconveniencestore.com",
-                email2: "",
-                email3: "",
-                website: "www.wallysconveniencestore.com",
-                website2: "",
-                website3: "",
-                address: "",
-                address2: "",
-                about: "",
-                logo: "",
-                profileImage: "profile_img/client_profile/Teshura-p.png"
-            };
+       function generateVCF() {
+    // Updated contact information to match the business card
+    const contactData = {
+        firstName: "Teshura ",
+        lastName: "Wallace",
+        title: "Owner",
+        phoneWork: "2423254664",
+        phoneMobile: "9546237424",
+        email: "Twallace@wallysconveniencestore.com",
+        email2: "",
+        email3: "",
+        website: "www.wallysconveniencestore.com",
+        website2: "",
+        website3: "",
+        address: "",
+        address2: "",
+        about: "",
+        logo: "",
+        profileImage: "profile_img/client_profile/Teshura-p.png"
+    };
 
-            // Create VCF content
-            let vcfContent = `BEGIN:VCARD
+    // Create VCF content
+    let vcfContent = `BEGIN:VCARD
 VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
 N:${contactData.lastName};${contactData.firstName};;;
@@ -312,25 +312,30 @@ URL:${contactData.website2}
 URL:${contactData.website3}
 ADR;TYPE=WORK:;;${contactData.address}
 ADR;TYPE=HOME:;;${contactData.address2}
-NOTE:${contactData.about}
-PHOTO;VALUE=URL:${contactData.profileImage}
-LOGO;VALUE=URL:${contactData.logo}
+NOTE:${contactData.about}`;
+
+    if(contactData.profileImage) {
+        vcfContent += `
+PHOTO;ENCODING=b;TYPE=JPEG:[base64-encoded-image-here]`;
+    }
+
+    vcfContent += `
 END:VCARD`;
 
-            // Create download link
-            const blob = new Blob([vcfContent], { type: 'text/vcard' });
-            const url = URL.createObjectURL(blob);
+    // Create download link
+    const blob = new Blob([vcfContent], { type: 'text/vcard' });
+    const url = URL.createObjectURL(blob);
 
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-            document.body.appendChild(a);
-            a.click();
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+    document.body.appendChild(a);
+    a.click();
 
-            // Clean up
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
-        }
+    // Clean up
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+}
     </script>
 </body>
 
