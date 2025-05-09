@@ -20,13 +20,13 @@
             overflow: hidden;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             font-family: Arial, sans-serif;
-            background-color: #1b1a1a;
+            background-color: #E0FFFF;
         }
 
         .profile-header14 {
             padding: 20px;
             text-align: center;
-            background-color: #1b1a1a;
+            background-color:#E0FFFF;
         }
 
         .custom-logo {
@@ -43,13 +43,13 @@
 
         .profile-name {
             font-size: 30px;
-            color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
 
         }
 
         .job-title {
             font-size: 20px;
-            color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
 
         }
 
@@ -95,7 +95,7 @@
 
         .about-section {
             padding: 20px;
-            background-color: #1b1a1a;
+            background-color: #E0FFFF;
         }
 
         .about-section h5 {
@@ -132,8 +132,8 @@
         .footer {
             text-align: center;
             padding: 10px;
-            background-color: #1b1a1a;
-            color: white;
+            background-color: #E0FFFF;
+            color: #000000;
         }
 
         .fw {
@@ -220,9 +220,9 @@
         </div>
         <!-- About Section -->
         <div class="about-section">
-            <div style="border: 2px solid rgb(255, 255, 255); padding: 10px;">
-                <h5 style="color:white;">About Us</h5>
-                <p style="color:white;">Welcome to Traveller Global Destination & Leisure Holidays,
+            <div style="border: 2px solid rgb(0, 0, 0); padding: 10px;">
+                <h5 style="color:black;">About Us</h5>
+                <p style="color:black;">Welcome to Traveller Global Destination & Leisure Holidays,
  where our proud legacy since 2004 reflects our passion for
  creating unforgettable travel experiences. As Chairman, I am
  honoured to lead a company that has consistently set
