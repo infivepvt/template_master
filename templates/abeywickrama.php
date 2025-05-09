@@ -307,91 +307,90 @@
         }
 
         function generateVCF() {
-        // Contact information
-        const contactData = {
-            firstName: "Kalindu",
-            lastName: "Abeywickrama",
-            title: "Abeywickrama Trading House",
-            phoneWork: "+94702775078",
-            phoneMobile: "",
-            email: "kalinduabeywickrama@gmail.com",
-            website: "https://www.abeywickrama.com/",
-            about: "Supplying high-quality engine and vehicle spare parts with reliable service and expert support.",
-            profileImage: "profile_img/main_profile/template10-p.png" // Path to profile image
-        };
+    // Contact information
+    const contactData = {
+        firstName: "Kalindu",
+        lastName: "Abeywickrama",
+        title: "Abeywickrama Trading House",
+        phoneWork: "+94702775078",
+        phoneMobile: "",
+        email: "kalinduabeywickrama@gmail.com",
+        website: "https://www.abeywickrama.com/",
+        about: "Supplying high-quality engine and vehicle spare parts with reliable service and expert support.",
+        profileImage: "profile_img/main_profile/template10-p.png" // Path to profile image
+    };
 
-        // Create a function to get base64 image (this is a simplified version)
-        function getBase64Image(imgUrl, callback) {
-            const img = new Image();
-            img.crossOrigin = 'Anonymous';
-            img.onload = function() {
-                const canvas = document.createElement('canvas');
-                canvas.width = this.naturalWidth;
-                canvas.height = this.naturalHeight;
-                canvas.getContext('2d').drawImage(this, 0, 0);
-                callback(canvas.toDataURL('image/jpeg').replace(/^data:image\/(png|jpeg);base64,/, ''));
-            };
-            img.src = imgUrl;
+    // Create a function to get base64 image
+    function getBase64Image(imgUrl, callback) {
+        // If the image is already base64, return it directly
+        if (imgUrl.startsWith('data:image')) {
+            callback(imgUrl.split(',')[1]);
+            return;
         }
 
-        // For demo purposes, we'll use a placeholder function
-        // In production, you need to ensure the image is accessible and CORS policies allow this
-        function getProfileImageBase64(callback) {
-            // This is a placeholder - in reality you should:
-            // 1. Either pre-encode the image server-side and include the base64 string here
-            // 2. Or ensure the image is accessible and CORS policies allow client-side conversion
-            const placeholderBase64 = ''; // Leave empty or provide actual base64 string
-            
-            if (placeholderBase64) {
-                callback(placeholderBase64);
-            } else {
-                // Fallback without image if we can't convert it
-                callback(null);
-            }
-        }
+        // Try to fetch the image
+        fetch(imgUrl)
+            .then(response => {
+                if (!response.ok) throw new Error('Network response was not ok');
+                return response.blob();
+            })
+            .then(blob => {
+                const reader = new FileReader();
+                reader.onloadend = function() {
+                    callback(reader.result.split(',')[1]);
+                };
+                reader.readAsDataURL(blob);
+            })
+            .catch(error => {
+                console.error('Error loading image:', error);
+                callback(null); // Return null if image can't be loaded
+            });
+    }
 
-        // Generate the VCF content with image if available
-        getProfileImageBase64(function(imageBase64) {
-            let vcfContent = `BEGIN:VCARD
+    // Generate the VCF content
+    getBase64Image(contactData.profileImage, function(imageBase64) {
+        let vcfContent = `BEGIN:VCARD
 VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
 N:${contactData.lastName};${contactData.firstName};;;
 TITLE:${contactData.title}
 TEL;TYPE=WORK,VOICE:${contactData.phoneWork}`;
 
-            if (contactData.phoneMobile) {
-                vcfContent += `
-TEL;TYPE=CELL:${contactData.phoneMobile}`;
-            }
-
+        if (contactData.phoneMobile) {
             vcfContent += `
+TEL;TYPE=CELL:${contactData.phoneMobile}`;
+        }
+
+        vcfContent += `
 EMAIL:${contactData.email}
 URL:${contactData.website}
 NOTE:${contactData.about}`;
 
-            if (imageBase64) {
-                vcfContent += `
-PHOTO;ENCODING=b;TYPE=JPEG:${imageBase64}`;
-            }
-
+        if (imageBase64) {
             vcfContent += `
+PHOTO;ENCODING=b;TYPE=JPEG:${imageBase64}`;
+        }
+
+        vcfContent += `
 END:VCARD`;
 
-            // Create download link
-            const blob = new Blob([vcfContent], {type: 'text/vcard'});
-            const url = URL.createObjectURL(blob);
+        // Create download link
+        const blob = new Blob([vcfContent], {type: 'text/vcard'});
+        const url = URL.createObjectURL(blob);
 
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-            document.body.appendChild(a);
-            a.click();
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+        document.body.appendChild(a);
+        a.click();
 
-            // Clean up
+        // Clean up
+        setTimeout(() => {
             document.body.removeChild(a);
             URL.revokeObjectURL(url);
-        });
-    }
+        }, 100);
+    });
+}
     </script>
 </body>
 </html>
