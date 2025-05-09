@@ -185,10 +185,18 @@
                 </a>
 
                 <div class="list-group mb-3">
+                <button type="button"
+                        class="list-group-item d-flex align-items-center justify-content-between contact"
+                        onclick="window.open('tel:2428290559', '_self')">
+                        <img src="Images/icon/mobile-phone.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
+                        <span class="text-center flex-grow-1 text-truncate custom-phone"
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">2428290559</span>
+                    </button>
+
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
                         onclick="window.open('tel:2423254664', '_self')">
-                        <img src="Images/icon/phone.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
+                        <img src="Images/icon/land-line.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
                             style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">242-325-4664</span>
                     </button>
@@ -196,7 +204,7 @@
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
                         onclick="window.open('tel:9546237424', '_self')">
-                        <img src="Images/icon/mobile-phone.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
+                        <img src="Images/icon/telephone.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
                             style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">954-623-7424</span>
                     </button>
@@ -281,8 +289,8 @@
         firstName: "Teshura ",
         lastName: "Wallace",
         title: "Owner",
-        phoneWork: "2423254664",
-        phoneMobile: "9546237424",
+        phoneWork: "2428290559",
+        phoneMobile: "2423254664",
         email: "Twallace@wallysconveniencestore.com",
         email2: "",
         email3: "",
@@ -340,7 +348,7 @@ END:VCARD`;
 
         const a = document.createElement('a');
         a.href = url;
-        a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+        a.download = ${contactData.firstName}_${contactData.lastName}.vcf;
         document.body.appendChild(a);
         a.click();
 
