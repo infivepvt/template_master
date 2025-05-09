@@ -65,6 +65,7 @@ $routes = [
     'sandunedirisinghe' => 'templates/sandunedirisinghe.php',
     'travelglobal' => 'templates/travelglobal.php',
     'teshura' => 'templates/teshura.php',
+    'deelaka' => 'templates/deelaka.php',
 ];
 
 // Handle the request
