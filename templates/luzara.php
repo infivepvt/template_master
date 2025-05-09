@@ -454,12 +454,6 @@
         <img id="lightbox-image" class="lightbox-image" src="" alt="">
       </div>
     </div>
-
-    <footer style="text-align:center; padding:10px; font-size:14px; color:white;">
-      <a href="https://tapilinq.com/" target="_blank" style="text-decoration:none; color:white;">
-        Made with ❤️ by Tapilinq | Click now
-      </a>
-    </footer>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

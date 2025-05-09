@@ -2,230 +2,230 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Card</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" type="image/x-icon" href="Images/Logo1.ico">
-    <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="Images/Logo1.ico">
+  <style>
     .profile-card {
-        background-color: #000;
-        color: #fff;
-        max-width: 450px;
-        width: 100%;
-        height: auto;
-        overflow: hidden;
-        font-family: 'Montserrat', sans-serif;
-        margin: 0 auto;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      background-color: #000;
+      color: #fff;
+      max-width: 450px;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      font-family: 'Montserrat', sans-serif;
+      margin: 0 auto;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     }
 
     .profile-banner {
-        position: relative;
+      position: relative;
     }
 
     .profile-photo {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        filter: brightness(0.79);
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      filter: brightness(0.79);
     }
 
     .imagepro {
-        width: 100%;
-        margin-right: 0;
-        filter: brightness(1.0);
+      width: 100%;
+      margin-right: 0;
+      filter: brightness(1.0);
     }
 
     .profile-info {
-        position: absolute;
-        bottom: 20px;
-        left: 20px;
-        z-index: 2;
-        color: #ffffff;
-        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
-        text-align: left;
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      z-index: 2;
+      color: #ffffff;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+      text-align: left;
     }
 
     .profile-info h2 {
-        font-size: 1.8rem;
-        font-weight: bold;
-        margin-bottom: 5px;
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 5px;
     }
 
     .profile-info p {
-        font-size: 1.1rem;
-        margin-bottom: 0;
+      font-size: 1.1rem;
+      margin-bottom: 0;
     }
 
     .profile-contact-icons {
-        display: flex;
-        justify-content: start;
-        align-items: start;
-        gap: 15px;
-        padding: 15px;
-        flex-wrap: wrap;
-        margin-left: 10px;
+      display: flex;
+      justify-content: start;
+      align-items: start;
+      gap: 15px;
+      padding: 15px;
+      flex-wrap: wrap;
+      margin-left: 10px;
     }
 
     .icon-button {
-        background-color: #fff;
-        border: none;
-        color: #000000;
-        font-size: 20px;
-        cursor: pointer;
-        padding: 10px;
-        border-radius: 50%;
-        transition: all 0.3s ease;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 40px;
-        height: 40px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      border: none;
+      color: #000000;
+      font-size: 20px;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
     .icon-button:hover {
-        background-color: #333;
-        color: #fff;
-        transform: scale(1.1);
+      background-color: #333;
+      color: #fff;
+      transform: scale(1.1);
     }
 
     .icon-button:active {
-        transform: scale(0.95);
+      transform: scale(0.95);
     }
 
     .social-media-links-column {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        padding: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      padding: 15px;
     }
 
     .social-media-button {
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px;
-        padding: 12px;
-        border-radius: 25px;
-        color: #000;
-        text-decoration: none;
-        transition: background-color 0.3s;
-        width: 100%;
-        max-width: 350px;
-        background-color: #ececec;
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      padding: 12px;
+      border-radius: 25px;
+      color: #000;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      width: 100%;
+      max-width: 350px;
+      background-color: #ececec;
     }
 
     .social-media-button i {
-        margin-right: 15px;
+      margin-right: 15px;
     }
 
     .social-media-button:hover {
-        background-color: #555;
-        color: white;
+      background-color: #555;
+      color: white;
     }
 
     .social-media-button:hover .platform-name,
     .social-media-button:hover .user-name {
-        color: white;
+      color: white;
     }
 
     .text-wrapper {
-        text-align: left;
-        margin-left: 16px;
+      text-align: left;
+      margin-left: 16px;
     }
 
     .platform-name {
-        font-weight: bold;
-        color: #000;
-        font-size: 16px;
-        font-family: Roboto, sans-serif;
+      font-weight: bold;
+      color: #000;
+      font-size: 16px;
+      font-family: Roboto, sans-serif;
     }
 
     .user-name {
-        color: rgb(32, 130, 243);
-        font-size: 16px;
-        font-family: Roboto, sans-serif;
+      color: rgb(32, 130, 243);
+      font-size: 16px;
+      font-family: Roboto, sans-serif;
     }
 
     .footer {
-        background-color: rgb(0, 0, 0);
-        text-align: center;
-        padding: 10px;
-        font-size: 14px;
+      background-color: rgb(0, 0, 0);
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
     }
 
     .custom-save-button {
-        width: 100%;
-        max-width: 350px;
-        padding: 15px;
-        margin: 10px 0;
-        background-color: rgb(65, 66, 65);
-        color: white;
-        border: none;
-        border-radius: 5px;
-        font-size: 16px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      width: 100%;
+      max-width: 350px;
+      padding: 15px;
+      margin: 10px 0;
+      background-color: rgb(65, 66, 65);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .custom-save-button:hover {
-        background-color: #45a049;
+      background-color: #45a049;
     }
 
     .custom-save-button i {
-        margin-right: 10px;
+      margin-right: 10px;
     }
 
     /* Responsive adjustments */
     @media (max-width: 576px) {
-        .profile-info h2 {
-            font-size: 1.5rem;
-        }
+      .profile-info h2 {
+        font-size: 1.5rem;
+      }
 
-        .profile-info p {
-            font-size: 1rem;
-        }
+      .profile-info p {
+        font-size: 1rem;
+      }
 
-        .profile-contact-icons {
-            gap: 10px;
-            padding: 10px;
-        }
+      .profile-contact-icons {
+        gap: 10px;
+        padding: 10px;
+      }
 
-        .icon-button {
-            width: 36px;
-            height: 36px;
-            font-size: 18px;
-        }
+      .icon-button {
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+      }
 
-        .social-media-button {
-            padding: 10px;
-        }
+      .social-media-button {
+        padding: 10px;
+      }
 
-        .platform-name,
-        .user-name {
-            font-size: 14px;
-        }
+      .platform-name,
+      .user-name {
+        font-size: 14px;
+      }
     }
 
     @media (max-width: 400px) {
-        .profile-info {
-            bottom: 10px;
-            left: 10px;
-        }
+      .profile-info {
+        bottom: 10px;
+        left: 10px;
+      }
 
-        .profile-info h2 {
-            font-size: 1.3rem;
-        }
+      .profile-info h2 {
+        font-size: 1.3rem;
+      }
     }
 
-        /* gallery */
+    /* gallery */
 
-        .gallery-section {
+    .gallery-section {
       padding: 20px;
       background-color: #000;
     }
@@ -324,70 +324,87 @@
       font-size: 30px;
       cursor: pointer;
     }
+    .about-section {
+      text-align: center;
+      margin: 40px 0;
+    }
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 30px 0;
+    }
 
+    .image-gallery img {
+      max-width: 50%;
+      height: auto;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
     /* gallery */
 
     /* Removed unused or unnecessary CSS classes/styles for clarity */
-</style>
+  </style>
 
 </head>
 
 <body>
-    
-    <div class="profile-card">
-        <div class="profile-banner">
-            <div class="imagepro">
-                <img class="profile-photo" src="profile_img/client_profile/sandun-p.jpeg" alt="Profile">
-            </div>
-            <div class="profile-info">
-                <h2 style="font-family: Verdana, sans-serif;">Sandun Edirisinghe</h2>
-                <p style="font-family: Roboto, sans-serif;">CEO</p>
-            </div>
+
+  <div class="profile-card">
+    <div class="profile-banner">
+      <div class="imagepro">
+        <img class="profile-photo" src="profile_img/client_profile/sandun-p.jpeg" alt="Profile">
+      </div>
+      <div class="profile-info">
+        <h2 style="font-family: Verdana, sans-serif;">Sandun Edirisinghe</h2>
+        <p style="font-family: Roboto, sans-serif;">CEO</p>
+      </div>
+    </div>
+
+    <div class="profile-contact-icons">
+      <button class="icon-button" onclick="window.open('mailto:youremail@yourwebsite.com', '_self')">
+        <i class="fas fa-envelope"></i>
+      </button>
+      <button class="icon-button" onclick="window.open('tel:0772457110', '_self')">
+        <i class="fas fa-phone"></i>
+      </button>
+      <button class="icon-button" onclick="window.open('', '_blank')">
+        <i class="fas fa-map-marker-alt"></i>
+      </button>
+      <button class="icon-button" onclick="window.open('https://wa.me/94772457110', '_blank')">
+        <i class="fab fa-whatsapp"></i>
+      </button>
+    </div>
+
+    <div class="social-media-links-column">
+      <a href="#" class="social-media-button">
+        <img src="Images/Social_Media_Icon/facebook.png" alt="" style="width: 40px; height: 40px;">
+        <div class="text-wrapper">
+          <span class="platform-name">Facebook</span>
+          <br>
+          <span class="user-name">Sandun Edirisinghe</span>
         </div>
-
-        <div class="profile-contact-icons">
-            <button class="icon-button" onclick="window.open('mailto:youremail@yourwebsite.com', '_self')">
-                <i class="fas fa-envelope"></i>
-            </button>
-            <button class="icon-button" onclick="window.open('tel:0772457110', '_self')">
-                <i class="fas fa-phone"></i>
-            </button>
-            <button class="icon-button" onclick="window.open('', '_blank')">
-                <i class="fas fa-map-marker-alt"></i>
-            </button>
-            <button class="icon-button" onclick="window.open('https://wa.me/94772457110', '_blank')">
-                <i class="fab fa-whatsapp"></i>
-            </button>
+      </a>
+      <a href="#" class="social-media-button">
+        <img src="Images/Social_Media_Icon/instagram.png" alt="" style="width: 40px; height: 40px;">
+        <div class="text-wrapper">
+          <span class="platform-name">Instagram</span>
+          <br>
+          <span class="user-name">Sandun Edirisinghe</span>
         </div>
+      </a>
+      <a href="#" class="social-media-button">
+        <img src="Images/Social_Media_Icon/linkedin.png" alt="" style="width: 40px; height: 40px;">
+        <div class="text-wrapper">
+          <span class="platform-name">Linkedin</span>
+          <br>
+          <span class="user-name">Sandun Edirisinghe</span>
+        </div>
+      </a>
 
-        <div class="social-media-links-column">
-            <a href="#" class="social-media-button">
-                <img src="Images/Social_Media_Icon/facebook.png" alt="" style="width: 40px; height: 40px;">
-                <div class="text-wrapper">
-                    <span class="platform-name">Facebook</span>
-                    <br>
-                    <span class="user-name">Sandun Edirisinghe</span>
-                </div>
-            </a>
-            <a href="#" class="social-media-button">
-                <img src="Images/Social_Media_Icon/instagram.png" alt="" style="width: 40px; height: 40px;">
-                <div class="text-wrapper">
-                    <span class="platform-name">Instagram</span>
-                    <br>
-                    <span class="user-name">Sandun Edirisinghe</span>
-                </div>
-            </a>
-            <a href="#" class="social-media-button">
-                <img src="Images/Social_Media_Icon/linkedin.png" alt="" style="width: 40px; height: 40px;">
-                <div class="text-wrapper">
-                    <span class="platform-name">Linkedin</span>
-                    <br>
-                    <span class="user-name">Sandun Edirisinghe</span>
-                </div>
-            </a>
-
-             <!-- gallery -->
-    <!-- <div class="gallery-section">
+      <!-- gallery -->
+      <!-- <div class="gallery-section">
       <div class="gallery-header" onclick="toggleGallery()">
         <div class="gallery-title">Gallery</div>
         <div class="gallery-toggle" id="galleryToggle">
@@ -416,30 +433,35 @@
       </div>
     </div> -->
 
-    <!-- Lightbox HTML -->
-    <div class="lightbox" id="lightbox">
-      <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
-      <div class="lightbox-nav">
-        <button onclick="changeImage(-1)">&#10094;</button>
-        <button onclick="changeImage(1)">&#10095;</button>
-      </div>
-      <div class="lightbox-content">
-        <img id="lightbox-image" class="lightbox-image" src="" alt="">
-      </div>
-    </div>
-            <button class="custom-save-button" onclick="downloadVCF()">
-                <i class="fas fa-save"></i>
-                SAVE TO CONTACTS
-            </button>
+      <!-- Lightbox HTML -->
+      <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-nav">
+          <button onclick="changeImage(-1)">&#10094;</button>
+          <button onclick="changeImage(1)">&#10095;</button>
         </div>
-
-        <div class="footer">
-            <p>All rights reserved</p>
+        <div class="lightbox-content">
+          <img id="lightbox-image" class="lightbox-image" src="" alt="">
         </div>
+      </div>
+      <button class="custom-save-button" onclick="downloadVCF()">
+        <i class="fas fa-save"></i>
+        SAVE TO CONTACTS
+      </button>
+      <section class="about-section">
+        <div class="image-gallery">
+          <img src="logo_img/client_logo/sandunedirisinghe-l.jpg" alt="Business logo">
+        </div>
+      </section>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
+    <div class="footer">
+      <p>All rights reserved</p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
     // Gallery images array
     const galleryImages = [
       'gallery_img/main_gallerys/t6g1.jpg',
@@ -542,4 +564,5 @@ END:VCARD`;
     }
   </script>
 </body>
+
 </html>
