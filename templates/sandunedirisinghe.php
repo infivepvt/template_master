@@ -545,32 +545,62 @@
       }
     });
 
-    function downloadVCF() {
-      // Get the profile image URL
-      const profileImageUrl = 'profile_img/client_profile/sandun-p.jpeg';
-      const vCardData = `BEGIN:VCARD
+    async function downloadVCF() {
+  try {
+    const profileImage = document.querySelector('.profile-photo');
+    
+    // Wait for image to load if it's not already loaded
+    if (!profileImage.complete) {
+      await new Promise((resolve) => {
+        profileImage.onload = resolve;
+      });
+    }
+    
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+    canvas.width = profileImage.naturalWidth;
+    canvas.height = profileImage.naturalHeight;
+    ctx.drawImage(profileImage, 0, 0);
+    
+    const base64Image = canvas.toDataURL('image/jpeg').split(',')[1];
+    
+    const vCardData = `BEGIN:VCARD
 VERSION:3.0
 FN:Sandun Edirisinghe
 ORG:SAGT
 TITLE:General Manager Engineering
 TEL;TYPE=CELL:94772457110
 EMAIL:youremail@yourwebsite.com
-URL:
-ADR:Your Address Here
-PHOTO;ENCODING=b;TYPE=JPEG:${profileImageUrl}
-NOTE:
+PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}
 END:VCARD`;
 
-      const blob = new Blob([vCardData], { type: 'text/vcard' });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = 'Sandun.vcf';
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-      URL.revokeObjectURL(url);
-    }
+    downloadBlob(vCardData, 'Sandun.vcf');
+  } catch (error) {
+    console.error('Error including image, falling back to basic vCard', error);
+    // Fallback without image
+    const vCardData = `BEGIN:VCARD
+VERSION:3.0
+FN:Sandun Edirisinghe
+ORG:SAGT
+TITLE:General Manager Engineering
+TEL;TYPE=CELL:94772457110
+EMAIL:youremail@yourwebsite.com
+END:VCARD`;
+    downloadBlob(vCardData, 'Sandun.vcf');
+  }
+}
+
+function downloadBlob(content, filename) {
+  const blob = new Blob([content], { type: 'text/vcard' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
   </script>
 </body>
 
