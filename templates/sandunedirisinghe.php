@@ -358,7 +358,7 @@
       </div>
       <div class="profile-info">
         <h2 style="font-family: Verdana, sans-serif;">Sandun Edirisinghe</h2>
-        <p style="font-family: Roboto, sans-serif;">CEO</p>
+        <p style="font-family: Roboto, sans-serif;">General Manager Engineering</p>
       </div>
     </div>
 
