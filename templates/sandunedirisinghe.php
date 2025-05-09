@@ -324,10 +324,12 @@
       font-size: 30px;
       cursor: pointer;
     }
+
     .about-section {
       text-align: center;
       margin: 40px 0;
     }
+
     .image-gallery {
       display: flex;
       flex-wrap: wrap;
@@ -342,6 +344,7 @@
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
+
     /* gallery */
 
     /* Removed unused or unnecessary CSS classes/styles for clarity */
@@ -456,10 +459,10 @@
     </div>
 
     <footer style="text-align:center; padding:10px; font-size:14px; color:white;">
-                <a href="https://tapilinq.com/" target="_blank" style="text-decoration:none; color:white;">
-                    Made with by Tapilinq | Click now
-                </a>
-            </footer>
+      <a href="https://tapilinq.com/" target="_blank" style="text-decoration:none; color:white;">
+        Made with by Tapilinq | Click now
+      </a>
+    </footer>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -543,14 +546,18 @@
     });
 
     function downloadVCF() {
+      // Get the profile image URL
+      const profileImageUrl = 'profile_img/client_profile/sandun-p.jpeg';
       const vCardData = `BEGIN:VCARD
 VERSION:3.0
 FN:Sandun Edirisinghe
 ORG:SAGT
-TEL:94772457110
+TITLE:General Manager Engineering
+TEL;TYPE=CELL:94772457110
 EMAIL:youremail@yourwebsite.com
 URL:
 ADR:Your Address Here
+PHOTO;ENCODING=b;TYPE=JPEG:${profileImageUrl}
 NOTE:
 END:VCARD`;
 
