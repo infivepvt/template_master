@@ -171,7 +171,7 @@
             <div class="card-body text-center"
                 style="background-color: #FFFFFF; color: #000000; text-decoration: none; ">
                 <h2 class="card-title" style="font-size: 27px; text-transform: uppercase;">J G DEELAKA DEVANJITH</h2>
-                <p style="color: #000000; font-size: 21px; text-transform: uppercase;">Proprietor</p>
+                <p style="color: #000000; font-size: 21px; text-transform: uppercase;">Founder</p>
 
                 <a href="https://wa.me/94761231212" target="_blank" rel="noopener noreferrer"
                     style="text-decoration: none;">
@@ -211,7 +211,7 @@
 
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
-                        onclick="window.open('https://www.google.com/maps/search/?api=1&query=919+Oaktree+Crescent,+Newmarket', '_blank')">
+                        onclick="window.open('https://www.google.com/maps/place/127+Wellawaya+Rd,+Monaragala/@6.871582,81.3476412,17z/data=!4m5!3m4!1s0x3ae45071d7219a45:0xef2b98fb23c1a483!8m2!3d6.8715767!4d81.3502161?authuser=0&entry=ttu&g_ep=EgoyMDI1MDUwNi4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D', '_blank')">
                         <img src="Images/icon/map.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
                             style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">127, Wellawaya Road,Monaragala,Sri Lanka</span>
