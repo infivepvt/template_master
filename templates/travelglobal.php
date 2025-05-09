@@ -274,20 +274,39 @@ END:VCARD`;
     </script> -->
 
     <script>
-    document.getElementById('saveToContacts').addEventListener('click', function() {
-        // Create vCard content with photo
+document.getElementById('saveToContacts').addEventListener('click', function() {
+    // Get the profile image URL
+    const profileImageUrl = 'profile_img/client_profile/travelglobal-p.png';
+    
+    // Create a canvas element to convert the image to base64
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+    const img = new Image();
+    
+    // Handle CORS if needed
+    img.crossOrigin = 'Anonymous';
+    
+    img.onload = function() {
+        canvas.width = img.width;
+        canvas.height = img.height;
+        ctx.drawImage(img, 0, 0);
+        
+        // Convert image to base64
+        const base64Image = canvas.toDataURL('image/jpeg').replace('data:image/jpeg;base64,', '');
+        
+        // Create vCard content with embedded photo
         const vCardData = `BEGIN:VCARD
 VERSION:3.0
 FN:Ramzi Reyal
 TITLE:Director
 TEL;TYPE=WORK,VOICE:077731233
 EMAIL:ramzi@travellerleisure.com
+EMAIL:ramzi.reyal@gmail.com
 URL:https://www.yourwebsiteaddress.com
 ADR;TYPE=WORK:;;;
-NOTE:
-PHOTO;profile_img/client_profile/travelglobal-p.png
+NOTE:Welcome to Traveller Global Destination & Leisure Holidays
+PHOTO;ENCODING=BASE64;TYPE=JPEG:${base64Image}
 END:VCARD`;
-
 
         // Create a Blob with the vCard data
         const blob = new Blob([vCardData], { type: 'text/vcard' });
@@ -305,7 +324,11 @@ END:VCARD`;
         // Clean up
         document.body.removeChild(link);
         URL.revokeObjectURL(url);
-    });
+    };
+    
+    // Start loading the image
+    img.src = profileImageUrl;
+});
 </script>
 
 </body>
