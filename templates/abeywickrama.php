@@ -85,7 +85,6 @@
         }
 
         .custom-save-button {
-            /* background: linear-gradient(90deg, #5f4def, #00d0ea); */
             background-color: #292b51;
             color: white;
             font-weight: bold;
@@ -99,7 +98,6 @@
         }
 
         .custom-save-button:hover {
-            /* background: linear-gradient(90deg, #4b3ec4, #00b3c3); */
             background-color: #292b51;
         }
 
@@ -152,22 +150,16 @@
 
         .mb-3 {
             background-color: #292b51;
-            /* margin-left: 10px;   */
             padding: 5px;
             border-radius: 10px;
             color: white;
-            /* margin-left: 10px;
-            margin-right: 10px; */
             font-family: 'Roboto', sans-serif;
         }
 
         @keyframes float {
-
-            0%,
-            100% {
+            0%, 100% {
                 transform: translateY(-3px);
             }
-
             50% {
                 transform: translateY(3px);
             }
@@ -209,23 +201,23 @@
     <div class="d-flex justify-content-center mt-5">
         <div class="card custom-card shadow-lg" style="background-color: #FFFFFF;">
 
-            <!-- logo & banner image )-->
+            <!-- logo & banner image -->
             <div class="card-header custom-header text-center">
-                <div style="background-color:#292b51; height: 200px; opacity: 1; ;border-radius:10px ">
+                <div style="background-color:#292b51; height: 200px; opacity: 1; border-radius:10px">
                     <img src="logo_img/client_logo/abeywickrama-l.png" alt="Company Logo" class="custom-logo"
                         height="120px" style="width: 122px; opacity: 1; margin-top:10px;">
                 </div>
 
                 <!-- profile image -->
                 <div class="profile-picture">
-                    <img src="profile_img/main_profile/template10-p.png" alt="" class="rounded-circle">
+                    <img src="profile_img/main_profile/template10-p.png" alt="Profile Picture" class="rounded-circle">
                 </div>
             </div>
             <br>
             <br>
             <!-- name ,title ,about me -->
             <div class="card-body text-center"
-                style="background-color: #FFFFFF; color: #000000; text-decoration: none; ">
+                style="background-color: #FFFFFF; color: #000000; text-decoration: none;">
                 <div class="text-body">
                     <h2 class="card-title"
                         style="font-size: 26px; text-transform: uppercase; margin-top:40px ;color: #292b51">kalindu
@@ -234,10 +226,10 @@
                         style="color: #292b51; font-size: 13px; text-transform: uppercase ;letter-spacing:2.8px ;font-weight:500">
                         Abeywickrama Trading House</p>
                     <p style="color: white; font-size:13px;">Supplying high-quality engine and vehicle spare parts with
-                        reliable service and
-                        expert support. Trusted by workshops, dealers, and distributors for consistent product
-                        availability
-                        and professional assistance.
+                        reliable
+                        service and expert support. Trusted by workshops, dealers, and distributors for consistent
+                        product
+                        availability and professional assistance.
                     </p>
                 </div>
 
@@ -294,44 +286,9 @@
                     </div>
                 </div>
 
-
-                <!-- <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:19px">CONNECT WITH SOCIAL MEDIA
-                </p>
-                <div class="d-flex flex-wrap justify-content-center">
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/instagram.png" alt="" style="width: 50px; height: 50px;">
-                    </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/facebook.png" alt="" style="width: 50px; height: 50px;">
-                    </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/youtube.png" alt="" style="width: 50px; height: 50px;">
-                    </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/tiktok.png" alt="" style="width: 50px; height: 50px;">
-                    </a>
-                </div>
-
-                <div class="d-flex flex-wrap justify-content-center">
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/linkedin.png" alt="" style="width: 50px; height: 50px;">
-                    </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/twitter.png" alt="" style="width: 50px; height: 50px;">
-                    </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/social.png" alt="" style="width: 50px; height: 50px;">
-                    </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/pinterest.png" alt="" style="width: 50px; height: 50px;">
-                    </a>
-                </div> -->
-
-
                 <br>
                 <button class="btn w-100 custom-save-button" onclick="generateVCF()"
-                    style="font-family: 'Roboto', sans-serif; font-size:19px; ">
-                    <!-- <img src="Images/Social_Media_Icon/save.png" alt="" style="width: 50px; height: 50px; margin-right:25px;"> -->
+                    style="font-family: 'Roboto', sans-serif; font-size:19px;">
                     <i class="fas fa-address-card me-2"></i>SAVE TO CONTACTS
                 </button>
             </div>
@@ -348,51 +305,80 @@
         function closeQRModal() {
             document.getElementById("qrModal").style.display = "none";
         }
-        <script>
-            function generateVCF() {
-        // Contact information - update these values with your actual data
+
+        function generateVCF() {
+        // Contact information
         const contactData = {
-                firstName: "Kalindu",
+            firstName: "Kalindu",
             lastName: "Abeywickrama",
-            title: "REAL ESTATE BROKER",
-            phoneWork: "94702775078",
+            title: "Abeywickrama Trading House",
+            phoneWork: "+94702775078",
             phoneMobile: "",
             email: "kalinduabeywickrama@gmail.com",
-            email2: "",
-            email3: "",
             website: "https://www.abeywickrama.com/",
-            website2: "",
-            website3: "",
-            address: "",
-            address2: "",
-            about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            logo: "logo_img/client_logo/Branding-copy.png",
-            profileImage: "profile_img/main_profile/template10-p.png"
+            about: "Supplying high-quality engine and vehicle spare parts with reliable service and expert support.",
+            profileImage: "profile_img/main_profile/template10-p.png" // Path to profile image
         };
 
-            // Get base64 encoded images (you'll need to pre-encode these or fetch them)
-            // For now, I'll show the structure with placeholder comments
-            let vcfContent = `BEGIN:VCARD
-            VERSION:3.0
-            FN:${contactData.firstName} ${contactData.lastName}
-            N:${contactData.lastName};${contactData.firstName};;;
-            TITLE:${contactData.title}
-            TEL;TYPE=WORK,VOICE:${contactData.phoneWork}
-            TEL;TYPE=CELL:${contactData.phoneMobile}
-            EMAIL:${contactData.email}
-            URL:${contactData.website}
-            NOTE:${contactData.about}`;
+        // Create a function to get base64 image (this is a simplified version)
+        function getBase64Image(imgUrl, callback) {
+            const img = new Image();
+            img.crossOrigin = 'Anonymous';
+            img.onload = function() {
+                const canvas = document.createElement('canvas');
+                canvas.width = this.naturalWidth;
+                canvas.height = this.naturalHeight;
+                canvas.getContext('2d').drawImage(this, 0, 0);
+                callback(canvas.toDataURL('image/jpeg').replace(/^data:image\/(png|jpeg);base64,/, ''));
+            };
+            img.src = imgUrl;
+        }
 
-            // If you have base64 encoded images, add them like this:
-            // vcfContent += `
-            // PHOTO;ENCODING=b;TYPE=JPEG:/9j/4AAQSkZJRgABA... (base64 string)
-            // LOGO;ENCODING=b;TYPE=PNG:iVBORw0KGgoAAAAN... (base64 string)`;
+        // For demo purposes, we'll use a placeholder function
+        // In production, you need to ensure the image is accessible and CORS policies allow this
+        function getProfileImageBase64(callback) {
+            // This is a placeholder - in reality you should:
+            // 1. Either pre-encode the image server-side and include the base64 string here
+            // 2. Or ensure the image is accessible and CORS policies allow client-side conversion
+            const placeholderBase64 = ''; // Leave empty or provide actual base64 string
+            
+            if (placeholderBase64) {
+                callback(placeholderBase64);
+            } else {
+                // Fallback without image if we can't convert it
+                callback(null);
+            }
+        }
+
+        // Generate the VCF content with image if available
+        getProfileImageBase64(function(imageBase64) {
+            let vcfContent = `BEGIN:VCARD
+VERSION:3.0
+FN:${contactData.firstName} ${contactData.lastName}
+N:${contactData.lastName};${contactData.firstName};;;
+TITLE:${contactData.title}
+TEL;TYPE=WORK,VOICE:${contactData.phoneWork}`;
+
+            if (contactData.phoneMobile) {
+                vcfContent += `
+TEL;TYPE=CELL:${contactData.phoneMobile}`;
+            }
 
             vcfContent += `
-            END:VCARD`;
+EMAIL:${contactData.email}
+URL:${contactData.website}
+NOTE:${contactData.about}`;
+
+            if (imageBase64) {
+                vcfContent += `
+PHOTO;ENCODING=b;TYPE=JPEG:${imageBase64}`;
+            }
+
+            vcfContent += `
+END:VCARD`;
 
             // Create download link
-            const blob = new Blob([vcfContent], {type: 'text/vcard' });
+            const blob = new Blob([vcfContent], {type: 'text/vcard'});
             const url = URL.createObjectURL(blob);
 
             const a = document.createElement('a');
@@ -404,9 +390,8 @@
             // Clean up
             document.body.removeChild(a);
             URL.revokeObjectURL(url);
+        });
     }
     </script>
-    </script>
 </body>
-
 </html>
