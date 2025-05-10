@@ -190,7 +190,7 @@
                         onclick="window.open('tel:2428290559', '_self')">
                         <img src="Images/icon/mobile-phone.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">2428290559</span>
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">242-829-0559</span>
                     </button>
 
                     <button type="button"
@@ -289,7 +289,7 @@
         firstName: "Teshura ",
         lastName: "Wallace",
         title: "Owner",
-        phoneWork: "2428290559",
+        phoneWork: "242-829-0559",
         phoneMobile: "2423254664",
         email: "Twallace@wallysconveniencestore.com",
         email2: "",
