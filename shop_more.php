@@ -198,7 +198,7 @@
             </div>
             <div class="qr-container">
                 <!-- template_qr -->
-                <img src="Images/template_qr/t1.png" alt="QR Code" class="qr-image" />
+                <img src="Images/template_qr/tq1.png" alt="QR Code" class="qr-image" />
                 <div class="scan-text">Scan with your mobile</div>
             </div>
         </div>
@@ -214,7 +214,7 @@
             </div>
             <div class="qr-container">
                 <!-- template_qr -->
-                <img src="Images/template_qr/t1.png" alt="QR Code" class="qr-image" />
+                <img src="Images/template_qr/tq2.png" alt="QR Code" class="qr-image" />
                 <div class="scan-text">Scan with your mobile</div>
             </div>
         </div>
@@ -230,7 +230,7 @@
             </div>
             <div class="qr-container">
                 <!-- template_qr -->
-                <img src="Images/template_qr/t1.png" alt="QR Code" class="qr-image" />
+                <img src="Images/template_qr/tq3.png" alt="QR Code" class="qr-image" />
                 <div class="scan-text">Scan with your mobile</div>
             </div>
         </div>
@@ -246,7 +246,7 @@
             </div>
             <div class="qr-container">
                 <!-- template_qr -->
-                <img src="Images/template_qr/t1.png" alt="QR Code" class="qr-image" />
+                <img src="Images/template_qr/tq4.png" alt="QR Code" class="qr-image" />
                 <div class="scan-text">Scan with your mobile</div>
             </div>
         </div>
@@ -262,7 +262,7 @@
             </div>
             <div class="qr-container">
                 <!-- template_qr -->
-                <img src="Images/template_qr/t1.png" alt="QR Code" class="qr-image" />
+                <img src="Images/template_qr/tq5.png" alt="QR Code" class="qr-image" />
                 <div class="scan-text">Scan with your mobile</div>
             </div>
         </div>
@@ -278,7 +278,7 @@
             </div>
             <div class="qr-container">
                 <!-- template_qr -->
-                <img src="Images/template_qr/t1.png" alt="QR Code" class="qr-image" />
+                <img src="Images/template_qr/tq6.png" alt="QR Code" class="qr-image" />
                 <div class="scan-text">Scan with your mobile</div>
             </div>
         </div>
@@ -294,7 +294,7 @@
             </div>
             <div class="qr-container">
                 <!-- template_qr -->
-                <img src="Images/template_qr/t1.png" alt="QR Code" class="qr-image" />
+                <img src="Images/template_qr/tq7.png" alt="QR Code" class="qr-image" />
                 <div class="scan-text">Scan with your mobile</div>
             </div>
         </div>
@@ -310,7 +310,7 @@
             </div>
             <div class="qr-container">
                 <!-- template_qr -->
-                <img src="Images/template_qr/t1.png" alt="QR Code" class="qr-image" />
+                <img src="Images/template_qr/tq8.png" alt="QR Code" class="qr-image" />
                 <div class="scan-text">Scan with your mobile</div>
             </div>
         </div>
@@ -326,7 +326,7 @@
             </div>
             <div class="qr-container">
                 <!-- template_qr -->
-                <img src="Images/template_qr/t1.png" alt="QR Code" class="qr-image" />
+                <img src="Images/template_qr/tq9.png" alt="QR Code" class="qr-image" />
                 <div class="scan-text">Scan with your mobile</div>
             </div>
         </div>
@@ -342,7 +342,7 @@
             </div>
             <div class="qr-container">
                 <!-- template_qr -->
-                <img src="Images/template_qr/t1.png" alt="QR Code" class="qr-image" />
+                <img src="Images/template_qr/tq10.png" alt="QR Code" class="qr-image" />
                 <div class="scan-text">Scan with your mobile</div>
             </div>
         </div>
@@ -358,7 +358,7 @@
             </div>
             <div class="qr-container">
                 <!-- template_qr -->
-                <img src="Images/template_qr/t1.png" alt="QR Code" class="qr-image" />
+                <img src="Images/template_qr/tq11.png" alt="QR Code" class="qr-image" />
                 <div class="scan-text">Scan with your mobile</div>
             </div>
         </div>
@@ -374,7 +374,7 @@
             </div>
             <div class="qr-container">
                 <!-- template_qr -->
-                <img src="Images/template_qr/t1.png" alt="QR Code" class="qr-image" />
+                <img src="Images/template_qr/tq12.png" alt="QR Code" class="qr-image" />
                 <div class="scan-text">Scan with your mobile</div>
             </div>
         </div>
@@ -390,7 +390,7 @@
             </div>
             <div class="qr-container">
                 <!-- template_qr -->
-                <img src="Images/template_qr/t1.png" alt="QR Code" class="qr-image" />
+                <img src="Images/template_qr/tq13.png" alt="QR Code" class="qr-image" />
                 <div class="scan-text">Scan with your mobile</div>
             </div>
         </div>
@@ -406,7 +406,7 @@
             </div>
             <div class="qr-container">
                 <!-- template_qr -->
-                <img src="Images/template_qr/t1.png" alt="QR Code" class="qr-image" />
+                <img src="Images/template_qr/tq14.png" alt="QR Code" class="qr-image" />
                 <div class="scan-text">Scan with your mobile</div>
             </div>
         </div>
@@ -422,7 +422,7 @@
             </div>
             <div class="qr-container">
                 <!-- template_qr -->
-                <img src="Images/template_qr/t1.png" alt="QR Code" class="qr-image" />
+                <img src="Images/template_qr/tq15.png" alt="QR Code" class="qr-image" />
                 <div class="scan-text">Scan with your mobile</div>
             </div>
         </div>
@@ -437,7 +437,7 @@
             </div>
             <div class="qr-container">
                 <!-- template_qr -->
-                <img src="Images/template_qr/t1.png" alt="QR Code" class="qr-image" />
+                <img src="Images/template_qr/tq16.png" alt="QR Code" class="qr-image" />
                 <div class="scan-text">Scan with your mobile</div>
             </div>
         </div>
@@ -453,7 +453,7 @@
             </div>
             <div class="qr-container">
                 <!-- template_qr -->
-                <img src="Images/template_qr/t1.png" alt="QR Code" class="qr-image" />
+                <img src="Images/template_qr/tq17.png" alt="QR Code" class="qr-image" />
                 <div class="scan-text">Scan with your mobile</div>
             </div>
         </div>
@@ -469,7 +469,7 @@
             </div>
             <div class="qr-container">
                 <!-- template_qr -->
-                <img src="Images/template_qr/t1.png" alt="QR Code" class="qr-image" />
+                <img src="Images/template_qr/tq18.png" alt="QR Code" class="qr-image" />
                 <div class="scan-text">Scan with your mobile</div>
             </div>
         </div>
@@ -485,7 +485,7 @@
             </div>
             <div class="qr-container">
                 <!-- template_qr -->
-                <img src="Images/template_qr/t1.png" alt="QR Code" class="qr-image" />
+                <img src="Images/template_qr/tq19.png" alt="QR Code" class="qr-image" />
                 <div class="scan-text">Scan with your mobile</div>
             </div>
         </div>
