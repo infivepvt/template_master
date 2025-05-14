@@ -264,30 +264,28 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script>
-        function generateVCF() {
-            // Updated contact information to match the business card
-            const contactData = {
-                firstName: "SHASHIKA",
-                lastName: "GAMAGE",
-                title: "Chief Sales Officer",
-                phoneWork: "0777999207",
-                phoneMobile: "",
-                email: "shashikag@premiumautoparts.lk",
-                email2: "",
-                email3: "",
-                website: "www.premiumautoparts.lk",
-                website2: "",
-                website3: "",
-                address: "127, Wellawaya Road,Monaragala,Sri Lanka",
-                address2: "",
-                about: "",
-                logo: "logo_img/Main_Design-l.png",
-                profileImage: "profile_img/client_profile/deelaka-p.png"
-            };
+   <script>
+    function generateVCF() {
+        const contactData = {
+            firstName: "SHASHIKA",
+            lastName: "GAMAGE",
+            title: "Chief Sales Officer",
+            phoneWork: "0777999207",
+            phoneMobile: "",
+            email: "shashikag@premiumautoparts.lk",
+            email2: "",
+            email3: "",
+            website: "www.premiumautoparts.lk",
+            website2: "",
+            website3: "",
+            address: "127, Wellawaya Road,Monaragala,Sri Lanka",
+            address2: "",
+            about: "",
+            logo: "logo_img/Main_Design-l.png",
+            profileImage: "profile_img/client_profile/shashika-p.png" // Sudu kala
+        };
 
-            // Create VCF content
-            let vcfContent = `BEGIN:VCARD
+        let vcfContent = `BEGIN:VCARD
 VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
 N:${contactData.lastName};${contactData.firstName};;;
@@ -307,21 +305,17 @@ PHOTO;VALUE=URL:${contactData.profileImage}
 LOGO;VALUE=URL:${contactData.logo}
 END:VCARD`;
 
-            // Create download link
-            const blob = new Blob([vcfContent], { type: 'text/vcard' });
-            const url = URL.createObjectURL(blob);
-
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-            document.body.appendChild(a);
-            a.click();
-
-            // Clean up
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
-        }
-    </script>
+        const blob = new Blob([vcfContent], { type: 'text/vcard' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    }
+</script>
 </body>
 
 </html>
