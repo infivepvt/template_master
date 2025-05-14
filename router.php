@@ -68,6 +68,7 @@ $routes = [
     'travelglobal' => 'templates/travelglobal.php',
     'teshura' => 'templates/teshura.php',
     'deelaka' => 'templates/deelaka.php',
+    'deelaka1' => 'templates/deelaka1.php',
 ];
 
 // Handle the request
