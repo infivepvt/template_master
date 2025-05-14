@@ -598,10 +598,8 @@
         <!-- Video Section -->
         <!-- Video section would be dynamically inserted here -->
 
-      
-
         <br>
-        <button class="btn w-100 custom-save-button">
+        <button class="btn w-100 custom-save-button" id="saveContactBtn">
             <i class="fas fa-save me-2"></i>
             SAVE TO CONTACTS
         </button>
@@ -612,6 +610,41 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('saveContactBtn').addEventListener('click', function() {
+            // Create vCard content
+            const vCardContent = `BEGIN:VCARD
+VERSION:3.0
+FN:Linda Johnson
+ORG:Owner/CEO
+TITLE:Owner/CEO
+PHOTO;VALUE=URL;TYPE=JPEG:profile_img/main_profile/template20-p.jpg
+LOGO;VALUE=URL;TYPE=PNG:logo_img/main_logo/template20-l.png
+EMAIL;TYPE=work:
+TEL;TYPE=work,voice:
+URL;TYPE=facebook:
+URL;TYPE=instagram:
+URL;TYPE=tiktok:
+END:VCARD`;
+
+            // Create a Blob with the vCard content
+            const blob = new Blob([vCardContent], { type: 'text/vcard' });
+            
+            // Create a download link
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'Linda_Johnson.vcf';
+            
+            // Trigger the download
+            document.body.appendChild(link);
+            link.click();
+            
+            // Clean up
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+        });
+    </script>
 </body>
 
 </html>
