@@ -250,78 +250,73 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        async function generateVCF() {
-            try {
-                // Get the profile image URL
-                const profileImageUrl = document.getElementById('profileImage').src;
-                
-                // Fetch the image and convert to Base64
-                const base64Image = await fetchImageAsBase64(profileImageUrl);
-                
-                // Contact information
-                const contactData = {
-                    firstName: "H G Sarath",
-                    lastName: "Pallegama",
-                    title: "Counsellor",
-                    organization: "Migrant Information Centre- Sri Lanka",
-                    phoneWork: "0773599757",
-                    email: "Sarath.Pallegama@mrc-srilanka.org",
-                    website: "https://www.icmpd.org/our-work/projects/migrant-resource-centres-mrcs",
-                    address: "No 12, Sri Lanka Bureau of Foreign Employment, New Pioneer Road, Batticaloa"
-                };
+    async function generateVCF() {
+        try {
+            // Get the profile image element
+            const profileImageElement = document.querySelector(".profile-picture img");
+            const profileImageUrl = profileImageElement.src;
 
-                // Create VCF content with photo
-                let vcfContent = `BEGIN:VCARD
+            // Fetch and convert image to Base64
+            const base64Image = await fetchImageAsBase64(profileImageUrl);
+
+            // Contact data from the card
+            const contactData = {
+                firstName: "SHASHIKA",
+                lastName: "GAMAGE",
+                title: "Chief Sales Officer",
+                phoneWork: "0777999207",
+                email: "shashikag@premiumautoparts.lk",
+                website: "www.premiumautoparts.lk",
+                address: "127, Wellawaya Road, Monaragala, Sri Lanka"
+            };
+
+            // Build VCF content
+            let vcfContent = `BEGIN:VCARD
 VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
 N:${contactData.lastName};${contactData.firstName};;;
 TITLE:${contactData.title}
-ORG:${contactData.organization}
 TEL;TYPE=WORK,VOICE:${contactData.phoneWork}
-EMAIL;TYPE=WORK:${contactData.email}
+EMAIL:${contactData.email}
 URL:${contactData.website}
 ADR;TYPE=WORK:;;${contactData.address.replace(/\n/g, ' ')}
-PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}
+PHOTO;ENCODING=b;TYPE=PNG:${base64Image}
 END:VCARD`;
 
-                // Create download link
-                const blob = new Blob([vcfContent], { type: 'text/vcard' });
-                const url = URL.createObjectURL(blob);
-
-                const a = document.createElement('a');
-                a.href = url;
-                a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-                document.body.appendChild(a);
-                a.click();
-
-                // Clean up
-                document.body.removeChild(a);
-                URL.revokeObjectURL(url);
-            } catch (error) {
-                console.error("Error generating VCF:", error);
-                alert("Error generating contact card. Please try again.");
-            }
+            // Create and trigger download
+            const blob = new Blob([vcfContent], { type: 'text/vcard' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        } catch (error) {
+            console.error("Error generating VCF:", error);
+            alert("Failed to generate contact file.");
         }
+    }
 
-        async function fetchImageAsBase64(url) {
-            try {
-                const response = await fetch(url);
-                const blob = await response.blob();
-                return new Promise((resolve, reject) => {
-                    const reader = new FileReader();
-                    reader.onloadend = () => {
-                        // Remove the data:image/*;base64, prefix
-                        const base64data = reader.result.split(',')[1];
-                        resolve(base64data);
-                    };
-                    reader.onerror = reject;
-                    reader.readAsDataURL(blob);
-                });
-            } catch (error) {
-                console.error("Error fetching image:", error);
-                return ""; // Return empty string if image can't be loaded
-            }
+    async function fetchImageAsBase64(url) {
+        try {
+            const response = await fetch(url);
+            const blob = await response.blob();
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onloadend = () => {
+                    const base64data = reader.result.split(',')[1]; // Remove Data URL prefix
+                    resolve(base64data);
+                };
+                reader.onerror = reject;
+                reader.readAsDataURL(blob);
+            });
+        } catch (error) {
+            console.error("Error fetching image:", error);
+            return ""; // Return empty string if image load fails
         }
-    </script>
+    }
+</script>
 </body>
 </html>
