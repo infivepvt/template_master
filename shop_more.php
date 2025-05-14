@@ -491,11 +491,11 @@
         </div>
         <!-- Design 20 -->
         <div class="design-card">
-            <div class="design-title">Design 29</div>
+            <div class="design-title">Design 20</div>
             <div class="design-image-container">
-                <a href="https://tapilinq.com/template29">
+                <a href="https://tapilinq.com/template20">
                     <!-- template_pic -->
-                    <img src="Images/template_pic/template20.png" alt="Design 20" class="design-image" />
+                    <img src="Images/template_pic/template20.jpg" alt="Design 20" class="design-image" />
                 </a>
             </div>
             <div class="qr-container">
