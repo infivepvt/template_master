@@ -272,29 +272,33 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        function generateVCF() {
-            // Updated contact information to match the business card
-            const contactData = {
-                firstName: "Danuka ",
-                lastName: "Nimanthaka",
-                title: "Realtor",
-                phoneWork: "0717809408",
-                phoneMobile: "",
-                email: "danukanimanthakaggmail.com ",
-                email2: "danukanimanthaka@yahoo.com ",
-                email3: "",
-                website: "",
-                website2: "",
-                website3: "",
-                address: "A 90/1,Madawala thanna,Pinnawala,Rambukkana",
-                address2: "",
-                about: "",
-                logo: "logo_img/client_logo/danuka-l.png",
-                profileImage: ""
-            };
+async function generateVCF() {
+    // Contact information
+    const contactData = {
+        firstName: "Danuka",
+        lastName: "Nimanthaka",
+        title: "Realtor",
+        phoneWork: "0717809408",
+        phoneMobile: "",
+        email: "danukanimanthakaggmail.com",
+        email2: "danukanimanthaka@yahoo.com",
+        email3: "",
+        website: "",
+        website2: "",
+        website3: "",
+        address: "A 90/1,Madawala thanna,Pinnawala,Rambukkana",
+        address2: "",
+        about: "",
+        logo: "",
+        profileImage: "profile_img/client_profile/danuka-p.png" // Update this path
+    };
 
-            // Create VCF content
-            let vcfContent = `BEGIN:VCARD
+    try {
+        // Convert image to Base64
+        const base64Image = await getBase64ImageFromUrl(contactData.profileImage);
+        
+        // Create VCF content with embedded image
+        let vcfContent = `BEGIN:VCARD
 VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
 N:${contactData.lastName};${contactData.firstName};;;
@@ -310,25 +314,56 @@ URL:${contactData.website3}
 ADR;TYPE=WORK:;;${contactData.address}
 ADR;TYPE=HOME:;;${contactData.address2}
 NOTE:${contactData.about}
-PHOTO;VALUE=URL:${contactData.profileImage}
+PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}
 LOGO;VALUE=URL:${contactData.logo}
 END:VCARD`;
 
-            // Create download link
-            const blob = new Blob([vcfContent], { type: 'text/vcard' });
-            const url = URL.createObjectURL(blob);
+        // Create download link
+        const blob = new Blob([vcfContent], { type: 'text/vcard' });
+        const url = URL.createObjectURL(blob);
 
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-            document.body.appendChild(a);
-            a.click();
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+        document.body.appendChild(a);
+        a.click();
 
-            // Clean up
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
-        }
-    </script>
+        // Clean up
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    } catch (error) {
+        console.error("Error generating vCard:", error);
+        alert("Failed to generate vCard. Please check console for details.");
+    }
+}
+
+// Helper function to convert image to Base64
+function getBase64ImageFromUrl(imageUrl) {
+    return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.crossOrigin = 'Anonymous';
+        
+        img.onload = () => {
+            const canvas = document.createElement('canvas');
+            canvas.width = img.width;
+            canvas.height = img.height;
+            
+            const ctx = canvas.getContext('2d');
+            ctx.drawImage(img, 0, 0);
+            
+            // Convert to JPEG (most compatible for vCards)
+            const dataUrl = canvas.toDataURL('image/jpeg');
+            resolve(dataUrl.split(',')[1]); // Extract just the Base64 data
+        };
+        
+        img.onerror = () => {
+            reject(new Error("Could not load image"));
+        };
+        
+        img.src = imageUrl;
+    });
+}
+</script>
 </body>
 
 </html>
