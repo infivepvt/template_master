@@ -265,57 +265,78 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
    <script>
-    function generateVCF() {
-        const contactData = {
-            firstName: "SHASHIKA",
-            lastName: "GAMAGE",
-            title: "Chief Sales Officer",
-            phoneWork: "0777999207",
-            phoneMobile: "",
-            email: "shashikag@premiumautoparts.lk",
-            email2: "",
-            email3: "",
-            website: "www.premiumautoparts.lk",
-            website2: "",
-            website3: "",
-            address: "127, Wellawaya Road,Monaragala,Sri Lanka",
-            address2: "",
-            about: "",
-            logo: "logo_img/Main_Design-l.png",
-            profileImage: "profile_img/client_profile/shashika-p.png" // Sudu kala
-        };
+    async function generateVCF() {
+        try {
+            // Profile image URL from the image element
+            const profileImageUrl = document.querySelector(".profile-picture img").src;
 
-        let vcfContent = `BEGIN:VCARD
+            // Convert image to Base64
+            const base64Image = await fetchImageAsBase64(profileImageUrl);
+
+            // Contact details
+            const contactData = {
+                firstName: "SHASHIKA",
+                lastName: "GAMAGE",
+                title: "Chief Sales Officer",
+                organization: "Premium Auto Parts",
+                phoneWork: "0777999207",
+                email: "shashikag@premiumautoparts.lk",
+                website: "https://www.premiumautoparts.lk",
+                address: "127, Wellawaya Road, Monaragala, Sri Lanka"
+            };
+
+            // Create VCF content
+            let vcfContent = `BEGIN:VCARD
 VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
 N:${contactData.lastName};${contactData.firstName};;;
 TITLE:${contactData.title}
+ORG:${contactData.organization}
 TEL;TYPE=WORK,VOICE:${contactData.phoneWork}
-TEL;TYPE=CELL:${contactData.phoneMobile}
-EMAIL:${contactData.email}
-EMAIL:${contactData.email2}
-EMAIL:${contactData.email3}
+EMAIL;TYPE=WORK:${contactData.email}
 URL:${contactData.website}
-URL:${contactData.website2}
-URL:${contactData.website3}
 ADR;TYPE=WORK:;;${contactData.address}
-ADR;TYPE=HOME:;;${contactData.address2}
-NOTE:${contactData.about}
-PHOTO;VALUE=URL:${contactData.profileImage}
-LOGO;VALUE=URL:${contactData.logo}
+PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}
 END:VCARD`;
 
-        const blob = new Blob([vcfContent], { type: 'text/vcard' });
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-        URL.revokeObjectURL(url);
+            // Download VCF file
+            const blob = new Blob([vcfContent], { type: 'text/vcard' });
+            const url = URL.createObjectURL(blob);
+
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+            document.body.appendChild(a);
+            a.click();
+
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        } catch (error) {
+            console.error("Error generating VCF:", error);
+            alert("Error generating contact card. Please try again.");
+        }
+    }
+
+    async function fetchImageAsBase64(url) {
+        try {
+            const response = await fetch(url);
+            const blob = await response.blob();
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onloadend = () => {
+                    const base64data = reader.result.split(',')[1]; // Remove data URL prefix
+                    resolve(base64data);
+                };
+                reader.onerror = reject;
+                reader.readAsDataURL(blob);
+            });
+        } catch (error) {
+            console.error("Failed to fetch and convert image:", error);
+            return "";
+        }
     }
 </script>
+
 </body>
 
 </html>
