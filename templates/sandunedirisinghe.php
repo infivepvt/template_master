@@ -366,7 +366,7 @@
     </div>
 
     <div class="profile-contact-icons">
-      <button class="icon-button" onclick="window.open('mailto:youremail@yourwebsite.com', '_self')">
+      <button class="icon-button" onclick="window.open('mailto:sandun.edirisinghe@sagt.com.lk', '_self')">
         <i class="fas fa-envelope"></i>
       </button>
       <button class="icon-button" onclick="window.open('tel:0772457110', '_self')">
@@ -570,7 +570,7 @@ FN:Sandun Edirisinghe
 ORG:SAGT
 TITLE:General Manager Engineering
 TEL;TYPE=CELL:94772457110
-EMAIL:youremail@yourwebsite.com
+EMAIL:sandun.edirisinghe@sagt.com.lk
 PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}
 END:VCARD`;
 
