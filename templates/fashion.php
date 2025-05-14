@@ -38,7 +38,7 @@
 
         .profile-picture {
             position: absolute;
-            top: 110%;
+            top: 95%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
@@ -159,23 +159,21 @@
     <div class="d-flex justify-content-center mt-5">
         <div class="card custom-card shadow-lg" style="background-color: #FFFFFF;">
             <div class="card-header custom-header text-center"
-                style="background-image:  url('banner_img/client_banner/danuka-b.png'); height: 200px; opacity: 1;">
-                <img src="logo_img/client_logo/danuka-l.png" alt="Company Logo" class="custom-logo" height="80px"
-                    style="width: 245px; height: auto; opacity: 1;">
+                style="background-image:  url('banner_img/client_banner/fashion-b.png'); height: 200px; opacity: 1;">
+                <!-- <img src="logo_img/main_logo/Main_Design-l.png" alt="Company Logo" class="custom-logo" height="80px"
+                    style="width: 245px; height: auto; opacity: 1;"> -->
                 <div class="profile-picture">
-                    <img src="profile_img/client_profile/danuka-p.png" alt="Saliya Pathum" class="rounded-circle">
+                    <img src="profile_img/client_profile/fashion-p.png" alt="Saliya Pathum" class="rounded-circle">
                 </div>
             </div>
             <br>
             <br>
             <div class="card-body text-center"
                 style="background-color: #FFFFFF; color: #000000; text-decoration: none; ">
-                <h4 style="margin-top:25px;">Deshamanya , Vyapara Vibushana</h4>
-                <h2 class="card-title" style="font-size: 23px; text-transform: uppercase; margin-top:-5px">K.M.Danuka Nimanthaka Bandara Kulasekara</h2>
-                <p style="color: #000000; font-size: 15px; text-transform: uppercase;">International Director of the International Human Rights Organization</p>
-                <p style="color: #000000; font-size: 15px; margin-top:-10px">Justice Of peace ( All Island )24-04-SP-AI-762</p>
+                <h2 class="card-title" style="font-size: 27px; text-transform: uppercase;">Fashion academy</h2>
+                <p style="color: #000000; font-size: 21px; text-transform: uppercase;">academy</p>
 
-                <a href="https://wa.me/+94 777809408 " target="_blank" rel="noopener noreferrer"
+                <a href="https://wa.me/94761941213" target="_blank" rel="noopener noreferrer"
                     style="text-decoration: none;">
                     <button class="btn w-100 mb-3 custom-phone1 d-flex align-items-center justify-content-center"
                         style="background-color: #25D366; color: white; height: 60px; border: 2px solid orange; border-radius: 10px; gap: 10px;">
@@ -188,68 +186,69 @@
                 <div class="list-group mb-3">
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
-                        onclick="window.open('tel:+94777809408', '_self')">
+                        onclick="window.open('tel:0761941213', '_self')">
                         <img src="Images/icon/phone.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">0777809408</span>
-                    </button>
-                    <button type="button"
-                        class="list-group-item d-flex align-items-center justify-content-between contact"
-                        onclick="window.open('tel:+94717809408', '_self')">
-                        <img src="Images/icon/mobile-phone.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
-                        <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">0717809408</span>
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">076 194 1213</span>
                     </button>
 
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
-                        onclick="window.open('mailto:danukanimanthakagmail.com ', '_self')">
+                        onclick="window.open('mailto:fashionacademylk@gmail.com', '_self')">
                         <img src="Images/icon/mail.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">danukanimanthakagmail.com </span>
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">fashionacademylk@gmail.com</span>
                     </button>
 
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
-                        onclick="window.open('https://www.google.com/maps/search/+A+90%2F1,Madawala+thanna,Pinnawala,Rambukkan/@7.3039872,80.3777226,15z/data=!3m1!4b1?authuser=0&entry=ttu&g_ep=EgoyMDI1MDUxMS4wIKXMDSoASAFQAw%3D%3D', '_blank')">
+                        onclick="window.open('http://www.fashionacademylk.com/', '_blank')">
+                        <img src="Images/icon/internet.png" alt=""
+                            style="width: 30px; height: 30px; margin-right:25px;">
+                        <span class="text-center flex-grow-1 text-truncate custom-phone"
+                            style="color: #FFFFFF; 'Montserrat', sans-serif; font-size:16px; font-size:16px;">www.fashionacademylk.com</span>
+                    </button>
+
+                    <button type="button"
+                        class="list-group-item d-flex align-items-center justify-content-between contact"
+                        onclick="window.open('https://www.google.com/maps/place/381+Kasthuriyar+Rd,+Jaffna+40000/@9.6733564,80.0098137,17z/data=!3m1!4b1!4m6!3m5!1s0x3afe5406c2e5aa37:0x5ee536c078cf4bab!8m2!3d9.6733511!4d80.0123886!16s%2Fg%2F11szjq8jm1?authuser=0&entry=ttu&g_ep=EgoyMDI1MDUxMS4wIKXMDSoASAFQAw%3D%3D', '_blank')">
                         <img src="Images/icon/map.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">
-                            A 90/1,Madawala thanna,Pinnawala,Rambukkan</span>
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">No.381, Kasthuriyar Road,Jaffna</span>
                     </button>
                 </div>
 
                 <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:19px">CONNECT WITH SOCIAL MEDIA
                 </p>
                 <div class="d-flex flex-wrap justify-content-center">
-                    <a href="https://www.instagram.com/danuka_bandara?igsh=MXMzYWZ3dDVqMGNiYQ==" target="_blank" rel="noopener noreferrer" class="m-3">
+                    <a href="http://www.instragran.com/fashionacademysrilanka" target="_blank" rel="noopener noreferrer" class="m-3">
                         <img src="Images/Social_Media_Icon/instagram.png" alt="" style="width: 50px; height: 50px;">
                     </a>
-                    <a href="https://www.facebook.com/share/192j7vi7nZ/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="m-3">
+                    <a href="http://www.facebook.com/fashionacademysrilanka" target="_blank" rel="noopener noreferrer" class="m-3">
                         <img src="Images/Social_Media_Icon/facebook.png" alt="" style="width: 50px; height: 50px;">
                     </a>
-                    <a href="https://www.threads.com/@danuka_bandara" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/th round.png" alt="" style="width: 50px; height: 50px;">
+                    <a href="http://www.youtube.com/fashionacademylk" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/youtube.png" alt="" style="width: 50px; height: 50px;">
                     </a>
-                    <a href="https://www.tiktok.com/@danukanimanthaka?_t=ZS-8wLGhX4izNC&_r=1" target="_blank" rel="noopener noreferrer" class="m-3">
+                    <a href="http://www.tiktok.com/fashionacademysrilanka" target="_blank" rel="noopener noreferrer" class="m-3">
                         <img src="Images/Social_Media_Icon/tiktok.png" alt="" style="width: 50px; height: 50px;">
                     </a>
                 </div>
 
-                <div class="d-flex flex-wrap justify-content-center">
-                    <a href="https://youtube.com/@danukabandara640?si=bjmniriSjfyXL5B1" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/youtube.png" alt="" style="width: 50px; height: 50px;">
+                <!-- <div class="d-flex flex-wrap justify-content-center">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/linkedin.png" alt="" style="width: 50px; height: 50px;">
                     </a>
-                    <a href="https://x.com/danuka_dnk?s=21" target="_blank" rel="noopener noreferrer" class="m-3">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
                         <img src="Images/Social_Media_Icon/twitter.png" alt="" style="width: 50px; height: 50px;">
                     </a>
-                    <a href="https://t.me/Danuka_Bandara" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/telegram.png" alt="" style="width: 50px; height: 50px;">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/social.png" alt="" style="width: 50px; height: 50px;">
                     </a>
-                    <!-- <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
                         <img src="Images/Social_Media_Icon/pinterest.png" alt="" style="width: 50px; height: 50px;">
-                    </a> -->
-                </div>
+                    </a>
+                </div> -->
 
 
                 <br>
@@ -266,63 +265,120 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        function generateVCF() {
-            // Updated contact information to match the business card
-            const contactData = {
-                firstName: "Danuka ",
-                lastName: "Nimanthaka",
-                title: "Realtor",
-                phoneWork: "0717809408",
-                phoneMobile: "+94777809408",
-                email: "danukanimanthakagmail.com ",
-                email2: "",
-                email3: "",
-                website: "",
-                website2: "",
-                website3: "",
-                address: "A 90/1,Madawala thanna,Pinnawala,Rambukkana",
-                address2: "",
-                about: "",
-                logo: "",
-                profileImage: "profile_img/client_profile/danuka-p.png"
-            };
+async function generateVCF() {
+    // Contact information
+    const contactData = {
+        firstName: "Fashion",
+        lastName: "Academy",
+        title: "Academy",
+        phoneWork: "0761231212",
+        phoneMobile: "",
+        email: "youremail@yourwebsite.com",
+        email2: "",
+        email3: "",
+        website: "www.yourwebsiteaddress.com",
+        website2: "",
+        website3: "",
+        address: "No.381, Kasthuriyar Road, Jaffna",
+        address2: "",
+        about: "",
+        logo: "",
+        profileImage: "profile_img/client_profile/fashion-p.png" // Ensure this path is correct
+    };
 
-            // Create VCF content
-            let vcfContent = `BEGIN:VCARD
+    try {
+        // First try to embed the image as Base64
+        const base64Image = await imageToBase64(contactData.profileImage);
+        
+        const vcfContent = createVCardContent(contactData, base64Image);
+        downloadVCard(vcfContent, contactData);
+        
+    } catch (error) {
+        console.warn("Image embedding failed, falling back to URL reference:", error);
+        // Fallback to URL if Base64 conversion fails
+        const vcfContent = createVCardContent(contactData);
+        downloadVCard(vcfContent, contactData);
+    }
+}
+
+// Convert image to Base64
+function imageToBase64(imageUrl) {
+    return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.crossOrigin = 'Anonymous';
+        
+        img.onload = function() {
+            try {
+                const canvas = document.createElement('canvas');
+                canvas.width = this.naturalWidth || this.width;
+                canvas.height = this.naturalHeight || this.height;
+                
+                const ctx = canvas.getContext('2d');
+                ctx.drawImage(this, 0, 0);
+                
+                // Convert to JPEG (better vCard compatibility)
+                const quality = 0.92; // JPEG quality (0-1)
+                const base64 = canvas.toDataURL('image/jpeg', quality).split(',')[1];
+                resolve(base64);
+            } catch (e) {
+                reject(e);
+            }
+        };
+        
+        img.onerror = () => reject(new Error("Image load error"));
+        img.src = imageUrl;
+    });
+}
+
+// Create vCard content
+function createVCardContent(contactData, base64Image = null) {
+    let photoField = '';
+    if (base64Image) {
+        photoField = `PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}`;
+    } else if (contactData.profileImage) {
+        photoField = `PHOTO;VALUE=URL:${contactData.profileImage}`;
+    }
+
+    return `BEGIN:VCARD
 VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
 N:${contactData.lastName};${contactData.firstName};;;
 TITLE:${contactData.title}
 TEL;TYPE=WORK,VOICE:${contactData.phoneWork}
-TEL;TYPE=CELL:${contactData.phoneMobile}
+${contactData.phoneMobile ? `TEL;TYPE=CELL:${contactData.phoneMobile}\n` : ''}
 EMAIL:${contactData.email}
-EMAIL:${contactData.email2}
-EMAIL:${contactData.email3}
+${contactData.email2 ? `EMAIL:${contactData.email2}\n` : ''}
+${contactData.email3 ? `EMAIL:${contactData.email3}\n` : ''}
 URL:${contactData.website}
-URL:${contactData.website2}
-URL:${contactData.website3}
+${contactData.website2 ? `URL:${contactData.website2}\n` : ''}
+${contactData.website3 ? `URL:${contactData.website3}\n` : ''}
 ADR;TYPE=WORK:;;${contactData.address}
-ADR;TYPE=HOME:;;${contactData.address2}
-NOTE:${contactData.about}
-PHOTO;VALUE=URL:${contactData.profileImage}
-LOGO;VALUE=URL:${contactData.logo}
+${contactData.address2 ? `ADR;TYPE=HOME:;;${contactData.address2}\n` : ''}
+${contactData.about ? `NOTE:${contactData.about}\n` : ''}
+${photoField}
+${contactData.logo ? `LOGO;VALUE=URL:${contactData.logo}\n` : ''}
 END:VCARD`;
+}
 
-            // Create download link
-            const blob = new Blob([vcfContent], { type: 'text/vcard' });
-            const url = URL.createObjectURL(blob);
-
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-            document.body.appendChild(a);
-            a.click();
-
-            // Clean up
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
-        }
-    </script>
+// Handle the download
+function downloadVCard(vcfContent, contactData) {
+    const blob = new Blob([vcfContent], { type: 'text/vcard;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+    a.style.display = 'none';
+    
+    document.body.appendChild(a);
+    a.click();
+    
+    setTimeout(() => {
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    }, 100);
+}
+</script>
 </body>
 
 </html>
