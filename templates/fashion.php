@@ -159,7 +159,7 @@
     <div class="d-flex justify-content-center mt-5">
         <div class="card custom-card shadow-lg" style="background-color: #FFFFFF;">
             <div class="card-header custom-header text-center"
-                style="background-image:  url('banner_img/client_banner/fashion-b.jpeg'); height: 280px; opacity: 1;width:100%">
+                style="background-image:  url('banner_img/client_banner/fashion-b.jpeg'); height: 340px; opacity: 1 ;background-size:contain">
                 <!-- <img src="logo_img/main_logo/Main_Design-l.png" alt="Company Logo" class="custom-logo" height="80px"
                     style="width: 245px; height: auto; opacity: 1;"> -->
                 <div class="profile-picture">
