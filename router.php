@@ -73,6 +73,7 @@ $routes = [
     'danuka' => 'templates/danuka.php',
     'fashion' => 'templates/fashion.php',
     'suduaraliya' => 'templates/suduaraliya.php',
+    'digitalworld' => 'templates/digitalworld.php',
 ];
 
 // Handle the request
