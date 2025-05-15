@@ -159,7 +159,7 @@
     <div class="d-flex justify-content-center mt-5">
         <div class="card custom-card shadow-lg" style="background-color: #FFFFFF;">
             <div class="card-header custom-header text-center"
-                style="background-image:  url('banner_img/client_banner/danuka-b.png'); height: 200px; opacity: 1;">
+                style="background-image:  url(''); height: 200px; opacity: 1;background-color: #FFFFFF;">
                 <img src="logo_img/client_logo/danuka-l.png" alt="Company Logo" class="custom-logo" height="80px"
                     style="width: 245px; height: auto; opacity: 1;">
                 <div class="profile-picture">
@@ -191,22 +191,22 @@
                         onclick="window.open('tel:+94777809408', '_self')">
                         <img src="Images/icon/phone.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">0777809408</span>
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">+94777809408</span>
                     </button>
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
                         onclick="window.open('tel:+94717809408', '_self')">
                         <img src="Images/icon/mobile-phone.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">0717809408</span>
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">+94717809408</span>
                     </button>
 
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
-                        onclick="window.open('mailto:danukanimanthakagmail.com ', '_self')">
+                        onclick="window.open('mailto:danukanimanthaka@gmail.com ', '_self')">
                         <img src="Images/icon/mail.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">danukanimanthakagmail.com </span>
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">danukanimanthaka@gmail.com </span>
                     </button>
 
                     <button type="button"
@@ -231,18 +231,22 @@
                     <a href="https://www.threads.com/@danuka_bandara" target="_blank" rel="noopener noreferrer" class="m-3">
                         <img src="Images/Social_Media_Icon/th round.png" alt="" style="width: 50px; height: 50px;">
                     </a>
-                    <a href="https://www.tiktok.com/@danukanimanthaka?_t=ZS-8wLGhX4izNC&_r=1" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/tiktok.png" alt="" style="width: 50px; height: 50px;">
+                    <a href="https://botim.me/mp/b/?app=me.botim.function.contactus%2Findex.html%23%2F%3FtemplateName%3Dcontactus" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/botim.png" alt="" style="width: 50px; height: 50px;">
                     </a>
+                    
                 </div>
 
                 <div class="d-flex flex-wrap justify-content-center">
-                    <a href="https://youtube.com/@danukabandara640?si=bjmniriSjfyXL5B1" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/youtube.png" alt="" style="width: 50px; height: 50px;">
+                    <a href="https://www.tiktok.com/@danukanimanthaka?_t=ZS-8wLGhX4izNC&_r=1" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/tiktok.png" alt="" style="width: 50px; height: 50px;">
                     </a>
                     <a href="https://x.com/danuka_dnk?s=21" target="_blank" rel="noopener noreferrer" class="m-3">
                         <img src="Images/Social_Media_Icon/twitter.png" alt="" style="width: 50px; height: 50px;">
                     </a>
+                    <a href="https://youtube.com/@danukabandara640?si=bjmniriSjfyXL5B1" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/youtube.png" alt="" style="width: 50px; height: 50px;">
+                    </a>                   
                     <a href="https://t.me/Danuka_Bandara" target="_blank" rel="noopener noreferrer" class="m-3">
                         <img src="Images/Social_Media_Icon/telegram.png" alt="" style="width: 50px; height: 50px;">
                     </a>
@@ -274,7 +278,7 @@
                 title: "Realtor",
                 phoneWork: "0717809408",
                 phoneMobile: "+94777809408",
-                email: "danukanimanthakagmail.com ",
+                email: "danukanimanthaka@gmail.com",
                 email2: "",
                 email3: "",
                 website: "",
