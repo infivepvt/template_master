@@ -277,63 +277,63 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-    function generateVCF() {
-        // Contact information
-        const contactData = {
-            firstName: "Sudu Araliya",
-            lastName: "",
-            title: "Hotel",
-            phoneWork: "+94272224849",
-            phoneMobile: "",
-            email: "info@hotelsuduaraliya.com",
-            website: "www.araliyaresorts.com",
-            address: "Hotel Sudu Araliya, New town, Polonnaruwa",
-            profileImage: "profile_img/client_profile/suduaraliya-p.png" // Make sure this is a full URL
-        };
+        function generateVCF() {
+            // Updated contact information to match the business card
+            const contactData = {
+                firstName: "Sudu Araliya",
+                lastName: "",
+                title: "Hotel",
+                phoneWork: "+94272224849",
+                phoneMobile: "",
+                email: "info@hotelsuduaraliya.com",
+                email2: "",
+                email3: "",
+                website: "www.araliyaresorts.com",
+                website2: "",
+                website3: "",
+                address: "Hotel Sudu Araliya,New town,Polonnaruwa",
+                address2: "",
+                about: "",
+                logo: "",
+                profileImage: "profile_img/client_profile/suduaraliya-p.png"
+            };
 
-        // Create VCF content with proper formatting
-        let vcfContent = [
-            "BEGIN:VCARD",
-            "VERSION:3.0",
-            `FN:${contactData.firstName} ${contactData.lastName}`.trim(),
-            `N:${contactData.lastName};${contactData.firstName};;;`,
-            `TITLE:${contactData.title}`,
-            `TEL;TYPE=WORK,VOICE:${contactData.phoneWork}`,
-            contactData.phoneMobile ? `TEL;TYPE=CELL:${contactData.phoneMobile}` : "",
-            `EMAIL:${contactData.email}`,
-            `URL:${contactData.website}`,
-            `ADR;TYPE=WORK:;;${contactData.address}`,
-            // Only include PHOTO if profileImage exists and is a valid URL
-            contactData.profileImage ? `PHOTO;VALUE=URL:${getFullUrl(contactData.profileImage)}` : "",
-            "END:VCARD"
-        ].filter(line => line !== "").join("\n");
+            // Create VCF content
+            let vcfContent = `BEGIN:VCARD
+VERSION:3.0
+FN:${contactData.firstName} ${contactData.lastName}
+N:${contactData.lastName};${contactData.firstName};;;
+TITLE:${contactData.title}
+TEL;TYPE=WORK,VOICE:${contactData.phoneWork}
+TEL;TYPE=CELL:${contactData.phoneMobile}
+EMAIL:${contactData.email}
+EMAIL:${contactData.email2}
+EMAIL:${contactData.email3}
+URL:${contactData.website}
+URL:${contactData.website2}
+URL:${contactData.website3}
+ADR;TYPE=WORK:;;${contactData.address}
+ADR;TYPE=HOME:;;${contactData.address2}
+NOTE:${contactData.about}
+PHOTO;VALUE=URL:${contactData.profileImage}
+LOGO;VALUE=URL:${contactData.logo}
+END:VCARD`;
 
-        // Create and trigger download
-        const blob = new Blob([vcfContent], { type: 'text/vcard;charset=utf-8' });
-        const url = URL.createObjectURL(blob);
+            // Create download link
+            const blob = new Blob([vcfContent], { type: 'text/vcard' });
+            const url = URL.createObjectURL(blob);
 
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = `${contactData.firstName}${contactData.lastName ? '_' + contactData.lastName : ''}.vcf`;
-        document.body.appendChild(a);
-        a.click();
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+            document.body.appendChild(a);
+            a.click();
 
-        // Clean up
-        setTimeout(() => {
+            // Clean up
             document.body.removeChild(a);
             URL.revokeObjectURL(url);
-        }, 100);
-    }
-
-    // Helper function to ensure the image URL is absolute
-    function getFullUrl(relativeUrl) {
-        if (relativeUrl.startsWith('http') || relativeUrl.startsWith('https')) {
-            return relativeUrl;
         }
-        // If you know your base URL, prepend it here
-        return window.location.origin + '/' + relativeUrl;
-    }
-</script>
+    </script>
 </body>
 
 </html>
