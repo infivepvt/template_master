@@ -72,6 +72,7 @@ $routes = [
     'shashika' => 'templates/shashika.php',
     'danuka' => 'templates/danuka.php',
     'fashion' => 'templates/fashion.php',
+    'suduaraliya' => 'templates/suduaraliya.php',
 ];
 
 // Handle the request

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Business Card</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="Images/Logo1.ico">
+    <style>
+        .custom-card {
+            border-radius: 15px;
+            overflow: hidden;
+            background: #EEF1FF;
+            width: 450px;
+            height: auto;
+            margin-top: -55px;
+        }
+
+        .custom-header {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 35px 20px;
+            position: relative;
+            height: 200px;
+        }
+
+        .custom-logo {
+            width: 200px;
+            position: relative;
+            top: 0;
+            left: 0;
+            margin-bottom: 40px;
+        }
+
+        .profile-picture {
+            position: absolute;
+            top: 95%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .profile-picture img {
+            width: 130px;
+            height: 130px;
+            border: 4px solid #fff;
+            border-radius: 50%;
+        }
+
+        .custom-button {
+            font-weight: bold;
+        }
+
+        .social-icon {
+            font-size: 1.9rem;
+            transition: color 0.3s;
+        }
+
+        .list-group-item {
+            background-color: #333;
+            color: #fff;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #444;
+            padding: 10px 15px;
+        }
+
+        .list-group-item:hover {
+            background-color: #444;
+            border-color: #666;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        .custom-save-button {
+            background: linear-gradient(90deg, #5f4def, #00d0ea);
+            color: white;
+            font-weight: bold;
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s;
+        }
+
+        .custom-save-button:hover {
+            background: linear-gradient(90deg, #4b3ec4, #00b3c3);
+        }
+
+        .contact-icon {
+            font-size: 1.5rem;
+            color: #fffefe;
+        }
+
+        .custom-phone {
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .custom-phone1 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.1s, border-color 0.1s;
+        }
+
+        .custom-phone1:hover {
+            background-color: #25D366;
+            border-color: #128C7E;
+        }
+
+        .text-container {
+            text-align: center;
+        }
+
+        .main-text {
+            display: block;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .sub-text {
+            display: block;
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-top: 0.3rem;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(-3px);
+            }
+
+            50% {
+                transform: translateY(3px);
+            }
+        }
+
+        /* contact details */
+        .contact {
+            background-color: #373938;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="d-flex justify-content-center mt-5">
+        <div class="card custom-card shadow-lg" style="background-color: #FFFFFF;">
+            <div class="card-header custom-header text-center"
+                style="background-image:  url('banner_img/client_banner/suduaraliya-b.png'); height: 200px; opacity: 1; width:100%">
+                <!-- <img src="logo_img/main_logo/Main_Design-l.png" alt="Company Logo" class="custom-logo" height="80px"
+                    style="width: 245px; height: auto; opacity: 1;"> -->
+                <div class="profile-picture">
+                    <img src="profile_img/client_profile/suduaraliya-p.png" alt="Saliya Pathum" class="rounded-circle">
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="card-body text-center"
+                style="background-color: #FFFFFF; color: #000000; text-decoration: none; ">
+                <h2 class="card-title" style="font-size: 27px; text-transform: uppercase;">Sudu Araliya</h2>
+                <p style="color: #000000; font-size: 21px; text-transform: uppercase;">hotel</p>
+
+                <div>
+                    <a href="https://www.booking.com/searchresults.en-gb.html?aid=2276374&label=msn-7OManZyKVJZYfI83qEqaEw-80539364970329%3Atikwd-80539513789025%3Aloc-36%3Aneo%3Amte%3Alp36%3Adec%3Aqssudu%20araliya%20hotel&utm_medium=cpc&utm_campaign=Hotel%20-%20Sri%20Lanka&utm_term=7OManZyKVJZYfI83qEqaEw&msclkid=23c7cec0c8911d76bad5a6e5927f7f30&utm_source=bing&highlighted_hotels=543208&redirected=1&city=-2233982&hlrd=no_dates&source=hotel&expand_sb=1&keep_landing=1&sid=2bd57667311be68aad0929d848925bfa" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/icon/booking.png" alt="" style="width: 50px; height: 50px;">
+                    </a>
+                    <a href="https://www.vio.com/Hotel/Search?checkIn=2025-07-11&checkOut=2025-07-12&curr=LKR&epv=MS4y&esd=0dcWAUmnWyAztSW_w36qQS2PUhMXgljaTP2MtIeeKaykqo2KgBOznGiwGta9EkBSXCc9aTGdcqai6R2vteD3xwN-2k3Qdn10Fmd8dZDobJ3yxQH2lZCZQjfZlA%3D%3D&forceCurrencyChange=1&forceLanguageChange=1&hotelId=1656527&is_retargeting=true&label=src%3Dbha%26cltype%3Dhotel%26datype%3Ddefault%26bsite%3Dlocaluniversal%26ucountry%3Dlk%26udevice%3Ddesktop%26hotelgroup%3D1346904133098303%26day%3D11%26month%3D07%26year%3D2025%26los%3D1%26dd%3D57%26price%3D19170.340000%26currency%3DLKR%26userlang%3Den%26slot%3DA%26verification%3Dfalse%26_th%3D45ba2dfec793f3e6d620db2682b01d7d25c943d32f6a3a9d%26dts%3D1747280299%26query%3D3&lang=en&msclkid=a84c38d1defb1de31beb50f4bb4d6caa&oti=_52D502KLCA&pid=click-tracker&preferredRate=19170.340000&profile=r2d2m73kn8&rooms=2%3A&userCountry=lk&utm_medium=cpc&utm_source=bha" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/icon/vio.png" alt="" style="width: 50px; height: 50px;">
+                    </a>
+                     <a href="https://www.agoda.com/search?site_id=1881537&campaignid=722084063&searchdatetype=default&lt=57&numberofchildren=0&gsite=localuniversal&partnercurrency=USD&roomid=3998781&pricetax=1908.370000&pricetotal=16058.400000&rateplan=abb0565f-cbfc-8eac-9e2b-0b957d1881db&usercountry=lk&currency=LKR&userdevice=desktop&verif=false&audience_list=&booking_source=cpc&msclkid=6aa02749a20b1070ca264f6cc7bd180d&utm_source=bing&utm_medium=cpc&utm_campaign=CO%3ASri+Lanka_82&utm_term=74010876562084&utm_content=CI_21396&los=1&adults=2&rooms=1&checkin=2025-07-11&checkout=2025-07-12&selectedproperty=391658&city=21396&pslc=1&ds=Tbi%2FmBS4bpPEC0xR" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/icon/agoda.png" alt="" style="width: 50px; height: 50px;">
+                    </a>
+                </div><br>
+
+                <a href="https://wa.me/94761231212" target="_blank" rel="noopener noreferrer"
+                    style="text-decoration: none;">
+                    <button class="btn w-100 mb-3 custom-phone1 d-flex align-items-center justify-content-center"
+                        style="background-color: #25D366; color: white; height: 60px; border: 2px solid orange; border-radius: 10px; gap: 10px;">
+                        <i class="fab fa-whatsapp" style="font-size: 50px; margin-right:30px;"></i>
+                        <span style="font-size: 14px; font-family: 'Montserrat', sans-serif;">CONNECT WITH
+                            WHATSAPP</span>
+                    </button>
+                </a>
+
+                <div class="list-group mb-3">
+                    <button type="button"
+                        class="list-group-item d-flex align-items-center justify-content-between contact"
+                        onclick="window.open('tel:+94272224849', '_self')">
+                        <img src="Images/icon/phone.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
+                        <span class="text-center flex-grow-1 text-truncate custom-phone"
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">+94272224849</span>
+                    </button>
+
+                    <button type="button"
+                        class="list-group-item d-flex align-items-center justify-content-between contact"
+                        onclick="window.open('mailto:info@hotelsuduaraliya.com', '_self')">
+                        <img src="Images/icon/mail.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
+                        <span class="text-center flex-grow-1 text-truncate custom-phone"
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">info@hotelsuduaraliya.com</span>
+                    </button>
+
+                    <button type="button"
+                        class="list-group-item d-flex align-items-center justify-content-between contact"
+                        onclick="window.open('https://www.araliyaresorts.com/', '_blank')">
+                        <img src="Images/icon/internet.png" alt=""
+                            style="width: 30px; height: 30px; margin-right:25px;">
+                        <span class="text-center flex-grow-1 text-truncate custom-phone"
+                            style="color: #FFFFFF; 'Montserrat', sans-serif; font-size:16px; font-size:16px;">www.araliyaresorts.com</span>
+                    </button>
+
+                    <button type="button"
+                        class="list-group-item d-flex align-items-center justify-content-between contact"
+                        onclick="window.open('https://www.google.com/maps/search/?api=1&query=919+Oaktree+Crescent,+Newmarket', '_blank')">
+                        <img src="Images/icon/map.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
+                        <span class="text-center flex-grow-1 text-truncate custom-phone"
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">Hotel Sudu Araliya,New town,Polonnaruwa</span>
+                    </button>
+                </div>
+
+                <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:19px">CONNECT WITH SOCIAL MEDIA
+                </p>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/instagram.png" alt="" style="width: 50px; height: 50px;">
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/facebook.png" alt="" style="width: 50px; height: 50px;">
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/youtube.png" alt="" style="width: 50px; height: 50px;">
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/tiktok.png" alt="" style="width: 50px; height: 50px;">
+                    </a>
+                </div>
+
+                <div class="d-flex flex-wrap justify-content-center">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/linkedin.png" alt="" style="width: 50px; height: 50px;">
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/twitter.png" alt="" style="width: 50px; height: 50px;">
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/social.png" alt="" style="width: 50px; height: 50px;">
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/pinterest.png" alt="" style="width: 50px; height: 50px;">
+                    </a>
+                </div>
+
+
+                <br>
+                <button class="btn w-100 custom-save-button" onclick="generateVCF()"
+                    style="font-family: 'Montserrat', sans-serif; font-size:19px; border: 2px solid orange;">
+                    <img src="Images/Social_Media_Icon/save.png" alt=""
+                        style="width: 50px; height: 50px; margin-right:25px;">
+                    SAVE TO CONTACTS
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+    function generateVCF() {
+        // Contact information
+        const contactData = {
+            firstName: "Sudu Araliya",
+            lastName: "",
+            title: "Hotel",
+            phoneWork: "+94272224849",
+            phoneMobile: "",
+            email: "info@hotelsuduaraliya.com",
+            website: "www.araliyaresorts.com",
+            address: "Hotel Sudu Araliya, New town, Polonnaruwa",
+            profileImage: "profile_img/client_profile/suduaraliya-p.png" // Make sure this is a full URL
+        };
+
+        // Create VCF content with proper formatting
+        let vcfContent = [
+            "BEGIN:VCARD",
+            "VERSION:3.0",
+            `FN:${contactData.firstName} ${contactData.lastName}`.trim(),
+            `N:${contactData.lastName};${contactData.firstName};;;`,
+            `TITLE:${contactData.title}`,
+            `TEL;TYPE=WORK,VOICE:${contactData.phoneWork}`,
+            contactData.phoneMobile ? `TEL;TYPE=CELL:${contactData.phoneMobile}` : "",
+            `EMAIL:${contactData.email}`,
+            `URL:${contactData.website}`,
+            `ADR;TYPE=WORK:;;${contactData.address}`,
+            // Only include PHOTO if profileImage exists and is a valid URL
+            contactData.profileImage ? `PHOTO;VALUE=URL:${getFullUrl(contactData.profileImage)}` : "",
+            "END:VCARD"
+        ].filter(line => line !== "").join("\n");
+
+        // Create and trigger download
+        const blob = new Blob([vcfContent], { type: 'text/vcard;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${contactData.firstName}${contactData.lastName ? '_' + contactData.lastName : ''}.vcf`;
+        document.body.appendChild(a);
+        a.click();
+
+        // Clean up
+        setTimeout(() => {
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }, 100);
+    }
+
+    // Helper function to ensure the image URL is absolute
+    function getFullUrl(relativeUrl) {
+        if (relativeUrl.startsWith('http') || relativeUrl.startsWith('https')) {
+            return relativeUrl;
+        }
+        // If you know your base URL, prepend it here
+        return window.location.origin + '/' + relativeUrl;
+    }
+</script>
+</body>
+
+</html>
