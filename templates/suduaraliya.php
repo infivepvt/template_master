@@ -60,7 +60,7 @@
         }
 
         .list-group-item {
-            background-color: #333;
+            background-color: #023020;
             color: #fff;
             border-radius: 8px;
             margin-bottom: 10px;
@@ -69,13 +69,14 @@
         }
 
         .list-group-item:hover {
-            background-color: #444;
+            background-color:rgb(0, 0, 0);
             border-color: #666;
             transition: background-color 0.3s, border-color 0.3s;
         }
 
         .custom-save-button {
-            background: linear-gradient(90deg, #5f4def, #00d0ea);
+            /* background: linear-gradient(90deg, #4b3ec4, #00b3c3); */
+            background: linear-gradient(90deg, #023020,rgb(0, 0, 0));
             color: white;
             font-weight: bold;
             border: none;
@@ -88,7 +89,8 @@
         }
 
         .custom-save-button:hover {
-            background: linear-gradient(90deg, #4b3ec4, #00b3c3);
+            /* background: linear-gradient(90deg, #4b3ec4, #00b3c3); */
+            background: linear-gradient(90deg,rgb(0, 0, 0),rgb(34, 34, 34));
         }
 
         .contact-icon {
@@ -149,7 +151,7 @@
 
         /* contact details */
         .contact {
-            background-color: #373938;
+            background-color: #023020;
         }
     </style>
 
@@ -178,14 +180,15 @@
                         <img src="Images/icon/booking.png" alt="" style="width: 50px; height: 50px;">
                     </a>
                     <a href="https://www.vio.com/Hotel/Search?checkIn=2025-07-11&checkOut=2025-07-12&curr=LKR&epv=MS4y&esd=0dcWAUmnWyAztSW_w36qQS2PUhMXgljaTP2MtIeeKaykqo2KgBOznGiwGta9EkBSXCc9aTGdcqai6R2vteD3xwN-2k3Qdn10Fmd8dZDobJ3yxQH2lZCZQjfZlA%3D%3D&forceCurrencyChange=1&forceLanguageChange=1&hotelId=1656527&is_retargeting=true&label=src%3Dbha%26cltype%3Dhotel%26datype%3Ddefault%26bsite%3Dlocaluniversal%26ucountry%3Dlk%26udevice%3Ddesktop%26hotelgroup%3D1346904133098303%26day%3D11%26month%3D07%26year%3D2025%26los%3D1%26dd%3D57%26price%3D19170.340000%26currency%3DLKR%26userlang%3Den%26slot%3DA%26verification%3Dfalse%26_th%3D45ba2dfec793f3e6d620db2682b01d7d25c943d32f6a3a9d%26dts%3D1747280299%26query%3D3&lang=en&msclkid=a84c38d1defb1de31beb50f4bb4d6caa&oti=_52D502KLCA&pid=click-tracker&preferredRate=19170.340000&profile=r2d2m73kn8&rooms=2%3A&userCountry=lk&utm_medium=cpc&utm_source=bha" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/icon/vio.png" alt="" style="width: 50px; height: 50px;">
+                            <img src="Images/icon/vio.png" alt="" style="width: 50px; height: 50px;">
                     </a>
-                     <a href="https://www.agoda.com/search?site_id=1881537&campaignid=722084063&searchdatetype=default&lt=57&numberofchildren=0&gsite=localuniversal&partnercurrency=USD&roomid=3998781&pricetax=1908.370000&pricetotal=16058.400000&rateplan=abb0565f-cbfc-8eac-9e2b-0b957d1881db&usercountry=lk&currency=LKR&userdevice=desktop&verif=false&audience_list=&booking_source=cpc&msclkid=6aa02749a20b1070ca264f6cc7bd180d&utm_source=bing&utm_medium=cpc&utm_campaign=CO%3ASri+Lanka_82&utm_term=74010876562084&utm_content=CI_21396&los=1&adults=2&rooms=1&checkin=2025-07-11&checkout=2025-07-12&selectedproperty=391658&city=21396&pslc=1&ds=Tbi%2FmBS4bpPEC0xR" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/icon/agoda.png" alt="" style="width: 50px; height: 50px;">
+                    <a href="https://www.agoda.com/search?site_id=1881537&campaignid=722084063&searchdatetype=default&lt=57&numberofchildren=0&gsite=localuniversal&partnercurrency=USD&roomid=3998781&pricetax=1908.370000&pricetotal=16058.400000&rateplan=abb0565f-cbfc-8eac-9e2b-0b957d1881db&usercountry=lk&currency=LKR&userdevice=desktop&verif=false&audience_list=&booking_source=cpc&msclkid=6aa02749a20b1070ca264f6cc7bd180d&utm_source=bing&utm_medium=cpc&utm_campaign=CO%3ASri+Lanka_82&utm_term=74010876562084&utm_content=CI_21396&los=1&adults=2&rooms=1&checkin=2025-07-11&checkout=2025-07-12&selectedproperty=391658&city=21396&pslc=1&ds=Tbi%2FmBS4bpPEC0xR" target="_blank" rel="noopener noreferrer" class="m-3">
+                            <img src="Images/icon/agoda.png" alt="" style="width: 50px; height: 50px;">
                     </a>
-                </div><br>
+                </div>
+                <br>
 
-                <a href="https://wa.me/94761231212" target="_blank" rel="noopener noreferrer"
+                <a href="https://api.whatsapp.com/send?phone=+94765315390&text=Hotel%20Sudu%20Araliya" target="_blank" rel="noopener noreferrer"
                     style="text-decoration: none;">
                     <button class="btn w-100 mb-3 custom-phone1 d-flex align-items-center justify-content-center"
                         style="background-color: #25D366; color: white; height: 60px; border: 2px solid orange; border-radius: 10px; gap: 10px;">
@@ -234,20 +237,20 @@
                 </p>
                 <div class="d-flex flex-wrap justify-content-center">
                     <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/instagram.png" alt="" style="width: 50px; height: 50px;">
+                        <img src="Images/Social_Media_Icon/facebook.png" alt="" style="width: 50px; height: 50px;">
                     </a>
                     <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/facebook.png" alt="" style="width: 50px; height: 50px;">
+                        <img src="Images/Social_Media_Icon/x-2.png" alt="" style="width: 50px; height: 50px;">
                     </a>
                     <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
                         <img src="Images/Social_Media_Icon/youtube.png" alt="" style="width: 50px; height: 50px;">
                     </a>
                     <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/tiktok.png" alt="" style="width: 50px; height: 50px;">
+                        <img src="Images/Social_Media_Icon/instagram.png" alt="" style="width: 50px; height: 50px;">
                     </a>
                 </div>
 
-                <div class="d-flex flex-wrap justify-content-center">
+                <!-- <div class="d-flex flex-wrap justify-content-center">
                     <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
                         <img src="Images/Social_Media_Icon/linkedin.png" alt="" style="width: 50px; height: 50px;">
                     </a>
@@ -260,7 +263,7 @@
                     <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
                         <img src="Images/Social_Media_Icon/pinterest.png" alt="" style="width: 50px; height: 50px;">
                     </a>
-                </div>
+                </div> -->
 
 
                 <br>
