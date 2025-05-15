@@ -159,7 +159,7 @@
     <div class="d-flex justify-content-center mt-5">
         <div class="card custom-card shadow-lg" style="background-color: #FFFFFF;">
             <div class="card-header custom-header text-center"
-                style="background-image:  url('banner_img/client_banner/fashion-b.png'); height: 200px; opacity: 1;">
+                style="background-image:  url('banner_img/client_banner/fashion-b.jpeg'); height: 280px; opacity: 1;width:100%">
                 <!-- <img src="logo_img/main_logo/Main_Design-l.png" alt="Company Logo" class="custom-logo" height="80px"
                     style="width: 245px; height: auto; opacity: 1;"> -->
                 <div class="profile-picture">
@@ -211,7 +211,7 @@
 
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
-                        onclick="window.open('https://www.google.com/maps/place/381+Kasthuriyar+Rd,+Jaffna+40000/@9.6733564,80.0098137,17z/data=!3m1!4b1!4m6!3m5!1s0x3afe5406c2e5aa37:0x5ee536c078cf4bab!8m2!3d9.6733511!4d80.0123886!16s%2Fg%2F11szjq8jm1?authuser=0&entry=ttu&g_ep=EgoyMDI1MDUxMS4wIKXMDSoASAFQAw%3D%3D', '_blank')">
+                        onclick="window.open('https://maps.app.goo.gl/CzaicWWFotF72muW8?g_st=com.google.maps.preview.copy', '_blank')">
                         <img src="Images/icon/map.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
                             style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">No.381, Kasthuriyar Road,Jaffna</span>
@@ -221,16 +221,16 @@
                 <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:19px">CONNECT WITH SOCIAL MEDIA
                 </p>
                 <div class="d-flex flex-wrap justify-content-center">
-                    <a href="http://www.instragran.com/fashionacademysrilanka" target="_blank" rel="noopener noreferrer" class="m-3">
+                    <a href="http://www.instagram.com/fashionacademysrilanka" target="_blank" rel="noopener noreferrer" class="m-3">
                         <img src="Images/Social_Media_Icon/instagram.png" alt="" style="width: 50px; height: 50px;">
                     </a>
                     <a href="http://www.facebook.com/fashionacademysrilanka" target="_blank" rel="noopener noreferrer" class="m-3">
                         <img src="Images/Social_Media_Icon/facebook.png" alt="" style="width: 50px; height: 50px;">
                     </a>
-                    <a href="http://www.youtube.com/fashionacademylk" target="_blank" rel="noopener noreferrer" class="m-3">
+                    <a href="http://www.youtube.com/@fashionacademylk" target="_blank" rel="noopener noreferrer" class="m-3">
                         <img src="Images/Social_Media_Icon/youtube.png" alt="" style="width: 50px; height: 50px;">
                     </a>
-                    <a href="http://www.tiktok.com/fashionacademysrilanka" target="_blank" rel="noopener noreferrer" class="m-3">
+                    <a href="http://www.tiktok.com/@fashionacademysrilanka" target="_blank" rel="noopener noreferrer" class="m-3">
                         <img src="Images/Social_Media_Icon/tiktok.png" alt="" style="width: 50px; height: 50px;">
                     </a>
                 </div>
@@ -273,10 +273,10 @@ async function generateVCF() {
         title: "Academy",
         phoneWork: "0761231212",
         phoneMobile: "",
-        email: "youremail@yourwebsite.com",
+        email: "fashionacademylk@gmail.com",
         email2: "",
         email3: "",
-        website: "www.yourwebsiteaddress.com",
+        website: "www.fashionacademylk.com",
         website2: "",
         website3: "",
         address: "No.381, Kasthuriyar Road, Jaffna",
