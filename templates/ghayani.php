@@ -277,16 +277,11 @@
             address: "No. 24, Wijerama Mawatha, Colombo 07",
             address2: "",
             about: "",
-            logo: ""
-            // Note: profileImage is removed since we'll handle it separately
+            logo: "",
+            profileImage: "profile_img/client_profile/ghayani-p.png"
         };
 
-        // Base64-encoded image (example placeholder)
-        // You need to convert your image (ghayani-p.png) to base64.
-        // You can use an online tool or a script to get the base64 string.
-        const profileImageBase64 = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAA..."; // Replace with actual base64 string of ghayani-p.png
-
-        // Create VCF content with base64-encoded image
+        // Create VCF content
         let vcfContent = `BEGIN:VCARD
 VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
@@ -303,7 +298,7 @@ URL:${contactData.website3}
 ADR;TYPE=WORK:;;${contactData.address}
 ADR;TYPE=HOME:;;${contactData.address2}
 NOTE:${contactData.about}
-PHOTO;ENCODING=b;TYPE=PNG:${profileImageBase64.split(',')[1]} // Remove 'data:image/png;base64,' prefix
+PHOTO;VALUE=URL:${contactData.profileImage}
 LOGO;VALUE=URL:${contactData.logo}
 END:VCARD`;
 
