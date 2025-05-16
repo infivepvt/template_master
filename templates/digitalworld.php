@@ -295,7 +295,7 @@
                         <img src="Images/Social_Media_Icon/youtube.png" alt="" style="width: 50px; height: 50px;">
                     </a>
                     <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fx.com%2Fsarangasiriwar1%253Fs%253D21%2526t%253DI0asi8ftwjwikrdPg4KCgg&h=AT0vwCZZpmZB1wB4EqEjiidpfgxiijxWS2jniy4nJg3H6mdoMPee5K5DoeTWbHWzySMDkwPRqilJ_EG8NCclWyUThv6FVh4AePkDhpKZ6WLnT6ww5vCabV_fkgZVOjklm_84bM8P7LEiL561sfcw_MSM_im8kfmnCCaV" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/x-2.png" alt="" style="width: 50px; height: 50px;">
+                        <img src="Images/Social_Media_Icon/x-2.jpeg" alt="" style="width: 50px; height: 50px;">
                     </a>
                     <a href="https://www.threads.com/@sarangasiriwardane?igshid=NTc4MTIwNjQ2YQ==" target="_blank" rel="noopener noreferrer" class="m-3">
                         <img src="Images/Social_Media_Icon/th round.png" alt="" style="width: 50px; height: 50px;">
