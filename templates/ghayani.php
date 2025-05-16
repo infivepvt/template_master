@@ -121,7 +121,6 @@
             background: linear-gradient(90deg, rgb(0, 0, 0), rgb(189, 163, 16));
         }
 
-
         @media (min-width: 420px) {
             .profile {
                 transform: translate(-50%, 100%);
@@ -133,7 +132,6 @@
                 transform: translate(-50%, 120%);
             }
         }
-
 
         @media (min-width: 550px) {
             .profile {
@@ -159,18 +157,15 @@
             }
         }
     </style>
-
-
 </head>
 
 <body>
-
     <div class="container">
         <div class="row d-flex justify-content-center">
             <div class="col-12 col-md-8 col-lg-6">
                 <div class="row justify-content-center">
                     <div class="bg-1"></div>
-                    <div class="profile"></div>
+                    <div class="profile" id="profileImageContainer"></div>
                     <div class="d-inline-flex justify-content-center align-items-start box-1 gap-2">
                         <h2 class="txt1">Gayana</h2>
                         <div>
@@ -231,58 +226,70 @@
                             <a href="https://www.tiktok.com/@ghaniskinaesthatics_07" class="box-3 d-flex justify-content-center align-items-center">
                                 <i class="fab fa-tiktok text-black fs-6"></i>
                             </a>
-                            <!-- <div class="box-3 d-flex justify-content-center align-items-center">
-                                <i class="fab fa-youtube text-black fs-6"></i>
-                            </div> -->
                             <a href="https://www.instagram.com/p/DIlVKbnSKQI/" class="box-3 d-flex justify-content-center align-items-center">
                                 <i class="fab fa-instagram text-black fs-6"></i>
                             </a>
-                            <!-- <div class="box-3 d-flex justify-content-center align-items-center">
-                                <i class="fab fa-linkedin-in text-black fs-6"></i>
-                            </div> -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
         <br>
-
     </div>
 
-</body>
+    <!-- Hidden image element for processing -->
+    <img id="profileImageSrc" src="profile_img/client_profile/ghayani-p.png" style="display: none;">
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-<script>
-    function generateVCF() {
-        // Updated contact information to match the business card
-        const contactData = {
-            firstName: "Ghayana",
-            lastName: "Harshani",
-            title: "Managing Director",
-            phoneWork: "0779927274",
-            phoneMobile: "",
-            email: "gayanaharshani14@gmail.com",
-            email2: "",
-            email3: "",
-            website: "www.ghaniskin.com",
-            website2: "",
-            website3: "",
-            address: "No. 24, Wijerama Mawatha, Colombo 07",
-            address2: "",
-            about: "",
-            logo: "",
-            profileImage: "profile_img/client_profile/ghayani-p.png"
-        };
+    <script>
+        async function generateVCF() {
+            // Get the profile image element
+            const profileImage = document.getElementById('profileImageSrc');
+            
+            // Wait for the image to load
+            if (!profileImage.complete) {
+                await new Promise((resolve) => {
+                    profileImage.onload = resolve;
+                });
+            }
+            
+            // Create canvas and draw image
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            canvas.width = profileImage.naturalWidth;
+            canvas.height = profileImage.naturalHeight;
+            ctx.drawImage(profileImage, 0, 0);
+            
+            // Convert to base64
+            const base64Image = canvas.toDataURL('image/jpeg').split(',')[1];
+            
+            // Contact information
+            const contactData = {
+                firstName: "Ghayana",
+                lastName: "Harshani",
+                title: "Managing Director",
+                phoneWork: "0779927274",
+                phoneMobile: "",
+                email: "gayanaharshani14@gmail.com",
+                email2: "",
+                email3: "",
+                website: "www.ghaniskin.com",
+                website2: "",
+                website3: "",
+                address: "No. 24, Wijerama Mawatha, Colombo 07",
+                address2: "",
+                about: "",
+                logo: ""
+            };
 
-        // Create VCF content
-        let vcfContent = `BEGIN:VCARD
+            // Create VCF content with embedded photo
+            const vCardData = `BEGIN:VCARD
 VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
 N:${contactData.lastName};${contactData.firstName};;;
@@ -298,26 +305,26 @@ URL:${contactData.website3}
 ADR;TYPE=WORK:;;${contactData.address}
 ADR;TYPE=HOME:;;${contactData.address2}
 NOTE:${contactData.about}
-PHOTO;VALUE=URL:${contactData.profileImage}
+PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}
 LOGO;VALUE=URL:${contactData.logo}
 END:VCARD`;
 
-        // Create download link
-        const blob = new Blob([vcfContent], {
-            type: 'text/vcard'
-        });
-        const url = URL.createObjectURL(blob);
+            // Create download link
+            const blob = new Blob([vCardData], {
+                type: 'text/vcard'
+            });
+            const url = URL.createObjectURL(blob);
 
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-        document.body.appendChild(a);
-        a.click();
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+            document.body.appendChild(a);
+            a.click();
 
-        // Clean up
-        document.body.removeChild(a);
-        URL.revokeObjectURL(url);
-    }
-</script>
-
+            // Clean up
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+    </script>
+</body>
 </html>

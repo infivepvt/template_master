@@ -2,329 +2,606 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Card</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Allison&family=Dancing+Script:wght@400..700&family=Alumni+Sans+Pinstripe:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <style>
-        * {
-            font-family: "Roboto", sans-serif;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="Images/Logo1.ico">
+  <style>
+    .profile-card {
+      background-color: #000;
+      color: #fff;
+      max-width: 450px;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      font-family: 'Montserrat', sans-serif;
+      margin: 0 auto;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
 
-        .bg-1 {
-            background-image: url('banner_img/client_banner/ghayani-b.jpg');
-            width: 100%;
-            aspect-ratio: 16/9;
-            background-size: cover;
-            background-position: center;
-        }
+    .profile-banner {
+      position: relative;
+    }
 
-        .profile {
-            width: 160px;
-            aspect-ratio: 1/1;
-            background-image: url('profile_img/client_profile/ghayani-p.png');
-            background-size: cover;
-            border: solid 5px #e3d1c6;
-            position: absolute;
-            left: 50%;
-            transform: translate(-50%, 80%);
-        }
+    .profile-photo {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      filter: brightness(0.79);
+    }
 
-        .box-1 {
-            margin-top: 110px;
-        }
+    .imagepro {
+      width: 100%;
+      margin-right: 0;
+      filter: brightness(1.0);
+    }
 
-        .txt1 {
-            font-family: "Allison", cursive;
-            font-size: 57px;
-            color: #e3d1c6;
-            margin-right: 10px;
-            margin-top: -12px;
-        }
+    .profile-info {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      z-index: 2;
+      color: #ffffff;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+      text-align: left;
+    }
 
-        .txt2 {
-            font-family: "Aboreto", sans-serif;
-            font-size: 36px;
-        }
+    .profile-info h2 {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
 
-        .txt3 {
-            font-family: "Aboreto", sans-serif;
-            font-size: 11px;
-            font-weight: bold;
-        }
+    .profile-info p {
+      font-size: 1.1rem;
+      margin-bottom: 0;
+    }
 
-        .line1 {
-            width: 80%;
-            height: 2px;
-            background-color: black;
-            margin-top: 12px;
-        }
+    .profile-contact-icons {
+      display: flex;
+      justify-content: start;
+      align-items: start;
+      gap: 15px;
+      padding: 15px;
+      flex-wrap: wrap;
+      margin-left: 10px;
+    }
 
-        .box-2 {
-            width: 45px;
-            height: 45px;
-            background-color: #e3d1c6;
-            border-radius: 50px;
-        }
+    .icon-button {
+      background-color: #fff;
+      border: none;
+      color: #000000;
+      font-size: 20px;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
 
-        .txt4 {
-            font-family: "Share Tech Mono", sans-serif;
-            font-size: 13px;
-        }
+    .icon-button:hover {
+      background-color: #333;
+      color: #fff;
+      transform: scale(1.1);
+    }
 
-        .line2 {
-            width: 100%;
-            height: 8px;
-        }
+    .icon-button:active {
+      transform: scale(0.95);
+    }
 
-        .txt5 {
-            color: #c6a373;
-            font-family: "Alumni Sans Pinstripe", sans-serif;
-            font-size: 18px;
-            font-weight: bold;
-        }
+    .social-media-links-column {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      padding: 15px;
+    }
 
-        .box-3 {
-            width: 35px;
-            height: 35px;
-            background-color: #e3d1c6;
-            border-radius: 50px;
-            text-decoration: none;
-        }
+    .social-media-button {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      padding: 12px;
+      border-radius: 25px;
+      color: #000;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      width: 100%;
+      max-width: 350px;
+      background-color: #ececec;
+    }
 
-        .txt6 {
-            font-size: 8px;
-            font-weight: bold;
-            margin-left: 5px;
-        }
+    .social-media-button i {
+      margin-right: 15px;
+    }
 
-        .custom-save-button {
-            background: linear-gradient(90deg, rgb(32, 32, 32), rgb(224, 195, 31));
-            color: white;
-            font-weight: bold;
-            border: none;
-            padding: 10px;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: background 0.3s;
-        }
+    .social-media-button:hover {
+      background-color: #555;
+      color: white;
+    }
 
-        .custom-save-button:hover {
-            background: linear-gradient(90deg, rgb(0, 0, 0), rgb(189, 163, 16));
-        }
+    .social-media-button:hover .platform-name,
+    .social-media-button:hover .user-name {
+      color: white;
+    }
 
-        @media (min-width: 420px) {
-            .profile {
-                transform: translate(-50%, 100%);
-            }
-        }
+    .text-wrapper {
+      text-align: left;
+      margin-left: 16px;
+    }
 
-        @media (min-width: 490px) {
-            .profile {
-                transform: translate(-50%, 120%);
-            }
-        }
+    .platform-name {
+      font-weight: bold;
+      color: #000;
+      font-size: 16px;
+      font-family: Roboto, sans-serif;
+    }
 
-        @media (min-width: 550px) {
-            .profile {
-                transform: translate(-50%, 140%);
-            }
-        }
+    .user-name {
+      color: rgb(32, 130, 243);
+      font-size: 16px;
+      font-family: Roboto, sans-serif;
+    }
 
-        @media (min-width: 760px) {
-            .profile {
-                transform: translate(-50%, 120%);
-            }
-        }
+    .footer {
+      background-color: rgb(0, 0, 0);
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+    }
 
-        @media (min-width: 1200px) {
-            .profile {
-                transform: translate(-50%, 150%);
-            }
-        }
+    .custom-save-button {
+      width: 100%;
+      max-width: 350px;
+      padding: 15px;
+      margin: 10px 0;
+      background-color: rgb(65, 66, 65);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-        @media (min-width: 1400px) {
-            .profile {
-                transform: translate(-50%, 180%);
-            }
-        }
-    </style>
+    .custom-save-button:hover {
+      background-color: #45a049;
+    }
+
+    .custom-save-button i {
+      margin-right: 10px;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 576px) {
+      .profile-info h2 {
+        font-size: 1.5rem;
+      }
+
+      .profile-info p {
+        font-size: 1rem;
+      }
+
+      .profile-contact-icons {
+        gap: 10px;
+        padding: 10px;
+      }
+
+      .icon-button {
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+      }
+
+      .social-media-button {
+        padding: 10px;
+      }
+
+      .platform-name,
+      .user-name {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .profile-info {
+        bottom: 10px;
+        left: 10px;
+      }
+
+      .profile-info h2 {
+        font-size: 1.3rem;
+      }
+    }
+
+    /* gallery */
+
+    .gallery-section {
+      padding: 20px;
+      background-color: #000;
+    }
+
+    .gallery-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .gallery-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .gallery-toggle {
+      font-size: 1.2rem;
+    }
+
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 5px;
+      aspect-ratio: 1;
+      cursor: pointer;
+    }
+
+    .gallery-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+
+    .gallery-item:hover .gallery-image {
+      transform: scale(1.05);
+    }
+
+    /* Lightbox styles */
+    .lightbox {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .lightbox-content {
+      max-width: 90%;
+      max-height: 90%;
+    }
+
+    .lightbox-image {
+      max-width: 100%;
+      max-height: 80vh;
+      object-fit: contain;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: white;
+      font-size: 30px;
+      cursor: pointer;
+    }
+
+    .lightbox-nav {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+
+    .lightbox-nav button {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 30px;
+      cursor: pointer;
+    }
+
+    .about-section {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 30px 0;
+    }
+
+    .image-gallery img {
+      max-width: 50%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* gallery */
+
+    /* Removed unused or unnecessary CSS classes/styles for clarity */
+  </style>
+
 </head>
 
 <body>
-    <div class="container">
-        <div class="row d-flex justify-content-center">
-            <div class="col-12 col-md-8 col-lg-6">
-                <div class="row justify-content-center">
-                    <div class="bg-1"></div>
-                    <div class="profile" id="profileImageContainer"></div>
-                    <div class="d-inline-flex justify-content-center align-items-start box-1 gap-2">
-                        <h2 class="txt1">Gayana</h2>
-                        <div>
-                            <h2 class="txt2">Harshani</h2>
-                            <h2 class="txt3">Managing Director <span class="txt6">DsBM CPM</span></h2>
-                        </div>
-                    </div>
-                    <div class="line1"></div>
 
-                    <div class="col-12 mt-4">
-                        <div class="row align-items-start">
-                            <div class="col-6 d-flex justify-content-center flex-column align-items-center">
-                                <div class="box-2 d-flex justify-content-center align-items-center">
-                                    <i class="fas fa-phone-alt text-black fs-3" style="transform: scaleX(-1);"></i>
-                                </div>
-                                <span class="txt4 mt-3 text-center">0779927274</span>
-                            </div>
-                            <div class="col-6 d-flex justify-content-center flex-column align-items-center">
-                                <div class="box-2 d-flex justify-content-center align-items-center">
-                                    <i class="far fa-envelope text-black fs-3" style="transform: scaleX(-1);"></i>
-                                </div>
-                                <span class="txt4 mt-3 text-center">gayanaharshani14</span>
-                                <span class="txt4 text-center">@gmail.com</span>
-                            </div>
-                        </div>
-                        <div class="row mt-3 align-items-start">
-                            <div class="col-6 d-flex justify-content-center flex-column align-items-center">
-                                <div class="box-2 d-flex justify-content-center align-items-center">
-                                    <i class="fas fa-map-marker-alt text-black fs-3" style="transform: scaleX(-1);"></i>
-                                </div>
-                                <span class="txt4 mt-3 text-center">No. 24,Wijerama Mawatha, Colombo 07</span>
-                            </div>
-                            <div class="col-6 d-flex justify-content-center flex-column align-items-center">
-                                <div class="box-2 d-flex justify-content-center align-items-center">
-                                    <i class="bi bi-globe text-black fs-3"></i>
-                                </div>
-                                <span class="txt4 mt-3 text-center">www.ghaniskin.com</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <button class="btn w-100 custom-save-button mt-4" onclick="generateVCF()"
-                        style="font-family: 'Montserrat', sans-serif; font-size:19px; border: 2px solid orange;">
-                        <img src="Images/Social_Media_Icon/save.png" alt=""
-                            style="width: 50px; height: 50px; margin-right:25px;">
-                        SAVE TO CONTACTS
-                    </button>
-
-                    <div class="line2 bg-black mt-4"></div>
-
-                    <div class="mt-1 bg-black d-flex flex-column justify-content-center align-items-center py-3">
-                        <span class="txt5">Connect with me</span>
-
-                        <div class="d-flex gap-2 mt-3">
-                            <a href="https://www.facebook.com/people/Ghani-Skin-Aesthetics/61575166874096/#" class="box-3 d-flex justify-content-center align-items-center">
-                                <i class="fab fa-facebook text-black fs-6"></i>
-                            </a>
-                            <a href="https://www.tiktok.com/@ghaniskinaesthatics_07" class="box-3 d-flex justify-content-center align-items-center">
-                                <i class="fab fa-tiktok text-black fs-6"></i>
-                            </a>
-                            <a href="https://www.instagram.com/p/DIlVKbnSKQI/" class="box-3 d-flex justify-content-center align-items-center">
-                                <i class="fab fa-instagram text-black fs-6"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br>
+  <div class="profile-card">
+    <div class="profile-banner">
+      <div class="imagepro">
+        <img class="profile-photo" src="profile_img/client_profile/sandun-p.jpeg" alt="Profile">
+      </div>
+      <div class="profile-info">
+        <h2 style="font-family: Verdana, sans-serif;">Sandun Edirisinghe</h2>
+        <p style="font-family: Roboto, sans-serif;">General Manager Engineering</p>
+      </div>
     </div>
 
-    <!-- Hidden image element for processing -->
-    <img id="profileImageSrc" src="profile_img/client_profile/ghayani-p.png" style="display: none;">
+    <div class="profile-contact-icons">
+      <button class="icon-button" onclick="window.open('mailto:sandun.edirisinghe@sagt.com.lk', '_self')">
+        <i class="fas fa-envelope"></i>
+      </button>
+      <button class="icon-button" onclick="window.open('tel:0772457110', '_self')">
+        <i class="fas fa-phone"></i>
+      </button>
+      <button class="icon-button" onclick="window.open('', '_blank')">
+        <i class="fas fa-map-marker-alt"></i>
+      </button>
+      <button class="icon-button" onclick="window.open('https://wa.me/94772457110', '_blank')">
+        <i class="fab fa-whatsapp"></i>
+      </button>
+    </div>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <div class="social-media-links-column">
+      <a href="#" class="social-media-button">
+        <img src="Images/Social_Media_Icon/facebook.png" alt="" style="width: 40px; height: 40px;">
+        <div class="text-wrapper">
+          <span class="platform-name">Facebook</span>
+          <br>
+          <span class="user-name">Sandun Edirisinghe</span>
+        </div>
+      </a>
+      <a href="#" class="social-media-button">
+        <img src="Images/Social_Media_Icon/instagram.png" alt="" style="width: 40px; height: 40px;">
+        <div class="text-wrapper">
+          <span class="platform-name">Instagram</span>
+          <br>
+          <span class="user-name">Sandun Edirisinghe</span>
+        </div>
+      </a>
+      <a href="#" class="social-media-button">
+        <img src="Images/Social_Media_Icon/linkedin.png" alt="" style="width: 40px; height: 40px;">
+        <div class="text-wrapper">
+          <span class="platform-name">Linkedin</span>
+          <br>
+          <span class="user-name">Sandun Edirisinghe</span>
+        </div>
+      </a>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- gallery -->
+      <!-- <div class="gallery-section">
+      <div class="gallery-header" onclick="toggleGallery()">
+        <div class="gallery-title">Gallery</div>
+        <div class="gallery-toggle" id="galleryToggle">
+          <i class="fas fa-minus"></i>
+        </div>
+      </div>
+      <div class="gallery-container" id="galleryContainer">
+        <div class="gallery-item" onclick="openLightbox('gallery_img/main_gallerys/t6g1.jpg')">
+          <img src="gallery_img/main_gallerys/t6g1.jpg" alt="Gallery Image 1" class="gallery-image">
+        </div>
+        <div class="gallery-item" onclick="openLightbox('gallery_img/main_gallerys/t6g2.jpg')">
+          <img src="gallery_img/main_gallerys/t6g2.jpg" alt="Gallery Image 2" class="gallery-image">
+        </div>
+        <div class="gallery-item" onclick="openLightbox('gallery_img/main_gallerys/t6g3.jpg')">
+          <img src="gallery_img/main_gallerys/t6g3.jpg" alt="Gallery Image 3" class="gallery-image">
+        </div>
+        <div class="gallery-item" onclick="openLightbox('gallery_img/main_gallerys/t6g4.jpg')">
+          <img src="gallery_img/main_gallerys/t6g4.jpg" alt="Gallery Image 4" class="gallery-image">
+        </div>
+        <div class="gallery-item" onclick="openLightbox('gallery_img/main_gallerys/t6g5.jpg')">
+          <img src="gallery_img/main_gallerys/t6g5.jpg" alt="Gallery Image 5" class="gallery-image">
+        </div>
+        <div class="gallery-item" onclick="openLightbox('gallery_img/main_gallerys/t6g6.jpg')">
+          <img src="gallery_img/main_gallerys/t6g6.jpg" alt="Gallery Image 6" class="gallery-image">
+        </div>
+      </div>
+    </div> -->
 
-    <script>
-        async function generateVCF() {
-            // Get the profile image element
-            const profileImage = document.getElementById('profileImageSrc');
-            
-            // Wait for the image to load
-            if (!profileImage.complete) {
-                await new Promise((resolve) => {
-                    profileImage.onload = resolve;
-                });
-            }
-            
-            // Create canvas and draw image
-            const canvas = document.createElement('canvas');
-            const ctx = canvas.getContext('2d');
-            canvas.width = profileImage.naturalWidth;
-            canvas.height = profileImage.naturalHeight;
-            ctx.drawImage(profileImage, 0, 0);
-            
-            // Convert to base64
-            const base64Image = canvas.toDataURL('image/jpeg').split(',')[1];
-            
-            // Contact information
-            const contactData = {
-                firstName: "Ghayana",
-                lastName: "Harshani",
-                title: "Managing Director",
-                phoneWork: "0779927274",
-                phoneMobile: "",
-                email: "gayanaharshani14@gmail.com",
-                email2: "",
-                email3: "",
-                website: "www.ghaniskin.com",
-                website2: "",
-                website3: "",
-                address: "No. 24, Wijerama Mawatha, Colombo 07",
-                address2: "",
-                about: "",
-                logo: ""
-            };
+      <!-- Lightbox HTML -->
+      <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-nav">
+          <button onclick="changeImage(-1)">&#10094;</button>
+          <button onclick="changeImage(1)">&#10095;</button>
+        </div>
+        <div class="lightbox-content">
+          <img id="lightbox-image" class="lightbox-image" src="" alt="">
+        </div>
+      </div>
+      <button class="custom-save-button" onclick="downloadVCF()">
+        <i class="fas fa-save"></i>
+        SAVE TO CONTACTS
+      </button>
+      <section class="about-section">
+        <div class="image-gallery">
+          <img src="logo_img/client_logo/sandunedirisinghe-l.jpg" alt="Business logo">
+        </div>
+      </section>
+    </div>
 
-            // Create VCF content with embedded photo
-            const vCardData = `BEGIN:VCARD
+    <footer style="text-align:center; padding:10px; font-size:14px; color:white;">
+      <a href="https://tapilinq.com/" target="_blank" style="text-decoration:none; color:white;">
+        Made with by Tapilinq | Click now
+      </a>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Gallery images array
+    const galleryImages = [
+      'gallery_img/main_gallerys/t6g1.jpg',
+      'gallery_img/main_gallerys/t6g2.jpg',
+      'gallery_img/main_gallerys/t6g3.jpg',
+      'gallery_img/main_gallerys/t6g4.jpg',
+      'gallery_img/main_gallerys/t6g5.jpg',
+      'gallery_img/main_gallerys/t6g6.jpg'
+    ];
+
+    let currentImageIndex = 0;
+
+    function toggleGallery() {
+      const galleryContainer = document.getElementById('galleryContainer');
+      const galleryToggle = document.getElementById('galleryToggle');
+
+      if (galleryContainer.style.display === 'none') {
+        galleryContainer.style.display = 'grid';
+        galleryToggle.innerHTML = '<i class="fas fa-minus"></i>';
+      } else {
+        galleryContainer.style.display = 'none';
+        galleryToggle.innerHTML = '<i class="fas fa-plus"></i>';
+      }
+    }
+
+    // Lightbox functions
+    function openLightbox(imageSrc) {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImage = document.getElementById('lightbox-image');
+
+      // Find the index of the clicked image
+      currentImageIndex = galleryImages.indexOf(imageSrc);
+
+      lightboxImage.src = imageSrc;
+      lightbox.style.display = 'flex';
+      document.body.style.overflow = 'hidden'; // Prevent scrolling
+    }
+
+    function closeLightbox() {
+      const lightbox = document.getElementById('lightbox');
+      lightbox.style.display = 'none';
+      document.body.style.overflow = 'auto'; // Re-enable scrolling
+    }
+
+    function changeImage(step) {
+      currentImageIndex += step;
+
+      // Wrap around if at beginning or end
+      if (currentImageIndex >= galleryImages.length) {
+        currentImageIndex = 0;
+      } else if (currentImageIndex < 0) {
+        currentImageIndex = galleryImages.length - 1;
+      }
+
+      document.getElementById('lightbox-image').src = galleryImages[currentImageIndex];
+    }
+
+    // Close lightbox when clicking outside the image
+    document.getElementById('lightbox').addEventListener('click', function (e) {
+      if (e.target === this) {
+        closeLightbox();
+      }
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', function (e) {
+      const lightbox = document.getElementById('lightbox');
+      if (lightbox.style.display === 'flex') {
+        if (e.key === 'Escape') {
+          closeLightbox();
+        } else if (e.key === 'ArrowLeft') {
+          changeImage(-1);
+        } else if (e.key === 'ArrowRight') {
+          changeImage(1);
+        }
+      }
+    });
+
+    async function downloadVCF() {
+  try {
+    const profileImage = document.querySelector('.profile-photo');
+    
+    // Wait for image to load if it's not already loaded
+    if (!profileImage.complete) {
+      await new Promise((resolve) => {
+        profileImage.onload = resolve;
+      });
+    }
+    
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+    canvas.width = profileImage.naturalWidth;
+    canvas.height = profileImage.naturalHeight;
+    ctx.drawImage(profileImage, 0, 0);
+    
+    const base64Image = canvas.toDataURL('image/jpeg').split(',')[1];
+    
+    const vCardData = `BEGIN:VCARD
 VERSION:3.0
-FN:${contactData.firstName} ${contactData.lastName}
-N:${contactData.lastName};${contactData.firstName};;;
-TITLE:${contactData.title}
-TEL;TYPE=WORK,VOICE:${contactData.phoneWork}
-TEL;TYPE=CELL:${contactData.phoneMobile}
-EMAIL:${contactData.email}
-EMAIL:${contactData.email2}
-EMAIL:${contactData.email3}
-URL:${contactData.website}
-URL:${contactData.website2}
-URL:${contactData.website3}
-ADR;TYPE=WORK:;;${contactData.address}
-ADR;TYPE=HOME:;;${contactData.address2}
-NOTE:${contactData.about}
+FN:Sandun Edirisinghe
+ORG:SAGT
+TITLE:General Manager Engineering
+TEL;TYPE=CELL:94772457110
+EMAIL:sandun.edirisinghe@sagt.com.lk
 PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}
-LOGO;VALUE=URL:${contactData.logo}
 END:VCARD`;
 
-            // Create download link
-            const blob = new Blob([vCardData], {
-                type: 'text/vcard'
-            });
-            const url = URL.createObjectURL(blob);
+    downloadBlob(vCardData, 'Sandun.vcf');
+  } catch (error) {
+    console.error('Error including image, falling back to basic vCard', error);
+    // Fallback without image
+    const vCardData = `BEGIN:VCARD
+VERSION:3.0
+FN:Sandun Edirisinghe
+ORG:SAGT
+TITLE:General Manager Engineering
+TEL;TYPE=CELL:94772457110
+EMAIL:youremail@yourwebsite.com
+END:VCARD`;
+    downloadBlob(vCardData, 'Sandun.vcf');
+  }
+}
 
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-            document.body.appendChild(a);
-            a.click();
-
-            // Clean up
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
-        }
-    </script>
+function downloadBlob(content, filename) {
+  const blob = new Blob([content], { type: 'text/vcard' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+  </script>
 </body>
+
 </html>
