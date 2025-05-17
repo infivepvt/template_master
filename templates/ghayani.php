@@ -156,6 +156,245 @@
                 transform: translate(-50%, 180%);
             }
         }
+
+        /* gallery */
+
+    .gallery-section {
+      padding: 20px;
+      background-color: #fff;
+    }
+
+    .gallery-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      color: #000;
+      cursor: pointer;
+    }
+
+    .gallery-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .gallery-toggle {
+      font-size: 1.2rem;
+    }
+
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 5px;
+      aspect-ratio: 1;
+      cursor: pointer;
+    }
+
+    .gallery-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+
+    .gallery-item:hover .gallery-image {
+      transform: scale(1.05);
+    }
+
+    /* Lightbox styles */
+    .lightbox {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .lightbox-content {
+      max-width: 90%;
+      max-height: 90%;
+    }
+
+    .lightbox-image {
+      max-width: 100%;
+      max-height: 80vh;
+      object-fit: contain;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: white;
+      font-size: 30px;
+      cursor: pointer;
+    }
+
+    .lightbox-nav {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+
+    .lightbox-nav button {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 30px;
+      cursor: pointer;
+    }
+
+    .gallery-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .gallery-title {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        /*video*/
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .slider-container {
+            max-width: 1000px;
+            margin: 30px auto;
+            position: relative;
+        }
+        
+        .slider-title {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        
+        .video-slider {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+        
+        .slider-track {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        
+        .slide {
+            min-width: 100%;
+            position: relative;
+        }
+        
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 178%; /* Facebook video aspect ratio */
+            height: 0;
+            overflow: hidden;
+            margin: 0 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .slider-nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .slider-dots {
+            display: inline-flex;
+            gap: 10px;
+        }
+        
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ccc;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .dot.active {
+            background: #1877f2; /* Facebook blue */
+        }
+        
+        .slider-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            cursor: pointer;
+            z-index: 10;
+            font-size: 20px;
+            color: #1877f2;
+        }
+        
+        .prev {
+            left: -20px;
+        }
+        
+        .next {
+            right: -20px;
+        }
+        
+        @media (max-width: 768px) {
+            .slider-arrow {
+                width: 30px;
+                height: 30px;
+                font-size: 16px;
+            }
+            
+            .prev {
+                left: -15px;
+            }
+            
+            .next {
+                right: -15px;
+            }
+        }
     </style>
 </head>
 
@@ -206,31 +445,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <button class="btn w-100 custom-save-button mt-4" onclick="generateVCF()"
-                        style="font-family: 'Montserrat', sans-serif; font-size:19px; border: 2px solid orange;">
-                        <img src="Images/Social_Media_Icon/save.png" alt=""
-                            style="width: 50px; height: 50px; margin-right:25px;">
-                        SAVE TO CONTACTS
-                    </button>
-
-                    <div class="line2 bg-black mt-4"></div>
-
-                    <div class="mt-1 bg-black d-flex flex-column justify-content-center align-items-center py-3">
-                        <span class="txt5">Connect with me</span>
-
-                        <div class="d-flex gap-2 mt-3">
-                            <a href="https://www.facebook.com/people/Ghani-Skin-Aesthetics/61575166874096/#" class="box-3 d-flex justify-content-center align-items-center">
-                                <i class="fab fa-facebook text-black fs-6"></i>
-                            </a>
-                            <a href="https://www.tiktok.com/@ghaniskinaesthatics_07" class="box-3 d-flex justify-content-center align-items-center">
-                                <i class="fab fa-tiktok text-black fs-6"></i>
-                            </a>
-                            <a href="https://www.instagram.com/p/DIlVKbnSKQI/" class="box-3 d-flex justify-content-center align-items-center">
-                                <i class="fab fa-instagram text-black fs-6"></i>
-                            </a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -239,6 +453,281 @@
 
     <!-- Hidden image element for processing -->
     <img id="profileImageSrc" src="profile_img/client_profile/ghayani-p.png" style="display: none;">
+
+    <!-- gallery -->
+    <div class="gallery-section">
+      <div class="gallery-header" onclick="toggleGallery()">
+        <div class="gallery-title">Gallery</div>
+        <div class="gallery-toggle" id="galleryToggle">
+          <i class="fas fa-minus"></i>
+        </div>
+      </div>
+      <div class="gallery-container" id="galleryContainer">
+        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/ghayani/ghayani-g1.jpeg')">
+          <img src="gallery_img/client_gallerys/ghayani/ghayani-g1.jpeg" alt="Gallery Image 1" class="gallery-image">
+        </div>
+        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/ghayani/ghayani-g2.jpeg')">
+          <img src="gallery_img/client_gallerys/ghayani/ghayani-g2.jpeg" alt="Gallery Image 2" class="gallery-image">
+        </div>
+        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/ghayani/ghayani-g3.jpeg')">
+          <img src="gallery_img/client_gallerys/ghayani/ghayani-g3.jpeg" alt="Gallery Image 3" class="gallery-image">
+        </div>
+        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/ghayani/ghayani-g4.jpeg')">
+          <img src="gallery_img/client_gallerys/ghayani/ghayani-g4.jpeg" alt="Gallery Image 4" class="gallery-image">
+        </div>
+        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/ghayani/ghayani-g5.jpeg')">
+          <img src="gallery_img/client_gallerys/ghayani/ghayani-g5.jpeg" alt="Gallery Image 5" class="gallery-image">
+        </div>
+        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/ghayani/ghayani-g6.jpeg')">
+          <img src="gallery_img/client_gallerys/ghayani/ghayani-g6.jpeg" alt="Gallery Image 6" class="gallery-image">
+        </div>
+      </div>
+    </div>
+
+    <!-- Lightbox HTML -->
+    <div class="lightbox" id="lightbox">
+      <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+      <div class="lightbox-nav">
+        <button onclick="changeImage(-1)">&#10094;</button>
+        <button onclick="changeImage(1)">&#10095;</button>
+      </div>
+      <div class="lightbox-content">
+        <img id="lightbox-image" class="lightbox-image" src="" alt="">
+      </div>
+    </div>
+            <!-- <button class="custom-save-button" onclick="downloadVCF()">
+                <i class="fas fa-save"></i>
+                SAVE TO CONTACTS
+            </button> -->
+        </div>
+
+        <!-- <div class="footer">
+            <p>All rights reserved</p>
+        </div> -->
+    </div>
+
+        <!-- video -->
+         <div class="slider-container">
+        <h1 class="slider-title">Video Slider</h1>
+        
+        <div class="video-slider">
+            <div class="slider-track">
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F61575166874096%2Fvideos%2F475297045606333%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                    </div>
+                </div>
+                
+                <!-- Slide 2 -->
+                <!-- <div class="slide">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F61575166874096%2Fvideos%2F3057345454428003%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                    </div>
+                </div> -->
+                <div class="slide">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F61575166874096%2Fvideos%2F3057345454428003%2F&show_text=false&width=267&t=0" 
+                                style="border:none;overflow:hidden" 
+                                scrolling="no" 
+                                frameborder="0" 
+                                allowfullscreen="true" 
+                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                        </iframe>
+                    </div>
+                </div>
+                
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fyureninoshika%2Fvideos%2F2385006285189862%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="slide">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F61575166874096%2Fvideos%2F1047531757268113%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                    </div>
+                </div>
+                
+                <!-- Add more slides as needed -->
+            </div>
+            
+            <div class="slider-arrow prev">❮</div>
+            <div class="slider-arrow next">❯</div>
+        </div>
+        
+        <div class="slider-nav">
+            <div class="slider-dots">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <!-- Add more dots matching your slides -->
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <button class="btn w-100 custom-save-button mt-4" onclick="generateVCF()"
+        style="font-family: 'Montserrat', sans-serif; font-size:19px; border: 2px solid orange;">
+            <img src="Images/Social_Media_Icon/save.png" alt=""
+                style="width: 50px; height: 50px; margin-right:25px;">
+                SAVE TO CONTACTS
+    </button>
+
+    <div class="line2 bg-black mt-4"></div>
+
+    <div class="mt-1 bg-black d-flex flex-column justify-content-center align-items-center py-3">
+            <span class="txt5">Connect with me</span>
+
+                <div class="d-flex gap-2 mt-3">
+                    <a href="https://www.facebook.com/share/16D4P73nLh/?mibextid=wwXIfr" class="box-3 d-flex justify-content-center align-items-center">
+                        <i class="fab fa-facebook text-black fs-6"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@ghaniskinaesthatics_07?_t=ZS-8w7fhhOSyRO&_r=1" class="box-3 d-flex justify-content-center align-items-center">
+                        <i class="fab fa-tiktok text-black fs-6"></i>
+                    </a>
+                    <a href="https://www.instagram.com/ghaniskinaesthetics?igsh=bG5rdWs5ZjN5ZDU2" class="box-3 d-flex justify-content-center align-items-center">
+                        <i class="fab fa-instagram text-black fs-6"></i>
+                    </a>
+                </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const track = document.querySelector('.slider-track');
+            const slides = Array.from(document.querySelectorAll('.slide'));
+            const dots = Array.from(document.querySelectorAll('.dot'));
+            const nextBtn = document.querySelector('.next');
+            const prevBtn = document.querySelector('.prev');
+            
+            const slideWidth = slides[0].getBoundingClientRect().width;
+            let currentIndex = 0;
+            
+            // Arrange slides next to each other
+            slides.forEach((slide, index) => {
+                slide.style.left = slideWidth * index + 'px';
+            });
+            
+            // Next slide
+            nextBtn.addEventListener('click', function() {
+                currentIndex = (currentIndex + 1) % slides.length;
+                updateSlider();
+            });
+            
+            // Previous slide
+            prevBtn.addEventListener('click', function() {
+                currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                updateSlider();
+            });
+            
+            // Dot navigation
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', function() {
+                    currentIndex = index;
+                    updateSlider();
+                });
+            });
+            
+            // Update slider position and active dot
+            function updateSlider() {
+                track.style.transform = 'translateX(-' + (slideWidth * currentIndex) + 'px)';
+                
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentIndex);
+                });
+            }
+            
+            // Auto-advance slides (optional)
+            // setInterval(() => {
+            //     currentIndex = (currentIndex + 1) % slides.length;
+            //     updateSlider();
+            // }, 5000);
+        });
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    // Gallery images array
+    const galleryImages = [
+      'gallery_img/client_gallerys/ghayani/ghayani-g1.jpeg',
+      'gallery_img/client_gallerys/ghayani/ghayani-g2.jpeg',
+      'gallery_img/client_gallerys/ghayani/ghayani-g3.jpeg',
+      'gallery_img/client_gallerys/ghayani/ghayani-g4.jpeg',
+      'gallery_img/client_gallerys/ghayani/ghayani-g5.jpeg',
+      'gallery_img/client_gallerys/ghayani/ghayani-g6.jpeg',
+    ];
+
+    let currentImageIndex = 0;
+
+    function toggleGallery() {
+      const galleryContainer = document.getElementById('galleryContainer');
+      const galleryToggle = document.getElementById('galleryToggle');
+
+      if (galleryContainer.style.display === 'none') {
+        galleryContainer.style.display = 'grid';
+        galleryToggle.innerHTML = '<i class="fas fa-minus"></i>';
+      } else {
+        galleryContainer.style.display = 'none';
+        galleryToggle.innerHTML = '<i class="fas fa-plus"></i>';
+      }
+    }
+
+    // Lightbox functions
+    function openLightbox(imageSrc) {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImage = document.getElementById('lightbox-image');
+
+      // Find the index of the clicked image
+      currentImageIndex = galleryImages.indexOf(imageSrc);
+
+      lightboxImage.src = imageSrc;
+      lightbox.style.display = 'flex';
+      document.body.style.overflow = 'hidden'; // Prevent scrolling
+    }
+
+    function closeLightbox() {
+      const lightbox = document.getElementById('lightbox');
+      lightbox.style.display = 'none';
+      document.body.style.overflow = 'auto'; // Re-enable scrolling
+    }
+
+    function changeImage(step) {
+      currentImageIndex += step;
+
+      // Wrap around if at beginning or end
+      if (currentImageIndex >= galleryImages.length) {
+        currentImageIndex = 0;
+      } else if (currentImageIndex < 0) {
+        currentImageIndex = galleryImages.length - 1;
+      }
+
+      document.getElementById('lightbox-image').src = galleryImages[currentImageIndex];
+    }
+
+    // Close lightbox when clicking outside the image
+    document.getElementById('lightbox').addEventListener('click', function (e) {
+      if (e.target === this) {
+        closeLightbox();
+      }
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', function (e) {
+      const lightbox = document.getElementById('lightbox');
+      if (lightbox.style.display === 'flex') {
+        if (e.key === 'Escape') {
+          closeLightbox();
+        } else if (e.key === 'ArrowLeft') {
+          changeImage(-1);
+        } else if (e.key === 'ArrowRight') {
+          changeImage(1);
+        }
+      }
+    });
+
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
