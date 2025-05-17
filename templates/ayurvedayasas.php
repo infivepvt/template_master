@@ -21,14 +21,34 @@
       background-color: white;
       padding: 1rem;
       display: flex;
+      justify-content: center;
       align-items: center;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-      justify-content: center;
+      width: 100%;
+    }
+
+    .logo-img {
+      height: 60px;
+      width: auto;
+      margin: 0 10px;
     }
 
     .header h4 {
       font-size: 25px;
       font-weight: bold;
+      margin: 0;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 576px) {
+      .logo-img {
+        height: 40px;
+        margin: 5px;
+      }
+
+      .header h4 {
+        font-size: 20px;
+      }
     }
 
 
@@ -131,8 +151,8 @@
     }
 
     .custom-save-button:hover {
-      background: linear-gradient(135deg,rgb(20, 41, 54) 0%,rgb(25, 50, 59) 50%, #223f50 100%);   
-      transform: translateY(-2px);    
+      background: linear-gradient(135deg, rgb(20, 41, 54) 0%, rgb(25, 50, 59) 50%, #223f50 100%);
+      transform: translateY(-2px);
       box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
       border-color: #ff8c00;
       color: white;
@@ -144,13 +164,12 @@
 
   <!-- Header: Logo + Hotel Name -->
   <div class="header">
-    <img src="logo_img/client_logo/adhityaayurveda-l1.png" alt="Logo" />
-    <img src="logo_img/client_logo/adhityaayurveda-l2.png" alt="Logo" />
-    <img src="logo_img/client_logo/adhityaayurveda-l3.png" alt="Logo" />
-  </div>
-
-  <div class="header">
-    <h4 class="mb-0">Adhitya Ayurveda</h4>
+    <div class="d-flex align-items-center justify-content-center flex-wrap">
+      <img src="logo_img/client_logo/adhityaayurveda-l1.png" alt="Logo 1" class="logo-img" />
+      <img src="logo_img/client_logo/adhityaayurveda-l2.png" alt="Logo 2" class="logo-img" />
+      <img src="logo_img/client_logo/adhityaayurveda-l3.png" alt="Logo 3" class="logo-img" />
+      <h4 class="mb-0 ms-3">Adhitya Ayurveda</h4>
+    </div>
   </div>
 
   <!-- Banner Image -->
@@ -213,7 +232,7 @@
     </div>
   </div>
 
-  <div class="d-flex flex-wrap justify-content-center">  
+  <div class="d-flex flex-wrap justify-content-center">
     <a href="https://www.facebook.com/adhitya.lk/" target="_blank" rel="noopener noreferrer" class="m-3">
       <img src="Images/Social_Media_Icon/facebook.png" alt="" style="width: 50px; height: 50px;">
     </a>
