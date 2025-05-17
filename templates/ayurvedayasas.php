@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Digital Business Card</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rye&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="icon" type="image/x-icon" href="Images/Logo1.ico">
@@ -33,10 +34,12 @@
       margin: 0 10px;
     }
 
-    .header h4 {
-      font-size: 25px;
-      font-weight: bold;
+    .header h3 {
+      font-family: 'Rye', serif;
+      font-size: 35px;    
       margin: 0;
+      margin-top: 15px;
+      color: #b9904e;
     }
 
     /* Responsive adjustments */
@@ -46,8 +49,8 @@
         margin: 5px;
       }
 
-      .header h4 {
-        font-size: 20px;
+      .header h3 {
+        font-size: 30px;
       }
     }
 
@@ -90,7 +93,7 @@
     .contact-icon {
       font-size: 1.5rem;
       margin-bottom: 0.5rem;
-      color: #7f6244;
+      color: #b9904e;
     }
 
 
@@ -168,7 +171,7 @@
       <img src="logo_img/client_logo/adhityaayurveda-l1.png" alt="Logo 1" class="logo-img" />
       <img src="logo_img/client_logo/adhityaayurveda-l2.png" alt="Logo 2" class="logo-img" />
       <img src="logo_img/client_logo/adhityaayurveda-l3.png" alt="Logo 3" class="logo-img" />
-      <h4 class="mb-0 ms-3">Adhitya Ayurveda</h4>
+      <h3 class="mb-0 ms-3">Adhitya Ayurveda</h3>
     </div>
   </div>
 
@@ -177,7 +180,7 @@
 
   <!-- Name & Title -->
   <div class="name-section">
-    <h3>Mr.Yasas Sri <br>Gunawardhana </h3>
+    <h3 style="color:#5b0e2e;">Mr.Yasas Sri <br>Gunawardhana </h3>
     <div class="divider"></div>
     <p class="text-muted">Director</p>
     <p class="small-text">
