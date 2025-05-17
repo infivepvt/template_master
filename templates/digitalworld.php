@@ -149,7 +149,7 @@
 
         /* contact details */
         .contact {
-            background-color:rgb(0, 0, 0);
+            background-color: rgb(0, 0, 0);
         }
 
         /*accordian*/
@@ -166,9 +166,10 @@
             transition: 0.4s;
         }
 
-        .active, .accordion:hover {
-            background-color: #fff; 
-            color:#fff;
+        .active,
+        .accordion:hover {
+            background-color: #fff;
+            color: #fff;
         }
 
         .panel {
@@ -194,36 +195,39 @@
             </div>
             <br>
             <br>
-            
+
             <div class="card-body text-center"
                 style="background-color: #FFFFFF; color: #000000; text-decoration: none; ">
-                <h2 class="card-title" style="font-size: 27px; text-transform: uppercase;margin-top:15px">Saranga Siriwardane</h2>
-                <p style="color: #000000; font-size: 18px; text-transform: uppercase; font-weight:500">Managing Director (DSBM/CPM/JP)<br><span style="font-size:13px">Digital World International (PVT) LTD</span><br><span style="font-size:13px; padding-top:-5px">Royal Sunray Creations (PVT) LTD</span></p>
+                <h2 class="card-title" style="font-size: 27px; text-transform: uppercase;margin-top:15px">SARANGA SIRIWARDANE</h2>
+                <h4 class="card-title" style="font-size: 12px; text-transform: uppercase;margin-top:-5px">Professional Brand Strategist | CEO & Entrepreneur</h4>
+                <p style="color: #000000; font-size: 18px; text-transform: uppercase; font-weight:500">Founder & CEO<br><span style="font-size:13px">Digital World International (PVT) LTD</span><br><span style="font-size:13px; padding-top:-5px">Royal Sunray Creations (PVT) LTD</span></p>
 
                 <div style="border: 1px solid #000000">
                     <p>About Me</p>
                     <li style="font-size:15px">Profile - Digital creator</li>
-                    <li  style="font-size:15px">National Organizer at Asian Human Rights Council</li>
-                    <li  style="font-size:15px">secretary at Grama Mithuru Development Foundation</li>
+                    <li style="font-size:15px">National Organizer – Asian Human Rights Council</li>
+                    <li style="font-size:15px">Secretary – Grama Mithuru Development Foundation</li>
                     <button class="accordion">Read More</button>
                     <div class="panel">
-                    <li  style="font-size:15px">Founder, Director, CEO at Digital World International PVT LTD</li>
-                    <li  style="font-size:15px">Founding Partner at බාන්ධාර Baandhaara</li>
-                    <li  style="font-size:15px">Partner at Ceylon Guidance</li>
-                    <li  style="font-size:15px">Shareholder at Filling station</li>
-                    <li  style="font-size:15px">Former Visual Merchandiser (VM) at Softlogic Brands</li>
-                    <li  style="font-size:15px">Former Tour guide at Jetwing Travels</li>
-                    <li  style="font-size:15px">Went to EMinds Academy Australia</li>
-                    <li  style="font-size:15px">Studied Digital Communications and Media/Multimedia at Digital Marketing Institute</li>
-                    <li  style="font-size:15px">Studies at Sri Lanka Institute of Marketing (SLIM)</li>
-                    <li  style="font-size:15px">Went to Sri Lanka Institute of Marketing</li>
-                    <li  style="font-size:15px">Studied at Sri Lanka Institute of Marketing</li>
-                    <li  style="font-size:15px">Studies at Fotostar Academy</li>
-                    <li  style="font-size:15px">Studies at Sri Lanka Institute of Marketing (SLIM)</li>
-                    <li  style="font-size:15px">Studies at SLIM Toastmasters Club</li>
-                    <li  style="font-size:15px">Studied at Bandaranayake College</li>
-                    <li  style="font-size:15px">Lives in Kadawata, Sri Lanka</li>
-                    <li  style="font-size:15px">From Ganemulla, Sri Lanka</li>             
+                        <li style="font-size:15px">Marketing Graduate – SLIM</li>
+                        <li style="font-size:15px">Expertise – Branding | Visual Merchandising | Digital Media | Photography</li>
+                        <li style="font-size:15px">Founder, Director, CEO at Digital World International PVT LTD</li>
+                        <li style="font-size:15px">Founding Partner at බාන්ධාර Baandhaara</li>
+                        <li style="font-size:15px">Partner at Ceylon Guidance</li>
+                        <li style="font-size:15px">Shareholder at Filling station</li>
+                        <li style="font-size:15px">Former Visual Merchandiser (VM) at Softlogic Brands</li>
+                        <li style="font-size:15px">Former Tour guide at Jetwing Travels</li>
+                        <li style="font-size:15px">Went to EMinds Academy Australia</li>
+                        <li style="font-size:15px">Studied Digital Communications and Media/Multimedia at Digital Marketing Institute</li>
+                        <li style="font-size:15px">Studies at Sri Lanka Institute of Marketing (SLIM)</li>
+                        <li style="font-size:15px">Went to Sri Lanka Institute of Marketing</li>
+                        <li style="font-size:15px">Studied at Sri Lanka Institute of Marketing</li>
+                        <li style="font-size:15px">Studies at Fotostar Academy</li>
+                        <li style="font-size:15px">Studies at Sri Lanka Institute of Marketing (SLIM)</li>
+                        <li style="font-size:15px">Studies at SLIM Toastmasters Club</li>
+                        <li style="font-size:15px">Studied at Bandaranayake College</li>
+                        <li style="font-size:15px">Lives in Kadawata, Sri Lanka</li>
+                        <li style="font-size:15px">From Ganemulla, Sri Lanka</li>
                     </div>
                 </div><br>
 
@@ -275,32 +279,32 @@
                         onclick="window.open('https://www.google.com/maps/place/Kadawatha/@7.0095937,79.9394356,14z/data=!3m1!4b1!4m6!3m5!1s0x3ae2f86bd75870f7:0xee362e29dbc079a6!8m2!3d7.0046324!4d79.954155!16s%2Fm%2F02rrpb2?authuser=0&entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoASAFQAw%3D%3D', '_blank')">
                         <img src="Images/icon/map.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">Kadawata</span>
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">Kadawatha | Ganemulla</span>
                     </button>
                 </div>
 
                 <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:19px">CONNECT WITH SOCIAL MEDIA
                 </p>
                 <div class="d-flex flex-wrap justify-content-center">
-                    <a href="https://www.instagram.com/SarangaSiriwardane/" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/instagram.png" alt="" style="width: 50px; height: 50px;">
-                    </a>
-                    <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2F%25E0%25B7%2583%25E0%25B7%258F%25E0%25B6%25BB%25E0%25B6%2582%25E0%25B6%259C&h=AT32jBwdBl810csA7yK9sVLE3AF50IU_tsJzrifzGCzXPGPdQwZjqYDyLHthtl0UVdh-dCgcohnndXo1W1tQrAqUbtwyOYYmheL3t-807R_1xMtmn56xXzAKCMyC77GSs11mXZpKeq5sscswnu0sMKbg5oVsuRBf7adk" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/instagram.png" alt="" style="width: 50px; height: 50px;">
-                    </a>
                     <a href="https://www.facebook.com/share/18jKFX6hHk/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="m-3">
                         <img src="Images/Social_Media_Icon/facebook.png" alt="" style="width: 50px; height: 50px;">
                     </a>
-                    <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fyoutube.com%2F%2540peacefulliving992%253Fsi%253DcDaj-x4rFcIHAvUC&h=AT2Kbi1_oIgsskghTIvomNDYoAJMC-8Ipxv4pIBnHnk7RVS-EwsAqW8NSLtXl09p78EqMqtCpStEeOdCFJ4o3HznK7hB4SjDzQN3OfcGMQvpk9i3-HywETItxPoiBytrze3J_cabBAJg4JKYHadlTdcMQvH6ha8nfIU7" target="_blank" rel="noopener noreferrer" class="m-3">
+                    <a href="https://www.instagram.com/SarangaSiriwardane/#" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/instagram.png" alt="" style="width: 50px; height: 50px;">
+                    </a>
+                    <a href="https://www.instagram.com/%E0%B7%83%E0%B7%8F%E0%B6%BB%E0%B6%82%E0%B6%9C/#" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/instagram.png" alt="" style="width: 50px; height: 50px;">
+                    </a>
+                    <a href="https://youtube.com/@peacefulliving992?si=cDaj-x4rFcIHAvUC" target="_blank" rel="noopener noreferrer" class="m-3">
                         <img src="Images/Social_Media_Icon/youtube.png" alt="" style="width: 50px; height: 50px;">
                     </a>
-                    <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fx.com%2Fsarangasiriwar1%253Fs%253D21%2526t%253DI0asi8ftwjwikrdPg4KCgg&h=AT0vwCZZpmZB1wB4EqEjiidpfgxiijxWS2jniy4nJg3H6mdoMPee5K5DoeTWbHWzySMDkwPRqilJ_EG8NCclWyUThv6FVh4AePkDhpKZ6WLnT6ww5vCabV_fkgZVOjklm_84bM8P7LEiL561sfcw_MSM_im8kfmnCCaV" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/x-2.jpeg" alt="" style="width: 50px; height: 50px;">
+                    <a href="https://x.com/sarangasiriwar1?s=21&t=I0asi8ftwjwikrdPg4KCgg" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/x-2.png" alt="" style="width: 50px; height: 50px;">
                     </a>
-                    <a href="https://www.threads.com/@sarangasiriwardane?igshid=NTc4MTIwNjQ2YQ==" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/th round.png" alt="" style="width: 50px; height: 50px;">
+                    <a href="https://www.threads.com/@sarangasiriwardane" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/threads.avif" alt="" style="width: 50px; height: 50px;">
                     </a>
-                    <a href="https://www.linkedin.com/in/saranga-siriwardane-211b2992?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer" class="m-3">
+                    <a href="https://www.linkedin.com/in/Saranga%20Siriwardane" target="_blank" rel="noopener noreferrer" class="m-3">
                         <img src="Images/Social_Media_Icon/linkedin.png" alt="" style="width: 50px; height: 50px;">
                     </a>
                 </div>
@@ -322,36 +326,42 @@
         var i;
 
         for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-            panel.style.display = "none";
-            } else {
-            panel.style.display = "block";
-            }
-        });
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
         }
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-    function generateVCF() {
-        // Contact information
-        const contactData = {
-            firstName: "Saranga",
-            lastName: "Siriwardane",
-            title: "Managing Director",
-            phoneWork: "0777228823",
-            phoneMobile: "0707228823",
-            email: "sarangasiriwardane@gmail.com",
-            address: "Kadawata",
-            profileImage: "https://example.com/profile_img/client_profile/digitalworld-p.png" // Updated to full URL
-        };
+        function generateVCF() {
+            const contactData = {
+                firstName: "Saranga",
+                lastName: "Siriwardane",
+                title: "Managing Director",
+                phoneWork: "0777228823",
+                phoneMobile: "0707228823",
+                email: "sarangasiriwardane@gmail.com",
+                address: "Kadawata",
+                profileImage: "https://tapilinq.com/profile_img/client_profile/digitalworld-p.png"
+            };
 
-        // Create VCF content with proper image handling
-        let vcfContent = `BEGIN:VCARD
+            // Fetch the image and convert to base64
+            fetch(contactData.profileImage)
+                .then(response => response.blob())
+                .then(blob => {
+                    const reader = new FileReader();
+                    reader.onloadend = () => {
+                        const base64Image = reader.result.split(',')[1]; // remove data prefix
+
+                        const vcfContent = `BEGIN:VCARD
 VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
 N:${contactData.lastName};${contactData.firstName};;;
@@ -360,24 +370,29 @@ TEL;TYPE=WORK,VOICE:${contactData.phoneWork}
 TEL;TYPE=CELL:${contactData.phoneMobile}
 EMAIL:${contactData.email}
 ADR;TYPE=WORK:;;${contactData.address}
-PHOTO;VALUE=URI:${contactData.profileImage}
+PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}
 END:VCARD`;
 
-        // Create download link
-        const blob = new Blob([vcfContent], { type: 'text/vcard' });
-        const url = URL.createObjectURL(blob);
+                        const blob = new Blob([vcfContent], {
+                            type: 'text/vcard'
+                        });
+                        const url = URL.createObjectURL(blob);
 
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-        document.body.appendChild(a);
-        a.click();
-
-        // Clean up
-        document.body.removeChild(a);
-        URL.revokeObjectURL(url);
-    }
-</script>
+                        const a = document.createElement('a');
+                        a.href = url;
+                        a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+                        document.body.appendChild(a);
+                        a.click();
+                        document.body.removeChild(a);
+                        URL.revokeObjectURL(url);
+                    };
+                    reader.readAsDataURL(blob);
+                })
+                .catch(error => {
+                    console.error('Failed to fetch image:', error);
+                });
+        }
+    </script>
 </body>
 
 </html>
