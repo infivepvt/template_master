@@ -60,7 +60,7 @@
         }
 
         .list-group-item {
-            background-color: #023020;
+            background-color: #333;
             color: #fff;
             border-radius: 8px;
             margin-bottom: 10px;
@@ -69,18 +69,17 @@
         }
 
         .list-group-item:hover {
-            background-color:rgb(0, 0, 0);
+            background-color: #444;
             border-color: #666;
             transition: background-color 0.3s, border-color 0.3s;
         }
 
         .custom-save-button {
-            /* background: linear-gradient(90deg, #4b3ec4, #00b3c3); */
-            background: linear-gradient(90deg, #023020,rgb(0, 0, 0));
+            background: linear-gradient(90deg, #5f4def, #00d0ea);
             color: white;
             font-weight: bold;
             border: none;
-            padding: 10px;
+            padding: 5px;
             border-radius: 10px;
             display: flex;
             align-items: center;
@@ -89,8 +88,7 @@
         }
 
         .custom-save-button:hover {
-            /* background: linear-gradient(90deg, #4b3ec4, #00b3c3); */
-            background: linear-gradient(90deg,rgb(0, 0, 0),rgb(34, 34, 34));
+            background: linear-gradient(90deg, #4b3ec4, #00b3c3);
         }
 
         .contact-icon {
@@ -159,31 +157,43 @@
 
 <body>
     <div class="d-flex justify-content-center mt-5">
-        <div class="card custom-card shadow-lg" style="background-color: #FFFFFF;">
+        <div class="card custom-card shadow-lg" style="background-color:rgb(255, 255, 255);">
             <div class="card-header custom-header text-center"
                 style="background-image:  url('banner_img/client_banner/suduaraliya-b.png'); height: 200px; opacity: 1; width:100%">
                 <!-- <img src="logo_img/main_logo/Main_Design-l.png" alt="Company Logo" class="custom-logo" height="80px"
                     style="width: 245px; height: auto; opacity: 1;"> -->
                 <div class="profile-picture">
-                    <img src="profile_img/client_profile/suduaraliya-p.png" alt="Saliya Pathum" class="rounded-circle">
+                    <img src="profile_img/client_profile/suduaraliya-p.png" alt="" class="rounded-circle">
                 </div>
             </div>
             <br>
             <br>
             <div class="card-body text-center"
                 style="background-color: #FFFFFF; color: #000000; text-decoration: none; ">
-                <h2 class="card-title" style="font-size: 27px; text-transform: uppercase;">Sudu Araliya</h2>
-                <p style="color: #000000; font-size: 21px; text-transform: uppercase;">hotel</p>
+                <h2 class="card-title" style="font-size: 27px; text-transform: uppercase;">Hotel Sudu Araliya</h2>
+                <!-- <p style="color: #000000; font-size: 21px; text-transform: uppercase;"></p> -->
 
-                <div>
-                    <a href="https://www.booking.com/searchresults.en-gb.html?aid=2276374&label=msn-7OManZyKVJZYfI83qEqaEw-80539364970329%3Atikwd-80539513789025%3Aloc-36%3Aneo%3Amte%3Alp36%3Adec%3Aqssudu%20araliya%20hotel&utm_medium=cpc&utm_campaign=Hotel%20-%20Sri%20Lanka&utm_term=7OManZyKVJZYfI83qEqaEw&msclkid=23c7cec0c8911d76bad5a6e5927f7f30&utm_source=bing&highlighted_hotels=543208&redirected=1&city=-2233982&hlrd=no_dates&source=hotel&expand_sb=1&keep_landing=1&sid=2bd57667311be68aad0929d848925bfa" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/icon/booking.png" alt="" style="width: 50px; height: 50px;">
+                <div class="d-flex flex-wrap justify-content-center">
+                    <a href="https://www.facebook.com/HotelSuduAraliya/" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/facebook.png" alt="" style="width: 45px; height: 45px;">
                     </a>
-                    <a href="https://www.vio.com/Hotel/Search?checkIn=2025-07-11&checkOut=2025-07-12&curr=LKR&epv=MS4y&esd=0dcWAUmnWyAztSW_w36qQS2PUhMXgljaTP2MtIeeKaykqo2KgBOznGiwGta9EkBSXCc9aTGdcqai6R2vteD3xwN-2k3Qdn10Fmd8dZDobJ3yxQH2lZCZQjfZlA%3D%3D&forceCurrencyChange=1&forceLanguageChange=1&hotelId=1656527&is_retargeting=true&label=src%3Dbha%26cltype%3Dhotel%26datype%3Ddefault%26bsite%3Dlocaluniversal%26ucountry%3Dlk%26udevice%3Ddesktop%26hotelgroup%3D1346904133098303%26day%3D11%26month%3D07%26year%3D2025%26los%3D1%26dd%3D57%26price%3D19170.340000%26currency%3DLKR%26userlang%3Den%26slot%3DA%26verification%3Dfalse%26_th%3D45ba2dfec793f3e6d620db2682b01d7d25c943d32f6a3a9d%26dts%3D1747280299%26query%3D3&lang=en&msclkid=a84c38d1defb1de31beb50f4bb4d6caa&oti=_52D502KLCA&pid=click-tracker&preferredRate=19170.340000&profile=r2d2m73kn8&rooms=2%3A&userCountry=lk&utm_medium=cpc&utm_source=bha" target="_blank" rel="noopener noreferrer" class="m-3">
-                            <img src="Images/icon/vio.png" alt="" style="width: 50px; height: 50px;">
+                    <a href="https://www.instagram.com/hotelsuduaraliya/" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/instagram.png" alt="" style="width: 45px; height: 45px;">
                     </a>
-                    <a href="https://www.agoda.com/search?site_id=1881537&campaignid=722084063&searchdatetype=default&lt=57&numberofchildren=0&gsite=localuniversal&partnercurrency=USD&roomid=3998781&pricetax=1908.370000&pricetotal=16058.400000&rateplan=abb0565f-cbfc-8eac-9e2b-0b957d1881db&usercountry=lk&currency=LKR&userdevice=desktop&verif=false&audience_list=&booking_source=cpc&msclkid=6aa02749a20b1070ca264f6cc7bd180d&utm_source=bing&utm_medium=cpc&utm_campaign=CO%3ASri+Lanka_82&utm_term=74010876562084&utm_content=CI_21396&los=1&adults=2&rooms=1&checkin=2025-07-11&checkout=2025-07-12&selectedproperty=391658&city=21396&pslc=1&ds=Tbi%2FmBS4bpPEC0xR" target="_blank" rel="noopener noreferrer" class="m-3">
-                            <img src="Images/icon/agoda.png" alt="" style="width: 50px; height: 50px;">
+                    <a href="https://x.com/araliyaclient" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/x-2.png" alt="" style="width: 45px; height: 45px;">
+                    </a>
+                </div>
+
+                <div class="d-flex flex-wrap justify-content-center">
+                    <a href="https://www.youtube.com/@hotelsuduaraliya9930" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/youtube.png" alt="" style="width: 45px; height: 45px;">
+                    </a>                   
+                    <a href="https://www.tiktok.com/@hotelsuduaraliya" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/tiktok.png" alt="" style="width: 45px; height: 45px;">
+                    </a>
+                    <a href="https://www.linkedin.com/company/71032253" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/linkedin.png" alt="" style="width: 45px; height: 45px;">
                     </a>
                 </div>
                 <br>
@@ -204,7 +214,7 @@
                         onclick="window.open('tel:+94272224849', '_self')">
                         <img src="Images/icon/phone.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">+94272224849</span>
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">+94 272 224 849</span>
                     </button>
 
                     <button type="button"
@@ -217,36 +227,32 @@
 
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
-                        onclick="window.open('https://www.araliyaresorts.com/', '_blank')">
+                        onclick="window.open('http://www.hotelsuduaraliya.com/', '_blank')">
                         <img src="Images/icon/internet.png" alt=""
                             style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #FFFFFF; 'Montserrat', sans-serif; font-size:16px; font-size:16px;">www.araliyaresorts.com</span>
+                            style="color: #FFFFFF; 'Montserrat', sans-serif; font-size:16px; font-size:16px;">www.hotelsuduaraliya.com</span>
                     </button>
 
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
-                        onclick="window.open('https://www.google.com/maps/search/?api=1&query=919+Oaktree+Crescent,+Newmarket', '_blank')">
+                        onclick="window.open('https://www.google.com/maps/place/Hotel+Sudu+Araliya/@7.9232387,80.9909973,17z/data=!4m9!3m8!1s0x3afb44ca2afcb6f3:0x5f0aa32de4b1b303!5m2!4m1!1i2!8m2!3d7.9232334!4d80.9935722!16s%2Fg%2F1vgw_56s?authuser=0&entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoASAFQAw%3D%3D', '_blank')">
                         <img src="Images/icon/map.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">Hotel Sudu Araliya,New town,Polonnaruwa</span>
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">Hotel Sudu Araliya, New town, <br>Polonnaruwa, SriLanka</span>
                     </button>
                 </div>
 
-                <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:19px">CONNECT WITH SOCIAL MEDIA
-                </p>
-                <div class="d-flex flex-wrap justify-content-center">
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/facebook.png" alt="" style="width: 50px; height: 50px;">
+                <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:19px">REVIEW US</p>
+                <div>
+                    <a href="https://g.page/r/CQOzseQtowpfEAI/review" target="_blank" rel="noopener noreferrer" class="m-3">
+                            <img src="Images/icon/google.png" alt="" style="width: 50px; height: 50px;">
                     </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/x-2.jpeg" alt="" style="width: 50px; height: 50px;">
+                    <a href="https://www.booking.com/hotel/lk/sudu-araliya.en-gb.html?label=gen173nr-1BCAsohQFCDHN1ZHUtYXJhbGl5YUgzWARohQGIAQGYAQm4ARjIAQzYAQHoAQGIAgGoAgS4AuufnMEGwAIB0gIkMDI5MmRmMDYtMTJjNC00YTZhLWE4NDktOTNlZWYwYmZlYTA52AIF4AIB&sid=55a24909d80faec8a736372abde41678&dist=0&group_adults=2&group_children=0&keep_landing=1&no_rooms=1&sb_price_type=total&type=total&" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/icon/booking.png" alt="" style="width: 50px; height: 50px;">
                     </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/youtube.png" alt="" style="width: 50px; height: 50px;">
-                    </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/instagram.png" alt="" style="width: 50px; height: 50px;">
+                    <a href="https://www.tripadvisor.com/UserReviewEdit-g304140-d577158-Hotel_Sudu_Araliya-Polonnaruwa_North_Central_Province.html" target="_blank" rel="noopener noreferrer" class="m-3">
+                            <img src="Images/icon/tripadvisor.png" alt="" style="width: 100px; height: 35px;margin-top:10px">
                     </a>
                 </div>
 
@@ -268,9 +274,9 @@
 
                 <br>
                 <button class="btn w-100 custom-save-button" onclick="generateVCF()"
-                    style="font-family: 'Montserrat', sans-serif; font-size:19px; border: 2px solid orange;">
+                    style="font-family: 'Montserrat', sans-serif; font-size:18px; border: 2px solid orange;">
                     <img src="Images/Social_Media_Icon/save.png" alt=""
-                        style="width: 50px; height: 50px; margin-right:25px;">
+                        style="width: 30px; height: 30px; margin-right:25px;">
                     SAVE TO CONTACTS
                 </button>
             </div>
@@ -283,22 +289,22 @@
         function generateVCF() {
             // Updated contact information to match the business card
             const contactData = {
-                firstName: "Sudu Araliya",
+                firstName: "Hotel Sudu Araliya",
                 lastName: "",
-                title: "Hotel",
+                title: "",
                 phoneWork: "+94272224849",
                 phoneMobile: "",
                 email: "info@hotelsuduaraliya.com",
                 email2: "",
                 email3: "",
-                website: "www.araliyaresorts.com",
+                website: "www.hotelsuduaraliya.com",
                 website2: "",
                 website3: "",
-                address: "Hotel Sudu Araliya,New town,Polonnaruwa",
+                address: "Hotel Sudu Araliya,New town,Polonnaruwa,SriLanka",
                 address2: "",
                 about: "",
                 logo: "",
-                profileImage: "profile_img/client_profile/suduaraliya-p.png"
+                profileImage: "https://tapilinq.com/profile_img/client_profile/suduaraliya-p.png"
             };
 
             // Create VCF content
