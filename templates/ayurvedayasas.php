@@ -262,8 +262,8 @@
         style="width: 40px; height: 40px; margin-right: 15px;">
       SAVE TO CONTACTS
     </button>
-    <footer style="text-align:center; padding:10px; font-size:14px; color:white;">
-      <a href="https://tapilinq.com/" target="_blank" style="text-decoration:none; color:black;">
+     <footer style="text-align:center; padding:10px; font-size:14px; color:white;">
+      <a href="https://tapilinq.com/" target="_blank" style="text-decoration:none; color:black; font-size:10px;">
         Made with by Tapilinq | Click now
       </a>
     </footer>
