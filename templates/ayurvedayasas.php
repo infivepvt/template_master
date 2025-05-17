@@ -116,12 +116,9 @@
 
     .custom-save-button {
       background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
-      /* Blackish-gray to deep indigo */
       color: white;
-      /* White text for contrast */
       font-weight: bold;
       border: 2px solid #FFA500;
-      /* Keep the orange border */
       padding: 12px 20px;
       border-radius: 12px;
       display: flex;
@@ -131,15 +128,14 @@
       font-size: 19px;
       transition: all 0.3s ease;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-      /* Darker shadow for depth */
     }
 
     .custom-save-button:hover {
-      background: linear-gradient(90deg, #2E2E2E, #3B006B);
-      /* Slightly lighter black to darker indigo */
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
-      /* Stronger shadow on hover */
+      background: linear-gradient(135deg,rgb(20, 41, 54) 0%,rgb(25, 50, 59) 50%, #223f50 100%);   
+      transform: translateY(-2px);    
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+      border-color: #ff8c00;
+      color: white;
     }
   </style>
 </head>
@@ -151,25 +147,23 @@
     <img src="logo_img/client_logo/adhityaayurveda-l1.png" alt="Logo" />
     <img src="logo_img/client_logo/adhityaayurveda-l2.png" alt="Logo" />
     <img src="logo_img/client_logo/adhityaayurveda-l3.png" alt="Logo" />
-
-
   </div>
 
   <div class="header">
     <h4 class="mb-0">Adhitya Ayurveda</h4>
   </div>
 
-
   <!-- Banner Image -->
   <img src="banner_img/client_banner/adhityaayurveda-b.jpg" alt="Banner" class="banner" />
 
   <!-- Name & Title -->
   <div class="name-section">
-    <h3>Mr.Yasas Sri Gunawardhana</h3>
+    <h3>Mr.Yasas Sri <br>Gunawardhana </h3>
     <div class="divider"></div>
     <p class="text-muted">Director</p>
     <p class="small-text">
-      No.395/4, Harischandra Mawatha, Anuradhapura, Sri Lanka.
+      No.395/4, Harischandra Mawatha, <br>
+      Anuradhapura, Sri Lanka.
     </p>
   </div>
 
@@ -219,12 +213,7 @@
     </div>
   </div>
 
-
-
-  <div class="d-flex flex-wrap justify-content-center">
-    <a href="https://www.instagram.com/adhityaayurveda/" target="_blank" rel="noopener noreferrer" class="m-3">
-      <img src="Images/Social_Media_Icon/instagram.png" alt="" style="width: 50px; height: 50px;">
-    </a>
+  <div class="d-flex flex-wrap justify-content-center">  
     <a href="https://www.facebook.com/adhitya.lk/" target="_blank" rel="noopener noreferrer" class="m-3">
       <img src="Images/Social_Media_Icon/facebook.png" alt="" style="width: 50px; height: 50px;">
     </a>
@@ -232,14 +221,16 @@
       class="m-3">
       <img src="Images/Social_Media_Icon/youtube.png" alt="" style="width: 50px; height: 50px;">
     </a>
-    <a href="https://www.linkedin.com/company/gunawardhana-ayurveda-holdings-pvt-ltd/" target="_blank"
-      rel="noopener noreferrer" class="m-3">
-      <img src="Images/Social_Media_Icon/linkedin.png" alt="" style="width: 50px; height: 50px;">
+    <a href="https://www.instagram.com/adhityaayurveda/" target="_blank" rel="noopener noreferrer" class="m-3">
+      <img src="Images/Social_Media_Icon/instagram.png" alt="" style="width: 50px; height: 50px;">
     </a>
   </div>
 
   <div class="d-flex flex-wrap justify-content-center">
-
+    <a href="https://www.linkedin.com/company/gunawardhana-ayurveda-holdings-pvt-ltd/" target="_blank"
+      rel="noopener noreferrer" class="m-3">
+      <img src="Images/Social_Media_Icon/linkedin.png" alt="" style="width: 50px; height: 50px;">
+    </a>
     <a href="https://x.com/i/flow/login?redirect_after_login=%2FAdhityaAyurveda" target="_blank"
       rel="noopener noreferrer" class="m-3">
       <img src="Images/Social_Media_Icon/x-2.jpeg" alt="" style="width: 50px; height: 50px;">
