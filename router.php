@@ -77,6 +77,7 @@ $routes = [
     'digitalworld' => 'templates/digitalworld.php',
     'ayurvedayasas' => 'templates/ayurvedayasas.php',
     'ghayani' => 'templates/ghayani.php',
+    'rajeev' => 'templates/rajeev.php',
 ];
 
 // Handle the request
