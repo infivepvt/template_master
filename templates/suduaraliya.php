@@ -310,58 +310,100 @@
 
     <script>
         function generateVCF() {
-            // Updated contact information with proper image URL
+            // Contact information
             const contactData = {
                 firstName: "Hotel Sudu Araliya",
                 lastName: "",
                 title: "",
                 phoneWork: "+94272224849",
-                phoneMobile: "+94765315390",
+                phoneMobile: "",
                 email: "info@hotelsuduaraliya.com",
                 email2: "",
                 email3: "",
-                website: "http://www.hotelsuduaraliya.com",
+                website: "https://www.hotelsuduaraliya.com",
                 website2: "",
                 website3: "",
                 address: "Hotel Sudu Araliya,New town,Polonnaruwa,SriLanka",
                 address2: "",
-                about: "Hotel Sudu Araliya in Polonnaruwa",
-                // Using base64 encoded image would be more reliable but makes the file larger
+                about: "",
+                logo: "",
                 profileImage: "https://tapilinq.com/profile_img/client_profile/suduaraliya-p.png"
             };
 
-            // Create properly formatted VCF content
-            let vcfContent = `BEGIN:VCARD
+            // Function to load image and convert to base64
+            async function getBase64Image(url) {
+                try {
+                    // Create an image element
+                    const profileImage = new Image();
+                    profileImage.crossOrigin = "Anonymous"; // Handle CORS
+                    profileImage.src = url;
+
+                    // Wait for the image to load
+                    await new Promise((resolve, reject) => {
+                        profileImage.onload = resolve;
+                        profileImage.onerror = () => reject(new Error("Failed to load image"));
+                    });
+
+                    // Create canvas and draw image
+                    const canvas = document.createElement('canvas');
+                    const ctx = canvas.getContext('2d');
+                    canvas.width = profileImage.naturalWidth;
+                    canvas.height = profileImage.naturalHeight;
+                    ctx.drawImage(profileImage, 0, 0);
+
+                    // Convert to base64
+                    return canvas.toDataURL('image/jpeg').split(',')[1]; // Get base64 string without data URI prefix
+                } catch (error) {
+                    console.error("Error loading image:", error);
+                    return ""; // Return empty string if image fails to load
+                }
+            }
+
+            // Generate VCF content
+            async function createVCF() {
+                // Get base64 image
+                const base64Image = await getBase64Image(contactData.profileImage);
+
+                // Create VCF content
+                let vcfContent = `BEGIN:VCARD
 VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
 N:${contactData.lastName};${contactData.firstName};;;
-ORG:Hotel Sudu Araliya;
 TITLE:${contactData.title}
 TEL;TYPE=WORK,VOICE:${contactData.phoneWork}
-TEL;TYPE=CELL,VOICE:${contactData.phoneMobile}
-EMAIL;TYPE=WORK,INTERNET:${contactData.email}
-URL;TYPE=WORK:${contactData.website}
-ADR;TYPE=WORK,PREF:;;${contactData.address}
+TEL;TYPE=CELL:${contactData.phoneMobile}
+EMAIL:${contactData.email}
+EMAIL:${contactData.email2}
+EMAIL:${contactData.email3}
+URL:${contactData.website}
+URL:${contactData.website2}
+URL:${contactData.website3}
+ADR;TYPE=WORK:;;${contactData.address}
+ADR;TYPE=HOME:;;${contactData.address2}
 NOTE:${contactData.about}
-PHOTO;VALUE=URI;TYPE=JPEG:${contactData.profileImage}
-REV:${new Date().toISOString()}
+LOGO;VALUE=URL:${contactData.logo}
+${base64Image ? `PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}` : `PHOTO;TYPE=JPEG;VALUE=URI:${contactData.profileImage}`}
 END:VCARD`;
 
-            // Create download link
-            const blob = new Blob([vcfContent], { type: 'text/vcard;charset=utf-8' });
-            const url = URL.createObjectURL(blob);
+                // Create download link
+                const blob = new Blob([vcfContent], { type: 'text/vcard;charset=utf-8' });
+                const url = URL.createObjectURL(blob);
 
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = `${contactData.firstName.replace(/\s+/g, '_')}.vcf`;
-            document.body.appendChild(a);
-            a.click();
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `${contactData.firstName.replace(/\s+/g, '_')}.vcf`;
+                document.body.appendChild(a);
+                a.click();
 
-            // Clean up
-            setTimeout(() => {
-                document.body.removeChild(a);
-                URL.revokeObjectURL(url);
-            }, 100);
+                // Clean up
+                setTimeout(() => {
+                    document.body.removeChild(a);
+                    URL.revokeObjectURL(url);
+                }, 100);
+            }
+
+            // Call the async function
+            createVCF();
         }
     </script>
 </body>

@@ -599,7 +599,7 @@
             
             // Contact information
             const contactData = {
-                firstName: "Ghayana",
+                firstName: "Ghayani",
                 lastName: "Harshani",
                 title: "Managing Director",
                 phoneWork: "0779927274",
