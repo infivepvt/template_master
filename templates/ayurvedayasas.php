@@ -212,18 +212,7 @@
         <i class="fas fa-envelope contact-icon"></i><br />
         <span>E-mail 2</span>
       </div>
-      <div class="col-4" onclick="window.open('https://www.adhityaayurveda.com/', '_blank')">
-        <i class="fas fa-globe contact-icon"></i><br />
-        <span>Website 1</span>
-      </div>
-      <div class="col-4" onclick="window.open('https://www.adhityaayurvedacolombo.com/', '_blank')">
-        <i class="fas fa-globe contact-icon"></i><br />
-        <span>Website 2</span>
-      </div>
-      <div class="col-4" onclick="window.open('https://www.mangatagalle.com/', '_blank')">
-        <i class="fas fa-globe contact-icon"></i><br />
-        <span>Website 3</span>
-      </div>
+     
       
       <!-- <div class="col-4">
         <i class="fas fa-save contact-icon"></i><br />
@@ -246,9 +235,13 @@
       <a href="https://www.instagram.com/adhitya_ayurveda_colombo/" target="_blank" rel="noopener noreferrer" class="m-2">
         <img src="Images/Social_Media_Icon/instagram.png" alt="Instagram" style="width: 50px; height: 50px;">
       </a>
+      <a href="https://www.adhityaayurvedacolombo.com/" target="_blank" rel="noopener noreferrer" class="m-2">
+        <img src="Images/Social_Media_Icon/website.png" alt="Location" style="width: 50px; height: 50px;">
+      </a>
       <a href="https://maps.app.goo.gl/wGnjiPpPcWANZHSJA" target="_blank" rel="noopener noreferrer" class="m-2">
         <img src="Images/Social_Media_Icon/location.png" alt="Location" style="width: 50px; height: 50px;">
       </a>
+      
     </div>
   </div>
 
@@ -264,6 +257,9 @@
       </a>
       <a href="https://www.instagram.com/adhityaayurveda/" target="_blank" rel="noopener noreferrer" class="m-2">
         <img src="Images/Social_Media_Icon/instagram.png" alt="Instagram" style="width: 50px; height: 50px;">
+      </a>
+      <a href="https://www.adhityaayurveda.com/" target="_blank" rel="noopener noreferrer" class="m-2">
+        <img src="Images/Social_Media_Icon/website.png" alt="Location" style="width: 50px; height: 50px;">
       </a>
       <a href="https://maps.app.goo.gl/zvTezL9q8mveAtjbA" target="_blank" rel="noopener noreferrer" class="m-2">
         <img src="Images/Social_Media_Icon/location.png" alt="Location" style="width: 50px; height: 50px;">
@@ -283,6 +279,9 @@
       </a>
       <a href="https://www.instagram.com/mangata.galle/" target="_blank" rel="noopener noreferrer" class="m-2">
         <img src="Images/Social_Media_Icon/instagram.png" alt="Instagram" style="width: 50px; height: 50px;">
+      </a>
+      <a href="https://www.mangatagalle.com/" target="_blank" rel="noopener noreferrer" class="m-2">
+        <img src="Images/Social_Media_Icon/website.png" alt="Location" style="width: 50px; height: 50px;">
       </a>
       <a href="https://maps.app.goo.gl/QYEG7xfrHeHzFPtz6" target="_blank" rel="noopener noreferrer" class="m-2">
         <img src="Images/Social_Media_Icon/location.png" alt="Location" style="width: 50px; height: 50px;">
