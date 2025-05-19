@@ -78,6 +78,7 @@ $routes = [
     'ayurvedayasas' => 'templates/ayurvedayasas.php',
     'ghayani' => 'templates/ghayani.php',
     'rajeev' => 'templates/rajeev.php',
+    'dilmy' => 'templates/dilmy.php',
 ];
 
 // Handle the request
