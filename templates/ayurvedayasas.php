@@ -191,7 +191,7 @@
 
   <!-- Contact Icons -->
   <div class="container my-4">
-    <div class="row text-center contact-box mx-1">
+    <div class="row text-center contact-box mx-1 justify-content-center">
       <div class="col-4 mb-3" onclick="window.open('tel:0773613173', '_self')">
         <i class="fas fa-mobile-alt contact-icon"></i><br />
         <span>Call</span>
