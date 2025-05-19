@@ -295,6 +295,9 @@
             background-color: white;
             overflow: hidden;
         }
+
+        /*treatment plan*/
+        
        
     </style>
 </head>
@@ -436,7 +439,7 @@
         </iframe>
         </div>
 
-        <button class="accordion" style="margin-bottom:5px">ULTRASONIC(FACE) THERAPY</button>
+        <button class="accordion" style="margin-bottom:25px">ULTRASONIC(FACE) THERAPY</button>
         <div class="panel">
         <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F61575166874096%2Fvideos%2F1047531757268113%2F&show_text=false&width=267&t=0" 
             width="100%" height="476" 
@@ -444,6 +447,56 @@
             scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true">
         </iframe>
         </div>
+        <br>
+
+        <!-- plan -->
+        <p class="text-center" style="font-size:20px; font-weight:600">Aesthetics Personalized Treatment <br>Plan</p>
+        <button class="accordion" style="margin-bottom:5px ;background-color: #dcc01f;color:#000 ;border-radius:15px">Basic Treatments</button>
+            <div class="panel">
+                <li style="text-align:center;">Basic Cleanup</li>
+                <li style="text-align:center;">DIBI Cleanup</li>
+                <li style="text-align:center;">Pure Acne Treatment</li>
+                <li style="text-align:center;">Face Perfection</li>
+                <li style="text-align:center;">Photon Light Therapy</li>
+                <li style="text-align:center;">Dermaplaning</li>
+                <li style="text-align:center;">Micro Dramabation</li>
+            </div>
+
+        <button class="accordion" style="margin-bottom:5px ;background-color: #dcc01f;color:#000 ;border-radius:15px">Luxury Facials</button>
+            <div class="panel">
+                <li style="text-align:center;">24K Gold treatment</li>
+                <li style="text-align:center;">White Sience</li>
+                <li style="text-align:center;">Vitamin C</li>
+                <li style="text-align:center;">Anti Oxydent</li>
+                <li style="text-align:center;">Acid Infusion</li>
+                <li style="text-align:center;">Hydrafacial</li>
+                <li style="text-align:center;">B.B Glow Facial</li>
+                <li style="text-align:center;">Lip Blushing</li>
+            </div>
+
+        <button class="accordion" style="margin-bottom:5px ;background-color: #dcc01f;color:#000 ;border-radius:15px">Laser Hair Removal</button>
+            <div class="panel">
+                <li style="text-align:center;">Full Face</li>
+                <li style="text-align:center;">Chin/Side Burns</li>
+                <li style="text-align:center;">Under Arms</li>
+                <li style="text-align:center;">Uper Lip</li>
+                <li style="text-align:center;">Full Arams</li>
+                <li style="text-align:center;">Half Arams</li>
+            </div>
+
+        <button class="accordion" style="margin-bottom:5px ;background-color: #dcc01f;color:#000 ;border-radius:15px">Skin Tightening Treatment & Laser Pigmentation / ECTLaser Pigmentation /ECT</button>
+            <div class="panel">
+                <li style="text-align:center;">Radio Frequency</li>
+                <li style="text-align:center;">Micro Needling</li>
+                <li style="text-align:center;">Nano NeedLing</li>
+                <li style="text-align:center;">Medical Needling</li>
+                <li style="text-align:center;">Carbon Peeling</li>
+                <li style="text-align:center;">Lip Pigmentation</li>
+                <li style="text-align:center;">Eye Treatment</li>
+                <li style="text-align:center;">Full Body polish</li>
+                <li style="text-align:center;">Wart Removal</li>
+            </div>
+
 
     <button class="btn w-100 custom-save-button mt-4" onclick="generateVCF()"
         style="font-family: 'Montserrat', sans-serif; font-size:19px; border: 2px solid orange;">
@@ -451,6 +504,7 @@
                 style="width: 50px; height: 50px; margin-right:25px;">
                 SAVE TO CONTACTS
     </button>
+
 
     <div class="line2 bg-black mt-4"></div>
 
@@ -469,6 +523,7 @@
                     </a>
                 </div>
     </div>
+
 
     <script>
         var acc = document.getElementsByClassName("accordion");
@@ -568,10 +623,11 @@
     });
 
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    // <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+    // </script>
+    <!-- // <script> -->
+    <!-- //     AOS.init();
+    // </script> -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -599,7 +655,7 @@
             
             // Contact information
             const contactData = {
-                firstName: "Ghayani",
+                firstName: "Ghayana",
                 lastName: "Harshani",
                 title: "Managing Director",
                 phoneWork: "0779927274",
