@@ -271,7 +271,7 @@ async function generateVCF() {
         firstName: "Fashion",
         lastName: "Academy",
         title: "Academy",
-        phoneWork: "0761231212",
+        phoneWork: "0761941213",
         phoneMobile: "",
         email: "fashionacademylk@gmail.com",
         email2: "",
