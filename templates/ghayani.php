@@ -271,130 +271,31 @@
             margin-bottom: 30px;
         }
 
-        /*video*/
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        
-        body {
-            font-family: Arial, sans-serif;
-            background: #f5f5f5;
-            padding: 20px;
+        /*accordian*/
+        .accordion {
+            background-color: #e3d1c6;
+            color: #000;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            text-align: center;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
         }
 
-        .slider-container {
-            max-width: 1000px;
-            margin: 30px auto;
-            position: relative;
+        .active, .accordion:hover {
+            background-color: #e3d1c6; 
         }
-        
-        .slider-title {
-            text-align: center;
-            margin-bottom: 30px;
-            color: #333;
-        }
-        
-        .video-slider {
-            position: relative;
-            width: 100%;
+
+        .panel {
+            padding: 5px;
+            display: none;
+            background-color: white;
             overflow: hidden;
         }
-        
-        .slider-track {
-            display: flex;
-            transition: transform 0.5s ease;
-        }
-        
-        .slide {
-            min-width: 100%;
-            position: relative;
-        }
-        
-        .video-wrapper {
-            position: relative;
-            padding-bottom: 178%; /* Facebook video aspect ratio */
-            height: 0;
-            overflow: hidden;
-            margin: 0 10px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
-        
-        .video-wrapper iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-        
-        .slider-nav {
-            text-align: center;
-            margin-top: 20px;
-        }
-        
-        .slider-dots {
-            display: inline-flex;
-            gap: 10px;
-        }
-        
-        .dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background: #ccc;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-        
-        .dot.active {
-            background: #1877f2; /* Facebook blue */
-        }
-        
-        .slider-arrow {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 40px;
-            height: 40px;
-            background: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-            cursor: pointer;
-            z-index: 10;
-            font-size: 20px;
-            color: #1877f2;
-        }
-        
-        .prev {
-            left: -20px;
-        }
-        
-        .next {
-            right: -20px;
-        }
-        
-        @media (max-width: 768px) {
-            .slider-arrow {
-                width: 30px;
-                height: 30px;
-                font-size: 16px;
-            }
-            
-            .prev {
-                left: -15px;
-            }
-            
-            .next {
-                right: -15px;
-            }
-        }
+       
     </style>
 </head>
 
@@ -506,68 +407,43 @@
         </div> -->
     </div>
 
-        <!-- video -->
-         <div class="slider-container">
-        <h1 class="slider-title">Video Slider</h1>
-        
-        <div class="video-slider">
-            <div class="slider-track">
-                <!-- Slide 1 -->
-                <div class="slide">
-                    <div class="video-wrapper">
-                        <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F61575166874096%2Fvideos%2F475297045606333%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-                    </div>
-                </div>
-                
-                <!-- Slide 2 -->
-                <!-- <div class="slide">
-                    <div class="video-wrapper">
-                        <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F61575166874096%2Fvideos%2F3057345454428003%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-                    </div>
-                </div> -->
-                <div class="slide">
-                    <div class="video-wrapper">
-                        <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F61575166874096%2Fvideos%2F3057345454428003%2F&show_text=false&width=267&t=0" 
-                                style="border:none;overflow:hidden" 
-                                scrolling="no" 
-                                frameborder="0" 
-                                allowfullscreen="true" 
-                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-                        </iframe>
-                    </div>
-                </div>
-                
-                <!-- Slide 3 -->
-                <div class="slide">
-                    <div class="video-wrapper">
-                        <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fyureninoshika%2Fvideos%2F2385006285189862%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-                    </div>
-                </div>
+        <!-- video accordian -->
+        <p class="text-center" style="font-size:20px; font-weight:600">Our Services</p>
+        <button class="accordion" style="margin-bottom:5px">SKIN TREATMENT</button>
+        <div class="panel">
+        <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F61575166874096%2Fvideos%2F475297045606333%2F&show_text=false&width=267&t=0" 
+            width="100%" height="476px" 
+            style="border:none;overflow:hidden" 
+            scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true">
+        </iframe>
+        </div>
 
-                <!-- Slide 4 -->
-                <div class="slide">
-                    <div class="video-wrapper">
-                        <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F61575166874096%2Fvideos%2F1047531757268113%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-                    </div>
-                </div>
-                
-                <!-- Add more slides as needed -->
-            </div>
-            
-            <div class="slider-arrow prev">❮</div>
-            <div class="slider-arrow next">❯</div>
+        <button class="accordion" style="margin-bottom:5px">ACNE TREATMENT</button>
+        <div class="panel">
+        <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F61575166874096%2Fvideos%2F3057345454428003%2F&show_text=false&width=267&t=0" 
+            width="100%" height="476" 
+            style="border:none;overflow:hidden" 
+            scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true">
+        </iframe>
         </div>
-        
-        <div class="slider-nav">
-            <div class="slider-dots">
-                <div class="dot active"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <!-- Add more dots matching your slides -->
-            </div>
+
+        <button class="accordion" style="margin-bottom:5px">HYDRA FACIAL</button>
+        <div class="panel">
+        <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fyureninoshika%2Fvideos%2F2385006285189862%2F&show_text=false&width=267&t=0" 
+            width="100%" height="476" 
+            style="border:none;overflow:hidden" 
+            scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true">
+        </iframe>
         </div>
-    </div>
-    </div>
+
+        <button class="accordion" style="margin-bottom:5px">ULTRASONIC(FACE) THERAPY</button>
+        <div class="panel">
+        <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F61575166874096%2Fvideos%2F1047531757268113%2F&show_text=false&width=267&t=0" 
+            width="100%" height="476" 
+            style="border:none;overflow:hidden" 
+            scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true">
+        </iframe>
+        </div>
 
     <button class="btn w-100 custom-save-button mt-4" onclick="generateVCF()"
         style="font-family: 'Montserrat', sans-serif; font-size:19px; border: 2px solid orange;">
@@ -595,58 +471,21 @@
     </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const track = document.querySelector('.slider-track');
-            const slides = Array.from(document.querySelectorAll('.slide'));
-            const dots = Array.from(document.querySelectorAll('.dot'));
-            const nextBtn = document.querySelector('.next');
-            const prevBtn = document.querySelector('.prev');
-            
-            const slideWidth = slides[0].getBoundingClientRect().width;
-            let currentIndex = 0;
-            
-            // Arrange slides next to each other
-            slides.forEach((slide, index) => {
-                slide.style.left = slideWidth * index + 'px';
-            });
-            
-            // Next slide
-            nextBtn.addEventListener('click', function() {
-                currentIndex = (currentIndex + 1) % slides.length;
-                updateSlider();
-            });
-            
-            // Previous slide
-            prevBtn.addEventListener('click', function() {
-                currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-                updateSlider();
-            });
-            
-            // Dot navigation
-            dots.forEach((dot, index) => {
-                dot.addEventListener('click', function() {
-                    currentIndex = index;
-                    updateSlider();
-                });
-            });
-            
-            // Update slider position and active dot
-            function updateSlider() {
-                track.style.transform = 'translateX(-' + (slideWidth * currentIndex) + 'px)';
-                
-                dots.forEach((dot, index) => {
-                    dot.classList.toggle('active', index === currentIndex);
-                });
-            }
-            
-            // Auto-advance slides (optional)
-            // setInterval(() => {
-            //     currentIndex = (currentIndex + 1) % slides.length;
-            //     updateSlider();
-            // }, 5000);
-        });
-    </script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
 
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+        });
+        }
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
