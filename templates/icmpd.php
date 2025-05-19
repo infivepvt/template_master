@@ -251,72 +251,84 @@
 
     <script>
     async function generateVCF() {
-        try {
-            // Get the profile image element
-            const profileImageElement = document.querySelector(".profile-picture img");
-            const profileImageUrl = profileImageElement.src;
+    try {
+        // Get the profile image element
+        const profileImageElement = document.querySelector(".profile-picture img");
+        const profileImageUrl = profileImageElement.src;
 
-            // Fetch and convert image to Base64
-            const base64Image = await fetchImageAsBase64(profileImageUrl);
+        // Fetch and convert image to Base64
+        const base64Image = await fetchImageAsBase64(profileImageUrl);
 
-            // Contact data from the card
-            const contactData = {
-                firstName: "SHASHIKA",
-                lastName: "GAMAGE",
-                title: "Chief Sales Officer",
-                phoneWork: "0777999207",
-                email: "shashikag@premiumautoparts.lk",
-                website: "www.premiumautoparts.lk",
-                address: "127, Wellawaya Road, Monaragala, Sri Lanka"
-            };
+        // Contact data from the card
+        const contactData = {
+            firstName: "Sarath",
+            lastName: "Pallegama",
+            title: "Counsellor, Migrant Information Centre - Sri Lanka",
+            phoneWork: "0773599757",
+            email: "Sarath.Pallegama@mrc-srilanka.org",
+            website: "https://www.icmpd.org",
+            address: "No 12, Sri Lanka Bureau of Foreign Employment, New Pioneer Road, Batticaloa, Sri Lanka",
+            socialWhatsApp: "https://whatsapp.com/channel/0029VainhQXKLaHsnil51t2z",
+            socialInstagram: "https://www.instagram.com/migrantinformationcentre",
+            socialFacebook: "https://www.facebook.com/share/1AhQMeqchp/",
+            socialYouTube: "https://youtube.com/@icmpd",
+            socialLinkedIn: "https://www.linkedin.com/company/icmpd/",
+            socialX: "https://x.com/ICMPD"
+        };
 
-            // Build VCF content
-            let vcfContent = `BEGIN:VCARD
+        // Build VCF content
+        let vcfContent = `BEGIN:VCARD
 VERSION:3.0
-FN:${contactData.firstName} ${contactData.lastName}
+FN:H G Sarath Pallegama
 N:${contactData.lastName};${contactData.firstName};;;
 TITLE:${contactData.title}
 TEL;TYPE=WORK,VOICE:${contactData.phoneWork}
 EMAIL:${contactData.email}
 URL:${contactData.website}
-ADR;TYPE=WORK:;;${contactData.address.replace(/\n/g, ' ')}
+ADR;TYPE=WORK:;;${contactData.address.replace(/,\s*/g, ';')}
+X-SOCIALPROFILE;TYPE=whatsapp:${contactData.socialWhatsApp}
+X-SOCIALPROFILE;TYPE=instagram:${contactData.socialInstagram}
+X-SOCIALPROFILE;TYPE=facebook:${contactData.socialFacebook}
+X-SOCIALPROFILE;TYPE=youtube:${contactData.socialYouTube}
+X-SOCIALPROFILE;TYPE=linkedin:${contactData.socialLinkedIn}
+X-SOCIALPROFILE;TYPE=x:${contactData.socialX}
 PHOTO;ENCODING=b;TYPE=PNG:${base64Image}
 END:VCARD`;
 
-            // Create and trigger download
-            const blob = new Blob([vcfContent], { type: 'text/vcard' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
-        } catch (error) {
-            console.error("Error generating VCF:", error);
-            alert("Failed to generate contact file.");
-        }
+        // Create and trigger download
+        const blob = new Blob([vcfContent], { type: 'text/vcard' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `Sarath_Pallegama.vcf`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    } catch (error) {
+        console.error("Error generating VCF:", error);
+        alert("Failed to generate contact file.");
     }
+}
 
-    async function fetchImageAsBase64(url) {
-        try {
-            const response = await fetch(url);
-            const blob = await response.blob();
-            return new Promise((resolve, reject) => {
-                const reader = new FileReader();
-                reader.onloadend = () => {
-                    const base64data = reader.result.split(',')[1]; // Remove Data URL prefix
-                    resolve(base64data);
-                };
-                reader.onerror = reject;
-                reader.readAsDataURL(blob);
-            });
-        } catch (error) {
-            console.error("Error fetching image:", error);
-            return ""; // Return empty string if image load fails
-        }
+async function fetchImageAsBase64(url) {
+    try {
+        const response = await fetch(url);
+        const blob = await response.blob();
+        return new Promise((resolve, reject) => {
+            const reader = new FileReader();
+            reader.onloadend = () => {
+                const base64data = reader.result.split(',')[1]; // Remove Data URL prefix
+                resolve(base64data);
+            };
+            reader.onerror = reject;
+            reader.readAsDataURL(blob);
+        });
+    } catch (error) {
+        console.error("Error fetching image:", error);
+        return ""; // Return empty string if image load fails
     }
+}
 </script>
 </body>
 </html>
