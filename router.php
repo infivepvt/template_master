@@ -79,6 +79,7 @@ $routes = [
     'ghayani' => 'templates/ghayani.php',
     'rajeev' => 'templates/rajeev.php',
     'dilmy' => 'templates/dilmy.php',
+    'nexaura' => 'templates/nexaura.php',
 ];
 
 // Handle the request
