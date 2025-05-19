@@ -36,7 +36,7 @@
 
     .header h3 {
       font-family: 'Rye', serif;
-      font-size: 35px;    
+      font-size: 35px;
       margin: 0;
       margin-top: 15px;
       color: #b9904e;
@@ -168,8 +168,8 @@
   <!-- Header: Logo + Hotel Name -->
   <div class="header">
     <div class="d-flex align-items-center justify-content-center flex-wrap">
-      <img src="logo_img/client_logo/adhityaayurveda-l1.png" alt="Logo 1" class="logo-img" />
       <img src="logo_img/client_logo/adhityaayurveda-l2.png" alt="Logo 2" class="logo-img" />
+      <img src="logo_img/client_logo/adhityaayurveda-l1.png" alt="Logo 1" class="logo-img" />
       <img src="logo_img/client_logo/adhityaayurveda-l3.png" alt="Logo 3" class="logo-img" />
       <h3 class="mb-0 ms-3">Adhitya Ayurveda</h3>
     </div>
@@ -224,50 +224,98 @@
         <i class="fas fa-globe contact-icon"></i><br />
         <span>Website 3</span>
       </div>
-      <div class="col-4">
-        <i class="fas fa-map-marker-alt contact-icon"></i><br />
-        <span>Location</span>
-      </div>
+      
       <!-- <div class="col-4">
         <i class="fas fa-save contact-icon"></i><br />
         <span>Save</span>
       </div> -->
     </div>
   </div>
-
-  <div class="d-flex flex-wrap justify-content-center">
-    <a href="https://www.facebook.com/adhitya.lk/" target="_blank" rel="noopener noreferrer" class="m-3">
-      <img src="Images/Social_Media_Icon/facebook.png" alt="" style="width: 50px; height: 50px;">
-    </a>
-    <a href="https://www.youtube.com/channel/UCQpdqOkb7JdxG8OjjzQUpSA" target="_blank" rel="noopener noreferrer"
-      class="m-3">
-      <img src="Images/Social_Media_Icon/youtube.png" alt="" style="width: 50px; height: 50px;">
-    </a>
-    <a href="https://www.instagram.com/adhityaayurveda/" target="_blank" rel="noopener noreferrer" class="m-3">
-      <img src="Images/Social_Media_Icon/instagram.png" alt="" style="width: 50px; height: 50px;">
-    </a>
-  </div>
-
-  <div class="d-flex flex-wrap justify-content-center">
-    <a href="https://www.linkedin.com/company/gunawardhana-ayurveda-holdings-pvt-ltd/" target="_blank"
-      rel="noopener noreferrer" class="m-3">
-      <img src="Images/Social_Media_Icon/linkedin.png" alt="" style="width: 50px; height: 50px;">
-    </a>
-    <a href="https://x.com/i/flow/login?redirect_after_login=%2FAdhityaAyurveda" target="_blank"
-      rel="noopener noreferrer" class="m-3">
-      <img src="Images/Social_Media_Icon/x-2.jpeg" alt="" style="width: 50px; height: 50px;">
-    </a>
-    <button class="btn w-100 custom-save-button" onclick="generateVCF()">
-      <img src="Images/Social_Media_Icon/save.png" alt="Save Icon"
-        style="width: 40px; height: 40px; margin-right: 15px;">
-      SAVE TO CONTACTS
-    </button>
-     <footer style="text-align:center; padding:10px; font-size:14px; color:white;">
-      <a href="https://tapilinq.com/" target="_blank" style="text-decoration:none; color:black; font-size:10px;">
-        Made with by Tapilinq | Click now
+  <!-- Social Media Sections -->
+<div class="container my-4">
+  <!-- Adhitya Ayurveda | Colombo -->
+  <div class="d-flex flex-column align-items-center mb-4">
+    <p class="m-3" style="font-family: 'Rye', serif; font-size: 18px; color: #b9904e;">Adhitya Ayurveda | Colombo</p>
+    <div class="d-flex justify-content-center">
+      <a href="https://www.facebook.com/p/Adhitya-Ayurveda-Colombo-100093612950529" target="_blank" rel="noopener noreferrer" class="m-2">
+        <img src="Images/Social_Media_Icon/facebook.png" alt="Facebook" style="width: 50px; height: 50px;">
       </a>
-    </footer>
+      <a href="https://lk.linkedin.com/company/adhitya-ayurveda-colombo" target="_blank" rel="noopener noreferrer" class="m-2">
+        <img src="Images/Social_Media_Icon/linkedin.png" alt="LinkedIn" style="width: 50px; height: 50px;">
+      </a>
+      <a href="https://www.instagram.com/adhitya_ayurveda_colombo/" target="_blank" rel="noopener noreferrer" class="m-2">
+        <img src="Images/Social_Media_Icon/instagram.png" alt="Instagram" style="width: 50px; height: 50px;">
+      </a>
+      <a href="https://maps.app.goo.gl/wGnjiPpPcWANZHSJA" target="_blank" rel="noopener noreferrer" class="m-2">
+        <img src="Images/Social_Media_Icon/location.png" alt="Location" style="width: 50px; height: 50px;">
+      </a>
+    </div>
   </div>
+
+  <!-- Adhitya Ayurveda | Anuradhapura -->
+  <div class="d-flex flex-column align-items-center mb-4">
+    <p class="m-3" style="font-family: 'Rye', serif; font-size: 18px; color: #b9904e;">Adhitya Ayurveda | Anuradhapura</p>
+    <div class="d-flex justify-content-center">
+      <a href="https://www.facebook.com/adhitya.lk/" target="_blank" rel="noopener noreferrer" class="m-2">
+        <img src="Images/Social_Media_Icon/facebook.png" alt="Facebook" style="width: 50px; height: 50px;">
+      </a>
+      <a href="https://lk.linkedin.com/company/gunawardhana-ayurveda-holdings-pvt-ltd" target="_blank" rel="noopener noreferrer" class="m-2">
+        <img src="Images/Social_Media_Icon/linkedin.png" alt="LinkedIn" style="width: 50px; height: 50px;">
+      </a>
+      <a href="https://www.instagram.com/adhityaayurveda/" target="_blank" rel="noopener noreferrer" class="m-2">
+        <img src="Images/Social_Media_Icon/instagram.png" alt="Instagram" style="width: 50px; height: 50px;">
+      </a>
+      <a href="https://maps.app.goo.gl/zvTezL9q8mveAtjbA" target="_blank" rel="noopener noreferrer" class="m-2">
+        <img src="Images/Social_Media_Icon/location.png" alt="Location" style="width: 50px; height: 50px;">
+      </a>
+    </div>
+  </div>
+
+  <!-- Mangata | Galle -->
+  <div class="d-flex flex-column align-items-center mb-4">
+    <p class="m-3" style="font-family: 'Rye', serif; font-size: 18px; color: #b9904e;">Mangata | Galle</p>
+    <div class="d-flex justify-content-center">
+      <a href="https://www.facebook.com/mangata.galle/" target="_blank" rel="noopener noreferrer" class="m-2">
+        <img src="Images/Social_Media_Icon/facebook.png" alt="Facebook" style="width: 50px; height: 50px;">
+      </a>
+      <a href="https://www.linkedin.com/company/m%C3%A5ngata-galle" target="_blank" rel="noopener noreferrer" class="m-2">
+        <img src="Images/Social_Media_Icon/linkedin.png" alt="LinkedIn" style="width: 50px; height: 50px;">
+      </a>
+      <a href="https://www.instagram.com/mangata.galle/" target="_blank" rel="noopener noreferrer" class="m-2">
+        <img src="Images/Social_Media_Icon/instagram.png" alt="Instagram" style="width: 50px; height: 50px;">
+      </a>
+      <a href="https://maps.app.goo.gl/QYEG7xfrHeHzFPtz6" target="_blank" rel="noopener noreferrer" class="m-2">
+        <img src="Images/Social_Media_Icon/location.png" alt="Location" style="width: 50px; height: 50px;">
+      </a>
+    </div>
+  </div>
+
+  <!-- Additional Social Media Links -->
+  <div class="d-flex flex-column align-items-center mb-4">
+    <p class="m-3" style="font-family: 'Rye', serif; font-size: 18px; color: #b9904e;">Follow Us</p>
+    <div class="d-flex justify-content-center">
+      <a href="https://x.com/i/flow/login?redirect_after_login=%2FAdhityaAyurveda" target="_blank" rel="noopener noreferrer" class="m-2">
+        <img src="Images/Social_Media_Icon/x-2.jpeg" alt="X" style="width: 50px; height: 50px;">
+      </a>
+      <a href="https://www.youtube.com/channel/UCQpdqOkb7JdxG8OjjzQUpSA" target="_blank" rel="noopener noreferrer" class="m-2">
+        <img src="Images/Social_Media_Icon/youtube.png" alt="YouTube" style="width: 50px; height: 50px;">
+      </a>
+    </div>
+  </div>
+
+  <!-- Save Button -->
+  <button class="btn w-100 custom-save-button" onclick="generateVCF()">
+    <img src="Images/Social_Media_Icon/save.png" alt="Save Icon" style="width: 40px; height: 40px; margin-right: 15px;">
+    SAVE TO CONTACTS
+  </button>
+
+  <!-- Footer -->
+  <footer style="text-align: center; padding: 10px; font-size: 14px; color: black;">
+    <a href="https://tapilinq.com/" target="_blank" style="text-decoration: none; color: black; font-size: 10px;">
+      Made with by Tapilinq | Click now
+    </a>
+  </footer>
+</div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
