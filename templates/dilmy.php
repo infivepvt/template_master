@@ -296,8 +296,8 @@
                 address: "",
                 address2: "",
                 about: "",
-                logo: "https://tapilinq.com/profile_img/client_profile/dilmy.jpeg",
-                profileImage: "https://tapilinq.com/profile_img/client_profile/dilmy.jpeg" // Same as logo in this case
+                logo: "https://tapilinq.com/profile_img/client_profile/dilmy-b.jpeg",
+                profileImage: "https://tapilinq.com/profile_img/client_profile/dilmy-p.jpeg" // Same as logo in this case
             };
 
             // Convert image to base64
