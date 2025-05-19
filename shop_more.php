@@ -515,7 +515,7 @@
             </div>
             <div class="qr-container">
                 <!-- template_qr -->
-                <img src="Images/template_qr/tq21.jpg" alt="QR Code" class="qr-image" />
+                <img src="Images/template_qr/tq21.png" alt="QR Code" class="qr-image" />
                 <div class="scan-text">Scan with your mobile</div>
             </div>
         </div>
