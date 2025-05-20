@@ -180,7 +180,7 @@
 
   <!-- Name & Title -->
   <div class="name-section">
-    <h3 style="color:#5b0e2e;">Mr.Malinda <br>Aberathne</h3>
+    <h4 style="color:#5b0e2e;font-weight :bold">Mr.Malinda Aberathne</h4>
     <div class="divider"></div>
     <p class="text-muted">Senior Executive - Purchasing
     </p>

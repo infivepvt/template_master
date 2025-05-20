@@ -180,7 +180,7 @@
 
   <!-- Name & Title -->
   <div class="name-section">
-    <h3 style="color:#5b0e2e;">Ms.Pubudini <br>Karunathilaka  </h3>
+    <h4 style="color:#5b0e2e;font-weight :bold">Ms.Pubudini Karunathilaka  </h4>
     <div class="divider"></div>
     <p class="text-muted">Marketing Executive</p>
     <p class="small-text">
