@@ -226,7 +226,7 @@
   <div class="profile-card template-9">
     <div class="profile-banner">
       <div class="imagepro">
-        <img class="profile-photo" src="profile_img/client_profile/nexaura-p.jpeg" alt="Michael Fassbender">
+        <img class="profile-photo" src="profile_img/client_profile/nexaura-p.jpeg" alt="">
       </div>
       <div class="profile-info">
         <h2>Kasun Thilakarathna</h2>
@@ -365,7 +365,7 @@
                 email: "kasunprabashitha9@gmail.com",
                 email2: "",
                 email3: "",
-                website: "www.behance.net/NexAuraMarketing",
+                website: "https://www.behance.net/NexAuraMarketing",
                 website2: "",
                 website3: "",
                 address: "",
