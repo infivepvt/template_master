@@ -319,27 +319,91 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
   <script>
-    function generateVCF() {
-      // Updated contact information to match the business card
-      const contactData = {
-        firstName: "Yasas Sri",
-        lastName: "Gunawardhana",
-        title: "Director",
-        phoneWork: "0252030200",
-        phoneMobile: "0773613173",
-        email: "yasassrig@gmail.com",
-        email2: "yasas@adhitya.lk",
-        website: "https://www.adhityaayurveda.com/",
-        website2: "https://www.adhityaayurvedacolombo.com/",
-        website3: "https://www.mangatagalle.com/",
-        address: "No.395/4, Harischandra Mawatha, Anuradhapura, Sri Lanka",
-        about: "Adhitya Ayurveda",
-        logo: "logo_img/client_logo/adhityaayurveda-l1.png",
-        profileImage: "banner_img/client_banner/adhityaayurveda-b.jpg"
-      };
+    async function generateVCF() {
+  // Updated contact information to match the business card
+  const contactData = {
+    firstName: "Yasas Sri",
+    lastName: "Gunawardhana",
+    title: "Director",
+    phoneWork: "0252030200",
+    phoneMobile: "0773613173",
+    email: "yasassrig@gmail.com",
+    email2: "yasas@adhitya.lk",
+    website: "https://www.adhityaayurveda.com/",
+    website2: "https://www.adhityaayurvedacolombo.com/",
+    website3: "https://www.mangatagalle.com/",
+    address: "No.395/4, Harischandra Mawatha, Anuradhapura, Sri Lanka",
+    about: "Adhitya Ayurveda",
+    logo: "logo_img/client_logo/adhityaayurveda-l1.png",
+    profileImageUrl: "banner_img/client_banner/adhityaayurveda-b.jpg"
+  };
 
-      // Create VCF content without photo first
-      let vcfContent = `BEGIN:VCARD
+  try {
+    // Load the profile image
+    const profileImage = new Image();
+    profileImage.crossOrigin = "Anonymous";
+    profileImage.src = contactData.profileImageUrl;
+    
+    // Wait for image to load
+    if (!profileImage.complete) {
+      await new Promise((resolve) => {
+        profileImage.onload = resolve;
+        profileImage.onerror = resolve; // Handle error case
+      });
+    }
+    
+    // Create canvas and draw image
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+    canvas.width = profileImage.naturalWidth;
+    canvas.height = profileImage.naturalHeight;
+    ctx.drawImage(profileImage, 0, 0);
+    
+    // Convert to base64
+    const base64Image = canvas.toDataURL('image/jpeg').split(',')[1];
+    
+    // Create VCF content with base64 image
+    let vcfContent = `BEGIN:VCARD
+VERSION:3.0
+FN:${contactData.firstName} ${contactData.lastName}
+N:${contactData.lastName};${contactData.firstName};;;
+TITLE:${contactData.title}
+TEL;TYPE=WORK,VOICE:${contactData.phoneWork}
+TEL;TYPE=CELL:${contactData.phoneMobile}
+EMAIL:${contactData.email}
+EMAIL:${contactData.email2}
+URL:${contactData.website}
+URL:${contactData.website2}
+URL:${contactData.website3}
+ADR;TYPE=WORK:;;${contactData.address}
+NOTE:${contactData.about}
+PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}
+LOGO;ENCODING=b;TYPE=JPEG:${contactData.logo}
+END:VCARD`;
+
+    // Create download link
+    const blob = new Blob([vcfContent], { type: 'text/vcard' });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+    document.body.appendChild(a);
+    a.click();
+
+    // Clean up
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  } catch (error) {
+    console.error("Error generating VCF:", error);
+    // Fallback to simple VCF without image if there's an error
+    generateSimpleVCF(contactData);
+  }
+}
+
+function generateSimpleVCF(contactData) {
+  // Create VCF content without images
+  let vcfContent = `BEGIN:VCARD
 VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
 N:${contactData.lastName};${contactData.firstName};;;
@@ -355,20 +419,21 @@ ADR;TYPE=WORK:;;${contactData.address}
 NOTE:${contactData.about}
 END:VCARD`;
 
-      // Create download link
-      const blob = new Blob([vcfContent], { type: 'text/vcard' });
-      const url = URL.createObjectURL(blob);
+  // Create download link
+  const blob = new Blob([vcfContent], { type: 'text/vcard' });
+  const url = URL.createObjectURL(blob);
 
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-      document.body.appendChild(a);
-      a.click();
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+  document.body.appendChild(a);
+  a.click();
 
-      // Clean up
-      document.body.removeChild(a);
-      URL.revokeObjectURL(url);
-    }
+  // Clean up
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+      
 </script>
 
 
