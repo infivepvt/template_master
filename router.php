@@ -95,6 +95,7 @@ $routes = [
     'dilmy' => 'templates/dilmy.php',
     'nexaura' => 'templates/nexaura.php',
     'buddhi' => 'templates/buddhi.php',
+    'tropical' => 'templates/tropical.php',
 ];
 
 // Handle the request
