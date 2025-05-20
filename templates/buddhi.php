@@ -583,7 +583,7 @@
                 <img src="logo_img/client_logo/buddhi-l.webp" alt="Company Logo" class="custom-logo"
                     style="width: 100px; opacity: 1;">
                 <div class="profile-picture75">
-                    <img src="profile_img/client_profile/buddhi-p.jpg" alt="Buddhi Chandrasena" class="rounded-circle">
+                    <img src="profile_img/client_profile/buddhi-p.png" alt="Buddhi Chandrasena" class="rounded-circle">
                 </div>
             </div>
             <br><br>
@@ -801,8 +801,8 @@
                 address: "",
                 address2: "",
                 about: "",
-                logo: "https://tapilinq.com/profile_img/client_profile/buddhi-p.jpg",
-                profileImage: "https://tapilinq.com/profile_img/client_profile/buddhi-p.jpg" // Same as logo in this case
+                logo: "https://tapilinq.com/profile_img/client_profile/buddhi-p.png",
+                profileImage: "https://tapilinq.com/profile_img/client_profile/buddhi-p.png" // Same as logo in this case
             };
 
             // Convert image to base64
