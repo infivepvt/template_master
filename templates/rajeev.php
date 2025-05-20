@@ -240,10 +240,13 @@
     <img src="Images/Social_Media_Icon/save.png" alt="" style="width: 50px; height: 50px; margin-right:25px;">
     SAVE TO CONTACTS
   </button>
+  <!-- Footer -->
+  <footer style="text-align: center; padding: 10px; font-size: 14px; color: black;">
+    <a href="https://tapilinq.com/" target="_blank" style="text-decoration: none; color: black; font-size: 10px;">
+      Made with by Tapilinq | Click now
+    </a>
+  </footer>
   </div>
-
-
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
   <script>
