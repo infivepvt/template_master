@@ -329,13 +329,13 @@
                     </a>
                 </div>
 
-      <button class="btn h-100 custom-save-button social-media-button" onclick="downloadVCF()">
+      <button class="btn h-100 custom-save-button social-media-button" onclick="generateVCF()">
         <i class="fas fa-save me-2"></i>
         SAVE TO CONTACTS
       </button>
     </div>
 
-    <img src="logo_img/client_logo/nexaura-l.png" alt="Logo" width="150" height="150" style="margin-left:150px"/>
+    <img src="logo_img/client_logo/nexaura-l.png" alt="Logo" width="150" height="150" style="margin-left:120px"/>
 
     <div class="footer">
       <p>Elevate your brand with digital innovation</p>
