@@ -220,7 +220,7 @@
 <div class="container my-4">
   <!-- Adhitya Ayurveda | Colombo -->
   <div class="d-flex flex-column align-items-center mb-4">
-    <p class="m-3" style="font-family: 'Rye', serif; font-size: 18px; color: #b9904e;">Adhitya Ayurveda | Colombo</p>
+    <p class="m-3" style="font-family: 'Rye', serif; font-size: 18px; color: #b9904e;text-align: center;">Adhitya Ayurveda | Colombo</p>
     <div class="d-flex justify-content-center">
       <a href="https://www.facebook.com/p/Adhitya-Ayurveda-Colombo-100093612950529" target="_blank" rel="noopener noreferrer" class="m-2">
         <img src="Images/Social_Media_Icon/facebook.png" alt="Facebook" style="width: 50px; height: 50px;">
@@ -243,7 +243,7 @@
 
   <!-- Adhitya Ayurveda | Anuradhapura -->
   <div class="d-flex flex-column align-items-center mb-4">
-    <p class="m-3" style="font-family: 'Rye', serif; font-size: 18px; color: #b9904e;">Adhitya Ayurveda | Anuradhapura</p>
+    <p class="m-3" style="font-family: 'Rye', serif; font-size: 18px; color: #b9904e;text-align: center;">Adhitya Ayurveda | Anuradhapura</p>
     <div class="d-flex justify-content-center">
       <a href="https://www.facebook.com/adhitya.lk/" target="_blank" rel="noopener noreferrer" class="m-2">
         <img src="Images/Social_Media_Icon/facebook.png" alt="Facebook" style="width: 50px; height: 50px;">
@@ -265,7 +265,7 @@
 
   <!-- Mangata | Galle -->
   <div class="d-flex flex-column align-items-center mb-4">
-    <p class="m-3" style="font-family: 'Rye', serif; font-size: 18px; color: #b9904e;">Mangata | Galle</p>
+    <p class="m-3" style="font-family: 'Rye', serif; font-size: 18px; color: #b9904e;text-align: center;">Mangata | Galle</p>
     <div class="d-flex justify-content-center">
       <a href="https://www.facebook.com/mangata.galle/" target="_blank" rel="noopener noreferrer" class="m-2">
         <img src="Images/Social_Media_Icon/facebook.png" alt="Facebook" style="width: 50px; height: 50px;">
