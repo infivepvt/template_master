@@ -335,10 +335,10 @@
         address: "No.395/4, Harischandra Mawatha, Anuradhapura, Sri Lanka",
         about: "Adhitya Ayurveda",
         logo: "logo_img/client_logo/adhityaayurveda-l1.png",
-        profileImage: "banner_img/main_banner/template21-b.jpg"
+        profileImage: "banner_img/client_banner/adhityaayurveda-b.jpg"
       };
 
-      // Create VCF content
+      // Create VCF content without photo first
       let vcfContent = `BEGIN:VCARD
 VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
@@ -353,8 +353,6 @@ URL:${contactData.website2}
 URL:${contactData.website3}
 ADR;TYPE=WORK:;;${contactData.address}
 NOTE:${contactData.about}
-PHOTO;ENCODING=b;TYPE=JPEG:${contactData.profileImage}
-LOGO;ENCODING=b;TYPE=JPEG:${contactData.logo}
 END:VCARD`;
 
       // Create download link
@@ -371,7 +369,7 @@ END:VCARD`;
       document.body.removeChild(a);
       URL.revokeObjectURL(url);
     }
-  </script>
+</script>
 
 
 </body>
