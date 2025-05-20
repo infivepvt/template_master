@@ -244,12 +244,12 @@
       </button>
 
       <button type="button" class="contact-button"
-        onclick="window.open('https://www.yourwebsiteaddress.com', '_blank')">
+        onclick="window.open('https://www.behance.net/NexAuraMarketing', '_blank')">
         <i class="fas fa-globe contact-icon"></i>
       </button>
 
       <button type="button" class="contact-button"
-        onclick="window.open('https://www.google.com/maps/search/?api=1&amp;query=919%20Oaktree%20Crescent,%20Newmarket', '_blank')">
+        onclick="window.open('https://www.google.com/maps/search/Ardha+place,+Colombo+03,/@6.9303919,79.8661128,15z/data=!3m1!4b1?authuser=0&entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoASAFQAw%3D%3D', '_blank')">
         <i class="fas fa-map-marker-alt contact-icon"></i>
       </button>
 
@@ -324,7 +324,7 @@
                     <a href="https://m.youtube.com/@NEXAURA-e4p?sfnsn=wa" target="_blank" rel="noopener noreferrer" class="m-3">
                         <img src="Images/Social_Media_Icon/youtube.png" alt="" style="width: 50px; height: 50px;">
                     </a>
-                    <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Flinkedin.com%2Fin%2Fhttps%253A%252F%252Fwww.linkedin.com%252Fcompany%252F105782765%252Fadmin%252Fdashboard%252F&h=AT3P0kPeJzMYEOHUdmMgvsjQOE_q4JATsjg5nJNtVhUPVUdZitA1gMRfK6TrXburuSm-yrrflnID_5GzRnMN_4fJBpey_fruBVMDmAPfVGwibkjEPNkaFWmYU85HMJqFyb7vw4rl8yRkQ-0xypWp8y9KaIpZ7UtnyIUa" target="_blank" rel="noopener noreferrer" class="m-3">
+                    <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Flinkedin.com%2Fin%2Fhttps%253A%252F%252Fwww.linkedin.com%252Fcompany%252F105782765%252Fadmin%252Fdashboard%252F&h=AT1mPWD8gOWgdjOdhaNb2Y27VOsKiNXyHf33JHeW0pvUZubvHC115WH9GSA_r1sgrhnw6JunaIXXHtxvAz8hv0NH3woHJYeJdTyXuB9LrWZT5--KwtAWFMjntBScbdiuLEVXuKQFvU98DwoqWqZzhffjClSUaRqJlfk-" target="_blank" rel="noopener noreferrer" class="m-3">
                         <img src="Images/Social_Media_Icon/linkedin.png" alt="" style="width: 50px; height: 50px;">
                     </a>
                 </div>
@@ -365,14 +365,14 @@
                 email: "kasunprabashitha9@gmail.com",
                 email2: "",
                 email3: "",
-                website: "",
+                website: "www.behance.net/NexAuraMarketing",
                 website2: "",
                 website3: "",
                 address: "",
                 address2: "",
                 about: "",
                 logo: "https://tapilinq.com/logo_img/client_logo/nexaura-l.png",
-                profileImage: "https://tapilinq.com/logo_img/client_logo/nexaura-l.png" // Same as logo in this case
+                profileImage:"https://tapilinq.com/logo_img/client_logo/nexaura-l.png" // Same as logo in this case
             };
 
             // Convert image to base64
