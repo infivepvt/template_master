@@ -141,7 +141,7 @@
     <!-- <h4 class="mb-0">Big Bang Hotel</h4> -->
   </div>
   <div>
-    <h4 class="mb-0 text-center" style="font-size:16px">Rayatty imports and exports private limited (sri lanka) <br>Avenddra trading private <br>limited (india)</h4>
+    <h4 class="mb-0 text-center" style="font-size:16px;text-transform: uppercase;">Rayatty imports and exports private limited (sri lanka) <br>Avenddra trading private <br>limited (india)</h4>
   </div><br>
 
   <!-- Banner Image -->
@@ -153,13 +153,14 @@
     <div class="divider"></div>
     <p class="text-muted">Director</p>
     <p class="small-text">
-       yatiyantota,Sri Lanka
+       Yatiyantota,Sri Lanka
     </p>
   </div>
 
   <!-- Contact Icons -->
   <div class="container my-4">
     <div class="row text-center contact-box mx-1">
+      <p class="m-3" style="font-family: 'Rye', serif; font-size: 18px; color: #b9904e;text-align: center;text-transform: uppercase;">Rayatty</p>
       <div class="col-4 mb-3" onclick="window.open('https://wa.me/message/YQWMY2ABWLICH1', '_blank')">
         <i class="fab fa-whatsapp contact-icon"></i><br />
         <span>Whatsapp</span>
@@ -172,6 +173,7 @@
         <i class="fas fa-globe contact-icon"></i><br />
         <span>Website</span>
       </div>
+      <p class="m-3" style="font-size: 18px; color: #b9904e;text-align: center;text-transform: uppercase;">Avenddra</p>
       <div class="col-4 mb-3" onclick="window.open('https://Wa.me/+918220383688', '_blank')">
         <i class="fab fa-whatsapp contact-icon"></i><br />
         <span>Whatsapp</span>
