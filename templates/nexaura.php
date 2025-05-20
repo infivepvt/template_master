@@ -372,7 +372,7 @@
                 address2: "",
                 about: "",
                 logo: "https://tapilinq.com/logo_img/client_logo/nexaura-l.png",
-                profileImage: "" // Same as logo in this case
+                profileImage: "https://tapilinq.com/logo_img/client_logo/nexaura-l.png" // Same as logo in this case
             };
 
             // Convert image to base64
