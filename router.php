@@ -96,6 +96,7 @@ $routes = [
     'nexaura' => 'templates/nexaura.php',
     'buddhi' => 'templates/buddhi.php',
     'tropical' => 'templates/tropical.php',
+    'horizon' => 'templates/horizon.php',
 ];
 
 // Handle the request
