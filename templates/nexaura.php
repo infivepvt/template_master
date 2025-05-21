@@ -244,7 +244,7 @@
       </button>
 
       <button type="button" class="contact-button"
-        onclick="window.open('https://www.behance.net/NexAuraMarketing', '_blank')">
+        onclick="window.open('https://nexaura.fwh.is/', '_blank')">
         <i class="fas fa-globe contact-icon"></i>
       </button>
 
@@ -318,13 +318,13 @@
                     <a href="https://www.instagram.com/nexaura_pvt_ltd/?sfnsn=wa" target="_blank" rel="noopener noreferrer" class="m-3">
                         <img src="Images/Social_Media_Icon/instagram.png" alt="" style="width: 50px; height: 50px;">
                     </a>
-                    <a href="https://www.facebook.com/share/15GKbU6KuJ/" target="_blank" rel="noopener noreferrer" class="m-3">
+                    <a href="https://www.facebook.com/profile.php?id=61560262581593&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" class="m-3">
                         <img src="Images/Social_Media_Icon/facebook.png" alt="" style="width: 50px; height: 50px;">
                     </a>
                     <a href="https://m.youtube.com/@NEXAURA-e4p?sfnsn=wa" target="_blank" rel="noopener noreferrer" class="m-3">
                         <img src="Images/Social_Media_Icon/youtube.png" alt="" style="width: 50px; height: 50px;">
                     </a>
-                    <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Flinkedin.com%2Fin%2Fhttps%253A%252F%252Fwww.linkedin.com%252Fcompany%252F105782765%252Fadmin%252Fdashboard%252F&h=AT1mPWD8gOWgdjOdhaNb2Y27VOsKiNXyHf33JHeW0pvUZubvHC115WH9GSA_r1sgrhnw6JunaIXXHtxvAz8hv0NH3woHJYeJdTyXuB9LrWZT5--KwtAWFMjntBScbdiuLEVXuKQFvU98DwoqWqZzhffjClSUaRqJlfk-" target="_blank" rel="noopener noreferrer" class="m-3">
+                    <a href="https://www.linkedin.com/company/105782765/admin/dashboard/" target="_blank" rel="noopener noreferrer" class="m-3">
                         <img src="Images/Social_Media_Icon/linkedin.png" alt="" style="width: 50px; height: 50px;">
                     </a>
                 </div>
