@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <style>
         body {
-            background-color: #ececec;
+            /* background: linear-gradient(to bottom, #013220, #000000); */
+            background-color: #000000;
         }
 
         .profile {
@@ -34,7 +35,7 @@
 
         .txt1 {
             font-family: "Sawarabi Mincho";
-            font-size: 40px;
+            font-size: 35px;
             color: #c5a77c;
             font-weight: bold;
         }
@@ -53,7 +54,9 @@
 
         .box4 {
             margin-top: 20px;
-            background: linear-gradient(to right, green, yellow);
+            /* background: linear-gradient(to right, green, yellow); */
+            /* background: linear-gradient(to bottom,rgb(1, 31, 20), #000000); */
+            background-color: #1A1A1A;
         }
 
         .icon-1 {
@@ -110,36 +113,34 @@
     <div class="container">
         <div class="row d-flex justify-content-center mb-5">
             <div class="col-12 col-md-8 col-lg-6 d-flex flex-column">
-                <div class="row justify-content-center  bg-dark">
+                <div class="row justify-content-center " style="background-color:#000000">
                     <img src="profile_img/client_profile/tropical-p.png" class="profile">
                 </div>
-                <div class="box2 bg-white d-flex justify-content-center">
+                <div class="box2 d-flex justify-content-center" style="background-color: #1A1A1A">
                     <span class="txt1 text-warning">Gayathri Perera</span>
                 </div>
-                <div class="box3 bg-white d-flex justify-content-center p-1">
-                    <span class="txt2">PROJECT LEAD</span>
+                <div class="box3 d-flex justify-content-center p-1" style="background-color: #1A1A1A">
+                    <span class="txt2 text-warning">PROJECT LEAD</span>
                 </div>
-                <div onclick="window.open('tel:0770551851', '_self')" class="box4 rounded-3 bg-white d-flex justify-content-center p-2 align-items-center gap-1">
-                    <i class="fas fa-mobile-alt icon-1 fs-5 text-black"></i>
-                    <span class="txt3 text-black">+94 77 055 1851</span>
+                <div onclick="window.open('tel:0770551851', '_self')" class="box4 rounded-0  d-flex justify-content-between p-2 align-items-center gap-1">
+                    <div class="col-3 d-flex justify-content-start px-3" ><i class="fas fa-mobile-alt icon-1 fs-5 text-white"></i></div>
+                    <div class="col-9 d-flex justify-content-start"><span class="txt3 text-white">+94 77 055 1851</span></div>
+                    
                 </div>
-                <div onclick="window.open('https://www.linkedin.com/in/gayathripererag3', '_self')" class="box4 rounded-3 bg-white d-flex justify-content-center p-2 align-items-center gap-1">
-                    <i class="bi bi-linkedin icon-1 fs-5 text-black"></i>
-                    <span class="txt3 text-black">gayathripererag3</span>
+                <div onclick="window.open('https://www.linkedin.com/in/gayathripererag3', '_self')" class="box4 rounded-0  d-flex justify-content-center p-2 align-items-center gap-1">
+                    <div class="col-3 d-flex justify-content-start px-3" ><i class="bi bi-linkedin icon-1 fs-5 text-white"></i></div>
+                    <div class="col-9 d-flex justify-content-start"><span class="txt3 text-white">gayathripererag3</span></div>                   
                 </div>
-                <div onclick="window.open('mailto:g3perera@outlook.com', '_self')" class="box4 rounded-3 bg-white d-flex justify-content-center p-2 align-items-center gap-1">
-                    <i class="far fa-envelope icon-1 fs-5 text-black"></i>
-                    <span class="txt3 text-black">g3perera@outlook.com</span>
+                <div onclick="window.open('mailto:g3perera@outlook.com', '_self')" class="box4 rounded-0  d-flex justify-content-center p-2 align-items-center gap-1">
+                    <div class="col-3 d-flex justify-content-start px-3" ><i class="far fa-envelope icon-1 fs-5 text-white"></i></div>
+                    <div class="col-9 d-flex justify-content-start"><span class="txt3 text-white">g3perera@outlook.com</span></div>                          
                 </div>
-                <div onclick="window.open('https://www.tropical-fx.com/, '_blank')" class="box4 rounded-3 bg-white d-flex justify-content-center p-2 align-items-center gap-1">
-                    <i class="bi bi-globe icon-1 fs-5 text-black"></i>
-                    <span class="txt3 text-black">www.tropical-fx.com</span>
+                <div onclick="window.open('https://www.tropical-fx.com/, '_blank')" class="box4 rounded-0  d-flex justify-content-center p-2 align-items-center gap-1">
+                    <div class="col-3 d-flex justify-content-start px-3" ><i class="bi bi-globe icon-1 fs-5 text-white"></i></div>
+                    <div class="col-9 d-flex justify-content-start"><span class="txt3 text-white">www.tropical-fx.com</span></div>                    
                 </div>
-                <div onclick="window.open('https://www.google.com/maps/place/Toronto,+ON,+Canada/@43.718371,-79.5428639,11z/data=!3m1!4b1!4m6!3m5!1s0x89d4cb90d7c63ba5:0x323555502ab4c477!8m2!3d43.653226!4d-79.3831843!16zL20vMGg3aDY?authuser=0&entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoASAFQAw%3D%3D', '_self')" class="box4 rounded-3 bg-white d-flex justify-content-center p-2 align-items-center gap-1">
-                    <i class="fas fa-map-marker-alt icon-1 fs-5 text-black"></i>
-                    <span class="txt3 text-black">Toronto, ON</span>
-                </div>
-                <div class="box4 box5 rounded-3 d-flex justify-content-center p-1 align-items-center gap-1">
+                
+                <div class=" box5 rounded-3 d-flex justify-content-center p-1 align-items-center gap-1 " style="margin-top:25px">
                     <button onclick="generateVCF()" class="save-btn btn">Save to Contact</button>
                 </div>
                 <!-- <div class="box4 d-flex justify-content-center p-1 align-items-center gap-1 gap-2">
@@ -168,13 +169,13 @@
         const contactData = {
             firstName: "Gayathri",
             lastName: "Perera",
-            title: "PROJECT LEAD",
-            phoneWork: "",
+            title: "project lead",
+            phoneWork: "+94 77 055 1851",
             phoneMobile: "",
-            email: "",
+            email: "g3perera@outlook.com",
             email2: "",
             email3: "",
-            website: "",
+            website: "www.tropical-fx.com",
             website2: "",
             website3: "",
             address: "",
