@@ -291,7 +291,7 @@
     <div class="d-flex justify-content-center mt-5">
         <div class="card custom-card shadow-lg" style="background-color: #FFFFFF;">
             <div class="card-header custom-header text-center"
-                style="background-image:  url('banner_img/client_banner/horizon-b.jpg'); height: 200px; opacity: 1;">
+                style="background-image:  url('banner_img/client_banner/'); height: 200px; opacity: 1;">
                 <img src="logo_img/client_logo/horizon-l.png" alt="Company Logo" class="custom-logo" height="80px"
                     style="width: 80px; height: auto; opacity: 1;">
                 <div class="profile-picture">
