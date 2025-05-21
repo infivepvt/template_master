@@ -60,11 +60,47 @@
       margin: 0.5rem auto;
     }
 
+    /* Reduce margin for contact-box */
     .contact-box {
       background-color: white;
       border-radius: 1rem;
-      padding: 2rem 1rem;
-      /* box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); */
+      padding: 1rem;
+      /* Reduced padding from 2rem 1rem to 1rem */
+      margin-bottom: 0.5rem;
+      /* Added to reduce vertical spacing */
+    }
+
+    /* Reduce margin for contact icons */
+    .contact-box .col-4 {
+      margin-bottom: 0.25rem;
+      /* Reduced from mb-3 (0.75rem) to 0.25rem */
+    }
+
+    /* Reduce margin for the <p> tags between sections */
+    .section-title {
+      font-family: 'Rye', serif;
+      font-size: 18px;
+      color: #b9904e;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 0.5rem 0;
+      /* Reduced from m-3 (1rem) to 0.5rem */
+    }
+
+    /* Reduce margin for social media icons */
+    .social-icons a {
+      margin: 0.5rem;
+      /* Reduced from m-3 (1rem) to 0.5rem */
+    }
+
+    /* Adjust the 'Connect with Social Media' text */
+    .connect-text {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 15px;
+      margin-top: -5px;
+      /* Adjusted from -10px to -5px for slight spacing */
+      text-align: center;
+      font-weight: bold;
     }
 
     .contact-icon {
@@ -160,16 +196,14 @@
   </div>
 
   <!-- Contact Icons -->
-  <div class="container my-4">
-    <p class="m-3"
-      style="font-family: 'Rye', serif; font-size: 18px; color: #b9904e;text-align: center;text-transform: uppercase;">
-      Rayatty</p>
+  <div class="container my-2"> <!-- Reduced my-4 to my-2 -->
+    <p class="section-title">Rayatty</p>
     <div class="row text-center contact-box mx-1">
-      <div class="col-4 mb-3" onclick="window.open('https://wa.me/message/YQWMY2ABWLICH1', '_blank')">
+      <div class="col-4" onclick="window.open('https://wa.me/message/YQWMY2ABWLICH1', '_blank')">
         <i class="fab fa-whatsapp contact-icon"></i><br />
         <span>Whatsapp</span>
       </div>
-      <div class="col-4 mb-3">
+      <div class="col-4">
         <i class="fas fa-envelope contact-icon" onclick="window.open('mailto:Info@rayatty.com ', '_self')"></i><br />
         <span>E-mail</span>
       </div>
@@ -178,13 +212,13 @@
         <span>Website</span>
       </div>
     </div>
-    <p class="m-3" style="font-size: 18px; color: #b9904e;text-align: center;text-transform: uppercase;">Avenddra</p>
+    <p class="section-title">Avenddra</p>
     <div class="row text-center contact-box mx-1">
-      <div class="col-4 mb-3" onclick="window.open('https://Wa.me/+918220383688', '_blank')">
+      <div class="col-4" onclick="window.open('https://Wa.me/+918220383688', '_blank')">
         <i class="fab fa-whatsapp contact-icon"></i><br />
         <span>Whatsapp</span>
       </div>
-      <div class="col-4 mb-3" onclick="window.open('mailto:Info@avenddra.com ', '_self')">
+      <div class="col-4" onclick="window.open('mailto:Info@avenddra.com ', '_self')">
         <i class="fas fa-envelope contact-icon"></i><br />
         <span>E-mail</span>
       </div>
@@ -195,43 +229,26 @@
     </div>
   </div>
 
+  <!-- Social Media Icons -->
+  <p class="connect-text">CONNECT WITH SOCIAL MEDIA</p>
+  <p class="section-title">Rayatty</p>
+  <div class="d-flex flex-wrap justify-content-center social-icons">
 
-  <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:15px; margin-top:-10px; text-align:center;">
-    CONNECT WITH SOCIAL MEDIA</p>
-  <p class="m-3"
-    style="font-family: 'Rye', serif; font-size: 18px; color: #b9904e;text-align: center;text-transform: uppercase;">
-    Rayatty</p>
-  <div class="d-flex flex-wrap justify-content-center">
-    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
-      <img src="Images/Social_Media_Icon/instagram.png" alt="" style="width: 50px; height: 50px;">
-    </a>
-    <a href="https://www.facebook.com/profile.php?id=61576584659017" target="_blank" rel="noopener noreferrer"
-      class="m-3">
+    <a href="https://www.facebook.com/profile.php?id=61576584659017" target="_blank" rel="noopener noreferrer">
       <img src="Images/Social_Media_Icon/facebook.png" alt="" style="width: 50px; height: 50px;">
     </a>
-    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
-      <img src="Images/Social_Media_Icon/youtube.png" alt="" style="width: 50px; height: 50px;">
-    </a>
-    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
-      <img src="Images/Social_Media_Icon/tiktok.png" alt="" style="width: 50px; height: 50px;">
-    </a>
+
+
   </div>
 
-  <p class="m-3" style="font-size: 18px; color: #b9904e;text-align: center;text-transform: uppercase;">Avenddra</p>
-  <div class="d-flex flex-wrap justify-content-center">
-    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
-      <img src="Images/Social_Media_Icon/instagram.png" alt="" style="width: 50px; height: 50px;">
-    </a>
-    <a href="https://www.facebook.com/profile.php?id=61576584659017" target="_blank" rel="noopener noreferrer"
-      class="m-3">
+  <p class="section-title">Avenddra</p>
+  <div class="d-flex flex-wrap justify-content-center social-icons">
+
+    <a href="https://www.facebook.com/profile.php?id=61576584659017" target="_blank" rel="noopener noreferrer">
       <img src="Images/Social_Media_Icon/facebook.png" alt="" style="width: 50px; height: 50px;">
     </a>
-    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
-      <img src="Images/Social_Media_Icon/youtube.png" alt="" style="width: 50px; height: 50px;">
-    </a>
-    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
-      <img src="Images/Social_Media_Icon/tiktok.png" alt="" style="width: 50px; height: 50px;">
-    </a>
+
+
   </div>
 
   <br>
@@ -250,63 +267,102 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
   <script>
-    function generateVCF() {
-      // Updated contact information to match the business card
-      const contactData = {
-        firstName: "M. RAJEEV",
-        lastName: "",
-        title: "Director",
-        phoneWork: "0713685600",
-        phoneMobile: "",
-        email: "Info@rayatty.com",
-        email2: "Info@avenddra.com",
-        email3: "",
-        website: "",
-        website2: "",
-        website3: "",
-        address: "yatiyantota,Sri Lanka",
-        address2: "",
-        about: "",
-        logo: "logo_img/client_logo/rayatty-l.png",
-        profileImage: ""
-      };
+    async function generateVCF() {
+        const contactData = {
+            firstName: "M. Rajeev",
+            lastName: "",
+            title: "Director",
+            phoneWork: "",
+            phoneMobile: "",
+            email: "",
+            email2: "",
+            email3: "",
+            website: "",
+            website2: "",
+            website3: "",
+            address: "",
+            address2: "",
+            about: "",
+            logo: "https://tapilinq.com/logo_img/client_logo/rayatty-l.png",
+            profileImage: "https://tapilinq.com/logo_img/client_logo/rayatty-l.png",
+            // Social Media Links
+            facebook: "https://www.facebook.com/profile.php?id=61576584659017",
+            facebook: "https://www.facebook.com/profile.php?id=61576584659017",
+            twitter: "https://twitter.com/username",
+            instagram: "https://instagram.com/username",
+            whatsapp: "https://wa.me/1234567890"
+        };
 
-      // Create VCF content
-      let vcfContent = `BEGIN:VCARD
-VERSION:3.0
-FN:${contactData.firstName} ${contactData.lastName}
-N:${contactData.lastName};${contactData.firstName};;;
-TITLE:${contactData.title}
-TEL;TYPE=WORK,VOICE:${contactData.phoneWork}
-TEL;TYPE=CELL:${contactData.phoneMobile}
-EMAIL:${contactData.email}
-EMAIL:${contactData.email2}
-EMAIL:${contactData.email3}
-URL:${contactData.website}
-URL:${contactData.website2}
-URL:${contactData.website3}
-ADR;TYPE=WORK:;;${contactData.address}
-ADR;TYPE=HOME:;;${contactData.address2}
-NOTE:${contactData.about}
-PHOTO;VALUE=URL:${contactData.profileImage}
-LOGO;VALUE=URL:${contactData.logo}
-END:VCARD`;
+        // Convert image to base64
+        const toBase64 = async (url) => {
+            const response = await fetch(url);
+            const blob = await response.blob();
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onloadend = () => resolve(reader.result.split(',')[1]);
+                reader.onerror = reject;
+                reader.readAsDataURL(blob);
+            });
+        };
 
-      // Create download link
-      const blob = new Blob([vcfContent], { type: 'text/vcard' });
-      const url = URL.createObjectURL(blob);
+        let photoBase64 = '';
+        try {
+            photoBase64 = await toBase64(contactData.profileImage);
+        } catch (error) {
+            console.error("Failed to load image for VCF:", error);
+        }
 
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-      document.body.appendChild(a);
-      a.click();
+        // Build VCF content
+        let vcfLines = [
+            "BEGIN:VCARD",
+            "VERSION:3.0",
+            `FN:${contactData.firstName} ${contactData.lastName}`,
+            `N:${contactData.lastName};${contactData.firstName};;;`,
+        ];
 
-      // Clean up
-      document.body.removeChild(a);
-      URL.revokeObjectURL(url);
+        if (contactData.title) vcfLines.push(`TITLE:${contactData.title}`);
+        if (contactData.phoneWork) vcfLines.push(`TEL;TYPE=WORK,VOICE:${contactData.phoneWork}`);
+        if (contactData.phoneMobile) vcfLines.push(`TEL;TYPE=CELL:${contactData.phoneMobile}`);
+        if (contactData.email) vcfLines.push(`EMAIL:${contactData.email}`);
+        if (contactData.email2) vcfLines.push(`EMAIL:${contactData.email2}`);
+        if (contactData.email3) vcfLines.push(`EMAIL:${contactData.email3}`);
+        if (contactData.website) vcfLines.push(`URL:${contactData.website}`);
+        if (contactData.website2) vcfLines.push(`URL:${contactData.website2}`);
+        if (contactData.website3) vcfLines.push(`URL:${contactData.website3}`);
+        if (contactData.address) vcfLines.push(`ADR;TYPE=WORK:;;${contactData.address}`);
+        if (contactData.address2) vcfLines.push(`ADR;TYPE=HOME:;;${contactData.address2}`);
+        if (contactData.about) vcfLines.push(`NOTE:${contactData.about}`);
+
+        // Social Media Links (Using X-SOCIALPROFILE)
+        if (contactData.facebook) vcfLines.push(`X-SOCIALPROFILE;TYPE=facebook:${contactData.facebook}`);
+        if (contactData.linkedin) vcfLines.push(`X-SOCIALPROFILE;TYPE=linkedin:${contactData.linkedin}`);
+        if (contactData.twitter) vcfLines.push(`X-SOCIALPROFILE;TYPE=twitter:${contactData.twitter}`);
+        if (contactData.instagram) vcfLines.push(`X-SOCIALPROFILE;TYPE=instagram:${contactData.instagram}`);
+        if (contactData.whatsapp) vcfLines.push(`X-SOCIALPROFILE;TYPE=whatsapp:${contactData.whatsapp}`);
+
+        // Embed profile image (base64 JPEG format)
+        if (photoBase64) {
+            vcfLines.push(`PHOTO;ENCODING=b;TYPE=JPEG:${photoBase64}`);
+        }
+
+        vcfLines.push("END:VCARD");
+
+        const vcfContent = vcfLines.join('\n');
+
+        // Trigger download
+        const blob = new Blob([vcfContent], {
+            type: 'text/vcard'
+        });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
     }
-  </script>
+</script>
 
 </body>
 
