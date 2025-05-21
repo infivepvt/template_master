@@ -75,7 +75,9 @@
         }
 
         .custom-save-button {
-            background: linear-gradient(90deg, #5f4def, #00d0ea);
+                        background: linear-gradient(to right, #3711a4,#4ad9dd);
+                        /* background: linear-gradient(to right, #cb245c,#a939c3, #5c25f2); */
+            background-color:#3642bc;
             color: white;
             font-weight: bold;
             border: none;
@@ -88,7 +90,8 @@
         }
 
         .custom-save-button:hover {
-            background: linear-gradient(90deg, #4b3ec4, #00b3c3);
+                        background: linear-gradient(to right, #3711a4,#4ad9dd);
+                        /* background: linear-gradient(to right, #cb245c,#a939c3, #5c25f2); */
         }
 
         .contact-icon {
@@ -238,7 +241,7 @@
         }
 
         .gradient-button {
-            background: linear-gradient(135deg, #3b82f6, #8b5cf6, #ec4899);
+            background-color: #3f51b5;
             /* blue → purple → pink */
             border: none;
             color: white;
@@ -266,7 +269,10 @@
 
         /* contact details */
         .contact {
-            background-color: #373938;
+            /* background: linear-gradient(to right, #5d8cff, #2bd1ee); */
+            /* background: linear-gradient(to right, #4ad9dd, #3711a4); */
+            background: linear-gradient(to right, #3711a4,#4ad9dd);
+            /* background: linear-gradient(to right, #cb245c,#a939c3, #5c25f2); */
         }
     </style>
 

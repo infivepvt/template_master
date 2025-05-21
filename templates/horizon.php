@@ -302,7 +302,7 @@
             <br>
             <div class="card-body text-center"
                 style="background-color: #FFFFFF; color: #000000; text-decoration: none; ">
-                <h2 class="card-title" style="font-size: 27px; text-transform: uppercase;">Horizon AGRO Products</h2>
+                <h2 class="card-title" style="font-size: 27px; text-transform: uppercase;">HORIZON AGRO PRODUCTS HOLDINGS (PVT) LTD</h2>
                 <p style="color: #000000; font-size: 21px; text-transform: uppercase;">NEVILLE KALUGAMPITIYA</p>
                 <p style="color: #000000; font-size: 15px; text-transform: uppercase; margin-top: 5px; font-weight:bo">
                     Managing Director</p>
@@ -320,18 +320,18 @@
                 <div class="list-group mb-3">
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
-                        onclick="window.open('tel:0719973254', '_self')">
+                        onclick="window.open('tel:+94719973254', '_self')">
                         <img src="Images/icon/phone.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">0719973254</span>
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">+94719973254</span>
                     </button>
 
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
-                        onclick="window.open('tel:0715200900', '_self')">
+                        onclick="window.open('tel:+94715200900', '_self')">
                         <img src="Images/icon/phone.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">0715200900 (Hotline)</span>
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">+94715200900 (Hotline)</span>
                     </button>
 
                     <button type="button"
