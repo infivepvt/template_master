@@ -97,6 +97,7 @@ $routes = [
     'buddhi' => 'templates/buddhi.php',
     'tropical' => 'templates/tropical.php',
     'horizon' => 'templates/horizon.php',
+    'lucknow' => 'templates/lucknow.php',
 ];
 
 // Handle the request
