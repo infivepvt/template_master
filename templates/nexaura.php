@@ -8,9 +8,6 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="icon" type="image/x-icon" href="Images/Logo1.ico">
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="0">
   <style>
     .profile-card {
       background-color: #000;
@@ -246,7 +243,8 @@
         <i class="fas fa-envelope contact-icon"></i>
       </button>
 
-      <button type="button" class="contact-button" onclick="window.open('https://nexaura.fwh.is/', '_blank')">
+      <button type="button" class="contact-button"
+        onclick="window.open('https://nexaura.fwh.is/', '_blank')">
         <i class="fas fa-globe contact-icon"></i>
       </button>
 
@@ -255,7 +253,8 @@
         <i class="fas fa-map-marker-alt contact-icon"></i>
       </button>
 
-      <button type="button" class="contact-button" onclick="window.open('https://Wa.me/+94768890146', '_blank')">
+      <button type="button" class="contact-button"
+        onclick="window.open('https://Wa.me/+94768890146', '_blank')">
         <i class="fab fa-whatsapp contact-icon"></i>
       </button>
     </div>
@@ -314,25 +313,21 @@
         <img src="banner_img/client_banner/nexaura-b.jpg" width="100%" height="100%" style="border-radius:15px">
       </div><br>
 
-      <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:15px; margin-top:-10px; text-align:center;">
-        CONNECT WITH SOCIAL MEDIA</p>
-      <div class="d-flex flex-wrap justify-content-center">
-        <a href="https://www.instagram.com/nexaura_pvt_ltd/?sfnsn=wa" target="_blank" rel="noopener noreferrer"
-          class="m-3">
-          <img src="Images/Social_Media_Icon/instagram.png" alt="" style="width: 50px; height: 50px;">
-        </a>
-        <a href="https://www.facebook.com/profile.php?id=61560262581593&mibextid=ZbWKwL" target="_blank"
-          rel="noopener noreferrer" class="m-3">
-          <img src="Images/Social_Media_Icon/facebook.png" alt="" style="width: 50px; height: 50px;">
-        </a>
-        <a href="https://m.youtube.com/@NEXAURA-e4p?sfnsn=wa" target="_blank" rel="noopener noreferrer" class="m-3">
-          <img src="Images/Social_Media_Icon/youtube.png" alt="" style="width: 50px; height: 50px;">
-        </a>
-        <a href="https://www.linkedin.com/company/105782765/admin/dashboard/" target="_blank" rel="noopener noreferrer"
-          class="m-3">
-          <img src="Images/Social_Media_Icon/linkedin.png" alt="" style="width: 50px; height: 50px;">
-        </a>
-      </div>
+      <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:15px; margin-top:-10px; text-align:center;">CONNECT WITH SOCIAL MEDIA</p>
+        <div class="d-flex flex-wrap justify-content-center">
+                    <a href="https://www.instagram.com/nexaura_pvt_ltd/?sfnsn=wa" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/instagram.png" alt="" style="width: 50px; height: 50px;">
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61560262581593&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/facebook.png" alt="" style="width: 50px; height: 50px;">
+                    </a>
+                    <a href="https://m.youtube.com/@NEXAURA-e4p?sfnsn=wa" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/youtube.png" alt="" style="width: 50px; height: 50px;">
+                    </a>
+                    <a href="https://www.linkedin.com/company/105782765/admin/dashboard/" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/linkedin.png" alt="" style="width: 50px; height: 50px;">
+                    </a>
+                </div>
 
       <button class="btn h-100 custom-save-button social-media-button" onclick="generateVCF()">
         <i class="fas fa-save me-2"></i>
@@ -340,7 +335,7 @@
       </button>
     </div>
 
-    <img src="logo_img/client_logo/nexaura-l.png" alt="Logo" width="150" height="150" style="margin-left:120px" />
+    <img src="logo_img/client_logo/nexaura-l.png" alt="Logo" width="150" height="150" style="margin-left:120px"/>
 
     <div class="footer">
       <p>Elevate your brand with digital innovation</p>
@@ -361,87 +356,87 @@
     let currentImageIndex = 0;
 
     async function generateVCF() {
-      const contactData = {
-        firstName: "Kasun",
-        lastName: "Thilakarathna",
-        title: "Founder and CEO",
-        phoneWork: "",
-        phoneMobile: "+94768890146",
-        email: "kasunprabashitha9@gmail.com",
-        email2: "",
-        email3: "",
-        website: "https://www.behance.net/NexAuraMarketing",
-        website2: "",
-        website3: "",
-        address: "",
-        address2: "",
-        about: "",
-        logo: "https://tapilinq.com/logo_img/client_logo/nexaura-l.png",
-        profileImage: "https://tapilinq.com/logo_img/client_logo/nexaura-l.png" // Same as logo in this case
-      };
+            const contactData = {
+                firstName: "Kasun",
+                lastName: "Thilakarathna",
+                title: "Founder and CEO",
+                phoneWork: "",
+                phoneMobile: "+94768890146",
+                email: "kasunprabashitha9@gmail.com",
+                email2: "",
+                email3: "",
+                website: "https://www.behance.net/NexAuraMarketing",
+                website2: "",
+                website3: "",
+                address: "",
+                address2: "",
+                about: "",
+                logo: "https://tapilinq.com/logo_img/client_logo/nexaura-l.png",
+                profileImage:"https://tapilinq.com/logo_img/client_logo/nexaura-l.png" // Same as logo in this case
+            };
 
-      // Convert image to base64
-      const toBase64 = async (url) => {
-        const response = await fetch(url);
-        const blob = await response.blob();
-        return new Promise((resolve, reject) => {
-          const reader = new FileReader();
-          reader.onloadend = () => resolve(reader.result.split(',')[1]);
-          reader.onerror = reject;
-          reader.readAsDataURL(blob);
-        });
-      };
+            // Convert image to base64
+            const toBase64 = async (url) => {
+                const response = await fetch(url);
+                const blob = await response.blob();
+                return new Promise((resolve, reject) => {
+                    const reader = new FileReader();
+                    reader.onloadend = () => resolve(reader.result.split(',')[1]);
+                    reader.onerror = reject;
+                    reader.readAsDataURL(blob);
+                });
+            };
 
-      let photoBase64 = '';
-      try {
-        photoBase64 = await toBase64(contactData.profileImage);
-      } catch (error) {
-        console.error("Failed to load image for VCF:", error);
-      }
+            let photoBase64 = '';
+            try {
+                photoBase64 = await toBase64(contactData.profileImage);
+            } catch (error) {
+                console.error("Failed to load image for VCF:", error);
+            }
 
-      // Build VCF content
-      let vcfLines = [
-        "BEGIN:VCARD",
-        "VERSION:3.0",
-        `FN:${contactData.firstName} ${contactData.lastName}`,
-        `N:${contactData.lastName};${contactData.firstName};;;`,
-      ];
+            // Build VCF content
+            let vcfLines = [
+                "BEGIN:VCARD",
+                "VERSION:3.0",
+                `FN:${contactData.firstName} ${contactData.lastName}`,
+                `N:${contactData.lastName};${contactData.firstName};;;`,
+            ];
 
-      if (contactData.title) vcfLines.push(`TITLE:${contactData.title}`);
-      if (contactData.phoneWork) vcfLines.push(`TEL;TYPE=WORK,VOICE:${contactData.phoneWork}`);
-      if (contactData.phoneMobile) vcfLines.push(`TEL;TYPE=CELL:${contactData.phoneMobile}`);
-      if (contactData.email) vcfLines.push(`EMAIL:${contactData.email}`);
-      if (contactData.email2) vcfLines.push(`EMAIL:${contactData.email2}`);
-      if (contactData.email3) vcfLines.push(`EMAIL:${contactData.email3}`);
-      if (contactData.website) vcfLines.push(`URL:${contactData.website}`);
-      if (contactData.website2) vcfLines.push(`URL:${contactData.website2}`);
-      if (contactData.website3) vcfLines.push(`URL:${contactData.website3}`);
-      if (contactData.address) vcfLines.push(`ADR;TYPE=WORK:;;${contactData.address}`);
-      if (contactData.address2) vcfLines.push(`ADR;TYPE=HOME:;;${contactData.address2}`);
-      if (contactData.about) vcfLines.push(`NOTE:${contactData.about}`);
+            if (contactData.title) vcfLines.push(`TITLE:${contactData.title}`);
+            if (contactData.phoneWork) vcfLines.push(`TEL;TYPE=WORK,VOICE:${contactData.phoneWork}`);
+            if (contactData.phoneMobile) vcfLines.push(`TEL;TYPE=CELL:${contactData.phoneMobile}`);
+            if (contactData.email) vcfLines.push(`EMAIL:${contactData.email}`);
+            if (contactData.email2) vcfLines.push(`EMAIL:${contactData.email2}`);
+            if (contactData.email3) vcfLines.push(`EMAIL:${contactData.email3}`);
+            if (contactData.website) vcfLines.push(`URL:${contactData.website}`);
+            if (contactData.website2) vcfLines.push(`URL:${contactData.website2}`);
+            if (contactData.website3) vcfLines.push(`URL:${contactData.website3}`);
+            if (contactData.address) vcfLines.push(`ADR;TYPE=WORK:;;${contactData.address}`);
+            if (contactData.address2) vcfLines.push(`ADR;TYPE=HOME:;;${contactData.address2}`);
+            if (contactData.about) vcfLines.push(`NOTE:${contactData.about}`);
 
-      // Embed profile image (base64 JPEG format)
-      if (photoBase64) {
-        vcfLines.push(`PHOTO;ENCODING=b;TYPE=JPEG:${photoBase64}`);
-      }
+            // Embed profile image (base64 JPEG format)
+            if (photoBase64) {
+                vcfLines.push(`PHOTO;ENCODING=b;TYPE=JPEG:${photoBase64}`);
+            }
 
-      vcfLines.push("END:VCARD");
+            vcfLines.push("END:VCARD");
 
-      const vcfContent = vcfLines.join('\n');
+            const vcfContent = vcfLines.join('\n');
 
-      // Trigger download
-      const blob = new Blob([vcfContent], {
-        type: 'text/vcard'
-      });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-      URL.revokeObjectURL(url);
-    }
+            // Trigger download
+            const blob = new Blob([vcfContent], {
+                type: 'text/vcard'
+            });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
 
     function toggleGallery() {
       const galleryContainer = document.getElementById('galleryContainer');
