@@ -377,6 +377,19 @@
                             PRODUCTS (PVT) LTD 70000 Embilipitiya Pallegama, Sri Lanka</span>
                     </button>
                 </div>
+                <!-- QR Code Modal -->
+                <div id="qrModal" class="modal"
+                    style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.7); z-index:1000; justify-content:center; align-items:center;">
+                    <div class="modal-content"
+                        style="background:white; padding:20px; border-radius:10px; max-width:300px; text-align:center; position:relative;">
+                        <span class="close" onclick="closeQRModal()"
+                            style="position:absolute; top:10px; right:15px; font-size:28px; font-weight:bold; cursor:pointer; color:#aaa;">&times;</span>
+                        <h3 style="margin-top:0; color:#333;">Scan WeChat QR Code</h3>
+                        <img src="gallery_img/client_gallerys/sapphire/wechat2.jpeg" alt="WeChat QR Code"
+                            style="max-width:100%; height:auto; margin:15px 0;">
+                        <p style="color:#666; font-size:14px;">Scan to connect on WeChat</p>
+                    </div>
+                </div>
                 <!-- gallery -->
                 <div class="gallery-section">
                     <div class="gallery-header" onclick="toggleGallery()">
