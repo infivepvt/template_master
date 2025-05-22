@@ -342,32 +342,6 @@
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
                             style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">neville@horizonagroproduct.com</span>
                     </button>
-                    <button type="button"
-                        class="list-group-item d-flex align-items-center justify-content-between contact"
-                        onclick="window.open('mailto:neville@horizonagroproduct.com', '_self')"
-                        style="background: transparent; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; padding: 12px 15px; transition: all 0.3s ease; width: 100%;">
-                        <img src="Images/icon/mail.png" alt="Email"
-                            style="width: 30px; height: 30px; margin-right: 15px; filter: brightness(0) invert(1);">
-                        <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px; text-align:left;">
-                            neville@horizonagroproduct.com
-                        </span>
-                        <i class="fas fa-chevron-right" style="color: white; margin-left: 10px;"></i>
-                    </button>
-
-                    <!-- WeChat Button (Same Design as Email) -->
-                    <button type="button"
-                        class="list-group-item d-flex align-items-center justify-content-between contact"
-                        onclick="openQRModal()"
-                        style="background: transparent; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; padding: 12px 15px; transition: all 0.3s ease; width: 100%;">
-                        <i class="fab fa-weixin"
-                            style="color: rgb(238, 185, 78); font-size: 30px; margin-right: 15px;"></i>
-                        <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px; text-align:left;">
-                            WeChat
-                        </span>
-                        <i class="fas fa-chevron-right" style="color: white; margin-left: 10px;"></i>
-                    </button>
 
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
@@ -378,12 +352,20 @@
                     </button>
 
                     <button type="button"
+                        class="list-group-item d-flex align-items-center justify-content-between contact wechat"
+                        onclick="openQRModal()">
+                        <i class="fab fa-weixin" style="font-size: 30px; color: #FFFFFF; margin-right: 25px;"></i>
+                        <span class="text-center flex-grow-1 text-truncate custom-phone"
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">WeChat</span>
+                    </button>
+
+                    <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
                         onclick="window.open('https://horizonagroproducts.com/', '_blank')">
                         <img src="Images/icon/internet.png" alt=""
                             style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #FFFFFF; 'Montserrat', sans-serif; font-size:16px; font-size:16px;">www.horizonagroproducts.com</span>
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">www.horizonagroproducts.com</span>
                     </button>
 
                     <button type="button"
