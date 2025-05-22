@@ -112,6 +112,123 @@
             /* background: linear-gradient(to right, #cb245c,#a939c3, #5c25f2); */
         }
 
+        /* gallery */
+
+        .gallery-section {
+            padding: 20px;
+            /* background-color: #000; */
+        }
+
+        .gallery-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .gallery-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .gallery-toggle {
+            font-size: 1.2rem;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            /* margin-top: 10px; */
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+            aspect-ratio: 1;
+            cursor: pointer;
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover .gallery-image {
+            transform: scale(1.05);
+        }
+
+        /* Lightbox styles */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        .lightbox-image {
+            max-width: 100%;
+            max-height: 80vh;
+            object-fit: contain;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        .lightbox-nav {
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .lightbox-nav button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        .gradient-button {
+            background-color: #3f51b5;
+            /* blue → purple → pink */
+            border: none;
+            color: white;
+            transition: 0.3s ease;
+        }
+
+        .gradient-button:hover {
+            filter: brightness(1.1);
+            cursor: pointer;
+        }
+
+        /* gallery */
+
         @keyframes zoom-in {
             from {
                 transform: translate(-50%, -65%) scale(0.8);
@@ -400,6 +517,51 @@
                         </div>
                     </div>
 
+                    <div class="card card1 rounded rounded-4 mt-3">
+                        <div class="card-body p-0">
+                            <!-- gallery -->
+
+                            <h1 class="text-center title" data-aos="fade-right" data-aos-duration="2000">Gallery</h1>
+
+                            <div class="gallery-section" style="margin-top: -10px;">
+                                <!-- <div class="gallery-header" onclick="toggleGallery()">
+                        <div class="gallery-title">Gallery</div>
+                        <div class="gallery-toggle" id="galleryToggle">
+                            <i class="fas fa-minus"></i>
+                        </div>
+                    </div> -->
+                                <div class="gallery-container" id="galleryContainer">
+                                    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/lucknow/lucknow-g1.jpeg')">
+                                        <img src="gallery_img/client_gallerys/lucknow/lucknow-g1.jpeg" alt="Gallery Image 1" class="gallery-image">
+                                    </div>
+                                    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/lucknow/lucknow-g2.jpeg')">
+                                        <img src="gallery_img/client_gallerys/lucknow/lucknow-g2.jpeg" alt="Gallery Image 2" class="gallery-image">
+                                    </div>
+                                    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/lucknow/lucknow-g3.jpeg')">
+                                        <img src="gallery_img/client_gallerys/lucknow/lucknow-g3.jpeg" alt="Gallery Image 3" class="gallery-image">
+                                    </div>
+                                    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/lucknow/lucknow-g4.jpeg')">
+                                        <img src="gallery_img/client_gallerys/lucknow/lucknow-g4.jpeg" alt="Gallery Image 4" class="gallery-image">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <!-- Lightbox HTML -->
+                    <div class="lightbox" id="lightbox">
+                        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+                        <div class="lightbox-nav">
+                            <button onclick="changeImage(-1)">&#10094;</button>
+                            <button onclick="changeImage(1)">&#10095;</button>
+                        </div>
+                        <div class="lightbox-content">
+                            <img id="lightbox-image" class="lightbox-image" src="" alt="">
+                        </div>
+                    </div>
+
                     <button class="btn w-100 custom-save-button mt-3 mb-5" onclick="generateVCF()"
                         style="font-family: 'Montserrat', sans-serif; font-size:19px; border: 2px solid orange;">
                         <img src="Images/Social_Media_Icon/save.png" alt=""
@@ -502,6 +664,80 @@
         document.body.removeChild(a);
         URL.revokeObjectURL(url);
     }
+
+    // Gallery images array
+    const galleryImages = [
+        'gallery_img/client_gallerys/lucknow/lucknow-g1.jpeg',
+        'gallery_img/client_gallerys/lucknow/lucknow-g2.jpeg',
+        'gallery_img/client_gallerys/lucknow/lucknow-g3.jpeg',
+        'gallery_img/client_gallerys/lucknow/lucknow-g4.jpeg',
+    ];
+
+    function toggleGallery() {
+        const galleryContainer = document.getElementById('galleryContainer');
+        const galleryToggle = document.getElementById('galleryToggle');
+
+        if (galleryContainer.style.display === 'none') {
+            galleryContainer.style.display = 'grid';
+            galleryToggle.innerHTML = '<i class="fas fa-minus"></i>';
+        } else {
+            galleryContainer.style.display = 'none';
+            galleryToggle.innerHTML = '<i class="fas fa-plus"></i>';
+        }
+    }
+
+    // Lightbox functions
+    function openLightbox(imageSrc) {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImage = document.getElementById('lightbox-image');
+
+        // Find the index of the clicked image
+        currentImageIndex = galleryImages.indexOf(imageSrc);
+
+        lightboxImage.src = imageSrc;
+        lightbox.style.display = 'flex';
+        document.body.style.overflow = 'hidden'; // Prevent scrolling
+    }
+
+    function closeLightbox() {
+        const lightbox = document.getElementById('lightbox');
+        lightbox.style.display = 'none';
+        document.body.style.overflow = 'auto'; // Re-enable scrolling
+    }
+
+    function changeImage(step) {
+        currentImageIndex += step;
+
+        // Wrap around if at beginning or end
+        if (currentImageIndex >= galleryImages.length) {
+            currentImageIndex = 0;
+        } else if (currentImageIndex < 0) {
+            currentImageIndex = galleryImages.length - 1;
+        }
+
+        document.getElementById('lightbox-image').src = galleryImages[currentImageIndex];
+    }
+
+    // Close lightbox when clicking outside the image
+    document.getElementById('lightbox').addEventListener('click', function(e) {
+        if (e.target === this) {
+            closeLightbox();
+        }
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', function(e) {
+        const lightbox = document.getElementById('lightbox');
+        if (lightbox.style.display === 'flex') {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            } else if (e.key === 'ArrowLeft') {
+                changeImage(-1);
+            } else if (e.key === 'ArrowRight') {
+                changeImage(1);
+            }
+        }
+    });
 </script>
 
 </html>
