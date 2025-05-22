@@ -385,7 +385,7 @@
                         <span class="close" onclick="closeQRModal()"
                             style="position:absolute; top:10px; right:15px; font-size:28px; font-weight:bold; cursor:pointer; color:#aaa;">&times;</span>
                         <h3 style="margin-top:0; color:#333;">Scan WeChat QR Code</h3>
-                        <img src="gallery_img/client_gallerys/sapphire/wechat2.jpeg" alt="WeChat QR Code"
+                        <img src="gallery_img/client_gallerys/horizon/hwechat2.jpeg" alt="WeChat QR Code"
                             style="max-width:100%; height:auto; margin:15px 0;">
                         <p style="color:#666; font-size:14px;">Scan to connect on WeChat</p>
                     </div>
