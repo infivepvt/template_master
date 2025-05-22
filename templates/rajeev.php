@@ -291,7 +291,7 @@
             profileImage: "https://tapilinq.com/logo_img/client_logo/rayatty-l.png",
             // Social Media Links
             facebook: "https://www.facebook.com/share/1AByRRYKiQ/?mibextid=wwXIfr",
-            facebook: "https://www.facebook.com/profile.php?id=61576584659017",
+            facebook2: "https://www.facebook.com/profile.php?id=61576584659017",
             twitter: "https://twitter.com/username",
             instagram: "https://instagram.com/username",
             whatsapp: "https://wa.me/1234567890"
