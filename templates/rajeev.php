@@ -212,6 +212,9 @@
         <span>Website</span>
       </div>
     </div>
+    <p class="small-text">
+      India
+    </p>
     <p class="section-title">Avenddra</p>
     <div class="row text-center contact-box mx-1">
       <div class="col-4" onclick="window.open('https://Wa.me/+918220383688', '_blank')">
