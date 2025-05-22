@@ -186,7 +186,7 @@
                     <div class="card card1 rounded rounded-4" style="margin-top: 130px;">
                         <div class="card-body">
                             <div class="contents">
-                                <h1 class="text-center title" data-aos="fade-right" data-aos-duration="2000">Ceylon Tours</h1>
+                                <h1 class="text-center title" data-aos="fade-right" data-aos-duration="2000">Luck now Ceylon tours</h1>
                                 <p class="text-center txt1" data-aos="fade-left" data-aos-duration="2000">Flying To The World Comfortability</p>
                                 <!-- <p class="text-center txt2" data-aos="fade-left" data-aos-duration="2000">Flying To The World Comfortability</p> -->
                             </div>
@@ -194,19 +194,19 @@
                             <div class="d-flex mt-4">
                                 <div onclick="window.open('https://wa.me/94701345346', '_blank')" class="col-4 d-flex flex-column align-items-center zoom-in-out-in">
                                     <div class="contact-box d-flex justify-content-center align-items-center">
-                                        <i class="fas fa-comment text-white fs-2"></i>
+                                        <i class="fas fa-comment text-white fs-2" style="transform: scaleX(-1);"></i>
                                     </div>
                                     <p class="text-center txt1">Text</p>
                                 </div>
 
                                 <div onclick="window.open('tel:0701345346', '_blank')" class="col-4 d-flex flex-column align-items-center zoom-in-out-in">
                                     <div class="contact-box d-flex justify-content-center align-items-center">
-                                        <i class="fas fa-phone-alt text-white fs-2"></i>
+                                        <i class="fas fa-phone-alt text-white fs-2" style="transform: scaleX(-1);"></i>
                                     </div>
                                     <p class="text-center txt1">Call</p>
                                 </div>
 
-                                <div onclick="window.open('mailto:dambadivavandana@gmail.com', '_blank')" class="col-4 d-flex flex-column align-items-center zoom-in-out-in">
+                                <div onclick="window.open('mailto:info@lucknowceylontours.com', '_blank')" class="col-4 d-flex flex-column align-items-center zoom-in-out-in">
                                     <div class="contact-box d-flex justify-content-center align-items-center">
                                         <i class="fas fa-envelope text-white fs-2"></i>
                                     </div>
@@ -260,6 +260,13 @@
                                     <p class="text-center txt3">facebook</p>
                                 </div>
 
+                                <div onclick="window.open('https://www.instagram.com/lucknow.ceylon_tours?igsh=YzljYTk1ODg3Zg==', '_blank')" class="col d-flex flex-column align-items-center">
+                                    <div class=" d-flex justify-content-center align-items-center">
+                                        <i class="fab fa-instagram" style="color: rgb(62, 170, 245); font-size: 40px;"></i>
+                                    </div>
+                                    <p class="text-center txt3">Instagram</p>
+                                </div>
+
                                 <div onclick="window.open('https://www.youtube.com/@Lucknowcelyontours', '_blank')" class="col d-flex flex-column align-items-center">
                                     <div class=" d-flex justify-content-center align-items-center">
                                         <i class="fab fa-youtube" style="color: rgb(62, 170, 245); font-size: 40px;"></i>
@@ -284,7 +291,7 @@
                         </div>
                     </div>
 
-                    <div class="card card1 rounded rounded-4 mt-3" onclick="window.open('https://dambadiwawandana.com/', '_blank')">
+                    <div class="card card1 rounded rounded-4 mt-3" onclick="window.open('https://www.lucknowceylontours.com', '_blank')">
                         <div class="card-body">
                             <div class="d-flex gap-2 align-items-center justify-content-center zoom-in-slow">
                                 <i class="fas fa-link text-black"></i>
@@ -319,10 +326,10 @@
             title: "Ceylon Tours",
             phoneWork: "+94770676330",
             phoneMobile: "+94701345346",
-            email: "dambadivavandana@gmail.com",
+            email: "info@lucknowceylontours.com",
             email2: "",
             email3: "",
-            website: "https://dambadiwawandana.com/",
+            website: "www.lucknowceylontours.com",
             website2: "",
             website3: "",
             address: "",
