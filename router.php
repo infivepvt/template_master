@@ -105,6 +105,7 @@ $routes = [
     'horizon' => 'templates/horizon.php',
     'lucknow' => 'templates/lucknow.php',
     'pamela' => 'templates/pamela.php',
+    'iconic' => 'templates/iconic.php',
 ];
 
 // Handle the request
