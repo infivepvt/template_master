@@ -342,30 +342,32 @@
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
                             style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">neville@horizonagroproduct.com</span>
                     </button>
-                    <!-- Contact Icon Container -->
-                    <div class="contact-icon-container">
-                        <!-- WeChat -->
-                        <button type="button" class="contact-icon-button" onclick="openQRModal()">
-                            <i class="fab fa-weixin contact-icon" style="color:rgb(238, 185, 78);"></i>
-                        </button>
-                        <p class="contact-icon-label">WeChat</p>
-                    </div>
+                    <button type="button"
+                        class="list-group-item d-flex align-items-center justify-content-between contact"
+                        onclick="window.open('mailto:neville@horizonagroproduct.com', '_self')"
+                        style="background: transparent; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; padding: 12px 15px; transition: all 0.3s ease; width: 100%;">
+                        <img src="Images/icon/mail.png" alt="Email"
+                            style="width: 30px; height: 30px; margin-right: 15px; filter: brightness(0) invert(1);">
+                        <span class="text-center flex-grow-1 text-truncate custom-phone"
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px; text-align:left;">
+                            neville@horizonagroproduct.com
+                        </span>
+                        <i class="fas fa-chevron-right" style="color: white; margin-left: 10px;"></i>
+                    </button>
 
-                    <!-- QR Code Modal -->
-                    <div id="qrModal" class="modal"
-                        style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.7); z-index:1000; justify-content:center; align-items:center;">
-                        <div class="modal-content"
-                            style="background:white; padding:20px; border-radius:10px; max-width:300px; text-align:center; position:relative;">
-                            <span class="close" onclick="closeQRModal()"
-                                style="position:absolute; top:10px; right:15px; font-size:28px; font-weight:bold; cursor:pointer; color:#aaa;">&times;</span>
-                            <h3 style="margin-top:0; color:#333;">Scan WeChat QR Code</h3>
-                            <img src="gallery_img/client_gallerys//horizon/hwechat.jpeg" alt="WeChat QR Code"
-                                style="max-width:100%; height:auto; margin:15px 0;">
-                            <p style="color:#666; font-size:14px;">Scan to connect on WeChat</p>
-                        </div>
-                    </div>
-
-
+                    <!-- WeChat Button (Same Design as Email) -->
+                    <button type="button"
+                        class="list-group-item d-flex align-items-center justify-content-between contact"
+                        onclick="openQRModal()"
+                        style="background: transparent; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; padding: 12px 15px; transition: all 0.3s ease; width: 100%;">
+                        <i class="fab fa-weixin"
+                            style="color: rgb(238, 185, 78); font-size: 30px; margin-right: 15px;"></i>
+                        <span class="text-center flex-grow-1 text-truncate custom-phone"
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px; text-align:left;">
+                            WeChat
+                        </span>
+                        <i class="fas fa-chevron-right" style="color: white; margin-left: 10px;"></i>
+                    </button>
 
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
