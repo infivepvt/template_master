@@ -526,7 +526,7 @@
             <div class="design-image-container">
                 <a href="https://tapilinq.com/template22">
                     <!-- template_pic -->
-                    <img src="Images/template_pic/template22.jpg" alt="Design 22" class="design-image" />
+                    <img src="Images/template_pic/template22.png" alt="Design 22" class="design-image" />
                 </a>
             </div>
             <div class="qr-container">
@@ -542,7 +542,7 @@
             <div class="design-image-container">
                 <a href="https://tapilinq.com/template23">
                     <!-- template_pic -->
-                    <img src="Images/template_pic/template23.jpg" alt="Design 23" class="design-image" />
+                    <img src="Images/template_pic/template23.png" alt="Design 23" class="design-image" />
                 </a>
             </div>
             <div class="qr-container">
@@ -558,7 +558,7 @@
             <div class="design-image-container">
                 <a href="https://tapilinq.com/template24">
                     <!-- template_pic -->
-                    <img src="Images/template_pic/template24.jpg" alt="Design 24" class="design-image" />
+                    <img src="Images/template_pic/template24.png" alt="Design 24" class="design-image" />
                 </a>
             </div>
             <div class="qr-container">
@@ -574,7 +574,7 @@
             <div class="design-image-container">
                 <a href="https://tapilinq.com/template25">
                     <!-- template_pic -->
-                    <img src="Images/template_pic/template25.jpg" alt="Design 25" class="design-image" />
+                    <img src="Images/template_pic/template25.png" alt="Design 25" class="design-image" />
                 </a>
             </div>
             <div class="qr-container">
@@ -590,7 +590,7 @@
             <div class="design-image-container">
                 <a href="https://tapilinq.com/template26">
                     <!-- template_pic -->
-                    <img src="Images/template_pic/template26.jpg" alt="Design 26" class="design-image" />
+                    <img src="Images/template_pic/template26.png" alt="Design 26" class="design-image" />
                 </a>
             </div>
             <div class="qr-container">
@@ -606,7 +606,7 @@
             <div class="design-image-container">
                 <a href="https://tapilinq.com/template27">
                     <!-- template_pic -->
-                    <img src="Images/template_pic/template27.jpg" alt="Design 27" class="design-image" />
+                    <img src="Images/template_pic/template27.png" alt="Design 27" class="design-image" />
                 </a>
             </div>
             <div class="qr-container">
