@@ -258,14 +258,14 @@
 
                             <div class="accordion mt-4" id="infoAccordion">
                                 <!-- Business Registration -->
-                                <div class="accordion-item">
+                                <div class="accordion-item bg-transparent border-0">
                                     <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <button class="accordion-button bg-transparent fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                             Business Registration
                                         </button>
                                     </h2>
                                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#infoAccordion">
-                                        <div class="accordion-body">
+                                        <div class="accordion-body bg-transparent">
                                             <p class="mb-1">28/12/2011 – W.D.12616 (Lucknow Tours)</p>
                                             <p class="mb-0">24/08/2024 – PV00308306 (Luck Now Ceylon Tours Pvt Ltd.)</p>
                                         </div>
@@ -273,14 +273,14 @@
                                 </div>
 
                                 <!-- Other Registration -->
-                                <div class="accordion-item">
+                                <div class="accordion-item bg-transparent border-0">
                                     <h2 class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <button class="accordion-button collapsed bg-transparent fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                             Other Registration
                                         </button>
                                     </h2>
                                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#infoAccordion">
-                                        <div class="accordion-body">
+                                        <div class="accordion-body bg-transparent">
                                             <p class="mb-1">Immigration Emigration – 0225</p>
                                             <p class="mb-0">Ministry of Buddhasasana – 194</p>
                                         </div>
@@ -288,14 +288,14 @@
                                 </div>
 
                                 <!-- Our Awards -->
-                                <div class="accordion-item">
+                                <div class="accordion-item bg-transparent border-0">
                                     <h2 class="accordion-header" id="headingThree">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <button class="accordion-button collapsed bg-transparent fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                             Our Awards
                                         </button>
                                     </h2>
                                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#infoAccordion">
-                                        <div class="accordion-body">
+                                        <div class="accordion-body bg-transparent">
                                             <strong>International</strong>
                                             <ul class="mb-2">
                                                 <li>Religious Tours DMC – South Asia 2024 (India)</li>
@@ -310,6 +310,7 @@
                                     </div>
                                 </div>
                             </div>
+
 
 
 
@@ -424,7 +425,7 @@
             firstName: "Luck",
             lastName: "Now",
             title: "Ceylon Tours",
-            phoneWork: "+94770676330",
+            phoneWork: "",
             phoneMobile: "+94701345346",
             email: "info@lucknowceylontours.com",
             email2: "",
