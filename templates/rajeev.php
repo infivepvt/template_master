@@ -218,7 +218,7 @@
         <i class="fab fa-whatsapp contact-icon"></i><br />
         <span>Whatsapp</span>
       </div>
-      <div class="col-4" onclick="window.open('mailto:Info@avenddra.com ', '_self')">
+      <div class="col-4" onclick="window.open('mailto:Info@avenddra.com', '_self')">
         <i class="fas fa-envelope contact-icon"></i><br />
         <span>E-mail</span>
       </div>
@@ -234,7 +234,7 @@
   <p class="section-title">Rayatty</p>
   <div class="d-flex flex-wrap justify-content-center social-icons">
 
-    <a href="https://www.facebook.com/profile.php?id=61576584659017" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.facebook.com/share/1AByRRYKiQ/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
       <img src="Images/Social_Media_Icon/facebook.png" alt="" style="width: 50px; height: 50px;">
     </a>
 
@@ -272,10 +272,10 @@
             firstName: "M. Rajeev",
             lastName: "",
             title: "Director",
-            phoneWork: "",
-            phoneMobile: "",
-            email: "",
-            email2: "",
+            phoneWork: "+918220383688",
+            phoneMobile: "+918220383688",
+            email: "Info@rayatty.com",
+            email2: "Info@avenddra.com",
             email3: "",
             website: "",
             website2: "",
