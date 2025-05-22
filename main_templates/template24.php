@@ -363,9 +363,9 @@
                         <div class="social-icon">
                             <img src="Images\Social_Media_Icon\facebook24.png" alt="Facebook">
                         </div>
-                        <!-- <div class="social-icon">
+                        <div class="social-icon">
                             <img src="Images\Social_Media_Icon\ig24.png" alt="Instagram">
-                        </div> -->
+                        </div>
                         <div class="social-icon">
                             <img src="Images\Social_Media_Icon\twitter24.png" alt="Twitter">
                         </div>
