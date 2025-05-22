@@ -356,7 +356,7 @@
                         onclick="openQRModal()">
                         <i class="fab fa-weixin" style="font-size: 30px; color: #FFFFFF; margin-right: 25px;"></i>
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">WeChat</span>
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">WeChat</span>
                     </button>
 
                     <button type="button"
