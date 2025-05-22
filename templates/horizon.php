@@ -302,7 +302,8 @@
             <br>
             <div class="card-body text-center"
                 style="background-color: #FFFFFF; color: #000000; text-decoration: none; ">
-                <h2 class="card-title" style="font-size: 27px; text-transform: uppercase;">HORIZON AGRO PRODUCTS HOLDINGS (PVT) LTD</h2>
+                <h2 class="card-title" style="font-size: 27px; text-transform: uppercase;">HORIZON AGRO PRODUCTS
+                    HOLDINGS (PVT) LTD</h2>
                 <p style="color: #000000; font-size: 21px; text-transform: uppercase;">NEVILLE KALUGAMPITIYA</p>
                 <p style="color: #000000; font-size: 15px; text-transform: uppercase; margin-top: 5px; font-weight:bo">
                     Managing Director</p>
@@ -341,6 +342,30 @@
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
                             style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">neville@horizonagroproduct.com</span>
                     </button>
+                    <!-- Contact Icon Container -->
+                    <div class="contact-icon-container">
+                        <!-- WeChat -->
+                        <button type="button" class="contact-icon-button" onclick="openQRModal()">
+                            <i class="fab fa-weixin contact-icon" style="color:rgb(238, 185, 78);"></i>
+                        </button>
+                        <p class="contact-icon-label">WeChat</p>
+                    </div>
+
+                    <!-- QR Code Modal -->
+                    <div id="qrModal" class="modal"
+                        style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.7); z-index:1000; justify-content:center; align-items:center;">
+                        <div class="modal-content"
+                            style="background:white; padding:20px; border-radius:10px; max-width:300px; text-align:center; position:relative;">
+                            <span class="close" onclick="closeQRModal()"
+                                style="position:absolute; top:10px; right:15px; font-size:28px; font-weight:bold; cursor:pointer; color:#aaa;">&times;</span>
+                            <h3 style="margin-top:0; color:#333;">Scan WeChat QR Code</h3>
+                            <img src="gallery_img/client_gallerys//horizon/hwechat.jpeg" alt="WeChat QR Code"
+                                style="max-width:100%; height:auto; margin:15px 0;">
+                            <p style="color:#666; font-size:14px;">Scan to connect on WeChat</p>
+                        </div>
+                    </div>
+
+
 
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
@@ -449,8 +474,14 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
     <script>
+        function openQRModal() {
+            document.getElementById("qrModal").style.display = "flex";
+        }
+
+        function closeQRModal() {
+            document.getElementById("qrModal").style.display = "none";
+        }
         async function generateVCF() {
             // Contact information matching the business card
             const contactData = {
