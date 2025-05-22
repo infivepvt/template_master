@@ -212,7 +212,7 @@
         <span>Website</span>
       </div>
     </div>
-    <p class="small-text">
+    <p class="small-text text-center">
       India
     </p>
     <p class="section-title">Avenddra</p>
