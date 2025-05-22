@@ -199,7 +199,7 @@
                                     <p class="text-center txt1">Text</p>
                                 </div>
 
-                                <div onclick="window.open('tel:0701345346', '_blank')" class="col-4 d-flex flex-column align-items-center zoom-in-out-in">
+                                <div onclick="window.open('tel:+94701345346', '_blank')" class="col-4 d-flex flex-column align-items-center zoom-in-out-in">
                                     <div class="contact-box d-flex justify-content-center align-items-center">
                                         <i class="fas fa-phone-alt text-white fs-2" style="transform: scaleX(-1);"></i>
                                     </div>
@@ -213,6 +213,105 @@
                                     <p class="text-center txt1">Email</p>
                                 </div>
                             </div>
+
+                            <!-- <div class="d-flex justify-content-center"> -->
+                            <!-- <div class="d-flex mt-2 px-4 zoom-in-out-in" style="width: 300px;"> -->
+                            <!-- <div onclick="window.open('https://www.facebook.com/dambadiwawandana', '_blank')" class="col d-flex flex-column align-items-center zoom-in-out-in">
+                                        <div class="contact-box2 d-flex justify-content-center align-items-center">
+                                            <i class="fab fa-facebook text-white fs-5"></i>
+                                        </div>
+                                    </div> -->
+
+                            <!-- <div class="col d-flex flex-column align-items-center">
+                                        <div class="contact-box2 d-flex justify-content-center align-items-center">
+                                            <i class="fab fa-twitter text-white fs-5"></i>
+                                        </div>
+                                    </div> -->
+
+                            <!-- <div onclick="window.open('https://www.youtube.com/@lucknowtours', '_blank')" class="col d-flex flex-column align-items-center">
+                                        <div class="contact-box2 d-flex justify-content-center align-items-center">
+                                            <i class="fab fa-youtube text-white fs-5"></i>
+                                        </div>
+                                    </div> -->
+
+                            <!-- <div class="col d-flex flex-column align-items-center">
+                                        <div class="contact-box2 d-flex justify-content-center align-items-center">
+                                            <i class="fab fa-instagram text-white fs-5"></i>
+                                        </div>
+                                    </div> -->
+
+                            <!-- <div onclick="window.open('https://maps.app.goo.gl/f67DcVLxYHbufzhZ9', '_blank')" class="col d-flex flex-column align-items-center">
+                                        <div class="contact-box2 d-flex justify-content-center align-items-center">
+                                            <i class="bi bi-geo-alt-fill text-white fs-5"></i>
+                                        </div>
+                                    </div> -->
+                            <!-- </div> -->
+                            <!-- </div> -->
+                        </div>
+                    </div>
+
+                    <div class="card card1 rounded rounded-4 mt-3" style="margin-top: 130px;">
+                        <div class="card-body p-0">
+                            <div class="contents">
+                                <h1 class="text-center title" data-aos="fade-right" data-aos-duration="2000">About</h1>
+                            </div>
+
+                            <div class="accordion mt-4" id="infoAccordion">
+                                <!-- Business Registration -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Business Registration
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#infoAccordion">
+                                        <div class="accordion-body">
+                                            <p class="mb-1">28/12/2011 – W.D.12616 (Lucknow Tours)</p>
+                                            <p class="mb-0">24/08/2024 – PV00308306 (Luck Now Ceylon Tours Pvt Ltd.)</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Other Registration -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Other Registration
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#infoAccordion">
+                                        <div class="accordion-body">
+                                            <p class="mb-1">Immigration Emigration – 0225</p>
+                                            <p class="mb-0">Ministry of Buddhasasana – 194</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Our Awards -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Our Awards
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#infoAccordion">
+                                        <div class="accordion-body">
+                                            <strong>International</strong>
+                                            <ul class="mb-2">
+                                                <li>Religious Tours DMC – South Asia 2024 (India)</li>
+                                                <li>Asia Super Tour Service Award 2023–2024 (India)</li>
+                                            </ul>
+                                            <strong>Local</strong>
+                                            <ul class="mb-0">
+                                                <li>Best Travel Company 2024 – Asian Miracle Awards (Colombo)</li>
+                                                <li>Most Outstanding Company 2024 – Pinnacle Awards (Colombo)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
 
                             <!-- <div class="d-flex justify-content-center"> -->
                             <!-- <div class="d-flex mt-2 px-4 zoom-in-out-in" style="width: 300px;"> -->
@@ -313,6 +412,7 @@
 
 </body>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
