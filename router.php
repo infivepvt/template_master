@@ -53,6 +53,11 @@ $routes = [
     'template20' => 'main_templates/template20.php',
     'template21' => 'main_templates/template21.php',
     'template22' => 'main_templates/template22.php',
+    'template23' => 'main_templates/template23.php',
+    'template24' => 'main_templates/template24.php',
+    'template25' => 'main_templates/template25.php',
+    'template26' => 'main_templates/template26.php',
+    'template27' => 'main_templates/template27.php',
     
     // Client templates
     'Test' => 'templates/Test.php',
