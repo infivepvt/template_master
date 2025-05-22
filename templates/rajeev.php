@@ -165,6 +165,7 @@
 
     .custom-save-button:hover {
       background: linear-gradient(90deg, rgb(63, 63, 63), rgb(56, 56, 56));
+      color: white;
     }
   </style>
 </head>
@@ -255,7 +256,7 @@
   </div>
 
   <br>
-  <button class="btn w-100 custom-save-button" onclick="generateVCF()"
+  <button class="btn w-100 custom-save-button text-white" onclick="generateVCF()"
     style="font-family: 'Montserrat', sans-serif; font-size:19px; border: 2px solid orange;">
     <img src="Images/Social_Media_Icon/save.png" alt="" style="width: 50px; height: 50px; margin-right:25px;">
     SAVE TO CONTACTS
@@ -275,7 +276,7 @@
             firstName: "M. Rajeev",
             lastName: "",
             title: "Director",
-            phoneWork: "+918220383688",
+            phoneWork: "",
             phoneMobile: "+918220383688",
             email: "Info@rayatty.com",
             email2: "Info@avenddra.com",
@@ -289,7 +290,7 @@
             logo: "https://tapilinq.com/logo_img/client_logo/rayatty-l.png",
             profileImage: "https://tapilinq.com/logo_img/client_logo/rayatty-l.png",
             // Social Media Links
-            facebook: "https://www.facebook.com/profile.php?id=61576584659017",
+            facebook: "https://www.facebook.com/share/1AByRRYKiQ/?mibextid=wwXIfr",
             facebook: "https://www.facebook.com/profile.php?id=61576584659017",
             twitter: "https://twitter.com/username",
             instagram: "https://instagram.com/username",
