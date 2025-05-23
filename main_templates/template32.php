@@ -292,8 +292,8 @@
                 </div><br>
 
                 <div>
-                    <img src="http://localhost/template_master/gallery_img/main_gallerys/t36g1.jpg" width="100%" height="100%">
-                    <img src="http://localhost/template_master/gallery_img/main_gallerys/t36g2.jpg" width="100%" height="100%">
+                    <img src="gallery_img/main_gallerys/t36g1.jpg" width="100%" height="100%">
+                    <img src="gallery_img/main_gallerys/t36g2.jpg" width="100%" height="100%">
                 </div>
 
                 <!-- <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:19px">CONNECT WITH SOCIAL MEDIA
