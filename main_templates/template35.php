@@ -190,7 +190,7 @@
                 <!-- <img src="http://localhost/template_master/logo_img/main_logo/Main_Design-l.png" alt="Company Logo" class="custom-logo" height="80px"
                     style="width: 245px; height: auto; opacity: 1;"> -->
                 <div class="profile-picture">
-                    <img src="profile_img/main_profile/template34-p.png" alt="Saliya Pathum" class="rounded-circle">
+                    <img src="profile_img/main_profile/template35-p.png" alt="Saliya Pathum" class="rounded-circle">
                 </div>
             </div>
             <br>
