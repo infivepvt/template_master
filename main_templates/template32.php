@@ -207,7 +207,7 @@
     <div class="d-flex justify-content-center mt-5">
         <div class="card custom-card shadow-lg" style="background-color: #FFFFFF;">
             <div class="card-header custom-header text-center"
-                style="background-image:  url('http://localhost/template_master/banner_img/main_banner/template35-b.jpg'); height: 200px; opacity: 1;">
+                style="background-image:  url('banner_img/main_banner/template35-b.jpg'); height: 200px; opacity: 1;">
                 <!-- <img src="logo_img/main_logo/template8-l.png" alt="Company Logo" class="custom-logo" height="90px"
                     style="width: 102px; opacity: 1; margin-top:20px;"> -->
                 <!-- <div class="profile-picture">
