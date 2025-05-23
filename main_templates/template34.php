@@ -497,7 +497,7 @@
                 <!-- <img src="logo_img/client_logo/Pamela-l.png" alt="Company Logo" class="custom-logo"
                     style="width: 150px; opacity: 1;"> -->
                 <div class="profile-picture">
-                    <img src="profile_img/client_profile/template34-p.png" alt="Saliya Pathum" class="rounded-circle">
+                    <img src="profile_img/main_profile/template34-p.png" alt="Saliya Pathum" class="rounded-circle">
                 </div>
             </div>
             <br>
