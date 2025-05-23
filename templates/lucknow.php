@@ -543,6 +543,12 @@
                                     <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/lucknow/lucknow-g4.jpeg')">
                                         <img src="gallery_img/client_gallerys/lucknow/lucknow-g4.jpeg" alt="Gallery Image 4" class="gallery-image">
                                     </div>
+                                    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/lucknow/lucknow-g5.jpeg')">
+                                        <img src="gallery_img/client_gallerys/lucknow/lucknow-g5.jpeg" alt="Gallery Image 3" class="gallery-image">
+                                    </div>
+                                    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/lucknow/lucknow-g6.jpeg')">
+                                        <img src="gallery_img/client_gallerys/lucknow/lucknow-g6.jpeg" alt="Gallery Image 4" class="gallery-image">
+                                    </div>
                                 </div>
                             </div>
 
@@ -671,6 +677,8 @@
         'gallery_img/client_gallerys/lucknow/lucknow-g2.jpeg',
         'gallery_img/client_gallerys/lucknow/lucknow-g3.jpeg',
         'gallery_img/client_gallerys/lucknow/lucknow-g4.jpeg',
+        'gallery_img/client_gallerys/lucknow/lucknow-g5.jpeg',
+        'gallery_img/client_gallerys/lucknow/lucknow-g6.jpeg',
     ];
 
     function toggleGallery() {
