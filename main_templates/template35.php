@@ -186,7 +186,7 @@
     <div class="d-flex justify-content-center mt-5">
         <div class="card custom-card shadow-lg" style="background-color: #FFFFFF;">
             <div class="card-header custom-header text-center"
-                style="background-image:  url('banner_img/main_banner/template35-b.jpg'); height: 200px; opacity: 1;border-bottom-width: 1px; border-bottom-right-radius: 10%; border-bottom-left-radius: 10%;">
+                style="background-image:  url('banner_img/main_banner/template35-b.png'); height: 200px; opacity: 1;border-bottom-width: 1px; border-bottom-right-radius: 10%; border-bottom-left-radius: 10%;">
                 <!-- <img src="http://localhost/template_master/logo_img/main_logo/Main_Design-l.png" alt="Company Logo" class="custom-logo" height="80px"
                     style="width: 245px; height: auto; opacity: 1;"> -->
                 <div class="profile-picture">
@@ -199,7 +199,6 @@
                 style="background-color: #FFFFFF; color: #000000; text-decoration: none; ">
                 <h2 class="card-title" style="font-size: 25px; text-transform: uppercase;">Aurora Charlotte</h2>
                 <p style="color: #000000; font-size: 16px; text-transform: uppercase;">realtor</p>
-
                 <div>
                     <p style="text-align: center; color: #000000;">About Me</p>
                     <p style="text-align: center;margin-top:-10px;color:rgba(53, 52, 52, 0.48)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
