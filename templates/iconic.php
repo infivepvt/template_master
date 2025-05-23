@@ -71,31 +71,30 @@
             padding: 10px;
         }
 
-        .profile-contact-icons21 button {
-            display: flex;
-            align-items: center;
-            color: #000;
-            background-color:rgb(255, 255, 255);
-            color: black;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            font-size: 0.8rem;
-            text-align: start;
-            cursor: pointer;
-        }
+       .profile-contact-icons21 button {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    color: #000;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    text-align: center; /* Ensure text is centered */
+    gap: 8px; /* Add consistent spacing between icon and text */
+}
 
-        .profile-contact-icons21 button:hover {
-            background-color: rgb(255, 255, 255);
-            /* slightly darker on hover */
-        }
+.profile-contact-icons21 button:hover {
+    background-color: rgb(240, 240, 240); /* Slightly darker on hover */
+}
 
-        .contact-icon {
-            min-width: 20px;
-            font-size: 1.5rem;
-            color: white;
-        }
-
+.contact-icon {
+    font-size: 1.5rem;
+    color: black; /* Match icon color with text */
+    margin-right: 0; /* Remove extra margin to avoid misalignment */
+}
         .about-section {
             padding: 20px;
             background-color: #1b1a1a;
@@ -170,8 +169,8 @@
         <!-- Contact Icons -->
         <div class="profile-contact-icons21">
             <button type="button" onclick="window.open('tel:0705622633', '_self')">
-                <i class="fas fa-phone me-2" style="transform: rotate(90deg); color: black;"></i>
-                <span>&nbsp;&nbsp;0705622633</span>
+                <i class="fas fa-phone me-2" style="color: black;"></i>
+                <span>Call</span>
             </button>
             <button type="button" onclick="window.open('mailto:contact@iconiceducation.lk', '_self')">
                 <i class="fas fa-envelope me-2" style="color: black;"></i>
@@ -183,11 +182,11 @@
             </button>
             <button type="button" onclick="window.open('http://www.iconiceducation.lk/', '_blank')">
                 <i class="fas fa-globe me-2" style="color: black;"></i>
-                <span>iconiceducation.lk</span>
+                <span>Website 1</span>
             </button>
             <button type="button" onclick="window.open('http://www.gurukulaya.com/', '_blank')">
                 <i class="fas fa-globe me-2" style="color: black;"></i>
-                <span>gurukulaya.com</span>
+                <span>Website 2</span>
             </button>
         </div>
 
