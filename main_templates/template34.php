@@ -556,7 +556,7 @@
                         onclick="window.open('https://www.facebook.com', '_blank')">
                         <i class="fab fa-facebook-f contact-icon me-3 mx-4" style="color:rgb(0, 0, 0);"></i>
                         <div>
-                            <p class="icon-text mb-0 text-truncate">Facebook</p>
+                            <p class="icon-text mb-0 text-start mt-3">Facebook</p>
                             <p style="font-size:16px;color:rgb(122, 122, 122); margin-left:15px;">Anton Garrick </p>
                         </div>
                     </button>
@@ -567,7 +567,7 @@
                         onclick="window.open('https://www.facebook.com', '_blank')">
                         <i class="fab fa-instagram contact-icon me-3 mx-4" style="color:rgb(0, 0, 0);"></i>
                         <div>
-                            <p class="icon-text mb-0 text-truncate">Instagram</p>
+                            <p class="icon-text mb-0 text-start mt-3">Instagram</p>
                             <p style="font-size:16px;color:rgb(122, 122, 122); margin-left:15px;">Anton Garrick </p>
                         </div>
                     </button>
@@ -590,7 +590,7 @@
                         onclick="window.open('https://www.facebook.com', '_blank')">
                         <i class="fab fa-tiktok contact-icon me-3 mx-4" style="color:black"></i>
                         <div>
-                            <p class="icon-text mb-0 text-truncate">Tiktok</p>
+                            <p class="icon-text mb-0 text-start mt-3">Tiktok</p>
                             <p style="font-size:16px;color:rgb(122, 122, 122); margin-left:15px;">Anton Garrick </p>
                         </div>
                     </button>
