@@ -202,9 +202,6 @@
                     <i class="fab fa-instagram" style="color:rgb(255, 255, 255); font-size: 2rem; margin-right:15px"></i>
                 </a>
                 <a href="#" target="_blank" rel="noopener noreferrer" class="m-1">
-                    <i class="fab fa-twitter" style="color:rgb(255, 255, 255); font-size: 2rem; margin-right:15px"></i>
-                </a>
-                <a href="#" target="_blank" rel="noopener noreferrer" class="m-1">
                     <i class="fab fa-tiktok" style="color:rgb(255, 255, 255); font-size: 2rem; margin-right:15px"></i>
                 </a>
             </div>
