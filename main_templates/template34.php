@@ -32,7 +32,7 @@
             top: 0;
             left: 0;
             margin-bottom: 60px;
-            padding-bottom:5px;
+            padding-bottom: 5px;
         }
 
         .profile-picture {
@@ -114,7 +114,8 @@
 
         .custom-save-button73 {
             /* background: linear-gradient(90deg, #5f4def, #00d0ea); */
-            background-color:rgb(0, 0, 0);;
+            background-color: rgb(0, 0, 0);
+            ;
             color: white;
             font-weight: bold;
             border: none;
@@ -129,7 +130,8 @@
 
         .custom-save-button73:hover {
             /* background: linear-gradient(90deg, #4b3ec4, #00b3c3); */
-            background-color:rgb(0, 0, 0);;
+            background-color: rgb(0, 0, 0);
+            ;
         }
 
         .save-icon {
@@ -454,7 +456,7 @@
 
         .contact-icon {
             font-size: 24px;
-            color:rgb(255, 255, 255);
+            color: rgb(255, 255, 255);
             transition: color 0.3s ease;
         }
 
@@ -463,27 +465,27 @@
         }
 
         .icon-text {
-            color:rgb(0, 0, 0);;
+            color: rgb(0, 0, 0);
+            ;
             font-family: 'Montserrat', sans-serif;
             font-size: 16px;
             margin-left: 15px;
             font-weight: bold;
         }
 
-         @media (max-width: 768px) {
-        .profile-contact-icons {
-            grid-template-columns: repeat(2, 1fr);
-        /* 2 columns on mobile */
-      }
-    }
+        @media (max-width: 768px) {
+            .profile-contact-icons {
+                grid-template-columns: repeat(2, 1fr);
+                /* 2 columns on mobile */
+            }
+        }
 
-    @media (max-width: 480px) {
-      .profile-contact-icons {
-        grid-template-columns: 1fr;
-        /* 1 column on very small screens */
-      }
-    }
-    
+        @media (max-width: 480px) {
+            .profile-contact-icons {
+                grid-template-columns: 1fr;
+                /* 1 column on very small screens */
+            }
+        }
     </style>
 </head>
 
@@ -492,7 +494,7 @@
         <div class="card custom-card73 shadow-lg" style="background-color:rgb(255, 255, 255);">
             <div class="card-header custom-header73 text-center"
                 style="background-image: url('#'); height: 100%; opacity: 1; border-bottom-width: 1px; border-bottom-right-radius: 90%; border-bottom-left-radius: 0%;background-color:rgb(0, 0, 0);">
-                <h2 class="card-title" style="font-size: 30px;color:rgb(255, 255, 255); ">Anton Garrick	</h2>
+                <h2 class="card-title" style="font-size: 30px;color:rgb(255, 255, 255); ">Anton Garrick </h2>
                 <p style="color:rgb(255, 255, 255); font-size: 20px; margin-bottom:25%">Founder</p>
                 <!-- <img src="logo_img/client_logo/Pamela-l.png" alt="Company Logo" class="custom-logo"
                     style="width: 150px; opacity: 1;"> -->
@@ -513,80 +515,83 @@
                 <div class="row">
                     <div class="contact-item col ">
                         <div class="border border-0  rounded rounded-2 p-2" style="background-color:rgb(0, 0, 0);">
-                            <a href="tel:12304560789" class="icon d-flex flex-column align-items-center justify-content-center"
+                            <a href="tel:12304560789"
+                                class="icon d-flex flex-column align-items-center justify-content-center"
                                 style="text-decoration: none;">
                                 <i class="fas fa-phone contact-icon contact " style="background-color: unset;"></i>
-                                <span class="icon-text mt-1 text-white "style="margin-left: -2px; font-size:15px">Phone</span>
+                                <span class="icon-text mt-1 text-white "
+                                    style="margin-left: -2px; font-size:15px">Phone</span>
                             </a>
                         </div>
                     </div>
-                     <div class="contact-item col ">
+                    <div class="contact-item col ">
                         <div class="border border-0 rounded rounded-2 p-2" style="background-color:rgb(0, 0, 0);">
-                            <a href="mailto:mail@gmail.com" class="icon d-flex flex-column align-items-center justify-content-center"
+                            <a href="mailto:mail@gmail.com"
+                                class="icon d-flex flex-column align-items-center justify-content-center"
                                 style="text-decoration: none;">
                                 <i class="fas fa-envelope contact-icon contact " style="background-color: unset;"></i>
-                                <span class="icon-text mt-1 text-white txt-center" style="margin-left: -2px;">E-mail</span>
+                                <span class="icon-text mt-1 text-white txt-center"
+                                    style="margin-left: -2px;">E-mail</span>
                             </a>
                         </div>
                     </div>
                     <div class="contact-item col ">
                         <div class="border border-0  rounded rounded-2 p-2" style="background-color:rgb(0, 0, 0);">
-                            <a href="website.com" class="icon d-flex flex-column align-items-center justify-content-center"
+                            <a href="website.com"
+                                class="icon d-flex flex-column align-items-center justify-content-center"
                                 style="text-decoration: none;">
                                 <i class="fas fa-globe contact-icon contact " style="background-color: unset;"></i>
-                                <span class="icon-text mt-1 text-white txt-center" style="margin-left: -2px;">Website</span>
+                                <span class="icon-text mt-1 text-white txt-center"
+                                    style="margin-left: -2px;">Website</span>
                             </a>
                         </div>
                     </div>
                 </div><br>
-                
-               <div class="list-group mb-3">
+
+                <div class="list-group mb-3">
 
                     <!-- Phone -->
-                    <button type="button"
-                        style="padding:10px; border: 1px solid #000;"
-                        class="list-group-item d-flex align-items-center justify-content-start contact" 
+                    <button type="button" style="padding:10px; border: 1px solid #000;"
+                        class="list-group-item d-flex align-items-center justify-content-start contact"
                         onclick="window.open('https://www.facebook.com', '_blank')">
                         <i class="fab fa-facebook-f contact-icon me-3 mx-4" style="color:rgb(0, 0, 0);"></i>
                         <div>
                             <p class="icon-text mb-0 text-truncate">Facebook</p>
-                            <p style="font-size:16px;color:rgb(122, 122, 122)">Anton Garrick	</p>
+                            <p style="font-size:16px;color:rgb(122, 122, 122); margin-left:15px;">Anton Garrick </p>
                         </div>
                     </button>
 
                     <!-- Email -->
-                    <button type="button"
-                        style="padding:10px; border: 1px solid #000;"
-                        class="list-group-item d-flex align-items-center justify-content-start contact" 
+                    <button type="button" style="padding:10px; border: 1px solid #000;"
+                        class="list-group-item d-flex align-items-center justify-content-start contact"
                         onclick="window.open('https://www.facebook.com', '_blank')">
                         <i class="fab fa-instagram contact-icon me-3 mx-4" style="color:rgb(0, 0, 0);"></i>
                         <div>
                             <p class="icon-text mb-0 text-truncate">Instagram</p>
-                            <p style="font-size:16px;color:rgb(122, 122, 122)">Anton Garrick	</p>
+                            <p style="font-size:16px;color:rgb(122, 122, 122); margin-left:15px;">Anton Garrick </p>
                         </div>
                     </button>
 
                     <!-- Website -->
-                    <button type="button"
-                        style="padding:10px; border: 1px solid rgb(0, 0, 0);;"
-                        class="list-group-item d-flex align-items-center justify-content-start contact" 
+                    <button type="button" style="padding:10px; border: 1px solid rgb(0, 0, 0);;"
+                        class="list-group-item d-flex align-items-center justify-content-start contact"
                         onclick="window.open('https://www.linkedin.com/', '_blank')">
                         <i class="fab fa-linkedin-in contact-icon me-3 mx-4 " style="color:rgb(0, 0, 0);"></i>
                         <div class="d-flex flex-column align-items-start ">
-                            <p class="icon-text mb-0 text-start mt-3" >Linkedin</p>
-                            <p style="font-size:16px;color:rgb(122, 122, 122); margin-left:15px" class="text-start ">Anton Garrick	</p>
+                            <p class="icon-text mb-0 text-start mt-3">Linkedin</p>
+                            <p style="font-size:16px;color:rgb(122, 122, 122); margin-left:15px" class="text-start ">
+                                Anton Garrick </p>
                         </div>
                     </button>
 
                     <!-- Address -->
-                     <button type="button"
-                        style="padding:10px; border: 1px solid #000;"
-                        class="list-group-item d-flex align-items-center justify-content-start contact" 
+                    <button type="button" style="padding:10px; border: 1px solid #000;"
+                        class="list-group-item d-flex align-items-center justify-content-start contact"
                         onclick="window.open('https://www.facebook.com', '_blank')">
                         <i class="fab fa-tiktok contact-icon me-3 mx-4" style="color:black"></i>
                         <div>
                             <p class="icon-text mb-0 text-truncate">Tiktok</p>
-                            <p style="font-size:16px;color:rgb(122, 122, 122)">Anton Garrick	</p>
+                            <p style="font-size:16px;color:rgb(122, 122, 122); margin-left:15px;">Anton Garrick </p>
                         </div>
                     </button>
 
