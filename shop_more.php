@@ -647,6 +647,21 @@
                 <div class="scan-text">Scan with your mobile</div>
             </div>
         </div>  
+        <!-- Design 30 -->
+        <div class="design-card">
+            <div class="design-title">Design 30</div>
+            <div class="design-image-container">
+                <a href="https://tapilinq.com/template30">
+                    <!-- template_pic -->
+                    <img src="Images/template_pic/template30.png" alt="Design 30" class="design-image" />
+                </a>
+            </div>
+            <div class="qr-container">
+                <!-- template_qr -->
+                <img src="Images/template_qr/tq30.png" alt="QR Code" class="qr-image" />
+                <div class="scan-text">Scan with your mobile</div>
+            </div>
+        </div>  
 
           
     </div>

@@ -60,6 +60,7 @@ $routes = [
     'template27' => 'main_templates/template27.php',
     'template28' => 'main_templates/template28.php',
     'template29' => 'main_templates/template29.php',
+    'template30' => 'main_templates/template30.php',
     
     // Client templates
     'Test' => 'templates/Test.php',
