@@ -61,7 +61,7 @@
 
         .list-group-item {
             background-color: #000;
-            color:  #fff;
+            color: #fff;
             border-radius: 8px;
             margin-bottom: 10px;
             border: 2px solid #C5B358;
@@ -152,7 +152,7 @@
 
         /* contact details */
         .contact {
-            background-color:rgb(0, 0, 0);
+            background-color: rgb(0, 0, 0);
         }
     </style>
 
@@ -189,32 +189,35 @@
                 <div class="list-group mb-3">
                     <div>
                         <button type="button"
-                        class="list-group-item d-flex align-items-center justify-content-between contact w-100 rounded rounded-2"
-                        onclick="window.open('tel:+94777362060', '_self')" >
-                        <img src="Images/icon/phone.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
-                        <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #C5B358; font-family: 'Montserrat', sans-serif;">+94777362060</span>
-                    </button>
+                            class="list-group-item d-flex align-items-center justify-content-between contact w-100 rounded rounded-2"
+                            onclick="window.open('tel:+94777362060', '_self')">
+                            <img src="Images/icon/phone.png" alt=""
+                                style="width: 30px; height: 30px; margin-right:25px;">
+                            <span class="text-center flex-grow-1 text-truncate custom-phone"
+                                style="color: #C5B358; font-family: 'Montserrat', sans-serif;">+94777362060</span>
+                        </button>
                     </div>
 
                     <div>
                         <button type="button"
-                        class="list-group-item d-flex align-items-center justify-content-between contact w-100 rounded rounded-2"
-                        onclick="window.open('mailto:admin@dshermanedu.onmicrosoft.com', '_self')">
-                        <img src="Images/icon/mail.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
-                        <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #C5B358; font-family: 'Montserrat', sans-serif; font-size:16px;">admin@dshermanedu.onmicrosoft.com</span>
-                    </button>
+                            class="list-group-item d-flex align-items-center justify-content-between contact w-100 rounded rounded-2"
+                            onclick="window.open('mailto:admin@dshermanedu.onmicrosoft.com', '_self')">
+                            <img src="Images/icon/mail.png" alt=""
+                                style="width: 30px; height: 30px; margin-right:25px;">
+                            <span class="text-center flex-grow-1 text-truncate custom-phone"
+                                style="color: #C5B358; font-family: 'Montserrat', sans-serif; font-size:16px;">admin@dshermanedu.onmicrosoft.com</span>
+                        </button>
                     </div>
 
                     <div>
                         <button type="button"
-                        class="list-group-item d-flex align-items-center justify-content-between contact w-100 rounded rounded-2"
-                        onclick="window.open('http://donshermaninstitute.edu/', '_blank')">
-                        <img src="Images/icon/internet.png" alt=""style="width: 30px; height: 30px; margin-right:25px;">
-                        <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #C5B358; font-family:'Montserrat', sans-serif; font-size:16px; font-size:16px;">www.donshermaninstitute.edu</span>
-                    </button>
+                            class="list-group-item d-flex align-items-center justify-content-between contact w-100 rounded rounded-2"
+                            onclick="window.open('http://donshermaninstitute.edu/', '_blank')">
+                            <img src="Images/icon/internet.png" alt=""
+                                style="width: 30px; height: 30px; margin-right:25px;">
+                            <span class="text-center flex-grow-1 text-truncate custom-phone"
+                                style="color: #C5B358; font-family:'Montserrat', sans-serif; font-size:16px; font-size:16px;">www.donshermaninstitute.edu</span>
+                        </button>
                     </div>
 
                     <!-- <button type="button"
@@ -230,13 +233,16 @@
                 <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:19px">CONNECT WITH SOCIAL MEDIA
                 </p>
                 <div class="d-flex flex-wrap justify-content-center">
-                    <a href="http://instagram.com/@DonShermanInstitute" target="_blank" rel="noopener noreferrer" class="m-3">
+                    <a href="http://instagram.com/@DonShermanInstitute" target="_blank" rel="noopener noreferrer"
+                        class="m-3">
                         <img src="Images/Social_Media_Icon/instagram.png" alt="" style="width: 50px; height: 50px;">
                     </a>
-                    <a href="https://facebook.com/@DonShermanInstitute" target="_blank" rel="noopener noreferrer" class="m-3">
+                    <a href="https://facebook.com/@DonShermanInstitute" target="_blank" rel="noopener noreferrer"
+                        class="m-3">
                         <img src="Images/Social_Media_Icon/facebook.png" alt="" style="width: 50px; height: 50px;">
                     </a>
-                    <a href="http://tiktok.com/@DonShermanInstitute" target="_blank" rel="noopener noreferrer" class="m-3">
+                    <a href="http://tiktok.com/@DonShermanInstitute" target="_blank" rel="noopener noreferrer"
+                        class="m-3">
                         <img src="Images/Social_Media_Icon/tiktok.png" alt="" style="width: 50px; height: 50px;">
                     </a>
                 </div>
@@ -269,9 +275,8 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
     <script>
-        function generateVCF() {
+        async function generateVCF() {
             // Updated contact information to match the business card
             const contactData = {
                 firstName: "Don Sherman",
@@ -288,11 +293,32 @@
                 address: "",
                 address2: "",
                 about: "",
-                logo: "profile_img/client_profile/Don Sherman-p.png",
                 profileImage: "profile_img/client_profile/Don Sherman-p.png"
             };
 
-            // Create VCF content
+            // Function to convert image to base64
+            async function imageToBase64(url) {
+                try {
+                    const response = await fetch(url);
+                    const blob = await response.blob();
+                    return new Promise((resolve) => {
+                        const reader = new FileReader();
+                        reader.onloadend = () => {
+                            const base64data = reader.result.split(',')[1];
+                            resolve(base64data);
+                        };
+                        reader.readAsDataURL(blob);
+                    });
+                } catch (error) {
+                    console.error("Error loading image:", error);
+                    return "";
+                }
+            }
+
+            // Get base64 of profile image
+            const base64Image = await imageToBase64(contactData.profileImage);
+
+            // Create VCF content with photo
             let vcfContent = `BEGIN:VCARD
 VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
@@ -308,9 +334,15 @@ URL:${contactData.website2}
 URL:${contactData.website3}
 ADR;TYPE=WORK:;;${contactData.address}
 ADR;TYPE=HOME:;;${contactData.address2}
-NOTE:${contactData.about}
-PHOTO;VALUE=URL:${contactData.profileImage}
-LOGO;VALUE=URL:${contactData.logo}
+NOTE:${contactData.about}`;
+
+            // Add photo if available
+            if (base64Image) {
+                vcfContent += `
+PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}`;
+            }
+
+            vcfContent += `
 END:VCARD`;
 
             // Create download link
@@ -328,6 +360,7 @@ END:VCARD`;
             URL.revokeObjectURL(url);
         }
     </script>
+
 </body>
 
 </html>
