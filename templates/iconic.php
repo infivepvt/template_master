@@ -201,7 +201,7 @@
                  <a href="https://www.instagram.com/kamanidharmawickrama?igsh=bXE5Y2E0Mm52OGEz" target="_blank" rel="noopener noreferrer" class="m-1">
                     <i class="fab fa-instagram" style="color:rgb(255, 255, 255); font-size: 2rem; margin-right:15px"></i>
                 </a>
-                <a href="#" target="_blank" rel="noopener noreferrer" class="m-1">
+                <a href="https://www.tiktok.com/@iconic.education?_t=ZS-8waqZO7sUbJ&_r=1" target="_blank" rel="noopener noreferrer" class="m-1">
                     <i class="fab fa-tiktok" style="color:rgb(255, 255, 255); font-size: 2rem; margin-right:15px"></i>
                 </a>
             </div>
