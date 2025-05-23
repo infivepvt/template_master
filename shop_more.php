@@ -708,6 +708,37 @@
             </div>
         </div>  
 
+        <!-- Design 34 -->
+        <div class="design-card">
+            <div class="design-title">Design 34</div>
+            <div class="design-image-container">
+                <a href="https://tapilinq.com/template34">
+                    <!-- template_pic -->
+                    <img src="Images/template_pic/template34.png" alt="Design 34" class="design-image" />
+                </a>
+            </div>
+            <div class="qr-container">
+                <!-- template_qr -->
+                <img src="Images/template_qr/tq34.png" alt="QR Code" class="qr-image" />
+                <div class="scan-text">Scan with your mobile</div>
+            </div>
+        </div>  
+
+         <!-- Design 35 -->
+        <div class="design-card">
+            <div class="design-title">Design 35</div>
+            <div class="design-image-container">
+                <a href="https://tapilinq.com/template35">
+                    <!-- template_pic -->
+                    <img src="Images/template_pic/template35.png" alt="Design 35" class="design-image" />
+                </a>
+            </div>
+            <div class="qr-container">
+                <!-- template_qr -->
+                <img src="Images/template_qr/tq35.png" alt="QR Code" class="qr-image" />
+                <div class="scan-text">Scan with your mobile</div>
+            </div>
+        </div>  
           
     </div>
 
