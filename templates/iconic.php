@@ -148,7 +148,6 @@
             padding: 15px;
             text-align: center;
         }
-       
     </style>
 </head>
 
@@ -166,31 +165,34 @@
             <button class="custom-save-button14" id="saveToContacts"><i class="fas fa-save me-2"></i>SAVE TO
                 CONTACTS</button>
         </div>
-
-        <!-- Contact Icons -->
-        <div class="profile-contact-icons21">
-            <button style="color: white;" type="button" onclick="window.open('tel:0705622633', '_self')">
-                <i class="fas fa-phone me-2" style="transform: rotate(90deg); color: black;"></i>
+        <!-- Contact Icons - Centered Content -->
+        <div class="profile-contact-icons21" style="display: flex; flex-direction: column; gap: 10px;">
+            <button type="button" onclick="window.open('tel:0705622633', '_self')"
+                style="color: white; background: transparent; border: none; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 8px;">
+                <i class="fas fa-phone" style="transform: rotate(90deg); color: black;"></i>
                 <span style="color: black;">0705622633</span>
             </button>
-            <button style="color: white;" type="button" onclick="window.open('mailto:contact@iconiceducation.lk', '_self')">
-                <i class="fas fa-envelope me-2" style="color: black;"></i>
-                <span style="color: black;">E-mail </span>
+            <button type="button" onclick="window.open('mailto:contact@iconiceducation.lk', '_self')"
+                style="color: white; background: transparent; border: none; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 8px;">
+                <i class="fas fa-envelope" style="color: black;"></i>
+                <span style="color: black;">E-mail</span>
             </button>
-            <button style="color: white;" type="button" onclick="window.open('https://wa.me/94705622633', '_blank')">
+            <button type="button" onclick="window.open('https://wa.me/94705622633', '_blank')"
+                style="color: white; background: transparent; border: none; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 8px;">
                 <i class="fab fa-whatsapp" style="color: black;"></i>
-                <span style="color: black;">&nbsp;&nbsp;whatsapp</span>
+                <span style="color: black;">WhatsApp</span>
             </button>
-            <button style="color: white;" type="button" onclick="window.open('http://www.iconiceducation.lk/', '_blank')">
-                <i class="fas fa-globe me-2" style="color: black;"></i>
+            <button type="button" onclick="window.open('http://www.iconiceducation.lk/', '_blank')"
+                style="color: white; background: transparent; border: none; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 8px;">
+                <i class="fas fa-globe" style="color: black;"></i>
                 <span style="color: black;">iconiceducation.lk</span>
             </button>
-            <button style="color: white;" type="button" onclick="window.open('http://www.gurukulaya.com/', '_blank')">
-                <i class="fas fa-globe me-2" style="color: black;"></i>
+            <button type="button" onclick="window.open('http://www.gurukulaya.com/', '_blank')"
+                style="color: white; background: transparent; border: none; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 8px;">
+                <i class="fas fa-globe" style="color: black;"></i>
                 <span style="color: black;">gurukulaya.com</span>
             </button>
         </div>
-
 
         <!-- Social Media -->
         <div class="social-media-section">
@@ -199,10 +201,13 @@
                     class="m-1">
                     <i class="fab fa-facebook" style="color:rgb(255, 255, 255); font-size: 2rem; margin-right:15px"></i>
                 </a>
-                 <a href="https://www.instagram.com/kamanidharmawickrama?igsh=bXE5Y2E0Mm52OGEz" target="_blank" rel="noopener noreferrer" class="m-1">
-                    <i class="fab fa-instagram" style="color:rgb(255, 255, 255); font-size: 2rem; margin-right:15px"></i>
+                <a href="https://www.instagram.com/kamanidharmawickrama?igsh=bXE5Y2E0Mm52OGEz" target="_blank"
+                    rel="noopener noreferrer" class="m-1">
+                    <i class="fab fa-instagram"
+                        style="color:rgb(255, 255, 255); font-size: 2rem; margin-right:15px"></i>
                 </a>
-                <a href="https://www.tiktok.com/@iconic.education?_t=ZS-8waqZO7sUbJ&_r=1" target="_blank" rel="noopener noreferrer" class="m-1">
+                <a href="https://www.tiktok.com/@iconic.education?_t=ZS-8waqZO7sUbJ&_r=1" target="_blank"
+                    rel="noopener noreferrer" class="m-1">
                     <i class="fab fa-tiktok" style="color:rgb(255, 255, 255); font-size: 2rem; margin-right:15px"></i>
                 </a>
             </div>
@@ -214,7 +219,7 @@
                 <p style="color:white;">contact@iconiceducation.lk<br>www.iconiceducation.lk<br>+94 702622633</p>
             </div>
         </div>
-         <!-- Gallery -->
+        <!-- Gallery -->
         <div class="gallery-preview">
             <div class="gallery-item">
                 <img src="logo_img/client_logo/iconic-l.jpeg" alt="Gallery Image" class="gallery-image" />
