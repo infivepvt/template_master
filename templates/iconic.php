@@ -168,15 +168,15 @@
 
         <!-- Contact Icons -->
         <div class="profile-contact-icons21">
-            <!-- <button type="button" onclick="window.open('tel:+1234567890', '_self')">
+            <button type="button" onclick="window.open('tel:0705622633', '_self')">
                 <i class="fas fa-phone me-2" style="transform: rotate(90deg);"></i>
-                <span>+1234567890</span>
-            </button> -->
+                <span>0705622633</span>
+            </button>
             <button type="button" onclick="window.open('mailto:contact@iconiceducation.lk', '_self')">
                 <i class="fas fa-envelope me-2"></i>
                 <span>E-mail </span>
             </button>
-            <button type="button" onclick="window.open('https://wa.me/94702622633', '_blank')">
+            <button type="button" onclick="window.open('https://wa.me/94705622633', '_blank')">
                 <i class="fab fa-whatsapp"></i>
                 <span>&nbsp;&nbsp;whatsapp</span>
             </button>
@@ -197,6 +197,15 @@
                 <a href="https://www.facebook.com/share/1G6GWinbm7/" target="_blank" rel="noopener noreferrer"
                     class="m-1">
                     <i class="fab fa-facebook" style="color:rgb(255, 255, 255); font-size: 2rem; margin-right:15px"></i>
+                </a>
+                 <a href="https://www.instagram.com/kamanidharmawickrama?igsh=bXE5Y2E0Mm52OGEz" target="_blank" rel="noopener noreferrer" class="m-1">
+                    <i class="fab fa-instagram" style="color:rgb(255, 255, 255); font-size: 2rem; margin-right:15px"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="m-1">
+                    <i class="fab fa-twitter" style="color:rgb(255, 255, 255); font-size: 2rem; margin-right:15px"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="m-1">
+                    <i class="fab fa-tiktok" style="color:rgb(255, 255, 255); font-size: 2rem; margin-right:15px"></i>
                 </a>
             </div>
         </div>
@@ -254,7 +263,7 @@
 VERSION:3.0
 FN:KAMANI DHARMAWICKRAMA
 TITLE:FOUNDER/DIRECTOR
-TEL;TYPE=WORK,VOICE:+94702622633
+TEL;TYPE=WORK,VOICE:+94705622633
 EMAIL:contact@iconiceducation.lk
 URL:http://www.iconiceducation.lk
 URL:http://www.gurukulaya.com
@@ -287,7 +296,7 @@ END:VCARD`;
 VERSION:3.0
 FN:KAMANI DHARMAWICKRAMA
 TITLE:FOUNDER/DIRECTOR
-TEL;TYPE=WORK,VOICE:+94702622633
+TEL;TYPE=WORK,VOICE:+94705622633
 EMAIL:contact@iconiceducation.lk
 URL:http://www.iconiceducation.lk
 URL:http://www.gurukulaya.com
