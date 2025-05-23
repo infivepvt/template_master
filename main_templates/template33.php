@@ -154,7 +154,7 @@
         <div class="profile-header14">
             <!-- <img src="logo_img/main_logo/template13-l.png" alt="Company Logo" class="custom-logo" /> -->
             <div class="profile-header14 mt-3">
-                <img src="http://localhost/template_master/profile_img/main_profile/template33-p.png" alt="Profile Image" class="rounded-circle" />
+                <img src="profile_img/main_profile/template33-p.png" alt="Profile Image" class="rounded-circle" />
             </div>
             <h2 class="profile-name">Nora Charlotte</h2>
             <p class="job-title">CEO/FOUNDER</p>
