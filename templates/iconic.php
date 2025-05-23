@@ -148,6 +148,10 @@
             padding: 15px;
             text-align: center;
         }
+        .btn-i{
+            background-color: white;
+            color: black;
+        }
     </style>
 </head>
 
@@ -168,24 +172,24 @@
 
         <!-- Contact Icons -->
         <div class="profile-contact-icons21">
-            <button type="button" onclick="window.open('tel:0705622633', '_self')">
-                <i class="fas fa-phone me-2" style="transform: rotate(90deg);"></i>
+            <button type="button" onclick="window.open('tel:0705622633', '_self')" class="btn-i">
+                <i class="fas fa-phone me-2" style="transform: rotate(90deg); color: black;"></i>
                 <span>0705622633</span>
             </button>
-            <button type="button" onclick="window.open('mailto:contact@iconiceducation.lk', '_self')">
-                <i class="fas fa-envelope me-2"></i>
+            <button type="button" onclick="window.open('mailto:contact@iconiceducation.lk', '_self')"class="btn-i">
+                <i class="fas fa-envelope me-2" style="color: black;"></i>
                 <span>E-mail </span>
             </button>
-            <button type="button" onclick="window.open('https://wa.me/94705622633', '_blank')">
-                <i class="fab fa-whatsapp"></i>
+            <button type="button" onclick="window.open('https://wa.me/94705622633', '_blank')"class="btn-i">
+                <i class="fab fa-whatsapp" style="color: black;"></i>
                 <span>&nbsp;&nbsp;whatsapp</span>
             </button>
-            <button type="button" onclick="window.open('http://www.iconiceducation.lk/', '_blank')">
-                <i class="fas fa-globe me-2"></i>
+            <button type="button" onclick="window.open('http://www.iconiceducation.lk/', '_blank')"class="btn-i">
+                <i class="fas fa-globe me-2" style="color: black;"></i>
                 <span>iconiceducation.lk</span>
             </button>
-            <button type="button" onclick="window.open('http://www.gurukulaya.com/', '_blank')">
-                <i class="fas fa-globe me-2"></i>
+            <button type="button" onclick="window.open('http://www.gurukulaya.com/', '_blank')"class="btn-i">
+                <i class="fas fa-globe me-2" style="color: black;"></i>
                 <span>gurukulaya.com</span>
             </button>
         </div>
@@ -206,17 +210,17 @@
                 </a>
             </div>
         </div>
-        <!-- Gallery -->
-        <div class="gallery-preview">
-            <div class="gallery-item">
-                <img src="logo_img/client_logo/iconic-l.jpeg" alt="Gallery Image" class="gallery-image" />
-            </div>
-        </div>
         <!-- About Section -->
         <div class="about-section">
             <div style="padding-top:20px; padding-bottom:5px;">
                 <h5 style="color:white;font-size:18px;">Contact Info</h5>
                 <p style="color:white;">contact@iconiceducation.lk<br>www.iconiceducation.lk<br>+94 702622633</p>
+            </div>
+        </div>
+         <!-- Gallery -->
+        <div class="gallery-preview">
+            <div class="gallery-item">
+                <img src="logo_img/client_logo/iconic-l.jpeg" alt="Gallery Image" class="gallery-image" />
             </div>
         </div>
         <!-- Footer -->
