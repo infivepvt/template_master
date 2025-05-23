@@ -71,30 +71,42 @@
             padding: 10px;
         }
 
-       .profile-contact-icons21 button {
-    display: flex;
-    align-items: center; /* Vertically center the content */
-    justify-content: center; /* Horizontally center the content */
-    color: #000;
-    background-color: rgb(255, 255, 255);
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 0.8rem;
-    cursor: pointer;
-    text-align: center; /* Ensure text is centered */
-    gap: 8px; /* Add consistent spacing between icon and text */
-}
+        .profile-contact-icons21 button {
+            display: flex;
+            align-items: center;
+            /* Vertically center the content */
+            justify-content: center;
+            /* Horizontally center the content */
+            color: #000;
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            text-align: center;
+            /* Ensure text is centered */
+        }
 
-.profile-contact-icons21 button:hover {
-    background-color: rgb(240, 240, 240); /* Slightly darker on hover */
-}
+        .profile-contact-icons21 button span {
+            flex: 1;
+            /* Allow the span to take up available space */
+            text-align: center;
+            font-weight: bold;
+            /* Center the text within the span */
+        }
 
-.contact-icon {
-    font-size: 1.5rem;
-    color: black; /* Match icon color with text */
-    margin-right: 0; /* Remove extra margin to avoid misalignment */
-}
+        .profile-contact-icons21 button:hover {
+            background-color: rgb(255, 255, 255);
+            /* slightly darker on hover */
+        }
+
+        .contact-icon {
+            min-width: 20px;
+            font-size: 1.5rem;
+            color: white;
+        }
+
         .about-section {
             padding: 20px;
             background-color: #1b1a1a;
@@ -147,7 +159,6 @@
             padding: 15px;
             text-align: center;
         }
-       
     </style>
 </head>
 
@@ -169,7 +180,8 @@
         <!-- Contact Icons -->
         <div class="profile-contact-icons21">
             <button type="button" onclick="window.open('tel:0705622633', '_self')">
-                <i class="fas fa-phone me-2" style="color: black;"></i>
+                <i class="fas fa-phone me-2"
+                    style="color: black;"></i>
                 <span>Call</span>
             </button>
             <button type="button" onclick="window.open('mailto:contact@iconiceducation.lk', '_self')">
@@ -198,10 +210,13 @@
                     class="m-1">
                     <i class="fab fa-facebook" style="color:rgb(255, 255, 255); font-size: 2rem; margin-right:15px"></i>
                 </a>
-                 <a href="https://www.instagram.com/kamanidharmawickrama?igsh=bXE5Y2E0Mm52OGEz" target="_blank" rel="noopener noreferrer" class="m-1">
-                    <i class="fab fa-instagram" style="color:rgb(255, 255, 255); font-size: 2rem; margin-right:15px"></i>
+                <a href="https://www.instagram.com/kamanidharmawickrama?igsh=bXE5Y2E0Mm52OGEz" target="_blank"
+                    rel="noopener noreferrer" class="m-1">
+                    <i class="fab fa-instagram"
+                        style="color:rgb(255, 255, 255); font-size: 2rem; margin-right:15px"></i>
                 </a>
-                <a href="https://www.tiktok.com/@iconic.education?_t=ZS-8waqZO7sUbJ&_r=1" target="_blank" rel="noopener noreferrer" class="m-1">
+                <a href="https://www.tiktok.com/@iconic.education?_t=ZS-8waqZO7sUbJ&_r=1" target="_blank"
+                    rel="noopener noreferrer" class="m-1">
                     <i class="fab fa-tiktok" style="color:rgb(255, 255, 255); font-size: 2rem; margin-right:15px"></i>
                 </a>
             </div>
@@ -213,7 +228,7 @@
                 <p style="color:white;">contact@iconiceducation.lk<br>www.iconiceducation.lk<br>+94 702622633</p>
             </div>
         </div>
-         <!-- Gallery -->
+        <!-- Gallery -->
         <div class="gallery-preview">
             <div class="gallery-item">
                 <img src="logo_img/client_logo/iconic-l.jpeg" alt="Gallery Image" class="gallery-image" />
