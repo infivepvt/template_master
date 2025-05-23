@@ -550,7 +550,7 @@
                         <i class="fab fa-facebook-f contact-icon me-3 mx-4" style="color:rgb(0, 0, 0);"></i>
                         <div>
                             <p class="icon-text mb-0 text-truncate">Facebook</p>
-                            <p style="font-size:16px;color:rgb(122, 122, 122);margin-left:15px" class="text-start>Anton Garrick	</p>
+                            <p style="font-size:16px;color:rgb(122, 122, 122)">Anton Garrick	</p>
                         </div>
                     </button>
 
@@ -562,7 +562,7 @@
                         <i class="fab fa-instagram contact-icon me-3 mx-4" style="color:rgb(0, 0, 0);"></i>
                         <div>
                             <p class="icon-text mb-0 text-truncate">Instagram</p>
-                            <p style="font-size:16px;color:rgb(122, 122, 122);margin-left:15px" class="text-start>Anton Garrick	</p>
+                            <p style="font-size:16px;color:rgb(122, 122, 122)">Anton Garrick	</p>
                         </div>
                     </button>
 
@@ -586,7 +586,7 @@
                         <i class="fab fa-tiktok contact-icon me-3 mx-4" style="color:black"></i>
                         <div>
                             <p class="icon-text mb-0 text-truncate">Tiktok</p>
-                            <p style="font-size:16px;color:rgb(122, 122, 122) ;margin-left:15px" class="text-start>Anton Garrick	</p>
+                            <p style="font-size:16px;color:rgb(122, 122, 122)">Anton Garrick	</p>
                         </div>
                     </button>
 
