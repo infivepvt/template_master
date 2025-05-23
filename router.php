@@ -114,7 +114,7 @@ $routes = [
     'lucknow' => 'templates/lucknow.php',
     'pamela' => 'templates/pamela.php',
     'iconic' => 'templates/iconic.php',
-    'donsherman' => 'templates/donsherman.php',
+    'amywijesiri' => 'templates/amywijesiri.php',
 ];
 
 // Handle the request
