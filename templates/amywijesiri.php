@@ -271,45 +271,45 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         async function generateVCF() {
-            const contactData = {
-                firstName: "Don Sherman",
-                lastName: "",
-                title: "Founder & Chairman",
-                phoneWork: "+94777362060",
-                phoneMobile: "",
-                email: "admin@dshermanedu.onmicrosoft.com",
-                email2: "",
-                email3: "",
-                website: "www.donshermaninstitute.edu",
-                website2: "",
-                website3: "",
-                address: "",
-                address2: "",
-                about: "",
-                profileImage: "profile_img/client_profile/Don Sherman-p.png"
-            };
+    const contactData = {
+        firstName: "Amy",
+        lastName: "Wijesiri",
+        title: "Head of Operations",
+        phoneWork: "+94766355355",
+        phoneMobile: "",
+        email: "amiwij@dshermanedu.onmicrosoft.com",
+        email2: "",
+        email3: "",
+        website: "www.donshermaninstitute.edu",
+        website2: "",
+        website3: "",
+        address: "",
+        address2: "",
+        about: "",
+        profileImage: "profile_img/client_profile/amywijesiri-p.png"
+    };
 
-            async function imageToBase64(url) {
-                try {
-                    const response = await fetch(url);
-                    const blob = await response.blob();
-                    return new Promise((resolve) => {
-                        const reader = new FileReader();
-                        reader.onloadend = () => {
-                            const base64data = reader.result.split(',')[1];
-                            resolve(base64data);
-                        };
-                        reader.readAsDataURL(blob);
-                    });
-                } catch (error) {
-                    console.error("Error loading image:", error);
-                    return "";
-                }
-            }
+    async function imageToBase64(url) {
+        try {
+            const response = await fetch(url);
+            const blob = await response.blob();
+            return new Promise((resolve) => {
+                const reader = new FileReader();
+                reader.onloadend = () => {
+                    const base64data = reader.result.split(',')[1];
+                    resolve(base64data);
+                };
+                reader.readAsDataURL(blob);
+            });
+        } catch (error) {
+            console.error("Error loading image:", error);
+            return "";
+        }
+    }
 
-            const base64Image = await imageToBase64(contactData.profileImage);
+    const base64Image = await imageToBase64(contactData.profileImage);
 
-            let vcfContent = `BEGIN:VCARD
+    let vcfContent = `BEGIN:VCARD
 VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
 N:${contactData.lastName};${contactData.firstName};;;
@@ -326,26 +326,26 @@ ADR;TYPE=WORK:;;${contactData.address}
 ADR;TYPE=HOME:;;${contactData.address2}
 NOTE:${contactData.about}`;
 
-            if (base64Image) {
-                vcfContent += `
+    if (base64Image) {
+        vcfContent += `
 PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}`;
-            }
+    }
 
-            vcfContent += `
+    vcfContent += `
 END:VCARD`;
 
-            const blob = new Blob([vcfContent], { type: 'text/vcard' });
-            const url = URL.createObjectURL(blob);
+    const blob = new Blob([vcfContent], { type: 'text/vcard' });
+    const url = URL.createObjectURL(blob);
 
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-            document.body.appendChild(a);
-            a.click();
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+    document.body.appendChild(a);
+    a.click();
 
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
-        }
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+}
     </script>
 </body>
 

@@ -270,46 +270,61 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        async function generateVCF() {
-            const contactData = {
-                firstName: "Don Sherman",
-                lastName: "",
-                title: "Founder & Chairman",
-                phoneWork: "+94777362060",
-                phoneMobile: "",
-                email: "admin@dshermanedu.onmicrosoft.com",
-                email2: "",
-                email3: "",
-                website: "www.donshermaninstitute.edu",
-                website2: "",
-                website3: "",
-                address: "",
-                address2: "",
-                about: "",
-                profileImage: "profile_img/client_profile/Don Sherman-p.png"
-            };
+    async function generateVCF() {
+        const contactData = {
+            firstName: "Don Sherman",
+            lastName: "",
+            title: "Founder & Chairman",
+            phoneWork: "+94777362060",
+            phoneMobile: "",
+            email: "admin@dshermanedu.onmicrosoft.com",
+            email2: "",
+            email3: "",
+            website: "www.donshermaninstitute.edu",
+            website2: "",
+            website3: "",
+            address: "",
+            address2: "",
+            about: "",
+            profileImage: "profile_img/client_profile/donsherman-p.png" // Make sure this path is correct
+        };
 
-            async function imageToBase64(url) {
-                try {
-                    const response = await fetch(url);
-                    const blob = await response.blob();
-                    return new Promise((resolve) => {
-                        const reader = new FileReader();
-                        reader.onloadend = () => {
-                            const base64data = reader.result.split(',')[1];
-                            resolve(base64data);
+        async function imageToBase64(url) {
+            try {
+                // Create a new image element
+                const img = new Image();
+                img.crossOrigin = 'Anonymous'; // Handle CORS if needed
+                img.src = url;
+                
+                // Wait for the image to load
+                if (!img.complete) {
+                    await new Promise((resolve) => {
+                        img.onload = resolve;
+                        img.onerror = () => {
+                            console.error("Error loading image");
+                            resolve(); // Resolve even if there's an error
                         };
-                        reader.readAsDataURL(blob);
                     });
-                } catch (error) {
-                    console.error("Error loading image:", error);
-                    return "";
                 }
+                
+                // Create canvas and draw image
+                const canvas = document.createElement('canvas');
+                const ctx = canvas.getContext('2d');
+                canvas.width = img.naturalWidth;
+                canvas.height = img.naturalHeight;
+                ctx.drawImage(img, 0, 0);
+                
+                // Convert to base64
+                return canvas.toDataURL('image/jpeg').split(',')[1];
+            } catch (error) {
+                console.error("Error processing image:", error);
+                return "";
             }
+        }
 
-            const base64Image = await imageToBase64(contactData.profileImage);
+        const base64Image = await imageToBase64(contactData.profileImage);
 
-            let vcfContent = `BEGIN:VCARD
+        let vcfContent = `BEGIN:VCARD
 VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
 N:${contactData.lastName};${contactData.firstName};;;
@@ -326,27 +341,27 @@ ADR;TYPE=WORK:;;${contactData.address}
 ADR;TYPE=HOME:;;${contactData.address2}
 NOTE:${contactData.about}`;
 
-            if (base64Image) {
-                vcfContent += `
-PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}`;
-            }
-
+        if (base64Image) {
             vcfContent += `
+PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}`;
+        }
+
+        vcfContent += `
 END:VCARD`;
 
-            const blob = new Blob([vcfContent], { type: 'text/vcard' });
-            const url = URL.createObjectURL(blob);
+        const blob = new Blob([vcfContent], { type: 'text/vcard' });
+        const url = URL.createObjectURL(blob);
 
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-            document.body.appendChild(a);
-            a.click();
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+        document.body.appendChild(a);
+        a.click();
 
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
-        }
-    </script>
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    }
+</script>
 </body>
 
 </html>
