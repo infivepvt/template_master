@@ -180,11 +180,11 @@
 
 <body>
     <div class="container"
-        style="background-image:  url('http://localhost/template_master/banner_img/main_banner/template36-b.jpg'); height: 100%; opacity: 1; border-bottom-width: 1px; border-bottom-right-radius: 0%; border-bottom-left-radius: 0%; height: 200px;">
+        style="background-image:  url('banner_img/main_banner/template36-b.jpg'); height: 100%; opacity: 1; border-bottom-width: 1px; border-bottom-right-radius: 0%; border-bottom-left-radius: 0%; height: 200px;">
         <div style="position: relative;">
         <!-- Profile Image -->
         <div class="profile-header" style="text-align: center; position: relative; z-index: 90;">
-            <img src="http://localhost/template_master/profile_img/main_profile/template36-p.png" alt="Carl Protton" 
+            <img src="profile_img/main_profile/template36-p.png" alt="Carl Protton" 
                 class="profile-image" 
                 style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 1px solid white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); ">
         </div>
