@@ -182,7 +182,12 @@
             <button type="button" onclick="window.open('tel:0705622633', '_self')">
                 <i class="fas fa-phone me-2"
                     style="color: black;"></i>
-                <span>Call</span>
+                <span>Call ICONIC</span>
+            </button>
+            <button type="button" onclick="window.open('tel:0773088811', '_self')">
+                <i class="fas fa-phone me-2"
+                    style="color: black;"></i>
+                <span>Call Kamani</span>
             </button>
             <button type="button" onclick="window.open('mailto:contact@iconiceducation.lk', '_self')">
                 <i class="fas fa-envelope me-2" style="color: black;"></i>
