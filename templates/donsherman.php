@@ -47,6 +47,7 @@
             width: 130px;
             height: 130px;
             border: 4px solid #fff;
+            border-color: #ebb726;
             border-radius: 50%;
         }
 
@@ -76,7 +77,6 @@
         }
 
         .custom-save-button {
-            /* background: linear-gradient(90deg, #5f4def, #00d0ea); */
             background-color: #000000;
             color: #C5B358;
             font-weight: bold;
@@ -90,7 +90,6 @@
         }
 
         .custom-save-button:hover {
-            /* background: linear-gradient(90deg, #4b3ec4, #00b3c3); */
             background-color: #000000;
         }
 
@@ -139,50 +138,71 @@
         }
 
         @keyframes float {
-
-            0%,
-            100% {
+            0%, 100% {
                 transform: translateY(-3px);
             }
-
             50% {
                 transform: translateY(3px);
             }
         }
 
-        /* contact details */
+        /* Gold foil animation for card-title */
+        .card-title {
+            font-size: 27px;
+            text-transform: uppercase;
+            background: linear-gradient(
+                45deg,
+                #C5B358 20%,  /* Gold color */
+                #FFD700 40%,  /* Brighter gold */
+                #FFFFE0 50%,  /* Light yellow for shine */
+                #FFD700 60%,  /* Brighter gold */
+                #C5B358 80%   /* Gold color */
+            );
+            background-size: 200% 100%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            animation: shimmer 2s linear infinite;
+        }
+
+        @keyframes shimmer {
+            0% {
+                background-position: 200% 0;
+            }
+            100% {
+                background-position: 0 0;
+            }
+        }
+
+        /* Contact details */
         .contact {
             background-color: rgb(0, 0, 0);
         }
     </style>
-
 </head>
 
 <body>
     <div class="d-flex justify-content-center mt-5">
         <div class="card custom-card shadow-lg" style="background-color:rgb(0, 0, 0);">
             <div class="card-header custom-header text-center"
-                style="background-image:  url('banner_img/client_banner/Don Sherman-b.png'); height: 200px; opacity: 1;">
-                <!-- <img src="logo_img/main_logo/Main_Design-l.png" alt="Company Logo" class="custom-logo" height="80px"
-                    style="width: 245px; height: auto; opacity: 1;"> -->
+                style="background-image: url('banner_img/client_banner/donsherman-b.png'); height: 260px; opacity: 1;">
                 <div class="profile-picture">
-                    <img src="profile_img/client_profile/Don Sherman-p.png" alt="Saliya Pathum" class="rounded-circle">
+                    <img src="profile_img/client_profile/donsherman-p.png" alt="Saliya Pathum" class="rounded-circle" style="margin-top: 15px;">
                 </div>
             </div>
             <br>
             <br>
             <div class="card-body text-center"
-                style="background-color:rgb(0, 0, 0); color:rgb(255, 255, 255); text-decoration: none; ">
-                <h2 class="card-title" style="font-size: 27px; text-transform: uppercase;">Don Sherman</h2>
-                <p style="color:rgb(255, 255, 255); font-size: 21px; text-transform: uppercase;">Founder & Chairman</p>
+                style="background-color:rgb(0, 0, 0); color:rgb(255, 255, 255); text-decoration: none;">
+                <h2 class="card-title">Don Sherman</h2>
+                <p style="color:rgb(255, 255, 255); font-size: 15px; text-transform: uppercase;">Founder & Chairman</p>
 
                 <a href="https://wa.me/+94777362060" target="_blank" rel="noopener noreferrer"
                     style="text-decoration: none;">
                     <button class="btn w-100 mb-3 custom-phone1 d-flex align-items-center justify-content-center"
                         style="background-color:rgb(0, 0, 0); color: white; height: 60px; border: 2px solid orange; border-radius: 10px; gap: 10px;">
                         <i class="fab fa-whatsapp" style="font-size: 50px; margin-right:30px;"></i>
-                        <span style="font-size: 14px; font-family: 'Montserrat', sans-serif;">CONNECT WITH
-                            WHATSAPP</span>
+                        <span style="font-size: 14px; font-family: 'Montserrat', sans-serif;">CONNECT WITH WHATSAPP</span>
                     </button>
                 </a>
 
@@ -194,7 +214,7 @@
                             <img src="Images/icon/phone.png" alt=""
                                 style="width: 30px; height: 30px; margin-right:25px;">
                             <span class="text-center flex-grow-1 text-truncate custom-phone"
-                                style="color: #C5B358; font-family: 'Montserrat', sans-serif;">+94777362060</span>
+                                style="color: #edb928; font-family: 'Montserrat', sans-serif;">+94777362060</span>
                         </button>
                     </div>
 
@@ -205,7 +225,7 @@
                             <img src="Images/icon/mail.png" alt=""
                                 style="width: 30px; height: 30px; margin-right:25px;">
                             <span class="text-center flex-grow-1 text-truncate custom-phone"
-                                style="color: #C5B358; font-family: 'Montserrat', sans-serif; font-size:16px;">admin@dshermanedu.onmicrosoft.com</span>
+                                style="color: #edb928; font-family: 'Montserrat', sans-serif; font-size:16px;">admin@dshermanedu.onmicrosoft.com</span>
                         </button>
                     </div>
 
@@ -216,22 +236,12 @@
                             <img src="Images/icon/internet.png" alt=""
                                 style="width: 30px; height: 30px; margin-right:25px;">
                             <span class="text-center flex-grow-1 text-truncate custom-phone"
-                                style="color: #C5B358; font-family:'Montserrat', sans-serif; font-size:16px; font-size:16px;">www.donshermaninstitute.edu</span>
+                                style="color: #edb928; font-family:'Montserrat', sans-serif; font-size:16px;">www.donshermaninstitute.edu</span>
                         </button>
                     </div>
-
-                    <!-- <button type="button"
-                        class="list-group-item d-flex align-items-center justify-content-between contact"
-                        onclick="window.open('https://www.google.com/maps/search/?api=1&query=919+Oaktree+Crescent,+Newmarket', '_blank')">
-                        <img src="Images/icon/map.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
-                        <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">919
-                            Oaktree Crescent, Newmarket Oaktree Crescent, Newmarket</span>
-                    </button> -->
                 </div>
 
-                <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:19px">CONNECT WITH SOCIAL MEDIA
-                </p>
+                <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:19px">CONNECT WITH SOCIAL MEDIA</p>
                 <div class="d-flex flex-wrap justify-content-center">
                     <a href="http://instagram.com/@DonShermanInstitute" target="_blank" rel="noopener noreferrer"
                         class="m-3">
@@ -247,22 +257,6 @@
                     </a>
                 </div>
 
-                <!-- <div class="d-flex flex-wrap justify-content-center">
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/linkedin.png" alt="" style="width: 50px; height: 50px;">
-                    </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/twitter.png" alt="" style="width: 50px; height: 50px;">
-                    </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/social.png" alt="" style="width: 50px; height: 50px;">
-                    </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/pinterest.png" alt="" style="width: 50px; height: 50px;">
-                    </a>
-                </div> -->
-
-
                 <br>
                 <button class="btn w-100 custom-save-button" onclick="generateVCF()"
                     style="font-family: 'Montserrat', sans-serif; font-size:19px; border: 2px solid #C5B358;">
@@ -277,11 +271,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         async function generateVCF() {
-            // Updated contact information to match the business card
             const contactData = {
                 firstName: "Don Sherman",
                 lastName: "",
-                title: "Founder & Chairman ",
+                title: "Founder & Chairman",
                 phoneWork: "+94777362060",
                 phoneMobile: "",
                 email: "admin@dshermanedu.onmicrosoft.com",
@@ -296,7 +289,6 @@
                 profileImage: "profile_img/client_profile/Don Sherman-p.png"
             };
 
-            // Function to convert image to base64
             async function imageToBase64(url) {
                 try {
                     const response = await fetch(url);
@@ -315,10 +307,8 @@
                 }
             }
 
-            // Get base64 of profile image
             const base64Image = await imageToBase64(contactData.profileImage);
 
-            // Create VCF content with photo
             let vcfContent = `BEGIN:VCARD
 VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
@@ -336,7 +326,6 @@ ADR;TYPE=WORK:;;${contactData.address}
 ADR;TYPE=HOME:;;${contactData.address2}
 NOTE:${contactData.about}`;
 
-            // Add photo if available
             if (base64Image) {
                 vcfContent += `
 PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}`;
@@ -345,7 +334,6 @@ PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}`;
             vcfContent += `
 END:VCARD`;
 
-            // Create download link
             const blob = new Blob([vcfContent], { type: 'text/vcard' });
             const url = URL.createObjectURL(blob);
 
@@ -355,12 +343,10 @@ END:VCARD`;
             document.body.appendChild(a);
             a.click();
 
-            // Clean up
             document.body.removeChild(a);
             URL.revokeObjectURL(url);
         }
     </script>
-
 </body>
 
 </html>
