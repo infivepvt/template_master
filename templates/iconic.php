@@ -190,7 +190,7 @@
             </button>
             <button type="button" onclick="window.open('https://wa.me/94705622633', '_blank')">
                 <i class="fab fa-whatsapp" style="color: black;"></i>
-                <span>&nbsp;&nbsp;whatsapp</span>
+                <span>&nbsp;&nbsp;WhatsApp</span>
             </button>
             <button type="button" onclick="window.open('http://www.iconiceducation.lk/', '_blank')">
                 <i class="fas fa-globe me-2" style="color: black;"></i>
@@ -225,7 +225,7 @@
         <div class="about-section">
             <div style="padding-top:20px; padding-bottom:5px;">
                 <h5 style="color:white;font-size:18px;">Contact Info</h5>
-                <p style="color:white;">contact@iconiceducation.lk<br>www.iconiceducation.lk<br>+94 702622633</p>
+                <p style="color:white;">contact@iconiceducation.lk<br>www.iconiceducation.lk<br>+94 705622633</p>
             </div>
         </div>
         <!-- Gallery -->
