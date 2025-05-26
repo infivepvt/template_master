@@ -215,7 +215,7 @@
                             <img src="Images/icon/phone.png" alt=""
                                 style="width: 30px; height: 30px; margin-right:25px;">
                             <span class="text-center flex-grow-1 text-truncate custom-phone"
-                                style="color: #edb928; font-family: 'Montserrat', sans-serif;">+94777362060</span>
+                                style="color: #edb928; font-family: 'Montserrat', sans-serif;">+94 77 736 2060</span>
                         </button>
                     </div>
 

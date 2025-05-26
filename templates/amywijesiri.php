@@ -215,7 +215,7 @@
                             <img src="Images/icon/phone.png" alt=""
                                 style="width: 30px; height: 30px; margin-right:25px;">
                             <span class="text-center flex-grow-1 text-truncate custom-phone"
-                                style="color: #edb928; font-family: 'Montserrat', sans-serif;">+94766355355</span>
+                                style="color: #edb928; font-family: 'Montserrat', sans-serif;">+94 76 635 5355</span>
                         </button>
                     </div>
 
