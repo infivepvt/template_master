@@ -231,7 +231,7 @@
                 </div>
             </div>  
             <br> 
-            <p class="job-title">Iconic Education (Pvt) Ltd Srilanka </p>    
+            <p class="job-title">Iconic Education (Pvt) Ltd Sri Lanka </p>    
         </div>
        
         <!-- About Section -->
