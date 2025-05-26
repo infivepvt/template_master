@@ -120,6 +120,7 @@ $routes = [
     'iconic' => 'templates/iconic.php',
     'donsherman' => 'templates/donsherman.php',
     'amywijesiri' => 'templates/amywijesiri.php',
+    'nikigarment' => 'templates/nikigarment.php',
 ];
 
 // Handle the request
