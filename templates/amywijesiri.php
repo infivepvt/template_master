@@ -185,7 +185,7 @@
     <div class="d-flex justify-content-center mt-5">
         <div class="card custom-card shadow-lg" style="background-color:rgb(0, 0, 0);">
             <div class="card-header custom-header text-center"
-                style="background-image: url('banner_img/client_banner/donsherman-b.png'); height: 230px; opacity: 1;">
+                style="background-image: url('banner_img/client_banner/donsherman-b.jpg'); height: 230px; opacity: 1;">
                 <!-- <img src="logo_img/client_logo/donsherman-l.png" alt="Company Logo" class="custom-logo" height="80px"> -->
                 <div class="profile-picture">
                     <img src="profile_img/client_profile/amywijesiri-p.png" alt="Saliya Pathum" class="rounded-circle" style="margin-top: 15px;">
