@@ -123,6 +123,7 @@ $routes = [
     'nikigarment' => 'templates/nikigarment.php',
     'infiveiresh' => 'templates/infiveiresh.php',
     'mahanil' => 'templates/mahanil.php',
+    'skyone' => 'templates/skyone.php',
 ];
 
 // Handle the request
