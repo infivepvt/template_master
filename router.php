@@ -122,6 +122,7 @@ $routes = [
     'amywijesiri' => 'templates/amywijesiri.php',
     'nikigarment' => 'templates/nikigarment.php',
     'infiveiresh' => 'templates/infiveiresh.php',
+    'mahanil' => 'templates/mahanil.php',
 ];
 
 // Handle the request
