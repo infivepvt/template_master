@@ -160,6 +160,7 @@
 
         .sp {
             margin-left: 40px;
+            margin-top: 3px;
         }
 
         .custom-save-button {
