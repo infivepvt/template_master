@@ -35,7 +35,7 @@
 
         .card .top-bg {
             width: 100%;
-            height: 200px;
+            height: 150px;
             background: url('banner_img/client_banner/mahanil-b.png') no-repeat center center/cover;
             position: relative;
             clip-path: ellipse(100% 100% at 50% 0%);
@@ -56,7 +56,7 @@
             border: 5px solid #fff;
             object-fit: cover;
             position: absolute;
-            top: 130px;
+            top: 70px;
             left: 50%;
             transform: translateX(-50%);
         }
@@ -75,7 +75,7 @@
 
         .card .role {
             font-size: 12px;
-            color: #999;
+            color: #00bbb3;
             letter-spacing: 2px;
             margin-bottom: 15px;
             text-transform: uppercase;
@@ -139,8 +139,8 @@
         .social-icons a {
             width: 35px;
             height: 35px;
-            background: #fff;
-            color: #000;
+            background: #00bbb3;
+            color: white;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -148,6 +148,7 @@
             font-size: 14px;
             text-decoration: none;
             transition: background 0.3s;
+            
         }
 
         .social-icons a:hover {
@@ -161,6 +162,8 @@
 
         .sp {
             margin-left: 40px;
+            color: #0070cd;
+           
         }
 
         .custom-save-button {
@@ -181,41 +184,41 @@
         <div class="top-bg"></div>
         <img src="profile_img/client_profile/mahanil-p.png" alt="Kerek Peterson" class="profile-img" />
         <div class="content">
-            <h2 style="font-family:'Times New Roman'">Mahanil <br> Perera</h2>
+            <h2 style="font-family:'Times New Roman'; color:#00bbb3;">Mahanil <br> Perera</h2>
             <div class="divider"></div>
             <p class="role">Chief Operating Officer</p>
             <br>
             <div class="contact-info">
                 <div class="item" onclick="window.open('tel:+94773718243', '_self')">
-                    <i class="fas fa-mobile"></i>
+                    <i class="fas fa-mobile" style="background-color: #00bbb3;"></i>
                     <span class="sp">+94 77 3718 243</span>
                 </div>
                 <div class="item" onclick="window.open('tel:+94112140000', '_self')">
-                    <i class="fas fa-phone"></i>
+                    <i class="fas fa-phone" style="background-color: #00bbb3;"></i>
                     <span class="sp">+94 11 2140 000</span>
                 </div>
                 <div class="item" onclick="window.open('https://wa.me/+94773718243', '_blank')">
-                    <i class="fab fa-whatsapp"></i>
+                    <i class="fab fa-whatsapp" style="background-color: #00bbb3;"></i>
                     <span class="sp">+94 77 3718 243</span>
                 </div>
                 <div class="item" onclick="window.open('mailto:mahanil@durdans.com', '_self')">
-                    <i class="fas fa-envelope"></i>
+                    <i class="fas fa-envelope" style="background-color: #00bbb3;"></i>
                     <span class="sp">mahanil@durdans.com</span>
                 </div>
                 <div class="item" onclick="window.open('https://www.durdans.com/', '_blank')">
-                    <i class="fas fa-globe"></i>
+                    <i class="fas fa-globe" style="background-color: #00bbb3;"></i>
                     <span class="sp">www.durdans.com</span>
                 </div>
                 <div class="item" onclick="window.open('https://maps.app.goo.gl/MkPoMN1RGbVm34oZ6', '_blank')">
-                    <i class="fas fa-map-marker-alt"></i>
+                    <i class="fas fa-map-marker-alt" style="background-color: #00bbb3;"></i>
                     <span class="sp">Durdans Hospital, 3 Alfred Place,<br>Colombo 3.</span>
                 </div>
-            
+
             </div>
             <button class="custom-save-button" id="saveToContacts"><i class="fas fa-save me-2"></i>&nbsp; SAVE TO
-            CONTACTS</button>
+                CONTACTS</button>
         </div>
-        
+
         <div class="footer">
             <div class="social-icons">
                 <a href="https://www.facebook.com/durdanshospital/"><i class="fab fa-facebook-f"></i></a>
@@ -226,34 +229,34 @@
         </div>
     </div>
     <script>
-    document.getElementById('saveToContacts').addEventListener('click', function() {
-        saveContact();
-    });
+        document.getElementById('saveToContacts').addEventListener('click', function () {
+            saveContact();
+        });
 
-    async function saveContact() {
-        try {
-            const profileImage = document.querySelector('.profile-img');
-            
-            // Wait for the image to load if it's not already loaded
-            if (!profileImage.complete) {
-                await new Promise((resolve) => {
-                    profileImage.onload = resolve;
-                    profileImage.onerror = resolve; // Handle error case
-                });
-            }
-            
-            // Create canvas and draw image
-            const canvas = document.createElement('canvas');
-            const ctx = canvas.getContext('2d');
-            canvas.width = profileImage.naturalWidth;
-            canvas.height = profileImage.naturalHeight;
-            ctx.drawImage(profileImage, 0, 0);
-            
-            // Convert to base64
-            const base64Image = canvas.toDataURL('image/jpeg').split(',')[1];
-            
-            // Create vCard content
-            const vCard = `BEGIN:VCARD
+        async function saveContact() {
+            try {
+                const profileImage = document.querySelector('.profile-img');
+
+                // Wait for the image to load if it's not already loaded
+                if (!profileImage.complete) {
+                    await new Promise((resolve) => {
+                        profileImage.onload = resolve;
+                        profileImage.onerror = resolve; // Handle error case
+                    });
+                }
+
+                // Create canvas and draw image
+                const canvas = document.createElement('canvas');
+                const ctx = canvas.getContext('2d');
+                canvas.width = profileImage.naturalWidth;
+                canvas.height = profileImage.naturalHeight;
+                ctx.drawImage(profileImage, 0, 0);
+
+                // Convert to base64
+                const base64Image = canvas.toDataURL('image/jpeg').split(',')[1];
+
+                // Create vCard content
+                const vCard = `BEGIN:VCARD
 VERSION:3.0
 FN:Mahanil Perera
 TITLE:Chief Operating Officer
@@ -264,24 +267,24 @@ URL:www.durdans.com
 ADR;TYPE=WORK:;;Durdans Hospital, 3 Alfred Place;Colombo 3;;;Sri Lanka
 PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}
 END:VCARD`;
-            
-            // Create download link
-            const blob = new Blob([vCard], { type: 'text/vcard' });
-            const url = URL.createObjectURL(blob);
-            const link = document.createElement('a');
-            link.href = url;
-            link.download = 'Mahanil Perera.vcf';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-            URL.revokeObjectURL(url);
-            
-        } catch (error) {
-            console.error('Error saving contact:', error);
-            alert('Error saving contact. Please try again.');
+
+                // Create download link
+                const blob = new Blob([vCard], { type: 'text/vcard' });
+                const url = URL.createObjectURL(blob);
+                const link = document.createElement('a');
+                link.href = url;
+                link.download = 'Mahanil Perera.vcf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                URL.revokeObjectURL(url);
+
+            } catch (error) {
+                console.error('Error saving contact:', error);
+                alert('Error saving contact. Please try again.');
+            }
         }
-    }
-</script>
+    </script>
 </body>
 
 </html>
