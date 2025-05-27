@@ -100,6 +100,7 @@
             margin-bottom: 15px;
             font-size: 14px;
             cursor: pointer;
+            align-items: center;
         }
 
         .contact-info .item i {
@@ -160,7 +161,6 @@
 
         .sp {
             margin-left: 40px;
-            margin-top: 3px;
         }
 
         .custom-save-button {
