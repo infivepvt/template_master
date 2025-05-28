@@ -223,7 +223,7 @@
             <div class="social-icons">
                 <a href="https://www.facebook.com/durdanshospital/"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://www.instagram.com/durdanshospital/"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.youtube.com/channel/UCQTOSQs7-IOKkdtsxuVpDDA"><i class="fab fa-youtube"></i></a>
+                <a href="https://youtube.com/@durdanshospital7281?si=pwfVYtUAUeaA0ZXn"><i class="fab fa-youtube"></i></a>
                 <a href="https://www.linkedin.com/company/durdans-hospital/"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
