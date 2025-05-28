@@ -124,6 +124,7 @@ $routes = [
     'infiveiresh' => 'templates/infiveiresh.php',
     'mahanil' => 'templates/mahanil.php',
     'skyone' => 'templates/skyone.php',
+    'sachith' => 'templates/sachith.php',
 ];
 
 // Handle the request
