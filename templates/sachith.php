@@ -356,16 +356,15 @@
                         <img src="Images/Social_Media_Icon/x-2.jpeg" alt="" style="width: 50px; height: 50px;">
                     </a>
                 </div>
-<br>
+                <br>
                 <section class="section" style="padding: 0 20px;">
                     <div class="container">
                         <div class="column" style="background-color: transparent; box-shadow: none; padding: 0;">
-                            <h2 class="heading" style="font-size: 1.5rem; margin-bottom: 10px; color: #333;">SCAN TO
-                                SAVE CONTACT</h2>
+                            <h2 class="heading" style="font-size: 1.5rem; margin-bottom: 10px; color: #333;">SCAN ME</h2>
                             <div class="qr-section"
                                 style="background: #f8f9fa; width: 100%; max-width: 250px; padding: 15px; flex-direction: column; gap: 10px;">
-                                <img src="gallery_img/client_gallerys/sachith/sachith-g.png"
-                                    alt="QR Code" style="width: 150px; height: 150px;">
+                                <img src="gallery_img/client_gallerys/sachith/sachith-g.png" alt="QR Code"
+                                    style="width: 150px; height: 150px;">
                                 <button onclick="shareQR()"
                                     style="background: linear-gradient(90deg, #5f4def, #00d0ea); color: white; border: none; padding: 8px 20px; border-radius: 5px; cursor: pointer; font-weight: bold; transition: background 0.3s;">
                                     Share QR Code
@@ -387,49 +386,105 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-    function shareQR() {
-        // Get the QR code image URL
-        const qrCodeUrl = 'https://tapilinq.com/sachith';
-        
-        // Check if Web Share API is available
-        if (navigator.share) {
-            navigator.share({
-                title: 'Scan to save contact',
-                text: 'Scan this QR code to save Sachith Rangalla\'s contact information',
-                url: qrCodeUrl
-            })
-            .catch(error => console.log('Error sharing:', error));
-        } else {
-            // Fallback for browsers that don't support Web Share API
-            const shareUrl = `whatsapp://send?text=Scan this QR code to save Sachith Rangalla's contact information: ${qrCodeUrl}`;
-            
-            // Try to open WhatsApp first
-            window.open(shareUrl, '_blank');
-            
-            // If WhatsApp doesn't open, show a message with the QR code URL
-            setTimeout(() => {
-                if (!document.hidden) {
-                    alert(`Share this QR code URL:\n${qrCodeUrl}`);
-                }
-            }, 500);
+        function shareQR() {
+            // Get the QR code image URL
+            const qrCodeUrl = 'https://tapilinq.com/sachith';
+
+            // Check if Web Share API is available
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Scan to save contact',
+                    text: 'Scan this QR code to save Sachith Rangalla\'s contact information',
+                    url: qrCodeUrl
+                })
+                    .catch(error => console.log('Error sharing:', error));
+            } else {
+                // Fallback for browsers that don't support Web Share API
+                const shareUrl = `whatsapp://send?text=Scan this QR code to save Sachith Rangalla's contact information: ${qrCodeUrl}`;
+
+                // Try to open WhatsApp first
+                window.open(shareUrl, '_blank');
+
+                // If WhatsApp doesn't open, show a message with the QR code URL
+                setTimeout(() => {
+                    if (!document.hidden) {
+                        alert(`Share this QR code URL:\n${qrCodeUrl}`);
+                    }
+                }, 500);
+            }
         }
-    }
+        function generateVCF() {
+            const contactData = {
+                firstName: "Sachith",
+                lastName: "Rangalla",
+                title: "Senior Manager - Marketing and Branding",
+                phoneWork: "0117848484",
+                phoneMobile: "0742223334",
+                email: "info@sjhospital.lk",
+                website: "http://sjhospital.lk/",
+                address: "229/10 St. Joseph Street, Negombo",
+                profileImage: "profile_img/client_profile/sachith-p.png",
+                logo: "logo_img/client_logo/sachith-l.png"
+            };
 
-    function generateVCF() {
-        const contactData = {
-            firstName: "Sachith",
-            lastName: "Rangalla",
-            title: "Senior Manager - Marketing and Branding",
-            phoneWork: "0117848484",
-            phoneMobile: "0742223334",
-            email: "info@sjhospital.lk",
-            website: "http://sjhospital.lk/",
-            address: "229/10 St. Joseph Street, Negombo",
-            profileImage: "profile_img/client_profile/sachith-p.png",
-            logo: "logo_img/client_logo/sachith-l.png"
-        };
+            // Create a promise to handle the image loading
+            const loadImage = (url) => {
+                return new Promise((resolve, reject) => {
+                    const img = new Image();
+                    img.crossOrigin = 'Anonymous'; // Handle CORS if needed
+                    img.onload = () => resolve(img);
+                    img.onerror = reject;
+                    img.src = url;
+                });
+            };
 
-        let vcfContent = `BEGIN:VCARD
+            // Generate the vCard with the image
+            const generateVCardWithImage = async () => {
+                try {
+                    // Load the profile image
+                    const profileImage = await loadImage(contactData.profileImage);
+
+                    // Create canvas and draw image
+                    const canvas = document.createElement('canvas');
+                    const ctx = canvas.getContext('2d');
+                    canvas.width = profileImage.width;
+                    canvas.height = profileImage.height;
+                    ctx.drawImage(profileImage, 0, 0);
+
+                    // Convert to base64
+                    const base64Image = canvas.toDataURL('image/jpeg').split(',')[1];
+
+                    // Create the vCard content
+                    let vcfContent = `BEGIN:VCARD
+VERSION:3.0
+FN:${contactData.firstName} ${contactData.lastName}
+N:${contactData.lastName};${contactData.firstName};;;
+TITLE:${contactData.title}
+TEL;TYPE=WORK,VOICE:${contactData.phoneWork}
+TEL;TYPE=CELL:${contactData.phoneMobile}
+EMAIL:${contactData.email}
+URL:${contactData.website}
+ADR;TYPE=WORK:;;${contactData.address}
+PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}
+LOGO;VALUE=URL:${contactData.logo}
+END:VCARD`;
+
+                    // Create and download the vCard file
+                    const blob = new Blob([vcfContent], { type: 'text/vcard' });
+                    const url = URL.createObjectURL(blob);
+
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+                    document.body.appendChild(a);
+                    a.click();
+
+                    document.body.removeChild(a);
+                    URL.revokeObjectURL(url);
+                } catch (error) {
+                    console.error('Error generating vCard:', error);
+                    // Fallback to vCard without image if there's an error
+                    let vcfContent = `BEGIN:VCARD
 VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
 N:${contactData.lastName};${contactData.firstName};;;
@@ -443,19 +498,24 @@ PHOTO;VALUE=URL:${contactData.profileImage}
 LOGO;VALUE=URL:${contactData.logo}
 END:VCARD`;
 
-        const blob = new Blob([vcfContent], { type: 'text/vcard' });
-        const url = URL.createObjectURL(blob);
+                    const blob = new Blob([vcfContent], { type: 'text/vcard' });
+                    const url = URL.createObjectURL(blob);
 
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-        document.body.appendChild(a);
-        a.click();
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+                    document.body.appendChild(a);
+                    a.click();
 
-        document.body.removeChild(a);
-        URL.revokeObjectURL(url);
-    }
-</script>
+                    document.body.removeChild(a);
+                    URL.revokeObjectURL(url);
+                }
+            };
+
+            // Call the async function
+            generateVCardWithImage();
+        }
+    </script>
 </body>
 
 </html>
