@@ -20,118 +20,118 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            padding: 10px;
+            padding: 5px;
         }
 
         .card {
-            width: 90vw;
-            max-width: 350px;
-            max-height: 90vh; /* Ensure card fits within viewport height */
+            width: 95vw;
+            max-width: 320px; /* Slightly smaller max-width */
+            max-height: 90vh; /* Fit within viewport height */
             background: #fff;
-            border-radius: 0 0 40px 40px;
+            border-radius: 0 0 30px 30px;
             overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             text-align: center;
             position: relative;
         }
 
         .card .top-bg {
             width: 100%;
-            height: 120px; /* Reduced height */
+            height: 100px; /* Further reduced height */
             background: url('banner_img/client_banner/mahanil-b.png') no-repeat center center/cover;
             position: relative;
             clip-path: ellipse(100% 100% at 50% 0%);
         }
 
         .card .profile-img {
-            width: 120px; /* Reduced size */
-            height: 120px;
+            width: 100px; /* Smaller profile image */
+            height: 100px;
             border-radius: 50%;
-            border: 4px solid #fff;
+            border: 3px solid #fff;
             object-fit: cover;
             position: absolute;
-            top: 60px;
+            top: 50px;
             left: 50%;
             transform: translateX(-50%);
         }
 
         .card .content {
-            margin-top: 60px; /* Adjusted for smaller profile image */
-            padding: 15px;
+            margin-top: 50px; /* Adjusted for smaller profile image */
+            padding: 10px;
         }
 
         .card h2 {
-            margin-bottom: 5px;
+            margin-bottom: 3px;
             font-weight: 600;
             letter-spacing: 1px;
             text-transform: uppercase;
-            font-size: 1.2rem; /* Reduced font size */
+            font-size: 1rem; /* Smaller font */
         }
 
         .card .role {
-            font-size: 0.75rem; /* Smaller font */
+            font-size: 0.65rem; /* Smaller font */
             color: #00bbb3;
-            letter-spacing: 1.5px;
-            margin-bottom: 10px;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
             text-transform: uppercase;
         }
 
         .divider {
-            width: 60%;
+            width: 50%;
             height: 1px;
             background: #000;
-            margin: 8px auto 10px;
+            margin: 5px auto 8px;
         }
 
         .contact-info {
             text-align: left;
-            padding-left: 15px;
-            margin-bottom: 15px;
+            padding-left: 10px;
+            margin-bottom: 10px;
         }
 
         .contact-info .item {
             display: flex;
             align-items: center;
-            margin-bottom: 10px;
-            font-size: 0.8rem; /* Smaller font */
+            margin-bottom: 8px; /* Reduced spacing */
+            font-size: 0.7rem; /* Smaller font */
             cursor: pointer;
         }
 
         .contact-info .item i {
-            min-width: 25px;
-            height: 25px;
+            min-width: 20px;
+            height: 20px;
             background: #00bbb3;
             color: #fff;
             border-radius: 50%;
             text-align: center;
-            line-height: 25px;
-            margin-right: 8px;
-            font-size: 0.8rem;
+            line-height: 20px;
+            margin-right: 6px;
+            font-size: 0.7rem;
         }
 
         .footer {
             background: #000;
-            padding: 15px 0;
-            border-top-left-radius: 50px;
-            border-top-right-radius: 50px;
+            padding: 10px 0; /* Reduced padding */
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
         }
 
         .social-icons {
             display: flex;
             justify-content: center;
-            gap: 10px;
+            gap: 8px;
         }
 
         .social-icons a {
-            width: 30px;
-            height: 30px;
+            width: 25px;
+            height: 25px;
             background: #00bbb3;
             color: white;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 0.8rem;
+            font-size: 0.7rem;
             text-decoration: none;
             transition: background 0.3s;
         }
@@ -142,7 +142,7 @@
         }
 
         .sp {
-            margin-left: 8px;
+            margin-left: 6px;
             color: #0070cd;
         }
 
@@ -151,63 +151,63 @@
             color: rgb(255, 255, 255);
             font-weight: bold;
             border: none;
-            padding: 8px;
+            padding: 6px;
             cursor: pointer;
-            font-size: 0.85rem;
+            font-size: 0.75rem;
             width: 100%;
             border-radius: 5px;
         }
 
         /* Media Queries for Smaller Devices */
-        @media screen and (max-width: 360px) {
+        @media screen and (max-width: 320px) {
             .card {
-                width: 95vw;
+                width: 98vw;
                 max-height: 85vh;
             }
 
             .card .top-bg {
-                height: 100px;
+                height: 80px;
             }
 
             .card .profile-img {
-                width: 100px;
-                height: 100px;
-                top: 50px;
+                width: 80px;
+                height: 80px;
+                top: 40px;
             }
 
             .card .content {
-                margin-top: 50px;
-                padding: 10px;
+                margin-top: 40px;
+                padding: 8px;
             }
 
             .card h2 {
-                font-size: 1rem;
+                font-size: 0.9rem;
             }
 
             .card .role {
-                font-size: 0.65rem;
+                font-size: 0.6rem;
             }
 
             .contact-info .item {
-                font-size: 0.7rem;
+                font-size: 0.65rem;
             }
 
             .contact-info .item i {
-                min-width: 20px;
-                height: 20px;
-                line-height: 20px;
-                font-size: 0.7rem;
+                min-width: 18px;
+                height: 18px;
+                line-height: 18px;
+                font-size: 0.65rem;
             }
 
             .social-icons a {
-                width: 25px;
-                height: 25px;
-                font-size: 0.7rem;
+                width: 22px;
+                height: 22px;
+                font-size: 0.65rem;
             }
 
             .custom-save-button {
-                font-size: 0.75rem;
-                padding: 6px;
+                font-size: 0.7rem;
+                padding: 5px;
             }
         }
     </style>
