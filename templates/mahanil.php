@@ -35,7 +35,7 @@
 
         .card .top-bg {
             width: 100%;
-            height: 150px;
+            height: 100px;
             background: url('banner_img/client_banner/mahanil-b.png') no-repeat center center/cover;
             position: relative;
             clip-path: ellipse(100% 100% at 50% 0%);
@@ -56,7 +56,7 @@
             border: 5px solid #fff;
             object-fit: cover;
             position: absolute;
-            top: 70px;
+            top: 20px;
             left: 50%;
             transform: translateX(-50%);
         }
@@ -187,7 +187,7 @@
             <h2 style="font-family:'Times New Roman'; color:#00bbb3;">Mahanil <br> Perera</h2>
             <div class="divider"></div>
             <p class="role">Chief Operating Officer</p>
-            <br>
+          
             <div class="contact-info">
                 <div class="item" onclick="window.open('tel:+94773718243', '_self')">
                     <i class="fas fa-mobile" style="background-color: #00bbb3;"></i>
