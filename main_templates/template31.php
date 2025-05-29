@@ -53,6 +53,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 1;
+            margin-top: -100px;
         }
 
         .profile-picture img {
@@ -387,7 +388,17 @@
             margin-top: 0;
         }
 
-        h1, h2, h3, h4, h5, h6, p, span, div, button, a {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        span,
+        div,
+        button,
+        a {
             font-family: 'Montserrat', sans-serif;
         }
 
@@ -395,7 +406,7 @@
             body {
                 padding: 10px;
             }
-            
+
             .custom-card {
                 max-width: 100%;
                 margin-top: 0;
@@ -460,7 +471,7 @@
                 width: 100%;
             }
 
-            .card-body > .follow-me-section {
+            .card-body>.follow-me-section {
                 margin-bottom: 0;
             }
 
@@ -487,26 +498,26 @@
                 grid-template-columns: repeat(4, 1fr);
                 gap: 8px;
             }
-            
+
             .contact-icon-link,
             .social-icon-link {
                 width: 32px;
                 height: 32px;
             }
-            
+
             .contact-icon-link i,
             .social-icon-link i {
                 font-size: 1rem;
             }
-            
+
             .card-title {
                 font-size: 22px;
             }
-            
+
             .card-text {
                 font-size: 12px;
             }
-            
+
             .custom-save-button {
                 width: 90px;
                 font-size: 12px;
@@ -518,9 +529,10 @@
 <body>
     <div class="d-flex justify-content-center mt-3 mt-md-5">
         <div class="card custom-card shadow-lg">
-            <div class="custom-header text-center" style="background-image: url('banner_img/main_banner/template31-b.jpeg');"> 
+            <div class="custom-header text-center"
+                style="background-image: url('banner_img/main_banner/template31-b.jpeg');">
                 <div class="profile-picture">
-                    <img src="profile_img/main_profile/template31-p.png" alt="William James" class="rounded-circle"> 
+                    <img src="profile_img/main_profile/template31-p.png" alt="William James" class="rounded-circle">
                 </div>
             </div>
 
@@ -543,10 +555,12 @@
                         <span class="divider-line"></span>
                     </div>
                     <div class="d-flex justify-content-around mb-3">
-                        <a href="tel:0761231212" class="contact-icon-link"><i class="fas fa-phone"></i></a> 
-                        <a href="#" class="contact-icon-link"><i class="fas fa-mobile-alt"></i></a> 
-                        <a href="mailto:youremail@yourwebsite.com" class="contact-icon-link"><i class="fas fa-envelope"></i></a> 
-                        <a href="https://www.yourwebsiteaddress.com" target="_blank" rel="noopener noreferrer" class="contact-icon-link"><i class="fas fa-link"></i></a>
+                        <a href="tel:0761231212" class="contact-icon-link"><i class="fas fa-phone"></i></a>
+                        <a href="#" class="contact-icon-link"><i class="fas fa-mobile-alt"></i></a>
+                        <a href="mailto:youremail@yourwebsite.com" class="contact-icon-link"><i
+                                class="fas fa-envelope"></i></a>
+                        <a href="https://www.yourwebsiteaddress.com" target="_blank" rel="noopener noreferrer"
+                            class="contact-icon-link"><i class="fas fa-link"></i></a>
                     </div>
                 </div>
 
@@ -554,13 +568,16 @@
                     <h3 class="section-title address-section-title text-center mb-0">Address & Hours</h3>
                     <div class="section-divider mb-3">
                         <span class="divider-line"></span>
-                        <i class="fas fa-location-dot divider-icon"></i> 
+                        <i class="fas fa-location-dot divider-icon"></i>
                         <span class="divider-line"></span>
                     </div>
                     <p class="address-text address-line1">Dream Fox Design</p>
                     <p class="address-text address-line2">12/2, Marine Street, Singapore</p>
 
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63371.81536310987!2d79.8150056436461!3d6.921836877836778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae253d10f7a7003%3A0x320b2e4d32d3838d!2sColombo!5e0!3m2!1sen!2slk!4v1747363574543!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63371.81536310987!2d79.8150056436461!3d6.921836877836778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae253d10f7a7003%3A0x320b2e4d32d3838d!2sColombo!5e0!3m2!1sen!2slk!4v1747363574543!5m2!1sen!2slk"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                     <div class="opening-hours mt-3">
                         <h4>Opening Hours</h4>
@@ -574,21 +591,29 @@
                     <h3 class="section-title">Follow Me</h3>
                     <div class="section-divider mb-3">
                         <span class="divider-line"></span>
-                        <i class="fas fa-user divider-icon"></i> 
+                        <i class="fas fa-user divider-icon"></i>
                         <span class="divider-line"></span>
                     </div>
                     <div class="social-icons-grid">
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon-link"><i class="fab fa-facebook-f social-icon"></i></a>
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon-link"><i class="fab fa-instagram social-icon"></i></a>
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon-link"><i class="fab fa-linkedin-in social-icon"></i></a>
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon-link"><i class="fab fa-tiktok social-icon"></i></a>
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon-link"><i class="fab fa-youtube social-icon"></i></a>
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon-link"><i class="fab fa-twitter social-icon"></i></a>
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon-link"><i class="fab fa-pinterest-p social-icon"></i></a>
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon-link"><i class="fas fa-globe social-icon"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon-link"><i
+                                class="fab fa-facebook-f social-icon"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon-link"><i
+                                class="fab fa-instagram social-icon"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon-link"><i
+                                class="fab fa-linkedin-in social-icon"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon-link"><i
+                                class="fab fa-tiktok social-icon"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon-link"><i
+                                class="fab fa-youtube social-icon"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon-link"><i
+                                class="fab fa-twitter social-icon"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon-link"><i
+                                class="fab fa-pinterest-p social-icon"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon-link"><i
+                                class="fas fa-globe social-icon"></i></a>
                     </div>
                 </div>
-            </div> 
+            </div>
 
             <div class="bottom-background" style="background-image: url('banner_img/main_banner/template31-b.jpeg');">
                 <button class="btn scan-qr-button">Scan QR Code</button>
@@ -661,4 +686,5 @@ NOTE:${contactData.about}`;
         }
     </script>
 </body>
+
 </html>
