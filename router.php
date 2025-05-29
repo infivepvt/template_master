@@ -125,6 +125,7 @@ $routes = [
     'mahanil' => 'templates/mahanil.php',
     'skyone' => 'templates/skyone.php',
     'sachith' => 'templates/sachith.php',
+    'ldm' => 'templates/ldm.php',
 ];
 
 // Handle the request
