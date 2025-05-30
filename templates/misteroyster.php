@@ -292,11 +292,11 @@
                 <section class="section" style="padding: 0 20px;">
                     <div class="container" style="display: flex; justify-content: center; gap: 20px;">
                         <div class="column" style="background-color: transparent; box-shadow: none; padding: 0;">
-                            <h2 class="heading"
+                            <!-- <h2 class="heading"
                                 style="font-size: 1rem; margin-bottom: 10px; color: #333; text-align: center;">
                                 Try Mister Oyster on Uber Eats and use my code for a discount on your first order :
                                 eats-406ngf
-                            </h2>
+                            </h2> -->
                             <div style="display: flex; gap: 20px; justify-content: center;">
                                 <div class="qr-section"
                                     style="background: #f8f9fa; width: 100%; max-width: 300px; padding: 15px; display: flex; flex-direction: column; align-items: center;">
