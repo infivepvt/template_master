@@ -127,6 +127,7 @@ $routes = [
     'sachith' => 'templates/sachith.php',
     'ldm' => 'templates/ldm.php',
     'udari' => 'templates/udari.php',
+    'kasun' => 'templates/kasun.php',
 ];
 
 // Handle the request
