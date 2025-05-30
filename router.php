@@ -128,6 +128,7 @@ $routes = [
     'ldm' => 'templates/ldm.php',
     'udari' => 'templates/udari.php',
     'kasun' => 'templates/kasun.php',
+    'misteroyster' => 'templates/misteroyster.php',
 ];
 
 // Handle the request
