@@ -152,7 +152,7 @@
             background-color: #373938;
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 2000px) {
             .qr-section {
                 max-width: 150px !important;
             }
