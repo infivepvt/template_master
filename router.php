@@ -129,7 +129,7 @@ $routes = [
     'udari' => 'templates/udari.php',
     'kasun' => 'templates/kasun.php',
     'misteroyster' => 'templates/misteroyster.php',
-    'samafen.php' => 'templates/samafen.php',
+    'samafen' => 'templates/samafen.php',
 ];
 
 // Handle the request
