@@ -225,7 +225,7 @@
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
                         onclick="window.open('https://maps.app.goo.gl/SjuW714dUZXfNer79', '_blank')">
-                        <img src="Images/icon/map.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
+                        <img src="Images/Social_Media_Icon/location.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
                             style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">Mister Oyster
                             - Colombo</span>
@@ -233,7 +233,7 @@
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
                         onclick="window.open('https://maps.app.goo.gl/RBzonajNMZreytRU9', '_blank')">
-                        <img src="Images/icon/map.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
+                        <img src="Images/Social_Media_Icon/location.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
                             style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;"> Mister
                             Oyster - Kandy</span>
@@ -241,7 +241,7 @@
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
                         onclick="window.open('https://maps.app.goo.gl/Q6JwAMf8gJdhTJ14A', '_blank')">
-                        <img src="Images/icon/map.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
+                        <img src="Images/Social_Media_Icon/location.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
                             style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">Mister Oyster
                             - Talpe</span>
@@ -249,7 +249,7 @@
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
                         onclick="window.open('https://maps.app.goo.gl/j3stL1P8doeviGKb9', '_blank')">
-                        <img src="Images/icon/map.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
+                        <img src="Images/Social_Media_Icon/location.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
                             style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">Mister Oyster
                             - Hiriketiya</span>
