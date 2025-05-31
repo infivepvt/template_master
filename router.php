@@ -149,6 +149,7 @@ $routes = [
     'nipun' => 'templates/nipun.php',
     'sachindu' => 'templates/sachindu.php',
     'isuru' => 'templates/isuru.php',
+    'hasini' => 'templates/hasini.php',
 ];
 
 // Handle the request

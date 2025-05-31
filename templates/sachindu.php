@@ -626,7 +626,7 @@
                         </div>
                         <div class="contact-details">
                             <span class="contact-label">Email</span>
-                            <a href="mailto:sachinethmina6@gmail.com" class="contact-value">sachinethmina6@gmail.com</a>
+                            <a href="mailto:sachindunethmina6@gmail.com" class="contact-value">sachindunethmina6@gmail.com</a>
                         </div>
                     </div>
 
