@@ -148,6 +148,7 @@ $routes = [
     'delloite' => 'templates/delloite.php',
     'nipun' => 'templates/nipun.php',
     'sachindu' => 'templates/sachindu.php',
+    'isuru' => 'templates/isuru.php',
 ];
 
 // Handle the request
