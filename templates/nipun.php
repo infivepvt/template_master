@@ -230,7 +230,7 @@
                     <div>
                         <button type="button"
                             class="list-group-item d-flex align-items-center justify-content-between contact w-100 rounded rounded-2"
-                            onclick="window.open('tel:+94775524866', '_self')">
+                            onclick="window.open('tel:+94742130030', '_self')">
                             <img src="Images/icon/phone.png" alt=""
                                 style="width: 30px; height: 30px; margin-right:25px;">
                             <span class="text-center flex-grow-1 text-truncate custom-phone"
@@ -241,7 +241,7 @@
                     <div>
                         <button type="button"
                             class="list-group-item d-flex align-items-center justify-content-between contact w-100 rounded rounded-2"
-                            onclick="window.open('mailto:Infivellc@gmail.com', '_self')">
+                            onclick="window.open('mailto:kanipunsanjaya14@gmail.com', '_self')">
                             <img src="Images/icon/mail.png" alt=""
                                 style="width: 30px; height: 30px; margin-right:25px;">
                             <span class="text-center flex-grow-1 text-truncate custom-phone"
