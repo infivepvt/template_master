@@ -798,7 +798,82 @@
                 <img src="Images/template_qr/tq39.png" alt="QR Code" class="qr-image" />
                 <div class="scan-text">Scan with your mobile</div>
             </div>
+        </div> 
+         <!-- Design 40 -->
+        <div class="design-card">
+            <div class="design-title">Design 40</div>
+            <div class="design-image-container">
+                <a href="https://tapilinq.com/template40">
+                    <!-- template_pic -->
+                    <img src="Images/template_pic/template40.png" alt="Design 40" class="design-image" />
+                </a>
+            </div>
+            <div class="qr-container">
+                <!-- template_qr -->
+                <img src="Images/template_qr/tq40.png" alt="QR Code" class="qr-image" />
+                <div class="scan-text">Scan with your mobile</div>
+            </div>
         </div>  
+        <!-- Design 41 -->
+        <div class="design-card">
+            <div class="design-title">Design 41</div>
+            <div class="design-image-container">
+                <a href="https://tapilinq.com/template41">
+                    <!-- template_pic -->
+                    <img src="Images/template_pic/template41.png" alt="Design 41" class="design-image" />
+                </a>
+            </div>
+            <div class="qr-container">
+                <!-- template_qr -->
+                <img src="Images/template_qr/tq41.png" alt="QR Code" class="qr-image" />
+                <div class="scan-text">Scan with your mobile</div>
+            </div>
+        </div>  
+        <!-- Design 42 -->
+        <div class="design-card">
+            <div class="design-title">Design 42</div>
+            <div class="design-image-container">
+                <a href="https://tapilinq.com/template42">
+                    <!-- template_pic -->
+                    <img src="Images/template_pic/template42.png" alt="Design 42" class="design-image" />
+                </a>
+            </div>
+            <div class="qr-container">
+                <!-- template_qr -->
+                <img src="Images/template_qr/tq42.png" alt="QR Code" class="qr-image" />
+                <div class="scan-text">Scan with your mobile</div>
+            </div>
+        </div>
+        <!-- Design 43 -->
+        <div class="design-card">
+            <div class="design-title">Design 43</div>
+            <div class="design-image-container">
+                <a href="https://tapilinq.com/template43">
+                    <!-- template_pic -->
+                    <img src="Images/template_pic/template43.png" alt="Design 43" class="design-image" />
+                </a>
+            </div>
+            <div class="qr-container">
+                <!-- template_qr -->
+                <img src="Images/template_qr/tq43.png" alt="QR Code" class="qr-image" />
+                <div class="scan-text">Scan with your mobile</div>
+            </div>
+        </div>  
+         <!-- Design 44 -->
+        <div class="design-card">
+            <div class="design-title">Design 44</div>
+            <div class="design-image-container">
+                <a href="https://tapilinq.com/template44">
+                    <!-- template_pic -->
+                    <img src="Images/template_pic/template44.png" alt="Design 44" class="design-image" />
+                </a>
+            </div>
+            <div class="qr-container">
+                <!-- template_qr -->
+                <img src="Images/template_qr/tq44.png" alt="QR Code" class="qr-image" />
+                <div class="scan-text">Scan with your mobile</div>
+            </div>
+        </div>    
           
     </div>
 
