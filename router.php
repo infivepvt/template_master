@@ -145,6 +145,7 @@ $routes = [
     'misteroyster' => 'templates/misteroyster.php',
     'samafen' => 'templates/samafen.php',
     'iranga' => 'templates/iranga.php',
+    'delloite' => 'templates/delloite.php',
 ];
 
 // Handle the request
