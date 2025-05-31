@@ -291,37 +291,48 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        async function generateVCF() {
-            const contactData = {
-                firstName: "Nipun",
-                lastName: "Sanjaya",
-                title: "Software Engineer",
-                phoneWork: "+94784641491",
-                email: "kanipunsanjaya14@gmail.com",
-                website: "https://infiveprint.com",
-                profileImage: "profile_img/client_profile/infiveiresh-p.png"
-            };
+    async function generateVCF() {
+        const contactData = {
+            firstName: "Nipun",
+            lastName: "Sanjaya",
+            title: "Software Engineer",
+            phoneWork: "+94784641491",
+            email: "kanipunsanjaya14@gmail.com",
+            website: "https://infiveprint.com",
+            profileImage: "profile_img/client_profile/nipun-p.png" // Ensure this path is correct
+        };
 
-            async function imageToBase64(url) {
-                try {
-                    const response = await fetch(url, { mode: 'cors' });
-                    if (!response.ok) throw new Error('Failed to fetch image');
-                    const blob = await response.blob();
-                    return new Promise((resolve, reject) => {
-                        const reader = new FileReader();
-                        reader.onloadend = () => resolve(reader.result.split(',')[1]);
-                        reader.onerror = reject;
-                        reader.readAsDataURL(blob);
-                    });
-                } catch (error) {
-                    console.error("Error converting image to base64:", error);
-                    return "";
-                }
+        async function imageToBase64(url) {
+            try {
+                // Create an image element
+                const profileImage = new Image();
+                profileImage.src = url;
+                profileImage.crossOrigin = "Anonymous"; // Handle CORS if needed
+
+                // Wait for the image to load
+                await new Promise((resolve, reject) => {
+                    profileImage.onload = resolve;
+                    profileImage.onerror = reject;
+                });
+
+                // Create canvas and draw image
+                const canvas = document.createElement('canvas');
+                const ctx = canvas.getContext('2d');
+                canvas.width = profileImage.naturalWidth;
+                canvas.height = profileImage.naturalHeight;
+                ctx.drawImage(profileImage, 0, 0);
+
+                // Convert to base64
+                return canvas.toDataURL('image/jpeg').split(',')[1];
+            } catch (error) {
+                console.error("Error converting image to base64:", error);
+                return "";
             }
+        }
 
-            const base64Image = await imageToBase64(contactData.profileImage);
+        const base64Image = await imageToBase64(contactData.profileImage);
 
-            let vcfContent = `BEGIN:VCARD
+        let vcfContent = `BEGIN:VCARD
 VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
 N:${contactData.lastName};${contactData.firstName};;;
@@ -330,27 +341,27 @@ TEL;TYPE=WORK,VOICE:${contactData.phoneWork}
 EMAIL;TYPE=WORK:${contactData.email}
 URL;TYPE=WORK:${contactData.website}`;
 
-            if (base64Image) {
-                vcfContent += `
-PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}`;
-            }
-
+        if (base64Image) {
             vcfContent += `
+PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}`;
+        }
+
+        vcfContent += `
 END:VCARD`;
 
-            const blob = new Blob([vcfContent], { type: 'text/vcard' });
-            const url = URL.createObjectURL(blob);
+        const blob = new Blob([vcfContent], { type: 'text/vcard' });
+        const url = URL.createObjectURL(blob);
 
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-            document.body.appendChild(a);
-            a.click();
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+        document.body.appendChild(a);
+        a.click();
 
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
-        }
-    </script>
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    }
+</script>
 </body>
 
 </html>
