@@ -144,6 +144,7 @@ $routes = [
     'kasun' => 'templates/kasun.php',
     'misteroyster' => 'templates/misteroyster.php',
     'samafen' => 'templates/samafen.php',
+    'iranga' => 'templates/iranga.php',
 ];
 
 // Handle the request
