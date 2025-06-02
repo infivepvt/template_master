@@ -41,6 +41,7 @@
             top: 95%;
             left: 50%;
             transform: translate(-50%, -50%);
+            margin-top: 20px;
         }
 
         .profile-picture img {
@@ -159,19 +160,21 @@
     <div class="d-flex justify-content-center mt-5">
         <div class="card custom-card shadow-lg" style="background-color: #FFFFFF;">
             <div class="card-header custom-header text-center"
-                style="background-image:  url('banner_img/main_banner/banner.png'); height: 200px; opacity: 1;">
-                <img src="logo_img/client_logo/delloite-l.png" alt="Company Logo" class="custom-logo" height="80px"
-                    style="width: 245px; height: auto; opacity: 1;">
+                style="background-image:  url('banner_img/client_banner/delloite-b.png'); height: 200px; opacity: 1;">
+                <!-- <img src="logo_img/client_logo/delloite-l.png" alt="Company Logo" class="custom-logo" height="80px"
+                    style="width: 245px; height: auto; opacity: 1;"> -->
                 <div class="profile-picture">
                     <img src="profile_img/client_profile/delloite-p.png" alt="Saliya Pathum" class="rounded-circle">
                 </div>
             </div>
             <br>
             <br>
+            <br>
             <div class="card-body text-center"
                 style="background-color: #FFFFFF; color: #000000; text-decoration: none; ">
                 <h2 class="card-title" style="font-size: 27px; text-transform: uppercase;">Muzawwir Manzeer</h2>
-                <p style="color: #000000; font-size: 21px; text-transform: uppercase;">partner</p>
+                <p style="color: #000000; font-size: 21px; text-transform: uppercase;">partner<Br> Deloitte Sri Lanka
+                    and Maldives</p>
 
                 <a href="https://wa.me/94777759556" target="_blank" rel="noopener noreferrer"
                     style="text-decoration: none;">
@@ -184,8 +187,8 @@
                 </a>
 
                 <div class="list-group mb-3">
-                    
-                    
+
+
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
                         onclick="window.open('tel:0777759556', '_self')">
@@ -223,7 +226,7 @@
                             style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">mmanzeer@deloitte.com</span>
                     </button>
 
-                     <button type="button"
+                    <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
                         onclick="window.open('mailto:muzawwir@gmail.com', '_self')">
                         <img src="Images/icon/mail.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
@@ -249,12 +252,14 @@
                             No. 100, Braybrooke Place, Colombo 02.</span>
                     </button>
                 </div>
-
+                <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:18px; font-weight:bold;">IIA President Sri Lanka
+                </p>
                 <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:19px">CONNECT WITH SOCIAL MEDIA
                 </p>
-        
+
                 <div class="d-flex flex-wrap justify-content-center">
-                    <a href="https://www.linkedin.com/in/muzawwir-manzeer-09284155?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer" class="m-3">
+                    <a href="https://www.linkedin.com/in/muzawwir-manzeer-09284155?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                        target="_blank" rel="noopener noreferrer" class="m-3">
                         <img src="Images/Social_Media_Icon/linkedin.png" alt="" style="width: 100px; height: 100px;">
                     </a>
                 </div>
@@ -274,53 +279,53 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-    function generateVCF() {
-        // Updated contact information to match the business card
-        const contactData = {
-            firstName: "Muzawwir",
-            lastName: "Manzeer",
-            title: "Partner",
-            phoneWork: "+94777759556",
-            phoneWork2: "+94115444400",
-            phoneWork3: "+94117719700",
-            phoneWork4: "+94112582452",
-            email: "mmanzeer@deloitte.com",
-            email2: "muzawwir@gmail.com",
-            website: "https://www.deloitte.com",
-            address: "No. 100, Braybrooke Place, Colombo 02",
-            profileImage: "profile_img/client_profile/delloite-p.png",
-            logo: "logo_img/client_logo/delloite-l.png"
-        };
+        function generateVCF() {
+            // Updated contact information to match the business card
+            const contactData = {
+                firstName: "Muzawwir",
+                lastName: "Manzeer",
+                title: "Partner",
+                phoneWork: "+94777759556",
+                phoneWork2: "+94115444400",
+                phoneWork3: "+94117719700",
+                phoneWork4: "+94112582452",
+                email: "mmanzeer@deloitte.com",
+                email2: "muzawwir@gmail.com",
+                website: "https://www.deloitte.com",
+                address: "No. 100, Braybrooke Place, Colombo 02",
+                profileImage: "profile_img/client_profile/delloite-p.png",
+                logo: "logo_img/client_logo/delloite-l.png"
+            };
 
-        // Function to load image and convert to base64
-        async function getBase64Image(src) {
-            return new Promise((resolve, reject) => {
-                const img = new Image();
-                img.crossOrigin = "Anonymous"; // Handle cross-origin issues if needed
-                img.src = src;
-                img.onload = () => {
-                    const canvas = document.createElement('canvas');
-                    const ctx = canvas.getContext('2d');
-                    canvas.width = img.naturalWidth;
-                    canvas.height = img.naturalHeight;
-                    ctx.drawImage(img, 0, 0);
-                    const base64 = canvas.toDataURL('image/jpeg').split(',')[1]; // Get base64 string without prefix
-                    resolve(base64);
-                };
-                img.onerror = (err) => reject(err);
-            });
-        }
-
-        // Generate VCF content
-        async function createVCF() {
-            let profileImageBase64 = '';
-            try {
-                profileImageBase64 = await getBase64Image(contactData.profileImage);
-            } catch (err) {
-                console.error('Failed to load profile image:', err);
+            // Function to load image and convert to base64
+            async function getBase64Image(src) {
+                return new Promise((resolve, reject) => {
+                    const img = new Image();
+                    img.crossOrigin = "Anonymous"; // Handle cross-origin issues if needed
+                    img.src = src;
+                    img.onload = () => {
+                        const canvas = document.createElement('canvas');
+                        const ctx = canvas.getContext('2d');
+                        canvas.width = img.naturalWidth;
+                        canvas.height = img.naturalHeight;
+                        ctx.drawImage(img, 0, 0);
+                        const base64 = canvas.toDataURL('image/jpeg').split(',')[1]; // Get base64 string without prefix
+                        resolve(base64);
+                    };
+                    img.onerror = (err) => reject(err);
+                });
             }
 
-            let vcfContent = `BEGIN:VCARD
+            // Generate VCF content
+            async function createVCF() {
+                let profileImageBase64 = '';
+                try {
+                    profileImageBase64 = await getBase64Image(contactData.profileImage);
+                } catch (err) {
+                    console.error('Failed to load profile image:', err);
+                }
+
+                let vcfContent = `BEGIN:VCARD
 VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
 N:${contactData.lastName};${contactData.firstName};;;
@@ -337,25 +342,25 @@ PHOTO;ENCODING=b;TYPE=JPEG:${profileImageBase64}
 LOGO;VALUE=URL:${contactData.logo}
 END:VCARD`;
 
-            // Create download link
-            const blob = new Blob([vcfContent], { type: 'text/vcard' });
-            const url = URL.createObjectURL(blob);
+                // Create download link
+                const blob = new Blob([vcfContent], { type: 'text/vcard' });
+                const url = URL.createObjectURL(blob);
 
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-            document.body.appendChild(a);
-            a.click();
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+                document.body.appendChild(a);
+                a.click();
 
-            // Clean up
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
+                // Clean up
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+            }
+
+            // Execute the VCF creation
+            createVCF();
         }
-
-        // Execute the VCF creation
-        createVCF();
-    }
-</script>
+    </script>
 </body>
 
 </html>
