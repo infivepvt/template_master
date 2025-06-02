@@ -153,6 +153,7 @@ $routes = [
     'zara' => 'templates/zara.php',
     'firaz' => 'templates/firaz.php',
     'thilina' => 'templates/thilina.php',
+    'shavee' => 'templates/shavee.php',
 ];
 
 // Handle the request
