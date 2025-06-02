@@ -532,7 +532,7 @@
             <div class="custom-header text-center"
                 style="background-image: url('banner_img/client_banner/lmd-b.png');">
                 <div class="profile-picture">
-                    <img src="profile_img/client_profile/lmd-p.jpg" alt="Sangeeth Munasinghe" class="rounded-circle">
+                    <img src="profile_img/client_profile/lmd-p.png" alt="Sangeeth Munasinghe" class="rounded-circle">
                 </div>
             </div>
 
