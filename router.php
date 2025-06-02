@@ -152,6 +152,7 @@ $routes = [
     'hasini' => 'templates/hasini.php',
     'zara' => 'templates/zara.php',
     'firaz' => 'templates/firaz.php',
+    'thilina' => 'templates/thilina.php',
 ];
 
 // Handle the request
