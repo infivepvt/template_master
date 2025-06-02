@@ -530,7 +530,7 @@
     <div class="d-flex justify-content-center mt-3 mt-md-5">
         <div class="card custom-card shadow-lg">
             <div class="custom-header text-center"
-                style="background-image: url('banner_img/main_banner/template31-b.jpeg');">
+                style="background-image: url('banner_img/client_banner/lmd-b.png');">
                 <div class="profile-picture">
                     <img src="profile_img/client_profile/lmd-p.jpg" alt="Sangeeth Munasinghe" class="rounded-circle">
                 </div>
