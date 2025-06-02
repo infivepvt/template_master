@@ -150,6 +150,7 @@ $routes = [
     'sachindu' => 'templates/sachindu.php',
     'isuru' => 'templates/isuru.php',
     'hasini' => 'templates/hasini.php',
+    'zara' => 'templates/zara.php',
 ];
 
 // Handle the request
