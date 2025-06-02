@@ -638,7 +638,7 @@
                 address2: "",
                 about: "",
                 logo: "https://tapilinq.com/logo_img/client_logo/iranga-1-l.png",
-                profileImage: "https://tapilinq.com/profile_img/client_profile/dilmy-p.jpeg" // Same as logo in this case
+                profileImage: "https://tapilinq.com/logo_img/client_logo/iranga-1-l.png" // Same as logo in this case
             };
 
             // Convert image to base64
