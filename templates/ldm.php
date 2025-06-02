@@ -529,8 +529,7 @@
 <body>
     <div class="d-flex justify-content-center mt-3 mt-md-5">
         <div class="card custom-card shadow-lg">
-            <div class="custom-header text-center"
-                style="background-image: url('banner_img/client_banner/lmd-b.png');">
+            <div class="custom-header text-center" style="background-image: url('banner_img/client_banner/lmd-b.png');">
                 <div class="profile-picture">
                     <img src="profile_img/client_profile/lmd-p.png" alt="Sangeeth Munasinghe" class="rounded-circle">
                 </div>
@@ -570,7 +569,7 @@
                         <i class="fas fa-location-dot divider-icon"></i>
                         <span class="divider-line"></span>
                     </div>
-                    <p class="address-text address-line1">Ldm Technologies</p>
+                    <p class="address-text address-line1">LDM Technologies</p>
                     <p class="address-text address-line2">228/2 Athurugiriya Rd, Malapalla, Pannipitiya</p>
 
                     <iframe
@@ -596,7 +595,11 @@
                     <div class="social-icons-grid">
                         <a href="https://web.facebook.com/LDMTEC" target="_blank" rel="noopener noreferrer"
                             class="social-icon-link"><i class="fab fa-facebook-f social-icon"></i></a>
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon-link"><i
+                        <a href="https://www.facebook.com/redpetalsLK?_rdc=1&_rdr#" target="_blank" rel="noopener noreferrer"
+                            class="social-icon-link"><i class="fab fa-facebook-f social-icon"></i></a>
+                        <a href="https://web.facebook.com/profile.php?id=61574702775473" target="_blank" rel="noopener noreferrer"
+                            class="social-icon-link"><i class="fab fa-facebook-f social-icon"></i></a>
+                        <!-- <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon-link"><i
                                 class="fab fa-instagram social-icon"></i></a>
                         <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon-link"><i
                                 class="fab fa-linkedin-in social-icon"></i></a>
@@ -609,7 +612,7 @@
                         <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon-link"><i
                                 class="fab fa-pinterest-p social-icon"></i></a>
                         <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon-link"><i
-                                class="fas fa-globe social-icon"></i></a>
+                                class="fas fa-globe social-icon"></i></a> -->
                     </div>
                 </div>
             </div>
@@ -622,29 +625,29 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-<script>
-    function generateVCF() {
-        const contactData = {
-            firstName: "Sangeeth",
-            lastName: "Munasinghe",
-            title: "Director of Ldm Technologies",
-            phoneWork: "0779330909",
-            phoneMobile: "0779330909",
-            email: "info@ldmtec.com",
-            email2: "",
-            email3: "",
-            website: "https://www.ldmtec.com",
-            website2: "",
-            website3: "",
-            address: "228/2 Athurugiriya Rd, Malapalla, Pannipitiya",
-            address2: "",
-            about: "",
-            logo: "logo_img/main_logo/Main_Design-l.png",
-            profileImage: "profile_img/client_profile/lmd-p.jpg"
-        };
+    <script>
+        function generateVCF() {
+            const contactData = {
+                firstName: "Sangeeth",
+                lastName: "Munasinghe",
+                title: "Director of Ldm Technologies",
+                phoneWork: "0779330909",
+                phoneMobile: "0779330909",
+                email: "info@ldmtec.com",
+                email2: "",
+                email3: "",
+                website: "https://www.ldmtec.com",
+                website2: "",
+                website3: "",
+                address: "228/2 Athurugiriya Rd, Malapalla, Pannipitiya",
+                address2: "",
+                about: "",
+                logo: "logo_img/main_logo/Main_Design-l.png",
+                profileImage: "profile_img/client_profile/lmd-p.jpg"
+            };
 
-        async function createVCard() {
-            let vcfContent = `BEGIN:VCARD
+            async function createVCard() {
+                let vcfContent = `BEGIN:VCARD
 VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
 N:${contactData.lastName};${contactData.firstName};;;
@@ -661,79 +664,79 @@ ADR;TYPE=WORK:;;${contactData.address}
 ${contactData.address2 ? `ADR;TYPE=HOME:;;${contactData.address2}` : ''}
 NOTE:${contactData.about}`;
 
-            // Handle profile image
-            if (contactData.profileImage) {
-                try {
-                    const profileImage = new Image();
-                    profileImage.src = contactData.profileImage;
-                    profileImage.crossOrigin = "Anonymous"; // Handle CORS if image is from another domain
+                // Handle profile image
+                if (contactData.profileImage) {
+                    try {
+                        const profileImage = new Image();
+                        profileImage.src = contactData.profileImage;
+                        profileImage.crossOrigin = "Anonymous"; // Handle CORS if image is from another domain
 
-                    // Wait for the image to load
-                    await new Promise((resolve, reject) => {
-                        profileImage.onload = resolve;
-                        profileImage.onerror = reject;
-                    });
+                        // Wait for the image to load
+                        await new Promise((resolve, reject) => {
+                            profileImage.onload = resolve;
+                            profileImage.onerror = reject;
+                        });
 
-                    // Create canvas and draw image
-                    const canvas = document.createElement('canvas');
-                    const ctx = canvas.getContext('2d');
-                    canvas.width = profileImage.naturalWidth;
-                    canvas.height = profileImage.naturalHeight;
-                    ctx.drawImage(profileImage, 0, 0);
+                        // Create canvas and draw image
+                        const canvas = document.createElement('canvas');
+                        const ctx = canvas.getContext('2d');
+                        canvas.width = profileImage.naturalWidth;
+                        canvas.height = profileImage.naturalHeight;
+                        ctx.drawImage(profileImage, 0, 0);
 
-                    // Convert to Base64
-                    const base64Image = canvas.toDataURL('image/jpeg').split(',')[1];
-                    vcfContent += `\nPHOTO;ENCODING=b;TYPE=JPEG:${base64Image}`;
-                } catch (error) {
-                    console.error("Error loading profile image:", error);
+                        // Convert to Base64
+                        const base64Image = canvas.toDataURL('image/jpeg').split(',')[1];
+                        vcfContent += `\nPHOTO;ENCODING=b;TYPE=JPEG:${base64Image}`;
+                    } catch (error) {
+                        console.error("Error loading profile image:", error);
+                    }
                 }
+
+                // Handle logo (optional, same approach as profile image)
+                if (contactData.logo) {
+                    try {
+                        const logoImage = new Image();
+                        logoImage.src = contactData.logo;
+                        logoImage.crossOrigin = "Anonymous";
+
+                        await new Promise((resolve, reject) => {
+                            logoImage.onload = resolve;
+                            logoImage.onerror = reject;
+                        });
+
+                        const canvas = document.createElement('canvas');
+                        const ctx = canvas.getContext('2d');
+                        canvas.width = logoImage.naturalWidth;
+                        canvas.height = logoImage.naturalHeight;
+                        ctx.drawImage(logoImage, 0, 0);
+
+                        const base64Logo = canvas.toDataURL('image/jpeg').split(',')[1];
+                        vcfContent += `\nLOGO;ENCODING=b;TYPE=JPEG:${base64Logo}`;
+                    } catch (error) {
+                        console.error("Error loading logo image:", error);
+                    }
+                }
+
+                vcfContent += `\nEND:VCARD`;
+
+                // Create and download vCard
+                const blob = new Blob([vcfContent], { type: 'text/vcard' });
+                const url = URL.createObjectURL(blob);
+
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+                document.body.appendChild(a);
+                a.click();
+
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
             }
 
-            // Handle logo (optional, same approach as profile image)
-            if (contactData.logo) {
-                try {
-                    const logoImage = new Image();
-                    logoImage.src = contactData.logo;
-                    logoImage.crossOrigin = "Anonymous";
-
-                    await new Promise((resolve, reject) => {
-                        logoImage.onload = resolve;
-                        logoImage.onerror = reject;
-                    });
-
-                    const canvas = document.createElement('canvas');
-                    const ctx = canvas.getContext('2d');
-                    canvas.width = logoImage.naturalWidth;
-                    canvas.height = logoImage.naturalHeight;
-                    ctx.drawImage(logoImage, 0, 0);
-
-                    const base64Logo = canvas.toDataURL('image/jpeg').split(',')[1];
-                    vcfContent += `\nLOGO;ENCODING=b;TYPE=JPEG:${base64Logo}`;
-                } catch (error) {
-                    console.error("Error loading logo image:", error);
-                }
-            }
-
-            vcfContent += `\nEND:VCARD`;
-
-            // Create and download vCard
-            const blob = new Blob([vcfContent], { type: 'text/vcard' });
-            const url = URL.createObjectURL(blob);
-
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-            document.body.appendChild(a);
-            a.click();
-
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
+            // Execute the async function
+            createVCard().catch(error => console.error("Error generating vCard:", error));
         }
-
-        // Execute the async function
-        createVCard().catch(error => console.error("Error generating vCard:", error));
-    }
-</script>
+    </script>
 </body>
 
 </html>
