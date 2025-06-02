@@ -154,6 +154,7 @@ $routes = [
     'firaz' => 'templates/firaz.php',
     'thilina' => 'templates/thilina.php',
     'shavee' => 'templates/shavee.php',
+    'shivantha' => 'templates/shivantha.php',
 ];
 
 // Handle the request
