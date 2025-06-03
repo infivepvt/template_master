@@ -160,6 +160,7 @@ $routes = [
     'shivantha2' => 'templates/shivantha2.php',
     'sharlz' => 'templates/sharlz.php',
     'jeewan' => 'templates/jeewan.php',
+    'jeewan2' => 'templates/jeewan2.php',
 ];
 
 // Handle the request
