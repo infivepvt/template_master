@@ -11,7 +11,7 @@
     <style>
         :root {
             --primary: #292b51;
-            --secondary: #cc9831;
+            --secondary: #007171;
             --accent: #4a6fa5;
             --light: #f8f9fa;
             --dark: #212529;
@@ -54,14 +54,18 @@
         } */
 
         .card-header {
-            background: linear-gradient(135deg, var(--primary) 0%, #3a3f6d 100%);
+            /* background: linear-gradient(135deg, var(--primary) 0%, #3a3f6d 100%); */
             padding: 30px 20px 120px;
             margin: 25px 20px;
             border-radius: 15px !important;
             position: relative;
             text-align: center;
+            background-image: url('banner_img/client_banner/iranga-b.png');
             /* border-bottom-left-radius: 50% 20%;
             border-bottom-right-radius: 50% 20%; */
+            background-position: left;
+            background-size: cover;
+            /* min-height: 150px; */
         }
 
         .company-logos {
@@ -124,7 +128,8 @@
         }
 
         .text-body {
-            background: linear-gradient(135deg, var(--secondary) 0%, #e0b04a 100%);
+            /* background: linear-gradient(135deg, var(--secondary) 0%, #e0b04a 100%); */
+            background-color: var(--secondary);
             border-radius: 15px;
             padding: 25px 20px;
             margin-top: 20px;
@@ -150,13 +155,13 @@
             font-weight: 700;
             font-size: 28px;
             text-transform: uppercase;
-            color: var(--primary);
+            color: #CCCCCC;
             margin-bottom: 5px;
             letter-spacing: 0.5px;
         }
 
         .position {
-            color: var(--primary);
+            color: #CCCCCC;
             font-size: 14px;
             text-transform: uppercase;
             letter-spacing: 2.5px;
@@ -179,7 +184,7 @@
             background: linear-gradient(to right, var(--primary) 0%, #3a3f6d 100%);
             border-radius: 12px;
             margin-bottom: 12px;
-            padding: 12px 20px;
+            padding: 12px 15px;
             color: white;
             display: flex;
             align-items: center;
@@ -199,7 +204,7 @@
             font-size: 20px;
             width: 30px;
             text-align: center;
-            margin-right: 15px;
+            margin-right: 10px;
             transition: var(--transition);
         }
 
@@ -484,13 +489,13 @@
             <div class="col-12 col-md-10 col-lg-6 p-0 m-0">
                 <div class="custom-card">
                     <div class="card-header">
-                        <div class="company-logos">
+                        <!-- <div class="company-logos">
                             <img src="logo_img/client_logo/iranga-1-l.png" alt="Company Logo 1">
                             <img src="logo_img/client_logo/iranga-2-l.png" alt="Company Logo 2">
-                        </div>
+                        </div> -->
 
                         <div class="profile-picture">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=140&w=140" alt="Iranga Kodikara">
+                            <img src="profile_img/client_profile/iranga-p.jpeg" alt="Iranga Kodikara">
                         </div>
                     </div>
 
@@ -504,14 +509,31 @@
                         </div>
 
                         <div class="contact-info">
-                            <div class="contact-item" onclick="window.open('tel:+94761316995', '_blank')">
-                                <i class="fas fa-phone-alt"></i>
-                                <div class="contact-text">+94 76 131 6995</div>
+                            <div class="contact-item">
+                                <div class="row w-100">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-6 d-inline-flex align-items-center" onclick="window.open('tel:+94761316995', '_blank')">
+                                                <i class="fas fa-phone-alt" style="font-size: 12px;"></i>
+                                                <div class="contact-text" style="font-size: 12px;">+94 76 131 6995</div>
+                                            </div>
+                                            <div class="col-6 d-inline-flex align-items-center" onclick="window.open('tel:+918925108432', '_blank')">
+                                                <i class="fas fa-phone-alt" style="font-size: 12px;"></i>
+                                                <div class="contact-text" style="font-size: 12px;">+91 8925108432</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="contact-item" onclick="window.open('mailto:iranga.kodikara@lpalighting.com', '_blank')">
                                 <i class="fas fa-envelope"></i>
                                 <div class="contact-text">iranga.kodikara@lpalighting.com</div>
+                            </div>
+
+                            <div class="contact-item" onclick="window.open('mailto:iranga@litelab.lk', '_blank')">
+                                <i class="fas fa-envelope"></i>
+                                <div class="contact-text">iranga@litelab.lk</div>
                             </div>
 
                             <div class="contact-item" onclick="window.open('https://www.lpalighting.com', '_blank')">
@@ -629,7 +651,7 @@
                 phoneWork: "",
                 phoneMobile: "+94761316995",
                 email: "iranga.kodikara@lpalighting.com",
-                email2: "",
+                email2: "iranga@litelab.lk",
                 email3: "",
                 website: "https://www.lpalighting.com",
                 website2: "https://www.litelab.net/",
@@ -638,7 +660,7 @@
                 address2: "",
                 about: "",
                 logo: "https://tapilinq.com/logo_img/client_logo/iranga-1-l.png",
-                profileImage: "https://tapilinq.com/logo_img/client_logo/iranga-1-l.png" // Same as logo in this case
+                profileImage: "https://tapilinq.com/profile_img/client_profile/iranga-p.jpeg" // Same as logo in this case
             };
 
             // Convert image to base64
