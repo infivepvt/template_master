@@ -160,7 +160,7 @@
     <div class="d-flex justify-content-center mt-5">
         <div class="card custom-card shadow-lg" style="background-color: #FFFFFF;">
             <div class="card-header custom-header text-center"
-                style="background-image:  url('banner_img/client_banner/sharlz-b.jpg'); height: 200px; opacity: 1;">
+                style="background-image:  url('banner_img/client_banner/sharlz-b.jpeg'); height: 200px; opacity: 1;">
               <!--  <img src="" alt="Company Logo" class="custom-logo" height="80px"
                     style="width: 245px; height: auto; opacity: 1;">
     -->
