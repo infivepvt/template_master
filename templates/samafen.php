@@ -241,6 +241,15 @@
                 </div>
             </div>
 
+            <div class="contact-section" onclick="window.open('https://wa.me/+601117887819', '_blank')">
+                <div class="contact-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="contact-details">
+                    <p class="contact-d">+60 1117887819</p>
+                </div>
+            </div>
+
             <div class="contact-section" onclick="window.open('mailto:imran@samafen.com', '_self')">
                 <div class="contact-icon">
                     <i class="fas fa-envelope"></i>
@@ -264,17 +273,11 @@
 
         <div class="row justify-content-center mt-4">
             <div class="col"></div>
-            <!-- <div class="col d-flex justify-content-center">
-                <img src="Images/Social_Media_Icon/facebook.png" style="width: 40px;">
-            </div> -->
             <div class="col d-flex justify-content-center" onclick="window.open('https://www.instagram.com/samafenmaldives?igsh=cWtxaHVscGtydHVo&utm_source=qr', '_blank')">
                 <img src="Images/Social_Media_Icon/instagram.png" style="width: 40px;">
             </div>
             <div class="col d-flex justify-content-center" onclick="window.open('https://www.linkedin.com/in/muhammed-imran-bb71601ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app', '_blank')">
                 <img src="Images/Social_Media_Icon/linkedin.png" style="width: 40px;">
-            </div>
-            <div class="col d-flex justify-content-center" onclick="window.open('https://wa.me/+601117887819', '_blank')">
-                <img src="Images/Social_Media_Icon/whatsapp.png" style="width: 40px;">
             </div>
             <div class="col"></div>
         </div>
