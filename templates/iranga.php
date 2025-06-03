@@ -60,11 +60,8 @@
             border-radius: 15px !important;
             position: relative;
             text-align: center;
-            background-image: url('banner_img/client_banner/iranga-b.png');
             /* border-bottom-left-radius: 50% 20%;
             border-bottom-right-radius: 50% 20%; */
-            background-position: left;
-            background-size: cover;
             /* min-height: 150px; */
         }
 
@@ -102,6 +99,7 @@
             justify-content: center;
             align-items: center;
             z-index: 9999;
+            /* margin-top: -110px; */
 
         }
 
@@ -270,7 +268,7 @@
         }
 
         .portfolio-button {
-            background: linear-gradient(135deg, var(--secondary) 0%, #e0b04a 100%);
+            background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
             border-radius: 12px;
             margin-bottom: 12px;
             padding: 15px 20px;
@@ -309,7 +307,7 @@
             font-weight: 600;
             font-size: 16px;
             margin-bottom: 3px;
-            color: var(--primary);
+            color: white;
         }
 
         .portfolio-subtitle {
@@ -488,7 +486,8 @@
         <div class="row p-0 m-p justify-content-center">
             <div class="col-12 col-md-10 col-lg-6 p-0 m-0">
                 <div class="custom-card">
-                    <div class="card-header">
+                    <div class="card-header p-0">
+                        <img src="banner_img/client_banner/iranga-b.png" alt="Banner" style="width: 100%; height: auto; border-radius: 15px;" />
                         <!-- <div class="company-logos">
                             <img src="logo_img/client_logo/iranga-1-l.png" alt="Company Logo 1">
                             <img src="logo_img/client_logo/iranga-2-l.png" alt="Company Logo 2">
@@ -504,26 +503,14 @@
                             <h2 class="name text-center mt-3">Iranga Kodikara</h2>
                             <div class="position text-center">Country Director</div>
                             <p class="about text-center">
-                                Experienced business leader with over 15 years in the lighting industry. Passionate about innovative lighting solutions and sustainable business practices.
+                                Seasoned lighting industry leader with 18+ years of experience in innovative solutions, sustainable growth, and strategic leadership across commercial and residential sectors.
                             </p>
                         </div>
 
                         <div class="contact-info">
-                            <div class="contact-item">
-                                <div class="row w-100">
-                                    <div class="col-12">
-                                        <div class="row">
-                                            <div class="col-6 d-inline-flex align-items-center" onclick="window.open('tel:+94761316995', '_blank')">
-                                                <i class="fas fa-phone-alt" style="font-size: 12px;"></i>
-                                                <div class="contact-text" style="font-size: 12px;">+94 76 131 6995</div>
-                                            </div>
-                                            <div class="col-6 d-inline-flex align-items-center" onclick="window.open('tel:+918925108432', '_blank')">
-                                                <i class="fas fa-phone-alt" style="font-size: 12px;"></i>
-                                                <div class="contact-text" style="font-size: 12px;">+91 8925108432</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="contact-item" onclick="window.open('mailto:iranga.kodikara@lpalighting.com', '_blank')">
+                                <i class="fas fa-phone-alt"></i>
+                                <div class="contact-text">+91 8925108432</div>
                             </div>
 
                             <div class="contact-item" onclick="window.open('mailto:iranga.kodikara@lpalighting.com', '_blank')">
@@ -550,16 +537,13 @@
                         <div class="section-title">CONNECT WITH ME</div>
 
                         <div class="social-icons">
-                            <a href="#" class="social-icon">
+                            <a target="_blank" href="https://www.linkedin.com/in/iranga-kodikara-6133a61a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-icon">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
-                            <a href="#" class="social-icon">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#" class="social-icon">
+                            <a target="_blank" href="https://www.facebook.com/share/1GEUtXwhWv/" class="social-icon">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
-                            <a href="#" class="social-icon">
+                            <a target="_blank" href="https://www.instagram.com/lpalighting?igsh=MWdxcjhnYmRkOW95ZQ==" class="social-icon">
                                 <i class="fab fa-instagram"></i>
                             </a>
                         </div>
