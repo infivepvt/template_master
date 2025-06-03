@@ -17,7 +17,7 @@
         }
 
         body {
-            background-color: #000000;
+            background-color: #ffffff;
             color: #333;
             line-height: 1.6;
         }
@@ -47,19 +47,21 @@
 
         h1,
         h2 {
-            color: #222;
+            color: #000000;
             margin-bottom: 10px;
         }
 
         .title {
             font-weight: normal;
             margin-bottom: 20px;
+            color: #000000;
         }
 
         /* About section */
         .about-section {
             text-align: center;
             margin: 40px 0;
+            color: #b12249;
         }
 
         .about-section p {
@@ -89,7 +91,7 @@
             width: 200px;
             margin: 30px auto;
             padding: 12px 20px;
-            background-color: #2c3e50;
+            background-color: #b12249;
             color: white;
             text-align: center;
             text-decoration: none;
@@ -100,7 +102,7 @@
         }
 
         .save-button:hover {
-            background-color: #1a252f;
+            background-color: #b12249;
         }
 
         /* Footer */
@@ -125,8 +127,8 @@
             height: 40px;
             text-align: center;
             font-size: 24px;
-            color: white;
-            border: 2px solid #ffffff;
+            color: #b12249;
+            border: 2px solid #b12249;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -144,7 +146,7 @@
         }
 
         .contact-d {
-            color: white;
+            color: #000000;
             font-family: 'Roboto', sans-serif;
             font-size: 16px;
         }
@@ -156,8 +158,8 @@
     <div class="container">
         <header class="profile-header">
             <img src="profile_img/client_profile/aruna-p.png" alt="Carl Protton" class="profile-image">
-            <h1 style="color: white;">Aruna Dayanatha PhD</h1>
-            <p class="title" style="color: white; font-size: 13px; text-transform: uppercase;">
+            <h1 style="color: #b12249;">Aruna Dayanatha PhD</h1>
+            <p class="title" style="color: #000000; font-size: 13px; text-transform: uppercase;">
                 Director | Chief Conceptualist <br><br>
                779/F/2, Pannipitiya Road, Pelawatta, <br>
                 Battaramulla, Sri Lanka , 10120
@@ -217,8 +219,8 @@
         </header>
 
         <section class="about-section">
-            <h2 style="color: white;">About Me</h2>
-            <p style="color: white;">Chartered IT Professional, <br>
+            <h2 style="color: #b12249;">About Me</h2>
+            <p style="color: #000000;">Chartered IT Professional, <br>
             Certified Management Consultant, <br>
             Certificate Gamification Expert</p>
 
