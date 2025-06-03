@@ -10,8 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="Images/Logo1.ico">
     <style>
+        body {
+            background-color: rgb(0, 0, 0);
+        }
+
         .custom-card {
-             border-radius: 15px;
+            border-radius: 15px;
             overflow: hidden;
             background: #EEF1FF;
             width: 450px;
@@ -143,7 +147,6 @@
         .contact {
             background-color: #000000;
         }
-        
     </style>
 </head>
 
@@ -163,13 +166,14 @@
                 <h2 class="card-title">Iresh Wickramasinghe</h2>
                 <p style="font-size: 14px; text-transform: uppercase; color: #FFFFFF;">Founder & Chairman</p>
                 <div class="list-group mb-3">
-                     <button type="button" class="list-group-item d-flex align-items-center justify-content-between contact"
-                    onclick="window.open('https://wa.me/+94775524866', '_blank')">
-                    <img src="Images/icon/whatsapp.png" alt="WhatsApp"
-                        style="width: 40px; height: 40px; margin-right: 25px;">
-                    <span class="text-center flex-grow-1 text-truncate custom-phone">Connect with WhatsApp</span>
-                </button>
-                <br>
+                    <button type="button"
+                        class="list-group-item d-flex align-items-center justify-content-between contact"
+                        onclick="window.open('https://wa.me/+94775524866', '_blank')">
+                        <img src="Images/icon/whatsapp.png" alt="WhatsApp"
+                            style="width: 40px; height: 40px; margin-right: 25px;">
+                        <span class="text-center flex-grow-1 text-truncate custom-phone">Connect with WhatsApp</span>
+                    </button>
+                    <br>
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
                         onclick="window.open('tel:+94775524866', '_self')">
