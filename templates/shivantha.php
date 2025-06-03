@@ -7,12 +7,11 @@
     <title>Digital Business Card</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="Images/Logo1.ico">
     <style>
         body {
             background-color: #F5F7FA;
-            /* Soft grayish-blue background */
         }
 
         .custom-card {
@@ -32,29 +31,6 @@
             background-image: url("banner_img/client_banner/shivantha-b.png");
             background-position: top;
             background-size: cover;
-        }
-
-        .background-images {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-        }
-
-        .bg-image {
-            flex: 1;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .custom-logo {
-            width: 200px;
-            position: relative;
-            top: 0;
-            left: 0;
-            margin-bottom: 40px;
         }
 
         .profile-picture {
@@ -82,68 +58,69 @@
 
         .list-group-item {
             background-color: #555;
-            /* Lighter gray */
             color: #fff;
             border-radius: 8px;
             margin-bottom: 10px;
             border: 1px solid #666;
-            /* Lighter border */
-            padding: 10px 15px;
+            padding: 12px 15px;
+            display: flex;
+            align-items: center;
+            text-align: left; /* Align text to left */
         }
 
         .list-group-item:hover {
             background-color: #666;
-            /* Lighter hover state */
             border-color: #777;
-            /* Slightly lighter border on hover */
             transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        .list-group-item img {
+            margin-right: 15px; /* Margin between icon and text */
         }
 
         .custom-save-button {
             background: linear-gradient(to right, #B22222, #FF4040, #FF7F50);
-            /* Lighter gradient */
             color: white;
-            font-weight: bold;
+            font-weight: 600;
             border: 2px solid #FFA500;
-            /* Lighter orange border */
-            padding: 10px;
+            padding: 12px;
             border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: background 0.3s;
+            transition: filter 0.3s;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.2rem;
         }
 
         .custom-save-button:hover {
-            background: linear-gradient(to right, #B22222, #FF4040, #FF7F50);
-            /* Same gradient for consistency */
             filter: brightness(1.2);
-            /* Slightly brighter hover */
+        }
+
+        .custom-save-button img {
+            margin-right: 15px; /* Margin between icon and text in save button */
         }
 
         .contact-icon {
             font-size: 1.5rem;
             color: #fff;
-            /* White for readability */
         }
 
         .custom-phone {
-            font-family: 'Roboto', sans-serif;
-            font-weight: bold;
-            font-size: 1.2rem;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            font-size: 1.1rem;
             color: #fff;
-            /* White for readability */
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
 
         .custom-phone1 {
-            font-family: 'Roboto', sans-serif;
-            font-weight: bold;
-            font-size: 1.2rem;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            font-size: 1.1rem;
             color: #fff;
-            /* White for readability */
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-            transition: background-color 0.1s, border-color 0.1s;
+            transition: background-color 0.3s, border-color 0.3s;
         }
 
         .custom-phone1:hover {
@@ -159,6 +136,7 @@
             display: block;
             font-weight: 600;
             font-size: 1.1rem;
+            font-family: 'Roboto', sans-serif;
         }
 
         .sub-text {
@@ -166,30 +144,36 @@
             font-size: 0.9rem;
             opacity: 0.8;
             margin-top: 0.3rem;
+            font-family: 'Open Sans', sans-serif;
         }
 
         .gradient-button {
-            background-color: #5c6bc0;
-            /* Lighter indigo */
+            background: linear-gradient(to right, #B22222, #FF4040, #FF7F50);
             border: none;
             color: white;
-            transition: 0.3s ease;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: filter 0.3s ease;
+            width: 100%; /* Ensure buttons take full width */
         }
 
         .gradient-button:hover {
             filter: brightness(1.2);
-            /* Brighter hover effect */
             cursor: pointer;
         }
 
         .contact {
             background: linear-gradient(to right, #B22222, #FF4040, #FF7F50);
-            /* Lighter gradient */
         }
 
         .logo {
             height: 70px;
             margin-top: -10px;
+        }
+
+        .card-body h2, .card-body p {
+            font-family: 'Roboto', sans-serif;
         }
     </style>
 </head>
@@ -198,13 +182,6 @@
     <div class="d-flex justify-content-center mt-5">
         <div class="card custom-card shadow-lg" style="background-color: #FFFFFF;">
             <div class="card-header custom-header text-center">
-                <!-- <div class="background-images">
-                    <div class="bg-image" style="background-image: url('https://picsum.photos/200/300?random=1');"></div>
-                    <div class="bg-image" style="background-image: url('https://picsum.photos/200/300?random=2');"></div>
-                    <div class="bg-image" style="background-image: url('https://picsum.photos/200/300?random=3');"></div>
-                    <div class="bg-image" style="background-image: url('https://picsum.photos/200/300?random=4');"></div>
-                </div> -->
-                <!-- <img src="logo_img/client_logo/shivantha-l.png" alt="" class="logo"> -->
                 <div class="profile-picture">
                     <img src="profile_img/client_profile/shivantha-p.png" alt="Shivantha Perera" class="rounded-circle" style="scale:1.2;">
                 </div>
@@ -217,34 +194,34 @@
                 <p style="font-size: 18px; margin-top: 10px;">Maliban Biscuit Manufactories (Pvt) Ltd.<br>389, Galle Road, Ratmalana, Sri Lanka</p>
 
                 <div class="list-group mb-3">
-                    <button type="button" class="gradient-button list-group-item d-flex align-items-center justify-content-between contact" onclick="window.open('tel:+94714558550', '_self')">
+                    <button type="button" class="gradient-button list-group-item contact" onclick="window.open('tel:+94714558550', '_self')">
                         <img src="Images/icon/phone.png" alt="" style="width: 30px; height: 30px;">
                         <span class="flex-grow-1 text-truncate custom-phone">Mobile: +94 71 4558550</span>
                     </button>
-                    <button type="button" class="gradient-button list-group-item d-flex align-items-center justify-content-between contact" onclick="window.open('tel:+94776652305', '_self')">
+                    <button type="button" class="gradient-button list-group-item contact" onclick="window.open('tel:+94776652305', '_self')">
                         <img src="Images/icon/phone.png" alt="" style="width: 30px; height: 30px;">
                         <span class="flex-grow-1 text-truncate custom-phone">Mobile: +94 77 6652305</span>
                     </button>
-                    <button type="button" class="gradient-button list-group-item d-flex align-items-center justify-content-between contact" onclick="window.open('tel:+94115555000', '_self')">
+                    <button type="button" class="gradient-button list-group-item contact" onclick="window.open('tel:+94115555000', '_self')">
                         <img src="Images/icon/phone.png" alt="" style="width: 30px; height: 30px;">
                         <span class="flex-grow-1 text-truncate custom-phone">Tel (Head Office): +94 11 5555000</span>
                     </button>
-                    <button type="button" class="gradient-button list-group-item d-flex align-items-center justify-content-between contact" onclick="window.open('tel:+94112738551', '_self')">
+                    <button type="button" class="gradient-button list-group-item contact" onclick="window.open('tel:+94112738551', '_self')">
                         <img src="Images/icon/phone.png" alt="" style="width: 30px; height: 30px;">
                         <span class="flex-grow-1 text-truncate custom-phone">Tel: +94 11 2738551-5</span>
                     </button>
-                    <button type="button" class="gradient-button list-group-item d-flex align-items-center justify-content-between contact" onclick="window.open('mailto:Shivantha.perera@malibangroup.lk', '_self')">
+                    <button type="button" class="gradient-button list-group-item contact" onclick="window.open('mailto:Shivantha.perera@malibangroup.lk', '_self')">
                         <img src="Images/icon/mail.png" alt="" style="width: 30px; height: 30px;">
                         <span class="flex-grow-1 text-truncate custom-phone">Shivantha.perera@malibangroup.lk</span>
                     </button>
-                    <button type="button" class="gradient-button list-group-item d-flex align-items-center justify-content-between contact" onclick="window.open('https://www.malibangroup.com', '_blank')">
+                    <button type="button" class="gradient-button list-group-item contact" onclick="window.open('https://www.malibangroup.com', '_blank')">
                         <img src="Images/icon/internet.png" alt="" style="width: 30px; height: 30px;">
                         <span class="flex-grow-1 text-truncate custom-phone">www.malibangroup.com</span>
                     </button>
                 </div>
                 <p style="font-size: 16px; margin-top: 10px;">Fax (Head Office): +94 11 2734556<br>Fax: +94 11 2730540</p>
 
-                <p class="fw-bold mt-4" style="font-family: 'Roboto', sans-serif; font-size:19px">CONNECT WITH SOCIAL MEDIA</p>
+                <p class="fw-bold mt-4" style="font-family: 'Open Sans', sans-serif; font-size:19px">CONNECT WITH SOCIAL MEDIA</p>
                 <div class="d-flex flex-wrap justify-content-center" style="margin-top: -10px;">
                     <a href="https://www.linkedin.com/in/shivantha17?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer" class="m-3">
                         <img src="Images/Social_Media_Icon/linkedin.png" alt="LinkedIn" style="width: 50px; height: 50px;">
@@ -253,8 +230,8 @@
 
                 <br>
 
-                <button class="btn w-100 custom-save-button" onclick="generateVCF()" style="font-family: 'Roboto', sans-serif; font-size:19px; border: 2px solid orange;">
-                    <img src="Images/Social_Media_Icon/save.png" alt="" style="width: 50px; height: 50px; margin-right:25px;">
+                <button class="btn w-100 custom-save-button" onclick="generateVCF()" style="font-family: 'Open Sans', sans-serif; font-size:19px; border: 2px solid orange;">
+                    <img src="Images/Social_Media_Icon/save.png" alt="" style="width: 50px; height: 50px;">
                     SAVE TO CONTACTS
                 </button>
 
@@ -264,7 +241,6 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
     <script>
         async function generateVCF() {
             const contactData = {
