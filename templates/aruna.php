@@ -228,7 +228,7 @@
                 <img src="gallery_img/client_gallerys/anura/anura.jpeg" alt="Business man back view">
             </div>
 
-            <a href="#" class="save-button" id="saveContact">Save to contact</a>
+            <a href="#" class="save-button" id="saveContact" onclick="generateVCF()">Save to contact</a>
         </section>
     </div>
 
