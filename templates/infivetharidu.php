@@ -201,7 +201,7 @@
                     <a href="#" target="_blank" rel="noopener noreferrer" class="m-2">
                         <img src="Images/Social_Media_Icon/instagram.png" alt="" style="width: 40px; height: 40px;">
                     </a>
-                    <a href="https://www.facebook.com/iresh.wickramasinghe.2025/" target="_blank"
+                    <a href="#" target="_blank"
                         rel="noopener noreferrer" class="m-2">
                         <img src="Images/Social_Media_Icon/facebook.png" alt="" style="width: 40px; height: 40px;">
                     </a>
