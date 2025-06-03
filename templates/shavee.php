@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Raleway:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Montserrat:wght@300;400;500&family=Dancing+Script:wght@500&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         * {
             color: white;
@@ -19,20 +19,21 @@
         }
 
         body {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            background: #000000;
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-family: "Raleway", sans-serif;
+            font-family: "Quicksand", sans-serif;
         }
 
         .custom-card {
             overflow: hidden;
-            background: linear-gradient(145deg, #252339 0%, #1d1b2b 100%);
+            background: linear-gradient(145deg, #0a0a0a 0%, #111111 100%);
             width: 100%;
             height: auto;
             position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.05);
         }
 
         .profile {
@@ -44,36 +45,41 @@
             background-size: cover;
             border-top-right-radius: 60px;
             border-bottom-left-radius: 20px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-            border: 5px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            border: 5px solid rgba(255, 255, 255, 0.05);
         }
 
         h1 {
             color: white;
             text-align: center;
-            font-family: "Montserrat", sans-serif;
-            font-size: 32px;
+            font-family: "Playfair Display", serif;
+            font-size: 34px;
             letter-spacing: 1px;
-            font-weight: 600;
+            font-weight: 500;
             margin: 10px 0 5px;
+            text-transform: uppercase;
         }
 
         .username {
-            color: #aaa;
+            color: #bbb;
             text-align: center;
             font-weight: 400;
             font-size: 16px;
             margin-bottom: 25px;
+            letter-spacing: 0.5px;
+            font-family: "Dancing Script", cursive;
+            font-size: 18px;
         }
 
         .contact-info {
             text-align: center;
-            font-family: "Roboto", sans-serif;
+            font-family: "Montserrat", sans-serif;
             font-size: 18px;
             margin-bottom: 5px;
             font-weight: 400;
             text-decoration: none;
             color: white;
+            letter-spacing: 0.3px;
         }
 
         .email {
@@ -81,24 +87,26 @@
             color: #bbb;
             display: block;
             margin-top: 8px;
+            letter-spacing: 0.3px;
         }
 
         .divider {
             height: 1px;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
             width: 80%;
             margin: 25px auto;
         }
 
         .section-title {
             text-align: center;
-            font-family: "Montserrat", sans-serif;
+            font-family: "Playfair Display", serif;
             font-weight: 500;
             margin: 0 0 20px 0;
-            color: #eee;
-            font-size: 20px;
+            color: #ddd;
+            font-size: 22px;
             position: relative;
             padding-bottom: 10px;
+            letter-spacing: 1px;
         }
 
         .section-title::after {
@@ -108,8 +116,8 @@
             left: 50%;
             transform: translateX(-50%);
             width: 80px;
-            height: 3px;
-            background: linear-gradient(90deg, #6a11cb, #2575fc);
+            height: 2px;
+            background: linear-gradient(90deg, #d4af37, #f4e5c2);
             border-radius: 3px;
         }
 
@@ -121,18 +129,18 @@
         }
 
         .page-card {
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(255, 255, 255, 0.03);
             border-radius: 15px;
             padding: 15px;
             text-align: center;
             transition: all 0.3s ease;
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.05);
         }
 
         .page-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-            background: rgba(255, 255, 255, 0.08);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            background: rgba(255, 255, 255, 0.07);
         }
 
         .page-header {
@@ -149,12 +157,14 @@
         }
 
         .page-header h4 {
-            font-family: "Montserrat", sans-serif;
+            font-family: "Playfair Display", serif;
             font-size: 16px;
             font-weight: 500;
             margin: 0;
-            color: #eee;
+            color: #ddd;
             cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
         }
 
         .qr-container {
@@ -180,7 +190,7 @@
         }
 
         .share-btn {
-            background: #3b5998;
+            background: #333333;
             color: white;
             border: none;
             border-radius: 20px;
@@ -194,12 +204,14 @@
             align-items: center;
             gap: 5px;
             text-decoration: none;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            letter-spacing: 0.5px;
         }
 
         .share-btn:hover {
-            background: #344e86;
+            background: #444444;
             transform: translateY(-2px);
-            box-shadow: 0 3px 10px rgba(59, 89, 152, 0.3);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
         }
 
         .save-contact-container {
@@ -208,25 +220,28 @@
         }
 
         .btn-contact {
-            background: linear-gradient(45deg, #6a11cb 0%, #2575fc 100%);
-            color: white;
+            background: linear-gradient(45deg, #d4af37 0%, #f4e5c2 100%);
+            color: #222;
             border: none;
             border-radius: 30px;
             padding: 12px 35px;
             font-weight: 600;
-            font-family: "Montserrat", sans-serif;
+            font-family: "Playfair Display", serif;
             font-size: 16px;
             transition: all 0.3s ease;
             cursor: pointer;
             display: inline-flex;
             align-items: center;
             gap: 10px;
-            box-shadow: 0 5px 15px rgba(37, 117, 252, 0.3);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            letter-spacing: 1px;
         }
 
         .btn-contact:hover {
             transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(37, 117, 252, 0.4);
+            box-shadow: 0 8px 20px rgba(212, 175, 55, 0.4);
+            background: linear-gradient(45deg, #e5c352 0%, #f9f0d9 100%);
         }
 
         .footer {
@@ -250,14 +265,14 @@
         .corner-tl {
             top: -60px;
             left: -60px;
-            border-image: linear-gradient(135deg, #6a11cb, #2575fc) 1;
+            border-image: linear-gradient(135deg, #d4af37, #f4e5c2) 1;
             border-bottom-right-radius: 100%;
         }
 
         .corner-br {
             bottom: -60px;
             right: -60px;
-            border-image: linear-gradient(135deg, #2575fc, #6a11cb) 1;
+            border-image: linear-gradient(135deg, #f4e5c2, #d4af37) 1;
             border-top-left-radius: 100%;
         }
     </style>
@@ -327,8 +342,8 @@
 
             <div class="page-card">
                 <div class="page-header">
-                    <img src="logo_img/client_logo/shavee-l3.jpg" alt="The Blossom Islet Logo">
-                    <h4 onclick="window.open('https://www.facebook.com/profile.php?id=61575903753879', '_blank')">THE BLOSSON ISLET</h4>
+                    <img src="logo_img/client_logo/shavee-l3.jpg" alt="THE BLOSSOM ISLET Logo">
+                    <h4 onclick="window.open('https://www.facebook.com/profile.php?id=61575903753879', '_blank')">THE BLOSSOM ISLET</h4>
                 </div>
                 <div class="qr-container">
                     <div class="qr-code">
@@ -337,7 +352,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="javascript:void(0)" class="share-btn" onclick="navigator.share({url: 'https://www.facebook.com/profile.php?id=61575903753879', text: 'Check out The Blossom Islet!'})">
+                <a href="javascript:void(0)" class="share-btn" onclick="navigator.share({url: 'https://www.facebook.com/profile.php?id=61575903753879', text: 'Check out THE BLOSSOM ISLET!'})">
                     <i class="fas fa-share"></i> Share
                 </a>
             </div>
@@ -359,10 +374,10 @@
                 </a>
             </div>
 
-            <div class="page-card"  style="grid-column: span 2; max-width: 300px; margin: 0 auto;">
+            <div class="page-card" style="grid-column: span 2; max-width: 300px; margin: 0 auto;">
                 <div class="page-header">
-                    <img src="logo_img/client_logo/shavee-l5.jpg" alt="Hellenic Lemuriaa Logo">
-                    <h4 onclick="window.open('https://www.facebook.com/profile.php?id=61575552462382&mibextid=wwXIfr&rdid=T9oV3EL4mFDg32p9&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16WPe6GkMY%2F%3Fmibextid%3DwwXIfr#', '_blank')">Hellenic Lemuriaa</h4>
+                    <img src="logo_img/client_logo/shavee-l5.jpg" alt="HELLENIC LEMURIAA Logo">
+                    <h4 onclick="window.open('https://www.facebook.com/profile.php?id=61575552462382&mibextid=wwXIfr&rdid=T9oV3EL4mFDg32p9&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16WPe6GkMY%2F%3Fmibextid%3DwwXIfr#', '_blank')">HELLENIC LEMURIAA</h4>
                 </div>
                 <div class="qr-container">
                     <div class="qr-code">
@@ -371,7 +386,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="javascript:void(0)" class="share-btn" onclick="navigator.share({url: 'https://www.facebook.com/profile.php?id=61575552462382&mibextid=wwXIfr&rdid=T9oV3EL4mFDg32p9&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16WPe6GkMY%2F%3Fmibextid%3DwwXIfr#', text: 'Check out Hellenic Lemuriaa!'})">
+                <a href="javascript:void(0)" class="share-btn" onclick="navigator.share({url: 'https://www.facebook.com/profile.php?id=61575552462382&mibextid=wwXIfr&rdid=T9oV3EL4mFDg32p9&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16WPe6GkMY%2F%3Fmibextid%3DwwXIfr#', text: 'Check out HELLENIC LEMURIAA!'})">
                     <i class="fas fa-share"></i> Share
                 </a>
             </div>
