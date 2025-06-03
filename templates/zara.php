@@ -7,11 +7,11 @@
     <title>Digital Business Card</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500;700&family=Poppins:wght@400;600;700&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500;700&family=Poppins:wght@400;600;700&family=Rubik:wght%40400%3B500&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="Images/Logo1.ico">
     <style>
         body {
-            background-color: black; 
+            background-color: black;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -76,13 +76,13 @@
             font-family: 'Poppins', sans-serif;
             font-weight: 400;
             font-size: 12px;
-            color: #4E4E4E;
+            color: #ffffff;
             margin-bottom: 20px;
         }
 
         .save-contact-button {
-            background: #4D71FF;
-            color: #FFFFFF;
+            background: #ffffff;
+            color: #000000;
             font-weight: 600;
             border: none;
             padding: 10px 20px;
@@ -122,7 +122,7 @@
             border-radius: 50px;
             margin-bottom: 10px;
             padding: 10px 20px;
-            background-color: #7A95FF;
+            background-color: #ffffff;
             font-family: 'Roboto', sans-serif;
             font-size: 16px;
             display: flex;
@@ -137,7 +137,7 @@
         }
 
         .contact-list .list-group-item span {
-            color: #FFFFFF;
+            color: #000000;
             font-family: 'Roboto', sans-serif;
             font-size: 16px;
             flex-grow: 1;
@@ -146,7 +146,7 @@
 
         .contact-list .list-group-item i {
             margin-right: 15px;
-            color: #FFFFFF;
+            color: #000000;
             font-size: 1.2rem;
             padding-left: 10px;
         }
@@ -172,12 +172,47 @@
             font-family: 'Rubik', sans-serif;
             font-weight: 400;
             margin-top: 5px;
-            color: #7A7A7A;
+            color: #ffffff;
         }
 
-        .social-icons .fa-facebook { color: #1877f2; }
-        .social-icons a:hover i.fa-facebook { color: #2d4373; }
+        .social-icons .fa-facebook {
+            color: #ffffff;
+        }
 
+        .social-icons a:hover i.fa-facebook {
+            color: #ffffff;
+        }
+
+        /* ----- ONLY CHANGE MADE HERE: WHATSAPP ICON COLOR TO WHITE ----- */
+        .social-icons .fa-whatsapp {
+            color: #ffffff;
+            /* WhatsApp icon color set to white */
+        }
+
+        /* --------------------------------------------------------------- */
+
+        /* About Us Section */
+        .about-us-section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .about-us-title {
+            color: white !important;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 19px;
+            font-weight: bold;
+            margin-top: 1rem;
+            margin-bottom: 15px;
+        }
+
+        .about-us-text {
+            color: #ffffff; /* Changed to white */
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: center;
+        }
         /* gallery */
 
         .gallery-section {
@@ -284,8 +319,7 @@
         }
 
         .gradient-button {
-            background-color: #3f51b5;
-            /* blue → purple → pink */
+            background-color: #ffffff;
             border: none;
             color: white;
             transition: 0.3s ease;
@@ -299,7 +333,6 @@
         /* gallery */
 
         @keyframes float {
-
             0%,
             100% {
                 transform: translateY(-3px);
@@ -314,16 +347,16 @@
 
 <body>
     <div class="card custom-card">
-       <div class="custom-header" style="background: url('banner_img/client_banner/zara-b.jpg') center/cover no-repeat;">
-        <div class="profile-picture">
-        <img src="profile_img/client_profile/zara-p.png" alt="Zara Mumthaj">
+        <div class="custom-header" style="background: url('banner_img/client_banner/zara-b.jpg') center/cover no-repeat;">
+            <div class="profile-picture">
+                <img src="profile_img/client_profile/zara-p.png" alt="Zara Mumthaj">
+            </div>
         </div>
-    </div>
-            
+
         <div class="card-body">
             <h2 class="card-title">Zara Mumthaj</h2>
             <p class="card-subtitle">Designer</p>
-            <p class="card-company" style="color: white;">FURNITURE COLLECTION</p>
+            <p class="card-company" style="color: white;">FUTURE COLLECTION </p>
 
             <button class="btn save-contact-button" onclick="generateVCF()">
                 Save to Contact
@@ -339,66 +372,86 @@
                     <i class="fas fa-envelope"></i>
                     <span>Zaramohideen3@gmail.com</span>
                 </button>
-               <button type="button" class="list-group-item d-flex align-items-center" onclick="window.open('198,Main Street, Attidiya, Dehiwala', '_blank')">
-                <i class="fas fa-map-marker-alt"></i>
-                <span>198,Main Street, Attidiya, Dehiwala</span>
+                <button type="button" class="list-group-item d-flex align-items-center" onclick="window.open('https://maps.app.goo.gl/YourExactAddressMapLinkHere', '_blank')">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>198,Main Street, Attidiya, Dehiwala</span>
                 </button>
             </div>
 
-                        <h3 class="section-title follow-us-title">FOLLOW US</h3>
-            <div class="d-flex justify-content-center social-icons">
-                <a href="https://www.facebook.com/share/16xbNRhCbj/?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-facebook"></i>
-                    <span class="social-label">Facebook</span>
-                </a>
-                <a href="https://wa.me/+94766221434" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-whatsapp"></i>
-                    <span class="social-label">WhatsApp</span>
-                </a>
+            ---
+            <div class="about-us-section">
+                <h3 class="about-us-title">About Us</h3>
+                <p class="about-us-text">
+                    Dazzling clothes in all sizes to make beautiful ladies more gorgeous:
+                    <br><br>
+                    We undertake Sewing orders for all types of ladies clothing including party wear dresses & bridals according to your needs to make your special day more memorable for you.
+                    <br><br>
+                    We also rent out Indian lehengas & bridals (alterations can be done to your requirements).
+                    <br><br>
+                    For Creative and stylish designs & to bring your glamour out more, please be free to call us.
+                </p>
             </div>
-            
+            ---
+
+            <h3 class="section-title follow-us-title">FOLLOW US</h3>
+            <div class="d-flex justify-content-center social-icons">
+            <a href="https://www.facebook.com/share/16xbNRhCbj/?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-facebook"></i>
+            <span class="social-label">Facebook</span>
+            </a>
+            <a href="https://wa.me/+94766221434" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i>
+            <span class="social-label">WhatsApp</span>
+            </a>
+            <a href="https://www.instagram.com/futurecollection088?igsh=MTNtb3RpZTRqNjZybw%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram" style="color: white;"></i>
+            <span class="social-label">Instagram</span>
+             </a>
+            </div>
+
+
             <div class="gallery-section" style="margin-top: -10px;">
-                    <div class="gallery-header" onclick="toggleGallery()">
-                        <div class="gallery-title">Gallery</div>
-                        <div class="gallery-toggle" id="galleryToggle">
-                            <i class="fas fa-minus"></i>
-                        </div>
-                    </div>
-                    <div class="gallery-container" id="galleryContainer">
-                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/Zara/zara-g1.jpeg')">
-                            <img src="gallery_img/client_gallerys/Zara/zara-g1.jpeg" class="gallery-image">
-                        </div>
-                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/Zara/zara-g2.jpeg')">
-                            <img src="gallery_img/client_gallerys/Zara/zara-g2.jpeg" alt="Gallery Image 2" class="gallery-image">
-                        </div>
-                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/Zara/zara-g3.jpeg')">
-                            <img src="gallery_img/client_gallerys/Zara/zara-g3.jpeg" alt="Gallery Image 3" class="gallery-image">
-                        </div>
-                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/Zara/zara-g4.jpeg')">
-                            <img src="gallery_img/client_gallerys/Zara/zara-g4.jpeg" alt="Gallery Image 4" class="gallery-image">
-                        </div>
-                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/Zara/zara-g5.jpeg')">
-                            <img src="gallery_img/client_gallerys/Zara/zara-g5.jpeg" alt="Gallery Image 5" class="gallery-image">
-                        </div>
-                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/Zara/zara-g6.jpeg')">
-                            <img src="gallery_img/client_gallerys/Zara/zara-g6.jpeg" alt="Gallery Image 6" class="gallery-image">
-                        </div>
+                <div class="gallery-header" onclick="toggleGallery()">
+                    <div class="gallery-title">Gallery</div>
+                    <div class="gallery-toggle" id="galleryToggle">
+                        <i class="fas fa-minus"></i>
                     </div>
                 </div>
-                <div class="lightbox" id="lightbox">
-                    <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
-                    <div class="lightbox-nav">
-                        <button onclick="changeImage(-1)">&#10094;</button>
-                        <button onclick="changeImage(1)">&#10095;</button>
+                <div class="gallery-container" id="galleryContainer">
+                    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/Zara/zara-g1.jpeg')">
+                        <img src="gallery_img/client_gallerys/Zara/zara-g1.jpeg" class="gallery-image">
                     </div>
-                    <div class="lightbox-content">
-                        <img id="lightbox-image" class="lightbox-image" src="" alt="">
+                    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/Zara/zara-g2.jpeg')">
+                        <img src="gallery_img/client_gallerys/Zara/zara-g2.jpeg" alt="Gallery Image 2" class="gallery-image">
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/Zara/zara-g3.jpeg')">
+                        <img src="gallery_img/client_gallerys/Zara/zara-g3.jpeg" alt="Gallery Image 3" class="gallery-image">
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/Zara/zara-g4.jpeg')">
+                        <img src="gallery_img/client_gallerys/Zara/zara-g4.jpeg" alt="Gallery Image 4" class="gallery-image">
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/Zara/zara-g5.jpeg')">
+                        <img src="gallery_img/client_gallerys/Zara/zara-g5.jpeg" alt="Gallery Image 5" class="gallery-image">
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/Zara/zara-g6.jpeg')">
+                        <img src="gallery_img/client_gallerys/Zara/zara-g6.jpeg" alt="Gallery Image 6" class="gallery-image">
                     </div>
                 </div>
+            </div>
+            <div class="lightbox" id="lightbox">
+                <span class="lightbox-close" onclick="closeLightbox()">×</span>
+                <div class="lightbox-nav">
+                    <button onclick="changeImage(-1)">❮</button>
+                    <button onclick="changeImage(1)">❯</button>
+                </div>
+                <div class="lightbox-content">
+                    <img id="lightbox-image" class="lightbox-image" src="" alt="">
+                </div>
+            </div>
         </div>
     </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
         // Gallery images array
@@ -561,4 +614,5 @@
         });
     </script>
 </body>
+
 </html>
