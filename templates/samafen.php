@@ -171,7 +171,7 @@
             font-size: 28px;
             font-weight: 700;
             text-transform: uppercase;
-            color: #ffd700;
+            color: #debd5e;
             text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
             position: relative;
             animation: glow 2s ease-in-out infinite alternate;

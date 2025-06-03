@@ -157,6 +157,7 @@ $routes = [
     'shivantha' => 'templates/shivantha.php',
     'aruna' => 'templates/aruna.php',
     'infivetharidu' => 'templates/infivetharidu.php',
+    'shivantha2' => 'templates/shivantha2.php',
 ];
 
 // Handle the request

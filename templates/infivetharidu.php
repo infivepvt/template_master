@@ -157,18 +157,18 @@
                 style="background-image: url('banner_img/client_banner/infiveiresh-b.png');">
                 <img src="logo_img/client_logo/infiveiresh-l.png" alt="Company Logo" class="custom-logo" height="100px">
                 <div class="profile-picture">
-                    <img src="profile_img/client_profile/infiveiresh-p.png" alt="Iresh Wickramasinghe"
+                    <img src="profile_img/client_profile/tharindu-p.png" alt="Tharindu Nawarathna"
                         class="rounded-circle">
                 </div>
             </div>
             <div class="card-body text-center" style="background-color: #000000; color: #FFFFFF;">
                 <br> <br>
-                <h2 class="card-title">Iresh Wickramasinghe</h2>
-                <p style="font-size: 14px; text-transform: uppercase; color: #FFFFFF;">Founder & Chairman</p>
+                <h2 class="card-title">Tharindu Nawarathna</h2>
+                <p style="font-size: 14px; text-transform: uppercase; color: #FFFFFF;">Manager</p>
                 <div class="list-group mb-3">
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
-                        onclick="window.open('https://wa.me/+94775524866', '_blank')">
+                        onclick="window.open('https://wa.me/+94703000080', '_blank')">
                         <img src="Images/icon/whatsapp.png" alt="WhatsApp"
                             style="width: 40px; height: 40px; margin-right: 25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone">Connect with WhatsApp</span>
@@ -176,9 +176,9 @@
                     <br>
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
-                        onclick="window.open('tel:+94775524866', '_self')">
+                        onclick="window.open('tel:+94703000080', '_self')">
                         <img src="Images/icon/phone.png" alt="" style="width: 24px; height: 24px; margin-right: 15px;">
-                        <span class="text-center flex-grow-1 text-truncate custom-phone">+94775524866</span>
+                        <span class="text-center flex-grow-1 text-truncate custom-phone">+94 70 3000080</span>
                     </button>
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
@@ -223,10 +223,10 @@
     <script>
         async function generateVCF() {
             const contactData = {
-                firstName: "Iresh",
-                lastName: "Wickramasinghe",
-                title: "Founder & Chairman",
-                phoneWork: "+94775524866",
+                firstName: "Tharindu",
+                lastName: "Nawarathna",
+                title: "Manager",
+                phoneWork: "+94703000080",
                 phoneMobile: "",
                 email: "Infivellc@gmail.com",
                 email2: "",
@@ -237,37 +237,36 @@
                 address: "",
                 address2: "",
                 about: "",
-                profileImage: "profile_img/client_profile/infiveiresh-p.png"
+                profileImage: "profile_img/client_profile/tharindu-p.png"
             };
 
             async function imageToBase64(url) {
-                try {
+                return new Promise((resolve) => {
                     const profileImage = new Image();
-                    profileImage.src = url;
-                    profileImage.crossOrigin = "Anonymous";
-
-                    if (!profileImage.complete) {
-                        await new Promise((resolve) => {
-                            profileImage.onload = resolve;
-                            profileImage.onerror = () => {
-                                console.error("Error loading image");
-                                resolve();
-                            };
-                        });
-                    }
-
-                    const canvas = document.createElement('canvas');
-                    const ctx = canvas.getContext('2d');
-                    canvas.width = profileImage.naturalWidth;
-                    canvas.height = profileImage.naturalHeight;
-                    ctx.drawImage(profileImage, 0, 0);
-
-                    const base64Image = canvas.toDataURL('image/jpeg').split(',')[1];
-                    return base64Image;
-                } catch (error) {
-                    console.error("Error converting image to base64:", error);
-                    return "";
-                }
+                    profileImage.crossOrigin = "Anonymous"; // Important for CORS
+                    profileImage.src = url + '?t=' + new Date().getTime(); // Cache buster
+                    
+                    profileImage.onload = function() {
+                        const canvas = document.createElement('canvas');
+                        canvas.width = this.naturalWidth;
+                        canvas.height = this.naturalHeight;
+                        const ctx = canvas.getContext('2d');
+                        ctx.drawImage(this, 0, 0);
+                        
+                        try {
+                            const base64Image = canvas.toDataURL('image/jpeg').split(',')[1];
+                            resolve(base64Image);
+                        } catch (e) {
+                            console.error("Error converting image:", e);
+                            resolve(""); // Return empty string if conversion fails
+                        }
+                    };
+                    
+                    profileImage.onerror = function() {
+                        console.error("Error loading image");
+                        resolve(""); // Return empty string if image fails to load
+                    };
+                });
             }
 
             const base64Image = await imageToBase64(contactData.profileImage);
