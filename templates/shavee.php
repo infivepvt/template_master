@@ -287,7 +287,7 @@
 
         <div class="row justify-content-center">
             <div style="width: 300px;">
-                <h1>SHAVEE KULARATHNA</h1>
+                <h1>SHAVEE KULARATHNE</h1>
             </div>
         </div>
 
@@ -405,7 +405,7 @@
         async function generateVCF() {
             const contactData = {
                 firstName: "Shavee",
-                lastName: "Kularathna",
+                lastName: "Kularathne",
                 title: "Business Professional",
                 phoneMobile: "+94763501979",
                 email: "shavee@lemuriaa.com",
@@ -463,7 +463,7 @@
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = `Shavee_Kularathna.vcf`;
+            a.download = `Shavee_Kularathne.vcf`;
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
