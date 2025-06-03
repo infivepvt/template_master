@@ -349,13 +349,13 @@
             <button class="icon-button" onclick="window.open('mailto:thilina@tuneandtransit.com', '_self')">
                 <i class="fas fa-envelope"></i>
             </button>
-            <button class="icon-button" onclick="window.open('tel:0772028960', '_self')">
+            <button class="icon-button" onclick="window.open('tel:0719901370', '_self')">
                 <i class="fas fa-phone"></i>
             </button>
             <!-- <button class="icon-button" onclick="window.open('https://www.facebook.com', '_blank')">
                 <i class="fab fa-facebook"></i>
             </button> -->
-            <button class="icon-button" onclick="window.open('https://wa.me/94772028960', '_blank')">
+            <button class="icon-button" onclick="window.open('https://wa.me/94719901370', '_blank')">
                 <i class="fab fa-whatsapp"></i>
             </button>
         </div>
