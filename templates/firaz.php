@@ -215,6 +215,134 @@
       text-align: center;
       padding: 10px;
     }
+
+    /* gallery */
+    .gallery-section {
+      padding: 20px;
+      /* background-color: #000; */
+    }
+
+    .gallery-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .gallery-title {
+      color: white !important;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 19px;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+
+    .gallery-toggle {
+      font-size: 1.2rem;
+    }
+
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      /* margin-top: 10px; */
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 5px;
+      aspect-ratio: 1;
+      cursor: pointer;
+    }
+
+    .gallery-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+
+    .gallery-item:hover .gallery-image {
+      transform: scale(1.05);
+    }
+
+    /* Lightbox styles */
+    .lightbox {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .lightbox-content {
+      max-width: 90%;
+      max-height: 90%;
+    }
+
+    .lightbox-image {
+      max-width: 100%;
+      max-height: 80vh;
+      object-fit: contain;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: white;
+      font-size: 30px;
+      cursor: pointer;
+    }
+
+    .lightbox-nav {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+
+    .lightbox-nav button {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 30px;
+      cursor: pointer;
+    }
+
+    .gradient-button {
+      background-color: #ffffff;
+      border: none;
+      color: white;
+      transition: 0.3s ease;
+    }
+
+    .gradient-button:hover {
+      filter: brightness(1.1);
+      cursor: pointer;
+    }
+
+    /* gallery */
+    @keyframes float {
+      0%,
+      100% {
+        transform: translateY(-3px);
+      }
+
+      50% {
+        transform: translateY(3px);
+      }
+    }
   </style>
 </head>
 
@@ -231,7 +359,7 @@
     </div>
 
     <div class="profile-contact-icons">
-      <button type="button" class="contact-button" onclick="window.open('tel:+94711204323', '_self')">
+      <button type="button" class="contact-button" onclick="window.open('tel:+94 71 120 4323', '_self')">
         <i class="fas fa-phone contact-icon"></i>
       </button>
 
@@ -267,6 +395,57 @@
         </div>
       </div>
       <br>
+
+      <div class="gallery-section" style="margin-top: -10px;">
+        <div class="gallery-header" onclick="toggleGallery()">
+          <div class="gallery-title">Gallery</div>
+          <div class="gallery-toggle" id="galleryToggle">
+            <i class="fas fa-minus"></i>
+          </div>
+        </div>
+        <div class="gallery-container" id="galleryContainer">
+          <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/firaz/firaz-g1.jpeg')">
+            <img src="gallery_img/client_gallerys/firaz/firaz-g1.jpeg" class="gallery-image">
+          </div>
+          <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/firaz/firaz-g2.jpeg')">
+            <img src="gallery_img/client_gallerys/firaz/firaz-g2.jpeg" alt="Gallery Image 2" class="gallery-image">
+          </div>
+          <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/firaz/firaz-g3.jpeg')">
+            <img src="gallery_img/client_gallerys/firaz/firaz-g3.jpeg" alt="Gallery Image 3" class="gallery-image">
+          </div>
+          <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/firaz/firaz-g4.jpeg')">
+            <img src="gallery_img/client_gallerys/firaz/firaz-g4.jpeg" alt="Gallery Image 4" class="gallery-image">
+          </div>
+          <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/firaz/firaz-g5.jpeg')">
+            <img src="gallery_img/client_gallerys/firaz/firaz-g5.jpeg" alt="Gallery Image 5" class="gallery-image">
+          </div>
+          <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/firaz/firaz-g6.jpeg')">
+            <img src="gallery_img/client_gallerys/firaz/firaz-g6.jpeg" alt="Gallery Image 6" class="gallery-image">
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-section" style="margin-top: 20px;">
+        <div class="gallery-header">
+          <div class="gallery-title">TikTok Videos</div>
+        </div>
+        <div class="tiktok-video-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 10px; margin-top: 10px;">
+          <div class="tiktok-video-item" style="position: relative; width: 100%; padding-top: 177.77%;">
+            <iframe src="https://www.tiktok.com/embed/7500917661753265426" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 5px;"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">×</span>
+        <div class="lightbox-nav">
+          <button onclick="changeImage(-1)">❮</button>
+          <button onclick="changeImage(1)">❯</button>
+        </div>
+        <div class="lightbox-content">
+          <img id="lightbox-image" class="lightbox-image" src="" alt="">
+        </div>
+      </div>
       <button class="btn h-100 custom-save-button social-media-button" onclick="generateVCF()">
         <i class="fas fa-save me-2"></i>
         SAVE TO CONTACTS
@@ -282,27 +461,28 @@
 
   <script>
     const galleryImages = [
-      'gallery_img/client_gallerys/Zara/zara-g1.jpeg',
-      'gallery_img/client_gallerys/Zara/zara-g2.jpeg',
-      'gallery_img/client_gallerys/Zara/zara-g3.jpeg',
-      'gallery_img/client_gallerys/Zara/zara-g4.jpeg',
-      'gallery_img/client_gallerys/Zara/zara-g5.jpeg',
-      'gallery_img/client_gallerys/Zara/zara-g6.jpeg',
+      'gallery_img/client_gallerys/firaz/firaz-g1.jpeg',
+      'gallery_img/client_gallerys/firaz/firaz-g2.jpeg',
+      'gallery_img/client_gallerys/firaz/firaz-g3.jpeg',
+      'gallery_img/client_gallerys/firaz/firaz-g4.jpeg',
+      'gallery_img/client_gallerys/firaz/firaz-g5.jpeg',
+      'gallery_img/client_gallerys/firaz/firaz-g6.jpeg',
     ];
 
     async function generateVCF() {
       const contactData = {
         firstName: "M.F.M Firaz",
         lastName: "",
-        title: "Designer",
+        title: "Director of Dream space Lanka",
         phoneWork: "",
-        phoneMobile: "+94711204323",
+        phoneMobile: "+94 71 120 4323",
         email: "fahim.firaz@gmail.com",
-        about: "Director of Dream space Lanka",
+        about: "Founder of visual merchandising group Sri Lanka",
         logo: "https://tapilinq.com/profile_img/client_profile/firaz-p.jpeg",
         profileImage: "https://tapilinq.com/profile_img/client_profile/firaz-p.jpeg"
       };
 
+      // Convert image to base64
       const toBase64 = async (url) => {
         const response = await fetch(url);
         const blob = await response.blob();
@@ -321,6 +501,7 @@
         console.error("Failed to load image for VCF:", error);
       }
 
+      // Build VCF content
       let vcfLines = [
         "BEGIN:VCARD",
         "VERSION:3.0",
@@ -332,7 +513,16 @@
       if (contactData.phoneWork) vcfLines.push(`TEL;TYPE=WORK,VOICE:${contactData.phoneWork}`);
       if (contactData.phoneMobile) vcfLines.push(`TEL;TYPE=CELL:${contactData.phoneMobile}`);
       if (contactData.email) vcfLines.push(`EMAIL:${contactData.email}`);
+      if (contactData.email2) vcfLines.push(`EMAIL:${contactData.email2}`);
+      if (contactData.email3) vcfLines.push(`EMAIL:${contactData.email3}`);
+      if (contactData.website) vcfLines.push(`URL:${contactData.website}`);
+      if (contactData.website2) vcfLines.push(`URL:${contactData.website2}`);
+      if (contactData.website3) vcfLines.push(`URL:${contactData.website3}`);
+      if (contactData.address) vcfLines.push(`ADR;TYPE=WORK:;;${contactData.address}`);
+      if (contactData.address2) vcfLines.push(`ADR;TYPE=HOME:;;${contactData.address2}`);
       if (contactData.about) vcfLines.push(`NOTE:${contactData.about}`);
+
+      // Embed profile image (base64 JPEG format)
       if (photoBase64) {
         vcfLines.push(`PHOTO;ENCODING=b;TYPE=JPEG:${photoBase64}`);
       }
@@ -340,7 +530,11 @@
       vcfLines.push("END:VCARD");
 
       const vcfContent = vcfLines.join('\n');
-      const blob = new Blob([vcfContent], { type: 'text/vcard' });
+
+      // Trigger download
+      const blob = new Blob([vcfContent], {
+        type: 'text/vcard'
+      });
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
@@ -351,39 +545,70 @@
       URL.revokeObjectURL(url);
     }
 
-    let currentImageIndex = 0;
+    function toggleGallery() {
+      const galleryContainer = document.getElementById('galleryContainer');
+      const galleryToggle = document.getElementById('galleryToggle');
 
+      if (galleryContainer.style.display === 'none') {
+        galleryContainer.style.display = 'grid';
+        galleryToggle.innerHTML = '<i class="fas fa-minus"></i>';
+      } else {
+        galleryContainer.style.display = 'none';
+        galleryToggle.innerHTML = '<i class="fas fa-plus"></i>';
+      }
+    }
+
+    // Lightbox functions
+    let currentImageIndex = 0; // Declare this globally or pass it
     function openLightbox(imageSrc) {
       const lightbox = document.getElementById('lightbox');
       const lightboxImage = document.getElementById('lightbox-image');
+
+      // Find the index of the clicked image
       currentImageIndex = galleryImages.indexOf(imageSrc);
+
       lightboxImage.src = imageSrc;
       lightbox.style.display = 'flex';
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = 'hidden'; // Prevent scrolling
     }
 
     function closeLightbox() {
-      document.getElementById('lightbox').style.display = 'none';
-      document.body.style.overflow = 'auto';
+      const lightbox = document.getElementById('lightbox');
+      lightbox.style.display = 'none';
+      document.body.style.overflow = 'auto'; // Re-enable scrolling
     }
 
     function changeImage(step) {
       currentImageIndex += step;
-      if (currentImageIndex >= galleryImages.length) currentImageIndex = 0;
-      else if (currentImageIndex < 0) currentImageIndex = galleryImages.length - 1;
+
+      // Wrap around if at beginning or end
+      if (currentImageIndex >= galleryImages.length) {
+        currentImageIndex = 0;
+      } else if (currentImageIndex < 0) {
+        currentImageIndex = galleryImages.length - 1;
+      }
+
       document.getElementById('lightbox-image').src = galleryImages[currentImageIndex];
     }
 
-    document.getElementById('lightbox').addEventListener('click', function (e) {
-      if (e.target === this) closeLightbox();
+    // Close lightbox when clicking outside the image
+    document.getElementById('lightbox').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeLightbox();
+      }
     });
 
-    document.addEventListener('keydown', function (e) {
+    // Keyboard navigation
+    document.addEventListener('keydown', function(e) {
       const lightbox = document.getElementById('lightbox');
       if (lightbox.style.display === 'flex') {
-        if (e.key === 'Escape') closeLightbox();
-        else if (e.key === 'ArrowLeft') changeImage(-1);
-        else if (e.key === 'ArrowRight') changeImage(1);
+        if (e.key === 'Escape') {
+          closeLightbox();
+        } else if (e.key === 'ArrowLeft') {
+          changeImage(-1);
+        } else if (e.key === 'ArrowRight') {
+          changeImage(1);
+        }
       }
     });
   </script>

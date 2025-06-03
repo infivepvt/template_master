@@ -169,20 +169,20 @@
            <!-- Existing mobile -->
 <div class="contact-section">
     <div class="contact-icon">
-        <i class="fas fa-mobile-alt" onclick="window.open('tel:(+94) 777381514', '_self')"></i>
+        <i class="fas fa-mobile-alt" onclick="window.open('tel:+94 77 738 1514', '_self')"></i>
     </div>
     <div class="contact-details">
-        <p class="contact-d">(+94) 777381514</p>
+        <p class="contact-d">+94 77 738 1514</p>
     </div>
 </div>
 
 <!-- Additional mobile 1 -->
 <div class="contact-section">
     <div class="contact-icon">
-        <i class="fas fa-mobile-alt" onclick="window.open('tel:(+94) 117981544', '_self')"></i>
+        <i class="fas fa-mobile-alt" onclick="window.open('tel:+94 77 781 2006', '_self')"></i>
     </div>
     <div class="contact-details">
-        <p class="contact-d">(+94) 117981544</p>
+        <p class="contact-d">+94 77 781 2006</p>
     </div>
 </div>
 
@@ -191,10 +191,10 @@
 <!-- Existing email -->
 <div class="contact-section">
     <div class="contact-icon">
-        <i class="fas fa-envelope" onclick="window.open('arunadayanatha@gmail.com', '_self')"></i>
+        <i class="fas fa-envelope" onclick="window.open('arunadayantha@rightx.ltd', '_self')"></i>
     </div>
     <div class="contact-details">
-        <p class="contact-d">arunadayanatha@gmail.com</p>
+        <p class="contact-d">arunadayantha@rightx.ltd</p>
     </div>
 </div>
 
@@ -213,7 +213,7 @@
                     <i class="fas fa-globe" onclick="window.open('https://www.RightX.Ltd', '_blank')"></i>
                 </div>
                 <div class="contact-details">
-                    <p class="contact-d"> www.RightX.Ltd, </p>
+                    <p class="contact-d"> www.RightX.Ltd </p>
                 </div>
             </div>
         </header>
@@ -244,9 +244,9 @@
                 firstName: "Aruna",
                 lastName: "Dayanatha",
                 title: "Chief Conceptualist",
-                phoneWork: "",
-                phoneMobile: "+94 75 379 0948",
-                email: "arunadayanatha@gmail.com",
+                phoneWork: "+94 77 738 1514",
+                phoneMobile: "+94 77 781 2006",
+                email: "arunadayantha@rightx.ltd",
                 email2: "ask@RightX.Ltd",
                 email3: "",
                 website: "www.RightX.Ltd",
@@ -254,7 +254,7 @@
                 website3: "",
                 address: "779/F/2, Pannipitiya Road, Pelawatta, Battaramulla, Sri Lanka , 10120",
                 address2: "",
-                about: "",
+                about: "Chartered IT Professional",
                 logo: "https://tapilinq.com/profile_img/client_profile/aruna-p.png",
                 profileImage: "https://tapilinq.com/profile_img/client_profile/aruna-p.png" // Same as logo in this case
             };
