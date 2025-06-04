@@ -164,6 +164,7 @@ $routes = [
     'jeewan3' => 'templates/jeewan3.php',
     'jeewan4' => 'templates/jeewan4.php',
     'bahamasdentalinstitute' => 'templates/bahamasdentalinstitute.php',
+    'gallways' => 'templates/gallways.php',
 ];
 
 // Handle the request
