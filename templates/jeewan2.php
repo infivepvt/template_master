@@ -30,7 +30,7 @@
         }
 
         .custom-header {
-            background-image: url("banner_img/client_banner/jeewan-b.png");
+            background-image: url("banner_img/client_banner/jeewan-b.png?id=009989");
             background-position: top;
             background-size: cover;
             padding: 120px 20px 70px;
