@@ -34,11 +34,11 @@
         }
 
         .custom-logo {
-            width: 150px;
+            width: 200px;
             position: relative;
             top: 0;
             left: 0;
-            margin-bottom: 30px;
+            margin-bottom: 80px;
             /* Reduced gap */
         }
 
