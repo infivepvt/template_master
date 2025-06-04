@@ -7,30 +7,35 @@
     <title>Digital Business Card</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="Images/Logo1.ico">
     <style>
         body {
-            background-color: #F5F7FA;
+            background-color: #FFF1F1;
+            font-family: 'Open Sans', sans-serif;
+            color: #2D1B1B;
         }
 
         .custom-card {
             overflow: hidden;
-            background: #F5F7FA;
+            background: #FFFFFF;
             width: 450px;
             height: auto;
             margin-top: -55px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         }
 
         .custom-header {
             position: relative;
-            height: 200px;
+            height: 180px;
         }
 
         .card-header {
             background-image: url("banner_img/client_banner/jeewan-b.png");
-            background-position: top;
+            background-position: center;
             background-size: cover;
+            border-radius: 12px 12px 0 0;
         }
 
         .profile-picture {
@@ -41,91 +46,91 @@
         }
 
         .profile-picture img {
-            width: 130px;
-            height: 130px;
-            border: 4px solid #fff;
+            width: 120px;
+            height: 120px;
+            border: 5px solid #FFFFFF;
             border-radius: 50%;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
         }
 
         .custom-button {
-            font-weight: bold;
+            font-weight: 600;
+            font-family: 'Roboto', sans-serif;
         }
 
         .social-icon {
-            font-size: 1.9rem;
-            transition: color 0.3s;
+            font-size: 1.8rem;
+            transition: color 0.3s ease;
         }
 
         .list-group-item {
-            background-color: #555;
-            color: #fff;
-            border-radius: 8px;
-            margin-bottom: 10px;
-            border: 1px solid #666;
-            padding: 12px 15px;
+            background: linear-gradient(to right, #FFFFFF, #FFF5F5);
+            color: #2D1B1B;
+            border-radius: 10px;
+            margin-bottom: 12px;
+            border: 1px solid #FECACA;
+            padding: 14px 18px;
             display: flex;
             align-items: center;
             text-align: left;
+            transition: background-color 0.3s, border-color 0.3s, transform 0.2s;
         }
 
         .list-group-item:hover {
-            background-color: #666;
-            border-color: #777;
-            transition: background-color 0.3s, border-color 0.3s;
+            background: linear-gradient(to right, #FFE4E4, #FECACA);
+            border-color: #FCA5A5;
+            transform: translateY(-3px);
         }
 
-        .list-group-item img {
-            margin-right: 15px;
+        .list-group-item i {
+            margin-right: 12px;
+            font-size: 1.4rem;
+            color: #DC2626;
         }
 
         .custom-save-button {
-            background: linear-gradient(to right, #B22222, #FF4040, #FF7F50);
-            color: white;
+            background: linear-gradient(to right, #DC2626, #B91C1C);
+            color: #FFFFFF;
             font-weight: 600;
-            border: 2px solid #FFA500;
+            border: none;
             padding: 12px;
             border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: filter 0.3s;
-            font-family: 'Open Sans', sans-serif;
-            font-size: 1.2rem;
+            transition: background 0.3s ease, transform 0.2s;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.1rem;
         }
 
         .custom-save-button:hover {
-            filter: brightness(1.2);
+            background: linear-gradient(to right, #B91C1C, #991B1B);
+            transform: translateY(-3px);
         }
 
-        .custom-save-button img {
-            margin-right: 15px;
-        }
-
-        .contact-icon {
-            font-size: 1.5rem;
-            color: #fff;
+        .custom-save-button i {
+            margin-right: 10px;
+            font-size: 1.4rem;
+            color: #FFFFFF;
         }
 
         .custom-phone {
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 600;
-            font-size: 1.1rem;
-            color: #fff;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 1rem;
+            color: #2D1B1B;
         }
 
         .custom-phone1 {
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 600;
-            font-size: 1.1rem;
-            color: #fff;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-            transition: background-color 0.3s, border-color 0.3s;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 1rem;
+            color: #2D1B1B;
+            transition: color 0.3s ease;
         }
 
         .custom-phone1:hover {
-            background-color: #25D366;
-            border-color: #128C7E;
+            color: #DC2626;
         }
 
         .text-container {
@@ -134,101 +139,113 @@
 
         .main-text {
             display: block;
-            font-weight: 600;
-            font-size: 1.1rem;
+            font-weight: 700;
+            font-size: 1.2rem;
             font-family: 'Roboto', sans-serif;
+            color: #2D1B1B;
         }
 
         .sub-text {
             display: block;
-            font-size: 0.9rem;
-            opacity: 0.8;
-            margin-top: 0.3rem;
+            font-size: 0.95rem;
+            opacity: 0.85;
+            margin-top: 0.4rem;
             font-family: 'Open Sans', sans-serif;
+            color: #4B1C1C;
         }
 
         .gradient-button {
-            background: linear-gradient(to right, #B22222, #FF4040, #FF7F50);
+            background: linear-gradient(to right, #FFFFFF, #FFF5F5);
             border: none;
-            color: white;
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 600;
-            font-size: 1.1rem;
-            transition: filter 0.3s ease;
+            color: #2D1B1B;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: background 0.3s ease, transform 0.2s;
             width: 100%;
         }
 
         .gradient-button:hover {
-            filter: brightness(1.2);
+            background: linear-gradient(to right, #FFE4E4, #FECACA);
+            transform: translateY(-3px);
             cursor: pointer;
         }
 
         .contact {
-            background: linear-gradient(to right, #B22222, #FF4040, #FF7F50);
+            background: linear-gradient(to right, #FFFFFF, #FFF5F5);
         }
 
         .logo {
-            height: 70px;
-            margin-top: -10px;
+            height: 65px;
+            margin-top: -8px;
         }
 
-        .card-body h2, .card-body p {
+        .card-body h2,
+        .card-body p {
             font-family: 'Roboto', sans-serif;
+        }
+
+        .secondary-bg {
+            background: linear-gradient(to right, #FECACA, #FCA5A5);
+            border-radius: 0 0 12px 12px;
         }
     </style>
 </head>
 
 <body>
     <div class="d-flex justify-content-center mt-5">
-        <div class="card custom-card shadow-lg" style="background-color: #FFFFFF;">
+        <div class="card custom-card shadow-lg">
             <div class="card-header custom-header text-center">
                 <div class="profile-picture">
-                    <img src="profile_img/client_profile/jeewan-p.png" alt="Jeewan Thiloshana" class="rounded-circle" style="scale:1.2;">
+                    <img src="profile_img/client_profile/jeewan-p.png" alt="Jeewan Thiloshana" class="rounded-circle" style="scale:1.1;">
                 </div>
             </div>
             <br>
             <br>
-            <div class="card-body text-center" style="background-color: #FFFFFF; color: #000000; text-decoration: none; font-family: 'Roboto', sans-serif;">
-                <h2 class="card-title" style="font-size: 27px; text-transform: uppercase;">Jeewan Thiloshana</h2>
-                <p style="color: #000000; font-size: 21px; text-transform: uppercase;">Senior Procurement Executive</p>
-                <p style="font-size: 18px; margin-top: 10px;">CBL Foods International (Pvt) Ltd.<br>No. 135, Habarakada Road, Ranala 10654, Sri Lanka</p>
+            <div class="card-body text-center" style="background-color: #FFFFFF; color: #2D1B1B; text-decoration: none; font-family: 'Roboto', sans-serif;">
+                <h2 class="card-title" style="font-size: 28px; text-transform: uppercase;">Jeewan Thiloshana</h2>
+                <p style="color: #4B1C1C; font-size: 20px; text-transform: uppercase;">Senior Procurement Executive</p>
+            </div>
+
+            <div class="px-4 secondary-bg py-4" style="margin-top: -10px;">
+                <p style="font-size: 17px; margin-top: 10px; color: #2D1B1B;" class="fw-bold">CBL Foods International (Pvt) Ltd.<br>No. 135, Habarakada Road, Ranala 10654, Sri Lanka</p>
 
                 <div class="list-group mb-3">
                     <button type="button" class="gradient-button list-group-item contact" onclick="window.open('tel:+94777004613', '_self')">
-                        <img src="Images/icon/phone.png" alt="" style="width: 30px; height: 30px;">
+                        <i class="fas fa-phone"></i>
                         <span class="flex-grow-1 text-truncate custom-phone">Mobile: +94 77 7004613</span>
                     </button>
                     <button type="button" class="gradient-button list-group-item contact" onclick="window.open('tel:+94115002000', '_self')">
-                        <img src="Images/icon/phone.png" alt="" style="width: 30px; height: 30px;">
+                        <i class="fas fa-phone"></i>
                         <span class="flex-grow-1 text-truncate custom-phone">Tel (General): +94 11 5002000</span>
                     </button>
                     <button type="button" class="gradient-button list-group-item contact" onclick="window.open('mailto:jeewans.cblf@cbllk.com', '_self')">
-                        <img src="Images/icon/mail.png" alt="" style="width: 30px; height: 30px;">
+                        <i class="fas fa-envelope"></i>
                         <span class="flex-grow-1 text-truncate custom-phone">jeewans.cblf@cbllk.com</span>
                     </button>
                     <button type="button" class="gradient-button list-group-item contact" onclick="window.open('https://www.cbllk.com', '_blank')">
-                        <img src="Images/icon/internet.png" alt="" style="width: 30px; height: 30px;">
+                        <i class="fas fa-globe"></i>
                         <span class="flex-grow-1 text-truncate custom-phone">www.cbllk.com</span>
                     </button>
                 </div>
-                <p style="font-size: 16px; margin-top: 10px;">Fax: +94 11 2408009</p>
+                <p style="font-size: 15px; margin-top: 10px; color: #2D1B1B;" class="fw-bold">Fax: +94 11 2408009</p>
 
-                <p class="fw-bold mt-4" style="font-family: 'Open Sans', sans-serif; font-size:19px">CONNECT WITH SOCIAL MEDIA</p>
+                <p class="fw-bold mt-4" style="font-family: 'Roboto', sans-serif; font-size:18px; color: #2D1B1B;">CONNECT WITH SOCIAL MEDIA</p>
                 <div class="d-flex flex-wrap justify-content-center" style="margin-top: -10px;">
                     <a href="https://www.linkedin.com/in/jeewan-thiloshana" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/linkedin.png" alt="LinkedIn" style="width: 50px; height: 50px;">
+                        <img src="Images/Social_Media_Icon/linkedin.png" alt="LinkedIn" style="width: 48px; height: 48px;">
                     </a>
                 </div>
 
                 <br>
 
-                <button class="btn w-100 custom-save-button" onclick="generateVCF()" style="font-family: 'Open Sans', sans-serif; font-size:19px; border: 2px solid orange;">
-                    <img src="Images/Social_Media_Icon/save.png" alt="" style="width: 50px; height: 50px;">
+                <button class="btn w-100 custom-save-button" onclick="generateVCF()" style="font-family: 'Roboto', sans-serif; font-size:18px;">
+                    <i class="fas fa-save"></i>
                     SAVE TO CONTACTS
                 </button>
 
                 <br>
-                <p style="font-size: 16px; margin-top: 10px;">With Warm Regards<br>Jeewan Thiloshana<br>Senior Executive - Procurement</p>
+                <p style="font-size: 15px; margin-top: 10px; color: #2D1B1B;">With Warm Regards<br>Jeewan Thiloshana<br>Senior Executive - Procurement</p>
             </div>
         </div>
     </div>
