@@ -1,8 +1,9 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template 75</title>
+    <title>Waga farm</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="Images/Logo1.ico">
@@ -10,7 +11,7 @@
     <style>
         .custom-card75 {
             overflow: hidden;
-            background: #1A3C34; /* Dark green background */
+            background: #1A3C34;
             height: auto;
         }
 
@@ -20,7 +21,7 @@
             background-repeat: no-repeat;
             padding: 35px 20px;
             position: relative;
-            background-color:rgb(255, 255, 255); /* Dark green */
+            background-color: rgb(255, 255, 255);
         }
 
         .custom-logo {
@@ -41,7 +42,7 @@
         .profile-picture75 img {
             width: 130px;
             height: 130px;
-            border: 4px solid #FFCA28; /* Yellow border */
+            border: 4px solid #FFCA28;
             border-radius: 50%;
         }
 
@@ -63,40 +64,40 @@
         }
 
         .list-group-item {
-            background: linear-gradient(135deg, #2E7D32 0%, #4CAF50 100%); /* Gradient green */
+            background: linear-gradient(135deg, #2E7D32 0%, #4CAF50 100%);
             color: #FFFFFF;
             border-radius: 8px;
             margin-bottom: 10px;
-            border: 1px solid #FFCA28; /* Yellow border */
+            border: 1px solid #FFCA28;
             padding: 10px 15px;
             font-family: 'Lato', sans-serif;
-            justify-content: flex-start; /* Align left */
-            text-align: start; /* Explicitly align text to start */
+            justify-content: flex-start;
+            text-align: start;
         }
 
         .list-group-item:hover {
-            background: linear-gradient(135deg, #388E3C 0%, #66BB6A 100%); /* Lighter gradient green on hover */
-            border-color: #FFD54F; /* Lighter yellow */
+            background: linear-gradient(135deg, #388E3C 0%, #66BB6A 100%);
+            border-color: #FFD54F;
             transition: background-color 0.3s, border-color 0.3s;
         }
 
         .custom-save-button75 {
-            background: linear-gradient(135deg, #2E7D32 0%, #4CAF50 100%); /* Gradient green */
-            color: #FFFFFF; /* White text for contrast */
+            background: linear-gradient(135deg, #2E7D32 0%, #4CAF50 100%);
+            color: #FFFFFF;
             font-weight: bold;
-            border: 1px solid #FFCA28; /* Yellow border */
+            border: 1px solid #FFCA28;
             padding: 10px;
             margin-left: 48%;
             margin-top: -30px;
             transition: background 0.3s;
             font-family: 'Roboto', sans-serif;
-            text-align: start; /* Align button text to start */
+            text-align: start;
             padding-left: 15px;
         }
 
         .custom-save-button75:hover {
-            background: linear-gradient(135deg, #388E3C 0%, #66BB6A 100%); /* Lighter gradient green */
-            border-color: #FFD54F; /* Lighter yellow */
+            background: linear-gradient(135deg, #388E3C 0%, #66BB6A 100%);
+            border-color: #FFD54F;
         }
 
         .save-icon {
@@ -115,8 +116,8 @@
             font-size: 1.2rem;
             color: #FFFFFF;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-            margin-left: 10px; /* Add spacing for left alignment */
-            text-align: start; /* Align text to start */
+            margin-left: 10px;
+            text-align: start;
         }
 
         .custom-phone1 {
@@ -125,20 +126,20 @@
             font-size: 1.2rem;
             color: #FFFFFF;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-            background: linear-gradient(135deg, #2E7D32 0%, #4CAF50 100%); /* Gradient green for WhatsApp button */
-            border: 1px solid #FFCA28; /* Yellow border */
-            text-align: start; /* Align WhatsApp button text to start */
-            padding-left: 15px; /* Add padding for left alignment */
+            background: linear-gradient(135deg, #2E7D32 0%, #4CAF50 100%);
+            border: 1px solid #FFCA28;
+            text-align: start;
+            padding-left: 15px;
         }
 
         .custom-phone1:hover {
-            background: linear-gradient(135deg, #388E3C 0%, #66BB6A 100%); /* Lighter gradient green */
-            border-color: #FFD54F; /* Lighter yellow */
+            background: linear-gradient(135deg, #388E3C 0%, #66BB6A 100%);
+            border-color: #FFD54F;
         }
 
         .gallery-section {
             padding: 20px;
-            background: linear-gradient(135deg, #2E7D32 0%, #4CAF50 100%); /* Gradient green */
+            background: linear-gradient(135deg, #2E7D32 0%, #4CAF50 100%);
             border-radius: 10px;
             margin-top: 20px;
         }
@@ -274,6 +275,7 @@
                 transform: scale(0.8);
                 opacity: 0;
             }
+
             to {
                 transform: scale(1);
                 opacity: 1;
@@ -284,6 +286,7 @@
             from {
                 opacity: 0;
             }
+
             to {
                 opacity: 0.9;
             }
@@ -307,7 +310,7 @@
         }
 
         .video-preview video {
-            border: 2px solid #FFCA28; /* Yellow border */
+            border: 2px solid #FFCA28;
             border-radius: 10px;
             transition: transform 0.3s, box-shadow 0.3s;
         }
@@ -324,7 +327,7 @@
         .modern-upload-btn {
             display: block;
             padding: 1.5rem 2rem;
-            background: linear-gradient(135deg, #2E7D32 0%, #4CAF50 100%); /* Gradient green */
+            background: linear-gradient(135deg, #2E7D32 0%, #4CAF50 100%);
             border-radius: 12px;
             color: #FFFFFF;
             cursor: pointer;
@@ -332,7 +335,7 @@
             overflow: hidden;
             transition: all 0.3s ease;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border: 1px solid #FFCA28; /* Yellow border */
+            border: 1px solid #FFCA28;
             text-align: center;
             font-family: 'Roboto', sans-serif;
         }
@@ -340,8 +343,8 @@
         .modern-upload-btn:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-            background: linear-gradient(135deg, #388E3C 0%, #66BB6A 100%); /* Lighter gradient green */
-            border-color: #FFD54F; /* Lighter yellow */
+            background: linear-gradient(135deg, #388E3C 0%, #66BB6A 100%);
+            border-color: #FFD54F;
         }
 
         .modern-upload-btn:active {
@@ -407,12 +410,19 @@
         }
 
         @keyframes float {
-            0%, 100% { transform: translateY(-3px); }
-            50% { transform: translateY(3px); }
+
+            0%,
+            100% {
+                transform: translateY(-3px);
+            }
+
+            50% {
+                transform: translateY(3px);
+            }
         }
 
         .contact {
-            background: linear-gradient(135deg, #2E7D32 0%, #4CAF50 100%); /* Gradient green */
+            background: linear-gradient(135deg, #2E7D32 0%, #4CAF50 100%);
         }
 
         .gallery-header {
@@ -432,7 +442,7 @@
 
         .gallery-toggle {
             font-size: 18px;
-            color: #FFCA28; /* Yellow */
+            color: #FFCA28;
         }
 
         .gallery-container {
@@ -504,7 +514,7 @@
         }
 
         .lightbox-close:hover {
-            color: #FFCA28; /* Yellow on hover */
+            color: #FFCA28;
             transform: scale(1.2);
         }
 
@@ -577,7 +587,7 @@
                 </div>
             </div>
             <br><br>
-            <button class="btn w-50 custom-save-button75" id="saveContactBtn">
+            <button class="btn w-50 custom-save-button75" onclick="generateVCF();">
                 <i class="fas fa-save me-2"></i>
                 SAVE TO CONTACTS
             </button>
@@ -623,28 +633,6 @@
                         <img src="Images/Social_Media_Icon/tiktok.png" alt="TikTok" style="width: 50px; height: 50px;">
                     </a>
                 </div>
-                <!-- <div class="gallery-section">
-                    <div class="gallery-header" onclick="toggleGallery()">
-                        <div class="gallery-title">Gallery</div>
-                        <div class="gallery-toggle" id="galleryToggle">
-                            <i class="fas fa-minus"></i>
-                        </div>
-                    </div>
-                    <div class="gallery-container d-flex flex-wrap justify-content-center" id="galleryContainer" style="display: grid;">
-                        <div class="gallery-item" onclick="openLightbox('gallery_img/main_gallerys/t6g1.jpg')">
-                            <img src="gallery_img/main_gallerys/t6g1.jpg" alt="Gallery Image 1" class="gallery-image">
-                        </div>
-                        <div class="gallery-item" onclick="openLightbox('gallery_img/main_gallerys/t6g2.jpg')">
-                            <img src="gallery_img/main_gallerys/t6g2.jpg" alt="Gallery Image 2" class="gallery-image">
-                        </div>
-                        <div class="gallery-item" onclick="openLightbox('gallery_img/main_gallerys/t6g3.jpg')">
-                            <img src="gallery_img/main_gallerys/t6g3.jpg" alt="Gallery Image 3" class="gallery-image">
-                        </div>
-                        <div class="gallery-item" onclick="openLightbox('gallery_img/main_gallerys/t6g4.jpg')">
-                            <img src="gallery_img/main_gallerys/t6g4.jpg" alt="Gallery Image 4" class="gallery-image">
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
     </div>
@@ -712,13 +700,13 @@
             document.getElementById('lightbox-image').src = galleryImages[currentImageIndex];
         }
 
-        document.getElementById('lightbox').addEventListener('click', function (e) {
+        document.getElementById('lightbox').addEventListener('click', function(e) {
             if (e.target === this) {
                 closeLightbox();
             }
         });
 
-        document.addEventListener('keydown', function (e) {
+        document.addEventListener('keydown', function(e) {
             const lightbox = document.getElementById('lightbox');
             if (lightbox.style.display === 'flex') {
                 if (e.key === 'Escape') {
@@ -731,30 +719,84 @@
             }
         });
 
-        document.getElementById('saveContactBtn').addEventListener('click', function () {
-            const vCardData = `BEGIN:VCARD
-VERSION:3.0
-FN:D P L Edirisinghe
-TITLE:Proprietor
-TEL;TYPE=WORK,VOICE:0711240668
-TEL;TYPE=WORK,VOICE:0770350353
-EMAIL:Prabhathedirisinghe123@gmail.com
-ADR;TYPE=WORK:;;Waga Farm, Kadugoda, Waga
-END:VCARD`;
+        async function generateVCF() {
+            const contactData = {
+                firstName: "D P L",
+                lastName: "Edirisinghe",
+                title: "Proprietor",
+                phoneWork: "0711240668",
+                phoneMobile: "0770350353",
+                email: "Prabhathedirisinghe123@gmail.com",
+                address: "Waga Farm, Kadugoda, Waga",
+                logo: "https://tapilinq.com/logo_img/client_logo/wagafarm-l.png",
+                profileImage: "https://tapilinq.com/profile_img/client_profile/wagafarm-p.png"
+            };
 
-            const blob = new Blob([vCardData], { type: 'text/vcard' });
+            // Convert image to base64
+            const toBase64 = async (url) => {
+                try {
+                    const response = await fetch(url);
+                    const blob = await response.blob();
+                    return new Promise((resolve, reject) => {
+                        const reader = new FileReader();
+                        reader.onloadend = () => resolve(reader.result.split(',')[1]);
+                        reader.onerror = reject;
+                        reader.readAsDataURL(blob);
+                    });
+                } catch (error) {
+                    console.error("Failed to load image for VCF:", error);
+                    return '';
+                }
+            };
+
+            let photoBase64 = '';
+            try {
+                photoBase64 = await toBase64(contactData.profileImage);
+            } catch (error) {
+                console.error("Failed to load image for VCF:", error);
+            }
+
+            // Build VCF content
+            let vcfLines = [
+                "BEGIN:VCARD",
+                "VERSION:3.0",
+                `FN:${contactData.firstName} ${contactData.lastName}`,
+                `N:${contactData.lastName};${contactData.firstName};;;`,
+            ];
+
+            if (contactData.title) vcfLines.push(`TITLE:${contactData.title}`);
+            if (contactData.phoneWork) vcfLines.push(`TEL;TYPE=WORK,VOICE:${contactData.phoneWork}`);
+            if (contactData.phoneMobile) vcfLines.push(`TEL;TYPE=CELL:${contactData.phoneMobile}`);
+            if (contactData.email) vcfLines.push(`EMAIL:${contactData.email}`);
+            if (contactData.address) vcfLines.push(`ADR;TYPE=WORK:;;${contactData.address};;;`);
+
+            // Embed profile image (base64 JPEG format)
+            if (photoBase64) {
+                vcfLines.push(`PHOTO;ENCODING=b;TYPE=JPEG:${photoBase64}`);
+            }
+
+            vcfLines.push("END:VCARD");
+
+            const vcfContent = vcfLines.join('\n');
+
+            // Trigger download
+            const blob = new Blob([vcfContent], {
+                type: 'text/vcard'
+            });
             const url = URL.createObjectURL(blob);
-            const link = document.createElement('a');
-            link.href = url;
-            link.download = 'D_P_L_Edirisinghe.vcf';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        });
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
 
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('galleryContainer').style.display = 'grid';
         });
     </script>
 </body>
+
 </html>
