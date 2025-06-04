@@ -36,8 +36,7 @@
             padding: 120px 20px 70px;
             position: relative;
             text-align: center;
-            background: linear-gradient(to right, #FECDD3, #FDA4AF);
-            height: 260px;
+            /* background: linear-gradient(to right, #FECDD3, #FDA4AF); */
         }
 
         .profile-picture {
