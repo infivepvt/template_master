@@ -32,7 +32,7 @@
         }
 
         .card-header {
-            background-image: url("banner_img/client_banner/jeewan-b.png");
+            background-image: url("banner_img/client_banner/jeewan-b.png?id=009989");
             background-position: center;
             background-size: cover;
             border-radius: 12px 12px 0 0;
