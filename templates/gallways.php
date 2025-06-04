@@ -678,15 +678,15 @@
                 <div class="list-group mb-3">
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
-                        onclick="window.open('tel:0761231212', '_self')">
+                        onclick="window.open('tel:+94 76 060 7441', '_self')">
                         <img src="Images/icon/phone.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">+94 77 401 0080</span>
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">+94 76 060 7441</span>
                     </button>
 
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
-                        onclick="window.open('mailto:youremail@yourwebsite.com', '_self')">
+                        onclick="window.open('mailto:gallwaysholidayhome@gmail.com', '_self')">
                         <img src="Images/icon/mail.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
                             style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">gallwaysholidayhome@gmail.com</span>
@@ -779,7 +779,7 @@
                 lastName: "",
                 title: "Proptier",
                 phoneWork: "",
-                phoneMobile: "+94 77 401 0080",
+                phoneMobile: "+94 76 060 7441",
                 email: "gallwaysholidayhome@gmail.com",
                 email2: "",
                 email3: "",

@@ -12,7 +12,8 @@
         .custom-card75 {
             overflow: hidden;
             background: #1A3C34;
-            height: auto;
+            width: 100%;
+            min-height: 100vh;
         }
 
         .custom-header {
