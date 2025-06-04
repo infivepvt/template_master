@@ -61,22 +61,22 @@
         }
 
         .list-group-item {
-            background-color: #333;
+            background: linear-gradient(90deg, #50b3e8, #3a8bc1);
             color: #fff;
             border-radius: 8px;
             margin-bottom: 10px;
-            border: 1px solid #444;
+            border: 1px solid #2e6f9a;
             padding: 10px 15px;
         }
 
         .list-group-item:hover {
-            background-color: #444;
-            border-color: #666;
-            transition: background-color 0.3s, border-color 0.3s;
+            background: linear-gradient(90deg, #3a8bc1, #2e6f9a);
+            border-color: #1e4f7a;
+            transition: background 0.3s, border-color 0.3s;
         }
 
         .custom-save-button {
-            background: linear-gradient(90deg, #5f4def, #00d0ea);
+            background: linear-gradient(90deg, #50b3e8, #3a8bc1);
             color: white;
             font-weight: bold;
             border: none;
@@ -89,7 +89,7 @@
         }
 
         .custom-save-button:hover {
-            background: linear-gradient(90deg, #4b3ec4, #00b3c3);
+            background: linear-gradient(90deg, #3a8bc1, #2e6f9a);
         }
 
         .contact-icon {
@@ -112,21 +112,32 @@
             color: white;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
             transition: background-color 0.1s, border-color 0.1s;
+            background-color: #25D366;
+            border: 2px solid orange;
+            border-radius: 10px;
+            padding: 10px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
         }
 
         .custom-phone1:hover {
-            background-color: #25D366;
+            background-color: #128C7E;
             border-color: #128C7E;
         }
 
         .text-container {
             text-align: center;
+            color: #504192;
         }
 
         .main-text {
             display: block;
             font-weight: 600;
             font-size: 1.1rem;
+            color: #504192;
         }
 
         .sub-text {
@@ -134,6 +145,7 @@
             font-size: 0.9rem;
             opacity: 0.8;
             margin-top: 0.3rem;
+            color: #504192;
         }
 
         @keyframes float {
@@ -149,7 +161,7 @@
         }
 
         .contact {
-            background-color: #373938;
+            background: linear-gradient(90deg, #50b3e8, #3a8bc1);
         }
 
         .section {
@@ -181,7 +193,7 @@
         .heading {
             font-size: 2rem;
             font-weight: bold;
-            color: #333;
+            color: #504192;
             margin-bottom: 20px;
             text-align: center;
         }
@@ -193,17 +205,17 @@
         .button {
             display: inline-flex;
             align-items: center;
-            padding: 10px 20px;
-            background-color: #0073aa;
+            padding: 10px Nevada Test Site20px;
+            background: linear-gradient(90deg, #50b3e8, #3a8bc1);
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
             font-size: 1rem;
-            transition: background-color 0.3s;
+            transition: background 0.3s;
         }
 
         .button:hover {
-            background-color: #005177;
+            background: linear-gradient(90deg, #3a8bc1, #2e6f9a);
         }
 
         .button-icon {
@@ -254,11 +266,16 @@
         }
 
         .qr-section button {
-            background: #fff;
-            border: 2px solid #000;
+            background: linear-gradient(90deg, #50b3e8, #3a8bc1);
+            color: white;
+            border: none;
             padding: 5px 15px;
             border-radius: 5px;
             cursor: pointer;
+        }
+
+        .qr-section button:hover {
+            background: linear-gradient(90deg, #3a8bc1, #2e6f9a);
         }
 
         .qr-section img {
@@ -281,15 +298,14 @@
             </div>
             <br><br>
             <div class="card-body text-center"
-                style="background-color: #FFFFFF; color: #000000; text-decoration: none;">
+                style="background-color: #FFFFFF; color: #504192; text-decoration: none;">
                 <h2 class="card-title" style="font-size: 27px; text-transform: uppercase;">Sachith Rangalla</h2>
-                <p style="color: #000000; font-size: 21px; text-transform: uppercase;">Senior Manager - Marketing and
+                <p style="color: #504192; font-size: 21px; text-transform: uppercase;">Senior Manager <br> Marketing and
                     Branding</p>
 
                 <a href="https://wa.me/0742223334" target="_blank" rel="noopener noreferrer"
                     style="text-decoration: none;">
-                    <button class="btn w-100 mb-3 custom-phone1 d-flex align-items-center justify-content-center"
-                        style="background-color: #25D366; color: white; height: 60px; border: 2px solid orange; border-radius: 10px; gap: 10px;">
+                    <button class="btn w-100 mb-3 custom-phone1 d-flex align-items-center justify-content-center">
                         <i class="fab fa-whatsapp" style="font-size: 50px; margin-right:30px;"></i>
                         <span style="font-size: 14px; font-family: 'Montserrat', sans-serif;">CONNECT WITH
                             WHATSAPP</span>
@@ -314,22 +330,30 @@
                     </button>
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
-                        onclick="window.open('mailto:info@sjhospital.lk', '_self')">
+                        onclick="window.open('mailto:sachith.rangalla@ktdoctor.com', '_self')">
                         <img src="Images/icon/mail.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">info@sjhospital.lk</span>
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">sachith.rangalla@ktdoctor.com</span>
+                    </button>
+                     <button type="button"
+                        class="list-group-item d-flex align-items-center justify-content-between contact"
+                        onclick="window.open('https://maps.app.goo.gl/N917WPntZQaxieVg8', '_blank')">
+                        <img src="Images/Social_Media_Icon/location.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
+                        <span class="text-center flex-grow-1 text-truncate custom-phone"
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">St. Joseph
+                            Hospital Colombo</span>
                     </button>
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
                         onclick="window.open('https://maps.app.goo.gl/CFGYg5bHWxBYX7nPA', '_blank')">
-                        <img src="Images/icon/map.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
+                        <img src="Images/Social_Media_Icon/location.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
                             style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">St. Joseph
                             Hospital Negombo</span>
                     </button>
                 </div>
 
-                <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:19px">CONNECT WITH SOCIAL MEDIA
+                <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:19px; color: #504192">CONNECT WITH SOCIAL MEDIA
                 </p>
                 <div class="d-flex flex-wrap justify-content-center">
                     <a href="https://www.instagram.com/sjhospital.lk/" target="_blank" rel="noopener noreferrer"
@@ -340,33 +364,23 @@
                         class="m-3">
                         <img src="Images/Social_Media_Icon/facebook.png" alt="" style="width: 50px; height: 50px;">
                     </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/youtube.png" alt="" style="width: 50px; height: 50px;">
-                    </a>
-                </div>
-                <div class="d-flex flex-wrap justify-content-center">
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/tiktok.png" alt="" style="width: 50px; height: 50px;">
-                    </a>
                     <a href="https://www.linkedin.com/company/sjhnegomb/" target="_blank" rel="noopener noreferrer"
                         class="m-3">
                         <img src="Images/Social_Media_Icon/linkedin.png" alt="" style="width: 50px; height: 50px;">
                     </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/x-2.jpeg" alt="" style="width: 50px; height: 50px;">
-                    </a>
                 </div>
-                <br>
+<br>
                 <section class="section" style="padding: 0 20px;">
                     <div class="container">
                         <div class="column" style="background-color: transparent; box-shadow: none; padding: 0;">
-                            <h2 class="heading" style="font-size: 1.5rem; margin-bottom: 10px; color: #333;">SCAN ME</h2>
+                            <h2 class="heading" style="font-size: 1.5rem; margin-bottom: 10px; color: #504192;">SCAN TO
+                                SAVE CONTACT</h2>
                             <div class="qr-section"
                                 style="background: #f8f9fa; width: 100%; max-width: 250px; padding: 15px; flex-direction: column; gap: 10px;">
-                                <img src="gallery_img/client_gallerys/sachith/sachith-g.png" alt="QR Code"
-                                    style="width: 150px; height: 150px;">
+                                <img src="gallery_img/client_gallerys/sachith/sachith-g.png"
+                                    alt="QR Code" style="width: 150px; height: 150px;">
                                 <button onclick="shareQR()"
-                                    style="background: linear-gradient(90deg, #5f4def, #00d0ea); color: white; border: none; padding: 8px 20px; border-radius: 5px; cursor: pointer; font-weight: bold; transition: background 0.3s;">
+                                    style="background: linear-gradient(90deg, #50b3e8, #3a8bc1); color: white; border: none; padding: 8px 20px; border-radius: 5px; cursor: pointer; font-weight: bold; transition: background 0.3s;">
                                     Share QR Code
                                 </button>
                             </div>
@@ -386,136 +400,103 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        function shareQR() {
-            // Get the QR code image URL
-            const qrCodeUrl = 'https://tapilinq.com/sachith';
-
-            // Check if Web Share API is available
-            if (navigator.share) {
-                navigator.share({
-                    title: 'Scan to save contact',
-                    text: 'Scan this QR code to save Sachith Rangalla\'s contact information',
-                    url: qrCodeUrl
-                })
-                    .catch(error => console.log('Error sharing:', error));
-            } else {
-                // Fallback for browsers that don't support Web Share API
-                const shareUrl = `whatsapp://send?text=Scan this QR code to save Sachith Rangalla's contact information: ${qrCodeUrl}`;
-
-                // Try to open WhatsApp first
-                window.open(shareUrl, '_blank');
-
-                // If WhatsApp doesn't open, show a message with the QR code URL
-                setTimeout(() => {
-                    if (!document.hidden) {
-                        alert(`Share this QR code URL:\n${qrCodeUrl}`);
-                    }
-                }, 500);
-            }
-        }
-        function generateVCF() {
-            const contactData = {
-                firstName: "Sachith",
-                lastName: "Rangalla",
-                title: "Senior Manager - Marketing and Branding",
-                phoneWork: "0117848484",
-                phoneMobile: "0742223334",
-                email: "info@sjhospital.lk",
-                website: "http://sjhospital.lk/",
-                address: "229/10 St. Joseph Street, Negombo",
-                profileImage: "profile_img/client_profile/sachith-p.png",
-                logo: "logo_img/client_logo/sachith-l.png"
-            };
-
-            // Create a promise to handle the image loading
-            const loadImage = (url) => {
-                return new Promise((resolve, reject) => {
-                    const img = new Image();
-                    img.crossOrigin = 'Anonymous'; // Handle CORS if needed
-                    img.onload = () => resolve(img);
-                    img.onerror = reject;
-                    img.src = url;
-                });
-            };
-
-            // Generate the vCard with the image
-            const generateVCardWithImage = async () => {
-                try {
-                    // Load the profile image
-                    const profileImage = await loadImage(contactData.profileImage);
-
-                    // Create canvas and draw image
-                    const canvas = document.createElement('canvas');
-                    const ctx = canvas.getContext('2d');
-                    canvas.width = profileImage.width;
-                    canvas.height = profileImage.height;
-                    ctx.drawImage(profileImage, 0, 0);
-
-                    // Convert to base64
-                    const base64Image = canvas.toDataURL('image/jpeg').split(',')[1];
-
-                    // Create the vCard content
-                    let vcfContent = `BEGIN:VCARD
-VERSION:3.0
-FN:${contactData.firstName} ${contactData.lastName}
-N:${contactData.lastName};${contactData.firstName};;;
-TITLE:${contactData.title}
-TEL;TYPE=WORK,VOICE:${contactData.phoneWork}
-TEL;TYPE=CELL:${contactData.phoneMobile}
-EMAIL:${contactData.email}
-URL:${contactData.website}
-ADR;TYPE=WORK:;;${contactData.address}
-PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}
-LOGO;VALUE=URL:${contactData.logo}
-END:VCARD`;
-
-                    // Create and download the vCard file
-                    const blob = new Blob([vcfContent], { type: 'text/vcard' });
-                    const url = URL.createObjectURL(blob);
-
-                    const a = document.createElement('a');
-                    a.href = url;
-                    a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-                    document.body.appendChild(a);
-                    a.click();
-
-                    document.body.removeChild(a);
-                    URL.revokeObjectURL(url);
-                } catch (error) {
-                    console.error('Error generating vCard:', error);
-                    // Fallback to vCard without image if there's an error
-                    let vcfContent = `BEGIN:VCARD
-VERSION:3.0
-FN:${contactData.firstName} ${contactData.lastName}
-N:${contactData.lastName};${contactData.firstName};;;
-TITLE:${contactData.title}
-TEL;TYPE=WORK,VOICE:${contactData.phoneWork}
-TEL;TYPE=CELL:${contactData.phoneMobile}
-EMAIL:${contactData.email}
-URL:${contactData.website}
-ADR;TYPE=WORK:;;${contactData.address}
-PHOTO;VALUE=URL:${contactData.profileImage}
-LOGO;VALUE=URL:${contactData.logo}
-END:VCARD`;
-
-                    const blob = new Blob([vcfContent], { type: 'text/vcard' });
-                    const url = URL.createObjectURL(blob);
-
-                    const a = document.createElement('a');
-                    a.href = url;
-                    a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-                    document.body.appendChild(a);
-                    a.click();
-
-                    document.body.removeChild(a);
-                    URL.revokeObjectURL(url);
+    function shareQR() {
+        const qrCodeUrl = 'https://tapilinq.com/sachith';
+        
+        if (navigator.share) {
+            navigator.share({
+                title: 'Scan to save contact',
+                text: 'Scan this QR code to save Sachith Rangalla\'s contact information',
+                url: qrCodeUrl
+            })
+            .catch(error => console.log('Error sharing:', error));
+        } else {
+            const shareUrl = `whatsapp://send?text=Scan this QR code to save Sachith Rangalla's contact information: ${qrCodeUrl}`;
+            
+            window.open(shareUrl, '_blank');
+            
+            setTimeout(() => {
+                if (!document.hidden) {
+                    alert(`Share this QR code URL:\n${qrCodeUrl}`);
                 }
-            };
-
-            // Call the async function
-            generateVCardWithImage();
+            }, 500);
         }
-    </script>
+    }
+
+    async function generateVCF() {
+    const contactData = {
+        firstName: "Sachith",
+        lastName: "Rangalla",
+        title: "Senior Manager - Marketing and Branding",
+        phoneWork: "0117848484",
+        phoneMobile: "0742223334",
+        email: "info@sjhospital.lk",
+        website: "http://sjhospital.lk/",
+        address: "229/10 St. Joseph Street, Negombo",
+        profileImage: "profile_img/client_profile/sachith-p.png",
+        logo: "logo_img/client_logo/sachith-l.png"
+    };
+
+    // Load the profile image and convert to base64
+    let base64Image = "";
+    try {
+        const profileImage = new Image();
+        profileImage.src = contactData.profileImage;
+        profileImage.crossOrigin = "Anonymous"; // Handle cross-origin images if necessary
+
+        // Wait for the image to load
+        if (!profileImage.complete) {
+            await new Promise((resolve) => {
+                profileImage.onload = resolve;
+                profileImage.onerror = () => {
+                    console.error("Failed to load profile image");
+                    resolve(); // Proceed even if image fails to load
+                };
+            });
+        }
+
+        // Create canvas and draw image
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = profileImage.naturalWidth;
+        canvas.height = profileImage.naturalHeight;
+        ctx.drawImage(profileImage, 0, 0);
+
+        // Convert to base64 (remove the data URI prefix)
+        base64Image = canvas.toDataURL('image/jpeg').split(',')[1];
+    } catch (error) {
+        console.error("Error processing profile image:", error);
+    }
+
+    // Generate vCard content
+    let vcfContent = `BEGIN:VCARD
+VERSION:3.0
+FN:${contactData.firstName} ${contactData.lastName}
+N:${contactData.lastName};${contactData.firstName};;;
+TITLE:${contactData.title}
+TEL;TYPE=WORK,VOICE:${contactData.phoneWork}
+TEL;TYPE=CELL:${contactData.phoneMobile}
+EMAIL:${contactData.email}
+URL:${contactData.website}
+ADR;TYPE=WORK:;;${contactData.address}
+${base64Image ? `PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}` : `PHOTO;VALUE=URL:${contactData.profileImage}`}
+LOGO;VALUE=URL:${contactData.logo}
+END:VCARD`;
+
+    // Create and download the vCard file
+    const blob = new Blob([vcfContent], { type: 'text/vcard' });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+    document.body.appendChild(a);
+    a.click();
+
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+}
+</script>
 </body>
 
 </html>
