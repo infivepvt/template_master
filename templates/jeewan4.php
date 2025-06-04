@@ -36,6 +36,7 @@
             padding: 120px 20px 70px;
             position: relative;
             text-align: center;
+            height: 260px;
             /* background: linear-gradient(to right, #FECDD3, #FDA4AF); */
         }
 
