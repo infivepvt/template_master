@@ -37,6 +37,7 @@
             position: relative;
             text-align: center;
             background: linear-gradient(to right, #FECDD3, #FDA4AF);
+            height: 260px;
         }
 
         .profile-picture {

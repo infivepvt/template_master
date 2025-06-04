@@ -7,7 +7,9 @@
     <title>Digital Business Card</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500;700&family=Poppins:wght@400;600;700&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500;700&family=Poppins:wght@400;600;700&family=Rubik:wght@400;500&display=swap"
+        rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="Images/Logo1.ico">
     <style>
         body {
@@ -34,7 +36,7 @@
             padding: 120px 20px 70px;
             position: relative;
             text-align: center;
-             height: 260px;
+            height: 260px;
         }
 
         .profile-picture {
@@ -43,7 +45,7 @@
             left: 50%;
             transform: translateX(-50%);
             z-index: 10;
-            
+
         }
 
         .profile-picture img {
@@ -211,11 +213,12 @@
                 <img src="profile_img/client_profile/jeewan-p.png" alt="Jeewan Thiloshana">
             </div>
         </div>
-        <br>  <br>  <br>
+        <br> <br> <br>
         <div class="card-body">
             <h2 class="card-title">Jeewan Thiloshana</h2>
             <p class="card-subtitle">Senior Procurement Executive</p>
-            <p class="card-company">CBL Foods International (Pvt) Ltd.<br>No. 135, Habarakada Road, Ranala 10654, Sri Lanka</p>
+            <p class="card-company">CBL Foods International (Pvt) Ltd.<br>No. 135, Habarakada Road, Ranala 10654, Sri
+                Lanka</p>
 
             <button class="btn save-contact-button" onclick="generateVCF()">
                 <img src="Images/Social_Media_Icon/save.png" alt="Save Icon">
@@ -224,19 +227,23 @@
 
             <h3 class="section-title contacts-title">CONTACTS</h3>
             <div class="list-group contact-list">
-                <button type="button" class="list-group-item d-flex align-items-center" onclick="window.open('tel:+94115002000', '_self')">
+                <button type="button" class="list-group-item d-flex align-items-center"
+                    onclick="window.open('tel:+94115002000', '_self')">
                     <img src="Images/icon/phone.png" alt="Phone Icon">
                     <span>+94 11 5002000</span>
                 </button>
-                <button type="button" class="list-group-item d-flex align-items-center" onclick="window.open('tel:+94777004613', '_self')">
+                <button type="button" class="list-group-item d-flex align-items-center"
+                    onclick="window.open('tel:+94777004613', '_self')">
                     <img src="Images/icon/phone.png" alt="Phone Icon">
                     <span>+94 77 7004613</span>
                 </button>
-                <button type="button" class="list-group-item d-flex align-items-center" onclick="window.open('mailto:jeewans.cblf@cbllk.com', '_self')">
+                <button type="button" class="list-group-item d-flex align-items-center"
+                    onclick="window.open('mailto:jeewans.cblf@cbllk.com', '_self')">
                     <img src="Images/icon/mail.png" alt="Email Icon">
                     <span>jeewans.cblf@cbllk.com</span>
                 </button>
-                <button type="button" class="list-group-item d-flex align-items-center" onclick="window.open('https://www.cbllk.com', '_blank')">
+                <button type="button" class="list-group-item d-flex align-items-center"
+                    onclick="window.open('https://www.cbllk.com', '_blank')">
                     <img src="Images/icon/internet.png" alt="Website Icon">
                     <span>www.cbllk.com</span>
                 </button>
