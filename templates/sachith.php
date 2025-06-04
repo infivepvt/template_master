@@ -303,7 +303,7 @@
                 <p style="color: #504192; font-size: 21px; text-transform: uppercase;">Senior Manager <br> Marketing and
                     Branding</p>
 
-                <a href="https://wa.me/0741458705" target="_blank" rel="noopener noreferrer"
+                <a href="https://wa.me/+94741458705" target="_blank" rel="noopener noreferrer"
                     style="text-decoration: none;">
                     <button class="btn w-100 mb-3 custom-phone1 d-flex align-items-center justify-content-center">
                         <i class="fab fa-whatsapp" style="font-size: 50px; margin-right:30px;"></i>
