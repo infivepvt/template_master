@@ -34,7 +34,7 @@
         }
 
         .custom-logo {
-            width: 200px;
+            width: 150px;
             position: relative;
             top: 0;
             left: 0;
