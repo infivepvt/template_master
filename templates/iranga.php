@@ -508,9 +508,9 @@
                         </div>
 
                         <div class="contact-info">
-                            <div class="contact-item" onclick="window.open('tel:+918925108432', '_blank')">
+                            <div class="contact-item" onclick="window.open('tel:+94761316995', '_blank')">
                                 <i class="fas fa-phone-alt"></i>
-                                <div class="contact-text">+91 8925108432</div>
+                                <div class="contact-text">+94 761316995</div>
                             </div>
 
                             <div class="contact-item" onclick="window.open('mailto:iranga.kodikara@lpalighting.com', '_blank')">
