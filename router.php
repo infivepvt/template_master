@@ -167,6 +167,7 @@ $routes = [
     'gallways' => 'templates/gallways.php',
     'wagafarm' => 'templates/wagafarm.php',
     'nishan' => 'templates/nishan.php',
+    'kosala' => 'templates/kosala.php',
 ];
 
 // Handle the request
