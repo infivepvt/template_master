@@ -65,8 +65,7 @@
         .list-group-item {
             background-color: #fff; /* White background for buttons */
             color: #000; /* Black text for contrast */
-            border: 2px solid transparent;
-            border-image: linear-gradient(to right, #B22222, #FF4040, #FF7F50) 1; /* Red gradient border */
+            border: 1px solid #ccc; /* Simple, slightly visible solid border */
             border-radius: 8px;
             margin-bottom: 10px;
             padding: 12px 15px;
@@ -77,13 +76,13 @@
 
         .list-group-item:hover {
             background-color: #f8f8f8; /* Light gray on hover */
-            border-image: linear-gradient(to right, #B22222, #FF4040, #FF7F50) 1; /* Maintain gradient border */
-            transition: background-color 0.3s;
+            border: 1px solid #bbb; /* Slightly darker border on hover */
+            transition: background-color 0.3s, border-color 0.3s;
         }
 
         .list-group-item img {
             margin-right: 15px;
-            filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(80%) contrast(119%); /* Red icons */
+            filter: brightness(0) invert(1); /* Makes icons white */
         }
 
         .custom-save-button {
