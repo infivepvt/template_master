@@ -24,7 +24,7 @@
 
         .custom-header {
             position: relative;
-            height: 200px;
+            height: 230px;
         }
 
         .card-header {
