@@ -290,7 +290,7 @@
         <div class="card custom-card shadow-lg" style="background-color: #FFFFFF;">
             <div class="card-header custom-header text-center"
                 style="background-image: url('banner_img/client_banner/sachith-b.jpg'); height: 200px; opacity: 1;">
-                <img src="logo_img/client_logo/sachith-l.png" alt="Company Logo" class="custom-logo" height="120px"
+                <img src="logo_img/client_logo/sachith-l.png?id=78745" alt="Company Logo" class="custom-logo" height="120px"
                     style="width: 330px; height: auto; opacity: 1; margin-top: -15px;">
                 <div class="profile-picture">
                     <img src="profile_img/client_profile/sachith-p.png" alt="Saliya Pathum" class="rounded-circle">
