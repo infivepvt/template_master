@@ -34,6 +34,7 @@
             padding: 120px 20px 70px;
             position: relative;
             text-align: center;
+             height: 230px;
         }
 
         .profile-picture {
