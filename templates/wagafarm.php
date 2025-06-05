@@ -582,9 +582,9 @@
     <div class="d-flex justify-content-center">
         <div class="card custom-card75 shadow-lg rounded-0" style="background-color: #1A3C34;">
             <div class="card-header custom-header text-center">
-                <img src="logo_img/client_logo/wagafarm-l.png" alt="Company Logo" class="custom-logo" style="width: 170px; opacity: 1;">
+                <img src="logo_img/client_logo/wagafarm-l.png?hello=hello" alt="Company Logo" class="custom-logo" style="width: 170px; opacity: 1;">
                 <div class="profile-picture75">
-                    <img src="profile_img/client_profile/wagafarm-p.png" alt="D P L Edirisinghe" class="rounded-circle">
+                    <img src="profile_img/client_profile/wagafarm-p.png?hello=hello" alt="D P L Edirisinghe" class="rounded-circle">
                 </div>
             </div>
             <br><br>
@@ -594,13 +594,7 @@
             </button>
             <div class="card-body text-left" style="background-color: #1A3C34; color: #FFFFFF;">
                 <h2 class="card-title" style="font-size: 30px; color: #FFFFFF; font-family: 'Roboto', sans-serif;">D P L Edirisinghe</h2>
-                <p style="color: #FFFFFF; font-size: 20px; font-family: 'Lato', sans-serif;">Proprietor</p>
-                <a href="https://wa.me/94711240668" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
-                    <button class="btn w-100 mb-3 custom-phone1 d-flex align-items-center" style="height: 60px; border: 1px solid #FFCA28; border-radius: 10px; gap: 10px;">
-                        <i class="fab fa-whatsapp" style="font-size: 50px; margin-right:30px;"></i>
-                        <span style="font-size: 14px; font-family: 'Lato', sans-serif;">CONNECT WITH WHATSAPP</span>
-                    </button>
-                </a>
+                <p style="color: #FFFFFF; font-size: 20px; font-family: 'Lato', sans-serif;">Partner</p>
                 <div class="list-group mb-3">
                     <button type="button" class="list-group-item d-flex align-items-center contact" onclick="window.open('tel:0711240668', '_self')">
                         <img src="Images/icon/phone.png" alt="Phone Icon" style="width: 30px; height: 30px; margin-right:25px;">
@@ -619,6 +613,12 @@
                         <span class="flex-grow-1 text-truncate custom-phone" style="color: #FFFFFF; font-family: 'Lato', sans-serif; font-size:16px;">Waga Farm, Kadugoda, Waga</span>
                     </button>
                 </div>
+                <a href="https://wa.me/94711240668" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                    <button class="btn w-100 mb-3 custom-phone1 d-flex align-items-center" style="height: 60px; border: 1px solid #FFCA28; border-radius: 10px; gap: 10px;">
+                        <i class="fab fa-whatsapp" style="font-size: 50px; margin-right:30px;"></i>
+                        <span style="font-size: 14px; font-family: 'Lato', sans-serif;">CONNECT WITH WHATSAPP</span>
+                    </button>
+                </a>
                 <p class="fw" style="font-family: 'Roboto', sans-serif; font-size:19px; color: #FFFFFF;">CONNECT WITH SOCIAL MEDIA</p>
                 <div class="d-flex flex-wrap justify-content-center">
                     <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
