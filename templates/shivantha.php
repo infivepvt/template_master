@@ -7,240 +7,256 @@
     <title>Digital Business Card</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500;700&family=Poppins:wght@400;600;700&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="Images/Logo1.ico">
     <style>
         body {
-            background-color: #F5F7FA;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: -5px;
         }
 
         .custom-card {
+            border-radius: 5px;
             overflow: hidden;
-            background: #F5F7FA;
-            width: 450px;
-            height: auto;
-            margin-top: -55px;
+            background: #FFFFFF;
+            width: 500px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
 
         .custom-header {
-            position: relative;
-            height: 200px;
-        }
-
-        .card-header {
             background-image: url("banner_img/client_banner/shivantha-b.png");
             background-position: top;
             background-size: cover;
+            padding: 120px 20px 70px;
+            position: relative;
+            text-align: center;
         }
 
         .profile-picture {
             position: absolute;
-            top: 95%;
+            bottom: -70px;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translateX(-50%);
+            z-index: 10;
         }
 
         .profile-picture img {
-            width: 130px;
-            height: 130px;
-            border: 4px solid #fff;
+            width: 185px;
+            height: 185px;
+            border: 1px solid #fff;
             border-radius: 50%;
+            box-shadow: 0 5px 15px rgba(0bartifacts, 0, 0, 0.2);
+            object-fit: cover;
         }
 
-        .custom-button {
-            font-weight: bold;
-        }
-
-        .social-icon {
-            font-size: 1.9rem;
-            transition: color 0.3s;
-        }
-
-        .list-group-item {
-            background-color: #555;
-            color: #fff;
-            border-radius: 8px;
-            margin-bottom: 10px;
-            border: 1px solid #666;
-            padding: 12px 15px;
-            display: flex;
-            align-items: center;
-            text-align: left; /* Align text to left */
-        }
-
-        .list-group-item:hover {
-            background-color: #666;
-            border-color: #777;
-            transition: background-color 0.3s, border-color 0.3s;
-        }
-
-        .list-group-item img {
-            margin-right: 15px; /* Margin between icon and text */
-        }
-
-        .custom-save-button {
-            background: linear-gradient(to right, #B22222, #FF4040, #FF7F50);
-            color: white;
-            font-weight: 600;
-            border: 2px solid #FFA500;
-            padding: 12px;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: filter 0.3s;
-            font-family: 'Open Sans', sans-serif;
-            font-size: 1.2rem;
-        }
-
-        .custom-save-button:hover {
-            filter: brightness(1.2);
-        }
-
-        .custom-save-button img {
-            margin-right: 15px; /* Margin between icon and text in save button */
-        }
-
-        .contact-icon {
-            font-size: 1.5rem;
-            color: #fff;
-        }
-
-        .custom-phone {
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 600;
-            font-size: 1.1rem;
-            color: #fff;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
-
-        .custom-phone1 {
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 600;
-            font-size: 1.1rem;
-            color: #fff;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-            transition: background-color 0.3s, border-color 0.3s;
-        }
-
-        .custom-phone1:hover {
-            background-color: #25D366;
-            border-color: #128C7E;
-        }
-
-        .text-container {
+        .card-body {
+            padding-top: 80px;
             text-align: center;
         }
 
-        .main-text {
-            display: block;
-            font-weight: 600;
-            font-size: 1.1rem;
-            font-family: 'Roboto', sans-serif;
+        .card-title {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 25px;
+            color: #000000;
+            margin-bottom: 5px;
         }
 
-        .sub-text {
-            display: block;
-            font-size: 0.9rem;
-            opacity: 0.8;
-            margin-top: 0.3rem;
-            font-family: 'Open Sans', sans-serif;
+        .card-subtitle {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            color: #B3B3B3;
+            margin-bottom: 5px;
         }
 
-        .gradient-button {
+        .card-company {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            color: #4E4E4E;
+            margin-bottom: 20px;
+        }
+
+        .save-contact-button {
             background: linear-gradient(to right, #B22222, #FF4040, #FF7F50);
-            border: none;
-            color: white;
-            font-family: 'Open Sans', sans-serif;
+            color: #FFFFFF;
             font-weight: 600;
-            font-size: 1.1rem;
+            border: 2px solid #FFA500;
+            padding: 10px 20px;
+            border-radius: 20px;
+            width: 100%;
+            margin-bottom: 30px;
             transition: filter 0.3s ease;
-            width: 100%; /* Ensure buttons take full width */
-        }
-
-        .gradient-button:hover {
-            filter: brightness(1.2);
-            cursor: pointer;
-        }
-
-        .contact {
-            background: linear-gradient(to right, #B22222, #FF4040, #FF7F50);
-        }
-
-        .logo {
-            height: 70px;
-            margin-top: -10px;
-        }
-
-        .card-body h2, .card-body p {
             font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .save-contact-button img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .save-contact-button:hover {
+            filter: brightness(1.2);
+            color: white;
+        }
+
+        .section-title {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .contacts-title {
+            font-size: 15px;
+            color: #000000;
+        }
+
+        .follow-us-title {
+            font-size: 15px;
+            color: #000000;
+            margin-top: 30px;
+        }
+
+        .contact-list .list-group-item {
+            border: 2px solid #FFA500;
+            border-radius: 50px;
+            margin-bottom: 10px;
+            padding: 10px 20px;
+            background: linear-gradient(to right, #B22222, #FF4040, #FF7F50);
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transition: filter 0.3s ease;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            color: #000;
+        }
+
+        .contact-list .list-group-item span {
+            color: #FFFFFF;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .contact-list .list-group-item img {
+            width: 30px;
+            height: 30px;
+            margin-right: 15px;
+        }
+
+        .contact-list .list-group-item:hover {
+            filter: brightness(1.2);
+        }
+
+        .contact-list .list-group-item.no-icon {
+            justify-content: center;
+        }
+
+        .social-icons {
+            margin-bottom: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 30px;
+            display: inline-block;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .social-icons a img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .social-icons .social-label {
+            display: block;
+            font-size: 13px;
+            font-family: 'Rubik', sans-serif;
+            font-weight: 400;
+            margin-top: 5px;
+            color: #7A7A7A;
+        }
+
+        .btn:focus,
+        .list-group-item:focus {
+            box-shadow: none;
+            outline: none;
         }
     </style>
 </head>
 
 <body>
-    <div class="d-flex justify-content-center mt-5">
-        <div class="card custom-card shadow-lg" style="background-color: #FFFFFF;">
-            <div class="card-header custom-header text-center">
-                <div class="profile-picture">
-                    <img src="profile_img/client_profile/shivantha-p.png" alt="Shivantha Perera" class="rounded-circle" style="scale:1.2;">
-                </div>
+    <div class="card custom-card">
+        <div class="custom-header">
+            <div class="profile-picture">
+                <img src="profile_img/client_profile/shivantha-p.png" alt="Shivantha Perera">
             </div>
-            <br>
-            <br>
-            <div class="card-body text-center" style="background-color: #FFFFFF; color: #000000; text-decoration: none; font-family: 'Roboto', sans-serif;">
-                <h2 class="card-title" style="font-size: 27px; text-transform: uppercase;">Shivantha Perera</h2>
-                <p style="color: #000000; font-size: 21px; text-transform: uppercase;">Group Head of IT</p>
-                <p style="font-size: 18px; margin-top: 10px;">Maliban Biscuit Manufactories (Pvt) Ltd.<br>389, Galle Road, Ratmalana, Sri Lanka</p>
+        </div>
+        <div class="card-body">
+            <h2 class="card-title">Shivantha Perera</h2>
+            <p class="card-subtitle">Group Head of IT</p>
+            <p class="card-company">Maliban Biscuit Manufactories (Pvt) Ltd.<br>389, Galle Road, Ratmalana, Sri Lanka</p>
 
-                <div class="list-group mb-3">
-                    <button type="button" class="gradient-button list-group-item contact" onclick="window.open('tel:+94714558550', '_self')">
-                        <img src="Images/icon/phone.png" alt="" style="width: 30px; height: 30px;">
-                        <span class="flex-grow-1 text-truncate custom-phone">Mobile: +94 71 4558550</span>
-                    </button>
-                    <button type="button" class="gradient-button list-group-item contact" onclick="window.open('tel:+94776652305', '_self')">
-                        <img src="Images/icon/phone.png" alt="" style="width: 30px; height: 30px;">
-                        <span class="flex-grow-1 text-truncate custom-phone">Mobile: +94 77 6652305</span>
-                    </button>
-                    <button type="button" class="gradient-button list-group-item contact" onclick="window.open('tel:+94115555000', '_self')">
-                        <img src="Images/icon/phone.png" alt="" style="width: 30px; height: 30px;">
-                        <span class="flex-grow-1 text-truncate custom-phone">Tel (Head Office): +94 11 5555000</span>
-                    </button>
-                    <button type="button" class="gradient-button list-group-item contact" onclick="window.open('tel:+94112738551', '_self')">
-                        <img src="Images/icon/phone.png" alt="" style="width: 30px; height: 30px;">
-                        <span class="flex-grow-1 text-truncate custom-phone">Tel: +94 11 2738551-5</span>
-                    </button>
-                    <button type="button" class="gradient-button list-group-item contact" onclick="window.open('mailto:Shivantha.perera@malibangroup.lk', '_self')">
-                        <img src="Images/icon/mail.png" alt="" style="width: 30px; height: 30px;">
-                        <span class="flex-grow-1 text-truncate custom-phone">Shivantha.perera@malibangroup.lk</span>
-                    </button>
-                    <button type="button" class="gradient-button list-group-item contact" onclick="window.open('https://www.malibangroup.com', '_blank')">
-                        <img src="Images/icon/internet.png" alt="" style="width: 30px; height: 30px;">
-                        <span class="flex-grow-1 text-truncate custom-phone">www.malibangroup.com</span>
-                    </button>
-                </div>
-                <p style="font-size: 16px; margin-top: 10px;">Fax (Head Office): +94 11 2734556<br>Fax: +94 11 2730540</p>
+            <button class="btn save-contact-button" onclick="generateVCF()">
+                <img src="Images/Social_Media_Icon/save.png" alt="Save Icon">
+                Save to Contact
+            </button>
 
-                <p class="fw-bold mt-4" style="font-family: 'Open Sans', sans-serif; font-size:19px">CONNECT WITH SOCIAL MEDIA</p>
-                <div class="d-flex flex-wrap justify-content-center" style="margin-top: -10px;">
-                    <a href="https://www.linkedin.com/in/shivantha17?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/linkedin.png" alt="LinkedIn" style="width: 50px; height: 50px;">
-                    </a>
-                </div>
-
-                <br>
-
-                <button class="btn w-100 custom-save-button" onclick="generateVCF()" style="font-family: 'Open Sans', sans-serif; font-size:19px; border: 2px solid orange;">
-                    <img src="Images/Social_Media_Icon/save.png" alt="" style="width: 50px; height: 50px;">
-                    SAVE TO CONTACTS
+            <h3 class="section-title contacts-title">CONTACTS</h3>
+            <div class="list-group contact-list">
+                <button type="button" class="list-group-item d-flex align-items-center" onclick="window.open('tel:+94744130558', '_self')">
+                    <img src="Images/icon/phone.png" alt="Phone Icon">
+                    <span>+94 744 130 558</span>
                 </button>
+                <button type="button" class="list-group-item d-flex align-items-center" onclick="window.open('tel:+94776652305', '_self')">
+                    <img src="Images/icon/phone.png" alt="Phone Icon">
+                    <span>+94 77 6652305</span>
+                </button>
+                <button type="button" class="list-group-item d-flex align-items-center" onclick="window.open('tel:+94115555000', '_self')">
+                    <img src="Images/icon/phone.png" alt="Phone Icon">
+                    <span>+94 11 5555000</span>
+                </button>
+               
+                <button type="button" class="list-group-item d-flex align-items-center" onclick="window.open('mailto:shivantha.perera@malibangroup.lk', '_self')">
+                    <img src="Images/icon/mail.png" alt="Email Icon">
+                    <span>shivantha.perera@malibangroup.lk</span>
+                </button>
+                <button type="button" class="list-group-item d-flex align-items-center" onclick="window.open('https://www.malibangroup.com', '_blank')">
+                    <img src="Images/icon/internet.png" alt="Website Icon">
+                    <span>www.malibangroup.com</span>
+                </button>
+               
+            </div>
 
-                <br>
+            <h3 class="section-title follow-us-title">FOLLOW ME</h3>
+            <div class="d-flex justify-content-center social-icons">
+                <a href="https://www.linkedin.com/in/shivantha17?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
+                    <img src="Images/Social_Media_Icon/linkedin.png" alt="LinkedIn">
+                    <span class="social-label">LinkedIn</span>
+                </a>
             </div>
         </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
     <script>
         async function generateVCF() {
             const contactData = {
