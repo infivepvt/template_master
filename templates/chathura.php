@@ -386,7 +386,7 @@
 
 
                 <button class="btn w-100 custom-save-button" onclick="shareQR()">
-                    <img src="Images/Icon/share.png" alt="" style="width: 50px; height: 50px; margin-right:25px;">
+                    <img src="Images/icon/share.png" alt="" style="width: 50px; height: 50px; margin-right:25px;">
                     SHARE MY PROFILE
                 </button>
                 <br>
