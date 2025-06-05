@@ -171,6 +171,9 @@ $routes = [
     'mihirami' => 'templates/mihirami.php',
     'gurusinghe' => 'templates/gurusinghe.php',
     'manoj' => 'templates/manoj.php',
+    'chathura' => 'templates/chathura.php', 
+    'sonali' => 'templates/sonali.php', 
+    'charith' => 'templates/charith.php', 
 ];
 
 // Handle the request

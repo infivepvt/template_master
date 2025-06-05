@@ -299,11 +299,11 @@
             <br><br>
             <div class="card-body text-center"
                 style="background-color: #FFFFFF; color: #504192; text-decoration: none; margin-top:50px;">
-                <h2 class="card-title" style="font-size: 27px; text-transform: uppercase;">Sachith Rangalla</h2>
-                <p style="color: #504192; font-size: 21px; text-transform: uppercase;">Senior Manager <br> Marketing and
-                    Branding</p>
+                <h2 class="card-title" style="font-size: 27px; text-transform: uppercase;">Charith Mahendrarajah</h2>
+                <p style="color: #504192; font-size: 21px; text-transform: uppercase;">Director <br> Strategic
+                    Partnerships<br> Corporate Medicals</p>
 
-                <a href="https://wa.me/0741458705" target="_blank" rel="noopener noreferrer"
+                <a href="https://wa.me/0773519656" target="_blank" rel="noopener noreferrer"
                     style="text-decoration: none;">
                     <button class="btn w-100 mb-3 custom-phone1 d-flex align-items-center justify-content-center">
                         <i class="fab fa-whatsapp" style="font-size: 50px; margin-right:30px;"></i>
@@ -315,10 +315,10 @@
                 <div class="list-group mb-3">
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
-                        onclick="window.open('tel:+94741458705', '_self')">
+                        onclick="window.open('tel:+94773519656', '_self')">
                         <img src="Images/icon/phone.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">+94 74 145 8705</span>
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">+94 773 519 656</span>
                     </button>
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
@@ -402,17 +402,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         function shareQR() {
-            const qrCodeUrl = 'https://tapilinq.com/sachith';
+            const qrCodeUrl = 'https://tapilinq.com/charith';
 
             if (navigator.share) {
                 navigator.share({
                     title: 'Scan to save contact',
-                    text: 'Scan this QR code to save Sachith Rangalla\'s contact information',
+                    text: 'Scan this QR code to save Charith Mahendrarajah\'s contact information',
                     url: qrCodeUrl
                 })
                     .catch(error => console.log('Error sharing:', error));
             } else {
-                const shareUrl = `whatsapp://send?text=Scan this QR code to save Sachith Rangalla's contact information: ${qrCodeUrl}`;
+                const shareUrl = `whatsapp://send?text=Scan this QR code to save Charith Mahendrarajah's contact information: ${qrCodeUrl}`;
 
                 window.open(shareUrl, '_blank');
 
@@ -423,17 +423,15 @@
                 }, 500);
             }
         }
-
         async function generateVCF() {
             const contactData = {
-                firstName: "Sachith",
-                lastName: "Rangalla",
-                title: "Senior Manager - Marketing and Branding",
-                phoneWork: "0117848484",
-                phoneMobile: "0742223334",
-                email: "info@sjhospital.lk",
+                firstName: "Charith",
+                lastName: "Mahendrarajah",
+                title: "Director Strategic Partnerships Corporate Medicals",
+                phoneMobile: "+94773519656",
+                email: "sachith.rangalla@ktdoctor.com",
                 website: "http://sjhospital.lk/",
-                address: "229/10 St. Joseph Street, Negombo",
+                address: "St. Joseph Hospital, Negombo",
                 profileImage: "profile_img/client_profile/sachith-p.png",
                 logo: "logo_img/client_logo/sachith-l.png"
             };
@@ -475,7 +473,6 @@ VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
 N:${contactData.lastName};${contactData.firstName};;;
 TITLE:${contactData.title}
-TEL;TYPE=WORK,VOICE:${contactData.phoneWork}
 TEL;TYPE=CELL:${contactData.phoneMobile}
 EMAIL:${contactData.email}
 URL:${contactData.website}

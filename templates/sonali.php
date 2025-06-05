@@ -299,11 +299,11 @@
             <br><br>
             <div class="card-body text-center"
                 style="background-color: #FFFFFF; color: #504192; text-decoration: none; margin-top:50px;">
-                <h2 class="card-title" style="font-size: 27px; text-transform: uppercase;">Sachith Rangalla</h2>
-                <p style="color: #504192; font-size: 21px; text-transform: uppercase;">Senior Manager <br> Marketing and
-                    Branding</p>
+                <h2 class="card-title" style="font-size: 27px; text-transform: uppercase;">Sonali Fernando</h2>
+                <p style="color: #504192; font-size: 21px; text-transform: uppercase;">Director <br> Business
+                    Development</p>
 
-                <a href="https://wa.me/0741458705" target="_blank" rel="noopener noreferrer"
+                <a href="https://wa.me/+94763610001" target="_blank" rel="noopener noreferrer"
                     style="text-decoration: none;">
                     <button class="btn w-100 mb-3 custom-phone1 d-flex align-items-center justify-content-center">
                         <i class="fab fa-whatsapp" style="font-size: 50px; margin-right:30px;"></i>
@@ -315,17 +315,17 @@
                 <div class="list-group mb-3">
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
-                        onclick="window.open('tel:+94741458705', '_self')">
+                        onclick="window.open('tel:+94763610001', '_self')">
                         <img src="Images/icon/phone.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">+94 74 145 8705</span>
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">+94 763 610 001</span>
                     </button>
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
-                        onclick="window.open('mailto:sachith.rangalla@ktdoctor.com', '_self')">
+                        onclick="window.open('mailto:sonali@sjhospital.lk', '_self')">
                         <img src="Images/icon/mail.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">sachith.rangalla@ktdoctor.com</span>
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">sonali@sjhospital.lk</span>
                     </button>
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
@@ -402,17 +402,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         function shareQR() {
-            const qrCodeUrl = 'https://tapilinq.com/sachith';
+            const qrCodeUrl = 'https://tapilinq.com/sonali';
 
             if (navigator.share) {
                 navigator.share({
                     title: 'Scan to save contact',
-                    text: 'Scan this QR code to save Sachith Rangalla\'s contact information',
+                    text: 'Scan this QR code to save Sonali Fernando\'s contact information',
                     url: qrCodeUrl
                 })
                     .catch(error => console.log('Error sharing:', error));
             } else {
-                const shareUrl = `whatsapp://send?text=Scan this QR code to save Sachith Rangalla's contact information: ${qrCodeUrl}`;
+                const shareUrl = `whatsapp://send?text=Scan this QR code to save Sonali Fernando's contact information: ${qrCodeUrl}`;
 
                 window.open(shareUrl, '_blank');
 
@@ -426,16 +426,15 @@
 
         async function generateVCF() {
             const contactData = {
-                firstName: "Sachith",
-                lastName: "Rangalla",
-                title: "Senior Manager - Marketing and Branding",
-                phoneWork: "0117848484",
-                phoneMobile: "0742223334",
-                email: "info@sjhospital.lk",
+                firstName: "Sonali",
+                lastName: "Fernando",
+                title: "Director - Business Development",
+                phoneMobile: "+94763610001",
+                email: "sonali@sjhospital.lk",
                 website: "http://sjhospital.lk/",
-                address: "229/10 St. Joseph Street, Negombo",
-                profileImage: "profile_img/client_profile/sachith-p.png",
-                logo: "logo_img/client_logo/sachith-l.png"
+                address: "St. Joseph Hospital, Negombo",
+                profileImage: "profile_img/client_profile/sachith-p.png", // Update if profile image is different
+                logo: "logo_img/client_logo/sachith-l.png" // Update if logo is different
             };
 
             // Load the profile image and convert to base64
@@ -475,7 +474,6 @@ VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
 N:${contactData.lastName};${contactData.firstName};;;
 TITLE:${contactData.title}
-TEL;TYPE=WORK,VOICE:${contactData.phoneWork}
 TEL;TYPE=CELL:${contactData.phoneMobile}
 EMAIL:${contactData.email}
 URL:${contactData.website}
