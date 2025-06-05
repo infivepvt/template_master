@@ -323,6 +323,7 @@
         <div class="card-body">
             <h1 class="card-title">The Bahamas Dental Institute</h1>
             <p class="card-subtitle">Dental Clinic</p>
+            <p class="card-subtitle" style="font-weight:bold;">Dr. Lakeisha Chisholm DDS, MPH</p>
             
             <div class="divider"></div>
             

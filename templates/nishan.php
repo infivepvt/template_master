@@ -601,9 +601,9 @@
                 </div>
             </div>
             <br><br>
-            <button class="btn w-50 custom-save-button75" id="saveContactBtn" >
-                <i class="fas fa-save me-2"></i>
-                SAVE TO CONTACTS
+           <button class="btn w-20 custom-save-button75" id="saveContactBtn" onclick="generateVCF()">
+            <i class="fas fa-save me-2"></i>
+            SAVE TO CONTACTS
             </button>
             <div class="card-body text-left" style="background-color: #00114b; color: #000000;">
                 <h2 class="card-title" style="font-size: 30px;color:rgb(255, 255, 255);">Nishan Jayawardene</h2>
