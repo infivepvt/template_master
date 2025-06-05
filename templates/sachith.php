@@ -39,14 +39,14 @@
 
         .profile-picture {
             position: absolute;
-            top: 95%;
+            top: 115%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
 
         .profile-picture img {
-            width: 130px;
-            height: 130px;
+            width: 170px;
+            height: 170px;
             border: 4px solid #fff;
             border-radius: 50%;
         }
@@ -289,21 +289,21 @@
     <div class="d-flex justify-content-center mt-5">
         <div class="card custom-card shadow-lg" style="background-color: #FFFFFF;">
             <div class="card-header custom-header text-center"
-                style="background-image: url('banner_img/client_banner/sachith-b.jpg'); height: 200px; opacity: 1;">
-                <img src="logo_img/client_logo/sachith-l.png?id=78745" alt="Company Logo" class="custom-logo" height="120px"
-                    style="width: 330px; height: auto; opacity: 1; margin-top: -15px;">
+                style="background-image: url('banner_img/client_banner/sachith-b.png'); height: 200px; opacity: 1;">
+                <!-- <img src="logo_img/client_logo/sachith-l.png" alt="Company Logo" class="custom-logo" height="120px"
+                    style="width: 330px; height: auto; opacity: 1; margin-top: -15px;"> -->
                 <div class="profile-picture">
                     <img src="profile_img/client_profile/sachith-p.png" alt="Saliya Pathum" class="rounded-circle">
                 </div>
             </div>
             <br><br>
             <div class="card-body text-center"
-                style="background-color: #FFFFFF; color: #504192; text-decoration: none;">
+                style="background-color: #FFFFFF; color: #504192; text-decoration: none; margin-top:50px;">
                 <h2 class="card-title" style="font-size: 27px; text-transform: uppercase;">Sachith Rangalla</h2>
                 <p style="color: #504192; font-size: 21px; text-transform: uppercase;">Senior Manager <br> Marketing and
                     Branding</p>
 
-                <a href="https://wa.me/+94741458705" target="_blank" rel="noopener noreferrer"
+                <a href="https://wa.me/0742223334" target="_blank" rel="noopener noreferrer"
                     style="text-decoration: none;">
                     <button class="btn w-100 mb-3 custom-phone1 d-flex align-items-center justify-content-center">
                         <i class="fab fa-whatsapp" style="font-size: 50px; margin-right:30px;"></i>
@@ -335,59 +335,61 @@
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
                             style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">sachith.rangalla@ktdoctor.com</span>
                     </button>
-                     <button type="button"
-                        class="list-group-item d-flex align-items-center justify-content-between contact"
-                        onclick="window.open('https://maps.app.goo.gl/N917WPntZQaxieVg8', '_blank')">
-                        <img src="Images/Social_Media_Icon/location.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
-                        <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">St. Joseph
-                            Hospital Colombo</span>
-                    </button>
-                    <button type="button"
+                      <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
                         onclick="window.open('https://maps.app.goo.gl/CFGYg5bHWxBYX7nPA', '_blank')">
-                        <img src="Images/Social_Media_Icon/location.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
+                        <img src="Images/Social_Media_Icon/location.png" alt=""
+                            style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
                             style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">St. Joseph
                             Hospital Negombo</span>
                     </button>
+                    <button type="button"
+                        class="list-group-item d-flex align-items-center justify-content-between contact"
+                        onclick="window.open('https://maps.app.goo.gl/N917WPntZQaxieVg8', '_blank')">
+                        <img src="Images/Social_Media_Icon/location.png" alt=""
+                            style="width: 30px; height: 30px; margin-right:25px;">
+                        <span class="text-center flex-grow-1 text-truncate custom-phone"
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">St. Joseph
+                            Hospital Colombo</span>
+                    </button>                 
                 </div>
 
-                <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:19px; color: #504192">CONNECT WITH SOCIAL MEDIA
+                <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:19px; color: #504192">CONNECT WITH
+                    SOCIAL MEDIA
                 </p>
                 <div class="d-flex flex-wrap justify-content-center">
+                     <a href="https://www.facebook.com/sjhospitalNegombo" target="_blank" rel="noopener noreferrer"
+                        class="m-3">
+                        <img src="Images/Social_Media_Icon/facebook.png" alt="" style="width: 50px; height: 50px;">
+                    </a>
                     <a href="https://www.instagram.com/sjhospital.lk/" target="_blank" rel="noopener noreferrer"
                         class="m-3">
                         <img src="Images/Social_Media_Icon/instagram.png" alt="" style="width: 50px; height: 50px;">
-                    </a>
-                    <a href="https://www.facebook.com/sjhospitalNegombo" target="_blank" rel="noopener noreferrer"
-                        class="m-3">
-                        <img src="Images/Social_Media_Icon/facebook.png" alt="" style="width: 50px; height: 50px;">
                     </a>
                     <a href="https://www.linkedin.com/company/sjhnegomb/" target="_blank" rel="noopener noreferrer"
                         class="m-3">
                         <img src="Images/Social_Media_Icon/linkedin.png" alt="" style="width: 50px; height: 50px;">
                     </a>
                 </div>
-<br>
-                <section class="section" style="padding: 0 20px;">
-                    <div class="container">
-                        <div class="column" style="background-color: transparent; box-shadow: none; padding: 0;">
-                            <h2 class="heading" style="font-size: 1.5rem; margin-bottom: 10px; color: #504192;">SCAN TO
-                                SAVE CONTACT</h2>
-                            <div class="qr-section"
-                                style="background: #f8f9fa; width: 100%; max-width: 250px; padding: 15px; flex-direction: column; gap: 10px;">
-                                <img src="gallery_img/client_gallerys/sachith/sachith-g.png"
-                                    alt="QR Code" style="width: 150px; height: 150px;">
-                                <button onclick="shareQR()"
-                                    style="background: linear-gradient(90deg, #50b3e8, #3a8bc1); color: white; border: none; padding: 8px 20px; border-radius: 5px; cursor: pointer; font-weight: bold; transition: background 0.3s;">
-                                    Share QR Code
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
+                <div class="d-flex flex-wrap justify-content-center">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/youtube.png" alt="" style="width: 50px; height: 50px;">
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/tiktok.png" alt="" style="width: 50px; height: 50px;">
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/x-2.png" alt="" style="width: 50px; height: 50px;">
+                    </a>
+                </div>
+               
+                
+                <button class="btn w-100 custom-save-button" onclick="shareQR()">
+                    <img src="Images/Icon/share.png" alt=""
+                        style="width: 50px; height: 50px; margin-right:25px;">
+                     SHARE MY PROFILE
+                </button>
                 <br>
                 <button class="btn w-100 custom-save-button" onclick="generateVCF()">
                     <img src="Images/Social_Media_Icon/save.png" alt=""
@@ -400,76 +402,76 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-    function shareQR() {
-        const qrCodeUrl = 'https://tapilinq.com/sachith';
-        
-        if (navigator.share) {
-            navigator.share({
-                title: 'Scan to save contact',
-                text: 'Scan this QR code to save Sachith Rangalla\'s contact information',
-                url: qrCodeUrl
-            })
-            .catch(error => console.log('Error sharing:', error));
-        } else {
-            const shareUrl = `whatsapp://send?text=Scan this QR code to save Sachith Rangalla's contact information: ${qrCodeUrl}`;
-            
-            window.open(shareUrl, '_blank');
-            
-            setTimeout(() => {
-                if (!document.hidden) {
-                    alert(`Share this QR code URL:\n${qrCodeUrl}`);
+        function shareQR() {
+            const qrCodeUrl = 'https://tapilinq.com/sachith';
+
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Scan to save contact',
+                    text: 'Scan this QR code to save Sachith Rangalla\'s contact information',
+                    url: qrCodeUrl
+                })
+                    .catch(error => console.log('Error sharing:', error));
+            } else {
+                const shareUrl = `whatsapp://send?text=Scan this QR code to save Sachith Rangalla's contact information: ${qrCodeUrl}`;
+
+                window.open(shareUrl, '_blank');
+
+                setTimeout(() => {
+                    if (!document.hidden) {
+                        alert(`Share this QR code URL:\n${qrCodeUrl}`);
+                    }
+                }, 500);
+            }
+        }
+
+        async function generateVCF() {
+            const contactData = {
+                firstName: "Sachith",
+                lastName: "Rangalla",
+                title: "Senior Manager - Marketing and Branding",
+                phoneWork: "0117848484",
+                phoneMobile: "0742223334",
+                email: "info@sjhospital.lk",
+                website: "http://sjhospital.lk/",
+                address: "229/10 St. Joseph Street, Negombo",
+                profileImage: "profile_img/client_profile/sachith-p.png",
+                logo: "logo_img/client_logo/sachith-l.png"
+            };
+
+            // Load the profile image and convert to base64
+            let base64Image = "";
+            try {
+                const profileImage = new Image();
+                profileImage.src = contactData.profileImage;
+                profileImage.crossOrigin = "Anonymous"; // Handle cross-origin images if necessary
+
+                // Wait for the image to load
+                if (!profileImage.complete) {
+                    await new Promise((resolve) => {
+                        profileImage.onload = resolve;
+                        profileImage.onerror = () => {
+                            console.error("Failed to load profile image");
+                            resolve(); // Proceed even if image fails to load
+                        };
+                    });
                 }
-            }, 500);
-        }
-    }
 
-    async function generateVCF() {
-    const contactData = {
-        firstName: "Sachith",
-        lastName: "Rangalla",
-        title: "Senior Manager - Marketing and Branding",
-        phoneWork: "0117848484",
-        phoneMobile: "0741458705",
-        email: "info@sjhospital.lk",
-        website: "http://sjhospital.lk/",
-        address: "229/10 St. Joseph Street, Negombo",
-        profileImage: "profile_img/client_profile/sachith-p.png",
-        logo: "logo_img/client_logo/sachith-l.png"
-    };
+                // Create canvas and draw image
+                const canvas = document.createElement('canvas');
+                const ctx = canvas.getContext('2d');
+                canvas.width = profileImage.naturalWidth;
+                canvas.height = profileImage.naturalHeight;
+                ctx.drawImage(profileImage, 0, 0);
 
-    // Load the profile image and convert to base64
-    let base64Image = "";
-    try {
-        const profileImage = new Image();
-        profileImage.src = contactData.profileImage;
-        profileImage.crossOrigin = "Anonymous"; // Handle cross-origin images if necessary
+                // Convert to base64 (remove the data URI prefix)
+                base64Image = canvas.toDataURL('image/jpeg').split(',')[1];
+            } catch (error) {
+                console.error("Error processing profile image:", error);
+            }
 
-        // Wait for the image to load
-        if (!profileImage.complete) {
-            await new Promise((resolve) => {
-                profileImage.onload = resolve;
-                profileImage.onerror = () => {
-                    console.error("Failed to load profile image");
-                    resolve(); // Proceed even if image fails to load
-                };
-            });
-        }
-
-        // Create canvas and draw image
-        const canvas = document.createElement('canvas');
-        const ctx = canvas.getContext('2d');
-        canvas.width = profileImage.naturalWidth;
-        canvas.height = profileImage.naturalHeight;
-        ctx.drawImage(profileImage, 0, 0);
-
-        // Convert to base64 (remove the data URI prefix)
-        base64Image = canvas.toDataURL('image/jpeg').split(',')[1];
-    } catch (error) {
-        console.error("Error processing profile image:", error);
-    }
-
-    // Generate vCard content
-    let vcfContent = `BEGIN:VCARD
+            // Generate vCard content
+            let vcfContent = `BEGIN:VCARD
 VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
 N:${contactData.lastName};${contactData.firstName};;;
@@ -483,20 +485,20 @@ ${base64Image ? `PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}` : `PHOTO;VALUE=URL:$
 LOGO;VALUE=URL:${contactData.logo}
 END:VCARD`;
 
-    // Create and download the vCard file
-    const blob = new Blob([vcfContent], { type: 'text/vcard' });
-    const url = URL.createObjectURL(blob);
+            // Create and download the vCard file
+            const blob = new Blob([vcfContent], { type: 'text/vcard' });
+            const url = URL.createObjectURL(blob);
 
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-    document.body.appendChild(a);
-    a.click();
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+            document.body.appendChild(a);
+            a.click();
 
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-}
-</script>
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+    </script>
 </body>
 
 </html>
