@@ -528,9 +528,9 @@
                                 <div class="contact-text">www.lpalighting.com</div>
                             </div>
 
-                            <div class="contact-item" onclick="window.open('https://www.litelab.net/', '_blank')">
+                            <div class="contact-item" onclick="window.open('https://www.litelab.in/', '_blank')">
                                 <i class="fas fa-globe"></i>
-                                <div class="contact-text">www.litelab.net</div>
+                                <div class="contact-text">www.litelab.in</div>
                             </div>
                         </div>
 
@@ -638,7 +638,7 @@
                 email2: "iranga@litelab.lk",
                 email3: "",
                 website: "https://www.lpalighting.com",
-                website2: "https://www.litelab.net/",
+                website2: "https://www.litelab.in/",
                 website3: "",
                 address: "100B Barns Place, Colombo 07, Sri Lanka",
                 address2: "",
