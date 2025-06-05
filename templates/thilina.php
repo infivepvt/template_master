@@ -422,6 +422,27 @@
           <span class="user-name">Official Website</span>
         </div>
       </a>
+      <a href="https://heyzine.com/flip-book/31701b3f95.html#page/1" class="social-media-button website-button">
+        <img src="Images/Social_Media_Icon/website.png" alt="Website Icon" style="width: 40px; height: 40px;">
+        <div class="text-wrapper">
+          <span class="platform-name">Tune & Trabsit productions</span>
+          
+        </div>
+      </a>
+      <a href="https://heyzine.com/flip-book/1d3ba3934e.html#page/10" class="social-media-button website-button">
+        <img src="Images/Social_Media_Icon/website.png" alt="Website Icon" style="width: 40px; height: 40px;">
+        <div class="text-wrapper">
+          <span class="platform-name">TuneIT™️ - Profile</span>
+        
+        </div>
+      </a>
+      <a href="https://heyzine.com/flip-book/a09413048a.html#page/1" class="social-media-button website-button">
+        <img src="Images/Social_Media_Icon/website.png" alt="Website Icon" style="width: 40px; height: 40px;">
+        <div class="text-wrapper">
+          <span class="platform-name">TransIT™️ - Profile</span>
+         
+        </div>
+      </a>
       <a href="https://www.tiktok.com/@tune_n_transit_prod" class="social-media-button">
         <img src="Images/Social_Media_Icon/tiktok.png" alt="" style="width: 40px; height: 40px;">
         <div class="text-wrapper">
