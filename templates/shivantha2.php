@@ -264,13 +264,10 @@
         lastName: "Perera",
         title: "Group Head of IT",
         organization: "Maliban Biscuit Manufactories (Pvt) Ltd.",
-        phoneMobile1: "+94714558550",
+        phoneMobile1: "+94744130558",
         phoneMobile2: "+94776652305",
-        phoneWork1: "+94115555000",
-        phoneWork2: "+94112738551",
-        fax1: "+94112734556",
-        fax2: "+94112730540",
-        email: "Shivantha.perera@malibangroup.lk",
+        phoneWork: "+94115555000",
+        email: "shivantha.perera@malibangroup.lk",
         website: "https://www.malibangroup.com",
         address: "389, Galle Road, Ratmalana, Sri Lanka",
         linkedin: "https://www.linkedin.com/in/shivantha17?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
@@ -280,7 +277,7 @@
     const toBase64 = async (url) => {
         return new Promise((resolve, reject) => {
             const profileImage = new Image();
-            profileImage.crossOrigin = "Anonymous"; // Handle CORS if needed
+            profileImage.crossOrigin = "Anonymous"; // Handle CORS
             profileImage.src = url;
 
             // Wait for the image to load
@@ -298,9 +295,15 @@
                 }
             };
 
+            // Handle image load failure
             profileImage.onerror = () => {
                 reject(new Error("Failed to load image"));
             };
+
+            // Ensure image is loaded if already in cache
+            if (profileImage.complete) {
+                profileImage.onload();
+            }
         });
     };
 
@@ -309,7 +312,7 @@
         photoBase64 = await toBase64(contactData.profileImage);
     } catch (error) {
         console.error("Failed to load image for VCF:", error);
-        // Optionally, proceed without the photo or include a placeholder
+        // Proceed without the photo
     }
 
     let vcfLines = [
@@ -321,19 +324,16 @@
         `TITLE:${contactData.title}`,
         `TEL;TYPE=CELL:${contactData.phoneMobile1}`,
         `TEL;TYPE=CELL:${contactData.phoneMobile2}`,
-        `TEL;TYPE=WORK:${contactData.phoneWork1}`,
-        `TEL;TYPE=WORK:${contactData.phoneWork2}`,
-        `TEL;TYPE=FAX:${contactData.fax1}`,
-        `TEL;TYPE=FAX:${contactData.fax2}`,
+        `TEL;TYPE=WORK:${contactData.phoneWork}`,
         `EMAIL:${contactData.email}`,
         `URL:${contactData.website}`,
-        `URL:${contactData.linkedin}`,
-        `ADR;TYPE=WORK:;;${contactData.address}`,
+        `URL;TYPE=LinkedIn:${contactData.linkedin}`,
+        `ADR;TYPE=WORK:;;${contactData.address};;;`,
         photoBase64 ? `PHOTO;ENCODING=b;TYPE=JPEG:${photoBase64}` : '',
         "END:VCARD"
     ];
 
-    // Filter out empty lines (in case photoBase64 is empty)
+    // Filter out empty lines
     const vcfContent = vcfLines.filter(line => line).join('\n');
     const blob = new Blob([vcfContent], { type: 'text/vcard' });
     const url = URL.createObjectURL(blob);
