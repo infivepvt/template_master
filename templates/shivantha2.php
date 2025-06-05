@@ -221,9 +221,9 @@
 
             <h3 class="section-title contacts-title">CONTACTS</h3>
             <div class="list-group contact-list">
-                <button type="button" class="list-group-item d-flex align-items-center" onclick="window.open('tel:+94714558550', '_self')">
+                <button type="button" class="list-group-item d-flex align-items-center" onclick="window.open('tel:+94744130558', '_self')">
                     <img src="Images/icon/phone.png" alt="Phone Icon">
-                    <span>+94 71 4558550</span>
+                    <span>+94 744 130 558</span>
                 </button>
                 <button type="button" class="list-group-item d-flex align-items-center" onclick="window.open('tel:+94776652305', '_self')">
                     <img src="Images/icon/phone.png" alt="Phone Icon">
@@ -233,24 +233,16 @@
                     <img src="Images/icon/phone.png" alt="Phone Icon">
                     <span>+94 11 5555000</span>
                 </button>
-                <button type="button" class="list-group-item d-flex align-items-center" onclick="window.open('tel:+94112738551', '_self')">
-                    <img src="Images/icon/phone.png" alt="Phone Icon">
-                    <span>+94 11 2738551</span>
-                </button>
-                <button type="button" class="list-group-item d-flex align-items-center" onclick="window.open('mailto:Shivantha.perera@malibangroup.lk', '_self')">
+               
+                <button type="button" class="list-group-item d-flex align-items-center" onclick="window.open('mailto:shivantha.perera@malibangroup.lk', '_self')">
                     <img src="Images/icon/mail.png" alt="Email Icon">
-                    <span>Shivantha.perera@malibangroup.lk</span>
+                    <span>shivantha.perera@malibangroup.lk</span>
                 </button>
                 <button type="button" class="list-group-item d-flex align-items-center" onclick="window.open('https://www.malibangroup.com', '_blank')">
                     <img src="Images/icon/internet.png" alt="Website Icon">
                     <span>www.malibangroup.com</span>
                 </button>
-                <div class="list-group-item no-icon">
-                    <span>Fax: +94 11 2734556</span>
-                </div>
-                <div class="list-group-item no-icon">
-                    <span>Fax: +94 11 2730540</span>
-                </div>
+               
             </div>
 
             <h3 class="section-title follow-us-title">FOLLOW ME</h3>
