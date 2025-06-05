@@ -43,9 +43,9 @@
         }
 
         .profile-picture75 img {
-            width: 130px;
-            height: 130px;
-            border: 1px solid #fff;
+            width: 150px;
+            height: 150px;
+            border: -5px solid #fff;
             border-radius: 50%;
         }
 
@@ -64,6 +64,7 @@
             gap: 40px;
             margin-bottom: 5px;
         }
+
         .list-group-item {
             background-color: #333;
             color: #fff;
@@ -129,174 +130,22 @@
             border-color: #128C7E;
         }
 
-        /* Gallery Styles */
-        .gallery-section {
+        /* Single Image Section Styles */
+        .single-image-section {
             padding: 20px;
-        }
-
-        .gallery-preview {
-            gap: 10px;
-        }
-
-        .gallery-item {
-            position: relative;
-            width: 100px;
-            height: 100px;
-            overflow: hidden;
+            background-color: #303e6d;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            cursor: pointer;
+            margin-top: 20px;
+            text-align: center; /* Center the image */
         }
 
-        .gallery-item:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-        }
-
-        .gallery-image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.3s ease;
-        }
-
-        .gallery-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .gallery-item:hover .gallery-overlay {
-            opacity: 1;
-        }
-
-        .gallery-text {
-            color: white;
-            font-size: 16px;
-            font-weight: bold;
-            text-align: center;
-        }
-
-        /* Image Preview Modal */
-        .image-preview-modal .modal-content {
-            background: transparent;
-            border: none;
-        }
-
-        .image-preview-modal .modal-body {
-            padding: 0;
-            position: relative;
-        }
-
-        .modal-image-container {
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .image-preview-modal img {
-            max-width: 90vw;
-            max-height: 90vh;
-            margin: auto;
-            display: block;
+        .single-image-section img {
+            max-width: 100%;
+            height: auto;
             border-radius: 8px;
-            box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
-            animation: zoomIn 0.3s ease-out;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
-        .modal-close-btn {
-            position: absolute;
-            top: -35px;
-            right: -35px;
-            color: white;
-            font-size: 30px;
-            cursor: pointer;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-            transition: transform 0.2s ease;
-        }
-
-        .modal-close-btn:hover {
-            transform: scale(1.2);
-        }
-
-        /* Navigation Buttons */
-        .nav-btn {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(0, 0, 0, 0.5);
-            border: none;
-            color: white;
-            font-size: 24px;
-            padding: 10px;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-
-        .nav-btn:hover {
-            background: rgba(0, 0, 0, 0.8);
-        }
-
-        .prev-btn {
-            left: 10px;
-        }
-
-        .next-btn {
-            right: 10px;
-        }
-
-        /* Backdrop effect */
-        .modal-backdrop.show {
-            opacity: 0.9;
-            background: #000;
-            animation: fadeIn 0.3s ease-out;
-        }
-
-        @keyframes zoomIn {
-            from {
-                transform: scale(0.8);
-                opacity: 0;
-            }
-
-            to {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 0.9;
-            }
-        }
-
-        /* Mobile responsive adjustments */
-        @media (max-width: 768px) {
-            .modal-close-btn {
-                top: -25px;
-                right: -25px;
-                font-size: 24px;
-            }
-
-            .image-preview-modal img {
-                max-width: 95vw;
-                max-height: 95vh;
-            }
-        }
 
         .video-preview {
             gap: 15px;
@@ -415,136 +264,6 @@
             background-color: #303e6d;
         }
 
-      //* Gallery Styles */
-        .gallery-section {
-            background-color: #303e6d;
-            border-radius: 10px;
-            padding: 15px;
-            margin-top: 20px;
-        }
-
-        .gallery-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 0;
-            color: #fff;
-            cursor: pointer;
-        }
-
-        .gallery-title {
-            font-size: 18px;
-            font-weight: 600;
-        }
-
-        .gallery-toggle {
-            font-size: 18px;
-            color: #ffffff;
-        }
-
-        .gallery-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-            margin-top: 15px;
-        }
-
-        .gallery-item {
-            position: relative;
-            overflow: hidden;
-            border-radius: 8px;
-            aspect-ratio: 1;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-
-        .gallery-item:hover {
-            transform: scale(1.05);
-        }
-
-        .gallery-image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-
-        .gallery-item:hover .gallery-image {
-            transform: scale(1.1);
-        }
-
-        /* Lightbox Styles */
-        .lightbox {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.9);
-            z-index: 1000;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .lightbox-content {
-            max-width: 90%;
-            max-height: 90%;
-            position: relative;
-        }
-
-        .lightbox-image {
-            max-width: 100%;
-            max-height: 80vh;
-            object-fit: contain;
-            border-radius: 5px;
-        }
-
-        .lightbox-close {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            color: white;
-            font-size: 30px;
-            cursor: pointer;
-            z-index: 1001;
-            transition: all 0.3s ease;
-        }
-
-        .lightbox-close:hover {
-            color: #ccc;
-            transform: scale(1.2);
-        }
-
-        .lightbox-nav {
-            position: absolute;
-            width: 100%;
-            top: 50%;
-            transform: translateY(-50%);
-            display: flex;
-            justify-content: space-between;
-            padding: 0 20px;
-            box-sizing: border-box;
-        }
-
-        .lightbox-nav button {
-            background: none;
-            border: none;
-            color: white;
-            font-size: 40px;
-            cursor: pointer;
-            opacity: 0.7;
-            transition: all 0.3s ease;
-            z-index: 1001;
-        }
-
-        .lightbox-nav button:hover {
-            opacity: 1;
-            transform: scale(1.2);
-        }
-
-        /* gallery */
-
         @keyframes float {
             0%,
             100% {
@@ -564,13 +283,13 @@
             }
 
             .custom-header {
-                height: 180px;
+                height: 120px;
                 padding: 25px 15px;
             }
 
             .profile-picture75 img {
-                width: 110px;
-                height: 110px;
+                width: 150px;
+                height: 150px;
             }
 
             .contact-name {
@@ -580,10 +299,6 @@
             .contact-title {
                 font-size: 16px;
             }
-
-            .gallery-container {
-                grid-template-columns: repeat(2, 1fr);
-            }
         }
     </style>
 </head>
@@ -592,11 +307,9 @@
     <div class="d-flex justify-content-center mt-5">
         <div class="card custom-card75 shadow-lg" style="background-color: #00114b;">
             <div class="card-header custom-header text-center"
-                style="background-image: url('banner_img/client_banner/nishan-b.jpeg'); height: 250px; opacity: 1;">
+                style="background-image: url('banner_img/client_banner/nishan-b.jpg'); height: 250px; opacity: 1;">
                 
-            <!--    <img src="logo_img/main_logo/template10-l.png" alt="Company Logo" class="custom-logo" 
-                    style="width: 100px; opacity: 1;"> -->
-                <div class="profile-picture75">
+            <div class="profile-picture75">
                     <img src="profile_img/client_profile/nishan-p.jpg" alt="Peter Smith" class="rounded-circle">
                 </div>
             </div>
@@ -607,8 +320,8 @@
             </button>
             <div class="card-body text-left" style="background-color: #00114b; color: #000000;">
                 <h2 class="card-title" style="font-size: 30px;color:rgb(255, 255, 255);">Nishan Jayawardene</h2>
-                <p style="color:rgb(255, 255, 255); font-size: 20px;">Partner designation</p>
-                <a href="https://wa.me/+94771853656" target="_blank" rel="noopener noreferrer"
+                <p style="color:rgb(255, 255, 255); font-size: 20px;">Partner</p>
+                <a href="https://wa.me/+94767236802" target="_blank" rel="noopener noreferrer"
                     style="text-decoration: none;">
                     <button class="btn w-100 mb-3 custom-phone1 d-flex align-items-center justify-content-center"
                         style="background-color: #25D366; color: white; height: 60px; border: 2px solid orange; border-radius: 10px; gap: 10px;">
@@ -671,64 +384,21 @@
                 </a>
                 <br><br>
                 </div>
-                <div class="gallery-section" style="margin-top: -10px;">
-                <div class="gallery-header" onclick="toggleGallery()">
-                    <div class="gallery-title">Gallery</div>
-                    <div class="gallery-toggle" id="galleryToggle">
-                        <i class="fas fa-minus"></i>
-                    </div>
-                </div>
-                <div class="gallery-container" id="galleryContainer">
-                    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/nishan/nishan-g1.jpeg')">
-                        <img src="gallery_img/client_gallerys/nishan/nishan-g1.jpeg" class="gallery-image">
-                    </div>
-                    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/nishan/nishan-g2.jpeg')">
-                        <img src="gallery_img/client_gallerys/nishan/nishan-g2.jpeg" alt="Gallery Image 2" class="gallery-image">
-                    </div>
-                    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/nishan/nishan-g3.jpeg')">
-                        <img src="gallery_img/client_gallerys/nishan/nishan-g3.jpeg" alt="Gallery Image 3" class="gallery-image">
-                    </div>
-                    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/nishan/nishan-g4.jpeg')">
-                        <img src="gallery_img/client_gallerys/nishan/nishan-g4.jpeg" alt="Gallery Image 4" class="gallery-image">
-                    </div>
-                    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gall erys/nishan/nishan-g5.jpeg')">
-                        <img src="gallery_img/client_gallerys/nishan/nishan-g5.jpeg" alt="Gallery Image 5" class="gallery-image">
-                    </div>
-                    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/gallways/nishan-g6.jpeg')">
-                        <img src="gallery_img/client_gallerys/nishan/nishan-g6.jpeg" alt="Gallery Image 6" class="gallery-image">
-                    </div>
+                <div class="single-image-section">
+                    <img src="gallery_img/client_gallerys/nishan/nishan-g1.jpeg" alt="A beautiful floral arrangement">
                 </div>
             </div>
-            <div class="lightbox" id="lightbox">
-                <span class="lightbox-close" onclick="closeLightbox()">×</span>
-                <div class="lightbox-nav">
-                    <button onclick="changeImage(-1)">❮</button>
-                    <button onclick="changeImage(1)">❯</button>
-                </div>
-                <div class="lightbox-content">
-                    <img id="lightbox-image" class="lightbox-image" src="" alt="">
-                </div>
     </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        // Gallery images array
-        const galleryImages = [
-            'gallery_img/client_gallerys/nishan/nishan-g1.jpeg',
-            'gallery_img/client_gallerys/nishan/nishan-g2.jpeg',
-            'gallery_img/client_gallerys/nishan/nishan-g3.jpeg',
-            'gallery_img/client_gallerys/nishan/nishan-g4.jpeg',
-            'gallery_img/client_gallerys/nishan/nishan-g5.jpeg',
-            'gallery_img/client_gallerys/nishan/nishan-g6.jpeg',
-        ];
-
         async function generateVCF() {
             const contactData = {
                 firstName: "Nishan",
                 lastName: "Jayawardene",
-                title: "Partner designation",
+                title: "Partner",
                 phoneWork: "+94 31 222 2473",
                 phoneMobile: "+94 77 185 3656",
                 email: "western.florist@gmail.com",
@@ -806,72 +476,6 @@
             document.body.removeChild(a);
             URL.revokeObjectURL(url);
         }
-
-        function toggleGallery() {
-            const galleryContainer = document.getElementById('galleryContainer');
-            const galleryToggle = document.getElementById('galleryToggle');
-
-            if (galleryContainer.style.display === 'none') {
-                galleryContainer.style.display = 'grid';
-                galleryToggle.innerHTML = '<i class="fas fa-minus"></i>';
-            } else {
-                galleryContainer.style.display = 'none';
-                galleryToggle.innerHTML = '<i class="fas fa-plus"></i>';
-            }
-        }
-
-        // Lightbox functions
-        function openLightbox(imageSrc) {
-            const lightbox = document.getElementById('lightbox');
-            const lightboxImage = document.getElementById('lightbox-image');
-
-            // Find the index of the clicked image
-            currentImageIndex = galleryImages.indexOf(imageSrc);
-
-            lightboxImage.src = imageSrc;
-            lightbox.style.display = 'flex';
-            document.body.style.overflow = 'hidden'; // Prevent scrolling
-        }
-
-        function closeLightbox() {
-            const lightbox = document.getElementById('lightbox');
-            lightbox.style.display = 'none';
-            document.body.style.overflow = 'auto'; // Re-enable scrolling
-        }
-
-        function changeImage(step) {
-            currentImageIndex += step;
-
-            // Wrap around if at beginning or end
-            if (currentImageIndex >= galleryImages.length) {
-                currentImageIndex = 0;
-            } else if (currentImageIndex < 0) {
-                currentImageIndex = galleryImages.length - 1;
-            }
-
-            document.getElementById('lightbox-image').src = galleryImages[currentImageIndex];
-        }
-
-        // Close lightbox when clicking outside the image
-        document.getElementById('lightbox').addEventListener('click', function(e) {
-            if (e.target === this) {
-                closeLightbox();
-            }
-        });
-
-        // Keyboard navigation
-        document.addEventListener('keydown', function(e) {
-            const lightbox = document.getElementById('lightbox');
-            if (lightbox.style.display === 'flex') {
-                if (e.key === 'Escape') {
-                    closeLightbox();
-                } else if (e.key === 'ArrowLeft') {
-                    changeImage(-1);
-                } else if (e.key === 'ArrowRight') {
-                    changeImage(1);
-                }
-            }
-        });
     </script>
 </body>
 
