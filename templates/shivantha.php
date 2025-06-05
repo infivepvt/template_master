@@ -258,78 +258,93 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        async function generateVCF() {
-            const contactData = {
-                firstName: "Shivantha",
-                lastName: "Perera",
-                title: "Group Head of IT",
-                organization: "Maliban Biscuit Manufactories (Pvt) Ltd.",
-                phoneMobile1: "+94714558550",
-                phoneMobile2: "+94776652305",
-                phoneWork1: "+94115555000",
-                phoneWork2: "+94112738551",
-                fax1: "+94112734556",
-                fax2: "+94112730540",
-                email: "Shivantha.perera@malibangroup.lk",
-                website: "https://www.malibangroup.com",
-                address: "389, Galle Road, Ratmalana, Sri Lanka",
-                linkedin: "https://www.linkedin.com/in/shivantha17?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-                logo: "https://tapilinq.com/profile_img/client_profile/shivantha-p.png",
-                profileImage: "https://tapilinq.com/profile_img/client_profile/shivantha-p.png"
+       async function generateVCF() {
+    const contactData = {
+        firstName: "Shivantha",
+        lastName: "Perera",
+        title: "Group Head of IT",
+        organization: "Maliban Biscuit Manufactories (Pvt) Ltd.",
+        phoneMobile1: "+94714558550",
+        phoneMobile2: "+94776652305",
+        phoneWork1: "+94115555000",
+        phoneWork2: "+94112738551",
+        fax1: "+94112734556",
+        fax2: "+94112730540",
+        email: "Shivantha.perera@malibangroup.lk",
+        website: "https://www.malibangroup.com",
+        address: "389, Galle Road, Ratmalana, Sri Lanka",
+        linkedin: "https://www.linkedin.com/in/shivantha17?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+        profileImage: "https://tapilinq.com/profile_img/client_profile/shivantha-p.png"
+    };
+
+    const toBase64 = async (url) => {
+        return new Promise((resolve, reject) => {
+            const profileImage = new Image();
+            profileImage.crossOrigin = "Anonymous"; // Handle CORS if needed
+            profileImage.src = url;
+
+            // Wait for the image to load
+            profileImage.onload = () => {
+                try {
+                    const canvas = document.createElement('canvas');
+                    const ctx = canvas.getContext('2d');
+                    canvas.width = profileImage.naturalWidth;
+                    canvas.height = profileImage.naturalHeight;
+                    ctx.drawImage(profileImage, 0, 0);
+                    const base64Image = canvas.toDataURL('image/jpeg').split(',')[1];
+                    resolve(base64Image);
+                } catch (error) {
+                    reject(error);
+                }
             };
 
-            const toBase64 = async (url) => {
-                const response = await fetch(url);
-                const blob = await response.blob();
-                return new Promise((resolve, reject) => {
-                    const reader = new FileReader();
-                    reader.onloadend = () => resolve(reader.result.split(',')[1]);
-                    reader.onerror = reject;
-                    reader.readAsDataURL(blob);
-                });
+            profileImage.onerror = () => {
+                reject(new Error("Failed to load image"));
             };
+        });
+    };
 
-            let photoBase64 = '';
-            try {
-                photoBase64 = await toBase64(contactData.profileImage);
-            } catch (error) {
-                console.error("Failed to load image for VCF:", error);
-            }
+    let photoBase64 = '';
+    try {
+        photoBase64 = await toBase64(contactData.profileImage);
+    } catch (error) {
+        console.error("Failed to load image for VCF:", error);
+        // Optionally, proceed without the photo or include a placeholder
+    }
 
-            let vcfLines = [
-                "BEGIN:VCARD",
-                "VERSION:3.0",
-                `FN:${contactData.firstName} ${contactData.lastName}`,
-                `N:${contactData.lastName};${contactData.firstName};;;`,
-                `ORG:${contactData.organization}`,
-                `TITLE:${contactData.title}`,
-                `TEL;TYPE=CELL:${contactData.phoneMobile1}`,
-                `TEL;TYPE=CELL:${contactData.phoneMobile2}`,
-                `TEL;TYPE=WORK:${contactData.phoneWork1}`,
-                `TEL;TYPE=WORK:${contactData.phoneWork2}`,
-                `TEL;TYPE=FAX:${contactData.fax1}`,
-                `TEL;TYPE=FAX:${contactData.fax2}`,
-                `EMAIL:${contactData.email}`,
-                `URL:${contactData.website}`,
-                `URL:${contactData.linkedin}`,
-                `ADR;TYPE=WORK:;;${contactData.address}`,
-                `PHOTO;ENCODING=b;TYPE=JPEG:${photoBase64}`,
-                "END:VCARD"
-            ];
+    let vcfLines = [
+        "BEGIN:VCARD",
+        "VERSION:3.0",
+        `FN:${contactData.firstName} ${contactData.lastName}`,
+        `N:${contactData.lastName};${contactData.firstName};;;`,
+        `ORG:${contactData.organization}`,
+        `TITLE:${contactData.title}`,
+        `TEL;TYPE=CELL:${contactData.phoneMobile1}`,
+        `TEL;TYPE=CELL:${contactData.phoneMobile2}`,
+        `TEL;TYPE=WORK:${contactData.phoneWork1}`,
+        `TEL;TYPE=WORK:${contactData.phoneWork2}`,
+        `TEL;TYPE=FAX:${contactData.fax1}`,
+        `TEL;TYPE=FAX:${contactData.fax2}`,
+        `EMAIL:${contactData.email}`,
+        `URL:${contactData.website}`,
+        `URL:${contactData.linkedin}`,
+        `ADR;TYPE=WORK:;;${contactData.address}`,
+        photoBase64 ? `PHOTO;ENCODING=b;TYPE=JPEG:${photoBase64}` : '',
+        "END:VCARD"
+    ];
 
-            const vcfContent = vcfLines.join('\n');
-            const blob = new Blob([vcfContent], {
-                type: 'text/vcard'
-            });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
-        }
+    // Filter out empty lines (in case photoBase64 is empty)
+    const vcfContent = vcfLines.filter(line => line).join('\n');
+    const blob = new Blob([vcfContent], { type: 'text/vcard' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+}
     </script>
 </body>
 
