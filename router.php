@@ -170,6 +170,7 @@ $routes = [
     'kosala' => 'templates/kosala.php',
     'mihirami' => 'templates/mihirami.php',
     'gurusinghe' => 'templates/gurusinghe.php',
+    'manoj' => 'templates/manoj.php',
 ];
 
 // Handle the request
