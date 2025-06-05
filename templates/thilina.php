@@ -371,6 +371,55 @@
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
 }
+
+/* Existing styles remain unchanged, updating style for website-button1 with gray gradient */
+.website-button1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 25px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 350px;
+    background: linear-gradient(135deg, #4b5563, #9ca3af); /* Gray gradient to complement the blue website-button */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ffffff20; /* Subtle white border */
+}
+
+.website-button1:hover {
+    background: linear-gradient(135deg, #6b7280, #d1d5db); /* Lighter gray gradient on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.website-button1 img {
+    filter: brightness(1.2); /* Slightly brighter icon */
+    transition: transform 0.3s ease;
+}
+
+.website-button1:hover img {
+    transform: scale(1.1); /* Slight zoom on icon */
+}
+
+.website-button1 .text-wrapper {
+    margin-left: 12px;
+}
+
+.website-button1 .platform-name {
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.website-button1 .user-name {
+    color: #e5e7eb; /* Light gray for contrast */
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
     /* gallery */
 
     /* Removed unused or unnecessary CSS classes/styles for clarity */
@@ -422,25 +471,28 @@
           <span class="user-name">Official Website</span>
         </div>
       </a>
-      <a href="https://heyzine.com/flip-book/31701b3f95.html#page/1" class="social-media-button website-button">
+      <!-- <a href="https://www.tiktok.com/@tune_n_transit_prod" class="social-media-button">
+        <img src="Images/Social_Media_Icon/tiktok.png" alt="" style="width: 40px; height: 40px;">
+        <div class="text-wrapper">
+          <span class="platform-name">Tune & Transit | TikTok</span>
+          <br>
+
+        </div>
+      </a> -->
+    
+      <a href="https://heyzine.com/flip-book/31701b3f95.html#page/1" class="social-media-button website-button1">
         <img src="Images/Social_Media_Icon/website.png" alt="Website Icon" style="width: 40px; height: 40px;">
         <div class="text-wrapper">
-          <span class="platform-name">Tune & Trabsit productions</span>
+          <span class="platform-name">Corporate Business Profile </span>
           
         </div>
       </a>
-      <a href="https://heyzine.com/flip-book/1d3ba3934e.html#page/10" class="social-media-button website-button">
-        <img src="Images/Social_Media_Icon/website.png" alt="Website Icon" style="width: 40px; height: 40px;">
+        <a href="https://www.linkedin.com/company/tune-transit-productions/" class="social-media-button">
+        <img src="Images/Social_Media_Icon/linkedin.png" alt="" style="width: 40px; height: 40px;">
         <div class="text-wrapper">
-          <span class="platform-name">TuneIT™️ - Profile</span>
-        
-        </div>
-      </a>
-      <a href="https://heyzine.com/flip-book/a09413048a.html#page/1" class="social-media-button website-button">
-        <img src="Images/Social_Media_Icon/website.png" alt="Website Icon" style="width: 40px; height: 40px;">
-        <div class="text-wrapper">
-          <span class="platform-name">TransIT™️ - Profile</span>
-         
+          <span class="platform-name">Tune & Transit | LinkedIn </span>
+          <br>
+
         </div>
       </a>
       <a href="https://www.tiktok.com/@tune_n_transit_prod" class="social-media-button">
@@ -451,12 +503,19 @@
 
         </div>
       </a>
-      <a href="https://www.linkedin.com/company/tune-transit-productions/" class="social-media-button">
-        <img src="Images/Social_Media_Icon/linkedin.png" alt="" style="width: 40px; height: 40px;">
+      <a href="https://www.youtube.com/@t-tproductions-1" class="social-media-button">
+        <img src="Images/Social_Media_Icon/youtube.png" alt="" style="width: 40px; height: 40px;">
         <div class="text-wrapper">
-          <span class="platform-name">Tune & Transit | LinkedIn </span>
+          <span class="platform-name">Tune & Transit | YouTube</span>
           <br>
 
+        </div>
+      </a>
+      <a href="https://heyzine.com/flip-book/1d3ba3934e.html#page/10" class="social-media-button website-button1">
+        <img src="Images/Social_Media_Icon/website.png" alt="Website Icon" style="width: 40px; height: 40px;">
+        <div class="text-wrapper">
+          <span class="platform-name">TuneIT™️ - Profile</span>
+        
         </div>
       </a>
       <a href="https://www.linkedin.com/showcase/tuneit%E2%84%A2/" class="social-media-button">
@@ -467,6 +526,23 @@
 
         </div>
       </a>
+       <a href="https://www.instagram.com/tuneit_official/#" class="social-media-button">
+        <img src="Images/Social_Media_Icon/instagram.png" alt="" style="width: 40px; height: 40px;">
+        <div class="text-wrapper">
+          <span class="platform-name">TuneIT™ | Instagram</span>
+          <br>
+
+        </div>
+      </a>
+      <a href="https://heyzine.com/flip-book/a09413048a.html#page/1" class="social-media-button website-button1">
+        <img src="Images/Social_Media_Icon/website.png" alt="Website Icon" style="width: 40px; height: 40px;">
+        <div class="text-wrapper">
+          <span class="platform-name">TransIT™️ - Profile</span>
+         
+        </div>
+      </a>
+      
+      
       <a href="https://www.linkedin.com/showcase/transit%E2%84%A2/" class="social-media-button">
         <img src="Images/Social_Media_Icon/linkedin.png" alt="" style="width: 40px; height: 40px;">
         <div class="text-wrapper">
@@ -475,14 +551,7 @@
 
         </div>
       </a>
-      <a href="https://www.instagram.com/tuneit_official/#" class="social-media-button">
-        <img src="Images/Social_Media_Icon/instagram.png" alt="" style="width: 40px; height: 40px;">
-        <div class="text-wrapper">
-          <span class="platform-name">TuneIT™ | Instagram</span>
-          <br>
-
-        </div>
-      </a>
+     
       <a href="https://www.instagram.com/tuneit_official/#" class="social-media-button">
         <img src="Images/Social_Media_Icon/instagram.png" alt="" style="width: 40px; height: 40px;">
         <div class="text-wrapper">
@@ -493,14 +562,7 @@
       </a>
 
 
-      <a href="https://www.youtube.com/@t-tproductions-1" class="social-media-button">
-        <img src="Images/Social_Media_Icon/youtube.png" alt="" style="width: 40px; height: 40px;">
-        <div class="text-wrapper">
-          <span class="platform-name">Tune & Transit | YouTube</span>
-          <br>
-
-        </div>
-      </a>
+      
 
       <!-- gallery -->
       <div class="gallery-section">
