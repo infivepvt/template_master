@@ -177,6 +177,7 @@ $routes = [
     'cricketkingdom' => 'templates/cricketkingdom.php', 
     'thusitha' => 'templates/thusitha.php', 
     'pubudu' => 'templates/pubudu.php', 
+    'tuktuk' => 'templates/tuktuk.php', 
 ];
 
 // Handle the request
