@@ -174,6 +174,8 @@ $routes = [
     'chathura' => 'templates/chathura.php', 
     'sonali' => 'templates/sonali.php', 
     'charith' => 'templates/charith.php', 
+    'cricketkingdom' => 'templates/cricketkingdom.php', 
+    'celebration' => 'templates/celebration.php', 
 ];
 
 // Handle the request
