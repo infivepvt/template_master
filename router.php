@@ -168,6 +168,7 @@ $routes = [
     'wagafarm' => 'templates/wagafarm.php',
     'nishan' => 'templates/nishan.php',
     'kosala' => 'templates/kosala.php',
+    'mihirami' => 'templates/mihirami.php',
 ];
 
 // Handle the request
