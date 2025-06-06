@@ -39,6 +39,7 @@
             top: 95%;
             left: 20%;
             transform: translate(-50%, -50%);
+            margin-top: 20px;
         }
 
         .profile-picture75 img {
@@ -578,7 +579,7 @@
     <div class="d-flex justify-content-center mt-5">
         <div class="card custom-card75 shadow-lg" style="background-color: #00114b;">
             <div class="card-header custom-header text-center"
-                style="background-image: url('banner_img/client_banner/cricketkingdom-b.jpg'); height: 100%; opacity: 1;">
+                style="background-image: url('banner_img/client_banner/cricketkingdom-b.jpeg'); height: 100%; opacity: 1;">
                 <!-- <img src="logo_img/main_logo/template10-l.png" alt="Company Logo" class="custom-logo"
                     style="width: 100px; opacity: 1;"> -->
                     <br><br><br><br><br><br>
