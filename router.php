@@ -178,6 +178,7 @@ $routes = [
     'thusitha' => 'templates/thusitha.php', 
     'pubudu' => 'templates/pubudu.php', 
     'tuktuk' => 'templates/tuktuk.php', 
+    'charma' => 'templates/charma.php', 
 ];
 
 // Handle the request
