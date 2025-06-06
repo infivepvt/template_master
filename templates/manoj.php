@@ -178,8 +178,7 @@
                     <button class="btn w-100 mb-3 custom-phone1 d-flex align-items-center justify-content-center"
                         style="background-color: #25D366; color: white; height: 60px; border: 2px solid orange; border-radius: 10px; gap: 10px;">
                         <i class="fab fa-whatsapp" style="font-size: 50px; margin-right:30px;"></i>
-                        <span style="font-size: 14px; font-family: 'Montserrat', sans-serif;">CONNECT WITH
-                            WHATSAPP</span>
+                        <span style="font-size: 14px; font-family: 'Montserrat', sans-serif;">Get in touch via WhatsApp</span>
                     </button>
                 </a>
 
