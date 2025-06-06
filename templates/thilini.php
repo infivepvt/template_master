@@ -452,7 +452,7 @@
                                         <span class="elementor-grid-item">
                                             <a class="elementor-icon elementor-social-icon elementor-social-icon-envelope elementor-repeater-item-13c7ba5"
                                                 target="_blank"
-                                                onclick="window.open('mailto:www.charmabydrthilini.lk', '_self')">
+                                                onclick="window.open('mailto:charmabydrthilini@gmail.com', '_self')">
                                                 <span class="elementor-screen-only">Envelope</span>
                                                 <i class="far fa-envelope"></i>
                                             </a>
@@ -478,7 +478,7 @@
                                     <div class="elementor-social-icons-wrapper elementor-grid">
                                         <span class="elementor-grid-item">
                                             <a class="elementor-icon elementor-social-icon elementor-social-icon-location-arrow elementor-repeater-item-13c7ba5"
-                                                target="_blank" href="https://maps.app.goo.gl/o3F7n8tUHp3twpSP8"
+                                                target="_blank" href="https://maps.app.goo.gl/acrYeTcng2h22MqW8?g_st=ic"
                                                 rel="noopener noreferrer">
                                                 <span class="elementor-screen-only">Location-arrow</span>
                                                 <i class="fas fa-location-arrow"></i>
