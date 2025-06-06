@@ -293,7 +293,7 @@
                 <!-- <img src="logo_img/client_logo/sachith-l.png" alt="Company Logo" class="custom-logo" height="120px"
                     style="width: 330px; height: auto; opacity: 1; margin-top: -15px;"> -->
                 <div class="profile-picture">
-                    <img src="profile_img/client_profile/sachith-p.png" alt="Saliya Pathum" class="rounded-circle">
+                    <img src="profile_img/client_profile/chathura-p.jpeg" alt="Saliya Pathum" class="rounded-circle">
                 </div>
             </div>
             <br><br>
