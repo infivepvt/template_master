@@ -674,7 +674,7 @@
                 </div>
                 <p class="fw" style="font-family: 'Poppins', sans-serif; font-size: 19px; color: #FFFFFF;">CONNECT WITH SOCIAL MEDIA</p>
                 <div class="d-flex flex-wrap justify-content-center">
-                    <a href="https://www.instagram.com/mihirainoshka" target="_blank" rel="noopener noreferrer" class="m-3">
+                    <a href="https://www.instagram.com/i.mihirainoshka?igsh=Z2k4MjA5cGlrMXYz" target="_blank" rel="noopener noreferrer" class="m-3">
                         <img src="Images/Social_Media_Icon/instagram.png" alt="" style="width: 50px;">
                     </a>
                     <a href="https://www.facebook.com/share/1Eri61AfF7/" target="_blank" rel="noopener noreferrer" class="m-3">
