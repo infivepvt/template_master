@@ -179,6 +179,7 @@ $routes = [
     'pubudu' => 'templates/pubudu.php', 
     'tuktuk' => 'templates/tuktuk.php',  
     'thilini' => 'templates/thilini.php', 
+    'srimal' => 'templates/srimal.php', 
 ];
 
 // Handle the request
