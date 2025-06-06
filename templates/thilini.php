@@ -303,7 +303,7 @@
                                     <div class="elementor-social-icons-wrapper elementor-grid">
                                         <span class="elementor-grid-item">
                                             <a class="elementor-icon elementor-social-icon elementor-social-icon-whatsapp elementor-repeater-item-13c7ba5"
-                                                target="_blank" href="https://wa.me/0710591836"
+                                                target="_blank" href="https://wa.me/+94710591836"
                                                 rel="noopener noreferrer">
                                                 <span class="elementor-screen-only">Whatsapp <br>(GABS)</span>
                                                 <i class="fab fa-whatsapp"></i>
@@ -330,7 +330,7 @@
                                     <div class="elementor-social-icons-wrapper elementor-grid">
                                         <span class="elementor-grid-item">
                                             <a class="elementor-icon elementor-social-icon elementor-social-icon-whatsapp elementor-repeater-item-13c7ba5"
-                                                target="_blank" href="https://wa.me/0714666699"
+                                                target="_blank" href="https://wa.me/+94714666699"
                                                 rel="noopener noreferrer">
                                                 <span class="elementor-screen-only">Whatsapp <br>(Charma)</span>
                                                 <i class="fab fa-whatsapp"></i>
