@@ -241,7 +241,7 @@
     </div>
 
     <div class="profile-contact-icons">
-      
+
 
       <button type="button" class="contact-button" onclick="window.open('tel:+31629377215', '_self')">
         <i class="fas fa-phone-alt contact-icon"></i>
@@ -311,24 +311,27 @@
         </div>
       </div>
       -->
-      <br>
-      <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:19px; text-align: center;">CONNECT WITH SOCIAL MEDIA</p>
-      <div class="d-flex flex-wrap justify-content-center">
-          <a href="https://www.linkedin.com/in/kosala-jayasundara/" target="_blank" rel="noopener noreferrer" class="m-3">
-          <img src="Images/Social_Media_Icon/linkedin.png" alt="LinkedIn" style="width: 50px; height: 50px;">
-        </a>
-        <a href="https://www.instagram.com/kosijaya?igsh=MTMxN2doaHVra3dmZw==" target="_blank" rel="noopener noreferrer" class="m-3">
-          <img src="Images/Social_Media_Icon/instagram.png" alt="Instagram" style="width: 50px; height: 50px;">
-        </a>
-        <a href="https://www.facebook.com/share/15QLWjoBht/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="m-3">
-          <img src="Images/Social_Media_Icon/facebook.png" alt="Facebook" style="width: 50px; height: 50px;">
-        </a>
-        <!--
+    <br>
+    <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:19px; text-align: center;">CONNECT WITH SOCIAL
+      MEDIA</p>
+    <div class="d-flex flex-wrap justify-content-center">
+      <a href="https://www.linkedin.com/in/kosala-jayasundara/" target="_blank" rel="noopener noreferrer" class="m-3">
+        <img src="Images/Social_Media_Icon/linkedin.png" alt="LinkedIn" style="width: 50px; height: 50px;">
+      </a>
+      <a href="https://www.instagram.com/kosijaya?igsh=MTMxN2doaHVra3dmZw==" target="_blank" rel="noopener noreferrer"
+        class="m-3">
+        <img src="Images/Social_Media_Icon/instagram.png" alt="Instagram" style="width: 50px; height: 50px;">
+      </a>
+      <a href="https://www.facebook.com/share/15QLWjoBht/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"
+        class="m-3">
+        <img src="Images/Social_Media_Icon/facebook.png" alt="Facebook" style="width: 50px; height: 50px;">
+      </a>
+      <!--
         <a href="https://www.tiktok.com/@yourprofile" target="_blank" rel="noopener noreferrer" class="m-3">
           <img src="Images/Social_Media_Icon/tiktok.png" alt="TikTok" style="width: 50px; height: 50px;">
         </a>
         -->
-        <div class="d-flex flex-wrap justify-content-center">
+      <div class="d-flex flex-wrap justify-content-center">
         <a href="https://www.youtube.com/@kosalajayasundara6785" target="_blank" rel="noopener noreferrer" class="m-3">
           <img src="Images/Social_Media_Icon/youtube.png" alt="YouTube" style="width: 50px; height: 50px;">
         </a>
@@ -357,95 +360,97 @@
       <p>All rights reserved</p>
     </div>
   </div>
-  
+
   <script>
-  async function generateVCF() {
-    // Contact information
-    const contactData = {
-      firstName: "Kosala",
-      lastName: "Jayasundara",
-      title: "Founding CEO",
-      phoneinternational: "+31629377215",
-      phonesrilanka: "+94775555174",
-      email: "kosala@exceltch.com",
-      email2: "",
-      email3: "",
-      website: "https://www.exceltch.com",
-      website2: "",
-      website3: "",
-      address: "521, A2 Gonahena Rd, Kadawatha, 11850, Sri Lanka",
-      address2: "",
-      about: "",
-      logo: "https://tapilinq.com/profile_img/client_profile/kosala-p.jpg",
-      profileImage: "https://tapilinq.com/profile_img/client_profile/kosala-p.jpg"
-    };
+    async function generateVCF() {
+      // Contact information
+      const contactData = {
+        firstName: "Kosala",
+        lastName: "Jayasundara",
+        title: "Founding CEO",
+        phoneinternational: "+31629377215",
+        phonesrilanka: "+94775555174",
+        email: "kosala@exceltch.com",
+        email2: "",
+        email3: "",
+        website: "https://www.exceltch.com",
+        website2: "",
+        website3: "",
+        address1: "ExcelTech OÜ, Harju maakond, Tallinn, Estonia",
+        address2: "521, A2 Gonahena Rd, Kadawatha, 11850, Sri Lanka",
+        about: "",
+        logo: "https://tapilinq.com/profile_img/client_profile/kosala-p.jpg",
+        profileImage: "https://tapilinq.com/profile_img/client_profile/kosala-p.jpg"
+      };
 
-    // Fetch and convert profile image to Base64
-    let base64Image = "";
-    try {
-      const profileImage = new Image();
-      profileImage.crossOrigin = "Anonymous"; // Handle cross-origin issues
-      profileImage.src = contactData.profileImage;
+      // Initialize Base64 image variable
+      let base64Image = "";
 
-      // Wait for the image to load
-      if (!profileImage.complete) {
-        await new Promise((resolve) => {
-          profileImage.onload = resolve;
-          profileImage.onerror = () => {
-            console.error("Failed to load profile image");
-            resolve(); // Proceed even if image fails to load
-          };
+      // Attempt to fetch and convert profile image to Base64
+      try {
+        const response = await fetch(contactData.profileImage, {
+          mode: 'cors' // Handle CORS
         });
+
+        if (response.ok) {
+          const blob = await response.blob();
+          const reader = new FileReader();
+
+          // Convert blob to Base64
+          await new Promise((resolve, reject) => {
+            reader.onload = () => {
+              base64Image = reader.result.split(',')[1]; // Remove data:image/jpeg;base64, prefix
+              resolve();
+            };
+            reader.onerror = () => {
+              console.error("Failed to convert image to Base64");
+              resolve(); // Proceed without image
+            };
+            reader.readAsDataURL(blob);
+          });
+        } else {
+          console.error("Failed to fetch profile image:", response.status);
+        }
+      } catch (error) {
+        console.error("Error processing profile image:", error);
       }
 
-      // Create canvas and draw image
-      const canvas = document.createElement('canvas');
-      const ctx = canvas.getContext('2d');
-      canvas.width = profileImage.naturalWidth;
-      canvas.height = profileImage.naturalHeight;
-      ctx.drawImage(profileImage, 0, 0);
-
-      // Convert to Base64 (remove the data:image/jpeg;base64, prefix)
-      base64Image = canvas.toDataURL('image/jpeg').split(',')[1];
-    } catch (error) {
-      console.error("Error processing profile image:", error);
-    }
-
-    // Create VCF content
-    let vcfContent = `BEGIN:VCARD
+      // Create VCF content
+      let vcfContent = `BEGIN:VCARD
 VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
 N:${contactData.lastName};${contactData.firstName};;;
 TITLE:${contactData.title}
-TEL;TYPE=INTERNATIONAL:${contactData.phoneinternational}
-TEL;TYPE=SRILANKA,VOICE:${contactData.phonesrilanka}
+TEL;TYPE=WORK,VOICE:${contactData.phoneinternational}
+TEL;TYPE=HOME,VOICE:${contactData.phonesrilanka}
 EMAIL:${contactData.email}
 ${contactData.email2 ? `EMAIL:${contactData.email2}` : ''}
 ${contactData.email3 ? `EMAIL:${contactData.email3}` : ''}
 URL:${contactData.website}
 ${contactData.website2 ? `URL:${contactData.website2}` : ''}
 ${contactData.website3 ? `URL:${contactData.website3}` : ''}
-ADR;TYPE=WORK:;;${contactData.address}
-${contactData.address2 ? `ADR;TYPE=HOME:;;${contactData.address2}` : ''}
+ADR;TYPE=WORK:;;${contactData.address1};;;;
+${contactData.address2 ? `ADR;TYPE=HOME:;;${contactData.address2};;;;` : ''}
 NOTE:${contactData.about}
 ${base64Image ? `PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}` : `PHOTO;VALUE=URL:${contactData.profileImage}`}
 LOGO;VALUE=URL:${contactData.logo}
 END:VCARD`;
 
-    // Create download link
-    const blob = new Blob([vcfContent], { type: 'text/vcard' });
-    const url = URL.createObjectURL(blob);
+      // Create download link
+      const blob = new Blob([vcfContent], { type: 'text/vcard' });
+      const url = URL.createObjectURL(blob);
 
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-    document.body.appendChild(a);
-    a.click();
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+      document.body.appendChild(a);
+      a.click();
 
-    // Clean up
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-  }
-</script>
+      // Clean up
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+  </script>
 </body>
+
 </html>
