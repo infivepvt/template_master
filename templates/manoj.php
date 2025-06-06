@@ -41,7 +41,7 @@
             top: 95%;
             left: 50%;
             transform: translate(-50%, -50%);
-             margin-top: 30px;
+             margin-top: 50px;
         }
 
         .profile-picture img {
@@ -167,6 +167,7 @@
                     <img src="profile_img/client_profile/manoj-p.jpg" alt="Saliya Pathum" class="rounded-circle">
                 </div>
             </div>
+            <br>
             <br>
             <br>
             <br>
