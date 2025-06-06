@@ -20,24 +20,26 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            padding: 35px 20px;
+            /* padding: 35px 20px; */
             position: relative;
             background-color: rgb(255, 255, 255);
         }
 
         .custom-logo {
-            width: 200px;
+            width: 100%;
             position: relative;
             top: 0;
             left: 0;
             margin-bottom: 40px;
+            z-index: 98;
         }
 
         .profile-picture75 {
             position: absolute;
-            top: 95%;
+            top: 130%;
             left: 20%;
             transform: translate(-50%, -50%);
+            z-index: 99;
         }
 
         .profile-picture75 img {
@@ -89,11 +91,12 @@
             border: 1px solid #FFCA28;
             padding: 10px;
             margin-left: 48%;
-            margin-top: -30px;
+            margin-top: 30px;
             transition: background 0.3s;
             font-family: 'Roboto', sans-serif;
             text-align: start;
             padding-left: 15px;
+            z-index: 99;
         }
 
         .custom-save-button75:hover {
@@ -581,8 +584,15 @@
 <body>
     <div class="d-flex justify-content-center">
         <div class="card custom-card75 shadow-lg rounded-0" style="background-color: #1A3C34;">
-            <div class="card-header custom-header text-center">
-                <img src="logo_img/client_logo/wagafarm-l.png?hello=hello" alt="Company Logo" class="custom-logo" style="width: 170px; opacity: 1;">
+            <div class="card-header custom-header text-center p-0">
+                <video
+                    src="https://vcodelk.com/wp-content/uploads/2025/06/Video.mp4"
+                    autoplay
+                    muted
+                    class="custom-logo">
+                </video>
+
+                <!-- <img src="logo_img/client_logo/wagafarm-l.png?hello=hello" alt="Company Logo" class="custom-logo" style="width: 170px; opacity: 1;"> -->
                 <div class="profile-picture75">
                     <img src="profile_img/client_profile/wagafarm-p.png?hello=hello" alt="D P L Edirisinghe" class="rounded-circle">
                 </div>
@@ -592,7 +602,7 @@
                 <i class="fas fa-save me-2"></i>
                 SAVE TO CONTACTS
             </button>
-            <div class="card-body text-left" style="background-color: #1A3C34; color: #FFFFFF;">
+            <div class="card-body text-left" style="background-color: #1A3C34; color: #FFFFFF;z-index: 99;">
                 <h2 class="card-title" style="font-size: 30px; color: #FFFFFF; font-family: 'Roboto', sans-serif;">D P L Edirisinghe</h2>
                 <p style="color: #FFFFFF; font-size: 20px; font-family: 'Lato', sans-serif;">Partner</p>
                 <div class="list-group mb-3">
