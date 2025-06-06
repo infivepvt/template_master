@@ -417,8 +417,8 @@ VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
 N:${contactData.lastName};${contactData.firstName};;;
 TITLE:${contactData.title}
-TEL;TYPE=SRILANKA,VOICE:${contactData.phonesrilanka}
 TEL;TYPE=INTERNATIONAL:${contactData.phoneinternational}
+TEL;TYPE=SRILANKA,VOICE:${contactData.phonesrilanka}
 EMAIL:${contactData.email}
 ${contactData.email2 ? `EMAIL:${contactData.email2}` : ''}
 ${contactData.email3 ? `EMAIL:${contactData.email3}` : ''}
