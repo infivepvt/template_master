@@ -181,6 +181,8 @@ $routes = [
     'thilini' => 'templates/thilini.php', 
     'srimal' => 'templates/srimal.php', 
     'vvmobile' => 'templates/vvmobile.php', 
+    'dilini' => 'templates/dilini.php', 
+    'somarathne' => 'templates/somarathne.php', 
 ];
 
 // Handle the request
