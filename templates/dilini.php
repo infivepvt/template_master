@@ -234,48 +234,70 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script>
-        function generateVCF() {
-            // Contact information - update these values with your actual data
-            const contactData = {
-                firstName: "Saliya",
-                lastName: "Pathum",
-                title: "Infive",
-                phoneWork: "0761231212",
-                phoneMobile: "",
-                email: "youremail@yourwebsite.com",
-                email2: "",
-                email3: "",
-                website: "www.yourwebsiteaddress.com",
-                website2: "",
-                website3: "",
-                address: "919 Oaktree Crescent, Newmarket",
-                address2: "",
-                about: "",
-                logo: "logo_img/main_logo/template2-l.jpg",
-                profileImage: "profile_img/profile.png"
-            };
+   <script>
+    function generateVCF() {
+        // Contact information - update these values with your actual data
+        const contactData = {
+            firstName: "Dilini",
+            lastName: "Perera",
+            title: "Assistant Manager – Sales",
+            phoneWork: "+94777122188",
+            phoneMobile: "",
+            email: "marketing@fortunegreen.lk",
+            email2: "",
+            email3: "",
+            website: "https://fortunegreen.lk",
+            website2: "",
+            website3: "",
+            address: "12, Your Lane, Your Street, La",
+            address2: "",
+            about: "",
+            logo: "logo_img/main_logo/template9-l.png",
+            profileImage: "profile_img/template2-p.png"
+        };
+
+        // Function to load image and convert to base64
+        async function getBase64Image(imageUrl) {
+            try {
+                const response = await fetch(imageUrl);
+                const blob = await response.blob();
+                return new Promise((resolve, reject) => {
+                    const reader = new FileReader();
+                    reader.onloadend = () => resolve(reader.result.split(',')[1]); // Get base64 part
+                    reader.onerror = reject;
+                    reader.readAsDataURL(blob);
+                });
+            } catch (error) {
+                console.error("Error loading image:", error);
+                return ""; // Return empty string if image fails to load
+            }
+        }
+
+        // Generate vCard with base64 image
+        (async () => {
+            // Load profile image as base64
+            const base64Image = await getBase64Image(contactData.profileImage);
 
             // Create VCF content
             let vcfContent = `BEGIN:VCARD
-            VERSION:3.0
-            FN:${contactData.firstName} ${contactData.lastName}
-            N:${contactData.lastName};${contactData.firstName};;;
-            TITLE:${contactData.title}
-            TEL;TYPE=WORK,VOICE:${contactData.phoneWork}
-            TEL;TYPE=CELL:${contactData.phoneMobile}
-            EMAIL:${contactData.email}
-            EMAIL:${contactData.email2}
-            EMAIL:${contactData.email3}
-            URL:${contactData.website}
-            URL:${contactData.website2}
-            URL:${contactData.website3}
-            ADR;TYPE=WORK:;;${contactData.address}
-            ADR;TYPE=HOME:;;${contactData.address2}
-            NOTE:${contactData.about}
-            PHOTO;VALUE=URL:${contactData.profileImage}
-            LOGO;VALUE=URL:${contactData.logo}
-            END:VCARD`;
+VERSION:3.0
+FN:${contactData.firstName} ${contactData.lastName}
+N:${contactData.lastName};${contactData.firstName};;;
+TITLE:${contactData.title}
+TEL;TYPE=WORK,VOICE:${contactData.phoneWork}
+${contactData.phoneMobile ? `TEL;TYPE=CELL:${contactData.phoneMobile}` : ""}
+EMAIL:${contactData.email}
+${contactData.email2 ? `EMAIL:${contactData.email2}` : ""}
+${contactData.email3 ? `EMAIL:${contactData.email3}` : ""}
+URL:${contactData.website}
+${contactData.website2 ? `URL:${contactData.website2}` : ""}
+${contactData.website3 ? `URL:${contactData.website3}` : ""}
+ADR;TYPE=WORK:;;${contactData.address}
+${contactData.address2 ? `ADR;TYPE=HOME:;;${contactData.address2}` : ""}
+NOTE:${contactData.about}
+${base64Image ? `PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}` : ""}
+${contactData.logo ? `LOGO;VALUE=URL:${contactData.logo}` : ""}
+END:VCARD`;
 
             // Create download link
             const blob = new Blob([vcfContent], { type: 'text/vcard' });
@@ -290,8 +312,9 @@
             // Clean up
             document.body.removeChild(a);
             URL.revokeObjectURL(url);
-        }
-    </script>
+        })();
+    }
+</script>
 </body>
 
 </html>
