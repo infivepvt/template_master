@@ -429,8 +429,8 @@ ${contactData.email3 ? `EMAIL:${contactData.email3}` : ''}
 URL:${contactData.website}
 ${contactData.website2 ? `URL:${contactData.website2}` : ''}
 ${contactData.website3 ? `URL:${contactData.website3}` : ''}
-ADR;TYPE=WORK:;;${contactData.address1};;;;
-${contactData.address2 ? `ADR;TYPE=HOME:;;${contactData.address2};;;;` : ''}
+ADR;TYPE=WORK:;;${contactData.address2};;;;
+${contactData.address1 ? `ADR;TYPE=HOME:;;${contactData.address1};;;;` : ''}
 NOTE:${contactData.about}
 ${base64Image ? `PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}` : `PHOTO;VALUE=URL:${contactData.profileImage}`}
 LOGO;VALUE=URL:${contactData.logo}
