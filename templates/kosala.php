@@ -241,11 +241,12 @@
     </div>
 
     <div class="profile-contact-icons">
-      <button type="button" class="contact-button" onclick="window.open('tel:+94775555174', '_self')">
-        <i class="fas fa-mobile-alt contact-icon"></i>
-      </button>
+      
 
       <button type="button" class="contact-button" onclick="window.open('tel:+31629377215', '_self')">
+        <i class="fas fa-phone-alt contact-icon"></i>
+      </button>
+      <button type="button" class="contact-button" onclick="window.open('tel:+94775555174', '_self')">
         <i class="fas fa-mobile-alt contact-icon"></i>
       </button>
 
@@ -313,14 +314,14 @@
       <br>
       <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:19px; text-align: center;">CONNECT WITH SOCIAL MEDIA</p>
       <div class="d-flex flex-wrap justify-content-center">
+          <a href="https://www.linkedin.com/in/kosala-jayasundara/" target="_blank" rel="noopener noreferrer" class="m-3">
+          <img src="Images/Social_Media_Icon/linkedin.png" alt="LinkedIn" style="width: 50px; height: 50px;">
+        </a>
         <a href="https://www.instagram.com/kosijaya?igsh=MTMxN2doaHVra3dmZw==" target="_blank" rel="noopener noreferrer" class="m-3">
           <img src="Images/Social_Media_Icon/instagram.png" alt="Instagram" style="width: 50px; height: 50px;">
         </a>
         <a href="https://www.facebook.com/share/15QLWjoBht/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="m-3">
           <img src="Images/Social_Media_Icon/facebook.png" alt="Facebook" style="width: 50px; height: 50px;">
-        </a>
-        <a href="https://www.youtube.com/@kosalajayasundara6785" target="_blank" rel="noopener noreferrer" class="m-3">
-          <img src="Images/Social_Media_Icon/youtube.png" alt="YouTube" style="width: 50px; height: 50px;">
         </a>
         <!--
         <a href="https://www.tiktok.com/@yourprofile" target="_blank" rel="noopener noreferrer" class="m-3">
@@ -328,8 +329,8 @@
         </a>
         -->
         <div class="d-flex flex-wrap justify-content-center">
-        <a href="https://www.linkedin.com/in/kosala-jayasundara/" target="_blank" rel="noopener noreferrer" class="m-3">
-          <img src="Images/Social_Media_Icon/linkedin.png" alt="LinkedIn" style="width: 50px; height: 50px;">
+        <a href="https://www.youtube.com/@kosalajayasundara6785" target="_blank" rel="noopener noreferrer" class="m-3">
+          <img src="Images/Social_Media_Icon/youtube.png" alt="YouTube" style="width: 50px; height: 50px;">
         </a>
       </div>
 
@@ -364,8 +365,8 @@
         firstName: "Kosala",
         lastName: "Jayasundara",
         title: "Founding CEO",
-        phonesrilanka: "+94775555174",
-        phoneinternational: "+31629377215",
+         phoneinternational: "+31629377215",
+        phonesrilanka: "+94775555174",   
         email: "kosala@exceltch.com",
         email2: "",
         email3: "",
