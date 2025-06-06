@@ -309,7 +309,7 @@
     <div class="business-card">
         <div class="card-header">
             <div class="logo-section">
-                <img src="logo_img/client_logo/bahamasdentalinstitute-l.png" alt="Bahamas Dental Institute Logo" class="card-logo">
+                <img src="logo_img/client_logo/bahamasdentalinstitute-l.jpeg" alt="Bahamas Dental Institute Logo" class="card-logo">
                 <!-- <div class="logo-title">ESTABLISHED 2010</div> -->
             </div>
         </div>
@@ -348,6 +348,15 @@
                     <div class="contact-details">
                         <div class="contact-type">Phone</div>
                         <div class="contact-value">242-467-2599</div>
+                    </div>
+                </div>
+                <div class="contact-item" onclick="window.open('tel:2426057201', '_self')">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <div class="contact-type">Phone</div>
+                        <div class="contact-value">242-605-7201</div>
                     </div>
                 </div>
                 
