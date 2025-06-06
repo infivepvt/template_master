@@ -247,7 +247,7 @@
         <i class="fas fa-phone-alt contact-icon"></i>
       </button>
       <button type="button" class="contact-button" onclick="window.open('tel:+94775555174', '_self')">
-        <i class="fas fa-mobile-alt contact-icon"></i>
+        <i class="fas fa-mobile contact-icon"></i>
       </button>
 
       <button type="button" class="contact-button" onclick="window.open('mailto:kosala@exceltch.com', '_self')">
