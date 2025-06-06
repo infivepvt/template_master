@@ -309,7 +309,7 @@
     <div class="business-card">
         <div class="card-header">
             <div class="logo-section">
-                <img src="logo_img/client_logo/bahamasdentalinstitute-l.jpeg" alt="Bahamas Dental Institute Logo" class="card-logo">
+                <img src="logo_img/client_logo/bahamasdentalinstitute-l.png" alt="Bahamas Dental Institute Logo" class="card-logo">
                 <!-- <div class="logo-title">ESTABLISHED 2010</div> -->
             </div>
         </div>
