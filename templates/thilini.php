@@ -547,127 +547,94 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        function generateVCF() {
-            const contactData = {
-                firstName: "Thilini",
-                lastName: "Lakmani",
-                title: "Founder of Charma By Dr. Thilini & Consultant at Gampaha Ayurveda Beheth Shalawa",
-                company: "Charma By Dr. Thilini",
-                phoneWork: "+94710591836",
-                whatsapp1: "+94710591836",
-                whatsapp2: "+94714666699",
-                email: "www.charmabydrthilini.lk",
-                website: "https://www.charmabydrthilini.lk",
-                facebook1: "https://www.facebook.com/share/1HKcHfZTFx/?mibextid=wwXIfr",
-                facebook2: "https://www.facebook.com/share/1CSVuK2f8r/?mibextid=wwXIfr",
-                address: "Street Number, Street Name, Town, Postal Code, State, Province, Country",
-                profileImage: "profile_img/main_profile/template37-p.png"
-            };
+    function generateVCF() {
+        const contactData = {
+            firstName: "Thilini",
+            lastName: "Lakmani",
+            title: "Founder of Charma By Dr. Thilini & Consultant at Gampaha Ayurveda Beheth Shalawa",
+            company: "Charma By Dr. Thilini",
+            phoneWork: "+94710591836",
+            phoneWork2: "+94714666699",
+            email: "www.charmabydrthilini.lk",
+            website: "https://www.charmabydrthilini.lk",
+            address: "Street Number, Street Name, Town, Postal Code, State, Province, Country",
+            profileImage: document.querySelector('.elementor-element-3c5b664 img').src // Get image from the page
+        };
 
-            // Create a temporary image element to handle the profile image
-            const profileImage = new Image();
-            profileImage.crossOrigin = "Anonymous"; // This is needed if the image is from a different domain
-            profileImage.src = contactData.profileImage;
+        // Function to convert image to base64
+        const getBase64Image = (imgUrl) => {
+            return new Promise((resolve) => {
+                const img = new Image();
+                img.crossOrigin = 'Anonymous'; // Handle cross-origin issues if needed
+                
+                img.onload = function() {
+                    const canvas = document.createElement('canvas');
+                    canvas.width = this.naturalWidth;
+                    canvas.height = this.naturalHeight;
+                    const ctx = canvas.getContext('2d');
+                    ctx.drawImage(this, 0, 0);
+                    const dataURL = canvas.toDataURL('image/jpeg');
+                    resolve(dataURL.split(',')[1]); // Return only the base64 part
+                };
+                
+                img.onerror = function() {
+                    console.error("Failed to load image");
+                    resolve(''); // Return empty string if image fails to load
+                };
+                
+                img.src = imgUrl;
+            });
+        };
 
-            // Function to generate the VCF after the image is loaded
-            const generateVCFWithImage = async () => {
-                try {
-                    // Wait for the image to load
-                    if (!profileImage.complete) {
-                        await new Promise((resolve) => {
-                            profileImage.onload = resolve;
-                            profileImage.onerror = resolve; // Handle error case
-                        });
-                    }
-
-                    // Create canvas and draw image if loaded successfully
-                    let base64Image = '';
-                    if (profileImage.naturalWidth > 0) {
-                        const canvas = document.createElement('canvas');
-                        const ctx = canvas.getContext('2d');
-                        canvas.width = profileImage.naturalWidth;
-                        canvas.height = profileImage.naturalHeight;
-                        ctx.drawImage(profileImage, 0, 0);
-                        base64Image = canvas.toDataURL('image/jpeg').split(',')[1];
-                    }
-
-                    // Create the VCF content
-                    let vcfContent = `BEGIN:VCARD
-VERSION:3.0
-FN:${contactData.firstName} ${contactData.lastName}
-N:${contactData.lastName};${contactData.firstName};;;
-TITLE:${contactData.title}
-ORG:${contactData.company}
-TEL;TYPE=WORK,VOICE:${contactData.phoneWork}
-TEL;TYPE=WORK,WHATSAPP:${contactData.whatsapp1}
-TEL;TYPE=WORK,WHATSAPP:${contactData.whatsapp2}
-EMAIL;TYPE=WORK:${contactData.email}
-URL:${contactData.website}
-URL;TYPE=FACEBOOK:${contactData.facebook1}
-URL;TYPE=FACEBOOK:${contactData.facebook2}
-ADR;TYPE=WORK:;;${contactData.address}`;
-
-                    // Add photo if available
-                    if (base64Image) {
-                        vcfContent += `\nPHOTO;ENCODING=b;TYPE=JPEG:${base64Image}`;
-                    }
-
-                    vcfContent += `\nEND:VCARD`;
-
-                    // Create and download the VCF file
-                    const blob = new Blob([vcfContent], { type: 'text/vcard' });
-                    const url = URL.createObjectURL(blob);
-
-                    const a = document.createElement('a');
-                    a.href = url;
-                    a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-                    document.body.appendChild(a);
-                    a.click();
-
-                    document.body.removeChild(a);
-                    URL.revokeObjectURL(url);
-                } catch (error) {
-                    console.error("Error generating VCF:", error);
-                    // Fallback to VCF without image if there's an error
-                    generateVCFWithoutImage();
+        // Generate the VCF content with the image
+        const generateVCFContent = async () => {
+            let photoLine = '';
+            
+            try {
+                const base64Image = await getBase64Image(contactData.profileImage);
+                if (base64Image) {
+                    photoLine = `PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}\n`;
                 }
-            };
-
-            // Fallback function if image loading fails
-            const generateVCFWithoutImage = () => {
-                let vcfContent = `BEGIN:VCARD
+            } catch (e) {
+                console.error("Error processing image:", e);
+            }
+            
+            return `BEGIN:VCARD
 VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
 N:${contactData.lastName};${contactData.firstName};;;
 TITLE:${contactData.title}
 ORG:${contactData.company}
 TEL;TYPE=WORK,VOICE:${contactData.phoneWork}
-TEL;TYPE=WORK,WHATSAPP:${contactData.whatsapp1}
-TEL;TYPE=WORK,WHATSAPP:${contactData.whatsapp2}
+TEL;TYPE=WORK,VOICE:${contactData.phoneWork2}
 EMAIL;TYPE=WORK:${contactData.email}
 URL:${contactData.website}
-URL;TYPE=FACEBOOK:${contactData.facebook1}
-URL;TYPE=FACEBOOK:${contactData.facebook2}
 ADR;TYPE=WORK:;;${contactData.address}
-END:VCARD`;
+${photoLine}END:VCARD`;
+        };
 
-                const blob = new Blob([vcfContent], { type: 'text/vcard' });
-                const url = URL.createObjectURL(blob);
+        // Create and download the VCF file
+        generateVCFContent().then(vcfContent => {
+            const blob = new Blob([vcfContent], { type: 'text/vcard;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
 
-                const a = document.createElement('a');
-                a.href = url;
-                a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-                document.body.appendChild(a);
-                a.click();
-
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+            document.body.appendChild(a);
+            a.click();
+            
+            // Cleanup
+            setTimeout(() => {
                 document.body.removeChild(a);
                 URL.revokeObjectURL(url);
-            };
-
-            // Start the process
-            generateVCFWithImage();
-        }
-    </script>
+            }, 100);
+        }).catch(error => {
+            console.error("Error generating vCard:", error);
+            alert("Error generating contact card. Please try again.");
+        });
+    }
+</script>
 </body>
 
 </html>
