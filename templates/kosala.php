@@ -359,29 +359,60 @@
   </div>
   
   <script>
-    function generateVCF() {
-      // Updated contact information to match Kosala Jayasundara's details
-      const contactData = {
-        firstName: "Kosala",
-        lastName: "Jayasundara",
-        title: "Founding CEO",
-         phoneinternational: "+31629377215",
-        phonesrilanka: "+94775555174",   
-        email: "kosala@exceltch.com",
-        email2: "",
-        email3: "",
-        website: "https://www.exceltch.com",
-        website2: "",
-        website3: "",
-        address: "521, A2 Gonahena Rd, Kadawatha, 11850, Sri Lanka",
-        address2: "",
-        about: "",
-        logo: "https://tapilinq.com/profile_img/client_profile/kosala-p.jpg",
-        profileImage: "https://tapilinq.com/profile_img/client_profile/kosala-p.jpg"
-      };
+  async function generateVCF() {
+    // Contact information
+    const contactData = {
+      firstName: "Kosala",
+      lastName: "Jayasundara",
+      title: "Founding CEO",
+      phoneinternational: "+31629377215",
+      phonesrilanka: "+94775555174",
+      email: "kosala@exceltch.com",
+      email2: "",
+      email3: "",
+      website: "https://www.exceltch.com",
+      website2: "",
+      website3: "",
+      address: "521, A2 Gonahena Rd, Kadawatha, 11850, Sri Lanka",
+      address2: "",
+      about: "",
+      logo: "https://tapilinq.com/profile_img/client_profile/kosala-p.jpg",
+      profileImage: "https://tapilinq.com/profile_img/client_profile/kosala-p.jpg"
+    };
 
-      // Create VCF content
-      let vcfContent = `BEGIN:VCARD
+    // Fetch and convert profile image to Base64
+    let base64Image = "";
+    try {
+      const profileImage = new Image();
+      profileImage.crossOrigin = "Anonymous"; // Handle cross-origin issues
+      profileImage.src = contactData.profileImage;
+
+      // Wait for the image to load
+      if (!profileImage.complete) {
+        await new Promise((resolve) => {
+          profileImage.onload = resolve;
+          profileImage.onerror = () => {
+            console.error("Failed to load profile image");
+            resolve(); // Proceed even if image fails to load
+          };
+        });
+      }
+
+      // Create canvas and draw image
+      const canvas = document.createElement('canvas');
+      const ctx = canvas.getContext('2d');
+      canvas.width = profileImage.naturalWidth;
+      canvas.height = profileImage.naturalHeight;
+      ctx.drawImage(profileImage, 0, 0);
+
+      // Convert to Base64 (remove the data:image/jpeg;base64, prefix)
+      base64Image = canvas.toDataURL('image/jpeg').split(',')[1];
+    } catch (error) {
+      console.error("Error processing profile image:", error);
+    }
+
+    // Create VCF content
+    let vcfContent = `BEGIN:VCARD
 VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
 N:${contactData.lastName};${contactData.firstName};;;
@@ -389,32 +420,32 @@ TITLE:${contactData.title}
 TEL;TYPE=SRILANKA,VOICE:${contactData.phonesrilanka}
 TEL;TYPE=INTERNATIONAL:${contactData.phoneinternational}
 EMAIL:${contactData.email}
-EMAIL:${contactData.email2}
-EMAIL:${contactData.email3}
+${contactData.email2 ? `EMAIL:${contactData.email2}` : ''}
+${contactData.email3 ? `EMAIL:${contactData.email3}` : ''}
 URL:${contactData.website}
-URL:${contactData.website2}
-URL:${contactData.website3}
+${contactData.website2 ? `URL:${contactData.website2}` : ''}
+${contactData.website3 ? `URL:${contactData.website3}` : ''}
 ADR;TYPE=WORK:;;${contactData.address}
-ADR;TYPE=HOME:;;${contactData.address2}
+${contactData.address2 ? `ADR;TYPE=HOME:;;${contactData.address2}` : ''}
 NOTE:${contactData.about}
-PHOTO;VALUE=URL:${contactData.profileImage}
+${base64Image ? `PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}` : `PHOTO;VALUE=URL:${contactData.profileImage}`}
 LOGO;VALUE=URL:${contactData.logo}
 END:VCARD`;
 
-      // Create download link
-      const blob = new Blob([vcfContent], { type: 'text/vcard' });
-      const url = URL.createObjectURL(blob);
+    // Create download link
+    const blob = new Blob([vcfContent], { type: 'text/vcard' });
+    const url = URL.createObjectURL(blob);
 
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-      document.body.appendChild(a);
-      a.click();
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+    document.body.appendChild(a);
+    a.click();
 
-      // Clean up
-      document.body.removeChild(a);
-      URL.revokeObjectURL(url);
-    }
-  </script>
+    // Clean up
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }
+</script>
 </body>
 </html>
