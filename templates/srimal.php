@@ -407,23 +407,23 @@
                 </div>
 
                <div class="gallery-container" id="galleryContainer">
-    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/Srimal/srimal-g1.jpeg')">
-        <img src="gallery_img/client_gallerys/Srimal/srimal-g1.jpeg" class="gallery-image">
+    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/srimal/srimal-g1.jpeg')">
+        <img src="gallery_img/client_gallerys/srimal/srimal-g1.jpeg" class="gallery-image">
     </div>
-    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/Srimal/srimal-g2.jpeg')">
-        <img src="gallery_img/client_gallerys/Srimal/srimal-g2.jpeg" alt="Gallery Image 2" class="gallery-image">
+    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/srimal/srimal-g2.jpeg')">
+        <img src="gallery_img/client_gallerys/srimal/srimal-g2.jpeg" alt="Gallery Image 2" class="gallery-image">
     </div>
-    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/Srimal/srimal-g3.jpeg')">
-        <img src="gallery_img/client_gallerys/Srimal/srimal-g3.jpeg" alt="Gallery Image 3" class="gallery-image">
+    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/srimal/srimal-g3.jpeg')">
+        <img src="gallery_img/client_gallerys/srimal/srimal-g3.jpeg" alt="Gallery Image 3" class="gallery-image">
     </div>
-    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/Srimal/srimal-g4.jpeg')">
-        <img src="gallery_img/client_gallerys/Srimal/srimal-g4.jpeg" alt="Gallery Image 4" class="gallery-image">
+    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/srimal/srimal-g4.jpeg')">
+        <img src="gallery_img/client_gallerys/srimal/srimal-g4.jpeg" alt="Gallery Image 4" class="gallery-image">
     </div>
-    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/Srimal/srimal-g5.jpeg')">
-        <img src="gallery_img/client_gallerys/Srimal/srimal-g5.jpeg" alt="Gallery Image 5" class="gallery-image">
+    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/srimal/srimal-g5.jpeg')">
+        <img src="gallery_img/client_gallerys/srimal/srimal-g5.jpeg" alt="Gallery Image 5" class="gallery-image">
     </div>
-    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/Srimal/srimal-g6.jpeg')">
-        <img src="gallery_img/client_gallerys/Srimal/srimal-g6.jpeg" alt="Gallery Image 6" class="gallery-image">
+    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/srimal/srimal-g6.jpeg')">
+        <img src="gallery_img/client_gallerys/srimal/srimal-g6.jpeg" alt="Gallery Image 6" class="gallery-image">
     </div>
 </div>
 
@@ -446,12 +446,12 @@
     <script>
     // Gallery images array
     const galleryImages = [
-        'gallery_img/client_gallerys/Srimal/srimal-g1.jpeg',
-        'gallery_img/client_gallerys/Srimal/srimal-g2.jpeg',
-        'gallery_img/client_gallerys/Srimal/srimal-g3.jpeg',
-        'gallery_img/client_gallerys/Srimal/srimal-g4.jpeg',
-        'gallery_img/client_gallerys/Srimal/srimal-g5.jpeg',
-        'gallery_img/client_gallerys/Srimal/srimal-g6.jpeg',
+        'gallery_img/client_gallerys/srimal/srimal-g1.jpeg',
+        'gallery_img/client_gallerys/srimal/srimal-g2.jpeg',
+        'gallery_img/client_gallerys/srimal/srimal-g3.jpeg',
+        'gallery_img/client_gallerys/srimal/srimal-g4.jpeg',
+        'gallery_img/client_gallerys/srimal/srimal-g5.jpeg',
+        'gallery_img/client_gallerys/srimal/srimal-g6.jpeg',
     ];
 
     function generateVCF() {
