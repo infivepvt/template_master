@@ -136,9 +136,11 @@
             opacity: 0.8;
             margin-top: 0.3rem;
         }
+        /* gallery */
 
         .gallery-section {
             padding: 20px;
+            /* background-color: #000; */
         }
 
         .gallery-header {
@@ -166,6 +168,7 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 10px;
+            /* margin-top: 10px; */
         }
 
         .gallery-item {
@@ -187,6 +190,7 @@
             transform: scale(1.05);
         }
 
+        /* Lightbox styles */
         .lightbox {
             display: none;
             position: fixed;
@@ -249,6 +253,8 @@
             cursor: pointer;
         }
 
+        /* gallery */
+
         @keyframes float {
             0%,
             100% {
@@ -260,10 +266,24 @@
             }
         }
 
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(-3px);
+            }
+
+            50% {
+                transform: translateY(3px);
+            }
+        }
+
+        /* contact details */
         .contact {
             background-color: #373938;
         }
-
+        
+        /* Gallery styles */
         .gallery-section {
             margin: 20px 0;
         }
@@ -298,13 +318,18 @@
             cursor: pointer;
         }
     </style>
+
 </head>
 
 <body>
     <div class="d-flex justify-content-center mt-5">
         <div class="card custom-card shadow-lg" style="background-color: #FFFFFF;">
             <div class="card-header custom-header text-center"
-                style="background-image: url('banner_img/client_banner/srimal-b.jpeg'); height: 200px; opacity: 1;">
+                style="background-image:  url('banner_img/client_banner/srimal-b.jpeg'); height: 200px; opacity: 1;">
+                <!--
+                <img src="logo_img/main_logo/Main_Design-l.png" alt="Company Logo" class="custom-logo" height="80px"
+                    style="width: 245px; height: auto; opacity: 1;">
+            -->
                 <div class="profile-picture">
                     <img src="profile_img/client_profile/srimal-p.png" alt="Bundala Safari with Srimal" class="rounded-circle">
                 </div>
@@ -321,7 +346,8 @@
                     <button class="btn w-100 mb-3 custom-phone1 d-flex align-items-center justify-content-center"
                         style="background-color: #25D366; color: white; height: 60px; border: 2px solid orange; border-radius: 10px; gap: 10px;">
                         <i class="fab fa-whatsapp" style="font-size: 50px; margin-right:30px;"></i>
-                        <span style="font-size: 14px; font-family: 'Montserrat', sans-serif;">CONNECT WITH WHATSAPP</span>
+                        <span style="font-size: 14px; font-family: 'Montserrat', sans-serif;">CONNECT WITH
+                            WHATSAPP</span>
                     </button>
                 </a>
 
@@ -348,7 +374,7 @@
                         <img src="Images/icon/internet.png" alt=""
                             style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #FFFFFF; 'Montserrat', sans-serif; font-size:16px;">bundalasafarilodge.com</span>
+                            style="color: #FFFFFF; 'Montserrat', sans-serif; font-size:16px; font-size:16px;">bundalasafarilodge.com</span>
                     </button>
 
                     <button type="button"
@@ -360,7 +386,8 @@
                     </button>
                 </div>
 
-                <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:19px">CONNECT WITH SOCIAL MEDIA</p>
+                <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:19px">CONNECT WITH SOCIAL MEDIA
+                </p>
                 <div class="d-flex flex-wrap justify-content-center">
                     <a href="https://www.facebook.com/share/16KFEMvtFP/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="m-3">
                         <img src="Images/Social_Media_Icon/facebook.png" alt="" style="width: 40px; height: 50px;">
@@ -379,43 +406,27 @@
                     </a>
                 </div>
 
-                <div class="gallery-section">
-                    <div class="gallery-header" onclick="toggleGallery()">
-                        <h3 class="gallery-title">Photo Gallery</h3>
-                        <span class="gallery-toggle" id="galleryToggle"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="gallery-container" id="galleryContainer" style="display: none;">
-                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/Srimal/srimal-g1.jpeg')">
-                            <img src="gallery_img/client_gallerys/Srimal/srimal-g1.jpeg" class="gallery-image">
-                        </div>
-                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/Srimal/srimal-g2.jpeg')">
-                            <img src="gallery_img/client_gallerys/Srimal/srimal-g2.jpeg" alt="Gallery Image 2" class="gallery-image">
-                        </div>
-                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/Srimal/srimal-g3.jpeg')">
-                            <img src="gallery_img/client_gallerys/Srimal/srimal-g3.jpeg" alt="Gallery Image 3" class="gallery-image">
-                        </div>
-                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/Srimal/srimal-g4.jpeg')">
-                            <img src="gallery_img/client_gallerys/Srimal/srimal-g4.jpeg" alt="Gallery Image 4" class="gallery-image">
-                        </div>
-                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/Srimal/srimal-g5.jpeg')">
-                            <img src="gallery_img/client_gallerys/Srimal/srimal-g5.jpeg" alt="Gallery Image 5" class="gallery-image">
-                        </div>
-                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/Srimal/srimal-g6.jpeg')">
-                            <img src="gallery_img/client_gallerys/Srimal/srimal-g6.jpeg" alt="Gallery Image 6" class="gallery-image">
-                        </div>
-                    </div>
-                </div>
+               <div class="gallery-container" id="galleryContainer">
+    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/Srimal/srimal-g1.jpeg')">
+        <img src="gallery_img/client_gallerys/Srimal/srimal-g1.jpeg" class="gallery-image">
+    </div>
+    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/Srimal/srimal-g2.jpeg')">
+        <img src="gallery_img/client_gallerys/Srimal/srimal-g2.jpeg" alt="Gallery Image 2" class="gallery-image">
+    </div>
+    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/Srimal/srimal-g3.jpeg')">
+        <img src="gallery_img/client_gallerys/Srimal/srimal-g3.jpeg" alt="Gallery Image 3" class="gallery-image">
+    </div>
+    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/Srimal/srimal-g4.jpeg')">
+        <img src="gallery_img/client_gallerys/Srimal/srimal-g4.jpeg" alt="Gallery Image 4" class="gallery-image">
+    </div>
+    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/Srimal/srimal-g5.jpeg')">
+        <img src="gallery_img/client_gallerys/Srimal/srimal-g5.jpeg" alt="Gallery Image 5" class="gallery-image">
+    </div>
+    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/Srimal/srimal-g6.jpeg')">
+        <img src="gallery_img/client_gallerys/Srimal/srimal-g6.jpeg" alt="Gallery Image 6" class="gallery-image">
+    </div>
+</div>
 
-                <div id="lightbox" class="lightbox">
-                    <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
-                    <div class="lightbox-content">
-                        <img id="lightbox-image" class="lightbox-image">
-                    </div>
-                    <div class="lightbox-nav">
-                        <button onclick="changeImage(-1)">&#10094;</button>
-                        <button onclick="changeImage(1)">&#10095;</button>
-                    </div>
-                </div>
 
                 <br>
                 <button class="btn w-100 custom-save-button" onclick="generateVCF()"
@@ -429,40 +440,42 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Lightbox JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 
     <script>
-        // Gallery images array
-        const galleryImages = [
-            'gallery_img/client_gallerys/Srimal/srimal-g1.jpeg',
-            'gallery_img/client_gallerys/Srimal/srimal-g2.jpeg',
-            'gallery_img/client_gallerys/Srimal/srimal-g3.jpeg',
-            'gallery_img/client_gallerys/Srimal/srimal-g4.jpeg',
-            'gallery_img/client_gallerys/Srimal/srimal-g5.jpeg',
-            'gallery_img/client_gallerys/Srimal/srimal-g6.jpeg',
-        ];
+    // Gallery images array
+    const galleryImages = [
+        'gallery_img/client_gallerys/Srimal/srimal-g1.jpeg',
+        'gallery_img/client_gallerys/Srimal/srimal-g2.jpeg',
+        'gallery_img/client_gallerys/Srimal/srimal-g3.jpeg',
+        'gallery_img/client_gallerys/Srimal/srimal-g4.jpeg',
+        'gallery_img/client_gallerys/Srimal/srimal-g5.jpeg',
+        'gallery_img/client_gallerys/Srimal/srimal-g6.jpeg',
+    ];
 
-        function generateVCF() {
-            const contactData = {
-                firstName: "Bundala Safari",
-                lastName: "with Srimal",
-                title: "Wildlife Safari Tours",
-                phoneWork: "+94779599397",
-                phoneMobile: "",
-                email: "Khsrimal@yahoo.com",
-                email2: "",
-                email3: "",
-                website: "bundalasafarilodge.com",
-                website2: "",
-                website3: "",
-                address: "Bundala Safari Lodge Location",
-                address2: "",
-                about: "",
-                logo: "https://tapilinq.com/profile_img/client_profile/srimal-p.png",
-                profileImage: "https://tapilinq.com/profile_img/client_profile/srimal-p.png"
-            };
+    function generateVCF() {
+        const contactData = {
+            firstName: "Bundala Safari",
+            lastName: "with Srimal",
+            title: "Wildlife Safari Tours",
+            phoneWork: "+94779599397",
+            phoneMobile: "",
+            email: "Khsrimal@yahoo.com",
+            email2: "",
+            email3: "",
+            website: "bundalasafarilodge.com",
+            website2: "",
+            website3: "",
+            address: "Bundala Safari Lodge Location",
+            address2: "",
+            about: "",
+            logo: "https://tapilinq.com/profile_img/client_profile/srimal-p.png",
+            profileImage: "https://tapilinq.com/profile_img/client_profile/srimal-p.png"
+        };
 
-            let vcfContent = `BEGIN:VCARD
+        // Create VCF content
+        let vcfContent = `BEGIN:VCARD
 VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
 N:${contactData.lastName};${contactData.firstName};;;
@@ -482,67 +495,69 @@ PHOTO;VALUE=URL:${contactData.profileImage}
 LOGO;VALUE=URL:${contactData.logo}
 END:VCARD`;
 
-            const blob = new Blob([vcfContent], { type: 'text/vcard' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = `${contactData.firstName.replace(/\s/g, '_')}_${contactData.lastName.replace(/\s/g, '_')}.vcf`;
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
+        const blob = new Blob([vcfContent], { type: 'text/vcard' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${contactData.firstName.replace(/\s/g, '_')}_${contactData.lastName.replace(/\s/g, '_')}.vcf`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    }
+
+    function toggleGallery() {
+        const galleryContainer = document.getElementById('galleryContainer');
+        const galleryToggle = document.getElementById('galleryToggle');
+
+        if (galleryContainer.style.display === 'none') {
+            galleryContainer.style.display = 'grid';
+            galleryToggle.innerHTML = '<i class="fas fa-minus"></i>';
+        } else {
+            galleryContainer.style.display = 'none';
+            galleryToggle.innerHTML = '<i class="fas fa-plus"></i>';
         }
+    }
 
-        function toggleGallery() {
-            const galleryContainer = document.getElementById('galleryContainer');
-            const galleryToggle = document.getElementById('galleryToggle');
+    // Lightbox functions
+    let currentImageIndex = 0;
 
-            if (galleryContainer.style.display === 'none') {
-                galleryContainer.style.display = 'grid';
-                galleryToggle.innerHTML = '<i class="fas fa-minus"></i>';
-            } else {
-                galleryContainer.style.display = 'none';
-                galleryToggle.innerHTML = '<i class="fas fa-plus"></i>';
-            }
+    function openLightbox(imageSrc) {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImage = document.getElementById('lightbox-image');
+        currentImageIndex = galleryImages.indexOf(imageSrc);
+        lightboxImage.src = imageSrc;
+        lightbox.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+        document.getElementById('lightbox').style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+
+    function changeImage(step) {
+        currentImageIndex += step;
+        if (currentImageIndex >= galleryImages.length) currentImageIndex = 0;
+        else if (currentImageIndex < 0) currentImageIndex = galleryImages.length - 1;
+
+        document.getElementById('lightbox-image').src = galleryImages[currentImageIndex];
+    }
+
+    document.getElementById('lightbox').addEventListener('click', function (e) {
+        if (e.target === this) closeLightbox();
+    });
+
+    document.addEventListener('keydown', function (e) {
+        const lightbox = document.getElementById('lightbox');
+        if (lightbox.style.display === 'flex') {
+            if (e.key === 'Escape') closeLightbox();
+            else if (e.key === 'ArrowLeft') changeImage(-1);
+            else if (e.key === 'ArrowRight') changeImage(1);
         }
+    });
+</script>
 
-        let currentImageIndex = 0;
-
-        function openLightbox(imageSrc) {
-            const lightbox = document.getElementById('lightbox');
-            const lightboxImage = document.getElementById('lightbox-image');
-            currentImageIndex = galleryImages.indexOf(imageSrc);
-            lightboxImage.src = imageSrc;
-            lightbox.style.display = 'flex';
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeLightbox() {
-            document.getElementById('lightbox').style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
-
-        function changeImage(step) {
-            currentImageIndex += step;
-            if (currentImageIndex >= galleryImages.length) currentImageIndex = 0;
-            else if (currentImageIndex < 0) currentImageIndex = galleryImages.length - 1;
-
-            document.getElementById('lightbox-image').src = galleryImages[currentImageIndex];
-        }
-
-        document.getElementById('lightbox').addEventListener('click', function (e) {
-            if (e.target === this) closeLightbox();
-        });
-
-        document.addEventListener('keydown', function (e) {
-            const lightbox = document.getElementById('lightbox');
-            if (lightbox.style.display === 'flex') {
-                if (e.key === 'Escape') closeLightbox();
-                else if (e.key === 'ArrowLeft') changeImage(-1);
-                else if (e.key === 'ArrowRight') changeImage(1);
-            }
-        });
-    </script>
 </body>
 
 </html>
