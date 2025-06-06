@@ -180,6 +180,7 @@ $routes = [
     'tuktuk' => 'templates/tuktuk.php',  
     'thilini' => 'templates/thilini.php', 
     'srimal' => 'templates/srimal.php', 
+    'vvmobile' => 'templates/vvmobile.php', 
 ];
 
 // Handle the request
