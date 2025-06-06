@@ -41,7 +41,7 @@
             top: 95%;
             left: 50%;
             transform: translate(-50%, -50%);
-             margin-top: 50px;
+             margin-top: 40px;
         }
 
         .profile-picture img {
