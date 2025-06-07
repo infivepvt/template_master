@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Card Template</title>
+    <title>RM Somarathne</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="Images/Logo1.ico">
@@ -496,23 +496,24 @@
                     </div>
                 </div>
 
-            <!--
                 <p class="fw" style="color: white;">CONNECT WITH SOCIAL MEDIA</p>
                 <div class="d-flex flex-wrap justify-content-center">
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-1">
+                    <a href="https://www.facebook.com/share/1ApYbcFxUp/" target="_blank" rel="noopener noreferrer" class="m-1">
                         <i class="fab fa-facebook social-icon icon-facebook"></i>
                     </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-1">
+                    <a href="https://www.instagram.com/rmsomarathne?igsh=MWQxdDZ1ZTJuNXVucw==" target="_blank" rel="noopener noreferrer" class="m-1">
                         <i class="fab fa-instagram social-icon icon-instagram"></i>
                     </a>
+                    <!--
                     <a href="#" target="_blank" rel="noopener noreferrer" class="m-1">
                         <i class="fab fa-twitter social-icon icon-twitter"></i>
                     </a>
                     <a href="#" target="_blank" rel="noopener noreferrer" class="m-1">
                         <i class="fab fa-linkedin social-icon icon-linkedin"></i>
                     </a>
+                    -->
                 </div>
-                -->
+        
                 <br>
 
                 <button id="saveContactBtn" class="btn w-100 custom-save-button" onclick="generateVCF()">
@@ -526,48 +527,24 @@
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
    <script>
-function generateVCF() {
-    // Contact information
-    const contactData = {
-        firstName: "RM",
-        lastName: "Somarathne",
-        title: "Customer Relation Officer",
-        phoneWork: "0764138850",
-        phoneMobile: "0775874874",
-        phoneMobile2: "0785874874",
-        phoneMobile3: "0715874874",
-        email: "somarathnecroceylife@gmail.com",
-        email2: "rmsomarathne534@gmail.com",
-        website: "",
-        address: "https://maps.app.goo.gl/i7SnQPi71kw5eASS9",
-        about: "",
-        profileImage: "profile_img/client_profile/somarathne-p.png",
-        logo: "profile_img/client_profile/somarathne-p.png"
-    };
-
-    // Function to load image and convert to base64
-    async function getBase64Image(imgUrl) {
-        try {
-            const response = await fetch(imgUrl);
-            if (!response.ok) throw new Error('Failed to fetch image');
-            const blob = await response.blob();
-            return new Promise((resolve) => {
-                const reader = new FileReader();
-                reader.onloadend = () => {
-                    const base64 = reader.result.split(',')[1]; // Get base64 part
-                    resolve(base64);
-                };
-                reader.readAsDataURL(blob);
-            });
-        } catch (error) {
-            console.error('Error loading image:', error);
-            return ''; // Return empty string if image fails to load
-        }
-    }
-
-    // Generate VCF with base64 image
-    async function createVCF() {
-        const profileImageBase64 = await getBase64Image(contactData.profileImage);
+    function generateVCF() {
+        // Updated contact information to match the business card
+        const contactData = {
+            firstName: "RM",
+            lastName: "Somarathne",
+            title: "Customer Relation Officer",
+            phoneWork: "0764138850",
+            phoneMobile: "0775874874",
+            phoneMobile2: "0785874874",
+            phoneMobile3: "0715874874",
+            email: "somarathnecroceylife@gmail.com",
+            email2: "rmsomarathne534@gmail.com",
+            website: "",
+            address: "https://maps.app.goo.gl/i7SnQPi71kw5eASS9",
+            about: "",
+            logo: "profile_img/client_profile/somarathne-p.png",
+            profileImage: "profile_img/client_profile/somarathne-p.png"
+        };
 
         // Create VCF content
         let vcfContent = `BEGIN:VCARD
@@ -584,8 +561,8 @@ EMAIL:${contactData.email2}
 URL:${contactData.website}
 ADR;TYPE=WORK:;;${contactData.address}
 NOTE:${contactData.about}
-PHOTO;ENCODING=b;TYPE=JPEG:${profileImageBase64}
-LOGO;ENCODING=b;TYPE=JPEG:${profileImageBase64}
+PHOTO;VALUE=URL:${contactData.profileImage}
+LOGO;VALUE=URL:${contactData.logo}
 END:VCARD`;
 
         // Create download link
@@ -602,10 +579,6 @@ END:VCARD`;
         document.body.removeChild(a);
         URL.revokeObjectURL(url);
     }
-
-    // Execute the VCF creation
-    createVCF();
-}
 </script>
 </body>
 </html>
