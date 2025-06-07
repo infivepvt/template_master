@@ -551,6 +551,16 @@
                         <div class="section-title">PORTFOLIO</div>
 
                         <div class="portfolio-container">
+
+                            <!-- Portfolio Item 1 -->
+                            <div class="portfolio-button" onclick="window.open('gallery_img/client_gallerys/iranga/iranga.pdf', '_blank')">
+                                <i class="fas fa-file"></i>
+                                <div class="portfolio-text">
+                                    <div class="portfolio-title">DOWNLOAD PDF</div>
+                                    <div class="portfolio-subtitle">View our company profile</div>
+                                </div>
+                            </div>
+
                             <!-- Portfolio Item 1 -->
                             <div class="portfolio-button" onclick="window.open('https://heyzine.com/flip-book/abbadaa70c.html', '_blank')">
                                 <i class="fas fa-user-circle"></i>
