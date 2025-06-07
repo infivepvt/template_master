@@ -16,13 +16,13 @@
 
         body {
             background-color: #ffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-items: center; */
         }
 
         .card {
-            width: 500px;
+            /* width: 500px; */
             min-height: 100vh;
             background: #fff;
             border-radius: 0 0 40px 40px;
@@ -34,14 +34,12 @@
 
         .card .top-bg {
             width: 100%;
-            aspect-ratio: 16/9;
-            background: url('banner_img/client_banner/ranhuya-b.png') no-repeat center center/cover;
+            height: 250px;
+            background-image: url('banner_img/client_banner/ranhuya-b.png');
             border-bottom-left-radius: 100% 60%;
             border-bottom-right-radius: 100% 60%;
             background-position: center;
             background-size: cover;
-            border-width: 0;
-            border-color: black;
         }
 
         .card .profile-img {
@@ -58,7 +56,7 @@
         }
 
         .card .content {
-            margin-top: 50px;
+            margin-top: 20px;
             padding: 50px;
         }
 
