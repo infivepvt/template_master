@@ -171,13 +171,13 @@
             <br><br><br>
             <div class="card-body text-center"
                 style="background-color: #FFFFFF; color: #000000; text-decoration: none; ">
-                <h2 class="card-title" style="font-size: 27px; text-transform: uppercase;">S.A Shen Tharindu Senanayake
+                <h2 class="card-title" style="font-size: 27px; text-transform: uppercase;">S.M Lanka Dilhani Wijerathne
                 </h2>
                 <p style="color: #000000; font-size: 21px; ">Shen e-Services (Pvt) Ltd</p>
                 <p style="color: #000000; font-size: 15px;">Boost your online visibility with our comprehensive SEO
                     services. On-Page and Off-Page, we help businesses climb the search engine ranks.</p>
 
-                <a href="https://wa.me/94761961302" target="_blank" rel="noopener noreferrer"
+                <a href="https://wa.me/94754005050" target="_blank" rel="noopener noreferrer"
                     style="text-decoration: none;">
                     <button class="btn w-100 mb-3 custom-phone1 d-flex align-items-center justify-content-center"
                         style="background-color: #25D366; color: white; height: 60px; border: 2px solid orange; border-radius: 10px; gap: 10px;">
@@ -190,10 +190,10 @@
                 <div class="list-group mb-3">
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
-                        onclick="window.open('tel:0761961302', '_self')">
+                        onclick="window.open('tel:0754005050', '_self')">
                         <img src="Images/icon/phone.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">+94 761 961 302</span>
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">+94 754 005 050</span>
                     </button>
 
                     <button type="button"
@@ -226,7 +226,7 @@
                 <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:19px">CONNECT WITH SOCIAL MEDIA
                 </p>
                 <div class="d-flex flex-wrap justify-content-center">
-                   
+
                     <a href="https://www.facebook.com/ShentharinduS" target="_blank" rel="noopener noreferrer"
                         class="m-3">
                         <img src="Images/Social_Media_Icon/facebook.png" alt="" style="width: 50px; height: 50px;">
@@ -235,7 +235,7 @@
                         class="m-3">
                         <img src="Images/Social_Media_Icon/facebook.png" alt="" style="width: 50px; height: 50px;">
                     </a>
-                     <a href="https://www.instagram.com/shen_tharindu/" target="_blank" rel="noopener noreferrer"
+                    <a href="https://www.instagram.com/shen_tharindu/" target="_blank" rel="noopener noreferrer"
                         class="m-3">
                         <img src="Images/Social_Media_Icon/instagram.png" alt="" style="width: 50px; height: 50px;">
                     </a>
@@ -278,42 +278,56 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-  <script>
-    function generateVCF() {
-        // Contact information matching the business card
-        const contactData = {
-            firstName: "S.A Shen Tharindu",
-            lastName: "Senanayake",
-            title: "Shen e-Services (Pvt) Ltd",
-            phoneMobile: "+94761961302",
-            email: "shentharindu@gmail.com",
-            website: "https://shentharindu.com",
-            address: "Shen e-Services (Pvt) Ltd, Meegahahena Waththa, Pasal Mawatha, Walipanna, Mathugama 12100",
-            profileImage: "profile_img/client_profile/shen-p.png"
-        };
+    <script>
+        function generateVCF() {
+            // Contact information matching the business card
+            const contactData = {
+                firstName: "S.M Lanka Dilhani",
+                lastName: "Wijerathne",
+                title: "Shen e-Services (Pvt) Ltd",
+                phoneMobile: "+94754005050",
+                email: "shentharindu@gmail.com",
+                website: "https://shentharindu.com",
+                address: "Shen e-Services (Pvt) Ltd, Meegahahena Waththa, Pasal Mawatha, Walipanna, Mathugama 12100",
+                profileImage: "profile_img/client_profile/shen-p.png"
+            };
 
-        // Function to load image and convert to Base64
-        function loadImageAsBase64(url) {
-            return new Promise((resolve, reject) => {
-                const img = new Image();
-                img.crossOrigin = "Anonymous"; // Handle cross-origin issues if needed
-                img.src = url;
-                img.onload = () => {
-                    const canvas = document.createElement('canvas');
-                    const ctx = canvas.getContext('2d');
-                    canvas.width = img.naturalWidth;
-                    canvas.height = img.naturalHeight;
-                    ctx.drawImage(img, 0, 0);
-                    const base64 = canvas.toDataURL('image/jpeg').split(',')[1]; // Get Base64 without prefix
-                    resolve(base64);
-                };
-                img.onerror = () => reject(new Error('Failed to load image'));
-            });
-        }
+            // Function to load image and convert to Base64
+            async function loadImageAsBase64(url) {
+                return new Promise((resolve, reject) => {
+                    const profileImage = new Image();
+                    profileImage.crossOrigin = "Anonymous"; // Handle cross-origin issues if needed
+                    profileImage.src = url;
 
-        // Generate vCard
-        async function createVCard() {
-            let vcfContent = `BEGIN:VCARD
+                    // Ensure image is fully loaded
+                    if (profileImage.complete) {
+                        // Image is already loaded
+                        const canvas = document.createElement('canvas');
+                        const ctx = canvas.getContext('2d');
+                        canvas.width = profileImage.naturalWidth;
+                        canvas.height = profileImage.naturalHeight;
+                        ctx.drawImage(profileImage, 0, 0);
+                        const base64 = canvas.toDataURL('image/jpeg').split(',')[1]; // Get Base64 without prefix
+                        resolve(base64);
+                    } else {
+                        // Wait for image to load
+                        profileImage.onload = () => {
+                            const canvas = document.createElement('canvas');
+                            const ctx = canvas.getContext('2d');
+                            canvas.width = profileImage.naturalWidth;
+                            canvas.height = profileImage.naturalHeight;
+                            ctx.drawImage(profileImage, 0, 0);
+                            const base64 = canvas.toDataURL('image/jpeg').split(',')[1]; // Get Base64 without prefix
+                            resolve(base64);
+                        };
+                        profileImage.onerror = () => reject(new Error('Failed to load image'));
+                    }
+                });
+            }
+
+            // Generate vCard
+            async function createVCard() {
+                let vcfContent = `BEGIN:VCARD
 VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
 N:${contactData.lastName};${contactData.firstName};;;
@@ -324,36 +338,36 @@ URL:${contactData.website}
 ADR;TYPE=WORK:;;${contactData.address};;;;
 `;
 
-            // Add profile image as Base64 if available
-            try {
-                const base64Image = await loadImageAsBase64(contactData.profileImage);
-                vcfContent += `PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}\n`;
-            } catch (error) {
-                console.error('Error loading profile image:', error);
-                // Proceed without the photo if it fails
+                // Add profile image as Base64 if available
+                try {
+                    const base64Image = await loadImageAsBase64(contactData.profileImage);
+                    vcfContent += `PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}\n`;
+                } catch (error) {
+                    console.error('Error loading profile image:', error);
+                    // Proceed without the photo if it fails
+                }
+
+                vcfContent += `END:VCARD`;
+
+                // Create download link
+                const blob = new Blob([vcfContent], { type: 'text/vcard' });
+                const url = URL.createObjectURL(blob);
+
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+                document.body.appendChild(a);
+                a.click();
+
+                // Clean up
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
             }
 
-            vcfContent += `END:VCARD`;
-
-            // Create download link
-            const blob = new Blob([vcfContent], { type: 'text/vcard' });
-            const url = URL.createObjectURL(blob);
-
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-            document.body.appendChild(a);
-            a.click();
-
-            // Clean up
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
+            // Execute vCard creation
+            createVCard();
         }
-
-        // Execute vCard creation
-        createVCard();
-    }
-</script>
+    </script>
 </body>
 
 </html>
