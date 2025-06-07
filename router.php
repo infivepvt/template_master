@@ -187,6 +187,7 @@ $routes = [
     'dilhani' => 'templates/dilhani.php', 
     'ranhuya' => 'templates/ranhuya.php', 
     'maheema' => 'templates/maheema.php', 
+    'suvishal' => 'templates/suvishal.php', 
 ];
 
 // Handle the request
