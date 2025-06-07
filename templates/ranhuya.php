@@ -58,7 +58,7 @@
         }
 
         .card .content {
-            margin-top: 20px;
+            margin-top: 50px;
             padding: 50px;
         }
 
