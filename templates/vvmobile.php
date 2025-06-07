@@ -581,7 +581,7 @@
                 SAVE TO CONTACTS
             </button>
             <div class="card-body text-left" style="background-color: #191970; color: #FFFFFF;"> <!-- Midnight blue -->
-                <h2 class="card-title" style="font-size: 30px;color:#FFFFFF;">VV MOBILE</h2>
+                <h2 class="card-title" style="font-size: 30px;color:#FFFFFF;">V V MOBILE</h2>
                 <p style="color:#FFFFFF; font-size: 20px;">Mobile Services</p>
                 <a href="https://wa.me/94771127576" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
                     <button class="btn w-100 mb-3 custom-phone1 d-flex align-items-center justify-content-center" style="height: 60px; gap: 10px;">
@@ -592,7 +592,7 @@
                 <div class="list-group mb-3">
                     <button type="button" class="list-group-item d-flex align-items-center justify-content-between contact" onclick="window.open('tel:0771127576', '_self')">
                         <img src="Images/icon/phone.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
-                        <span class="text-center flex-grow-1 text-truncate custom-phone" style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">0771127576</span>
+                        <span class="text-center flex-grow-1 text-truncate custom-phone" style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">+94 77 112 7576</span>
                     </button>
                     <button type="button" class="list-group-item d-flex align-items-center justify-content-between contact" onclick="window.open('tel:+94713007575', '_self')">
                         <img src="Images/icon/phone.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
