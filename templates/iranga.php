@@ -90,8 +90,8 @@
             transform: translate(-50%, -50%);
             border: 5px solid white;
             border-radius: 50%;
-            width: 180px;
-            height: 180px;
+            width: 120px;
+            height: 120px;
             overflow: hidden;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
             background: #f0f0f0;
@@ -452,10 +452,10 @@
                 padding: 25px 15px 70px;
             } */
 
-            .profile-picture {
+            /* .profile-picture {
                 width: 140px;
                 height: 140px;
-            }
+            } */
 
             .company-logos img {
                 height: 40px;
