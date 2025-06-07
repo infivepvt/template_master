@@ -183,6 +183,7 @@ $routes = [
     'vvmobile' => 'templates/vvmobile.php', 
     'dilini' => 'templates/dilini.php', 
     'somarathne' => 'templates/somarathne.php', 
+    'shen' => 'templates/shen.php', 
 ];
 
 // Handle the request
