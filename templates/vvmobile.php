@@ -10,7 +10,7 @@
     <style>
         .custom-card75 {
             overflow: hidden;
-            background: #EEF1FF;
+            background: #191970; /* Midnight blue background */
             height: auto;
             width: 100%;
             min-height: 100vh;
@@ -65,33 +65,41 @@
         }
 
         .list-group-item {
-            background-color: #333;
+            background-color: #C71585 !important; /* Rose pink */
             color: #fff;
-            border-radius: 8px;
+            border-radius: 12px;
             margin-bottom: 10px;
-            border: 1px solid #444;
-            padding: 10px 15px;
+            border: 2px solid #FF69B4; /* Hot pink border */
+            padding: 12px 18px;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
         }
 
         .list-group-item:hover {
-            background-color: #444;
-            border-color: #666;
-            transition: background-color 0.3s, border-color 0.3s;
+            background-color: #FF1493; /* Deep pink */
+            border-color: #FFB6C1; /* Light pink */
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
         }
 
         .custom-save-button75 {
-            background: #FFFFFF30;
+            background: #C71585; /* Rose pink */
             color: white;
             font-weight: bold;
-            border: none;
-            padding: 10px;
+            border: 2px solid #FF69B4; /* Hot pink border */
+            border-radius: 12px;
+            padding: 12px 20px;
             margin-left: 48%;
             margin-top: -30px;
-            transition: background 0.3s;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
         }
 
         .custom-save-button75:hover {
-            background: #FFFFFF30
+            background: #FF1493; /* Deep pink */
+            border-color: #FFB6C1; /* Light pink */
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
         }
 
         .save-icon {
@@ -118,20 +126,27 @@
             font-size: 1.2rem;
             color: white;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
-
-        .custom-phone1 {
-            transition: background-color 0.1s, border-color 0.1s;
+            background: #C71585; /* Rose pink */
+            border: 2px solid #FF69B4; /* Hot pink border */
+            border-radius: 12px;
+            padding: 12px 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
         }
 
         .custom-phone1:hover {
-            background-color: #25D366;
-            border-color: #128C7E;
+            background: #FF1493; /* Deep pink */
+            border-color: #FFB6C1; /* Light pink */
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
         }
 
         /* Gallery Styles */
         .gallery-section {
             padding: 20px;
+            background-color: #191970; /* Midnight blue */
+            border-radius: 10px;
+            margin-top: 20px;
         }
 
         .gallery-preview {
@@ -167,7 +182,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(25, 25, 112, 0.5); /* Semi-transparent midnight blue */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -234,17 +249,22 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            background: rgba(0, 0, 0, 0.5);
-            border: none;
+            background: #C71585; /* Rose pink */
+            border: 2px solid #FF69B4; /* Hot pink border */
+            border-radius: 50%;
             color: white;
             font-size: 24px;
-            padding: 10px;
+            padding: 12px;
             cursor: pointer;
-            transition: background 0.3s ease;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
         }
 
         .nav-btn:hover {
-            background: rgba(0, 0, 0, 0.8);
+            background: #FF1493; /* Deep pink */
+            border-color: #FFB6C1; /* Light pink */
+            transform: translateY(-50%) scale(1.1);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
         }
 
         .prev-btn {
@@ -258,7 +278,7 @@
         /* Backdrop effect */
         .modal-backdrop.show {
             opacity: 0.9;
-            background: #000;
+            background: #191970; /* Midnight blue */
             animation: fadeIn 0.3s ease-out;
         }
 
@@ -303,7 +323,7 @@
         }
 
         .video-preview video {
-            border: 2px solid #ddd;
+            border: 2px solid #FF69B4; /* Hot pink border */
             border-radius: 10px;
             transition: transform 0.3s, box-shadow 0.3s;
         }
@@ -320,22 +340,23 @@
         .modern-upload-btn {
             display: block;
             padding: 1.5rem 2rem;
-            background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+            background: linear-gradient(135deg, #C71585 0%, #FF69B4 100%); /* Rose pink to hot pink */
+            border: 2px solid #FF69B4; /* Hot pink border */
             border-radius: 12px;
             color: white;
             cursor: pointer;
             position: relative;
             overflow: hidden;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border: 2px solid transparent;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             text-align: center;
         }
 
         .modern-upload-btn:hover {
+            background: linear-gradient(135deg, #FF1493 0%, #FFB6C1 100%); /* Deep pink to light pink */
+            border-color: #FFD1DC; /* Very light pink */
             transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-            background: linear-gradient(135deg, #8183f2 0%, #b966f8 100%);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
         }
 
         .modern-upload-btn:active {
@@ -399,12 +420,9 @@
         }
 
         @keyframes float {
-
-            0%,
-            100% {
+            0%, 100% {
                 transform: translateY(-3px);
             }
-
             50% {
                 transform: translateY(3px);
             }
@@ -412,17 +430,10 @@
 
         /* contact details */
         .contact {
-            background-color: #303e6d;
+            background-color: #191970; /* Midnight blue */
         }
 
         /* Gallery Styles */
-        .gallery-section {
-            background-color: #303e6d;
-            border-radius: 10px;
-            padding: 15px;
-            margin-top: 20px;
-        }
-
         .gallery-header {
             display: flex;
             justify-content: space-between;
@@ -449,26 +460,6 @@
             margin-top: 15px;
         }
 
-        .gallery-item {
-            position: relative;
-            overflow: hidden;
-            border-radius: 8px;
-            aspect-ratio: 1;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-
-        .gallery-item:hover {
-            transform: scale(1.05);
-        }
-
-        .gallery-image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-
         .gallery-item:hover .gallery-image {
             transform: scale(1.1);
         }
@@ -481,7 +472,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.9);
+            background-color: rgba(25, 25, 112, 0.9); /* Midnight blue */
             z-index: 1000;
             justify-content: center;
             align-items: center;
@@ -512,7 +503,7 @@
         }
 
         .lightbox-close:hover {
-            color: #ccc;
+            color: #FF69B4; /* Hot pink */
             transform: scale(1.2);
         }
 
@@ -528,19 +519,23 @@
         }
 
         .lightbox-nav button {
-            background: none;
-            border: none;
+            background: #C71585; /* Rose pink */
+            border: 2px solid #FF69B4; /* Hot pink border */
+            border-radius: 50%;
             color: white;
             font-size: 40px;
             cursor: pointer;
-            opacity: 0.7;
+            opacity: 0.9;
             transition: all 0.3s ease;
             z-index: 1001;
+            padding: 10px;
         }
 
         .lightbox-nav button:hover {
-            opacity: 1;
+            background: #FF1493; /* Deep pink */
+            border-color: #FFB6C1; /* Light pink */
             transform: scale(1.2);
+            opacity: 1;
         }
 
         /* Responsive Adjustments */
@@ -574,7 +569,7 @@
 
 <body>
     <div class="d-flex justify-content-center p-0 m-0">
-        <div class="card custom-card75 shadow-lg rounded-0" style="background-color: #00114b;">
+        <div class="card custom-card75 shadow-lg rounded-0" style="background-color: #191970;"> <!-- Midnight blue -->
             <div class="card-header custom-header text-center">
                 <div class="profile-picture75">
                     <img src="profile_img/client_profile/vvmobile-p.png" alt="VV MOBILE" class="rounded-circle">
@@ -585,14 +580,13 @@
                 <i class="fas fa-save me-2"></i>
                 SAVE TO CONTACTS
             </button>
-            <div class="card-body text-left" style="background-color: #00114b; color: #000000;">
-                <h2 class="card-title" style="font-size: 30px;color:rgb(255, 255, 255);">VV MOBILE</h2>
-                <p style="color:rgb(255, 255, 255); font-size: 20px;">Mobile Services</p>
+            <div class="card-body text-left" style="background-color: #191970; color: #FFFFFF;"> <!-- Midnight blue -->
+                <h2 class="card-title" style="font-size: 30px;color:#FFFFFF;">VV MOBILE</h2>
+                <p style="color:#FFFFFF; font-size: 20px;">Mobile Services</p>
                 <a href="https://wa.me/94771127576" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
-                    <button class="btn w-100 mb-3 custom-phone1 d-flex align-items-center justify-content-center" style="background-color: #25D366; color: white; height: 60px; border: 2px solid orange; border-radius: 10px; gap: 10px;">
+                    <button class="btn w-100 mb-3 custom-phone1 d-flex align-items-center justify-content-center" style="height: 60px; gap: 10px;">
                         <i class="fab fa-whatsapp" style="font-size: 50px; margin-right:30px;"></i>
-                        <span style="font-size: 14px; font-family: 'Montserrat', sans-serif;">CONNECT WITH
-                            WHATSAPP</span>
+                        <span style="font-size: 14px; font-family: 'Montserrat', sans-serif;">CONNECT WITH WHATSAPP</span>
                     </button>
                 </a>
                 <div class="list-group mb-3">
@@ -609,9 +603,7 @@
                         <span class="text-center flex-grow-1 text-truncate custom-phone" style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">VV MOBILE Location</span>
                     </button>
                 </div>
-                <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:19px; color: #FFFFFF;">CONNECT
-                    WITH SOCIAL MEDIA
-                </p>
+                <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:19px; color: #FFFFFF;">CONNECT WITH SOCIAL MEDIA</p>
                 <div class="d-flex flex-wrap justify-content-center">
                     <a href="https://www.facebook.com/share/16En7NFryP/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="m-3">
                         <img src="Images/Social_Media_Icon/facebook.png" alt="" style="width: 50px; height: 50px;">
@@ -747,7 +739,7 @@
                 address: "",
                 facebook: "https://www.facebook.com/share/16En7NFryP/?mibextid=wwXIfr",
                 location: "https://maps.app.goo.gl/D4MJDmhbyspJ19b47?g_st=iw",
-                profileImage: "profile_img/client_profile/vvmobile-p.png"
+                profileImage: " profile_img/client_profile/vvmobile-p.png"
             };
 
             const toBase64 = async (url) => {
