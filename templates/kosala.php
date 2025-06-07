@@ -68,7 +68,6 @@
     }
 
     .contact-button {
-      background-color: #fff;
       border-radius: 50%;
       width: 50px;
       height: 50px;
@@ -80,8 +79,20 @@
       transition: background-color 0.3s;
     }
 
+    .contact-button.whatsapp {
+      background-color: #ff0000; /* Red circle for WhatsApp */
+    }
+
+    .contact-button.phone {
+      background-color: #007bff; /* Blue circle for Phone */
+    }
+
+    .contact-button.default {
+      background-color: #fff; /* Default white for other buttons */
+    }
+
     .contact-button:hover {
-      background-color: #444444;
+      filter: brightness(0.8); /* Darken on hover for all buttons */
     }
 
     .contact-icon {
@@ -241,28 +252,28 @@
     </div>
 
     <div class="profile-contact-icons">
-
-
-      <button type="button" class="contact-button" onclick="window.open('tel:+31629377215', '_self')">
-        <i class="fas fa-phone-alt contact-icon"></i>
+      <button type="button" class="contact-button whatsapp" title="WhatsApp Message" onclick="window.open('https://call.whatsapp.com/voice/B3OEIEJ3Hq7NQM5vkjxE0S', '_blank')">
+        <i class="fab fa-whatsapp contact-icon"></i>
       </button>
-      <button type="button" class="contact-button" onclick="window.open('tel:+94775555174', '_self')">
+      <button type="button" class="contact-button phone" title="Call Sri Lanka Number" onclick="window.open('tel:+94775555174', '_self')">
         <i class="fas fa-mobile-alt contact-icon"></i>
       </button>
-
-      <button type="button" class="contact-button" onclick="window.open('mailto:kosala@exceltch.com', '_self')">
+      <button type="button" class="contact-button default" onclick="window.open('mailto:kosala@exceltch.com', '_self')">
         <i class="fas fa-envelope contact-icon"></i>
       </button>
-
-      <button type="button" class="contact-button" onclick="window.open('https://www.exceltch.com', '_blank')">
+      <button type="button" class="contact-button default" onclick="window.open('https://www.exceltch.com', '_blank')">
         <i class="fas fa-globe contact-icon"></i>
       </button>
+  <!-- Operational Office: Kadawatha, Sri Lanka -->
+  <button type="button" class="contact-button default" title="Operational Office: 521/A2, Gonahena Road, Rammuthugala, Kadawatha, 11850, Sri Lanka" onclick="window.open('https://www.google.com/maps/place/521%2FA2,+Gonahena+Road,+Rammuthugala,+Kadawatha+11850,+Sri+Lanka', '_blank')">
+    <i class="fas fa-map-marker-alt contact-icon"></i>
+  </button>
+  <!-- Head Office: Tallinn, Estonia -->
+  <button type="button" class="contact-button default" title="Head Office: ExcelTech OÜ, Ahtri tn 12, Kesklinna linnaosa, 10151 Tallinn, Estonia" onclick="window.open('https://www.google.com/maps/place/Ahtri+tn+12,+10151+Tallinn,+Estonia', '_blank')">
+    <i class="fas fa-map-marker-alt contact-icon"></i>
+  </button>
+</div>
 
-      <button type="button" class="contact-button"
-        onclick="window.open('https://maps.app.goo.gl/WDv8dPhfA16gX95u8?g_st=iw ', '_blank')">
-        <i class="fas fa-map-marker-alt contact-icon"></i>
-      </button>
-    </div>
     <!--
     <div class="gallery-section">
       <div class="gallery-header" onclick="toggleGallery()">
@@ -310,7 +321,8 @@
           <p class="text-center text-light mb-0">Hi. I am Michael, working as marketing manager.</p>
         </div>
       </div>
-      -->
+    </div>
+    -->
     <br>
     <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:19px; text-align: center;">CONNECT WITH SOCIAL
       MEDIA</p>
@@ -326,18 +338,15 @@
         class="m-3">
         <img src="Images/Social_Media_Icon/facebook.png" alt="Facebook" style="width: 50px; height: 50px;">
       </a>
-      <!--
-        <a href="https://www.tiktok.com/@yourprofile" target="_blank" rel="noopener noreferrer" class="m-3">
-          <img src="Images/Social_Media_Icon/tiktok.png" alt="TikTok" style="width: 50px; height: 50px;">
-        </a>
-        -->
       <div class="d-flex flex-wrap justify-content-center">
         <a href="https://www.youtube.com/@kosalajayasundara6785" target="_blank" rel="noopener noreferrer" class="m-3">
           <img src="Images/Social_Media_Icon/youtube.png" alt="YouTube" style="width: 50px; height: 50px;">
         </a>
       </div>
-
       <!--
+        <a href="https://www.tiktok.com/@yourprofile" target="_blank" rel="noopener noreferrer" class="m-3">
+          <img src="Images/Social_Media_Icon/tiktok.png" alt="TikTok" style="width: 50px; height: 50px;">
+        </a>
         <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer" class="m-3">
           <img src="Images/Social_Media_Icon/twitter.png" alt="Twitter" style="width: 50px; height: 50px;">
         </a>
@@ -347,14 +356,13 @@
         <a href="https://www.pinterest.com/yourprofile" target="_blank" rel="noopener noreferrer" class="m-3">
           <img src="Images/Social_Media_Icon/pinterest.png" alt="Pinterest" style="width: 50px; height: 50px;">
         </a>
-      </div>
       -->
-      <br>
-      <button class="btn h-100 custom-save-button social-media-button" onclick="generateVCF()">
-        <i class="fas fa-save me-2"></i>
-        SAVE TO CONTACTS
-      </button>
     </div>
+    <br>
+    <button class="btn h-100 custom-save-button social-media-button" onclick="generateVCF()">
+      <i class="fas fa-save me-2"></i>
+      SAVE TO CONTACTS
+    </button>
 
     <div class="footer">
       <p>All rights reserved</p>
@@ -421,8 +429,8 @@ VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
 N:${contactData.lastName};${contactData.firstName};;;
 TITLE:${contactData.title}
-TEL;TYPE=WORK,VOICE:${contactData.phoneinternational}
-TEL;TYPE=HOME,VOICE:${contactData.phonesrilanka}
+TEL;TYPE=INTERNATIONAL,VOICE:${contactData.phoneinternational}
+TEL;TYPE=SRILANKA,VOICE:${contactData.phonesrilanka}
 EMAIL:${contactData.email}
 ${contactData.email2 ? `EMAIL:${contactData.email2}` : ''}
 ${contactData.email3 ? `EMAIL:${contactData.email3}` : ''}
