@@ -80,11 +80,11 @@
     }
 
     .contact-button.whatsapp {
-      background-color: #ff0000; /* Red circle for WhatsApp */
+      background-color: #ffffff; /* Red circle for WhatsApp */
     }
 
     .contact-button.phone {
-      background-color: #007bff; /* Blue circle for Phone */
+      background-color: #ffffff; /* Blue circle for Phone */
     }
 
     .contact-button.default {
@@ -256,7 +256,7 @@
         <i class="fab fa-whatsapp contact-icon"></i>
       </button>
       <button type="button" class="contact-button phone" title="Call Sri Lanka Number" onclick="window.open('tel:+94775555174', '_self')">
-        <i class="fas fa-mobile-alt contact-icon"></i>
+        <i class="fas fa-phone-alt contact-icon"></i>
       </button>
       <button type="button" class="contact-button default" onclick="window.open('mailto:kosala@exceltch.com', '_self')">
         <i class="fas fa-envelope contact-icon"></i>
