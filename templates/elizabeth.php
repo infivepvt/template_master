@@ -112,6 +112,14 @@
             font-weight: 400;
         }
 
+        .credential-text {
+            font-size: 14px;
+            color: var(--gold-primary);
+            font-weight: 500;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
         .contact-button {
             background: linear-gradient(135deg, var(--gold-primary), var(--gold-secondary));
             border: none;
@@ -274,25 +282,6 @@
             transform: translateY(1px);
         }
 
-        .badge-container {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin: 20px 0;
-            flex-wrap: wrap;
-        }
-
-        .credential-badge {
-            background: rgba(212, 175, 55, 0.15);
-            color: var(--gold-primary);
-            border-radius: 20px;
-            padding: 5px 15px;
-            font-size: 12px;
-            font-weight: 600;
-            border: 1px solid rgba(212, 175, 55, 0.3);
-            white-space: nowrap;
-        }
-
         .logo-title {
             color: white;
             font-weight: bold;
@@ -348,6 +337,10 @@
             .contact-text {
                 font-size: 13px;
             }
+
+            .credential-text {
+                font-size: 13px;
+            }
         }
 
         .watermark {
@@ -370,39 +363,25 @@
 
         <div class="card-body text-center">
             <h2 class="card-title">Elizabeth Diaz</h2>
-
-            <div class="badge-container">
-                <span class="credential-badge">LPC</span>
-                <span class="credential-badge">LMHC</span>
-                <span class="credential-badge">CMHC</span>
-                <span class="credential-badge">NCC</span>
-            </div>
-
-            <p class="card-subtitle mt-2">Clinic Director</p>
-            <p class="card-subtitle mt-2 mb-4">Licensed Professional Counselor</p>
+            <p class="credential-text">LPC, LMHC, CMHC, NCC</p>
+            <p class="card-subtitle">Clinic Director</p>
+            <p class="card-subtitle mt-1 mb-4">Licensed Professional Counselor</p>
 
             <a href="tel:571-609-3507" style="text-decoration: none;">
                 <button class="btn w-100 contact-button">
                     <div class="button-content d-inline-flex align-items-center justify-content-center gap-2">
-                        <i class="fas fa-phone-alt icon-large"></i>
-                        <span class="button-text">CALL 571-609-3507</span>
+                        <i class="fas fa-phone-alt icon-large" style="transform: scaleX(-1);"></i>
+                        <span class="button-text">571-609-3507</span>
                     </div>
                 </button>
             </a>
 
             <div class="list-group mb-3">
-                <div class="list-group-item" onclick="window.open('tel:571-609-3507', '_self')">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone-alt"></i>
-                    </div>
-                    <div class="contact-text">571-609-3507</div>
-                </div>
-
                 <div class="list-group-item" onclick="window.open('mailto:Info@thrivebehavioralhealthcenter.com', '_self')">
                     <div class="contact-icon">
                         <i class="fas fa-envelope"></i>
                     </div>
-                    <div class="contact-text">Info @ thrivebehavioralhealthcenter.com</div>
+                    <div class="contact-text">Info@thrivebehavioralhealthcenter.com</div>
                 </div>
 
                 <div class="list-group-item" onclick="window.open('https://thrivebehavioralhealthcenter.com/', '_blank')">
@@ -436,7 +415,7 @@
             const contactData = {
                 firstName: "Elizabeth",
                 lastName: "Diaz",
-                title: "Licensed Professional Counselor",
+                title: "Licensed Professional Counselor, LPC, LMHC, CMHC, NCC",
                 organization: "Thrive Behavioral Health Center",
                 phoneMobile: "571-609-3507",
                 email: "Info@thrivebehavioralhealthcenter.com",
