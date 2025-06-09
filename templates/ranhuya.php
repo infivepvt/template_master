@@ -228,8 +228,8 @@
 
         <div class="footer">
             <div class="social-icons">
-                <a href="https://www.facebook.com/ranhuya"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://wa.me/+94702859200"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/share/1BQt54BNto/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://wa.me/+94702859200" target="_blank"><i class="fab fa-whatsapp"></i></a>
             </div>
         </div>
     </div>
