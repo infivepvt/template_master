@@ -193,6 +193,7 @@ $routes = [
     'kinnarawi' => 'templates/kinnarawi.php', 
     'sansari' => 'templates/sansari.php', 
     'dorit-dimand' => 'templates/dorit-dimand.php', 
+    'ifixpro' => 'templates/ifixpro.php', 
 ];
 
 // Handle the request
