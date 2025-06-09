@@ -192,6 +192,7 @@ $routes = [
     'elizabeth' => 'templates/elizabeth.php', 
     'kinnarawi' => 'templates/kinnarawi.php', 
     'sansari' => 'templates/sansari.php', 
+    'dorit-dimand' => 'templates/dorit-dimand.php', 
 ];
 
 // Handle the request

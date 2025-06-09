@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="Images/Logo1.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>Sanjaya Gurusinghe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <title>Sanjaya Gurusinghe</title>
     <style>
         /* Basic reset and styling */
         * {
@@ -41,13 +40,13 @@
             object-fit: cover;
             margin: 100px auto 20px; /* Moved image down */
             display: block;
-            border: 2px solid white;
+            border: 1px solid white;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         h1,
         h2 {
-            color: #0000ff;
+            color: #000000;
             margin-bottom: 10px;
         }
 
@@ -89,7 +88,7 @@
             width: 200px;
             margin: 30px auto;
             padding: 12px 20px;
-            background-color: #0000ff;
+            background-color: #000000;
             color: white;
             text-align: center;
             text-decoration: none;
@@ -100,7 +99,7 @@
         }
 
         .save-button:hover {
-            background-color: #0000ff;
+            background-color: #000000;
         }
 
         /* Footer */
@@ -125,7 +124,7 @@
             height: 40px;
             text-align: center;
             font-size: 24px;
-            color: #0000ff;
+            color: #000000;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -144,7 +143,7 @@
 
         .contact-d {
             color: black;
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Roboto', sans-serif; /* Applied Roboto here */
             font-size: 16px;
         }
 
@@ -163,14 +162,42 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #0000ff;
+            color: #000000;
             font-size: 18px;
             transition: all 0.3s ease;
         }
 
         .social-icon:hover {
-            background: #0000ff;
-            color: #0000ff;
+            background: #000000;
+            color: #000000;
+        }
+        
+        /* Services section */
+        .services-section {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .services-title {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #000000;
+            font-family: 'Roboto', sans-serif; /* Applied Roboto here */
+        }
+        
+        .services-list {
+            display: inline-block;
+            text-align: center;
+            margin: 10px 0;
+        }
+        
+        .services-list p {
+            font-size: 16px;
+            margin: 5px 0;
+            color: #000000;
+            font-weight: bold;
+            font-family: 'Roboto', sans-serif; /* Applied Roboto here */
         }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -182,10 +209,20 @@
         style="background-image: url('banner_img/client_banner/gurusinghe-b.jpg'); background-size: cover; background-position: center; background-color: #16a384; height: 100%; opacity: 1; border-bottom-width: 1px; border-bottom-right-radius: 40%; border-bottom-left-radius: 40%; height: 200px;">
         <div class="profile-header">
             <img src="profile_img/client_profile/gurusinghe-p.jpg" alt="Carl Protton" class="profile-image">
-            <h1 style="color: #0000ff; font-family: 'Sanchez', sans-serif;">K.K.L. Sanjaya Gurusinghe </h1>
-            <p class="title" style="color: #0000ff; font-size: 13px;">
+            <h1 style="color: #000000; font-family: 'Sanchez', sans-serif;">K.K.L. Sanjaya Gurusinghe </h1>
+            <p class="title" style="color: #000000; font-size: 13px;">
                 Managing Director
             </p>
+            
+            <div class="services-section">
+                <div class="services-title">DHS LANKA (pvt) LTD</div>
+                <div class="services-list">
+                    <p>DHS agriculture products</p>
+                    <p>DHS spice products</p>
+                    <p>DHS  Fabric and yarn importers</p>
+                </div>
+            </div>
+            
             <div class="contact-section">
                 <div class="contact-icon">
                     <i class="fas fa-phone-alt" onclick="window.open('tel:+94777891950', '_self')"></i>
@@ -209,7 +246,7 @@
                         onclick="window.open('https://maps.google.com/?cid=13660936022572865669', '_blank')"></i>
                 </div>
                 <div class="contact-details">
-                    <p class="contact-d"> No 57, wataraunpara, araleya uyna, depanama, panipiteya </p>
+                    <p class="contact-d"> No 57, Circular Road, Araliya Uyana, Depanama, Pannipitiya </p>
                 </div>
             </div>
             
@@ -238,7 +275,7 @@
                 website: "",
                 website2: "",
                 website3: "",
-                address: "No 57, wataraunpara, araleya uyna, depanama, panipiteya",
+                address: "No 57, Circular Road, Araliya Uyana, Depanama, Pannipitiya",
                 address2: "",
                 about: "",
                 logo: "https://tapilinq.com/profile_img/client_profile/gurusinghe-p.jpg",

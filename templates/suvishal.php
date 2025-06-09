@@ -180,12 +180,18 @@
 
                 <div class="list-group mb-3">
                     <button type="button" class="list-group-item d-flex align-items-center justify-content-between contact"
-                        onclick="window.open('tel:+94761231212', '_self')">
+                        onclick="window.open('tel:+94703080414', '_self')">
                         <img lunettes src="Images/icon/phone.png" alt="Phone Icon" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">+94 76 123 1212</span>
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">+94 70 308 0414</span>
                     </button>
-
+                    <button type="button" class="list-group-item d-flex align-items-center justify-content-between contact"
+                        onclick="window.open('tel:+94740792025', '_self')">
+                        <img lunettes src="Images/icon/phone.png" alt="Phone Icon" style="width: 30px; height: 30px; margin-right:25px;">
+                        <span class="text-center flex-grow-1 text-truncate custom-phone"
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">+94 74 079 2025</span>
+                    </button>
+                    <!--
                    <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
                         onclick="window.open('mailto:youremail@yourwebsite.com', '_self')">
@@ -202,12 +208,12 @@
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
                             style="color: #FFFFFF; 'Montserrat', sans-serif; font-size:16px;"></span>
                     </button>
-
+    -->
                     <button type="button" class="list-group-item d-flex align-items-center justify-content-between contact"
-                        onclick="window.open('https://www.google.com/maps/search/?api=1&query=919+Oaktree+Crescent,+Newmarket', '_blank')">
+                        onclick="window.open('https://maps.app.goo.gl/1TVUo1xzEwwHZTEEA', '_blank')">
                         <img src="Images/icon/map.png" alt="Address Icon" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;"></span>
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">Wabada road, Delgoda, <br> Sri Lanka</span>
                     </button>
                 </div>
 
@@ -220,6 +226,9 @@
                     </a>
                      -->
                     <a href="https://www.facebook.com/share/1FU5dZaXDw/" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/facebook.png" alt="" style="width: 50px; height: 50px;">
+                    </a>
+                    <a href="https://www.facebook.com/prabuddha.bharatha.ambegoda?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" class="m-3">
                         <img src="Images/Social_Media_Icon/facebook.png" alt="" style="width: 50px; height: 50px;">
                     </a>
                     <!--
@@ -266,8 +275,8 @@
                 firstName: "Prabudda Baratha",
                 lastName: "Ambegoda",
                 title: "Director/Chairman, Suvishal Group of Companies",
-                phoneWork: "0761231212",
-                phoneMobile: "",
+                phoneWork: "+94703080414",
+                phoneMobile: "+94740792025",
                 email: "youremail@yourwebsite.com",
                 email2: "",
                 email3: "",
