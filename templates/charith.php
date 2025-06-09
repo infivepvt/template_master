@@ -322,10 +322,10 @@
                     </button>
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
-                        onclick="window.open('mailto:sachith.rangalla@ktdoctor.com', '_self')">
+                        onclick="window.open('mailto:charith@sjhospital.lk', '_self')">
                         <img src="Images/icon/mail.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">sachith.rangalla@ktdoctor.com</span>
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">charith@sjhospital.lk</span>
                     </button>
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
@@ -429,7 +429,7 @@
                 lastName: "Mahendrarajah",
                 title: "Director Strategic Partnerships Corporate Medicals",
                 phoneMobile: "+94773519656",
-                email: "sachith.rangalla@ktdoctor.com",
+                email: "charith@sjhospital.lk",
                 website: "http://sjhospital.lk/",
                 address: "St. Joseph Hospital, Negombo",
                 profileImage: "profile_img/client_profile/sachith-p.png",
