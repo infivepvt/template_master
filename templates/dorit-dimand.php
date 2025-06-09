@@ -58,6 +58,7 @@
             transform: translateX(-50%);
             z-index: 10;
             text-align: center;
+
         }
 
         .elementor-element-3c5b664 img {
@@ -897,7 +898,7 @@
     <div class="digital-card-container">
         <div class="header-banner"></div>
 
-        <div class="elementor-widget-wrap elementor-element-populated">
+        <div class="elementor-widget-wrap elementor-element-populatedc mx-2">
             <div class="elementor-element elementor-element-3c5b664 elementor-widget elementor-widget-image" data-id="3c5b664" data-element_type="widget" data-settings="{'_animation_mobile':'fadeInDown'}" data-widget_type="image.default">
                 <div class="elementor-widget-container">
                     <img decoding="async" src="profile_img/client_profile/dorit-dimand-p.png" title="Dorit Dimand" alt="Dorit Dimand" loading="lazy">
