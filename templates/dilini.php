@@ -189,7 +189,7 @@
                     <div class="column" >
                         <i class="fas fa-location-arrow" style="margin-left: 30px; font-size: 30px; margin-left:-10px "></i>
                         <a href="#" style="text-decoration:none">
-                        <p class="td">12, Your Lane,<br>Your Street, La</p></a>
+                        <p class="td">No. 28, Dr. Lester James Peiris mawatha,<br>Colombo-4, Sri Lanka.</p></a>
                     </div>
                     <hr style="color: #333333;">
                     <div class="column">
