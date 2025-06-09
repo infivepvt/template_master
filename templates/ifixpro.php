@@ -194,53 +194,83 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        function generateVCF() {
+        async function generateVCF() {
             const contactData = {
-                firstName: "iFix Pro",
-                lastName: "",
-                title: "Mobile Repair & Accessories",
-                phoneWork: "+94759958608",
-                phoneMobile: "+94774188608",
-                phoneProprietor: "+94701088258",
-                email: "",
-                email2: "",
-                email3: "",
-                website: "",
-                website2: "",
-                website3: "",
-                address: "Minuwangoda",
-                address2: "",
-                about: "",
-                logo: "https://tapilinq.com/profile_img/client_profile/ifixpro-p.png",
-                profileImage: "https://tapilinq.com/profile_img/client_profile/ifixpro-p.png"
+            firstName: "iFix",
+            lastName: "Pro",
+            title: "Mobile Repair & Accessories",
+            organization: "iFix Pro",
+            phoneMobile: "+94 75 995 8608",
+            phoneMobile2: "+94 77 418 8608",
+            phoneMobile3: "+94 76 921 8608",
+            phoneMobile4: "+94 70 108 8258",
+            address: "Minuwangoda, Sri Lanka",
+            website: "",
+            email: "",
+            profileImage: "profile_img/client_profile/ifixpro-p.png"
             };
 
-            let vcfContent = `BEGIN:VCARD
-VERSION:3.0
-FN:${contactData.firstName} ${contactData.lastName}
-N:${contactData.lastName};${contactData.firstName};;;
-TITLE:${contactData.title}
-TEL;TYPE=WORK,VOICE:${contactData.phoneWork}
-TEL;TYPE=CELL:${contactData.phoneMobile}
-TEL;TYPE=PROPRIETOR:${contactData.phoneProprietor}
-EMAIL:${contactData.email}
-EMAIL:${contactData.email2}
-EMAIL:${contactData.email3}
-URL:${contactData.website}
-URL:${contactData.website2}
-URL:${contactData.website3}
-ADR;TYPE=WORK:;;${contactData.address}
-ADR;TYPE=HOME:;;${contactData.address2}
-NOTE:${contactData.about}
-PHOTO;VALUE=URL:${contactData.profileImage}
-LOGO;VALUE=URL:${contactData.logo}
-END:VCARD`;
+            const toBase64 = async (url) => {
+            return new Promise((resolve, reject) => {
+                const img = new Image();
+                img.crossOrigin = "Anonymous";
+                img.src = url;
 
+                img.onload = () => {
+                try {
+                    const canvas = document.createElement('canvas');
+                    const ctx = canvas.getContext('2d');
+                    canvas.width = img.naturalWidth;
+                    canvas.height = img.naturalHeight;
+                    ctx.drawImage(img, 0, 0);
+                    const base64Image = canvas.toDataURL('image/jpeg').split(',')[1];
+                    resolve(base64Image);
+                } catch (error) {
+                    reject(error);
+                }
+                };
+
+                img.onerror = () => {
+                reject(new Error("Failed to load image"));
+                };
+
+                if (img.complete) {
+                img.onload();
+                }
+            });
+            };
+
+            let photoBase64 = '';
+            try {
+            photoBase64 = await toBase64(contactData.profileImage);
+            } catch (error) {
+            // Image is optional for VCF, so just skip if error
+            }
+
+            let vcfLines = [
+            "BEGIN:VCARD",
+            "VERSION:3.0",
+            `FN:${contactData.firstName} ${contactData.lastName}`,
+            `N:${contactData.lastName};${contactData.firstName};;;`,
+            `ORG:${contactData.organization}`,
+            `TITLE:${contactData.title}`,
+            `TEL;TYPE=CELL,VOICE:${contactData.phoneMobile}`,
+            `TEL;TYPE=CELL,VOICE:${contactData.phoneMobile2}`,
+            `TEL;TYPE=CELL,VOICE:${contactData.phoneMobile3}`,
+            `TEL;TYPE=CELL,VOICE:${contactData.phoneMobile4}`,
+            contactData.email ? `EMAIL;TYPE=WORK:${contactData.email}` : '',
+            contactData.website ? `URL:${contactData.website}` : '',
+            `ADR;TYPE=WORK:;;${contactData.address};;;`,
+            photoBase64 ? `PHOTO;ENCODING=b;TYPE=JPEG:${photoBase64}` : '',
+            "END:VCARD"
+            ];
+
+            const vcfContent = vcfLines.filter(line => line).join('\n');
             const blob = new Blob([vcfContent], { type: 'text/vcard' });
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = `${contactData.firstName}.vcf`;
+            a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
