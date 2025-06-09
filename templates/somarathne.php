@@ -426,62 +426,69 @@
                 </button>
             </a>
 
-            <div class="list-group1 mb-4 row g-3" style="background-color: #000000;">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <a href="tel:0764138850" class="icon d-flex align-items-center justify-content-center"
-                        style="text-decoration: none;">
-                        <i class="fas fa-phone contact-icon me-2 contact"></i>
-                    </a>
-                    <p class="icon-text">Official Call</p>
-                </div>
+           <div class="list-group1 mb-4 row g-3" style="background-color: #000000;">
+    <div class="col-12 col-md-6 col-lg-4">
+        <a href="tel:0764138850" class="icon d-flex align-items-center justify-content-center"
+            style="text-decoration: none;">
+            <i class="fas fa-phone contact-icon me-2 contact"></i>
+        </a>
+        <p class="icon-text">Official Call</p>
+    </div>
 
-                <div class="col-12 col-md-6 col-lg-4">
-                    <a href="tel:0775874874" class="icon d-flex align-items-center justify-content-center"
-                        style="text-decoration: none;">
-                        <i class="fas fa-mobile-alt contact-icon me-2 contact"></i>
-                    </a>
-                    <p class="icon-text">Mobile 1</p>
-                </div>
+    <div class="col-12 col-md-6 col-lg-4">
+        <a href="tel:0775874874" class="icon d-flex align-items-center justify-content-center"
+            style="text-decoration: none;">
+            <i class="fas fa-mobile-alt contact-icon me-2 contact"></i>
+        </a>
+        <p class="icon-text">Mobile 1</p>
+    </div>
 
-                <div class="col-12 col-md-6 col-lg-4">
-                    <a href="tel:0785874874" class="icon d-flex align-items-center justify-content-center"
-                        style="text-decoration: none;">
-                        <i class="fas fa-mobile-alt contact-icon me-2 contact"></i>
-                    </a>
-                    <p class="icon-text">Mobile 2</p>
-                </div>
+    <div class="col-12 col-md-6 col-lg-4">
+        <a href="tel:0785874874" class="icon d-flex align-items-center justify-content-center"
+            style="text-decoration: none;">
+            <i class="fas fa-mobile-alt contact-icon me-2 contact"></i>
+        </a>
+        <p class="icon-text">Mobile 2</p>
+    </div>
 
-                <div class="col-12 col-md-6 col-lg-4">
-                    <a href="tel:0715874874" class="icon d-flex align-items-center justify-content-center"
-                        style="text-decoration: none;">
-                        <i class="fas fa-mobile-alt contact-icon me-2 contact"></i>
-                    </a>
-                    <p class="icon-text">Mobile 3</p>
-                </div>
+    <div class="col-12 col-md-6 col-lg-4">
+        <a href="tel:0715874874" class="icon d-flex align-items-center justify-content-center"
+            style="text-decoration: none;">
+            <i class="fas fa-mobile-alt contact-icon me-2 contact"></i>
+        </a>
+        <p class="icon-text">Mobile 3</p>
+    </div>
 
-                <div class="col-12 col-md-6 col-lg-4">
-                    <a href="mailto:somarathnecroceylife@gmail.com"
-                        class="icon d-flex align-items-center justify-content-center" style="text-decoration: none;">
-                        <i class="fas fa-envelope contact-icon me-2 contact"></i>
-                    </a>
-                    <p class="icon-text">Email 1</p>
-                </div>
+    <div class="col-12 col-md-6 col-lg-4">
+        <a href="mailto:somarathnecroceylife@gmail.com"
+            class="icon d-flex align-items-center justify-content-center" style="text-decoration: none;">
+            <i class="fas fa-envelope contact-icon me-2 contact"></i>
+        </a>
+        <p class="icon-text">Email 1</p>
+    </div>
 
-                <div class="col-12 col-md-6 col-lg-4">
-                    <a href="mailto:rmsomarathne534@gmail.com"
-                        class="icon d-flex align-items-center justify-content-center" style="text-decoration: none;">
-                        <i class="fas fa-envelope contact-icon me-2 contact"></i>
-                    </a>
-                    <p class="icon-text">Email 2</p>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <a href="https://maps.app.goo.gl/i7SnQPi71kw5eASS9"
-                        class="icon d-flex align-items-center justify-content-center" style="text-decoration: none;">
-                        <i class="fas fa-map-marker-alt contact-icon me-2 contact"></i>
-                    </a>
-                    <p class="icon-text">Address</p>
-                </div>
-            </div>
+    <div class="col-12 col-md-6 col-lg-4">
+        <a href="mailto:rmsomarathne534@gmail.com"
+            class="icon d-flex align-items-center justify-content-center" style="text-decoration: none;">
+            <i class="fas fa-envelope contact-icon me-2 contact"></i>
+        </a>
+        <p class="icon-text">Email 2</p>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+        <a href="https://maps.app.goo.gl/i7SnQPi71kw5eASS9"
+            class="icon d-flex align-items-center justify-content-center" style="text-decoration: none;">
+            <i class="fas fa-map-marker-alt contact-icon me-2 contact"></i>
+        </a>
+        <p class="icon-text">Address</p>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+        <a href="https://app.ceylincolife.com/web/"
+            class="icon d-flex align-items-center justify-content-center" style="text-decoration: none;">
+            <i class="fas fa-globe contact-icon me-2 contact"></i>
+        </a>
+        <p class="icon-text">Website</p>
+    </div>
+</div>
             <p class="fw" style="color: white;">CONNECT WITH SOCIAL MEDIA</p>
             <div class="d-flex flex-wrap justify-content-center">
                 <br>
@@ -496,6 +503,11 @@
                 <a href="https://youtube.com/@sathutavlog2710?si=NlZ7ZUTKHHSR-hfu" target="_blank" rel="noopener noreferrer"
                     class="m-1">
                     <i class="fab fa-youtube social-icon icon-youtube"></i>
+                </a>
+                  </a>
+                <a href="https://app.ceylincolife.com/web/" target="_blank" rel="noopener noreferrer"
+                    class="m-1">
+                    <i class="fab fa-web social-icon icon-web"></i>
                 </a>
                 <br>
                 <br>
