@@ -41,6 +41,7 @@
             border: 1px solid rgba(212, 175, 55, 0.3);
             position: relative;
             overflow: visible;
+            min-height: 100vh;
         }
 
         .custom-card::before {
