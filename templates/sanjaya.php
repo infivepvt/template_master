@@ -223,11 +223,11 @@
 
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
-                        onclick="window.open('https://www.royalcanin.com', '_blank')">
+                        onclick="window.open('https://www.sigmavet.lk', '_blank')">
                         <img src="Images/icon/internet.png" alt=""
                             style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #FFFFFF; 'Montserrat', sans-serif; font-size:16px; font-size:16px;">www.royalcanin.com</span>
+                            style="color: #FFFFFF; 'Montserrat', sans-serif; font-size:16px; font-size:16px;">www.sigmavet.lk</span>
                     </button>
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
@@ -250,7 +250,7 @@
 
                 <div class="about-me">
                     <h3 style="font-size: 20px; font-family: 'Montserrat', sans-serif; margin-bottom: 10px; font-weight: bold; text-align: center;">About Me</h3>
-                    <p>Experienced Managing Director with an MBA, Veterinary Surgeon, BVSc Veterinary Medicine and Animal Science with a background in Pet Food, Veterinary Medicine, and Animal Science industries. Proven track record in developing strategies that drive revenue growth and profitability. Skilled in leading high-performance teams, managing complex supply chains, and building international partnerships. Expertise in project management, business restructuring, and delivering clear communication. Energetic, pragmatic, and culturally adaptable with strong sales and marketing skills.</p>
+                    <p>Experienced Managing Director with MBA and extensive experience in the Pet Food global technical & marketing, Veterinary Medicine & Animal Science industry who develops high-impact strategies that enhance revenue streams and generate profitable growth and operation of a company. A results-driven, capable to develop, motivate and lead high-performance teams in order to maximize company profitability and efficiency.</p>
                 </div>
 
                 <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:19px">CONNECT WITH SOCIAL MEDIA
@@ -287,7 +287,7 @@
                 phoneWork: "+94773699899",
                 email1: "drwasala@gmail.com",
                 email2: "md@sigmavet.lk",
-                website1: "www.royalcanin.com",
+                website1: "www.sigmavet.lk",
                 website2: "www.beaphar.com",
                 address: "No. 814, Negombo Rd, Malkaduwawa, Kurunegala, Sri Lanka.",
                 logo: "profile_img/client_profile/sanjaya-p.png",
