@@ -534,7 +534,7 @@
                 phoneMobile3: "0715874874",
                 email: "somarathnecroceylife@gmail.com",
                 email2: "rmsomarathne534@gmail.com",
-                website: "",
+                website: "https://app.ceylincolife.com/web/",
                 address: "https://maps.app.goo.gl/i7SnQPi71kw5eASS9",
                 about: "",
                 logo: "profile_img/client_profile/somarathne-p.png",
