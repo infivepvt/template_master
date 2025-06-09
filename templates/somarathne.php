@@ -16,9 +16,9 @@
         /* Container for the grid */
         .list-group1 {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-            gap: 20px;
-            margin-left: 14px;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 10px;
+            margin-left: 5px;
             background-color: black;
         }
 
@@ -28,29 +28,29 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 10px;
+            padding: 15px;
             border-radius: 8px;
             transition: transform 0.3s ease;
             cursor: pointer;
         }
 
         .list-group1 .col-12:hover {
-            transform: scale(1.25);
+            transform: scale(1.15);
         }
 
-        /* Icon styles */
+        /* Icon styles for general contact icons */
         .contact-icon1 {
-            font-size: 2rem;
+            font-size: 6rem;
             color: white;
-            margin-bottom: 10px;
+            margin-bottom: 0px;
         }
 
-        /* Text style */
+        /* Text style for general contact icons */
         .list-group1 .col-12 span {
             color: white;
-            font-size: 1rem;
+            font-size: 0.7rem;
             text-align: center;
-            margin-top: 5px;
+            margin-top: 0px;
         }
 
         .horizontal-line {
@@ -98,7 +98,6 @@
             width: 150px;
             height: 150px;
         }
-
 
         .custom-button {
             font-weight: bold;
@@ -188,27 +187,22 @@
         }
 
         .contact-icon {
-            font-size: 1.5rem;
+            font-size: 2rem;
             color: #fffefe;
         }
 
-        .custom-phone {
+        /* WhatsApp button adjustments */
+        .custom-phone1 {
+            height: 45px !important;
+            font-size: 1rem !important;
+            padding: 0 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             font-family: 'Roboto', sans-serif;
             font-weight: bold;
-            font-size: 1.2rem;
             color: white;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
-
-        .custom-phone1 {
-            font-family: 'Roboto', sans-serif;
-            font-weight: bold;
-            font-size: 1.2rem;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
-
-        .custom-phone1 {
             transition: background-color 0.1s, border-color 0.1s;
         }
 
@@ -217,11 +211,16 @@
             border-color: #128C7E;
         }
 
+        .custom-phone1 .fab {
+            font-size: 24px !important;
+            margin-right: 8px;
+        }
+
         /* Additional styles for the template */
         .card {
             width: 100%;
-            max-width: 600px;
-            border-radius: 15px;
+            min-height: 100vh;
+            border-radius: 0px;
             overflow: hidden;
         }
 
@@ -384,138 +383,122 @@
             color: #333;
         }
 
-        /* group Edit */
-
+        /* Group Edit for the individual contact icons */
         .contact {
             min-width: 20px;
-            font-size: 1.5rem;
+            font-size: 2rem;
             color: rgb(255, 255, 255);
         }
 
         .icon-text {
-            font-size: 1.2rem;
+            font-size: 1rem;
             color: rgb(248, 248, 248);
+            margin-top: 5px;
         }
     </style>
 </head>
 
 <body>
-    <div class="justify-content-center padding:0;">
+    <div class="justify-content-center padding:0; card">
         <div class="card-header custom-header text-center"
-    style="background-image: url('banner_img/client_banner/somarathne-b.jpeg'); background-size: cover; height: 200px; opacity: 1;">
-    <img src="logo_img/main_logo/template3-l.png" alt="Company Logo" class="custom-logo"
-        style="width: 0px; opacity: 1;">
-    </div>
+            style="background-image: url('banner_img/client_banner/somarathne-p.png'); background-size: cover; height: 250px; opacity: 1;">
+            <img src="logo_img/main_logo/template3-l.png" alt="Company Logo" class="custom-logo"
+                style="width: 0px; opacity: 1;">
+        </div>
 
-            <div class="card-body text-center" style="background-color: #000000; color:rgb(255, 255, 255);">
-                <br>
-                <div class="top">
-                    <img src="profile_img/client_profile/somarathne-p.png" alt="RM Somarathne">
+        <div class="card-body text-center" style="background-color: #000000; color:rgb(255, 255, 255);">
+            <br>
+            <div class="top">
+                <img src="profile_img/client_profile/somarathne-p.png" alt="RM Somarathne">
+            </div>
+
+            <h2 class="card-title1" style="font-size: 30px; color:rgb(255, 255, 255);margin-top: 2px;">RM Somarathne
+            </h2>
+            <p class="text-muted1">Customer Relation Officer</p>
+
+            <br>
+            <a href="https://wa.me/94775874874" target="_blank" rel="noopener noreferrer"
+                style="outline: none; text-decoration: none;">
+                <button class="btn w-100 mb-3 custom-phone1"
+                    style="background-color: #25D366; color: white; border: 2px solid orange; border-radius: 30px;">
+                    <i class="fab fa-whatsapp me-2"></i>
+                    CONNECT WITH WHATSAPP
+                </button>
+            </a>
+
+            <div class="list-group1 mb-4 row g-3" style="background-color: #000000;">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="tel:0764138850" class="icon d-flex align-items-center justify-content-center"
+                        style="text-decoration: none;">
+                        <i class="fas fa-phone contact-icon me-2 contact"></i>
+                    </a>
+                    <p class="icon-text">Official Call</p>
                 </div>
 
-                <h2 class="card-title1" style="font-size: 30px; color:rgb(255, 255, 255);margin-top: 2px;">RM Somarathne</h2>
-                <p class="text-muted1">Customer Relation Officer</p>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="tel:0775874874" class="icon d-flex align-items-center justify-content-center"
+                        style="text-decoration: none;">
+                        <i class="fas fa-mobile-alt contact-icon me-2 contact"></i>
+                    </a>
+                    <p class="icon-text">Mobile 1</p>
+                </div>
 
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="tel:0785874874" class="icon d-flex align-items-center justify-content-center"
+                        style="text-decoration: none;">
+                        <i class="fas fa-mobile-alt contact-icon me-2 contact"></i>
+                    </a>
+                    <p class="icon-text">Mobile 2</p>
+                </div>
 
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="tel:0715874874" class="icon d-flex align-items-center justify-content-center"
+                        style="text-decoration: none;">
+                        <i class="fas fa-mobile-alt contact-icon me-2 contact"></i>
+                    </a>
+                    <p class="icon-text">Mobile 3</p>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="mailto:somarathnecroceylife@gmail.com"
+                        class="icon d-flex align-items-center justify-content-center" style="text-decoration: none;">
+                        <i class="fas fa-envelope contact-icon me-2 contact"></i>
+                    </a>
+                    <p class="icon-text">Email 1</p>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="mailto:rmsomarathne534@gmail.com"
+                        class="icon d-flex align-items-center justify-content-center" style="text-decoration: none;">
+                        <i class="fas fa-envelope contact-icon me-2 contact"></i>
+                    </a>
+                    <p class="icon-text">Email 2</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="https://maps.app.goo.gl/i7SnQPi71kw5eASS9"
+                        class="icon d-flex align-items-center justify-content-center" style="text-decoration: none;">
+                        <i class="fas fa-map-marker-alt contact-icon me-2 contact"></i>
+                    </a>
+                    <p class="icon-text">Address</p>
+                </div>
+            </div>
+            <p class="fw" style="color: white;">CONNECT WITH SOCIAL MEDIA</p>
+            <div class="d-flex flex-wrap justify-content-center">
                 <br>
-                <a href="https://wa.me/94775874874" target="_blank" rel="noopener noreferrer">
-                    <button class="btn w-100 mb-3 custom-phone1" style="background-color: #25D366; color: white; height: 60px; border: 2px solid orange; border-radius: 30px;">
-                        <i class="fab fa-whatsapp me-2" style="font-size: 40px;"></i>
-                        CONNECT WITH WHATSAPP
-                    </button>
+                <a href="https://www.facebook.com/share/1ApYbcFxUp/" target="_blank" rel="noopener noreferrer"
+                    class="m-1">
+                    <i class="fab fa-facebook social-icon icon-facebook"></i>
                 </a>
-
-                <div class="horizontal-line"></div>
-
-                <div class="list-group1 mb-4 row g-3" style="background-color: #000000;">
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <a href="tel:0764138850" class="icon d-flex align-items-center justify-content-center"
-                            style="text-decoration: none;">
-                            <i class="fas fa-phone contact-icon me-2 contact"></i>
-                        </a>
-                        <p class="icon-text">Official Call</p>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <a href="tel:0775874874" class="icon d-flex align-items-center justify-content-center"
-                            style="text-decoration: none;">
-                            <i class="fas fa-mobile-alt contact-icon me-2 contact"></i>
-                        </a>
-                        <p class="icon-text">Mobile 1</p>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <a href="tel:0785874874" class="icon d-flex align-items-center justify-content-center"
-                            style="text-decoration: none;">
-                            <i class="fas fa-mobile-alt contact-icon me-2 contact"></i>
-                        </a>
-                        <p class="icon-text">Mobile 2</p>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <a href="tel:0715874874" class="icon d-flex align-items-center justify-content-center"
-                            style="text-decoration: none;">
-                            <i class="fas fa-mobile-alt contact-icon me-2 contact"></i>
-                        </a>
-                        <p class="icon-text">Mobile 3</p>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <a href="mailto:somarathnecroceylife@gmail.com"
-                            class="icon d-flex align-items-center justify-content-center"
-                            style="text-decoration: none;">
-                            <i class="fas fa-envelope contact-icon me-2 contact"></i>
-                        </a>
-                        <p class="icon-text">Email 1</p>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <a href="mailto:rmsomarathne534@gmail.com" class="icon d-flex align-items-center justify-content-center"
-                            style="text-decoration: none;">
-                            <i class="fas fa-envelope contact-icon me-2 contact"></i>
-                        </a>
-                        <p class="icon-text">Email 2</p>
-                    </div>
-                    <!--
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <a href="http://www.yourwebsiteaddress.com"
-                            class="icon d-flex align-items-center justify-content-center"
-                            style="text-decoration: none;">
-                            <i class="fas fa-globe contact-icon me-2 contact"></i>
-                        </a>
-                        <p class="icon-text">Website</p>
-                    </div>
-                     -->
-                    
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <a href="https://maps.app.goo.gl/i7SnQPi71kw5eASS9" class="icon d-flex align-items-center justify-content-center"
-                            style="text-decoration: none;">
-                            <i class="fas fa-map-marker-alt contact-icon me-2 contact"></i>
-                        </a>
-                        <p class="icon-text">Address</p>
-                    </div>
-                </div>
-
-                <p class="fw" style="color: white;">CONNECT WITH SOCIAL MEDIA</p>
-                <div class="d-flex flex-wrap justify-content-center">
-                    <a href="https://www.facebook.com/share/1ApYbcFxUp/" target="_blank" rel="noopener noreferrer" class="m-1">
-                        <i class="fab fa-facebook social-icon icon-facebook"></i>
-                    </a>
-                    <a href="https://www.instagram.com/rmsomarathne?igsh=MWQxdDZ1ZTJuNXVucw==" target="_blank" rel="noopener noreferrer" class="m-1">
-                        <i class="fab fa-instagram social-icon icon-instagram"></i>
-                    </a>
-                    <!--
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-1">
-                        <i class="fab fa-twitter social-icon icon-twitter"></i>
-                    </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="m-1">
-                        <i class="fab fa-linkedin social-icon icon-linkedin"></i>
-                    </a>
-                    -->
-                </div>
-        
+                <a href="https://www.instagram.com/rmsomarathne?igsh=MWQxdDZ1ZTJuNXVucw==" target="_blank"
+                    rel="noopener noreferrer" class="m-1">
+                    <i class="fab fa-instagram social-icon icon-instagram"></i>
+                </a>
+                <a href="https://youtube.com/@sathutavlog2710?si=NlZ7ZUTKHHSR-hfu" target="_blank" rel="noopener noreferrer"
+                    class="m-1">
+                    <i class="fab fa-youtube social-icon icon-youtube"></i>
+                </a>
                 <br>
-
+                <br>
                 <button id="saveContactBtn" class="btn w-100 custom-save-button" onclick="generateVCF()">
                     <i class="fas fa-save me-2"></i>
                     SAVE TO CONTACTS
@@ -524,30 +507,30 @@
         </div>
     </div>
 
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-   <script>
-    function generateVCF() {
-        // Updated contact information to match the business card
-        const contactData = {
-            firstName: "RM",
-            lastName: "Somarathne",
-            title: "Customer Relation Officer",
-            phoneWork: "0764138850",
-            phoneMobile: "0775874874",
-            phoneMobile2: "0785874874",
-            phoneMobile3: "0715874874",
-            email: "somarathnecroceylife@gmail.com",
-            email2: "rmsomarathne534@gmail.com",
-            website: "",
-            address: "https://maps.app.goo.gl/i7SnQPi71kw5eASS9",
-            about: "",
-            logo: "profile_img/client_profile/somarathne-p.png",
-            profileImage: "profile_img/client_profile/somarathne-p.png"
-        };
+    <script>
+        function generateVCF() {
+            // Updated contact information to match the business card
+            const contactData = {
+                firstName: "RM",
+                lastName: "Somarathne",
+                title: "Customer Relation Officer",
+                phoneWork: "0764138850",
+                phoneMobile: "0775874874",
+                phoneMobile2: "0785874874",
+                phoneMobile3: "0715874874",
+                email: "somarathnecroceylife@gmail.com",
+                email2: "rmsomarathne534@gmail.com",
+                website: "",
+                address: "https://maps.app.goo.gl/i7SnQPi71kw5eASS9",
+                about: "",
+                logo: "profile_img/client_profile/somarathne-p.png",
+                profileImage: "profile_img/client_profile/somarathne-p.png"
+            };
 
-        // Create VCF content
-        let vcfContent = `BEGIN:VCARD
+            // Create VCF content
+            let vcfContent = `BEGIN:VCARD
 VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
 N:${contactData.lastName};${contactData.firstName};;;
@@ -565,20 +548,21 @@ PHOTO;VALUE=URL:${contactData.profileImage}
 LOGO;VALUE=URL:${contactData.logo}
 END:VCARD`;
 
-        // Create download link
-        const blob = new Blob([vcfContent], { type: 'text/vcard' });
-        const url = URL.createObjectURL(blob);
+            // Create download link
+            const blob = new Blob([vcfContent], { type: 'text/vcard' });
+            const url = URL.createObjectURL(blob);
 
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-        document.body.appendChild(a);
-        a.click();
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+            document.body.appendChild(a);
+            a.click();
 
-        // Clean up
-        document.body.removeChild(a);
-        URL.revokeObjectURL(url);
-    }
-</script>
+            // Clean up
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+    </script>
 </body>
+
 </html>
