@@ -206,7 +206,7 @@
 
 <body>
     <div class="container"
-        style="background-image: url('banner_img/client_banner/gurusinghe-b.jpg'); background-size: cover; background-position: center; background-color: #16a384; height: 100%; opacity: 1; border-bottom-width: 1px; border-bottom-right-radius: 40%; border-bottom-left-radius: 40%; height: 200px;">
+        style="background-image: url('banner_img/client_banner/gurusinghe-b.jpg?g=0'); background-size: cover; background-position: center; background-color: #16a384; height: 100%; opacity: 1; border-bottom-width: 1px; border-bottom-right-radius: 40%; border-bottom-left-radius: 40%; height: 200px;">
         <div class="profile-header">
             <img src="profile_img/client_profile/gurusinghe-p.jpg" alt="Carl Protton" class="profile-image">
             <h1 style="color: #000000; font-family: 'Sanchez', sans-serif;">K.K.L. Sanjaya Gurusinghe </h1>
