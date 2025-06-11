@@ -197,6 +197,7 @@ $routes = [
     'edirisinghe' => 'templates/edirisinghe.php', 
     'muhammed' => 'templates/muhammed.php', 
     'cradlewell' => 'templates/cradlewell.php', 
+    'dk' => 'templates/dk.php', 
 ];
 
 // Handle the request
