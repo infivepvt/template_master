@@ -205,6 +205,7 @@ $routes = [
     'sampath' => 'templates/sampath.php', 
     'shantha' => 'templates/shantha.php', 
     'rameez' => 'templates/rameez.php', 
+    'travellers' => 'templates/travellers.php', 
     
 ];
 
