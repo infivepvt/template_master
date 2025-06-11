@@ -261,7 +261,7 @@
         <div class="header-banner">
             <div>
                 <h5>Welcome To D Tax Accounting</h5>
-                <h6>We Slove Tax And Accounting Problems</h6>
+                <h6>We Solve Tax And Accounting Problems</h6>
             </div>
         </div>
 
