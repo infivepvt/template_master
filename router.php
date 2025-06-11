@@ -200,6 +200,7 @@ $routes = [
     'dk' => 'templates/dk.php', 
     'shakila' => 'templates/shakila.php', 
     'lokesh' => 'templates/lokesh.php', 
+    'schenova' => 'templates/schenova.php', 
 ];
 
 // Handle the request
