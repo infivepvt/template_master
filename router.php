@@ -202,6 +202,7 @@ $routes = [
     'lokesh' => 'templates/lokesh.php', 
     'schenova' => 'templates/schenova.php', 
     'sudesh' => 'templates/sudesh.php', 
+    'sampath' => 'templates/sampath.php', 
 ];
 
 // Handle the request
