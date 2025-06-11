@@ -204,6 +204,8 @@ $routes = [
     'sudesh' => 'templates/sudesh.php', 
     'sampath' => 'templates/sampath.php', 
     'shantha' => 'templates/shantha.php', 
+    'rameez' => 'templates/rameez.php', 
+    
 ];
 
 // Handle the request
