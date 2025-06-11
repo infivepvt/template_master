@@ -473,7 +473,7 @@
                 <img src="" alt="" class="custom-logo"
                     style="width: 100px; opacity: 1;">
                 <div class="profile-picture75">
-                    <img src="profile_img/client_profile/muhammed-p.png" alt="Shihab Muhammed" class="rounded-circle">
+                    <img src="profile_img/client_profile/muhammed-p.png" alt="Shihab muhammed" class="rounded-circle">
                 </div>
             </div>
             <br><br>
@@ -482,7 +482,7 @@
                 SAVE TO CONTACTS
             </button>
             <div class="card-body text-left" style="background-color: #000000; color: #000000;">
-                <h2 class="card-title" style="font-size: 30px;color:rgb(255, 255, 255);">Shihab Muhammed</h2>
+                <h2 class="card-title" style="font-size: 30px;color:rgb(255, 255, 255);">Shihab muhammed</h2>
                 <p style="color:rgb(255, 255, 255); font-size: 20px;">Founder and CEO <br> DecoWoody Manufacturing Pvt Ltd</p>
                 <a href="https://wa.me/94755555653" target="_blank" rel="noopener noreferrer"
                     style="text-decoration: none;">
@@ -548,23 +548,23 @@
                         </div>
                     </div>
                     <div class="gallery-container" id="galleryContainer">
-                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/Muhammed/muhammed-g1.jpeg')">
-                            <img src="gallery_img/client_gallerys/Muhammed/muhammed-g1.jpeg" alt="Gallery Image 1" class="gallery-image">
+                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/muhammed/muhammed-g1.jpeg')">
+                            <img src="gallery_img/client_gallerys/muhammed/muhammed-g1.jpeg" alt="Gallery Image 1" class="gallery-image">
                         </div>
-                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/Muhammed/muhammed-g2.jpeg')">
-                            <img src="gallery_img/client_gallerys/Muhammed/muhammed-g2.jpeg" alt="Gallery Image 2" class="gallery-image">
+                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/muhammed/muhammed-g2.jpeg')">
+                            <img src="gallery_img/client_gallerys/muhammed/muhammed-g2.jpeg" alt="Gallery Image 2" class="gallery-image">
                         </div>
-                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/Muhammed/muhammed-g3.jpeg')">
-                            <img src="gallery_img/client_gallerys/Muhammed/muhammed-g3.jpeg" alt="Gallery Image 3" class="gallery-image">
+                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/muhammed/muhammed-g3.jpeg')">
+                            <img src="gallery_img/client_gallerys/muhammed/muhammed-g3.jpeg" alt="Gallery Image 3" class="gallery-image">
                         </div>
-                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/Muhammed/muhammed-g4.jpeg')">
-                            <img src="gallery_img/client_gallerys/Muhammed/muhammed-g4.jpeg" alt="Gallery Image 4" class="gallery-image">
+                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/muhammed/muhammed-g4.jpeg')">
+                            <img src="gallery_img/client_gallerys/muhammed/muhammed-g4.jpeg" alt="Gallery Image 4" class="gallery-image">
                         </div>
-                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/Muhammed/muhammed-g5.jpeg')">
-                            <img src="gallery_img/client_gallerys/Muhammed/muhammed-g5.jpeg" alt="Gallery Image 5" class="gallery-image">
+                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/muhammed/muhammed-g5.jpeg')">
+                            <img src="gallery_img/client_gallerys/muhammed/muhammed-g5.jpeg" alt="Gallery Image 5" class="gallery-image">
                         </div>
-                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/Muhammed/muhammed-g6.jpeg')">
-                            <img src="gallery_img/client_gallerys/Muhammed/muhammed-g6.jpeg" alt="Gallery Image 6" class="gallery-image">
+                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/muhammed/muhammed-g6.jpeg')">
+                            <img src="gallery_img/client_gallerys/muhammed/muhammed-g6.jpeg" alt="Gallery Image 6" class="gallery-image">
                         </div>
                     </div>
                 </div>
@@ -586,12 +586,12 @@
 <script>
     // Gallery images array
     const galleryImages = [
-        'gallery_img/client_gallerys/Muhammed/muhammed-g1.jpeg',
-        'gallery_img/client_gallerys/Muhammed/muhammed-g2.jpeg',
-        'gallery_img/client_gallerys/Muhammed/muhammed-g3.jpeg',
-        'gallery_img/client_gallerys/Muhammed/muhammed-g4.jpeg',
-        'gallery_img/client_gallerys/Muhammed/muhammed-g5.jpeg',
-        'gallery_img/client_gallerys/Muhammed/muhammed-g6.jpeg'
+        'gallery_img/client_gallerys/muhammed/muhammed-g1.jpeg',
+        'gallery_img/client_gallerys/muhammed/muhammed-g2.jpeg',
+        'gallery_img/client_gallerys/muhammed/muhammed-g3.jpeg',
+        'gallery_img/client_gallerys/muhammed/muhammed-g4.jpeg',
+        'gallery_img/client_gallerys/muhammed/muhammed-g5.jpeg',
+        'gallery_img/client_gallerys/muhammed/muhammed-g6.jpeg'
     ];
 
     let currentImageIndex = 0;
@@ -599,7 +599,7 @@
     async function generateVCF() {
         const contactData = {
             firstName: "Shihab",
-            lastName: "Muhammed",
+            lastName: "muhammed",
             title: "Founder and CEO, DecoWoody Manufacturing Pvt Ltd",
             phoneWork: "+94 75 555 5653",
             phoneMobile: "+94 76 070 3767",
