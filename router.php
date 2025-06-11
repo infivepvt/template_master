@@ -203,6 +203,7 @@ $routes = [
     'schenova' => 'templates/schenova.php', 
     'sudesh' => 'templates/sudesh.php', 
     'sampath' => 'templates/sampath.php', 
+    'shantha' => 'templates/shantha.php', 
 ];
 
 // Handle the request
