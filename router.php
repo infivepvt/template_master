@@ -199,6 +199,7 @@ $routes = [
     'cradlewell' => 'templates/cradlewell.php', 
     'dk' => 'templates/dk.php', 
     'shakila' => 'templates/shakila.php', 
+    'lokesh' => 'templates/lokesh.php', 
 ];
 
 // Handle the request
