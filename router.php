@@ -196,6 +196,7 @@ $routes = [
     'ifixpro' => 'templates/ifixpro.php', 
     'edirisinghe' => 'templates/edirisinghe.php', 
     'muhammed' => 'templates/muhammed.php', 
+    'cradlewell' => 'templates/cradlewell.php', 
 ];
 
 // Handle the request
