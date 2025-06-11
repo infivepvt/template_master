@@ -79,7 +79,7 @@
         }
 
         .custom-save-button75 {
-            background: #3C2F2F80; /* Semi-transparent wood brown */
+            background: #1A3C3C; /* Dark green from image */
             color: white;
             font-weight: bold;
             border: none;
@@ -90,7 +90,7 @@
         }
  
         .custom-save-button75:hover {
-            background: #4A372880;
+            background: #204848; /* Slightly lighter dark green */
         }
 
         .save-icon {
@@ -344,19 +344,19 @@
 
         /* contact details */
         .contact {
-    background-color: #3C2F2F80; 
-    color: #fff;
-    border: none; 
-    border-radius: 8px;
-    margin-bottom: 10px;
-    padding: 10px 15px;
-}
+            background-color: #1A3C3C; /* Dark green from image */
+            color: #fff;
+            border: none; 
+            border-radius: 8px;
+            margin-bottom: 10px;
+            padding: 10px 15px;
+        }
 
-.contact:hover {
-    background-color: #4A372880; 
-    border: none;
-    transition: background-color 0.3s;
-}
+        .contact:hover {
+            background-color: #204848; /* Slightly lighter dark green */
+            border: none;
+            transition: background-color 0.3s;
+        }
 
         /* gallery */
         .gallery-section {
