@@ -195,6 +195,7 @@ $routes = [
     'dorit-dimand' => 'templates/dorit-dimand.php', 
     'ifixpro' => 'templates/ifixpro.php', 
     'edirisinghe' => 'templates/edirisinghe.php', 
+    'muhammed' => 'templates/muhammed.php', 
 ];
 
 // Handle the request
