@@ -88,7 +88,7 @@
             margin-top: -30px;
             transition: background 0.3s;
         }
-
+ 
         .custom-save-button75:hover {
             background: #4A372880;
         }
@@ -344,8 +344,19 @@
 
         /* contact details */
         .contact {
-            background-color: #4A3728;
-        }
+    background-color: #3C2F2F80; 
+    color: #fff;
+    border: none; 
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+}
+
+.contact:hover {
+    background-color: #4A372880; 
+    border: none;
+    transition: background-color 0.3s;
+}
 
         /* gallery */
         .gallery-section {
@@ -473,7 +484,7 @@
                 <img src="" alt="" class="custom-logo"
                     style="width: 100px; opacity: 1;">
                 <div class="profile-picture75">
-                    <img src="profile_img/client_profile/muhammed-p.png" alt="Shihab muhammed" class="rounded-circle">
+                    <img src="profile_img/client_profile/muhammed-p.png" alt="Shihab Muhammed" class="rounded-circle">
                 </div>
             </div>
             <br><br>
@@ -482,7 +493,7 @@
                 SAVE TO CONTACTS
             </button>
             <div class="card-body text-left" style="background-color: #000000; color: #000000;">
-                <h2 class="card-title" style="font-size: 30px;color:rgb(255, 255, 255);">Shihab muhammed</h2>
+                <h2 class="card-title" style="font-size: 30px;color:rgb(255, 255, 255);">Shihab Muhammed</h2>
                 <p style="color:rgb(255, 255, 255); font-size: 20px;">Founder and CEO <br> DecoWoody Manufacturing Pvt Ltd</p>
                 <a href="https://wa.me/94755555653" target="_blank" rel="noopener noreferrer"
                     style="text-decoration: none;">
@@ -599,7 +610,7 @@
     async function generateVCF() {
         const contactData = {
             firstName: "Shihab",
-            lastName: "muhammed",
+            lastName: "Muhammed",
             title: "Founder and CEO, DecoWoody Manufacturing Pvt Ltd",
             phoneWork: "+94 75 555 5653",
             phoneMobile: "+94 76 070 3767",
