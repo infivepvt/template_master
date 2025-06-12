@@ -106,6 +106,10 @@
             color: var(--light);
             margin-bottom: 8px;
             letter-spacing: -0.5px;
+            text-wrap: wrap;
+            /* This is fine, but not necessary as it's the default */
+            white-space: normal;
+            /* Override nowrap from parent */
         }
 
         .company-tagline {
@@ -322,7 +326,7 @@
 
         @media (max-width: 480px) {
             .company-name {
-                font-size: 24px;
+                font-size: 22px;
             }
 
             .card-header {
