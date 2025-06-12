@@ -17,14 +17,17 @@
         }
 
         .custom-header {
-            background-size: cover;    
+            background-size: contain; /* Ensures the entire image is visible */
             background-position: center;
             background-repeat: no-repeat;
             padding: 35px 20px;
             width: 100%;
-            height: 250px;
-            position: relative; /* Make header a positioned ancestor */
+            height: 250px; /* Fixed height for consistency */
+            position: relative;
+            min-height: 250px;
+            background-attachment: scroll;
         }
+
         .custom-logo {
             width: 200px;
             position: relative;
@@ -38,6 +41,7 @@
             top: 95%;
             left: 20%;
             transform: translate(-50%, -50%);
+            margin-top: 20px;
         }
 
         .profile-picture75 img {
@@ -254,7 +258,16 @@
             .gallery-container {
                 grid-template-columns: repeat(2, 1fr);
             }
+
+            .custom-header {
+                height: 200px; /* Reduce height for smaller screens */
+                min-height: 200px;
+                background-size: contain; /* Maintain full image visibility */
+                padding: 20px 10px; /* Adjust padding for smaller screens */
+            }
         }
+
+      
     </style>
 </head>
 
@@ -262,7 +275,7 @@
     <div class="d-flex justify-content-center">
         <div class="card custom-card75 shadow-lg" style="background-color: #00114b;">
             <div class="card-header custom-header text-center"
-                style="background-image: url('banner_img/client_banner/dk-b.jpg'); opacity: 1;">
+                style="background-image: url('banner_img/client_banner/dk-b.jpg'); opacity: 1; height: 220px;">
                 <img src="" alt="" class="custom-logo"
                     style="width: 100px; opacity: 1;">
                 <div class="profile-picture75">
