@@ -568,7 +568,7 @@
 <body>
     <div class="d-flex justify-content-center">
         <div class="card custom-card75 shadow-lg rounded-0" style="background-color: #00114b;">
-            <div class="card-header custom-header text-center" style="background-image: url('banner_img/client_banner/liveu-b.webp');">
+            <div class="card-header custom-header text-center" style="background-image: url('banner_img/client_banner/liveu-b.webp?id');">
                 <img src="logo_img/client_logo/liveu-l.png" alt="Company Logo" class="custom-logo">
                 <div class="profile-picture75">
                     <img src="profile_img/client_profile/liveu-p.png" alt="M.M.M. Rameez" class="rounded-circle">
