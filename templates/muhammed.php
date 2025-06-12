@@ -12,10 +12,9 @@
         .custom-card75 {
             border-radius: 1px;
             overflow: hidden;
-            background: #EAD9C7; /* Light wood-inspired background */
+            background: #010e12; /* Changed from #EAD9C7 */
             width: 450px;
             height: auto;
-            margin-top: -55px;
         }
 
         .custom-header {
@@ -64,7 +63,7 @@
             margin-bottom: 5px;
         }
         .list-group-item {
-            background-color: #4A3728; /* Darker wood tone */
+            background-color: #4A3728;
             color: #fff;
             border-radius: 8px;
             margin-bottom: 10px;
@@ -79,7 +78,7 @@
         }
 
         .custom-save-button75 {
-            background: #1A3C3C; /* Dark green from image */
+            background: #1A3C3C;
             color: white;
             font-weight: bold;
             border: none;
@@ -90,7 +89,7 @@
         }
  
         .custom-save-button75:hover {
-            background: #204848; /* Slightly lighter dark green */
+            background: #204848;
         }
 
         .save-icon {
@@ -125,7 +124,6 @@
             border-color: #128C7E;
         }
 
-        /* Image Preview Modal */
         .image-preview-modal .modal-content {
             background: transparent;
             border: none;
@@ -168,7 +166,6 @@
             transform: scale(1.2);
         }
 
-        /* Navigation Buttons */
         .nav-btn {
             position: absolute;
             top: 50%;
@@ -177,7 +174,7 @@
             border: none;
             color: white;
             font-size: 24px;
-            padding: 10px;
+            padding: 周年;
             cursor: pointer;
             transition: background 0.3s ease;
         }
@@ -194,7 +191,6 @@
             right: 10px;
         }
 
-        /* Backdrop effect */
         .modal-backdrop.show {
             opacity: 0.9;
             background: #000;
@@ -223,7 +219,6 @@
             }
         }
 
-        /* Mobile responsive adjustments */
         @media (max-width: 768px) {
             .modal-close-btn {
                 top: -25px;
@@ -342,23 +337,21 @@
             50% { transform: translateY(3px); }
         }
 
-        /* contact details */
         .contact {
-            background-color: #1A3C3C; /* Dark green from image */
+            background-color: #1A3C3C;
             color: #fff;
             border: none; 
             border-radius: 8px;
             margin-bottom: 10px;
-            padding: 10px 15px;
+            padding: 10px 15px; 
         }
 
         .contact:hover {
-            background-color: #204848; /* Slightly lighter dark green */
+            background-color: #204848;
             border: none;
             transition: background-color 0.3s;
         }
 
-        /* gallery */
         .gallery-section {
             padding: 20px;
         }
@@ -409,7 +402,6 @@
             transform: scale(1.05);
         }
 
-        /* Lightbox styles */
         .lightbox {
             display: none;
             position: fixed;
@@ -471,16 +463,14 @@
             filter: brightness(1.1);
             cursor: pointer;
         }
-
-        /* gallery */
     </style>
 </head>
 
 <body>
-    <div class="d-flex justify-content-center mt-5">
-        <div class="card custom-card75 shadow-lg" style="background-color: #000000;">
+    <div class="d-flex justify-content-center">
+        <div class="card custom-card75 shadow-lg" style="background-color: #010e12;">
             <div class="card-header custom-header text-center"
-                style="background-image: url('banner_img/client_banner/muhammed-b.png'); height: 150px; opacity: 1;">
+                style="background-image: url('banner_img/client_banner/muhammed-b.png'); height: 190px; opacity: 1;">
                 <img src="" alt="" class="custom-logo"
                     style="width: 100px; opacity: 1;">
                 <div class="profile-picture75">
@@ -492,7 +482,7 @@
                 <i class="fas fa-save me-2"></i>
                 SAVE TO CONTACTS
             </button>
-            <div class="card-body text-left" style="background-color: #000000; color: #000000;">
+            <div class="card-body text-left" style="background-color: #010e12; color: #000000;">
                 <h2 class="card-title" style="font-size: 30px;color:rgb(255, 255, 255);">Shihab Muhammed</h2>
                 <p style="color:rgb(255, 255, 255); font-size: 20px;">Founder and CEO <br> DecoWoody Manufacturing Pvt Ltd</p>
                 <a href="https://wa.me/94755555653" target="_blank" rel="noopener noreferrer"
@@ -550,7 +540,6 @@
                         <img src="Images/Social_Media_Icon/instagram.png" alt="" style="width: 50px; height: 50px;">
                     </a>
                 </div>
-                <!-- Gallery Section -->
                 <div class="gallery-section" style="margin-top: -10px;">
                     <div class="gallery-header" onclick="toggleGallery()">
                         <div class="gallery-title">Gallery</div>
@@ -594,170 +583,163 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-    // Gallery images array
-    const galleryImages = [
-        'gallery_img/client_gallerys/muhammed/muhammed-g1.jpeg',
-        'gallery_img/client_gallerys/muhammed/muhammed-g2.jpeg',
-        'gallery_img/client_gallerys/muhammed/muhammed-g3.jpeg',
-        'gallery_img/client_gallerys/muhammed/muhammed-g4.jpeg',
-        'gallery_img/client_gallerys/muhammed/muhammed-g5.jpeg',
-        'gallery_img/client_gallerys/muhammed/muhammed-g6.jpeg'
-    ];
-
-    let currentImageIndex = 0;
-
-    async function generateVCF() {
-        const contactData = {
-            firstName: "Shihab",
-            lastName: "Muhammed",
-            title: "Founder and CEO, DecoWoody Manufacturing Pvt Ltd",
-            phoneWork: "+94 75 555 5653",
-            phoneMobile: "+94 76 070 3767",
-            email: "decowoody.info@gmail.com",
-            email2: "",
-            email3: "",
-            website: "https://www.decowoody.lk",
-            website2: "",
-            website3: "",
-            address: "No. 17 Jawa Street, Kinniya, Trincomalee, Sri Lanka 31100",
-            address2: "",
-            about: "",
-            logo: "https://tapilinq.com/profile_img/client_profile/muhammed-p.png",
-            profileImage: "https://tapilinq.com/profile_img/client_profile/muhammed-p.png"
-        };
-
-        const toBase64 = async (url) => {
-            const response = await fetch(url);
-            const blob = await response.blob();
-            return new Promise((resolve, reject) => {
-                const reader = new FileReader();
-                reader.onloadend = () => resolve(reader.result.split(',')[1]);
-                reader.onerror = reject;
-                reader.readAsDataURL(blob);
-            });
-        };
-
-        let photoBase64 = '';
-        try {
-            photoBase64 = await toBase64(contactData.profileImage);
-        } catch (error) {
-            console.error("Failed to load image for VCF:", error);
-        }
-
-        let vcfLines = [
-            "BEGIN:VCARD",
-            "VERSION:3.0",
-            `FN:${contactData.firstName} ${contactData.lastName}`,
-            `N:${contactData.lastName};${contactData.firstName};;;`,
+    <script>
+        const galleryImages = [
+            'gallery_img/client_gallerys/muhammed/muhammed-g1.jpeg',
+            'gallery_img/client_gallerys/muhammed/muhammed-g2.jpeg',
+            'gallery_img/client_gallerys/muhammed/muhammed-g3.jpeg',
+            'gallery_img/client_gallerys/muhammed/muhammed-g4.jpeg',
+            'gallery_img/client_gallerys/muhammed/muhammed-g5.jpeg',
+            'gallery_img/client_gallerys/muhammed/muhammed-g6.jpeg'
         ];
 
-        if (contactData.title) vcfLines.push(`TITLE:${contactData.title}`);
-        if (contactData.phoneWork) vcfLines.push(`TEL;TYPE=WORK,VOICE:${contactData.phoneWork}`);
-        if (contactData.phoneMobile) vcfLines.push(`TEL;TYPE=CELL:${contactData.phoneMobile}`);
-        if (contactData.email) vcfLines.push(`EMAIL:${contactData.email}`);
-        if (contactData.email2) vcfLines.push(`EMAIL:${contactData.email2}`);
-        if (contactData.email3) vcfLines.push(`EMAIL:${contactData.email3}`);
-        if (contactData.website) vcfLines.push(`URL:${contactData.website}`);
-        if (contactData.website2) vcfLines.push(`URL:${contactData.website2}`);
-        if (contactData.website3) vcfLines.push(`URL:${contactData.website3}`);
-        if (contactData.address) vcfLines.push(`ADR;TYPE=WORK:;;${contactData.address}`);
-        if (contactData.address2) vcfLines.push(`ADR;TYPE=HOME:;;${contactData.address2}`);
-        if (contactData.about) vcfLines.push(`NOTE:${contactData.about}`);
+        let currentImageIndex = 0;
 
-        if (photoBase64) {
-            vcfLines.push(`PHOTO;ENCODING=b;TYPE=JPEG:${photoBase64}`);
+        async function generateVCF() {
+            const contactData = {
+                firstName: "Shihab",
+                lastName: "Muhammed",
+                title: "Founder and CEO, DecoWoody Manufacturing Pvt Ltd",
+                phoneWork: "+94 75 555 5653",
+                phoneMobile: "+94 76 070 3767",
+                email: "decowoody.info@gmail.com",
+                email2: "",
+                email3: "",
+                website: "https://www.decowoody.lk",
+                website2: "",
+                website3: "",
+                address: "No. 17 Jawa Street, Kinniya, Trincomalee, Sri Lanka 31100",
+                address2: "",
+                about: "",
+                logo: "https://tapilinq.com/profile_img/client_profile/muhammed-p.png",
+                profileImage: "https://tapilinq.com/profile_img/client_profile/muhammed-p.png"
+            };
+
+            const toBase64 = async (url) => {
+                const response = await fetch(url);
+                const blob = await response.blob();
+                return new Promise((resolve, reject) => {
+                    const reader = new FileReader();
+                    reader.onloadend = () => resolve(reader.result.split(',')[1]);
+                    reader.onerror = reject;
+                    reader.readAsDataURL(blob);
+                });
+            };
+
+            let photoBase64 = '';
+            try {
+                photoBase64 = await toBase64(contactData.profileImage);
+            } catch (error) {
+                console.error("Failed to load image for VCF:", error);
+            }
+
+            let vcfLines = [
+                "BEGIN:VCARD",
+                "VERSION:3.0",
+                `FN:${contactData.firstName} ${contactData.lastName}`,
+                `N:${contactData.lastName};${contactData.firstName};;;`,
+            ];
+
+            if (contactData.title) vcfLines.push(`TITLE:${contactData.title}`);
+            if (contactData.phoneWork) vcfLines.push(`TEL;TYPE=WORK,VOICE:${contactData.phoneWork}`);
+            if (contactData.phoneMobile) vcfLines.push(`TEL;TYPE=CELL:${contactData.phoneMobile}`);
+            if (contactData.email) vcfLines.push(`EMAIL:${contactData.email}`);
+            if (contactData.email2) vcfLines.push(`EMAIL:${contactData.email2}`);
+            if (contactData.email3) vcfLines.push(`EMAIL:${contactData.email3}`);
+            if (contactData.website) vcfLines.push(`URL:${contactData.website}`);
+            if (contactData.website2) vcfLines.push(`URL:${contactData.website2}`);
+            if (contactData.website3) vcfLines.push(`URL:${contactData.website3}`);
+            if (contactData.address) vcfLines.push(`ADR;TYPE=WORK:;;${contactData.address}`);
+            if (contactData.address2) vcfLines.push(`ADR;TYPE=HOME:;;${contactData.address2}`);
+            if (contactData.about) vcfLines.push(`NOTE:${contactData.about}`);
+
+            if (photoBase64) {
+                vcfLines.push(`PHOTO;ENCODING=b;TYPE=JPEG:${photoBase64}`);
+            }
+
+            vcfLines.push("END:VCARD");
+
+            const vcfContent = vcfLines.join('\n');
+
+            const blob = new Blob([vcfContent], {
+                type: 'text/vcard'
+            });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
         }
 
-        vcfLines.push("END:VCARD");
+        function toggleGallery() {
+            const galleryContainer = document.getElementById('galleryContainer');
+            const galleryToggle = document.getElementById('galleryToggle');
 
-        const vcfContent = vcfLines.join('\n');
-
-        const blob = new Blob([vcfContent], {
-            type: 'text/vcard'
-        });
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-        URL.revokeObjectURL(url);
-    }
-
-    // Toggle gallery visibility
-    function toggleGallery() {
-        const galleryContainer = document.getElementById('galleryContainer');
-        const galleryToggle = document.getElementById('galleryToggle');
-
-        if (galleryContainer.style.display === 'none') {
-            galleryContainer.style.display = 'grid';
-            galleryToggle.innerHTML = '<i class="fas fa-minus"></i>';
-        } else {
-            galleryContainer.style.display = 'none';
-            galleryToggle.innerHTML = '<i class="fas fa-plus"></i>';
-        }
-    }
-
-    // Lightbox functions
-    function openLightbox(imageSrc) {
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImage = document.getElementById('lightbox-image');
-
-        currentImageIndex = galleryImages.indexOf(imageSrc);
-        lightboxImage.src = imageSrc;
-        lightbox.style.display = 'flex';
-        document.body.style.overflow = 'hidden';
-    }
-
-    function closeLightbox() {
-        const lightbox = document.getElementById('lightbox');
-        lightbox.style.display = 'none';
-        document.body.style.overflow = 'auto';
-    }
-
-    function changeImage(step) {
-        currentImageIndex += step;
-        if (currentImageIndex >= galleryImages.length) {
-            currentImageIndex = 0;
-        } else if (currentImageIndex < 0) {
-            currentImageIndex = galleryImages.length - 1;
-        }
-        document.getElementById('lightbox-image').src = galleryImages[currentImageIndex];
-    }
-
-    // Close lightbox when clicking outside the image
-    document.getElementById('lightbox').addEventListener('click', function(e) {
-        if (e.target === this) {
-            closeLightbox();
-        }
-    });
-
-    // Keyboard navigation
-    document.addEventListener('keydown', function(e) {
-        const lightbox = document.getElementById('lightbox');
-        if (lightbox.style.display === 'flex') {
-            if (e.key === 'Escape') {
-                closeLightbox();
-            } else if (e.key === 'ArrowLeft') {
-                changeImage(-1);
-            } else if (e.key === 'ArrowRight') {
-                changeImage(1);
+            if (galleryContainer.style.display === 'none') {
+                galleryContainer.style.display = 'grid';
+                galleryToggle.innerHTML = '<i class="fas fa-minus"></i>';
+            } else {
+                galleryContainer.style.display = 'none';
+                galleryToggle.innerHTML = '<i class="fas fa-plus"></i>';
             }
         }
-    });
 
-    // Save to Contacts functionality
-    document.getElementById('saveContactBtn').addEventListener('click', function () {
-        generateVCF();
-    });
+        function openLightbox(imageSrc) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.getElementById('lightbox-image');
 
-    // Initialize gallery as visible
-    document.addEventListener('DOMContentLoaded', function () {
-        document.getElementById('galleryContainer').style.display = 'grid';
-    });
-</script>
+            currentImageIndex = galleryImages.indexOf(imageSrc);
+            lightboxImage.src = imageSrc;
+            lightbox.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        function changeImage(step) {
+            currentImageIndex += step;
+            if (currentImageIndex >= galleryImages.length) {
+                currentImageIndex = 0;
+            } else if (currentImageIndex < 0) {
+                currentImageIndex = galleryImages.length - 1;
+            }
+            document.getElementById('lightbox-image').src = galleryImages[currentImageIndex];
+        }
+
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeLightbox();
+            }
+        });
+
+        document.addEventListener('keydown', function(e) {
+            const lightbox = document.getElementById('lightbox');
+            if (lightbox.style.display === 'flex') {
+                if (e.key === 'Escape') {
+                    closeLightbox();
+                } else if (e.key === 'ArrowLeft') {
+                    changeImage(-1);
+                } else if (e.key === 'ArrowRight') {
+                    changeImage(1);
+                }
+            }
+        });
+
+        document.getElementById('saveContactBtn').addEventListener('click', function () {
+            generateVCF();
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('galleryContainer').style.display = 'grid';
+        });
+    </script>
 </body>
 
 </html>
