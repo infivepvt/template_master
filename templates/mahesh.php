@@ -237,24 +237,23 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    function generateVCF() {
+        const contactData = {
+            firstName: "Manjula",
+            lastName: "Kithsiri",
+            title: "Leasing Operation",
+            organization: "Saubhagya Co-op Bank, Kegalla",
+            phoneWork: "+94 71 494 9880",
+            phoneMobile: "+94 71 931 6766",
+            email: "slicmanjula@gmail.com",
+            telegram: "https://t.me/+94714949880",
+            address: "Kegalla, Sri Lanka",
+            profileImage: "profile_img/client_profile/mahesh-p.png" // Use the correct path
+        };
 
-    <script>
-        function generateVCF() {
-            const contactData = {
-                firstName: "Manjula",
-                lastName: "Kithsiri",
-                title: "Leasing Operation",
-                organization: "Saubhagya Co-op Bank, Kegalla",
-                phoneWork: "+94 71 494 9880",
-                phoneMobile: "+94 71 931 6766",
-                email: "slicmanjula@gmail.com",
-                telegram: "https://t.me/+94714949880",
-                address: "Kegalla, Sri Lanka",
-                logo: "https://tapilinq.com/profile_img/client_profile/mahesh-p.png",
-                profileImage: "https://tapilinq.com/profile_img/client_mahesh-p.png"
-            };
-
-            let vcfContent = `BEGIN:VCARD
+        // Create the VCF content with proper image handling
+        let vcfContent = `BEGIN:VCARD
 VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
 N:${contactData.lastName};${contactData.firstName};;;
@@ -265,22 +264,21 @@ TEL;TYPE=CELL:${contactData.phoneMobile}
 EMAIL:${contactData.email}
 URL:${contactData.telegram}
 ADR;TYPE=WORK:;;${contactData.address}
-PHOTO;VALUE=URL:${contactData.profileImage}
-LOGO;VALUE=URL:${contactData.logo}
+PHOTO;ENCODING=b;TYPE=JPEG:${contactData.profileImage}
 END:VCARD`;
 
-            const blob = new Blob([vcfContent], { type: 'text/vcard' });
-            const url = URL.createObjectURL(blob);
+        const blob = new Blob([vcfContent], { type: 'text/vcard' });
+        const url = URL.createObjectURL(blob);
 
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-            document.body.appendChild(a);
-            a.click();
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+        document.body.appendChild(a);
+        a.click();
 
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
-        }
-    </script>
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    }
+</script>
 </body>
 </html>
