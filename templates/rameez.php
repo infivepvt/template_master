@@ -23,21 +23,20 @@
             position: relative;
             width: 100%;
             aspect-ratio: 16/9;
-            /* background-color: rgba(255, 255, 255, 0.9); */
         }
 
         .custom-logo {
             width: 130px;
-            position: relative;
-            top: 0;
-            left: -10px;
+            position: absolute;
+            top: 22px;
+            right: 20px;
             margin-bottom: 40px;
         }
 
         .profile-picture75 {
             position: absolute;
             top: 95%;
-            left: 20%;
+            left: 50%;
             transform: translate(-50%, -50%);
         }
 
@@ -292,7 +291,7 @@
                 font-size: 24px;
             }
 
-            .\BigBrainimage-preview-modal img {
+            .image-preview-modal img {
                 max-width: 95vw;
                 max-height: 95vh;
             }
@@ -327,7 +326,7 @@
             position: relative;
             overflow: hidden;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6x rgba(0, 0, 0, 0.1);
             border: 2px solid transparent;
             text-align: center;
         }
@@ -574,7 +573,7 @@
                     <img src="profile_img/client_profile/liveu-p.png" alt="M.M.M. Rameez" class="rounded-circle">
                 </div>
             </div>
-            <br><br>
+            <br><br><br><br>
             <button class="btn w-50 custom-save-button75" id="saveContactBtn">
                 <i class="fas fa-save me-2"></i>
                 SAVE TO CONTACTS
@@ -590,34 +589,40 @@
                 </a>
                 <div class="list-group mb-3">
                     <button type="button" class="list-group-item d-flex align-items-center justify-content-between contact" onclick="window.open('tel:0710331718', '_self')">
-                        <img src="Images/icon/phone.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
+                        <img src="Images/icon/phone.png" alt="Phone" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone" style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">071 033 1718</span>
                     </button>
 
                     <button type="button" class="list-group-item d-flex align-items-center justify-content-between contact" onclick="window.open('tel:0117780000', '_self')">
-                        <img src="Images/icon/phone.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
+                        <img src="Images/icon/phone.png" alt="Phone" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone" style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">011 778 0000</span>
                     </button>
 
                     <button type="button" class="list-group-item d-flex align-items-center justify-content-between contact" onclick="window.open('mailto:rameez@liveu.lk', '_self')">
-                        <img src="Images/icon/mail.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
+                        <img src="Images/icon/mail.png" alt="Email" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone" style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">rameez@liveu.lk</span>
                     </button>
 
                     <button type="button" class="list-group-item d-flex align-items-center justify-content-between contact" onclick="window.open('https://www.liveu.lk', '_blank')">
-                        <img src="Images/icon/internet.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
+                        <img src="Images/icon/internet.png" alt="Website" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone" style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">liveu.lk</span>
                     </button>
 
                     <button type="button" class="list-group-item d-flex align-items-center justify-content-between contact" onclick="window.open('https://www.google.com/maps/search/?api=1&query=No+44+T13+T14+Dedicated+Economic+Center+Kirimandala+Mawatha+Colombo+5', '_blank')">
-                        <img src="Images/icon/map.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
+                        <img src="Images/icon/map.png" alt="Location" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone" style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">No: 44, T13, T14, Dedicated Economic Center, Kirimandala Mawatha, Colombo -5</span>
                     </button>
                 </div>
                 <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:19px; color: #FFFFFF;">CONNECT WITH SOCIAL MEDIA</p>
                 <div class="d-flex flex-wrap justify-content-center">
                     <a href="https://www.tiktok.com/@liveu.lk?_t=ZS-8x6xMUv7wpj&_r=1" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/tiktok.png" alt="" style="width: 50px; height: 50px;">
+                        <img src="Images/Social_Media_Icon/tiktok.png" alt="TikTok" style="width: 60px; height: 60px; margin-top: -5px;">
+                    </a>
+                    <a href="https://www.facebook.com/share/15F3Hvhriv/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/facebook.png" alt="Facebook" style="width: 50px; height: 50px;">
+                    </a>
+                    <a href="https://youtube.com/@liveu_lk?si=LDzIpDFAwpBNXvtE" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/youtube.png" alt="YouTube" style="width: 50px; height: 50px;">
                     </a>
                 </div>
                 <!-- Gallery Section -->
@@ -799,7 +804,6 @@
                 `TEL;TYPE=WORK,MOBILE:${contactData.phoneMobile}`,
                 `TEL;TYPE=WORK,VOICE:${contactData.phoneCompany}`,
                 `EMAIL;TYPE=WORK:${contactData.email}`,
-                `EMAIL;TYPE=WORK:${contactData.emailCompany}`,
                 `URL:${contactData.website}`,
                 `NOTE:Locations: ${contactData.locations}`,
                 photoBase64 ? `PHOTO;ENCODING=b;TYPE=JPEG:${photoBase64}` : '',
@@ -825,7 +829,5 @@
             document.getElementById('galleryContainer').style.display = 'grid';
         });
     </script>
-
 </body>
-
 </html>
