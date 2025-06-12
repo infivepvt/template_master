@@ -339,6 +339,10 @@
             <div class="imagepro">
                 <img class="profile-photo" src="profile_img/client_profile/kalum-p.png" alt="Profile">
             </div>
+            <br>
+            <br>
+            <br>
+            <br>
             <div class="profile-info">
                 <h2 style="font-family: Verdana, sans-serif;">Kalum Madusanka</h2>
                 <p style="font-family: Roboto, sans-serif;">Owner</p>
