@@ -1,7 +1,4 @@
 <?php
-// Start session if needed for user authentication
-session_start();
-
 // Set page title
 $pageTitle = "Payment Required - Account On Hold";
 
