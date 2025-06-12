@@ -16,15 +16,18 @@
             width: 600px;
         }
 
-        .custom-header {
-            background-size: cover;    
-            background-position: center;
-            background-repeat: no-repeat;
-            padding: 35px 20px;
-            width: 100%;
-            height: 250px;
-            position: relative; /* Make header a positioned ancestor */
-        }
+       .custom-header {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 35px 20px;
+    width: 100%;
+    height: 250px; /* Fixed height for consistency */
+    position: relative;
+    /* Add these to ensure proper display on all devices */
+    min-height: 250px;
+    background-attachment: scroll;
+}
         .custom-logo {
             width: 200px;
             position: relative;
