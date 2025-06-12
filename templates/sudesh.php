@@ -520,6 +520,9 @@
                     <a href="https://www.facebook.com/share/19U2MjaTAn/" target="_blank" rel="noopener noreferrer" class="m-3">
                         <img src="Images/Social_Media_Icon/facebook.png" alt="" style="width: 50px; height: 50px;">
                     </a>
+                      <a href="https://www.linkedin.com/in/sudesh-mendis-24b8aa10b/" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/linkedin.png" alt="" style="width: 50px; height: 50px;">
+                    </a>
                 </div>
 
                 <!-- Gallery Section -->
