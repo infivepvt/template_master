@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Live u</title>
+    <title>Template 75</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="Images/Logo1.ico">
@@ -27,10 +27,10 @@
         }
 
         .custom-logo {
-            width: 300px;
+            width: 130px;
             position: relative;
             top: 0;
-            left: 0;
+            left: -10px;
             margin-bottom: 40px;
         }
 
@@ -568,7 +568,7 @@
 <body>
     <div class="d-flex justify-content-center">
         <div class="card custom-card75 shadow-lg rounded-0" style="background-color: #00114b;">
-            <div class="card-header custom-header text-center" style="background-image: url('banner_img/client_banner/liveu-b.webp?id');">
+            <div class="card-header custom-header" style="background-image: url('banner_img/client_banner/liveu-b.webp');">
                 <img src="logo_img/client_logo/liveu-l.png" alt="Company Logo" class="custom-logo">
                 <div class="profile-picture75">
                     <img src="profile_img/client_profile/liveu-p.png" alt="M.M.M. Rameez" class="rounded-circle">
@@ -604,14 +604,9 @@
                         <span class="text-center flex-grow-1 text-truncate custom-phone" style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">rameez@liveu.lk</span>
                     </button>
 
-                    <button type="button" class="list-group-item d-flex align-items-center justify-content-between contact" onclick="window.open('mailto:sales@liveu.lk', '_self')">
-                        <img src="Images/icon/mail.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
-                        <span class="text-center flex-grow-1 text-truncate custom-phone" style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">sales@liveu.lk</span>
-                    </button>
-
                     <button type="button" class="list-group-item d-flex align-items-center justify-content-between contact" onclick="window.open('https://www.liveu.lk', '_blank')">
                         <img src="Images/icon/internet.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
-                        <span class="text-center flex-grow-1 text-truncate custom-phone" style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">www.liveu.lk</span>
+                        <span class="text-center flex-grow-1 text-truncate custom-phone" style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">liveu.lk</span>
                     </button>
 
                     <button type="button" class="list-group-item d-flex align-items-center justify-content-between contact" onclick="window.open('https://www.google.com/maps/search/?api=1&query=No+44+T13+T14+Dedicated+Economic+Center+Kirimandala+Mawatha+Colombo+5', '_blank')">
@@ -752,7 +747,6 @@
                 phoneMobile: "+94710331718",
                 phoneCompany: "+94117780000",
                 email: "rameez@liveu.lk",
-                emailCompany: "sales@liveu.lk",
                 locations: "No: 44, T13, T14, Dedicated Economic Center, Kirimandala Mawatha, Colombo -5",
                 website: "https://www.liveu.lk",
                 profileImage: "profile_img/client_profile/liveu-p.png"
