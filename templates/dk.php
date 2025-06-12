@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,54 +14,55 @@
             background: #EEF1FF;
             width: 600px;
         }
-
         .custom-header {
-            background-size: cover;    
+            background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            padding: 35px 20px;
+            padding: 2rem 1rem;
             width: 100%;
-            height: 250px;
-            position: relative; /* Make header a positioned ancestor */
+            height: 40vw;
+            max-height: 300px;
+            min-height: 150px;
+            position: relative;
         }
         .custom-logo {
-            width: 200px;
+            width: 30vw;
+            max-width: 150px;
+            min-width: 80px;
             position: relative;
             top: 0;
             left: 0;
-            margin-bottom: 40px;
+            margin-bottom: 2rem;
         }
-
         .profile-picture75 {
             position: absolute;
-            top: 95%;
-            left: 20%;
+            top: 100%;
+            left: 50%;
             transform: translate(-50%, -50%);
         }
-
         .profile-picture75 img {
-            width: 130px;
-            height: 130px;
+            width: 20vw;
+            height: 20vw;
+            max-width: 120px;
+            max-height: 120px;
+            min-width: 80px;
+            min-height: 80px;
             border: 4px solid #fff;
             border-radius: 50%;
         }
-
         .custom-button {
             font-weight: bold;
         }
-
         .social-icon {
             font-size: 1.9rem;
             transition: color 0.3s;
         }
-
         .social-icon-row {
             display: flex;
             justify-content: center;
             gap: 40px;
             margin-bottom: 5px;
         }
-
         .list-group-item {
             background-color: #333;
             color: #fff;
@@ -71,13 +71,11 @@
             border: 1px solid #444;
             padding: 10px 15px;
         }
-
         .list-group-item:hover {
             background-color: #444;
             border-color: #666;
             transition: background-color 0.3s, border-color 0.3s;
         }
-
         .custom-save-button75 {
             background: #3C2F2F80;
             color: white;
@@ -88,21 +86,17 @@
             margin-top: -30px;
             transition: background 0.3s;
         }
-
         .custom-save-button75:hover {
             background: #4A372880;
         }
-
         .save-icon {
             width: 24px;
             height: 24px;
         }
-
         .contact-icon {
             font-size: 1.5rem;
             color: #fffefe;
         }
-
         .custom-phone {
             font-family: 'Roboto', sans-serif;
             font-weight: bold;
@@ -110,7 +104,6 @@
             color: white;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
-
         .custom-phone1 {
             font-family: 'Roboto', sans-serif;
             font-weight: bold;
@@ -119,22 +112,18 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
             transition: background-color 0.1s, border-color 0.1s;
         }
-
         .custom-phone1:hover {
             background-color: #25D366;
             border-color: #128C7E;
         }
-
         .contact {
             background-color: #303e6d;
         }
-
         /* Gallery Styles */
         .gallery-section {
             padding: 20px;
             margin-top: -10px;
         }
-
         .gallery-header {
             display: flex;
             justify-content: space-between;
@@ -143,7 +132,6 @@
             color: #fff;
             cursor: pointer;
         }
-
         .gallery-title {
             color: white !important;
             font-family: 'Montserrat', sans-serif;
@@ -151,17 +139,14 @@
             font-weight: bold;
             margin-top: 1rem;
         }
-
         .gallery-toggle {
             font-size: 1.2rem;
         }
-
         .gallery-container {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 10px;
         }
-
         .gallery-item {
             position: relative;
             overflow: hidden;
@@ -169,18 +154,15 @@
             aspect-ratio: 1;
             cursor: pointer;
         }
-
         .gallery-image {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.3s;
         }
-
         .gallery-item:hover .gallery-image {
             transform: scale(1.05);
         }
-
         /* Lightbox Styles */
         .lightbox {
             display: none;
@@ -194,18 +176,15 @@
             justify-content: center;
             align-items: center;
         }
-
         .lightbox-content {
             max-width: 90%;
             max-height: 90%;
         }
-
         .lightbox-image {
             max-width: 100%;
             max-height: 80vh;
             object-fit: contain;
         }
-
         .lightbox-close {
             position: absolute;
             top: 20px;
@@ -214,7 +193,6 @@
             font-size: 30px;
             cursor: pointer;
         }
-
         .lightbox-nav {
             position: absolute;
             width: 100%;
@@ -223,7 +201,6 @@
             padding: 0 20px;
             box-sizing: border-box;
         }
-
         .lightbox-nav button {
             background: none;
             border: none;
@@ -231,40 +208,69 @@
             font-size: 30px;
             cursor: pointer;
         }
-
         /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .custom-header {
+                height: 35vw;
+                padding: 1.5rem 1rem;
+            }
+            .custom-logo {
+                width: 25vw;
+                max-width: 120px;
+            }
+            .profile-picture75 img {
+                width: 18vw;
+                height: 18vw;
+                max-width: 100px;
+                max-height: 100px;
+            }
+        }
         @media (max-width: 480px) {
             .custom-card75 {
                 width: 100%;
                 margin-top: -30px;
             }
-            .profile-picture75 img {
-                width: 130px;
-                height: 130px;
+            .custom-header {
+                height: 50vw;
+                min-height: 120px;
+                padding: 1rem 0.5rem;
             }
-
+            .custom-logo {
+                width: 20vw;
+                max-width: 100px;
+                min-width: 60px;
+                margin-bottom: 1rem;
+            }
+            .profile-picture75 {
+                top: 100%;
+                left: 50%;
+            }
+            .profile-picture75 img {
+                width: 25vw;
+                height: 25vw;
+                max-width: 80px;
+                max-height: 80px;
+                min-width: 60px;
+                min-height: 60px;
+            }
             .contact-name {
                 font-size: 24px;
             }
-
             .contact-title {
                 font-size: 16px;
             }
-
             .gallery-container {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
     </style>
 </head>
-
 <body>
     <div class="d-flex justify-content-center">
         <div class="card custom-card75 shadow-lg" style="background-color: #00114b;">
             <div class="card-header custom-header text-center"
-                style="background-image: url('banner_img/client_banner/dk-b.jpg'); opacity: 1;">
-                <img src="" alt="" class="custom-logo"
-                    style="width: 100px; opacity: 1;">
+                style="background-image: url('banner_img/client_banner/dk-b.jpg');">
+                <img src="Images/Logo1.png" alt="DK Fabrication Logo" class="custom-logo">
                 <div class="profile-picture75">
                     <img src="profile_img/client_profile/dk-p.png" alt="DK Fabrication & Contractor" class="rounded-circle">
                 </div>
@@ -367,7 +373,6 @@
             </div>
         </div>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         // Gallery images array
@@ -379,9 +384,7 @@
             'gallery_img/client_gallerys/dk/dk-g5.jpeg',
             'gallery_img/client_gallerys/dk/dk-g6.jpeg'
         ];
-
         let currentImageIndex = 0;
-
         async function generateVCF() {
             const contactData = {
                 firstName: "DK Fabrication",
@@ -394,7 +397,6 @@
                 logo: "profile_img/client_profile/dk-p.png",
                 profileImage: "profile_img/client_profile/dk-p.png"
             };
-
             const toBase64 = async (url) => {
                 try {
                     const response = await fetch(url);
@@ -410,21 +412,18 @@
                     return '';
                 }
             };
-
             let photoBase64 = '';
             try {
                 photoBase64 = await toBase64(contactData.profileImage);
             } catch (error) {
                 console.error("Failed to load image for VCF:", error);
             }
-
             let vcfLines = [
                 "BEGIN:VCARD",
                 "VERSION:3.0",
                 `FN:${contactData.firstName} ${contactData.lastName}`,
                 `N:${contactData.lastName};${contactData.firstName};;;`,
             ];
-
             if (contactData.title) vcfLines.push(`TITLE:${contactData.title}`);
             if (contactData.phoneWork) vcfLines.push(`TEL;TYPE=WORK,VOICE:${contactData.phoneWork}`);
             if (contactData.email) vcfLines.push(`EMAIL:${contactData.email}`);
@@ -433,11 +432,8 @@
             if (photoBase64) {
                 vcfLines.push(`PHOTO;ENCODING=b;TYPE=PNG:${photoBase64}`);
             }
-
             vcfLines.push("END:VCARD");
-
             const vcfContent = vcfLines.join('\n');
-
             const blob = new Blob([vcfContent], { type: 'text/vcard' });
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
@@ -448,12 +444,10 @@
             document.body.removeChild(a);
             URL.revokeObjectURL(url);
         }
-
         // Toggle gallery visibility
         function toggleGallery() {
             const galleryContainer = document.getElementById('galleryContainer');
             const galleryToggle = document.getElementById('galleryToggle');
-
             if (galleryContainer.style.display === 'none') {
                 galleryContainer.style.display = 'grid';
                 galleryToggle.innerHTML = '<i class="fas fa-minus"></i>';
@@ -462,24 +456,20 @@
                 galleryToggle.innerHTML = '<i class="fas fa-plus"></i>';
             }
         }
-
         // Lightbox functions
         function openLightbox(imageSrc) {
             const lightbox = document.getElementById('lightbox');
             const lightboxImage = document.getElementById('lightbox-image');
-
             currentImageIndex = galleryImages.indexOf(imageSrc);
             lightboxImage.src = imageSrc;
             lightbox.style.display = 'flex';
             document.body.style.overflow = 'hidden';
         }
-
         function closeLightbox() {
             const lightbox = document.getElementById('lightbox');
             lightbox.style.display = 'none';
             document.body.style.overflow = 'auto';
         }
-
         function changeImage(step) {
             currentImageIndex += step;
             if (currentImageIndex >= galleryImages.length) {
@@ -489,14 +479,12 @@
             }
             document.getElementById('lightbox-image').src = galleryImages[currentImageIndex];
         }
-
         // Close lightbox when clicking outside the image
         document.getElementById('lightbox').addEventListener('click', function(e) {
             if (e.target === this) {
                 closeLightbox();
             }
         });
-
         // Keyboard navigation
         document.addEventListener('keydown', function(e) {
             const lightbox = document.getElementById('lightbox');
@@ -510,12 +498,10 @@
                 }
             }
         });
-
         // Save to Contacts functionality
         document.getElementById('saveContactBtn').addEventListener('click', function() {
             generateVCF();
         });
-
         // Initialize gallery as visible
         document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('galleryContainer').style.display = 'grid';
