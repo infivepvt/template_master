@@ -433,7 +433,7 @@
                 email: "chathura@sjhospital.lk",
                 website: "http://sjhospital.lk/",
                 address: "St. Joseph Hospital, Negombo;St. Joseph Hospital, Colombo",
-                profileImage: "profile_img/client_profile/sachith-p.png", // Update if a specific image for Chathura exists
+                profileImage: "profile_img/client_profile/chathura-p.jpeg", // Update if a specific image for Chathura exists
                 logo: "logo_img/client_logo/sachith-l.png" // Update if a specific logo exists
             };
 

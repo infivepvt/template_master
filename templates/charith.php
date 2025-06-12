@@ -432,7 +432,7 @@
                 email: "charith@sjhospital.lk",
                 website: "http://sjhospital.lk/",
                 address: "St. Joseph Hospital, Negombo",
-                profileImage: "profile_img/client_profile/sachith-p.png",
+                profileImage: "profile_img/client_profile/charith-p.jpeg",
                 logo: "logo_img/client_logo/sachith-l.png"
             };
 

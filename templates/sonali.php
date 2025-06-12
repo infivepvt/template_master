@@ -433,7 +433,7 @@
                 email: "sonali@sjhospital.lk",
                 website: "http://sjhospital.lk/",
                 address: "St. Joseph Hospital, Negombo",
-                profileImage: "profile_img/client_profile/sachith-p.png", // Update if profile image is different
+                profileImage: "profile_img/client_profile/sonali-p.jpeg", // Update if profile image is different
                 logo: "logo_img/client_logo/sachith-l.png" // Update if logo is different
             };
 
