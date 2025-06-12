@@ -1,592 +1,508 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Card Template 15</title>
+    <title>Travel Business Card | Travellers Marketplace</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" type="image/x-icon" href="Images/Logo1.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        .custom-card15 {
-            overflow: hidden;
-            background: #EEF1FF;
-            min-height: 100vh;
+        :root {
+            --primary: #d62c1a;
+            --secondary: #ff6b6b;
+            --accent: #ff9e7d;
+            --light: #f8f9fa;
+            --dark: #121212;
+            --bg-gradient: linear-gradient(135deg, #000000 0%, #2b2b2b 100%);
+            --btn-gradient: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
         }
 
-        .custom-header {
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            padding: 35px 20px;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: var(--dark);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #e0e0e0;
+        }
+
+        .travel-card {
+            max-width: 450px;
+            width: 100%;
+            background: #1e1e1e;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
             position: relative;
+            transition: transform 0.3s ease;
+            border: 1px solid #333;
+        }
+
+        .travel-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card-header {
+            background: var(--primary);
+            padding: 35px 20px 100px;
+            position: relative;
+            text-align: center;
+            background: linear-gradient(135deg, rgb(255, 255, 255) 10%, rgb(231, 135, 135) 100%);
+        }
+
+        .header-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.3;
+            z-index: 0;
+        }
+
+        .company-logo {
+            max-width: 180px;
+            filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
+            position: relative;
+            z-index: 1;
         }
 
         .profile-picture {
             position: absolute;
-            top: 95%;
+            top: 85%;
             left: 50%;
             transform: translate(-50%, -50%);
+            z-index: 10;
         }
 
         .profile-picture img {
             width: 130px;
             height: 130px;
-            border: 4px solid #fff;
+            border: 5px solid #1e1e1e;
             border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
         }
 
-        .custom-button {
-            font-weight: bold;
+        .card-body {
+            padding: 80px 25px 30px;
+            background: #1e1e1e;
+            white-space: nowrap;
         }
 
-        .list-group-item {
-            background-color: #333;
-            color: #fff;
-            border-radius: 8px;
-            margin-bottom: 10px;
-            border: 1px solid #444;
-            padding: 10px 15px;
+        .company-name {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 28px;
+            color: var(--light);
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
         }
 
-        .list-group-item:hover {
-            background-color: #444;
-            border-color: #666;
-            transition: background-color 0.3s, border-color 0.3s;
+        .company-tagline {
+            font-size: 16px;
+            color: var(--secondary);
+            font-weight: 600;
+            margin-bottom: 5px;
         }
 
-        .custom-save-button {
-            background: linear-gradient(90deg, #5f4def, #00d0ea);
-            color: white;
-            font-weight: bold;
-            border: none;
-            padding: 10px;
-            border-radius: 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: background 0.3s;
+        .director-name {
+            font-size: 16px;
+            color: #b0b0b0;
+            margin-bottom: 30px;
         }
 
-        .custom-save-button:hover {
-            background: linear-gradient(90deg, #4b3ec4, #00b3c3);
-        }
-
-        .save-icon {
-            width: 24px;
-            height: 24px;
-        }
-
-        .custom-phone {
-            font-family: 'Roboto', sans-serif;
-            font-weight: bold;
-            font-size: 1.2rem;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
-
-        .fw {
-            font-weight: bold;
-            margin-top: 20px;
-        }
-
-        .profile-header13 {
-            background-color: #000000;
-            border-radius: 30px;
+        .contact-section {
+            background: #2b2b2b;
+            border-radius: 20px;
+            padding: 15px 10px;
+            margin: 0 auto 25px;
             max-width: 95%;
-            margin: 0 auto;
-            padding: 20px;
-            margin-top: -50px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            border: 1px solid #333;
         }
 
-        .profile-contact-icons13 {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            justify-content: center;
-            gap: 25px;
-            max-width: 400px;
-            margin: 0 auto;
-        }
-
-        .contact-icon-container {
+        .contact-item {
             display: flex;
             flex-direction: column;
             align-items: center;
-        }
-
-        .contact-icon-button {
-            background-color: rgb(255, 255, 255);
-            border-radius: 10px;
-            width: 50px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: none;
-            cursor: pointer;
-        }
-
-        .contact-icon-label {
-            margin-top: 5px;
-            font-size: 0.8rem;
-            color: #FFFFFF;
             text-align: center;
-            width: 90px;
-        }
-
-        .contact-icon {
-            font-size: 1.5rem;
-            color: rgb(0, 0, 0);
-        }
-
-        .gallery-section {
-            background-color: #1a1a1a;
+            padding: 15px 5px;
+            background: #252525;
             border-radius: 15px;
-            padding: 15px;
-            margin-top: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .gallery-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 15px;
-            color: #fff;
-            cursor: pointer;
-            background-color: #2a2a2a;
-            border-radius: 10px;
-            margin-bottom: 15px;
-        }
-
-        .gallery-title {
-            font-size: 18px;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-        }
-
-        .gallery-toggle {
-            font-size: 18px;
-            color: #ffffff;
-            transition: transform 0.3s ease;
-        }
-
-        .gallery-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 12px;
-            margin-top: 10px;
-        }
-
-        .gallery-item {
-            position: relative;
-            overflow: hidden;
-            border-radius: 10px;
-            aspect-ratio: 1;
-            cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .gallery-item:hover {
-            transform: scale(1.03);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-        }
-
-        .gallery-image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-
-        .gallery-item:hover .gallery-image {
-            transform: scale(1.1);
-        }
-
-        .gallery-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .gallery-item:hover .gallery-overlay {
-            opacity: 1;
-        }
-
-        .gallery-overlay i {
-            color: white;
-            font-size: 2rem;
-        }
-
-        .lightbox {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.9);
-            z-index: 1000;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .lightbox-content {
-            max-width: 90%;
-            max-height: 90%;
-            position: relative;
-            text-align: center;
-        }
-
-        .lightbox-image {
-            max-width: 100%;
-            max-height: 80vh;
-            object-fit: contain;
-            border-radius: 8px;
-            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-            animation: zoomIn 0.3s ease-out;
-        }
-
-        .lightbox-close {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            color: white;
-            font-size: 30px;
-            cursor: pointer;
-            z-index: 1001;
-            transition: all 0.3s ease;
-        }
-
-        .lightbox-close:hover {
-            color: #ff6b6b;
-            transform: scale(1.2);
-        }
-
-        .lightbox-nav {
-            position: absolute;
-            width: 100%;
-            top: 50%;
-            transform: translateY(-50%);
-            display: flex;
-            justify-content: space-between;
-            padding: 0 20px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            border: 1px solid #3a3a3a;
             box-sizing: border-box;
         }
 
-        .lightbox-nav button {
-            background: rgba(0, 0, 0, 0.5);
-            border: none;
-            color: white;
-            font-size: 30px;
+        .contact-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(214, 44, 26, 0.3);
+            border-color: var(--primary);
+        }
+
+        .contact-icon {
             width: 50px;
             height: 50px;
+            background: var(--btn-gradient);
             border-radius: 50%;
-            cursor: pointer;
-            opacity: 0.8;
-            transition: all 0.3s ease;
             display: flex;
             align-items: center;
             justify-content: center;
+            margin-bottom: 12px;
+            color: white;
+            font-size: 20px;
         }
 
-        .lightbox-nav button:hover {
-            opacity: 1;
-            background: rgba(0, 0, 0, 0.7);
-            transform: scale(1.1);
+        .contact-label {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--secondary);
+            margin-bottom: 5px;
         }
 
-        .lightbox-counter {
+        .contact-value {
+            font-size: 13px;
+            color: var(--light);
+            font-weight: 500;
+            word-break: break-word;
+        }
+
+        .locations {
+            background: #252525;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            border: 1px solid #3a3a3a;
+        }
+
+        .section-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: var(--light);
+            margin-bottom: 15px;
+            font-size: 18px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--primary);
+            border-radius: 3px;
+        }
+
+        .location-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px dashed #444;
+        }
+
+        .location-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .location-icon {
+            width: 30px;
+            height: 30px;
+            background: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            color: white;
+            font-size: 14px;
+        }
+
+        .location-text {
+            flex: 1;
+            text-align: left;
+            font-size: 14px;
+            color: #e0e0e0;
+        }
+
+        .location-link {
+            color: var(--secondary);
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: block;
+            margin-top: 3px;
+        }
+
+        .location-link:hover {
+            color: var(--accent);
+            text-decoration: underline;
+        }
+
+        .save-contact-btn {
+            background: var(--btn-gradient);
+            color: white;
+            font-weight: 600;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            width: 90%;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(214, 44, 26, 0.5);
+        }
+
+        .save-contact-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(214, 44, 26, 0.7);
+        }
+
+        .save-contact-btn i {
+            margin-right: 10px;
+            font-size: 18px;
+        }
+
+        .social-section {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .social-icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--light);
+            font-size: 18px;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .social-icon:hover {
+            transform: translateY(-5px);
+            background: var(--primary);
+            color: white;
+            box-shadow: 0 8px 15px rgba(214, 44, 26, 0.4);
+        }
+
+        .watermark {
             position: absolute;
             bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            color: white;
-            font-size: 16px;
-            background: rgba(0, 0, 0, 0.5);
-            padding: 5px 15px;
-            border-radius: 20px;
+            right: 20px;
+            font-size: 10px;
+            color: rgba(255, 255, 255, 0.1);
+            z-index: 1;
         }
 
-        .l-m {
-            width: 160px;
-        }
-
-        @keyframes zoomIn {
-            from {
-                transform: scale(0.8);
-                opacity: 0;
-            }
-
-            to {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .gallery-container {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .lightbox-nav button {
-                width: 40px;
-                height: 40px;
+        @media (max-width: 480px) {
+            .company-name {
                 font-size: 24px;
             }
 
-            .lightbox-close {
-                top: 15px;
-                right: 15px;
-                font-size: 24px;
+            .card-header {
+                padding: 25px 15px 90px;
+            }
+
+            .profile-picture img {
+                width: 110px;
+                height: 110px;
             }
         }
     </style>
 </head>
 
 <body>
-    <div class="d-flex justify-content-center">
-        <div class="card custom-card15 shadow-lg rounded-0" style="background-color: #000000;">
-            <div class="card-header custom-header text-center" style="background-color:white; height: 200px; opacity: 100%;">
-                <img src="logo_img/client_logo/travellers-l.png" alt="" class="l-m">
-
-                <div class="profile-picture">
-                    <img src="profile_img/client_profile/travellers-p.png" alt="Travellers Marketplace Pvt Ltd" class="rounded-circle">
-                </div>
-            </div>
-            <br>
-            <br>
-            <div class="card-body text-center" style="background-color: #000000; color: #000000;">
-                <h2 style="font-size: 30px; color: white;">Travellers Marketplace Pvt Ltd</h2>
-                <p style="color:rgb(255, 255, 255); font-size: 20px;">Travel and Tourism</p>
-                <p style="color:rgb(255, 255, 255); font-size: 16px;">Director: Saman K. Konara</p>
-                <br>
-                <br>
-                <br>
-                <div class="profile-header13">
-                    <div class=" d-flex justify-content-center flex-wrap row">
-                        <!-- Hotline Button -->
-                        <div class="contact-icon-container col-4">
-                            <button type="button" class="contact-icon-button" onclick="window.open('tel:+94777777035', '_self')">
-                                <i class="fas fa-phone contact-icon rotated-90"></i>
-                            </button>
-                            <p class="contact-icon-label">Hotline</p>
-                        </div>
-                        <!-- Director's Personal Number -->
-                        <div class="contact-icon-container col-4">
-                            <button type="button" class="contact-icon-button" onclick="window.open('tel:+94772773777', '_self')">
-                                <i class="fas fa-mobile-alt contact-icon rotated-0"></i>
-                            </button>
-                            <p class="contact-icon-label">Director's Mobile</p>
-                        </div>
-                        <!-- Company Email -->
-                        <div class="contact-icon-container col-4">
-                            <button type="button" class="contact-icon-button" onclick="window.open('mailto:Hello@travellers.lk', '_self')">
-                                <i class="fas fa-envelope contact-icon"></i>
-                            </button>
-                            <p class="contact-icon-label">Company Email</p>
-                        </div>
-                        <!-- Director's Email -->
-                        <div class="contact-icon-container col-4">
-                            <button type="button" class="contact-icon-button" onclick="window.open('mailto:Director@travellers.lk', '_self')">
-                                <i class="fas fa-envelope contact-icon"></i>
-                            </button>
-                            <p class="contact-icon-label">Director's Email</p>
-                        </div>
-                        <!-- Website -->
-                        <div class="contact-icon-container col-4">
-                            <button type="button" class="contact-icon-button" onclick="window.open('https://www.travellers.lk', '_blank')">
-                                <i class="fas fa-globe contact-icon"></i>
-                            </button>
-                            <p class="contact-icon-label">Website</p>
-                        </div>
-                    </div>
-                    <!-- Locations Section -->
-                    <div style="margin-top: 20px; color: white; font-size: 14px;">
-                        <p><strong>Locations:</strong></p>
-                        <p>🌟 United Arab Emirates</p>
-                        <p>🌟 Sri Lanka</p>
-                        <p><a href="mailto:Colombo@travellers.lk" style="color: #00d0ea; text-decoration: none;">📍 Colombo</a></p>
-                        <p><a href="mailto:Kandy@travellers.lk" style="color: #00d0ea; text-decoration: none;">📍 Kandy</a></p>
-                        <p><a href="mailto:Kurunegala@travellers.lk" style="color: #00d0ea; text-decoration: none;">📍 Kurunegala</a></p>
-                        <p><a href="mailto:Nuwaraeliya@travellers.lk" style="color: #00d0ea; text-decoration: none;">📍 Nuwara Eliya</a></p>
-                    </div>
-                    <!-- Enhanced Gallery Section -->
-                    <!-- <div class="gallery-section">
-                        <div class="gallery-header" onclick="toggleGallery()">
-                            <div class="gallery-title">Gallery</div>
-                            <div class="gallery-toggle" id="galleryToggle">
-                                <i class="fas fa-minus"></i>
-                            </div>
-                        </div>
-                        <div class="gallery-container" id="galleryContainer">
-                            <div class="gallery-item" onclick="openLightbox('gallery_img/main_gallerys/t6g1.jpg', 0)">
-                                <img src="gallery_img/main_gallerys/t6g1.jpg" alt="Gallery Image 1" class="gallery-image">
-                                <div class="gallery-overlay">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                            <div class="gallery-item" onclick="openLightbox('gallery_img/main_gallerys/t6g2.jpg', 1)">
-                                <img src="gallery_img/main_gallerys/t6g2.jpg" alt="Gallery Image 2" class="gallery-image">
-                                <div class="gallery-overlay">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                            <div class="gallery-item" onclick="openLightbox('gallery_img/main_gallerys/t6g3.jpg', 2)">
-                                <img src="gallery_img/main_gallerys/t6g3.jpg" alt="Gallery Image 3" class="gallery-image">
-                                <div class="gallery-overlay">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                            <div class="gallery-item" onclick="openLightbox('gallery_img/main_gallerys/t6g4.jpg', 3)">
-                                <img src="gallery_img/main_gallerys/t6g4.jpg" alt="Gallery Image 4" class="gallery-image">
-                                <div class="gallery-overlay">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                            <div class="gallery-item" onclick="openLightbox('gallery_img/main_gallerys/t6g5.jpg', 4)">
-                                <img src="gallery_img/main_gallerys/t6g5.jpg" alt="Gallery Image 5" class="gallery-image">
-                                <div class="gallery-overlay">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                            <div class="gallery-item" onclick="openLightbox('gallery_img/main_gallerys/t6g6.jpg', 5)">
-                                <img src="gallery_img/main_gallerys/t6g6.jpg" alt="Gallery Image 6" class="gallery-image">
-                                <div class="gallery-overlay">
-                                    <i class="fas fa-search-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- Enhanced Lightbox -->
-                    <div class="lightbox" id="lightbox">
-                        <span class="lightbox-close" onclick="closeLightbox()">×</span>
-                        <div class="lightbox-nav">
-                            <button onclick="changeImage(-1)">❮</button>
-                            <button onclick="changeImage(1)">❯</button>
-                        </div>
-                        <div class="lightbox-content">
-                            <img id="lightbox-image" class="lightbox-image" src="" alt="">
-                            <div class="lightbox-counter" id="lightboxCounter"></div>
-                        </div>
-                    </div>
-                    <!-- <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:15px; color:white;">CONNECT WITH SOCIAL MEDIA</p>
-                    <div class="d-flex flex-wrap justify-content-center">
-                        <a href="https://www.instagram.com/travellers.lk" target="_blank" rel="noopener noreferrer" class="m-3">
-                            <img src="Images/Social_Media_Icon/instagram.png" alt="Instagram" style="width: 50px; height: 50px;">
-                        </a>
-                        <a href="https://www.facebook.com/travellers.lk" target="_blank" rel="noopener noreferrer" class="m-3">
-                            <img src="Images/Social_Media_Icon/facebook.png" alt="Facebook" style="width: 50px; height: 50px;">
-                        </a>
-                        <a href="https://www.youtube.com/@travellerslk" target="_blank" rel="noopener noreferrer" class="m-3">
-                            <img src="Images/Social_Media_Icon/youtube.png" alt="YouTube" style="width: 50px; height: 50px;">
-                        </a>
-                    </div> -->
-                    <br>
-                    <button class="btn w-100 custom-save-button">
-                        <i class="fas fa-save me-2"></i>
-                        SAVE TO CONTACTS
-                    </button>
-                </div>
-                <br>
+    <div class="travel-card">
+        <div class="card-header">
+            <img src="https://images.unsplash.com/photo-1551918120-9739cb430c6d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&w=400&ixlib=rb-1.2.1&q=80" alt="Travel Background" class="header-bg">
+            <img src="logo_img/client_logo/travellers-l.png" alt="Travellers Marketplace" class="company-logo">
+            <div class="profile-picture">
+                <img src="profile_img/client_profile/travellers-p.png" alt="Saman K. Konara">
             </div>
         </div>
+
+        <div class="card-body">
+            <h1 class="company-name">Travellers Marketplace Pvt Ltd</h1>
+            <p class="company-tagline">Creating Unforgettable Journeys</p>
+            <p class="director-name">Director: Saman K. Konara</p>
+
+            <div class="contact-section">
+                <div class="row row-cols-2 row-cols-md-2 g-3">
+                    <div class="col">
+                        <div class="contact-item" onclick="window.open('tel:+94777777035')">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-label">Hotline</div>
+                            <div class="contact-value">+94 77 777 7035</div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="contact-item" onclick="window.open('tel:+94772773777')">
+                            <div class="contact-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="contact-label">Director's Mobile</div>
+                            <div class="contact-value">+94 77 277 3777</div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="contact-item" onclick="window.open('mailto:Hello@travellers.lk')">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-label">Company Email</div>
+                            <div class="contact-value">Hello@travellers.lk</div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="contact-item" onclick="window.open('mailto:Director@travellers.lk')">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-label">Director's Email</div>
+                            <div class="contact-value">Director@travellers.lk</div>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="contact-item" onclick="window.open('https://www.travellers.lk')">
+                            <div class="contact-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="contact-label">Website</div>
+                            <div class="contact-value">www.travellers.lk</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="locations">
+                <h3 class="section-title">Our Locations</h3>
+
+                <div class="location-item mt-3">
+                    <div class="location-icon">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <div class="location-text丰富
+                    <div class=" location-text">
+                        <strong>United Arab Emirates</strong>
+                    </div>
+                </div>
+
+                <div class="location-item">
+                    <div class="location-icon">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <div class="location-text">
+                        <strong>Sri Lanka</strong>
+                    </div>
+                </div>
+
+                <div class="location-item">
+                    <div class="location-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="location-text">
+                        <div>Colombo Office</div>
+                        <a href="mailto:Colombo@travellers.lk" class="location-link">Colombo@travellers.lk</a>
+                    </div>
+                </div>
+
+                <div class="location-item">
+                    <div class="location-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="location-text">
+                        <div>Kandy Office</div>
+                        <a href="mailto:Kandy@travellers.lk" class="location-link">Kandy@travellers.lk</a>
+                    </div>
+                </div>
+
+                <div class="location-item">
+                    <div class="location-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="location-text">
+                        <div>Kurunegala Office</div>
+                        <a href="mailto:Kurunegala@travellers.lk" class="location-link">Kurunegala@travellers.lk</a>
+                    </div>
+                </div>
+
+                <div class="location-item">
+                    <div class="location-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="location-text">
+                        <div>Nuwara Eliya Office</div>
+                        <a href="mailto:Nuwaraeliya@travellers.lk" class="location-link">Nuwaraeliya@travellers.lk</a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="save-contact-btn">
+                <i class="fas fa-save"></i> SAVE TO CONTACTS
+            </button>
+
+            <div class="social-section">
+                <a href="https://www.instagram.com/travellers.lk" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/travellers.lk" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.youtube.com/@travellerslk" class="social-icon">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- <div class="watermark">Travellers Marketplace Pvt Ltd</div> -->
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Gallery functionality
-        const galleryImages = [
-            'gallery_img/main_gallerys/t6g1.jpg',
-            'gallery_img/main_gallerys/t6g2.jpg',
-            'gallery_img/main_gallerys/t6g3.jpg',
-            'gallery_img/main_gallerys/t6g4.jpg',
-            'gallery_img/main_gallerys/t6g5.jpg',
-            'gallery_img/main_gallerys/t6g6.jpg'
-        ];
-        let currentImageIndex = 0;
-        let isGalleryOpen = true;
-        // Toggle gallery visibility
-        function toggleGallery() {
-            const galleryContainer = document.getElementById('galleryContainer');
-            const galleryToggle = document.getElementById('galleryToggle');
-            isGalleryOpen = !isGalleryOpen;
-            if (isGalleryOpen) {
-                galleryContainer.style.display = 'grid';
-                galleryToggle.innerHTML = '<i class="fas fa-minus"></i>';
-            } else {
-                galleryContainer.style.display = 'none';
-                galleryToggle.innerHTML = '<i class="fas fa-plus"></i>';
-            }
-        }
-        // Open lightbox with specific image
-        function openLightbox(imageSrc, index) {
-            const lightbox = document.getElementById('lightbox');
-            const lightboxImage = document.getElementById('lightbox-image');
-            const lightboxCounter = document.getElementById('lightboxCounter');
-            currentImageIndex = index;
-            lightboxImage.src = imageSrc;
-            lightboxCounter.textContent = `${currentImageIndex + 1} / ${galleryImages.length}`;
-            lightbox.style.display = 'flex';
-            document.body.style.overflow = 'hidden';
-        }
-        // Close lightbox
-        function closeLightbox() {
-            const lightbox = document.getElementById('lightbox');
-            lightbox.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
-        // Navigate between images
-        function changeImage(step) {
-            currentImageIndex += step;
-            if (currentImageIndex >= galleryImages.length) {
-                currentImageIndex = 0;
-            } else if (currentImageIndex < 0) {
-                currentImageIndex = galleryImages.length - 1;
-            }
-            document.getElementById('lightbox-image').src = galleryImages[currentImageIndex];
-            document.getElementById('lightboxCounter').textContent = `${currentImageIndex + 1} / ${galleryImages.length}`;
-        }
-        // Close lightbox when clicking outside the image
-        document.getElementById('lightbox').addEventListener('click', function(e) {
-            if (e.target === this) {
-                closeLightbox();
-            }
-        });
-        // Keyboard navigation
-        document.addEventListener('keydown', function(e) {
-            const lightbox = document.getElementById('lightbox');
-            if (lightbox.style.display === 'flex') {
-                if (e.key === 'Escape') {
-                    closeLightbox();
-                } else if (e.key === 'ArrowLeft') {
-                    changeImage(-1);
-                } else if (e.key === 'ArrowRight') {
-                    changeImage(1);
-                }
-            }
-        });
-        // Save to contacts functionality
-        document.querySelector('.custom-save-button').addEventListener('click', async function() {
+        document.querySelector('.save-contact-btn').addEventListener('click', async function() {
             const contactData = {
                 firstName: "Saman",
-                lastName: "K. Konara",
+                lastName: "Konara",
                 title: "Director",
                 organization: "Travellers Marketplace Pvt Ltd",
-                phoneMobile: "+94772773777",
-                phoneCompany: "+94777777035",
-                email: "Director@travellers.lk",
+                phoneHotline: "+94 77 777 7035",
+                phoneDirector: "+94 77 277 3777",
                 emailCompany: "Hello@travellers.lk",
-                locations: "United Arab Emirates | Sri Lanka | Colombo | Kandy | Kurunegala | Nuwara Eliya",
-                website: "https://www.travellers.lk",
+                emailDirector: "Director@travellers.lk",
+                address: "Sri Lanka",
+                website: "https://www.travellers.lk/",
                 profileImage: "profile_img/client_profile/travellers-p.png"
             };
 
@@ -634,12 +550,12 @@
                 `N:${contactData.lastName};${contactData.firstName};;;`,
                 `ORG:${contactData.organization}`,
                 `TITLE:${contactData.title}`,
-                `TEL;TYPE=WORK,MOBILE:${contactData.phoneMobile}`,
-                `TEL;TYPE=WORK,VOICE:${contactData.phoneCompany}`,
-                `EMAIL;TYPE=WORK:${contactData.email}`,
+                `TEL;TYPE=WORK:${contactData.phoneHotline}`,
+                `TEL;TYPE=CELL:${contactData.phoneDirector}`,
                 `EMAIL;TYPE=WORK:${contactData.emailCompany}`,
+                `EMAIL;TYPE=WORK:${contactData.emailDirector}`,
                 `URL:${contactData.website}`,
-                `NOTE:Locations: ${contactData.locations}`,
+                `ADR;TYPE=WORK:;;${contactData.address};;;`,
                 photoBase64 ? `PHOTO;ENCODING=b;TYPE=JPEG:${photoBase64}` : '',
                 "END:VCARD"
             ];
@@ -651,7 +567,7 @@
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = `${contactData.firstName.replace(/\s+/g, '_')}_${contactData.organization.replace(/\s+/g, '_')}.vcf`;
+            a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
