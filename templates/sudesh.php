@@ -471,7 +471,7 @@
             </button>
             <div class="card-body text-left" style="background-color: #000000; color: #000000;">
                 <h2 class="card-title" style="font-size: 30px;color:rgb(255, 255, 255);">Sudesh Mendis</h2>
-                <p style="color:rgb(255, 255, 255); font-size: 20px;">Managing Director <br> Ocean Trade & Logistics (Pvt) Ltd</p>
+                <p style="color:rgb(255, 255, 255); font-size: 20px;">Managing Director <br> Ocean Trade & Logistics (Pvt) Ltd <br> President- Sri Lanka Maldives Business Council </p>
                 <div class="list-group mb-3">
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
@@ -510,6 +510,18 @@
                             style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">www.otlcolombo.com</span>
                     </button>
                 </div>
+
+                <!-- Social Media Section -->
+                <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:19px">CONNECT WITH SOCIAL MEDIA</p>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <a href="https://www.youtube.com/@sudeshmendis5660" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/youtube.png" alt="" style="width: 50px; height: 50px;">
+                    </a>
+                    <a href="https://www.facebook.com/share/19U2MjaTAn/" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/facebook.png" alt="" style="width: 50px; height: 50px;">
+                    </a>
+                </div>
+
                 <!-- Gallery Section -->
                 <div class="gallery-section" style="margin-top: -10px;">
                     <div class="gallery-header" onclick="toggleGallery()">

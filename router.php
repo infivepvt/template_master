@@ -207,7 +207,7 @@ $routes = [
     'rameez' => 'templates/rameez.php', 
     'travellers' => 'templates/travellers.php', 
     'suren' => 'templates/suren.php', 
-    
+    'mahesh' => 'templates/mahesh.php',
 ];
 
 // Handle the request

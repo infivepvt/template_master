@@ -44,8 +44,8 @@
         }
 
         .profile-picture img {
-            width: 130px;
-            height: 130px;
+            width: 150px;
+            height: 150px;
             border: 4px solid #fff;
             border-radius: 50%;
         }
@@ -170,7 +170,7 @@
     <div class="d-flex justify-content-center mt-5">
         <div class="card custom-card shadow-lg" style="background-color: #FFFFFF;">
             <div class="card-header custom-header text-center"
-                style="background-image: url('banner_img/main_banner/banner.png'); height: 200px; opacity: 1;">
+                style="background-image: url('banner_img/client_banner/sanjaya-b.jpg'); height: 200px; opacity: 1;">
                 <!--
                 <img src="logo_img/main_logo/Main_Design-l.png" alt="Company Logo" class="custom-logo" height="80px"
                     style="width: 245px; height: auto; opacity: 1;">
@@ -223,11 +223,11 @@
 
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
-                        onclick="window.open('https://www.sigmavet.lk', '_blank')">
+                        onclick="window.open('https://sigmavet.lk/', '_blank')">
                         <img src="Images/icon/internet.png" alt=""
                             style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #FFFFFF; 'Montserrat', sans-serif; font-size:16px; font-size:16px;">www.sigmavet.lk</span>
+                            style="color: #FFFFFF; 'Montserrat', sans-serif; font-size:16px; font-size:16px;">sigmavet.lk</span>
                     </button>
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
@@ -287,7 +287,7 @@
                 phoneWork: "+94773699899",
                 email1: "drwasala@gmail.com",
                 email2: "md@sigmavet.lk",
-                website1: "www.sigmavet.lk",
+                website1: "www.royalcanin.com",
                 website2: "www.beaphar.com",
                 address: "No. 814, Negombo Rd, Malkaduwawa, Kurunegala, Sri Lanka.",
                 logo: "profile_img/client_profile/sanjaya-p.png",
