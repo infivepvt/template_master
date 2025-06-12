@@ -202,7 +202,7 @@
                     <button type="button"
                         class="list-group-item contact"
                         onclick="window.open('tel:0322056866', '_self')">
-                        <img src="Images/icon/phone.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
+                        <img src="Images/icon/landphone.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="custom-phone"
                             style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">+94 32 205 6866</span>
                     </button>
