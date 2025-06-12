@@ -21,9 +21,10 @@
             background-position: center;
             background-repeat: no-repeat;
             padding: 35px 20px;
-            position: relative;
+            width: 100%;
+            height: 250px;
+            position: relative; /* Make header a positioned ancestor */
         }
-
         .custom-logo {
             width: 200px;
             position: relative;
@@ -237,12 +238,6 @@
                 width: 100%;
                 margin-top: -30px;
             }
-
-            .custom-header {
-                height: 200px;
-                padding: 25px 15px;
-            }
-
             .profile-picture75 img {
                 width: 130px;
                 height: 130px;
@@ -267,7 +262,7 @@
     <div class="d-flex justify-content-center">
         <div class="card custom-card75 shadow-lg" style="background-color: #00114b;">
             <div class="card-header custom-header text-center"
-                style="background-image: url('banner_img/client_banner/dk-b.jpg'); height: 260px; opacity: 1;">
+                style="background-image: url('banner_img/client_banner/dk-b.jpg'); opacity: 1;">
                 <img src="" alt="" class="custom-logo"
                     style="width: 100px; opacity: 1;">
                 <div class="profile-picture75">
@@ -300,10 +295,10 @@
                     </button>
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
-                        onclick="window.open('mailto:DKfabrication2020@gmail.com', '_self')">
+                        onclick="window.open('mailto:dkfabrication2020@gmail.com', '_self')">
                         <img src="Images/icon/mail.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">DKfabrication2020@gmail.com</span>
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">dkfabrication2020@gmail.com</span>
                     </button>
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
@@ -324,7 +319,10 @@
                 <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:19px; color: #FFFFFF;">CONNECT WITH SOCIAL MEDIA</p>
                 <div class="d-flex flex-wrap justify-content-center">
                     <a href="https://www.facebook.com/share/16cD1YgZUT/" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/facebook.png" alt="" style="width: 50px; height: 50px;">
+                        <img src="Images/Social_Media_Icon/facebook.png" alt="" style="width: 48px; height: 48px;">
+                    </a>
+                    <a href="https://www.tiktok.com/@kanishka.hathurus?_t=ZS-8x74nlbsVAW&_r=1" target="_blank" rel="noopener noreferrer" class="m-3">
+                        <img src="Images/Social_Media_Icon/tiktok.png" alt="" style="width: 60px; height: 60px;">
                     </a>
                 </div>
                 <!-- Gallery Section -->
@@ -347,6 +345,12 @@
                         </div>
                         <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/dk/dk-g4.jpeg')">
                             <img src="gallery_img/client_gallerys/dk/dk-g4.jpeg" alt="Gallery Image 4" class="gallery-image">
+                        </div>
+                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/dk/dk-g5.jpeg')">
+                            <img src="gallery_img/client_gallerys/dk/dk-g5.jpeg" alt="Gallery Image 5" class="gallery-image">
+                        </div>
+                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/dk/dk-g6.jpeg')">
+                            <img src="gallery_img/client_gallerys/dk/dk-g6.jpeg" alt="Gallery Image 6" class="gallery-image">
                         </div>
                     </div>
                 </div>
@@ -371,7 +375,9 @@
             'gallery_img/client_gallerys/dk/dk-g1.jpeg',
             'gallery_img/client_gallerys/dk/dk-g2.jpeg',
             'gallery_img/client_gallerys/dk/dk-g3.jpeg',
-            'gallery_img/client_gallerys/dk/dk-g4.jpeg'
+            'gallery_img/client_gallerys/dk/dk-g4.jpeg',
+            'gallery_img/client_gallerys/dk/dk-g5.jpeg',
+            'gallery_img/client_gallerys/dk/dk-g6.jpeg'
         ];
 
         let currentImageIndex = 0;
