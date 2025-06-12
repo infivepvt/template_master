@@ -337,7 +337,7 @@
     <div class="profile-card">
         <div class="profile-banner">
             <div class="imagepro">
-                <img class="profile-photo" src="profile_img/client_profile/kalum-p.png" alt="Profile">
+                <img class="profile-photo" src="profile_img/client_profile/kalum-p.png?id452" alt="Profile">
             </div>
             <br>
             <br>
