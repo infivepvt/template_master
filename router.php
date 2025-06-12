@@ -209,6 +209,7 @@ $routes = [
     'suren' => 'templates/suren.php', 
     'mahesh' => 'templates/mahesh.php',
     'kalum' => 'templates/kalum.php',
+    'CBL-CEO-kamal' => 'templates/CBL-CEO-kamal.php',
 ];
 
 // Handle the request
