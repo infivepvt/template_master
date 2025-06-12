@@ -249,11 +249,37 @@
             email: "slicmanjula@gmail.com",
             telegram: "https://t.me/+94714949880",
             address: "Kegalla, Sri Lanka",
-            profileImage: "profile_img/client_profile/mahesh-p.png" // Use the correct path
+            logo: "https://tapilinq.com/profile_img/client_profile/mahesh-p.png",
+            profileImage: "https://tapilinq.com/profile_img/client_profile/mahesh-p.png"
         };
 
-        // Create the VCF content with proper image handling
-        let vcfContent = `BEGIN:VCARD
+        // Function to load image and convert to base64
+        async function getBase64Image(imageUrl) {
+            return new Promise((resolve, reject) => {
+                const profileImage = new Image();
+                profileImage.crossOrigin = "Anonymous"; // Handle CORS if needed
+                profileImage.src = imageUrl;
+
+                profileImage.onload = () => {
+                    const canvas = document.createElement('canvas');
+                    const ctx = canvas.getContext('2d');
+                    canvas.width = profileImage.naturalWidth;
+                    canvas.height = profileImage.naturalHeight;
+                    ctx.drawImage(profileImage, 0, 0);
+                    const base64 = canvas.toDataURL('image/jpeg').split(',')[1]; // Get base64 without data URI prefix
+                    resolve(base64);
+                };
+
+                profileImage.onerror = () => {
+                    console.warn("Failed to load profile image. Generating VCF without image.");
+                    resolve(null); // Proceed without image if loading fails
+                };
+            });
+        }
+
+        // Generate VCF content
+        async function createVCF() {
+            let vcfContent = `BEGIN:VCARD
 VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
 N:${contactData.lastName};${contactData.firstName};;;
@@ -264,20 +290,37 @@ TEL;TYPE=CELL:${contactData.phoneMobile}
 EMAIL:${contactData.email}
 URL:${contactData.telegram}
 ADR;TYPE=WORK:;;${contactData.address}
-PHOTO;ENCODING=b;TYPE=JPEG:${contactData.profileImage}
-END:VCARD`;
+LOGO;VALUE=URI:${contactData.logo}`;
 
-        const blob = new Blob([vcfContent], { type: 'text/vcard' });
-        const url = URL.createObjectURL(blob);
+            // Add profile image as base64 if available
+            const base64Image = await getBase64Image(contactData.profileImage);
+            if (base64Image) {
+                vcfContent += `\nPHOTO;ENCODING=b;TYPE=JPEG:${base64Image}`;
+            } else {
+                vcfContent += `\nPHOTO;VALUE=URI:${contactData.profileImage}`;
+            }
 
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-        document.body.appendChild(a);
-        a.click();
+            vcfContent += `\nEND:VCARD`;
 
-        document.body.removeChild(a);
-        URL.revokeObjectURL(url);
+            // Create and download VCF file
+            const blob = new Blob([vcfContent], { type: 'text/vcard' });
+            const url = URL.createObjectURL(blob);
+
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+            document.body.appendChild(a);
+            a.click();
+
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        // Execute VCF creation
+        createVCF().catch((error) => {
+            console.error("Error generating VCF:", error);
+            alert("Failed to generate contact file. Please try again.");
+        });
     }
 </script>
 </body>
