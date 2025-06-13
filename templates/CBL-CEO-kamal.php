@@ -93,7 +93,7 @@
             margin-left: 48%;
             margin-top: -30px;
             transition: background 0.3s;
-            text-align: center;
+            text-align:center;
         }
 
         .custom-save-button75:hover {
@@ -831,62 +831,92 @@
             }
         });
 
-        // Save to Contacts functionality
-        document.getElementById('saveContactBtn').addEventListener('click', async function () {
-            // Get the profile image element
-            const profileImage = document.querySelector('.profile-picture75 img');
+async function generateVCF() {
+    const contactData = {
+        firstName: "Kamal",
+        lastName: "Geeganage",
+        title: "Director/CEO",
+        organization: "CBL Foods International (Pvt) Ltd.",
+        phoneMobile: "+94777357855",
+        phoneOffice: "+94115002000",
+        email: "kamalg.cblf@cbllk.com",
+        address: "No.135, Habarakada Road, Ranala, 10654, Srilanka",
+        website: "https://cbllk.com",
+        profileImage: "profile_img/client_profile/CBL-CEO-kamal-p.png"
+    };
 
-            // Wait for the image to load if not already loaded
-            if (!profileImage.complete) {
-                await new Promise((resolve) => {
-                    profileImage.onload = resolve;
-                    profileImage.onerror = () => {
-                        console.error('Failed to load profile image');
-                        resolve(); // Proceed even if image fails to load
-                    };
-                });
+    const toBase64 = async (url) => {
+        return new Promise((resolve, reject) => {
+            const profileImage = new Image();
+            // Only set crossOrigin if image is from a different domain
+            if (!url.startsWith(window.location.origin) && !url.startsWith('/')) {
+                profileImage.crossOrigin = "Anonymous";
             }
+            profileImage.src = url;
 
-            let base64Image = '';
-            try {
-                // Create canvas and draw image
-                const canvas = document.createElement('canvas');
-                const ctx = canvas.getContext('2d');
-                canvas.width = profileImage.naturalWidth;
-                canvas.height = profileImage.naturalHeight;
-                ctx.drawImage(profileImage, 0, 0);
+            profileImage.onload = () => {
+                try {
+                    const canvas = document.createElement('canvas');
+                    const ctx = canvas.getContext('2d');
+                    canvas.width = profileImage.naturalWidth;
+                    canvas.height = profileImage.naturalHeight;
+                    ctx.drawImage(profileImage, 0, 0);
+                    const base64Image = canvas.toDataURL('image/jpeg').split(',')[1];
+                    resolve(base64Image);
+                } catch (error) {
+                    reject(error);
+                }
+            };
 
-                // Convert to base64 (remove the data:image/jpeg;base64, prefix)
-                base64Image = canvas.toDataURL('image/jpeg').split(',')[1];
-            } catch (error) {
-                console.error('Error processing profile image:', error);
+            profileImage.onerror = () => {
+                reject(new Error("Failed to load image"));
+            };
+
+            if (profileImage.complete) {
+                profileImage.onload();
             }
-
-            // Create vCard content with the photo
-            const vCardData = `BEGIN:VCARD
-VERSION:3.0
-FN:Kamal Geeganage
-TITLE:Director/CEO
-ORG:Kamal Geeganage
-TEL;TYPE=WORK,VOICE:+94777357855
-TEL;TYPE=WORK,VOICE:+94115002000
-EMAIL:kamalg.cblf@cbllk.com
-URL:https://cbllk.com
-ADR;TYPE=WORK:;;No.135, Habarakada Road, Ranala, 10654, Srilanka
-${base64Image ? `PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}` : ''}
-END:VCARD`;
-
-            // Create download link
-            const blob = new Blob([vCardData], { type: 'text/vcard' });
-            const url = URL.createObjectURL(blob);
-            const link = document.createElement('a');
-            link.href = url;
-            link.download = 'Kamal_Geeganage.vcf';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-            URL.revokeObjectURL(url); // Clean up the URL object
         });
+    };
+
+    let photoBase64 = '';
+    try {
+        photoBase64 = await toBase64(contactData.profileImage);
+    } catch (error) {
+        console.error("Failed to load image for VCF:", error);
+    }
+
+    let vcfLines = [
+        "BEGIN:VCARD",
+        "VERSION:3.0",
+        `FN:${contactData.firstName} ${contactData.lastName}`,
+        `N:${contactData.lastName};${contactData.firstName};;;`,
+        `ORG:${contactData.organization}`,
+        `TITLE:${contactData.title}`,
+        `TEL;TYPE=WORK,VOICE:${contactData.phoneMobile}`,
+        `TEL;TYPE=WORK,VOICE:${contactData.phoneOffice}`,
+        `EMAIL;TYPE=WORK:${contactData.email}`,
+        `URL:${contactData.website}`,
+        `ADR;TYPE=WORK:;;${contactData.address};;;`,
+        photoBase64 ? `PHOTO;ENCODING=b;TYPE=JPEG:${photoBase64}` : '',
+        "END:VCARD"
+    ];
+
+    const vcfContent = vcfLines.filter(line => line).join('\n');
+    const blob = new Blob([vcfContent], {
+        type: 'text/vcard'
+    });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+}
+
+// Add event listener to your save button
+document.getElementById('saveContactBtn').addEventListener('click', generateVCF);
 
         // Initialize gallery as visible
         document.addEventListener('DOMContentLoaded', function () {
