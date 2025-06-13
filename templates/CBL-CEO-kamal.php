@@ -93,7 +93,7 @@
             margin-left: 48%;
             margin-top: -30px;
             transition: background 0.3s;
-            text-align:center;
+            text-align: center;
         }
 
         .custom-save-button75:hover {
@@ -832,8 +832,37 @@
         });
 
         // Save to Contacts functionality
-        document.getElementById('saveContactBtn').addEventListener('click', function () {
-            // Create vCard content
+        document.getElementById('saveContactBtn').addEventListener('click', async function () {
+            // Get the profile image element
+            const profileImage = document.querySelector('.profile-picture75 img');
+
+            // Wait for the image to load if not already loaded
+            if (!profileImage.complete) {
+                await new Promise((resolve) => {
+                    profileImage.onload = resolve;
+                    profileImage.onerror = () => {
+                        console.error('Failed to load profile image');
+                        resolve(); // Proceed even if image fails to load
+                    };
+                });
+            }
+
+            let base64Image = '';
+            try {
+                // Create canvas and draw image
+                const canvas = document.createElement('canvas');
+                const ctx = canvas.getContext('2d');
+                canvas.width = profileImage.naturalWidth;
+                canvas.height = profileImage.naturalHeight;
+                ctx.drawImage(profileImage, 0, 0);
+
+                // Convert to base64 (remove the data:image/jpeg;base64, prefix)
+                base64Image = canvas.toDataURL('image/jpeg').split(',')[1];
+            } catch (error) {
+                console.error('Error processing profile image:', error);
+            }
+
+            // Create vCard content with the photo
             const vCardData = `BEGIN:VCARD
 VERSION:3.0
 FN:Kamal Geeganage
@@ -844,6 +873,7 @@ TEL;TYPE=WORK,VOICE:+94115002000
 EMAIL:kamalg.cblf@cbllk.com
 URL:https://cbllk.com
 ADR;TYPE=WORK:;;No.135, Habarakada Road, Ranala, 10654, Srilanka
+${base64Image ? `PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}` : ''}
 END:VCARD`;
 
             // Create download link
@@ -855,6 +885,7 @@ END:VCARD`;
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
+            URL.revokeObjectURL(url); // Clean up the URL object
         });
 
         // Initialize gallery as visible
