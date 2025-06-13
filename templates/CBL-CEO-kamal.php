@@ -25,7 +25,8 @@
             padding: 35px 20px;
             position: relative;
             background-color: #1a1a1a;
-            height: 250px; /* Set banner height to 250px */
+            height: 250px;
+            /* Set banner height to 250px */
         }
 
         .custom-logo {
@@ -92,6 +93,7 @@
             margin-left: 48%;
             margin-top: -30px;
             transition: background 0.3s;
+            text-align:center;
         }
 
         .custom-save-button75:hover {
@@ -138,12 +140,10 @@
             left: -100%;
             width: 200%;
             height: 100%;
-            background: linear-gradient(
-                90deg,
-                transparent,
-                rgba(255, 255, 255, 0.4),
-                transparent
-            );
+            background: linear-gradient(90deg,
+                    transparent,
+                    rgba(255, 255, 255, 0.4),
+                    transparent);
             animation: shimmer 2s infinite;
         }
 
@@ -155,9 +155,11 @@
             0% {
                 transform: translateX(-100%);
             }
+
             50% {
                 transform: translateX(100%);
             }
+
             100% {
                 transform: translateX(100%);
             }
@@ -441,9 +443,12 @@
         }
 
         @keyframes float {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: translateY(-3px);
             }
+
             50% {
                 transform: translateY(3px);
             }
@@ -588,13 +593,9 @@
 
         /* Responsive Adjustments */
         @media (max-width: 480px) {
-            .custom-card75 {
-                width: 95%;
-                margin-top: -30px;
-            }
 
             .custom-header {
-                height: 180px;
+                height: 220px;
                 padding: 25px 15px;
             }
 
@@ -624,7 +625,8 @@
             <div class="card-header custom-header text-center"
                 style="background-image: url('banner_img/client_banner/CBL-CEO-kamal-b.png'); opacity: 1;">
                 <div class="profile-picture75">
-                    <img src="profile_img/client_profile/CBL-CEO-kamal-p.png" alt="Kamal Geeganage" class="rounded-circle">
+                    <img src="profile_img/client_profile/CBL-CEO-kamal-p.png" alt="Kamal Geeganage"
+                        class="rounded-circle">
                 </div>
             </div>
             <br><br>
@@ -640,7 +642,8 @@
                     <button class="btn w-100 mb-3 custom-phone1 d-flex align-items-center justify-content-center"
                         style="height: 60px; gap: 10px;">
                         <i class="fab fa-whatsapp" style="font-size: 50px; margin-right:30px; color: #FFFFFF;"></i>
-                        <span style="font-size: 14px; font-family: 'Montserrat', sans-serif;">CONNECT WITH WHATSAPP</span>
+                        <span style="font-size: 14px; font-family: 'Montserrat', sans-serif;">CONNECT WITH
+                            WHATSAPP</span>
                     </button>
                 </a>
                 <div class="list-group mb-3">
@@ -655,7 +658,8 @@
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
                         onclick="window.open('tel:+94115002000', '_self')">
-                        <img src="Images/icon/landphone.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
+                        <img src="Images/icon/landphone.png" alt=""
+                            style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
                             style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">+94 11 500 2000</span>
                     </button>
@@ -682,10 +686,12 @@
                         onclick="window.open('https://maps.app.goo.gl/ZpX2LDcHiFUxGKPPA', '_blank')">
                         <img src="Images/icon/map.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">No.135, Habarakada Road, Ranala, 10654, Srilanka</span>
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">No.135,
+                            Habarakada Road, Ranala, 10654, Srilanka</span>
                     </button>
                 </div>
-                <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:19px; color: #FFD700;">CONNECT WITH SOCIAL MEDIA</p>
+                <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:19px; color: #FFD700;">CONNECT
+                    WITH SOCIAL MEDIA</p>
                 <div class="d-flex flex-wrap justify-content-center">
                     <a href="#" target="_blank" rel="noopener noreferrer" class="m-3">
                         <img src="Images/Social_Media_Icon/instagram.png" alt="" style="width: 50px; height: 50px;">
@@ -709,17 +715,25 @@
                         </div>
                     </div>
                     <div class="gallery-container d-flex flex-wrap justify-content-center" id="galleryContainer">
-                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/kamal/kamal-g1.jpeg')">
-                            <img src="gallery_img/client_gallerys/kamal/kamal-g1.jpeg" alt="Gallery Image 1" class="gallery-image">
+                        <div class="gallery-item"
+                            onclick="openLightbox('gallery_img/client_gallerys/kamal/kamal-g1.jpeg')">
+                            <img src="gallery_img/client_gallerys/kamal/kamal-g1.jpeg" alt="Gallery Image 1"
+                                class="gallery-image">
                         </div>
-                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/kamal/kamal-g2.jpeg')">
-                            <img src="gallery_img/client_gallerys/kamal/kamal-g2.jpeg" alt="Gallery Image 2" class="gallery-image">
+                        <div class="gallery-item"
+                            onclick="openLightbox('gallery_img/client_gallerys/kamal/kamal-g2.jpeg')">
+                            <img src="gallery_img/client_gallerys/kamal/kamal-g2.jpeg" alt="Gallery Image 2"
+                                class="gallery-image">
                         </div>
-                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/kamal/kamal-g3.jpeg')">
-                            <img src="gallery_img/client_gallerys/kamal/kamal-g3.jpeg" alt="Gallery Image 3" class="gallery-image">
+                        <div class="gallery-item"
+                            onclick="openLightbox('gallery_img/client_gallerys/kamal/kamal-g3.jpeg')">
+                            <img src="gallery_img/client_gallerys/kamal/kamal-g3.jpeg" alt="Gallery Image 3"
+                                class="gallery-image">
                         </div>
-                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/kamal/kamal-g4.jpeg')">
-                            <img src="gallery_img/client_gallerys/kamal/kamal-g4.jpeg" alt="Gallery Image 4" class="gallery-image">
+                        <div class="gallery-item"
+                            onclick="openLightbox('gallery_img/client_gallerys/kamal/kamal-g4.jpeg')">
+                            <img src="gallery_img/client_gallerys/kamal/kamal-g4.jpeg" alt="Gallery Image 4"
+                                class="gallery-image">
                         </div>
                     </div>
                 </div>
