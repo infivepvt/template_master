@@ -214,6 +214,7 @@ $routes = [
     'champ' => 'templates/champ.php',
     'ratnayake' => 'templates/ratnayake.php',
     'lisari' => 'templates/lisari.php',
+    'infive' => 'templates/infive.php',
 ];
 
 // Handle the request
