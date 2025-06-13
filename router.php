@@ -216,7 +216,7 @@ $routes = [
     'lisari' => 'templates/lisari.php',
     'infive' => 'templates/infive.php',
     'sandaruwan' => 'templates/sandaruwan.php',
-    'amila.php' => 'templates/amila.php',
+    'amila' => 'templates/amila.php',
 ];
 
 // Handle the request
