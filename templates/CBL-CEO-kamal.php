@@ -867,7 +867,7 @@
 VERSION:3.0
 FN:Kamal Geeganage
 TITLE:Director/CEO
-ORG:CBL Foods International (Pvt) Ltd.
+ORG:Kamal Geeganage
 TEL;TYPE=WORK,VOICE:+94777357855
 TEL;TYPE=WORK,VOICE:+94115002000
 EMAIL:kamalg.cblf@cbllk.com
