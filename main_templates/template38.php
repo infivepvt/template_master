@@ -236,6 +236,70 @@
             border-radius: 50%; /* If the image itself should be round */
         }
         
+@media (max-width: 576px) {
+    .business-card-container {
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .card-header-new {
+        padding: 20px 15px;
+    }
+
+   
+    .profile-pic-new {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto 15px auto;
+    }
+
+    .header-info h1 {
+        font-size: 22px;
+    }
+
+    .header-info .title,
+    .header-info .studio {
+        font-size: 13px;
+    }
+
+    .header-icons {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .icon-btn {
+        width: 42px;
+        height: 42px;
+        font-size: 16px;
+    }
+
+    .card-content-new {
+        padding: 20px 15px;
+    }
+
+    .contact-item h3 {
+        font-size: 16px;
+    }
+
+    .contact-item p {
+        font-size: 12px;
+    }
+
+    .add-to-contact-btn {
+        font-size: 14px;
+        width: 100%;
+        height: 40px;
+    }
+
+    .fixed-bottom-logo {
+        width: 40px;
+        height: 40px;
+        bottom: 10px;
+        right: 10px;
+    }
+}
 
     </style>
 </head>
@@ -244,7 +308,7 @@
     <div class="business-card-container">
         <div class="card-header-new">
             <div class="header-content">
-                <div class="header-info"><br><br><br><br><br><br><br><br>
+                <div class="header-info"><br><br><br><br><br><br><br>
                     <h1>David L. Soares</h1>
                     <p class="title">Music Therapist</p>
                     <p class="studio">Central therapy Studio</p>
