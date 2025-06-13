@@ -600,8 +600,8 @@
             }
 
             .profile-picture75 img {
-                width: 110px;
-                height: 110px;
+                width: 120px;
+                height: 120px;
             }
 
             .contact-name {
