@@ -203,7 +203,7 @@
 
         <section class="about-section">
             <h2 style="color: white;">About Us</h2>
-            <p style="color: white;">Providing reliable car rental and cab services across Wellamuna and Walasmulla.</p>
+            <p style="color: white;">Providing Reliable Car Rental & Cab Services Across Matara</p>
 
             <div class="image-gallery">
                 <img src="gallery_img/client_gallerys/lisari/lisari-g1.jpeg" alt="Car Rental Service">
@@ -233,9 +233,9 @@
                 website: "",
                 website2: "",
                 website3: "",
-                address: "21/1/A, Middleniya Road, Wellamuna, Walasmulla",
+                address: "21/1/A, Middleniya Road,Wellamuna,Walasmulla",
                 address2: "",
-                about: "Providing reliable car rental and cab services across Wellamuna and Walasmulla.",
+                about: "Providing Reliable Car Rental & Cab Services Across Matara",
                 logo: "profile_img/main_profile/template16-p.png",
                 profileImage: "profile_img/main_profile/template16-p.png"
             };
