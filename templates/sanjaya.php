@@ -227,7 +227,7 @@
                         <img src="Images/icon/internet.png" alt=""
                             style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #FFFFFF; 'Montserrat', sans-serif; font-size:16px; font-size:16px;">sigmavet.lk</span>
+                            style="color: #FFFFFF; 'Montserrat', sans-serif; font-size:16px; font-size:16px;">www.sigmavet.lk</span>
                     </button>
                     <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
