@@ -434,6 +434,7 @@
                 email: "info@sjhospital.lk",
                 website: "http://sjhospital.lk/",
                 address: "229/10 St. Joseph Street, Negombo",
+                address2: "139 Srimath Anagarika Dharmapala Mawatha, Colombo 07",
                 profileImage: "profile_img/client_profile/sachith-p.png",
                 logo: "logo_img/client_logo/sachith-l.png"
             };
@@ -480,6 +481,7 @@ TEL;TYPE=CELL:${contactData.phoneMobile}
 EMAIL:${contactData.email}
 URL:${contactData.website}
 ADR;TYPE=WORK:;;${contactData.address}
+ADR;TYPE=WORK:;;${contactData.address2}
 ${base64Image ? `PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}` : `PHOTO;VALUE=URL:${contactData.profileImage}`}
 LOGO;VALUE=URL:${contactData.logo}
 END:VCARD`;
