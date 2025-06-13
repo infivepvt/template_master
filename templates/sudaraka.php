@@ -9,7 +9,7 @@
     <link rel="icon" type="image/x-icon" href="Images/Logo1.ico">
     <style>
         .profile-card {
-            background-color: #000;
+            background: linear-gradient(135deg, #0a3637 0%, #001919 50%, #0a3637 100%);
             color: #fff;
             max-width: 450px;
             width: 100%;
@@ -26,7 +26,7 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            background: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
+            background: linear-gradient(to top, rgba(0, 25, 25, 0.4), transparent);
             z-index: 9999;
         }
 
@@ -49,7 +49,7 @@
             padding-left: 26%;
             margin: 4%;
             z-index: 2;
-            color: #ffffff;
+            color: #f8c847;
             text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
             text-align: left;
         }
@@ -71,10 +71,11 @@
             align-items: center;
             gap: 20px;
             padding: 15px;
+            flex-wrap: wrap;
         }
 
         .contact-button {
-            background-color: #fff;
+            background-color: #f8c847;
             border-radius: 50%;
             width: 50px;
             height: 50px;
@@ -87,17 +88,17 @@
         }
 
         .contact-button:hover {
-            background-color: #444444;
+            background-color: #001919;
         }
 
         .contact-icon {
             font-size: 1.5rem;
-            color: #000;
+            color: #0a3637;
         }
 
         .gallery-section {
             padding: 20px;
-            background-color: #000;
+            background: linear-gradient(135deg, #001919 0%, #0a3637 100%);
         }
 
         .gallery-header {
@@ -105,7 +106,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 10px 0;
-            color: #fff;
+            color: #f8c847;
             cursor: pointer;
         }
 
@@ -151,7 +152,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.9);
+            background-color: rgba(0, 25, 25, 0.9);
             z-index: 1000;
             justify-content: center;
             align-items: center;
@@ -172,7 +173,7 @@
             position: absolute;
             top: 20px;
             right: 20px;
-            color: white;
+            color: #f8c847;
             font-size: 30px;
             cursor: pointer;
         }
@@ -189,42 +190,45 @@
         .lightbox-nav button {
             background: none;
             border: none;
-            color: white;
+            color: #f8c847;
             font-size: 30px;
             cursor: pointer;
         }
 
         .about-section {
             padding: 20px;
-            background-color: #000;
+            background: linear-gradient(135deg, #0a3637 0%, #001919 100%);
         }
 
         .about-section h5 {
-            color: #fff;
+            color: #f8c847;
             margin-bottom: 15px;
         }
 
         .about-section p {
             font-size: 0.9rem;
+            color: #fff;
         }
 
         .custom-save-button {
             width: 100%;
-            background-color: #fff;
-            color: black;
+            background-color: #f8c847;
+            color: #0a3637;
             border: none;
             padding: 15px;
             font-weight: bold;
         }
 
         .custom-save-button:hover {
-            background-color: #229936;
+            background-color: #001919;
+            color: #f8c847;
         }
 
         .footer {
-            background-color: #000;
+            background: linear-gradient(135deg, #001919 0%, #0a3637 100%);
             text-align: center;
             padding: 10px;
+            color: #f8c847;
         }
     </style>
 </head>
@@ -254,6 +258,26 @@
             <button type="button" class="contact-button" onclick="window.open('https://www.google.com/maps/search/?api=1&query=No+331%2F+17%2C+Dewala+Road%2C+Katuwana%2C+Homagama', '_blank')">
                 <i class="fas fa-map-marker-alt contact-icon"></i>
             </button>
+
+            <button type="button" class="contact-button" onclick="window.open('https://www.facebook.com', '_blank')">
+                <i class="fab fa-facebook-f contact-icon"></i>
+            </button>
+
+            <button type="button" class="contact-button" onclick="window.open('https://www.instagram.com', '_blank')">
+                <i class="fab fa-instagram contact-icon"></i>
+            </button>
+
+            <button type="button" class="contact-button" onclick="window.open('https://www.linkedin.com', '_blank')">
+                <i class="fab fa-linkedin-in contact-icon"></i>
+            </button>
+
+            <button type="button" class="contact-button" onclick="window.open('https://x.com', '_blank')">
+                <i class="fab fa-twitter contact-icon"></i>
+            </button>
+
+            <button type="button" class="contact-button" onclick="window.open('https://www.youtube.com', '_blank')">
+                <i class="fab fa-youtube contact-icon"></i>
+            </button>
         </div>
 
         <div class="lightbox" id="lightbox">
@@ -269,7 +293,7 @@
 
         <div class="about-section">
             <div class="container">
-                <div class="rounded-4 p-4 mx-auto" style="background-color: #363636; max-width: 600px;">
+                <div class="rounded-4 p-4 mx-auto" style="background: linear-gradient(135deg, #001919 0%, #0a3637 100%); max-width: 600px;">
                     <h5 class="text-center">About</h5>
                     <p class="text-center text-light mb-0">Sudaraka Bandara, the Director and CEO of OSA Solutions (Pvt) Ltd, leads the company with a clear vision for delivering precision-driven project management and coordination services. With a strong foundation in technical expertise and strategic leadership, he is committed to ensuring that every project handled by OSA Solutions meets the highest standards of efficiency, transparency, and client satisfaction. Under his guidance, the company has become a trusted partner for businesses seeking tailored solutions that align with their unique goals and drive measurable results.</p>
                 </div>
