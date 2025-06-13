@@ -170,7 +170,7 @@
             <br>
             <div class="card-body text-center"
                 style="background-color: #FFFFFF; color: #000000; text-decoration: none; ">
-                <h2 class="card-title" style="font-size: 27px; text-transform: uppercase;">Dr. Samantha Ratnayake </h2>
+                <h2 class="card-title" style="font-size: 27px; text-transform: uppercase;">Samantha Ratnayake </h2>
                 <p style="color: #000000; font-size: 21px; text-transform: uppercase;">DIRECTOR/CEO <br>ROVEL LANKA (PVT) LTD</p>
 
                 <a href="https://wa.me/94777572444" target="_blank" rel="noopener noreferrer"

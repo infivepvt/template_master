@@ -352,7 +352,7 @@
                         <img src="Images/Social_Media_Icon/tiktok.png" alt="TikTok" style="width: 57px; height: 57px;">
                     </a>
                     <a href="https://x.com/photogrbychamp" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/x.png" alt="Twitter" style="width: 50px; height: 50px;">
+                        <img src="Images/Social_Media_Icon/x-2.png" alt="Twitter" style="width: 50px; height: 50px;">
                     </a>
                 </div>
                 <!-- Gallery Section -->
