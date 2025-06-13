@@ -433,6 +433,7 @@
                 email: "sonali@sjhospital.lk",
                 website: "http://sjhospital.lk/",
                 address: "St. Joseph Hospital, Negombo",
+                address2: "139 Srimath Anagarika Dharmapala Mawatha, Colombo 07",
                 profileImage: "profile_img/client_profile/sonali-p.jpeg", // Update if profile image is different
                 logo: "logo_img/client_logo/sachith-l.png" // Update if logo is different
             };
@@ -478,6 +479,7 @@ TEL;TYPE=CELL:${contactData.phoneMobile}
 EMAIL:${contactData.email}
 URL:${contactData.website}
 ADR;TYPE=WORK:;;${contactData.address}
+ADR;TYPE=WORK:;;${contactData.address2}
 ${base64Image ? `PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}` : `PHOTO;VALUE=URL:${contactData.profileImage}`}
 LOGO;VALUE=URL:${contactData.logo}
 END:VCARD`;
