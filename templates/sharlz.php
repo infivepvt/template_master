@@ -226,7 +226,7 @@
             <div class="list-group mb-3 px-3">
                 <button type="button" class="list-group-item" onclick="window.open('tel:+94 776 768 678', '_self')">
                     <img src="Images/icon/phone.png" alt="Phone Icon" style="width: 30px; height: 30px;">
-                    <span class="text-truncate custom-phone">+94 776 768 678</span>
+                    <span class="text-truncate custom-phone">+94 76 776 8678</span>
                 </button>
 
                 <button type="button" class="list-group-item"
@@ -317,7 +317,7 @@
                 firstName: "SHARLZ",
                 lastName: "",
                 title: "",
-                phoneWork: "+94 776 768 678",
+                phoneWork: "+94767768678",
                 phoneMobile: "",
                 email: "sharlztc.ak@gmail.com",
                 email2: "",
