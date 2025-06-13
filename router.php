@@ -28,8 +28,8 @@ $routes = [
     'gallery' => 'template_gallery.php',
     'shop' => 'shop_more.php',
     'maintenance' => 'maintenance.php',
-    
-    
+
+
     // Template routes
     'template1' => 'main_templates/template1.php',
     'template2' => 'main_templates/template2.php',
@@ -84,7 +84,7 @@ $routes = [
     'template51' => 'main_templates/template51.php',
     'template52' => 'main_templates/template52.php',
     'template53' => 'main_templates/template53.php',
-    
+
     // Client templates
     'Test' => 'templates/Test.php',
     'rovenrich' => 'templates/rovenrich.php',
@@ -171,60 +171,61 @@ $routes = [
     'mihirami' => 'templates/mihirami.php',
     'gurusinghe' => 'templates/gurusinghe.php',
     'manoj' => 'templates/manoj.php',
-    'chathura' => 'templates/chathura.php', 
-    'sonali' => 'templates/sonali.php', 
-    'charith' => 'templates/charith.php', 
-    'cricketkingdom' => 'templates/cricketkingdom.php', 
-    'thusitha' => 'templates/thusitha.php', 
-    'pubudu' => 'templates/pubudu.php', 
-    'tuktuk' => 'templates/tuktuk.php',  
-    'thilini' => 'templates/thilini.php', 
-    'srimal' => 'templates/srimal.php', 
-    'vvmobile' => 'templates/vvmobile.php', 
-    'dilini' => 'templates/dilini.php', 
-    'somarathne' => 'templates/somarathne.php', 
-    'shen' => 'templates/shen.php', 
-    'dilhani' => 'templates/dilhani.php', 
-    'ranhuya' => 'templates/ranhuya.php', 
-    'maheema' => 'templates/maheema.php', 
-    'suvishal' => 'templates/suvishal.php', 
-    'sanjaya' => 'templates/sanjaya.php', 
-    'elizabeth' => 'templates/elizabeth.php', 
-    'kinnarawi' => 'templates/kinnarawi.php', 
-    'sansari' => 'templates/sansari.php', 
-    'dorit-dimand' => 'templates/dorit-dimand.php', 
-    'ifixpro' => 'templates/ifixpro.php', 
-    'edirisinghe' => 'templates/edirisinghe.php', 
-    'muhammed' => 'templates/muhammed.php', 
-    'cradlewell' => 'templates/cradlewell.php', 
-    'dk' => 'templates/dk.php', 
-    'shakila' => 'templates/shakila.php', 
-    'lokesh' => 'templates/lokesh.php', 
-    'schenova' => 'templates/schenova.php', 
-    'sudesh' => 'templates/sudesh.php', 
-    'sampath' => 'templates/sampath.php', 
-    'shantha' => 'templates/shantha.php', 
-    'rameez' => 'templates/rameez.php', 
-    'travellers' => 'templates/travellers.php', 
-    'suren' => 'templates/suren.php', 
+    'chathura' => 'templates/chathura.php',
+    'sonali' => 'templates/sonali.php',
+    'charith' => 'templates/charith.php',
+    'cricketkingdom' => 'templates/cricketkingdom.php',
+    'thusitha' => 'templates/thusitha.php',
+    'pubudu' => 'templates/pubudu.php',
+    'tuktuk' => 'templates/tuktuk.php',
+    'thilini' => 'templates/thilini.php',
+    'srimal' => 'templates/srimal.php',
+    'vvmobile' => 'templates/vvmobile.php',
+    'dilini' => 'templates/dilini.php',
+    'somarathne' => 'templates/somarathne.php',
+    'shen' => 'templates/shen.php',
+    'dilhani' => 'templates/dilhani.php',
+    'ranhuya' => 'templates/ranhuya.php',
+    'maheema' => 'templates/maheema.php',
+    'suvishal' => 'templates/suvishal.php',
+    'sanjaya' => 'templates/sanjaya.php',
+    'elizabeth' => 'templates/elizabeth.php',
+    'kinnarawi' => 'templates/kinnarawi.php',
+    'sansari' => 'templates/sansari.php',
+    'dorit-dimand' => 'templates/dorit-dimand.php',
+    'ifixpro' => 'templates/ifixpro.php',
+    'edirisinghe' => 'templates/edirisinghe.php',
+    'muhammed' => 'templates/muhammed.php',
+    'cradlewell' => 'templates/cradlewell.php',
+    'dk' => 'templates/dk.php',
+    'shakila' => 'templates/shakila.php',
+    'lokesh' => 'templates/lokesh.php',
+    'schenova' => 'templates/schenova.php',
+    'sudesh' => 'templates/sudesh.php',
+    'sampath' => 'templates/sampath.php',
+    'shantha' => 'templates/shantha.php',
+    'rameez' => 'templates/rameez.php',
+    'travellers' => 'templates/travellers.php',
+    'suren' => 'templates/suren.php',
     'mahesh' => 'templates/mahesh.php',
     'kalum' => 'templates/kalum.php',
     'CBL-CEO-kamal' => 'templates/CBL-CEO-kamal.php',
+    'kushal' => 'templates/kushal.php',
 ];
 
 // Handle the request
 if (array_key_exists($request_uri, $routes)) {
     $file_path = $routes[$request_uri];
-    
+
     // Check if the file exists using absolute path
     $absolute_path = __DIR__ . '/' . ltrim($file_path, '/');
-    
+
     if (file_exists($absolute_path)) {
         include $absolute_path;
     } else {
         // Log the error
         error_log("Router Error: File not found - {$absolute_path}");
-        
+
         // Show 404 page
         http_response_code(404);
         include '404.php'; // Create this file
@@ -236,7 +237,7 @@ if (array_key_exists($request_uri, $routes)) {
     if (file_exists($requested_file) && !is_dir($requested_file)) {
         return false; // Let the server handle direct file requests
     }
-    
+
     // No route found - show 404
     http_response_code(404);
     include '404.php';
