@@ -185,7 +185,7 @@
                 style="background-color: #FFFFFF; color: #000000; text-decoration: none; ">
                 <h2 class="card-title" style="font-size: 27px; text-transform: uppercase;">Dr.SANJAYA WASALA</h2>
                 <p style="color: #000000; font-size: 21px; text-transform: uppercase;">MANAGING DIRECTOR</p>
-                <p style="color: #000000; font-size: 16px;">Nutri Veto (PVT) Ltd. | Sigma Pharmaceuticals (PVT) Ltd.</p>
+                <p style="color: #000000; font-size: 16px;">Nutri Veto (PVT) Ltd. <br> Sigma Pharmaceuticals (PVT) Ltd.</p>
 
                 <a href="https://wa.me/94773699899" target="_blank" rel="noopener noreferrer"
                     style="text-decoration: none;">
