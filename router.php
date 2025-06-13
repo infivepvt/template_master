@@ -211,6 +211,9 @@ $routes = [
     'kalum' => 'templates/kalum.php',
     'CBL-CEO-kamal' => 'templates/CBL-CEO-kamal.php',
     'kushal' => 'templates/kushal.php',
+    'champ' => 'templates/champ.php',
+    'ratnayake' => 'templates/ratnayake.php',
+    'lisari' => 'templates/lisari.php',
 ];
 
 // Handle the request

@@ -260,7 +260,7 @@
             font-size: 28px !important;
             margin-top: -40px !important;
             margin-bottom: 30px !important;
-            color:rgb(77, 189, 43) !important;
+            color: #75bb0b !important;
         }
     </style>
 </head>
