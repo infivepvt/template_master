@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template 75</title>
+    <title>M.M.M. Rameez - Digital Business Card</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="Images/Logo1.ico">
@@ -567,10 +567,10 @@
 <body>
     <div class="d-flex justify-content-center">
         <div class="card custom-card75 shadow-lg rounded-0" style="background-color: #00114b;">
-            <div class="card-header custom-header" style="background-image: url('banner_img/client_banner/liveu-b.webp');">
-                <img src="logo_img/client_logo/liveu-l.png" alt="Company Logo" class="custom-logo">
+            <div class="card-header custom-header" style="background-image: url('banner_img/client_banner/liveu-b.webp?banner=1');">
+                <img src="logo_img/client_logo/liveu-l.png?logo=1" alt="Company Logo" class="custom-logo">
                 <div class="profile-picture75">
-                    <img src="profile_img/client_profile/liveu-p.png" alt="M.M.M. Rameez" class="rounded-circle">
+                    <img src="profile_img/client_profile/liveu-p.png?p=3" alt="M.M.M. Rameez" class="rounded-circle">
                 </div>
             </div>
             <br><br><br><br>

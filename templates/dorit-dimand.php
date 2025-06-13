@@ -15,6 +15,8 @@
             padding: 0;
         }
 
+
+
         body {
             background-color: #f0f2f5;
             display: flex;
@@ -253,6 +255,13 @@
         .elementor-screen-only {
             display: none;
         }
+
+        .h5-1 {
+            font-size: 28px !important;
+            margin-top: -40px !important;
+            margin-bottom: 30px !important;
+            color:rgb(77, 189, 43) !important;
+        }
     </style>
 </head>
 
@@ -260,7 +269,8 @@
     <div class="digital-card-container">
         <div class="header-banner">
             <div>
-                <h5>Welcome To D Tax Accounting</h5>
+                <h5 class="h5-1">Welcome To</h5>
+                <h5>D Tax Accounting</h5>
                 <h6>We Solve Tax And Accounting Problems</h6>
             </div>
         </div>
@@ -268,7 +278,7 @@
         <div class="elementor-widget-wrap elementor-element-populatedc mx-2">
             <div class="elementor-element elementor-element-3c5b664 elementor-widget elementor-widget-image" data-id="3c5b664" data-element_type="widget" data-settings="{'_animation_mobile':'fadeInDown'}" data-widget_type="image.default">
                 <div class="elementor-widget-container">
-                    <img decoding="async" src="profile_img/client_profile/dorit-dimand-p.png?i" title="Dorit Dimand" alt="Dorit Dimand" loading="lazy">
+                    <img decoding="async" src="profile_img/client_profile/dorit-dimand-p.png" title="Dorit Dimand" alt="Dorit Dimand" loading="lazy">
                 </div>
             </div>
             <div class="elementor-element elementor-element-e304601 elementor-widget elementor-widget-heading mt-5" data-id="e304601" data-element_type="widget" data-settings="{'_animation_mobile':'fadeInLeft'}" data-widget_type="heading.default">
