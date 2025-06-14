@@ -684,168 +684,94 @@
         ];
 
         async function generateVCF() {
-            // UPDATED VCF contact data for PioTravels
-            const contactData = {
-                firstName: "Pio",
-                lastName: "Travels (PVT) Ltd.", // Changed last name for full company name
-                title: "Tour Operator",
-                phoneWork: "", // Keep blank if no specific work direct line
-                phoneMobile: "+94 70 660 1313", // Primary mobile number
-                phoneMobile2: "+94 71 488 0680", // Second mobile number added
-                email: "info@piotravels.com",
-                email2: "", // No second email provided, keeping blank
-                email3: "", // No third email provided, keeping blank
-                website: "https://www.piotravels.com", // **Keep or update this if you have the correct URL**
-                website2: "", // No second website provided, keeping blank
-                website3: "", // No third website provided, keeping blank
-                address: "Chilaw Road, Wennappuwa, Sri Lanka", // Combined into one address field
-                address2: "", // No second address provided, keeping blank
-                about: "Your trusted partner for unforgettable journeys in Sri Lanka.", // Customize this description
-                // IMPORTANT: Update these URLs to PioTravels' actual logo and profile image hosted online
-                logo: "https://tapilinq.com/profile_img/client_profile/piotravels-p.png", // **UPDATE THIS with actual logo URL**
-                profileImage: "https://tapilinq.com/profile_img/client_profile/piotravels-p.png" // **UPDATE THIS with actual profile image URL**
-            };
+    const contactData = {
+        firstName: "Pio",
+        lastName: "Travels (PVT) Ltd.",
+        title: "Tour Operator",
+        phoneWork: "",
+        phoneMobile: "+94 70 660 1313",
+        phoneMobile2: "+94 71 488 0680",
+        email: "info@piotravels.com",
+        email2: "",
+        email3: "",
+        website: "https://www.piotravels.com",
+        website2: "",
+        website3: "",
+        address: "Chilaw Road, Wennappuwa, Sri Lanka",
+        address2: "",
+        about: "Your trusted partner for unforgettable journeys in Sri Lanka.",
+        logo: "https://tapilinq.com/profile_img/client_profile/piotravels-p.png",
+        profileImage: "https://tapilinq.com/profile_img/client_profile/piotravels-p.png"
+    };
 
-            // Convert image to base64
-            const toBase64 = async (url) => {
-                const response = await fetch(url);
-                const blob = await response.blob();
-                return new Promise((resolve, reject) => {
-                    const reader = new FileReader();
-                    reader.onloadend = () => resolve(reader.result.split(',')[1]);
-                    reader.onerror = reject;
-                    reader.readAsDataURL(blob);
-                });
-            };
+    let photoBase64 = '';
+    try {
+        if (contactData.profileImage && contactData.profileImage.startsWith('http')) {
+            // Create an image element to load the profile image
+            const profileImage = new Image();
+            profileImage.src = contactData.profileImage;
+            profileImage.crossOrigin = "Anonymous"; // Handle cross-origin issues
 
-            let photoBase64 = '';
-            try {
-                if (contactData.profileImage && contactData.profileImage.startsWith('http')) {
-                    photoBase64 = await toBase64(contactData.profileImage);
-                }
-            } catch (error) {
-                console.error("Failed to load image for VCF:", error);
-            }
-
-            // Build VCF content
-            let vcfLines = [
-                "BEGIN:VCARD",
-                "VERSION:3.0",
-                `FN:${contactData.firstName} ${contactData.lastName}`, // Full name for display
-                `N:${contactData.lastName};${contactData.firstName};;;`, // Structured name
-            ];
-
-            if (contactData.title) vcfLines.push(`TITLE:${contactData.title}`);
-            if (contactData.phoneWork) vcfLines.push(`TEL;TYPE=WORK,VOICE:${contactData.phoneWork}`);
-            if (contactData.phoneMobile) vcfLines.push(`TEL;TYPE=CELL:${contactData.phoneMobile}`);
-            if (contactData.phoneMobile2) vcfLines.push(`TEL;TYPE=CELL:${contactData.phoneMobile2}`); // Added second mobile
-            if (contactData.email) vcfLines.push(`EMAIL:${contactData.email}`);
-            if (contactData.email2) vcfLines.push(`EMAIL:${contactData.email2}`);
-            if (contactData.email3) vcfLines.push(`EMAIL:${contactData.email3}`);
-            if (contactData.website) vcfLines.push(`URL:${contactData.website}`);
-            if (contactData.website2) vcfLines.push(`URL:${contactData.website2}`);
-            if (contactData.website3) vcfLines.push(`URL:${contactData.website3}`);
-            // Ensure the address is correctly formatted for VCF
-            // ADR format: ;;POBox;Street;City;Region;PostalCode;Country
-            // Since we have a combined string, we put it in the street field
-            if (contactData.address) vcfLines.push(`ADR;TYPE=WORK:;;${contactData.address};;;;`);
-            if (contactData.address2) vcfLines.push(`ADR;TYPE=HOME:;;${contactData.address2};;;;`);
-            if (contactData.about) vcfLines.push(`NOTE:${contactData.about}`);
-
-            // Embed profile image (base64 JPEG format)
-            if (photoBase64) {
-                vcfLines.push(`PHOTO;ENCODING=b;TYPE=JPEG:${photoBase64}`);
-            }
-
-            vcfLines.push("END:VCARD");
-
-            const vcfContent = vcfLines.join('\n');
-
-            // Trigger download
-            const blob = new Blob([vcfContent], {
-                type: 'text/vcard'
+            // Wait for the image to load
+            await new Promise((resolve, reject) => {
+                profileImage.onload = resolve;
+                profileImage.onerror = () => reject(new Error("Failed to load profile image"));
             });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
+
+            // Create canvas and draw image
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            canvas.width = profileImage.naturalWidth;
+            canvas.height = profileImage.naturalHeight;
+            ctx.drawImage(profileImage, 0, 0);
+
+            // Convert to base64
+            photoBase64 = canvas.toDataURL('image/jpeg').split(',')[1];
         }
+    } catch (error) {
+        console.error("Failed to process image for VCF:", error);
+    }
 
-        // Wait for the DOM to be fully loaded before adding the event listener
-        document.addEventListener('DOMContentLoaded', function() {
-            const saveContactButton = document.getElementById('saveContactBtn');
-            if (saveContactButton) {
-                saveContactButton.addEventListener('click', generateVCF);
-            }
-        });
+    // Build VCF content
+    let vcfLines = [
+        "BEGIN:VCARD",
+        "VERSION:3.0",
+        `FN:${contactData.firstName} ${contactData.lastName}`,
+        `N:${contactData.lastName};${contactData.firstName};;;`,
+    ];
 
-        // Gallery functions (rest of your existing gallery code)
-        let currentImageIndex = 0;
+    if (contactData.title) vcfLines.push(`TITLE:${contactData.title}`);
+    if (contactData.phoneWork) vcfLines.push(`TEL;TYPE=WORK,VOICE:${contactData.phoneWork}`);
+    if (contactData.phoneMobile) vcfLines.push(`TEL;TYPE=CELL:${contactData.phoneMobile}`);
+    if (contactData.phoneMobile2) vcfLines.push(`TEL;TYPE=CELL:${contactData.phoneMobile2}`);
+    if (contactData.email) vcfLines.push(`EMAIL:${contactData.email}`);
+    if (contactData.email2) vcfLines.push(`EMAIL:${contactData.email2}`);
+    if (contactData.email3) vcfLines.push(`EMAIL:${contactData.email3}`);
+    if (contactData.website) vcfLines.push(`URL:${contactData.website}`);
+    if (contactData.website2) vcfLines.push(`URL:${contactData.website2}`);
+    if (contactData.website3) vcfLines.push(`URL:${contactData.website3}`);
+    if (contactData.address) vcfLines.push(`ADR;TYPE=WORK:;;${contactData.address};;;;`);
+    if (contactData.address2) vcfLines.push(`ADR;TYPE=HOME:;;${contactData.address2};;;;`);
+    if (contactData.about) vcfLines.push(`NOTE:${contactData.about}`);
+    if (photoBase64) {
+        vcfLines.push(`PHOTO;ENCODING=b;TYPE=JPEG:${photoBase64}`);
+    }
 
-        function toggleGallery() {
-            const galleryContainer = document.getElementById('galleryContainer');
-            const galleryToggle = document.getElementById('galleryToggle');
+    vcfLines.push("END:VCARD");
 
-            if (galleryContainer.style.display === 'none' || galleryContainer.style.display === '') {
-                galleryContainer.style.display = 'grid';
-                galleryToggle.innerHTML = '<i class="fas fa-minus"></i>';
-            } else {
-                galleryContainer.style.display = 'none';
-                galleryToggle.innerHTML = '<i class="fas fa-plus"></i>';
-            }
-        }
+    const vcfContent = vcfLines.join('\n');
 
-        function openLightbox(imageSrc) {
-            const lightbox = document.getElementById('lightbox');
-            const lightboxImage = document.getElementById('lightbox-image');
-
-            currentImageIndex = galleryImages.indexOf(imageSrc);
-
-            lightboxImage.src = imageSrc;
-            lightbox.style.display = 'flex';
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeLightbox() {
-            const lightbox = document.getElementById('lightbox');
-            lightbox.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
-
-        function changeImage(step) {
-            currentImageIndex += step;
-
-            if (currentImageIndex >= galleryImages.length) {
-                currentImageIndex = 0;
-            } else if (currentImageIndex < 0) {
-                currentImageIndex = galleryImages.length - 1;
-            }
-
-            document.getElementById('lightbox-image').src = galleryImages[currentImageIndex];
-        }
-
-        document.getElementById('lightbox').addEventListener('click', function(e) {
-            if (e.target === this) {
-                closeLightbox();
-            }
-        });
-
-        document.addEventListener('keydown', function(e) {
-            const lightbox = document.getElementById('lightbox');
-            if (lightbox && lightbox.style.display === 'flex') {
-                if (e.key === 'Escape') {
-                    closeLightbox();
-                } else if (e.key === 'ArrowLeft') {
-                    changeImage(-1);
-                } else if (e.key === 'ArrowRight') {
-                    changeImage(1);
-                }
-            }
-        });
+    // Trigger download
+    const blob = new Blob([vcfContent], { type: 'text/vcard' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+}
     </script>
 </body>
 
