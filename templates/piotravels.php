@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="Images/Logo1.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <style>
         body {
             background-color: #040032;
@@ -42,7 +43,6 @@
             z-index: 0;
         }
 
-        /* Styles for the video banner */
         .video-banner {
             position: absolute;
             top: 0;
@@ -50,15 +50,12 @@
             width: 100%;
             height: 100%;
             background: rgba(0, 0, 0, 0.4);
-            /* Semi-transparent overlay */
             display: flex;
             align-items: center;
             justify-content: center;
             z-index: 1;
-            /* Ensure it's above the video but below content */
             color: white;
             font-size: 2.5em;
-            /* Adjust as needed */
             font-weight: bold;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
             text-align: center;
@@ -69,9 +66,7 @@
         .video-banner h3 {
             margin: 0;
             font-size: 1em;
-            /* Makes h3 responsive to parent font-size */
         }
-
 
         .custom-logo15 {
             width: 200px;
@@ -85,7 +80,6 @@
             position: relative;
             margin: 0 auto;
             margin-top: -65px;
-            /* Adjusted to pull image slightly into card body */
             z-index: 1;
         }
 
@@ -113,18 +107,61 @@
         }
 
         .list-group-item {
-            background-color: #333;
+            background-color: #373938;
             color: #fff;
             border-radius: 8px;
             margin-bottom: 10px;
             border: 1px solid #444;
             padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            text-decoration: none;
+            width: 100%;
+            box-sizing: border-box;
         }
 
         .list-group-item:hover {
             background-color: #444;
             border-color: #666;
             transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        .list-group-item img {
+            width: 30px;
+            height: 30px;
+            margin-right: 25px;
+            flex-shrink: 0;
+        }
+
+        .list-group-item .text-content {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            flex-grow: 1;
+        }
+
+        .list-group-item .main-text {
+            display: block;
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #FFFFFF;
+            font-family: 'Montserrat', sans-serif;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .list-group-item .sub-text {
+            display: block;
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-top: 0.3rem;
+            color: #FFFFFF;
+            font-family: 'Montserrat', sans-serif;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         .custom-save-button {
@@ -139,7 +176,6 @@
             justify-content: center;
             transition: background 0.3s;
             text-decoration: none;
-            /* Ensure no underline for links */
         }
 
         .custom-save-button:hover {
@@ -165,20 +201,22 @@
         }
 
         .custom-phone1 {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Montserrat', sans-serif;
             font-weight: bold;
-            font-size: 1.2rem;
+            font-size: 14px;
             color: white;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
-
-        .custom-phone1 {
+            background-color: #25D366;
+            height: 60px;
+            border: 2px solid orange;
+            border-radius: 10px;
+            gap: 10px;
             transition: background-color 0.1s, border-color 0.1s;
         }
 
         .custom-phone1:hover {
-            background-color: #25D366;
-            border-color: #128C7E;
+            background-color: #128C7E;
+            border-color: #e08e0b;
         }
 
         .fw {
@@ -187,18 +225,16 @@
         }
 
         .profile-header13 {
-            background-color: #FFFFFF;
+            background-color: #001F3F;
             border-radius: 30px;
             max-width: 95%;
             margin: 0 auto;
             padding: 20px;
             margin-top: 20px;
-            /* Adjusted to account for profile image */
         }
 
         .profile-contact-icons13 {
             display: grid;
-            /* Changed to 2 columns to make room for centering the last button */
             grid-template-columns: repeat(2, 1fr);
             justify-content: center;
             gap: 15px;
@@ -236,13 +272,36 @@
             color: rgb(0, 0, 0);
         }
 
-        /* Enhanced Gallery Styles */
+        /* Gallery Section with Background Image */
         .gallery-section {
             background-color: #1a1a1a;
+            background-image: url('gallery_img/client_gallerys/piotravels/piotravels-g6.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             border-radius: 15px;
             padding: 15px;
             margin-top: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .gallery-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            z-index: 0;
+        }
+
+        .gallery-header,
+        .gallery-container {
+            position: relative;
+            z-index: 1;
         }
 
         .gallery-header {
@@ -252,7 +311,7 @@
             padding: 10px 15px;
             color: #fff;
             cursor: pointer;
-            background-color: #2a2a2a;
+            background-color: rgba(42, 42, 42, 0.8);
             border-radius: 10px;
             margin-bottom: 15px;
         }
@@ -325,7 +384,7 @@
             font-size: 2rem;
         }
 
-        /* Enhanced Lightbox Styles */
+        /* Lightbox Styles */
         .lightbox {
             display: none;
             position: fixed;
@@ -336,13 +395,13 @@
             background-color: rgba(0, 0, 0, 0.9);
             justify-content: center;
             align-items: center;
+            z-index: 9999;
         }
 
         .lightbox-content {
             max-width: 90%;
             max-height: 90%;
             text-align: center;
-            z-index: 9500;
         }
 
         .lightbox-image {
@@ -379,7 +438,7 @@
             justify-content: space-between;
             padding: 0 20px;
             box-sizing: border-box;
-            z-index: 9999;
+            z-index: 1000;
         }
 
         .lightbox-nav button {
@@ -390,7 +449,6 @@
             cursor: pointer;
             opacity: 0.7;
             transition: all 0.3s ease;
-            z-index: 500;
         }
 
         .lightbox-nav button:hover {
@@ -416,7 +474,6 @@
                 transform: scale(0.8);
                 opacity: 0;
             }
-
             to {
                 transform: scale(1);
                 opacity: 1;
@@ -427,13 +484,11 @@
             from {
                 opacity: 0;
             }
-
             to {
                 opacity: 1;
             }
         }
 
-        /* Name and title styles */
         .name-title {
             color: white;
             text-align: center;
@@ -451,7 +506,6 @@
             color: #cccccc;
         }
 
-        /* Social media icons in one line */
         .social-media-container {
             display: flex;
             justify-content: center;
@@ -459,31 +513,30 @@
             flex-wrap: nowrap;
         }
 
-        /* Style for the new About Us button */
         .about-us-button {
             margin-top: 10px;
-            width: 100%; /* Default width for the button */
+            width: 100%;
             font-size: 1rem;
             text-align: center;
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
+            background: linear-gradient(90deg, #5f4def, #00d0ea);
+            border: none;
+            border-radius: 30px;
         }
 
-        /* Centering the About Us button in the grid */
         .profile-contact-icons13 > .contact-icon-container:nth-child(5) {
-            grid-column: span 2; /* Make it span across two columns */
+            grid-column: span 2;
             display: flex;
-            justify-content: center; /* Center the content within the spanned area */
+            justify-content: center;
         }
 
         .profile-contact-icons13 > .contact-icon-container:nth-child(5) .about-us-button {
-            width: 50%; /* Adjust width for visual centering effect within the spanned area */
+            width: 50%;
         }
 
-
-        /* Mobile responsive adjustments */
         @media (max-width: 768px) {
             .gallery-container {
                 grid-template-columns: repeat(2, 1fr);
@@ -507,6 +560,14 @@
 
             .social-media-container {
                 gap: 15px;
+            }
+
+            .list-group-item .main-text {
+                font-size: 1rem;
+            }
+
+            .list-group-item .sub-text {
+                font-size: 0.8rem;
             }
         }
     </style>
@@ -534,45 +595,50 @@
                     <h3>Pio Janza</h3>
                     <p>CEO & Founder</p>
                 </div>
+                <br>
 
-                <div class="profile-header13"
-                    style="background-color: #001F3F; border-radius: 30px; max-width: 95%; margin: 0 auto; padding: 20px; margin-top: 20px;">
-                    <div class="profile-contact-icons13">
-                        <div class="contact-icon-container">
-                            <button type="button" class="contact-icon-button" onclick="window.open('tel:+94706601313', '_self')">
-                                <i class="fas fa-phone contact-icon rotated-90"></i>
-                            </button>
-                            <p class="contact-icon-label">Mobile 1</p>
-                        </div>
+                <a href="https://wa.me/94706601313" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                    <button class="btn w-100 mb-3 custom-phone1 d-flex align-items-center justify-content-center">
+                        <i class="fab fa-whatsapp" style="font-size: 50px; margin-right:30px;"></i>
+                        <span style="font-size: 14px;">CONNECT WITH WHATSAPP</span>
+                    </button>
+                </a>
+                <a href="https://piotravels.com/" target="_blank" rel="noopener noreferrer" class="list-group-item d-flex align-items-center">
+                    <img src="Images/icon/internet.png" alt="Website Icon">
+                    <div class="text-content">
+                        <span class="main-text">www.piotravels.com</span>
+                    </div>
+                </a>
 
-                        <div class="contact-icon-container">
-                            <button type="button" class="contact-icon-button" onclick="window.open('tel:+94714880680', '_self')">
-                                <i class="fas fa-phone contact-icon rotated-90"></i>
-                            </button>
-                            <p class="contact-icon-label">Mobile 2</p>
-                        </div>
+                <a href="mailto:info@piotravels.com" class="list-group-item d-flex align-items-center">
+                    <img src="Images/icon/mail.png" alt="Mail Icon">
+                    <div class="text-content">
+                        <span class="main-text">info@piotravels.com</span>
+                    </div>
+                </a>
 
-                        <div class="contact-icon-container">
-                            <button type="button" class="contact-icon-button" onclick="window.open('mailto:info@piotravels.com', '_self')">
-                                <i class="fas fa-envelope contact-icon"></i>
-                            </button>
-                            <p class="contact-icon-label">Email</p>
-                        </div>
+                <a href="https://maps.google.com/?q=Chilaw+Road,+Wennappuwa,+Sri+Lanka" target="_blank" rel="noopener noreferrer" class="list-group-item d-flex align-items-center">
+                    <img src="Images/icon/map.png" alt="Map Icon">
+                    <div class="text-content">
+                        <span class="main-text">Chilaw Road, Wennappuwa,<br> Sri Lanka</span>
+                    </div>
+                </a>
 
-                        <div class="contact-icon-container">
-                            <button type="button" class="contact-icon-button"
-                                onclick="window.open('https://maps.google.com/?q=Chilaw+Road,+Wennappuwa,+Sri+Lanka', '_blank')">
-                                <i class="fas fa-map-marker-alt contact-icon"></i>
-                            </button>
-                            <p class="contact-icon-label">Address</p>
-                        </div>
+                <a href="tel:+94714880680" class="list-group-item d-flex align-items-center">
+                    <img src="Images/icon/phone.png" alt="Phone Icon">
+                    <div class="text-content">
+                        <span class="main-text">+94 71 488 0680</span>
+                    </div>
+                </a>
 
+                <div class="profile-header13" style="background-color: #001F3F; border-radius: 30px; max-width: 95%; margin: 0 auto; padding: 20px; margin-top: 20px;">
+                    <div class="profile-contact-icons13" style="grid-template-columns: 1fr;"> 
                         <div class="contact-icon-container">
                             <a href="https://share.google/dXOl2w9w6xkbmPlmB" class="btn custom-save-button about-us-button" target="_blank" rel="noopener noreferrer">
                                 ABOUT US
                             </a>
                         </div>
-                        </div>
+                    </div>
 
                     <div class="gallery-section">
                         <div class="gallery-header" onclick="toggleGallery()">
@@ -583,43 +649,37 @@
                         </div>
                         <div class="gallery-container" id="galleryContainer">
                             <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/piotravels/piotravels-g1.jpeg', 0)">
-                                <img src="gallery_img/client_gallerys/piotravels/piotravels-g1.jpeg" alt="Gallery Image 1"
-                                    class="gallery-image">
+                                <img src="gallery_img/client_gallerys/piotravels/piotravels-g1.jpeg" alt="Gallery Image 1" class="gallery-image">
                                 <div class="gallery-overlay">
                                     <i class="fas fa-search-plus"></i>
                                 </div>
                             </div>
                             <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/piotravels/piotravels-g2.jpeg', 1)">
-                                <img src="gallery_img/client_gallerys/piotravels/piotravels-g2.jpeg" alt="Gallery Image 2"
-                                    class="gallery-image">
+                                <img src="gallery_img/client_gallerys/piotravels/piotravels-g2.jpeg" alt="Gallery Image 2" class="gallery-image">
                                 <div class="gallery-overlay">
                                     <i class="fas fa-search-plus"></i>
                                 </div>
                             </div>
                             <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/piotravels/piotravels-g3.jpeg', 2)">
-                                <img src="gallery_img/client_gallerys/piotravels/piotravels-g3.jpeg" alt="Gallery Image 3"
-                                    class="gallery-image">
+                                <img src="gallery_img/client_gallerys/piotravels/piotravels-g3.jpeg" alt="Gallery Image 3" class="gallery-image">
                                 <div class="gallery-overlay">
                                     <i class="fas fa-search-plus"></i>
                                 </div>
                             </div>
                             <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/piotravels/piotravels-g4.jpeg', 3)">
-                                <img src="gallery_img/client_gallerys/piotravels/piotravels-g4.jpeg" alt="Gallery Image 4"
-                                    class="gallery-image">
+                                <img src="gallery_img/client_gallerys/piotravels/piotravels-g4.jpeg" alt="Gallery Image 4" class="gallery-image">
                                 <div class="gallery-overlay">
                                     <i class="fas fa-search-plus"></i>
                                 </div>
                             </div>
                             <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/piotravels/piotravels-g5.jpeg', 4)">
-                                <img src="gallery_img/client_gallerys/piotravels/piotravels-g5.jpeg" alt="Gallery Image 5"
-                                    class="gallery-image">
+                                <img src="gallery_img/client_gallerys/piotravels/piotravels-g5.jpeg" alt="Gallery Image 5" class="gallery-image">
                                 <div class="gallery-overlay">
                                     <i class="fas fa-search-plus"></i>
                                 </div>
                             </div>
                             <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/piotravels/piotravels-g6.jpeg', 5)">
-                                <img src="gallery_img/client_gallerys/piotravels/piotravels-g6.jpeg" alt="Gallery Image 6"
-                                    class="gallery-image">
+                                <img src="gallery_img/client_gallerys/piotravels/piotravels-g6.jpeg" alt="Gallery Image 6" class="gallery-image">
                                 <div class="gallery-overlay">
                                     <i class="fas fa-search-plus"></i>
                                 </div>
@@ -639,22 +699,16 @@
                         </div>
                     </div>
 
-                    <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:15px; color:white;">CONNECT
-                        WITH SOCIAL MEDIA
-                    </p>
+                    <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:15px; color:white;">CONNECT WITH SOCIAL MEDIA</p>
                     <div class="social-media-container">
-                        <a href="https://www.instagram.com/pio.travels?igsh=dXdvdHdxcHAwanBl" target="_blank"
-                            rel="noopener noreferrer">
-                            <img src="Images/Social_Media_Icon/instagram.png" alt="Instagram"
-                                style="width: 50px; height: 50px;">
+                        <a href="https://www.instagram.com/pio.travels?igsh=dXdvdHdxcHAwanBl" target="_blank" rel="noopener noreferrer">
+                            <img src="Images/Social_Media_Icon/instagram.png" alt="Instagram" style="width: 50px; height: 50px;">
                         </a>
                         <a href="https://www.facebook.com/share/14vSspsY2z/" target="_blank" rel="noopener noreferrer">
-                            <img src="Images/Social_Media_Icon/facebook.png" alt="Facebook"
-                                style="width: 50px; height: 50px;">
+                            <img src="Images/Social_Media_Icon/facebook.png" alt="Facebook" style="width: 50px; height: 50px;">
                         </a>
                         <a href="https://youtube.com/@piotravels-ox7we?si=3Zyf6ZklSbsKYZDx" target="_blank" rel="noopener noreferrer">
-                            <img src="Images/Social_Media_Icon/youtube.png" alt="YouTube"
-                                style="width: 50px; height: 50px;">
+                            <img src="Images/Social_Media_Icon/youtube.png" alt="YouTube" style="width: 50px; height: 50px;">
                         </a>
                     </div>
 
@@ -664,7 +718,6 @@
                         SAVE TO CONTACTS
                     </button>
                 </div>
-
                 <br>
             </div>
         </div>
@@ -673,7 +726,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        // Gallery images array (no change to this as per your previous request)
+        // Gallery images array
         const galleryImages = [
             'gallery_img/client_gallerys/piotravels/piotravels-g1.jpeg',
             'gallery_img/client_gallerys/piotravels/piotravels-g2.jpeg',
@@ -684,95 +737,159 @@
         ];
 
         async function generateVCF() {
-    const contactData = {
-        firstName: "Pio",
-        lastName: "Travels (PVT) Ltd.",
-        title: "Tour Operator",
-        phoneWork: "",
-        phoneMobile: "+94 70 660 1313",
-        phoneMobile2: "+94 71 488 0680",
-        email: "info@piotravels.com",
-        email2: "",
-        email3: "",
-        website: "https://www.piotravels.com",
-        website2: "",
-        website3: "",
-        address: "Chilaw Road, Wennappuwa, Sri Lanka",
-        address2: "",
-        about: "Your trusted partner for unforgettable journeys in Sri Lanka.",
-        logo: "https://tapilinq.com/profile_img/client_profile/piotravels-p.png",
-        profileImage: "https://tapilinq.com/profile_img/client_profile/piotravels-p.png"
-    };
+            const contactData = {
+                firstName: "Pio",
+                lastName: "Travels (PVT) Ltd.",
+                title: "Tour Operator",
+                organization: "Pio Travels",
+                phoneMobile: "+94 70 660 1313",
+                phoneMobile2: "+94 71 488 0680",
+                email: "info@piotravels.com",
+                address: "Chilaw Road, Wennappuwa, Sri Lanka",
+                website: "https://piotravels.com/",
+                profileImage: "https://tapilinq.com/profile_img/client_profile/piotravels-p.png"
+            };
 
-    let photoBase64 = '';
-    try {
-        if (contactData.profileImage && contactData.profileImage.startsWith('http')) {
-            // Create an image element to load the profile image
-            const profileImage = new Image();
-            profileImage.src = contactData.profileImage;
-            profileImage.crossOrigin = "Anonymous"; // Handle cross-origin issues
+            const toBase64 = async (url) => {
+                return new Promise((resolve, reject) => {
+                    const profileImage = new Image();
+                    profileImage.crossOrigin = "Anonymous";
+                    profileImage.src = url;
 
-            // Wait for the image to load
-            await new Promise((resolve, reject) => {
-                profileImage.onload = resolve;
-                profileImage.onerror = () => reject(new Error("Failed to load profile image"));
-            });
+                    profileImage.onload = () => {
+                        try {
+                            const canvas = document.createElement('canvas');
+                            const ctx = canvas.getContext('2d');
+                            canvas.width = profileImage.naturalWidth;
+                            canvas.height = profileImage.naturalHeight;
+                            ctx.drawImage(profileImage, 0, 0);
+                            const base64Image = canvas.toDataURL('image/jpeg').split(',')[1];
+                            resolve(base64Image);
+                        } catch (error) {
+                            reject(error);
+                        }
+                    };
 
-            // Create canvas and draw image
-            const canvas = document.createElement('canvas');
-            const ctx = canvas.getContext('2d');
-            canvas.width = profileImage.naturalWidth;
-            canvas.height = profileImage.naturalHeight;
-            ctx.drawImage(profileImage, 0, 0);
+                    profileImage.onerror = () => {
+                        reject(new Error("Failed to load image"));
+                    };
 
-            // Convert to base64
-            photoBase64 = canvas.toDataURL('image/jpeg').split(',')[1];
+                    if (profileImage.complete) {
+                        profileImage.onload();
+                    }
+                });
+            };
+
+            let photoBase64 = '';
+            try {
+                photoBase64 = await toBase64(contactData.profileImage);
+            } catch (error) {
+                console.error("Failed to load image for VCF:", error);
+            }
+
+            let vcfLines = [
+                "BEGIN:VCARD",
+                "VERSION:3.0",
+                `FN:${contactData.firstName} ${contactData.lastName}`,
+                `N:${contactData.lastName};${contactData.firstName};;;`,
+                `ORG:${contactData.organization}`,
+                `TITLE:${contactData.title}`,
+                `TEL;TYPE=CELL:${contactData.phoneMobile}`,
+                `TEL;TYPE=CELL:${contactData.phoneMobile2}`,
+                `EMAIL;TYPE=WORK:${contactData.email}`,
+                `URL:${contactData.website}`,
+                `ADR;TYPE=WORK:;;${contactData.address};;;`,
+                photoBase64 ? `PHOTO;ENCODING=b;TYPE=JPEG:${photoBase64}` : '',
+                "END:VCARD"
+            ];
+
+            const vcfContent = vcfLines.filter(line => line).join('\n');
+            const blob = new Blob([vcfContent], { type: 'text/vcard' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
         }
-    } catch (error) {
-        console.error("Failed to process image for VCF:", error);
-    }
 
-    // Build VCF content
-    let vcfLines = [
-        "BEGIN:VCARD",
-        "VERSION:3.0",
-        `FN:${contactData.firstName} ${contactData.lastName}`,
-        `N:${contactData.lastName};${contactData.firstName};;;`,
-    ];
+        document.addEventListener('DOMContentLoaded', function() {
+            const saveContactButton = document.getElementById('saveContactBtn');
+            if (saveContactButton) {
+                saveContactButton.addEventListener('click', generateVCF);
+            }
+        });
 
-    if (contactData.title) vcfLines.push(`TITLE:${contactData.title}`);
-    if (contactData.phoneWork) vcfLines.push(`TEL;TYPE=WORK,VOICE:${contactData.phoneWork}`);
-    if (contactData.phoneMobile) vcfLines.push(`TEL;TYPE=CELL:${contactData.phoneMobile}`);
-    if (contactData.phoneMobile2) vcfLines.push(`TEL;TYPE=CELL:${contactData.phoneMobile2}`);
-    if (contactData.email) vcfLines.push(`EMAIL:${contactData.email}`);
-    if (contactData.email2) vcfLines.push(`EMAIL:${contactData.email2}`);
-    if (contactData.email3) vcfLines.push(`EMAIL:${contactData.email3}`);
-    if (contactData.website) vcfLines.push(`URL:${contactData.website}`);
-    if (contactData.website2) vcfLines.push(`URL:${contactData.website2}`);
-    if (contactData.website3) vcfLines.push(`URL:${contactData.website3}`);
-    if (contactData.address) vcfLines.push(`ADR;TYPE=WORK:;;${contactData.address};;;;`);
-    if (contactData.address2) vcfLines.push(`ADR;TYPE=HOME:;;${contactData.address2};;;;`);
-    if (contactData.about) vcfLines.push(`NOTE:${contactData.about}`);
-    if (photoBase64) {
-        vcfLines.push(`PHOTO;ENCODING=b;TYPE=JPEG:${photoBase64}`);
-    }
+        // Gallery functions
+        let currentImageIndex = 0;
 
-    vcfLines.push("END:VCARD");
+        function toggleGallery() {
+            const galleryContainer = document.getElementById('galleryContainer');
+            const galleryToggle = document.getElementById('galleryToggle');
 
-    const vcfContent = vcfLines.join('\n');
+            if (galleryContainer.style.display === 'none' || galleryContainer.style.display === '') {
+                galleryContainer.style.display = 'grid';
+                galleryToggle.innerHTML = '<i class="fas fa-minus"></i>';
+            } else {
+                galleryContainer.style.display = 'none';
+                galleryToggle.innerHTML = '<i class="fas fa-plus"></i>';
+            }
+        }
 
-    // Trigger download
-    const blob = new Blob([vcfContent], { type: 'text/vcard' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-}
+        function openLightbox(imageSrc, index) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.getElementById('lightbox-image');
+            const lightboxCounter = document.getElementById('lightboxCounter');
+
+            currentImageIndex = index;
+            lightboxImage.src = imageSrc;
+            lightboxCounter.textContent = `${currentImageIndex + 1} / ${galleryImages.length}`;
+            lightbox.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        function changeImage(step) {
+            currentImageIndex += step;
+
+            if (currentImageIndex >= galleryImages.length) {
+                currentImageIndex = 0;
+            } else if (currentImageIndex < 0) {
+                currentImageIndex = galleryImages.length - 1;
+            }
+
+            const lightboxImage = document.getElementById('lightbox-image');
+            const lightboxCounter = document.getElementById('lightboxCounter');
+            
+            lightboxImage.src = galleryImages[currentImageIndex];
+            lightboxCounter.textContent = `${currentImageIndex + 1} / ${galleryImages.length}`;
+        }
+
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeLightbox();
+            }
+        });
+
+        document.addEventListener('keydown', function(e) {
+            const lightbox = document.getElementById('lightbox');
+            if (lightbox && lightbox.style.display === 'flex') {
+                if (e.key === 'Escape') {
+                    closeLightbox();
+                } else if (e.key === 'ArrowLeft') {
+                    changeImage(-1);
+                } else if (e.key === 'ArrowRight') {
+                    changeImage(1);
+                }
+            }
+        });
     </script>
 </body>
-
 </html>
