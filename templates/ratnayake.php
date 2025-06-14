@@ -189,7 +189,7 @@
                         onclick="window.open('tel:+94777572444', '_self')">
                         <img src="Images/icon/phone.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
-                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">+94 77 757 2444</span>
+                            style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">0777 572 444</span>
                     </button>
 
                     <button type="button"
