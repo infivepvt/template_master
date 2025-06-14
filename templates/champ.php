@@ -12,7 +12,7 @@
          .custom-card75 {
             border-radius: 1px;
             overflow: hidden;
-            background: #010e12;
+            background: linear-gradient(135deg, #fb954e, #f0cd62);
             width: 450px;
             height: auto;
         }
@@ -64,7 +64,7 @@
         }
 
         .list-group-item {
-            background-color: #333;
+            background-color: #303e6d;
             color: #fff;
             border-radius: 8px;
             margin-bottom: 10px;
@@ -286,7 +286,7 @@
 
 <body>
     <div class="d-flex justify-content-center mt-5">
-        <div class="card custom-card75 shadow-lg" style="background-color: #00114b;">
+        <div class="card custom-card75 shadow-lg">
             <div class="card-header custom-header text-center"
                 style="background-image: url('banner_img/client_banner/champ-b.png'); height: 200px; opacity: 1;">
                 <img src="" alt="" class="custom-logo"
@@ -300,7 +300,7 @@
                 <i class="fas fa-save me-2"></i>
                 SAVE TO CONTACTS
             </button>
-            <div class="card-body text-left" style="background-color: #00114b; color: #000000;">
+            <div class="card-body text-left">
                 <h2 class="card-title" style="font-size: 30px;color:rgb(255, 255, 255);">Photography By Champ</h2>
                 <p style="color:rgb(255, 255, 255); font-size: 20px;">Photography & Videography</p>
                 <a href="https://wa.me/94716095253" target="_blank" rel="noopener noreferrer"
@@ -338,21 +338,21 @@
                     </button>
                 </div>
                 <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:19px; color: #FFFFFF;">CONNECT WITH SOCIAL MEDIA</p>
-                <div class="d-flex flex-wrap justify-content-center">
-                    <a href="https://www.instagram.com/photographybychamp/" target="_blank" rel="noopener noreferrer" class="m-3">
+                <div class="d-flex justify-content-center" style="gap: 20px;">
+                    <a href="https://www.instagram.com/photographybychamp/" target="_blank" rel="noopener noreferrer">
                         <img src="Images/Social_Media_Icon/instagram.png" alt="Instagram" style="width: 50px; height: 50px;">
                     </a>
-                    <a href="https://www.facebook.com/share/1F3VnPbemq/" target="_blank" rel="noopener noreferrer" class="m-3">
+                    <a href="https://www.facebook.com/share/1F3VnPbemq/" target="_blank" rel="noopener noreferrer">
                         <img src="Images/Social_Media_Icon/facebook.png" alt="Facebook" style="width: 50px; height: 50px;">
                     </a>
-                    <a href="https://www.youtube.com/@photographybychamp" target="_blank" rel="noopener noreferrer" class="m-3">
+                    <a href="https://www.youtube.com/@photographybychamp" target="_blank" rel="noopener noreferrer">
                         <img src="Images/Social_Media_Icon/youtube.png" alt="YouTube" style="width: 50px; height: 50px;">
                     </a>
-                    <a href="https://www.tiktok.com/@photographybychamp" target="_blank" rel="noopener noreferrer" class="m-3">
+                    <a href="https://www.tiktok.com/@photographybychamp" target="_blank" rel="noopener noreferrer">
                         <img src="Images/Social_Media_Icon/tiktok.png" alt="TikTok" style="width: 57px; height: 57px;">
                     </a>
-                    <a href="https://x.com/photogrbychamp" target="_blank" rel="noopener noreferrer" class="m-3">
-                        <img src="Images/Social_Media_Icon/x-2.png" alt="Twitter" style="width: 50px; height: 50px;">
+                    <a href="https://x.com/photogrbychamp" target="_blank" rel="noopener noreferrer">
+                        <img src="Images/Social_Media_Icon/x.png" alt="Twitter" style="width: 50px; height: 50px;">
                     </a>
                 </div>
                 <!-- Gallery Section -->

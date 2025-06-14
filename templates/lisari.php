@@ -159,7 +159,7 @@
             <img src="profile_img/client_profile/lisari-p.png" alt="Lisari Cars Logo" class="profile-image">
             <h1 style="color: white;">Prasad Premasekara</h1>
             <p class="title" style="color: white; font-size: 13px; text-transform: uppercase;">
-                Rent a Car & Cab Service<br>
+                Lisari Car Rentals <br><br>
                 21/1/A, Middleniya Road, Wellamuna,<br>
                 Walasmulla
             </p>
