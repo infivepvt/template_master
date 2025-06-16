@@ -223,6 +223,7 @@ $routes = [
     'irshad' => 'templates/irshad.php',
     'ibrahim' => 'templates/ibrahim.php',
     'dushmantha' => 'templates/dushmantha.php',
+    'agra' => 'templates/agra.php',
 ];
 
 // Handle the request
