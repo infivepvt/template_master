@@ -221,6 +221,7 @@ $routes = [
     'piotravels' => 'templates/piotravels.php',
     'bandara' => 'templates/bandara.php',
     'irshad' => 'templates/irshad.php',
+    'ibrahim' => 'templates/ibrahim.php',
 ];
 
 // Handle the request
