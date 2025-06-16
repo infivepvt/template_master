@@ -222,6 +222,7 @@ $routes = [
     'bandara' => 'templates/bandara.php',
     'irshad' => 'templates/irshad.php',
     'ibrahim' => 'templates/ibrahim.php',
+    'dushmantha' => 'templates/dushmantha.php',
 ];
 
 // Handle the request
