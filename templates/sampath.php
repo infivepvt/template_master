@@ -199,6 +199,14 @@
                         <span class="text-center flex-grow-1 text-truncate custom-phone"
                             style="color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size:16px;">sampath@deluxvacations.com</span>
                     </button>
+                    <button type="button"
+                        class="list-group-item d-flex align-items-center justify-content-between contact"
+                        onclick="window.open('https://www.deluxvacations.com/', '_blank')">
+                        <img src="Images/icon/internet.png" alt=""
+                            style="width: 30px; height: 30px; margin-right:25px;">
+                        <span class="text-center flex-grow-1 text-truncate custom-phone"
+                            style="color: #FFFFFF; 'Montserrat', sans-serif; font-size:16px; font-size:16px;">www.deluxvacations.com</span>
+                    </button>
 
                     <!-- <button type="button"
                         class="list-group-item d-flex align-items-center justify-content-between contact"
