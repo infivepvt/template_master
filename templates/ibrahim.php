@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template 75</title>
+    <title>Digital Business Card</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="Images/Logo1.ico">
@@ -25,7 +25,7 @@
             background-repeat: no-repeat;
             padding: 35px 20px;
             position: relative;
-            background-image: url('banner_img/client_banner/ibrahim-b.png');
+            background-image: url('banner_img/client_banner/ibrahim-b.png?id12');
             height: 200px;
         }
 
@@ -298,7 +298,7 @@
         <div class="card custom-card75 shadow-lg">
             <div class="card-header custom-header text-center">
                 <div class="profile-picture75">
-                    <img src="profile_img/client_profile/ibrahim-p.png" alt="Ikram M Ibrahim" class="rounded-circle">
+                    <img src="profile_img/client_profile/ibrahim-p.png?id123" alt="Ikram M Ibrahim" class="rounded-circle">
                 </div>
             </div>
             <br><br>
