@@ -245,21 +245,12 @@
                 <i class="fab fa-whatsapp contact-icon"></i>
             </button>
             <button type="button" class="contact-button"
-                onclick="window.open('mailto:youremail@yourwebsite.com', '_self')">
-                <i class="fas fa-envelope contact-icon"></i>
-            </button>
-
-            <button type="button" class="contact-button"
-                onclick="window.open('#', '_blank')">
-                <i class="fas fa-globe contact-icon"></i>
-            </button>
-            <button type="button" class="contact-button"
                 onclick="window.open('https://maps.app.goo.gl/muuP9RBBQpMfNkZk9', '_blank')">
                 <i class="fas fa-map-marker-alt contact-icon"></i>
             </button>
         </div>
         <!-- gallery -->
-        <div class="gallery-section">
+        <!-- <div class="gallery-section">
             <div class="gallery-header" onclick="toggleGallery()">
                 <div class="gallery-title">Gallery</div>
                 <div class="gallery-toggle" id="galleryToggle">
@@ -286,7 +277,7 @@
                     <img src="gallery_img/main_gallerys/t6g6.jpg" alt="Gallery Image 6" class="gallery-image">
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- Lightbox HTML -->
         <div class="lightbox" id="lightbox">
