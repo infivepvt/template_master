@@ -283,7 +283,7 @@
         }
 
         footer a {
-            color:rgb(255, 255, 255);
+            color: rgb(255, 255, 255);
             transition: color 0.3s;
         }
 
@@ -309,7 +309,7 @@
             <div class="card-body text-left">
                 <h2 class="card-title" style="font-size: 30px;">Ikram M Ibrahim</h2>
                 <p style="font-size: 20px;">FedEx <br>Advantis Express (Pvt) Ltd.<br>Deputy Head - Regional Sales</p>
-                  <a href="https://wa.me/94776907423" target="_blank" rel="noopener noreferrer"
+                <a href="https://wa.me/94776907423" target="_blank" rel="noopener noreferrer"
                     style="text-decoration: none;">
                     <button class="btn w-100 mb-3 custom-phone1 d-flex align-items-center justify-content-center"
                         style="background-color: #25D366; color: white; height: 60px; border: 2px solid orange; border-radius: 10px; gap: 10px;">
@@ -423,165 +423,214 @@
             <img id="lightbox-image" class="lightbox-image" src="" alt="">
         </div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        const galleryImages = [
-            'gallery_img/client_gallerys/ibrahim/ibrahim-g1.jpg',
-            'gallery_img/client_gallerys/ibrahim/ibrahim-g2.jpg',
-            'gallery_img/client_gallerys/ibrahim/ibrahim-g3.jpg',
-            'gallery_img/client_gallerys/ibrahim/ibrahim-g4.jpg'
-        ];
-
-        let currentImageIndex = 0;
-
-        function toggleGallery() {
-            const galleryContainer = document.getElementById('galleryContainer');
-            const galleryToggle = document.getElementById('galleryToggle');
-
-            if (galleryContainer.style.display === 'none') {
-                galleryContainer.style.display = 'grid';
-                galleryToggle.innerHTML = '<i class="fas fa-minus"></i>';
-            } else {
-                galleryContainer.style.display = 'none';
-                galleryToggle.innerHTML = '<i class="fas fa-plus"></i>';
-            }
-        }
-
-        function openLightbox(imageSrc) {
-            const lightbox = document.getElementById('lightbox');
-            const lightboxImage = document.getElementById('lightbox-image');
-            currentImageIndex = galleryImages.indexOf(imageSrc);
-            lightboxImage.src = imageSrc;
-            lightbox.style.display = 'flex';
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeLightbox() {
-            const lightbox = document.getElementById('lightbox');
-            lightbox.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
-
-        function changeImage(step) {
-            currentImageIndex += step;
-            if (currentImageIndex >= galleryImages.length) {
-                currentImageIndex = 0;
-            } else if (currentImageIndex < 0) {
-                currentImageIndex = galleryImages.length - 1;
-            }
-            document.getElementById('lightbox-image').src = galleryImages[currentImageIndex];
-        }
-
-        document.getElementById('lightbox').addEventListener('click', function (e) {
-            if (e.target === this) {
-                closeLightbox();
-            }
-        });
-
-        document.addEventListener('keydown', function (e) {
-            const lightbox = document.getElementById('lightbox');
-            if (lightbox.style.display === 'flex') {
-                if (e.key === 'Escape') {
-                    closeLightbox();
-                } else if (e.key === 'ArrowLeft') {
-                    changeImage(-1);
-                } else if (e.key === 'ArrowRight') {
-                    changeImage(1);
-                }
-            }
-        });
-
-        async function generateVCF() {
-    // Extract contact data from the HTML elements
-    const contactData = {
-        firstName: document.querySelector('.card-title').textContent.trim().split(' ')[0] || '',
-        lastName: document.querySelector('.card-title').textContent.trim().split(' ').slice(1).join(' ') || '',
-        title: document.querySelector('.card-body p').textContent.split('\n')[2].trim() || '',
-        organization: document.querySelector('.card-body p').textContent.split('\n')[1].trim() || '',
-        phoneMobile: document.querySelectorAll('.custom-phone')[0].textContent.trim() || '',
-        phoneOffice: document.querySelectorAll('.custom-phone')[1].textContent.trim() || '',
-        email: document.querySelectorAll('.custom-phone')[2].textContent.trim() || '',
-        website: document.querySelectorAll('.custom-phone')[3].textContent.trim() || '',
-        address: document.querySelectorAll('.custom-phone')[4].textContent.trim() || '',
-        profileImage: document.querySelector('.profile-picture75 img').src || ''
-    };
-
-    const toBase64 = async (url) => {
-        return new Promise((resolve, reject) => {
-            const profileImage = new Image();
-            // Only set crossOrigin if image is from a different domain
-            if (!url.startsWith(window.location.origin) {
-                profileImage.crossOrigin = "Anonymous";
-            }
-            profileImage.src = url;
-
-            profileImage.onload = () => {
-                try {
-                    const canvas = document.createElement('canvas');
-                    const ctx = canvas.getContext('2d');
-                    canvas.width = profileImage.naturalWidth;
-                    canvas.height = profileImage.naturalHeight;
-                    ctx.drawImage(profileImage, 0, 0);
-                    const base64Image = canvas.toDataURL('image/jpeg').split(',')[1];
-                    resolve(base64Image);
-                } catch (error) {
-                    reject(error);
-                }
-            };
-
-            profileImage.onerror = () => {
-                reject(new Error("Failed to load image"));
-            };
-
-            if (profileImage.complete) {
-                profileImage.onload();
-            }
-        });
-    };
-
-    let photoBase64 = '';
-    try {
-        if (contactData.profileImage) {
-            photoBase64 = await toBase64(contactData.profileImage);
-        }
-    } catch (error) {
-        console.error("Failed to load image for VCF:", error);
-    }
-
-    let vcfLines = [
-        "BEGIN:VCARD",
-        "VERSION:3.0",
-        `FN:${contactData.firstName} ${contactData.lastName}`,
-        `N:${contactData.lastName};${contactData.firstName};;;`,
-        `ORG:${contactData.organization}`,
-        `TITLE:${contactData.title}`,
-        `TEL;TYPE=WORK,VOICE:${contactData.phoneMobile}`,
-        `TEL;TYPE=WORK,VOICE:${contactData.phoneOffice}`,
-        `EMAIL;TYPE=WORK:${contactData.email}`,
-        `URL:${contactData.website}`,
-        `ADR;TYPE=WORK:;;${contactData.address};;;`,
-        photoBase64 ? `PHOTO;ENCODING=b;TYPE=JPEG:${photoBase64}` : '',
-        "END:VCARD"
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Gallery-related functions (unchanged)
+    const galleryImages = [
+        'gallery_img/client_gallerys/ibrahim/ibrahim-g1.jpg',
+        'gallery_img/client_gallerys/ibrahim/ibrahim-g2.jpg',
+        'gallery_img/client_gallerys/ibrahim/ibrahim-g3.jpg',
+        'gallery_img/client_gallerys/ibrahim/ibrahim-g4.jpg'
     ];
 
-    const vcfContent = vcfLines.filter(line => line).join('\n');
-    const blob = new Blob([vcfContent], {
-        type: 'text/vcard'
-    });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-}
+    let currentImageIndex = 0;
 
-// Add event listener to the save button
-document.getElementById('saveContactBtn').addEventListener('click', generateVCF);
-    </script>
+    function toggleGallery() {
+        const galleryContainer = document.getElementById('galleryContainer');
+        const galleryToggle = document.getElementById('galleryToggle');
+
+        if (galleryContainer.style.display === 'none') {
+            galleryContainer.style.display = 'grid';
+            galleryToggle.innerHTML = '<i class="fas fa-minus"></i>';
+        } else {
+            galleryContainer.style.display = 'none';
+            galleryToggle.innerHTML = '<i class="fas fa-plus"></i>';
+        }
+    }
+
+    function openLightbox(imageSrc) {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImage = document.getElementById('lightbox-image');
+        currentImageIndex = galleryImages.indexOf(imageSrc);
+        lightboxImage.src = imageSrc;
+        lightbox.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+        const lightbox = document.getElementById('lightbox');
+        lightbox.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+
+    function changeImage(step) {
+        currentImageIndex += step;
+        if (currentImageIndex >= galleryImages.length) {
+            currentImageIndex = 0;
+        } else if (currentImageIndex < 0) {
+            currentImageIndex = galleryImages.length - 1;
+        }
+        document.getElementById('lightbox-image').src = galleryImages[currentImageIndex];
+    }
+
+    document.getElementById('lightbox').addEventListener('click', function (e) {
+        if (e.target === this) {
+            closeLightbox();
+        }
+    });
+
+    document.addEventListener('keydown', function (e) {
+        const lightbox = document.getElementById('lightbox');
+        if (lightbox.style.display === 'flex') {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            } else if (e.key === 'ArrowLeft') {
+                changeImage(-1);
+            } else if (e.key === 'ArrowRight') {
+                changeImage(1);
+            }
+        }
+    });
+
+    // VCF Generation Function (from your provided code, with minor adjustments)
+    async function generateVCF(contactData) {
+        const toBase64 = async (url) => {
+            return new Promise((resolve, reject) => {
+                const profileImage = new Image();
+                // Only set crossOrigin if image is from a different domain
+                if (!url.startsWith(window.location.origin) && !url.startsWith('/')) {
+                    profileImage.crossOrigin = "Anonymous";
+                }
+                profileImage.src = url;
+
+                profileImage.onload = () => {
+                    try {
+                        const canvas = document.createElement('canvas');
+                        const ctx = canvas.getContext('2d');
+                        canvas.width = profileImage.naturalWidth;
+                        canvas.height = profileImage.naturalHeight;
+                        ctx.drawImage(profileImage, 0, 0);
+                        const base64Image = canvas.toDataURL('image/jpeg').split(',')[1];
+                        resolve(base64Image);
+                    } catch (error) {
+                        reject(error);
+                    }
+                };
+
+                profileImage.onerror = () => {
+                    reject(new Error("Failed to load image"));
+                };
+
+                if (profileImage.complete) {
+                    profileImage.onload();
+                }
+            });
+        };
+
+        let photoBase64 = '';
+        if (contactData.profileImage) {
+            try {
+                photoBase64 = await toBase64(contactData.profileImage);
+            } catch (error) {
+                console.error("Failed to load image for VCF:", error);
+            }
+        }
+
+        let vcfLines = [
+            "BEGIN:VCARD",
+            "VERSION:3.0",
+            `FN:${contactData.firstName} ${contactData.lastName}`,
+            `N:${contactData.lastName};${contactData.firstName};;;`,
+            `ORG:${contactData.organization}`,
+            `TITLE:${contactData.title}`,
+            contactData.phoneMobile ? `TEL;TYPE=CELL,VOICE:${contactData.phoneMobile}` : '',
+            contactData.phoneOffice ? `TEL;TYPE=WORK,VOICE:${contactData.phoneOffice}` : '',
+            contactData.email ? `EMAIL;TYPE=WORK:${contactData.email}` : '',
+            contactData.website ? `URL:${contactData.website}` : '',
+            contactData.address ? `ADR;TYPE=WORK:;;${contactData.address};;;` : '',
+            photoBase64 ? `PHOTO;ENCODING=b;TYPE=JPEG:${photoBase64}` : '',
+            "END:VCARD"
+        ];
+
+        const vcfContent = vcfLines.filter(line => line).join('\n');
+        const blob = new Blob([vcfContent], { type: 'text/vcard' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    }
+
+    // Extract contact details and trigger VCF generation
+    document.getElementById('saveContactBtn').addEventListener('click', async function () {
+        // Extract name
+        const nameElement = document.querySelector('.card-body h2.card-title');
+        const fullName = nameElement ? nameElement.textContent.trim() : '';
+        const [firstName, ...lastNameParts] = fullName.split(' ');
+        const lastName = lastNameParts.join(' ');
+
+        // Extract title and organization
+        const infoElement = document.querySelector('.card-body p[style*="font-size: 20px"]');
+        const infoLines = infoElement ? infoElement.innerHTML.split('<br>').map(line => line.trim()) : [];
+        const organization = infoLines[1] || '';
+        const title = infoLines[2] || '';
+
+        // Extract contact details from list-group-items
+        const listItems = document.querySelectorAll('.list-group-item');
+        let phoneMobile = '';
+        let phoneOffice = '';
+        let email = '';
+        let website = '';
+        let address = '';
+
+        listItems.forEach(item => {
+            const span = item.querySelector('span.custom-phone');
+            const text = span ? span.textContent.trim() : '';
+            const onclick = item.getAttribute('onclick') || '';
+
+            if (onclick.includes('tel:') && !phoneMobile && text.startsWith('+94')) {
+                phoneMobile = text;
+            } else if (onclick.includes('tel:') && !phoneOffice) {
+                phoneOffice = text;
+            } else if (onclick.includes('mailto:')) {
+                email = text;
+            } else if (onclick.includes('www.')) {
+                website = text;
+            } else if (onclick.includes('google.com/maps')) {
+                address = text;
+            }
+        });
+
+        // Extract profile image
+        const profileImageElement = document.querySelector('.profile-picture75 img');
+        const profileImage = profileImageElement ? profileImageElement.src : '';
+
+        // Prepare contact data
+        const contactData = {
+            firstName: firstName || 'Unknown',
+            lastName: lastName || 'Unknown',
+            title: title,
+            organization: organization,
+            phoneMobile: phoneMobile,
+            phoneOffice: phoneOffice,
+            email: email,
+            address: address,
+            website: website,
+            profileImage: profileImage
+        };
+
+        // Generate VCF
+        await generateVCF(contactData);
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('galleryContainer').style.display = 'grid';
+    });
+</script>
+   
 </body>
 
 </html>
