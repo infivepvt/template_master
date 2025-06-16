@@ -219,6 +219,7 @@ $routes = [
     'amila' => 'templates/amila.php',
     'sudaraka' => 'templates/sudaraka.php',
     'piotravels' => 'templates/piotravels.php',
+    'bandara' => 'templates/bandara.php',
 ];
 
 // Handle the request
