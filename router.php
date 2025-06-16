@@ -224,6 +224,7 @@ $routes = [
     'ibrahim' => 'templates/ibrahim.php',
     'dushmantha' => 'templates/dushmantha.php',
     'agra' => 'templates/agra.php',
+    'darshana' => 'templates/darshana.php',
 ];
 
 // Handle the request
