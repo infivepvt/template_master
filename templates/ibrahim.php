@@ -492,32 +492,95 @@
             }
         });
 
-        document.getElementById('saveContactBtn').addEventListener('click', function () {
-            const vCardData = `BEGIN:VCARD
-VERSION:3.0
-FN:Ikram M Ibrahim
-TITLE:Deputy Head - Regional Sales
-ORG:FedEx;Advantis Express (Pvt) Ltd.
-TEL;TYPE=WORK,VOICE:+94776907423
-TEL;TYPE=WORK,VOICE:+94114522222
-EMAIL:ikram.ib@fedexlk.com
-URL:https://www.fedex.com
-ADR;TYPE=WORK:;;Sales IL Tower, 46/56, Nawam Mawatha, Colombo 02, Srilanka
-END:VCARD`;
+        async function generateVCF() {
+    // Extract contact data from the HTML elements
+    const contactData = {
+        firstName: document.querySelector('.card-title').textContent.trim().split(' ')[0] || '',
+        lastName: document.querySelector('.card-title').textContent.trim().split(' ').slice(1).join(' ') || '',
+        title: document.querySelector('.card-body p').textContent.split('\n')[2].trim() || '',
+        organization: document.querySelector('.card-body p').textContent.split('\n')[1].trim() || '',
+        phoneMobile: document.querySelectorAll('.custom-phone')[0].textContent.trim() || '',
+        phoneOffice: document.querySelectorAll('.custom-phone')[1].textContent.trim() || '',
+        email: document.querySelectorAll('.custom-phone')[2].textContent.trim() || '',
+        website: document.querySelectorAll('.custom-phone')[3].textContent.trim() || '',
+        address: document.querySelectorAll('.custom-phone')[4].textContent.trim() || '',
+        profileImage: document.querySelector('.profile-picture75 img').src || ''
+    };
 
-            const blob = new Blob([vCardData], { type: 'text/vcard' });
-            const url = URL.createObjectURL(blob);
-            const link = document.createElement('a');
-            link.href = url;
-            link.download = 'Ikram_M_Ibrahim.vcf';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        });
+    const toBase64 = async (url) => {
+        return new Promise((resolve, reject) => {
+            const profileImage = new Image();
+            // Only set crossOrigin if image is from a different domain
+            if (!url.startsWith(window.location.origin) {
+                profileImage.crossOrigin = "Anonymous";
+            }
+            profileImage.src = url;
 
-        document.addEventListener('DOMContentLoaded', function () {
-            document.getElementById('galleryContainer').style.display = 'grid';
+            profileImage.onload = () => {
+                try {
+                    const canvas = document.createElement('canvas');
+                    const ctx = canvas.getContext('2d');
+                    canvas.width = profileImage.naturalWidth;
+                    canvas.height = profileImage.naturalHeight;
+                    ctx.drawImage(profileImage, 0, 0);
+                    const base64Image = canvas.toDataURL('image/jpeg').split(',')[1];
+                    resolve(base64Image);
+                } catch (error) {
+                    reject(error);
+                }
+            };
+
+            profileImage.onerror = () => {
+                reject(new Error("Failed to load image"));
+            };
+
+            if (profileImage.complete) {
+                profileImage.onload();
+            }
         });
+    };
+
+    let photoBase64 = '';
+    try {
+        if (contactData.profileImage) {
+            photoBase64 = await toBase64(contactData.profileImage);
+        }
+    } catch (error) {
+        console.error("Failed to load image for VCF:", error);
+    }
+
+    let vcfLines = [
+        "BEGIN:VCARD",
+        "VERSION:3.0",
+        `FN:${contactData.firstName} ${contactData.lastName}`,
+        `N:${contactData.lastName};${contactData.firstName};;;`,
+        `ORG:${contactData.organization}`,
+        `TITLE:${contactData.title}`,
+        `TEL;TYPE=WORK,VOICE:${contactData.phoneMobile}`,
+        `TEL;TYPE=WORK,VOICE:${contactData.phoneOffice}`,
+        `EMAIL;TYPE=WORK:${contactData.email}`,
+        `URL:${contactData.website}`,
+        `ADR;TYPE=WORK:;;${contactData.address};;;`,
+        photoBase64 ? `PHOTO;ENCODING=b;TYPE=JPEG:${photoBase64}` : '',
+        "END:VCARD"
+    ];
+
+    const vcfContent = vcfLines.filter(line => line).join('\n');
+    const blob = new Blob([vcfContent], {
+        type: 'text/vcard'
+    });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+}
+
+// Add event listener to the save button
+document.getElementById('saveContactBtn').addEventListener('click', generateVCF);
     </script>
 </body>
 
