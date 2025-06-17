@@ -15,8 +15,6 @@
             padding: 0;
         }
 
-
-
         body {
             background-color: #f0f2f5;
             display: flex;
@@ -90,7 +88,6 @@
             transform: translateX(-50%);
             z-index: 10;
             text-align: center;
-
         }
 
         .elementor-element-3c5b664 img {
@@ -303,9 +300,9 @@
                                 <div class="elementor-widget-container">
                                     <div class="elementor-social-icons-wrapper elementor-grid">
                                         <span class="elementor-grid-item">
-                                            <a class="elementor-icon elementor-social-icon elementor-social-icon-phone-alt elementor-repeater-item-13c7ba5" target="_blank" onclick="window.open('tel:+17472021470', '_self')">
-                                                <span class="elementor-screen-only">Phone</span>
-                                                <i class="fas fa-phone"></i>
+                                            <a class="elementor-icon elementor-social-icon elementor-social-icon-calendar elementor-repeater-item-13c7ba5" target="_blank" href="https://www.dtaxaccounting.com/book-appointment" rel="noopener noreferrer">
+                                                <span class="elementor-screen-only">Contact</span>
+                                                <i class="fas fa-calendar-alt"></i>
                                             </a>
                                         </span>
                                     </div>
@@ -313,7 +310,7 @@
                             </div>
                             <div class="elementor-element elementor-element-f84381a elementor-widget elementor-widget-text-editor" data-id="f84381a" data-widget_type="text-editor.default">
                                 <div class="elementor-widget-container">
-                                    <p style="text-align: center;">Call</p>
+                                    <p style="text-align: center;">Contact</p>
                                 </div>
                             </div>
                         </div>
@@ -324,7 +321,7 @@
                                 <div class="elementor-widget-container">
                                     <div class="elementor-social-icons-wrapper elementor-grid">
                                         <span class="elementor-grid-item">
-                                            <a class="elementor-icon elementor-social-icon elementor-social-icon-whatsapp elementor-repeater-item-13c7ba5" target="_blank" href="https://wa.me/+17472021470" rel="noopener noreferrer">
+                                            <a class="elementor-icon elementor-social-icon elementor-social-icon-whatsapp elementor-repeater-item-13c7ba5" target="_blank" href="https://wa.me/+18183589588" rel="noopener noreferrer">
                                                 <span class="elementor-screen-only">Whatsapp</span>
                                                 <i class="fab fa-whatsapp"></i>
                                             </a>
@@ -457,7 +454,7 @@
                 lastName: "Dimand",
                 title: "Federal Tax Adviser & Accountant",
                 organization: "D Tax Accounting Inc. | D Tax Settled",
-                phoneMobile: "+1-747-202-1470",
+                phoneMobile: "+1-818-358-9588",
                 email: "dorit@dtaxsettled.com",
                 address: "17547 Ventura Blvd. #309, Encino, CA 91316",
                 website: "https://www.dtaxaccounting.com/",
