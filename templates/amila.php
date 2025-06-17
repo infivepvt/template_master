@@ -222,8 +222,12 @@
                     <br>
                     <p class="contact-info username">Digital Mobility Solutions Lanka Ltd,<br>
                         #309, Highlevel Road, Colombo 06</p>
-                    <br>
+                   
                 </div>
+                 <button class="btn h-100 custom-save-button social-media-button" onclick="generateVCF()">
+                    <i class="fas fa-save me-2"></i>
+                    SAVE TO CONTACTS
+                </button>
                 <div class="social-icons-container">
                     <div class="social-icon-box">
                         <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon">
@@ -241,10 +245,6 @@
                         </a>
                     </div>
                 </div>
-                <button class="btn h-100 custom-save-button social-media-button" onclick="generateVCF()">
-                    <i class="fas fa-save me-2"></i>
-                    SAVE TO CONTACTS
-                </button>
                 <br><br><br>
             </div>
         </div>
@@ -252,22 +252,51 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        function generateVCF() {
-            const contactData = {
-                firstName: "T M Amila",
-                lastName: "Sandaruwan",
-                title: "Manager - PickMe Kurunegala Branch",
-                organization: "Digital Mobility Solutions Lanka Ltd",
-                phoneWork: "+94760106247",
-                phoneSecondary: "+94766975973",
-                emailWork: "amilasandaruwan@pickme.lk",
-                website: "https://pickme.lk/",
-                address: "#309, Highlevel Road, Colombo 06",
-                profileImage: "profile_img/client_profile/amila-p.jpeg",
-                logo: "Images/pickme_logo.png"
-            };
+    async function generateVCF() {
+        const contactData = {
+            firstName: "T M Amila",
+            lastName: "Sandaruwan",
+            title: "Manager - PickMe Kurunegala Branch",
+            organization: "Digital Mobility Solutions Lanka Ltd",
+            phoneWork: "+94760106247",
+            phoneSecondary: "+94766975973",
+            emailWork: "amilasandaruwan@pickme.lk",
+            website: "https://pickme.lk/",
+            address: "#309, Highlevel Road, Colombo 06",
+            profileImage: "profile_img/client_profile/amila-p.jpeg",
+            logo: "logo_img/client_logo/amila-l.png"
+        };
 
-            let vcfContent = `BEGIN:VCARD
+        // Function to convert image to base64
+        async function imageToBase64(url) {
+            const response = await fetch(url);
+            const blob = await response.blob();
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onloadend = () => resolve(reader.result.split(',')[1]);
+                reader.onerror = reject;
+                reader.readAsDataURL(blob);
+            });
+        }
+
+        // Load profile image and convert to base64
+        let profileImageBase64 = '';
+        try {
+            profileImageBase64 = await imageToBase64(contactData.profileImage);
+        } catch (error) {
+            console.error('Error loading profile image:', error);
+        }
+
+        // Load logo image and convert to base64
+        let logoBase64 = '';
+        try {
+            logoBase64 = await imageToBase64(contactData.logo);
+        } catch (error) {
+            console.error('Error loading logo image:', error);
+        }
+
+        // Create vCard content with base64 images
+        let vcfContent = `BEGIN:VCARD
 VERSION:3.0
 FN:${contactData.firstName} ${contactData.lastName}
 N:${contactData.lastName};${contactData.firstName};;;
@@ -278,21 +307,22 @@ TEL;TYPE=CELL,VOICE:${contactData.phoneSecondary}
 EMAIL;TYPE=WORK:${contactData.emailWork}
 URL:${contactData.website}
 ADR;TYPE=WORK:;;${contactData.address};;;;
-PHOTO;VALUE=URL:${window.location.origin}/${contactData.profileImage.replace(/^\//, '')}
-LOGO;VALUE=URL:${window.location.origin}/${contactData.logo.replace(/^\//, '')}
+${profileImageBase64 ? `PHOTO;ENCODING=b;TYPE=JPEG:${profileImageBase64}` : ''}
+${logoBase64 ? `LOGO;ENCODING=b;TYPE=PNG:${logoBase64}` : ''}
 END:VCARD`;
 
-            const blob = new Blob([vcfContent], { type: 'text/vcard;charset=utf-8' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
-        }
-    </script>
+        // Create and download VCF file
+        const blob = new Blob([vcfContent], { type: 'text/vcard;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${contactData.firstName}_${contactData.lastName}.vcf`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    }
+</script>
 </body>
 
 </html>
