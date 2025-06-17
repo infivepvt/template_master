@@ -11,7 +11,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #040032;
+            background-image: url('gallery_img/client_gallerys/piotravels/piotravels-g6.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(4, 0, 50, 0.8);
+            z-index: -1;
         }
 
         .custom-card15 {
@@ -221,15 +236,6 @@
 
         .fw {
             font-weight: bold;
-            margin-top: 20px;
-        }
-
-        .profile-header13 {
-            background-color: #001F3F;
-            border-radius: 30px;
-            max-width: 95%;
-            margin: 0 auto;
-            padding: 20px;
             margin-top: 20px;
         }
 
@@ -537,6 +543,31 @@
             width: 50%;
         }
 
+        /* Card body background */
+        .card-body {
+            background-image: url('gallery_img/client_gallerys/piotravels/piotravels-g6.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        .card-body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 0;
+        }
+
+        .card-body > * {
+            position: relative;
+            z-index: 1;
+        }
+
         @media (max-width: 768px) {
             .gallery-container {
                 grid-template-columns: repeat(2, 1fr);
@@ -585,7 +616,7 @@
                     <h3></h3>
                 </div>
             </div>
-            <div class="card-body text-center" style="background-color: #040032; color: #000000;">
+            <div class="card-body text-center">
                 <div class="profile-picture">
                     <img src="profile_img/client_profile/piotravels-p.png" alt="Pio Travels" class="rounded-circle">
                 </div>
@@ -631,8 +662,8 @@
                     </div>
                 </a>
 
-                <div class="profile-header13" style="background-color: #001F3F; border-radius: 30px; max-width: 95%; margin: 0 auto; padding: 20px; margin-top: 20px;">
-                    <div class="profile-contact-icons13" style="grid-template-columns: 1fr;"> 
+                <div style="border-radius: 30px; max-width: 95%; margin: 0 auto; padding: 20px; margin-top: 20px;">
+                    <div class="profile-contact-icons13" style="grid-template-columns: 1fr;">
                         <div class="contact-icon-container">
                             <a href="https://share.google/dXOl2w9w6xkbmPlmB" class="btn custom-save-button about-us-button" target="_blank" rel="noopener noreferrer">
                                 ABOUT US

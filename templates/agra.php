@@ -301,8 +301,8 @@
             </div>
             <div class="card-body">
                 <h2 class="card-title">Agra Pulathisi</h2>
-                <p class="role">Audio Equipment Specialist</p>
-                <p class="info">Company: Agra Sounds</p>
+                <p class="role"></p>
+                <p class="info">AGRA PULATHISI PARTIES & ENTERTAINMENT SERVICES L.L.C</p>
                 <p class="info">License Number: 1465642</p>
                 <p class="info">Location: Rolla Street, Bur Dubai</p>
 
@@ -357,23 +357,23 @@
                 <p class="fw-bold mt-4">GALLERY</p>
                 <div class="gallery-section">
                     <div class="gallery-container" id="galleryContainer">
-                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/agra/agra-g1.webp')">
-                            <img src="gallery_img/client_gallerys/agra/agra-g1.webp" alt="Gallery Image 1" class="gallery-image">
+                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/agra/agra-g1.jpeg')">
+                            <img src="gallery_img/client_gallerys/agra/agra-g1.jpeg" alt="Gallery Image 1" class="gallery-image">
                         </div>
-                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/agra/agra-g2.webp')">
-                            <img src="gallery_img/client_gallerys/agra/agra-g2.webp" alt="Gallery Image 2" class="gallery-image">
+                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/agra/agra-g2.jpeg')">
+                            <img src="gallery_img/client_gallerys/agra/agra-g2.jpeg" alt="Gallery Image 2" class="gallery-image">
                         </div>
-                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/agra/agra-g3.webp')">
-                            <img src="gallery_img/client_gallerys/agra/agra-g3.webp" alt="Gallery Image 3" class="gallery-image">
+                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/agra/agra-g3.jpeg')">
+                            <img src="gallery_img/client_gallerys/agra/agra-g3.jpeg" alt="Gallery Image 3" class="gallery-image">
                         </div>
-                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/agra/agra-g4.webp')">
-                            <img src="gallery_img/client_gallerys/agra/agra-g4.webp" alt="Gallery Image 4" class="gallery-image">
+                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/agra/agra-g4.jpeg')">
+                            <img src="gallery_img/client_gallerys/agra/agra-g4.jpeg" alt="Gallery Image 4" class="gallery-image">
                         </div>
-                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/agra/agra-g5.webp')">
-                            <img src="gallery_img/client_gallerys/agra/agra-g5.webp" alt="Gallery Image 5" class="gallery-image">
+                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/agra/agra-g5.jpeg')">
+                            <img src="gallery_img/client_gallerys/agra/agra-g5.jpeg" alt="Gallery Image 5" class="gallery-image">
                         </div>
-                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/agra/agra-g6.webp')">
-                            <img src="gallery_img/client_gallerys/agra/agra-g6.webp" alt="Gallery Image 6" class="gallery-image">
+                        <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/agra/agra-g6.jpeg')">
+                            <img src="gallery_img/client_gallerys/agra/agra-g6.jpeg" alt="Gallery Image 6" class="gallery-image">
                         </div>
                     </div>
                 </div>
@@ -401,20 +401,20 @@
 
     <script>
         const galleryImages = [
-            'gallery_img/client_gallerys/agra/agra-g1.webp',
-            'gallery_img/client_gallerys/agra/agra-g2.webp',
-            'gallery_img/client_gallerys/agra/agra-g3.webp',
-            'gallery_img/client_gallerys/agra/agra-g4.webp',
-            'gallery_img/client_gallerys/agra/agra-g5.webp',
-            'gallery_img/client_gallerys/agra/agra-g6.webp'
+            'gallery_img/client_gallerys/agra/agra-g1.jpeg',
+            'gallery_img/client_gallerys/agra/agra-g2.jpeg',
+            'gallery_img/client_gallerys/agra/agra-g3.jpeg',
+            'gallery_img/client_gallerys/agra/agra-g4.jpeg',
+            'gallery_img/client_gallerys/agra/agra-g5.jpeg',
+            'gallery_img/client_gallerys/agra/agra-g6.jpeg'
         ];
 
         async function generateVCF() {
             const contactData = {
                 firstName: "Agra",
                 lastName: "Pulathisi",
-                title: "Audio Equipment Specialist",
-                organization: "Agra Sounds",
+                title: "",
+                organization: "AGRA PULATHISI PARTIES & ENTERTAINMENT SERVICES L.L.C",
                 phoneMobile: "+971528211284",
                 email: "agrasounds@gmail.com",
                 address: "Rolla Street, Bur Dubai, UAE",
