@@ -230,6 +230,7 @@ $routes = [
     'infinitykawinda' => 'templates/infinitykawinda.php',
     'duminda' => 'templates/duminda.php',
     'j1' => 'templates/j1.php',
+    'fonseka' => 'templates/fonseka.php',
 ];
 
 // Handle the request
