@@ -407,11 +407,11 @@
                     <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/fernando/fernando-g1.JPG')">
                         <img src="gallery_img/client_gallerys/fernando/fernando-g1.JPG" alt="Gallery Image 1" class="gallery-image">
                     </div>
-                    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/fernando/fernando-g2.JPG')">
-                        <img src="gallery_img/client_gallerys/fernando/fernando-g2.JPG" alt="Gallery Image 2" class="gallery-image">
+                    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/fernando/Fernando-g2.JPG')">
+                        <img src="gallery_img/client_gallerys/fernando/Fernando-g2.JPG" alt="Gallery Image 2" class="gallery-image">
                     </div>
-                    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/fernando/fernando-g3.JPG')">
-                        <img src="gallery_img/client_gallerys/fernando/fernando-g3.JPG" alt="Gallery Image 3" class="gallery-image">
+                    <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/fernando/Fernando-g3.JPG')">
+                        <img src="gallery_img/client_gallerys/fernando/Fernando-g3.JPG" alt="Gallery Image 3" class="gallery-image">
                     </div>
                     <div class="gallery-item" onclick="openLightbox('gallery_img/client_gallerys/fernando/fernando-g4.png')">
                         <img src="gallery_img/client_gallerys/fernando/fernando-g4.png" alt="Gallery Image 4" class="gallery-image">
@@ -453,8 +453,8 @@
         // Gallery images array
         const galleryImages = [
             'gallery_img/client_gallerys/fernando/fernando-g1.JPG',
-            'gallery_img/client_gallerys/fernando/fernando-g2.JPG',
-            'gallery_img/client_gallerys/fernando/fernando-g3.JPG',
+            'gallery_img/client_gallerys/fernando/Fernando-g2.JPG',
+            'gallery_img/client_gallerys/fernando/Fernando-g3.JPG',
             'gallery_img/client_gallerys/fernando/fernando-g4.png',
             'gallery_img/client_gallerys/fernando/fernando-g5.JPG',
             'gallery_img/client_gallerys/fernando/fernando-g6.png'
