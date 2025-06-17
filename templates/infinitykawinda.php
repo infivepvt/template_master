@@ -53,7 +53,7 @@
 
         .profile-picture {
             position: absolute;
-            top: 95%;
+            top: 80%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
@@ -302,6 +302,7 @@
             width: 40px;
             height: 2px;
             background: linear-gradient(90deg, transparent, #FFD700, transparent);
+            
         }
     </style>
 </head>
@@ -361,15 +362,21 @@
                     <img src="gallery_img/client_gallerys/infinity/infinity-g10.png" alt="Member Login">
                 </a>
             </div>
+                <div class="card-header custom-header text-center">
+                      <p style="color:rgb(255, 255, 255); font-size: 21px; text-transform: uppercase;text-align: center;">Kawinda Dilshan</p>
+                <div class="profile-picture">
+                    <img src="profile_img/client_profile/infinitykawinda-p.png" alt="Saliya Pathum" class="rounded-circle">
+                </div>
+                </div>
+                <br><br>
             <div class="list-group mb-3">
                 <button type="button" class="list-group-item d-flex align-items-center justify-content-between contact"
-                    onclick="window.open('tel:0771210812', '_self')">
+                    onclick="window.open('tel:0766278836', '_self')">
                     <img src="Images/icon/phone.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                     <span class="text-center flex-grow-1 text-truncate custom-phone"
-                        style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">0771210812</span>
+                        style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">0766278836</span>
                 </button>
-
-                <a href="https://wa.me/94714193898" target="_blank" rel="noopener noreferrer"
+                <a href="https://wa.me/94766278836" target="_blank" rel="noopener noreferrer"
                     style="text-decoration: none;">
                     <button class="btn w-100 mb-3 custom-phone1 d-flex align-items-center justify-content-center"
                         style="background-color: #25D366; color: white; height: 60px; border: 2px solid orange; border-radius: 10px; gap: 10px;">
@@ -396,34 +403,65 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        function generateVCF() {
-            // Create vCard content
-            const vcard = `BEGIN:VCARD
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    async function generateVCF() {
+        // Reference to the profile image
+        const profileImage = document.querySelector('.profile-picture img');
+        let base64Image = '';
+
+        // Ensure the image is loaded before processing
+        if (!profileImage.complete) {
+            await new Promise((resolve) => {
+                profileImage.onload = resolve;
+                profileImage.onerror = () => {
+                    console.error('Failed to load profile image');
+                    resolve(); // Proceed even if image fails to load
+                };
+            });
+        }
+
+        try {
+            // Create canvas and draw image
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            canvas.width = profileImage.naturalWidth;
+            canvas.height = profileImage.naturalHeight;
+            ctx.drawImage(profileImage, 0, 0);
+
+            // Convert to base64 (JPEG format)
+            base64Image = canvas.toDataURL('image/jpeg').split(',')[1];
+        } catch (error) {
+            console.error('Error processing profile image:', error);
+        }
+
+        // Create vCard content with the profile image and contact details
+        const vcard = `BEGIN:VCARD
 VERSION:3.0
-FN:Thakshila Madushan
-TEL;TYPE=CELL,VOICE:0771210812
-TEL;TYPE=CELL,WHATSAPP:0714193898
+FN:Kawinda Dilshan
+TEL;TYPE=CELL,VOICE:0766278836
+TEL;TYPE=CELL,WHATSAPP:0766278836
+PHOTO;ENCODING=b;TYPE=JPEG:${base64Image}
 END:VCARD`;
 
-            // Create a Blob with the vCard data
-            const blob = new Blob([vcard], { type: 'text/vcard' });
+        // Create a Blob with the vCard data
+        const blob = new Blob([vcard], { type: 'text/vcard' });
 
-            // Create a download link
-            const url = URL.createObjectURL(blob);
-            const link = document.createElement('a');
-            link.href = url;
-            link.download = 'thakshila_madushan.vcf';
+        // Create a download link
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = 'kawinda_dilshan.vcf';
 
-            // Trigger the download
-            document.body.appendChild(link);
-            link.click();
+        // Trigger the download
+        document.body.appendChild(link);
+        link.click();
 
-            // Clean up
-            document.body.removeChild(link);
-            URL.revokeObjectURL(url);
-        }
-    </script>
+        // Clean up
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url);
+    }
+</script>
 </body>
 
 </html>

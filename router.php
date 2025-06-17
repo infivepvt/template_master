@@ -226,6 +226,8 @@ $routes = [
     'agra' => 'templates/agra.php',
     'darshana' => 'templates/darshana.php',
     'fernando' => 'templates/fernando.php',
+     'infinitysupun' => 'templates/infinitysupun.php',
+    'infinitykawinda' => 'templates/infinitykawinda.php',
 ];
 
 // Handle the request

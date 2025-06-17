@@ -302,6 +302,7 @@
             width: 40px;
             height: 2px;
             background: linear-gradient(90deg, transparent, #FFD700, transparent);
+            
         }
     </style>
 </head>
@@ -361,15 +362,16 @@
                     <img src="gallery_img/client_gallerys/infinity/infinity-g10.png" alt="Member Login">
                 </a>
             </div>
+                <p style="color:rgb(255, 255, 255); font-size: 21px; text-transform: uppercase;text-align: center;">Supun Sandaruwan</p>
             <div class="list-group mb-3">
                 <button type="button" class="list-group-item d-flex align-items-center justify-content-between contact"
-                    onclick="window.open('tel:0771210812', '_self')">
+                    onclick="window.open('tel:0712112275', '_self')">
                     <img src="Images/icon/phone.png" alt="" style="width: 30px; height: 30px; margin-right:25px;">
                     <span class="text-center flex-grow-1 text-truncate custom-phone"
-                        style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">0771210812</span>
+                        style="color: #FFFFFF; font-family: 'Montserrat', sans-serif;">0712112275</span>
                 </button>
 
-                <a href="https://wa.me/94714193898" target="_blank" rel="noopener noreferrer"
+                <a href="https://wa.me/94712112275" target="_blank" rel="noopener noreferrer"
                     style="text-decoration: none;">
                     <button class="btn w-100 mb-3 custom-phone1 d-flex align-items-center justify-content-center"
                         style="background-color: #25D366; color: white; height: 60px; border: 2px solid orange; border-radius: 10px; gap: 10px;">
@@ -401,9 +403,9 @@
             // Create vCard content
             const vcard = `BEGIN:VCARD
 VERSION:3.0
-FN:Thakshila Madushan
-TEL;TYPE=CELL,VOICE:0771210812
-TEL;TYPE=CELL,WHATSAPP:0714193898
+FN:Supun Sandaruwan
+TEL;TYPE=CELL,VOICE:0712112275
+TEL;TYPE=CELL,WHATSAPP:+94712112275
 END:VCARD`;
 
             // Create a Blob with the vCard data
