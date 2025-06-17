@@ -13,13 +13,13 @@
     <link rel="icon" type="image/x-icon" href="Images/Logo1.ico">
     <style>
         body {
-            background-color: #FFFFFF;
+            background-color:rgb(0, 0, 0);
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
             font-family: 'Poppins', sans-serif;
-            color: #FFFFFF;
+            color:rgb(0, 0, 0);
             padding-bottom: 30px;
         }
 
