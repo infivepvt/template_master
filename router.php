@@ -228,6 +228,8 @@ $routes = [
     'fernando' => 'templates/fernando.php',
      'infinitysupun' => 'templates/infinitysupun.php',
     'infinitykawinda' => 'templates/infinitykawinda.php',
+    'duminda' => 'templates/duminda.php',
+    'j1' => 'templates/j1.php',
 ];
 
 // Handle the request
