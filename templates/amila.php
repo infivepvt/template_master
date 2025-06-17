@@ -31,7 +31,6 @@
 
         .custom-card {
             background-color: #000000;
-            /* Changed to black */
             border-radius: 2px;
             width: 100%;
             box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
@@ -79,7 +78,6 @@
             font-family: 'Spectral', serif;
             font-size: 37px;
             color: #FFC107;
-            /* Yellow for name */
             font-weight: 400;
             margin-bottom: 5px;
             text-transform: uppercase;
@@ -105,7 +103,6 @@
         .contact-info-stack p.phone {
             font-size: 20px;
             color: #FFC107;
-            /* Yellow for phone */
             margin-bottom: 8px;
         }
 
@@ -140,7 +137,6 @@
             width: 35px;
             height: 35px;
             background-color: #FFC107;
-            /* Yellow for social icon background */
             border-radius: 5px;
             display: flex;
             justify-content: center;
@@ -157,19 +153,45 @@
         .social-icon i {
             font-size: 24px;
             color: #000000;
-            /* Black for icons */
             transition: color 0.3s ease;
         }
 
         .social-icon-box:hover {
             background-color: #FFB300;
-            /* Darker yellow on hover */
             cursor: pointer;
         }
 
         .social-icon:hover i {
             color: #FFFFFF;
-            /* White on hover */
+        }
+
+        .custom-save-button {
+            background-color: #FFC107; /* Yellow background */
+            color: #000000; /* Black text */
+            border: none;
+            padding: 10px 20px;
+            font-family: 'Rubik', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .custom-save-button:hover {
+            background-color: #FFB300; /* Darker yellow on hover */
+            color: #FFFFFF; /* White text on hover */
+            cursor: pointer;
+        }
+
+        .custom-save-button i {
+            color: #000000; /* Black icon */
+            transition: color 0.3s ease;
+        }
+
+        .custom-save-button:hover i {
+            color: #FFFFFF; /* White icon on hover */
         }
     </style>
 </head>
@@ -177,7 +199,6 @@
 <body>
     <div class="custom-card-wrapper">
         <div class="card custom-card">
-
             <div class="profile-picture-container">
                 <img src="profile_img\client_profile\amila-p.jpeg" alt="T M Amila Sandaruwan Profile Picture">
             </div>
@@ -220,6 +241,10 @@
                         </a>
                     </div>
                 </div>
+                <button class="btn h-100 custom-save-button social-media-button" onclick="generateVCF()">
+                    <i class="fas fa-save me-2"></i>
+                    SAVE TO CONTACTS
+                </button>
                 <br><br><br>
             </div>
         </div>
