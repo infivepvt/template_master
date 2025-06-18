@@ -11,8 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <style>
         body {
-            background-image: url('gallery_img/client_gallerys/piotravels/piotravels-g6.jpeg');
-            background-size: cover;
+            /* background-image: url('gallery_img/client_gallerys/piotravels/sigiriya.png'); */
+            background-size: 100% 100vh;
             background-position: center;
             background-repeat: no-repeat;
             position: relative;
@@ -122,11 +122,11 @@
         }
 
         .list-group-item {
-            background-color: #373938;
+            background-color: #040032;
             color: #fff;
             border-radius: 8px;
             margin-bottom: 10px;
-            border: 1px solid #444;
+            border: 2px solid orange;
             padding: 10px 15px;
             display: flex;
             align-items: center;
@@ -137,8 +137,8 @@
         }
 
         .list-group-item:hover {
-            background-color: #444;
-            border-color: #666;
+            background-color: #2a2a2a;
+            border-color: #e08e0b;
             transition: background-color 0.3s, border-color 0.3s;
         }
 
@@ -159,7 +159,7 @@
         .list-group-item .main-text {
             display: block;
             font-weight: 600;
-            font-size: 1.1rem;
+            font-size: 19px;
             color: #FFFFFF;
             font-family: 'Montserrat', sans-serif;
             white-space: nowrap;
@@ -180,21 +180,24 @@
         }
 
         .custom-save-button {
-            background: linear-gradient(90deg, #5f4def, #00d0ea);
+            background: #040032;
             color: white;
             font-weight: bold;
-            border: none;
+            border: 2px solid orange;
             padding: 10px;
             border-radius: 30px;
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: background 0.3s;
+            transition: background 0.3s, border-color 0.3s;
             text-decoration: none;
+            font-size: 19px;
+            font-family: 'Montserrat', sans-serif;
         }
 
         .custom-save-button:hover {
-            background: linear-gradient(90deg, #4b3ec4, #00b3c3);
+            background: #2a2a2a;
+            border-color: #e08e0b;
         }
 
         .save-icon {
@@ -207,30 +210,22 @@
             color: #fffefe;
         }
 
-        .custom-phone {
-            font-family: 'Roboto', sans-serif;
-            font-weight: bold;
-            font-size: 1.2rem;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
-
         .custom-phone1 {
             font-family: 'Montserrat', sans-serif;
             font-weight: bold;
             font-size: 14px;
             color: white;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-            background-color: #25D366;
+            background-color: #040032;
             height: 60px;
             border: 2px solid orange;
             border-radius: 10px;
             gap: 10px;
-            transition: background-color 0.1s, border-color 0.1s;
+            transition: background-color 0.3s, border-color 0.3s;
         }
 
         .custom-phone1:hover {
-            background-color: #128C7E;
+            background-color: #2a2a2a;
             border-color: #e08e0b;
         }
 
@@ -278,10 +273,9 @@
             color: rgb(0, 0, 0);
         }
 
-        /* Gallery Section with Background Image */
         .gallery-section {
             background-color: #1a1a1a;
-            background-image: url('gallery_img/client_gallerys/piotravels/piotravels-g6.jpeg');
+            background-image: url('gallery_img/client_gallerys/piotravels/sigiriya.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -317,9 +311,16 @@
             padding: 10px 15px;
             color: #fff;
             cursor: pointer;
-            background-color: rgba(42, 42, 42, 0.8);
+            background-color: #040032;
+            border: 2px solid orange;
             border-radius: 10px;
             margin-bottom: 15px;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        .gallery-header:hover {
+            background-color: #2a2a2a;
+            border-color: #e08e0b;
         }
 
         .gallery-title {
@@ -390,7 +391,6 @@
             font-size: 2rem;
         }
 
-        /* Lightbox Styles */
         .lightbox {
             display: none;
             position: fixed;
@@ -522,15 +522,23 @@
         .about-us-button {
             margin-top: 10px;
             width: 100%;
-            font-size: 1rem;
+            font-size: 19px;
             text-align: center;
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
-            background: linear-gradient(90deg, #5f4def, #00d0ea);
-            border: none;
+            background: #040032;
+            border: 2px solid orange;
             border-radius: 30px;
+            transition: background 0.3s, border-color 0.3s;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+        }
+
+        .about-us-button:hover {
+            background: #2a2a2a;
+            border-color: #e08e0b;
         }
 
         .profile-contact-icons13 > .contact-icon-container:nth-child(5) {
@@ -543,10 +551,9 @@
             width: 50%;
         }
 
-        /* Card body background */
         .card-body {
-            background-image: url('gallery_img/client_gallerys/piotravels/piotravels-g6.jpeg');
-            background-size: cover;
+            background-image: url('gallery_img/client_gallerys/piotravels/sigiriya.png');
+            background-size: 250vw 150vh;
             background-position: center;
             background-repeat: no-repeat;
             position: relative;
@@ -594,7 +601,7 @@
             }
 
             .list-group-item .main-text {
-                font-size: 1rem;
+                font-size: 19px;
             }
 
             .list-group-item .sub-text {
@@ -648,13 +655,6 @@
                     </div>
                 </a>
 
-                <a href="https://maps.google.com/?q=Chilaw+Road,+Wennappuwa,+Sri+Lanka" target="_blank" rel="noopener noreferrer" class="list-group-item d-flex align-items-center">
-                    <img src="Images/icon/map.png" alt="Map Icon">
-                    <div class="text-content">
-                        <span class="main-text">Chilaw Road, Wennappuwa,<br> Sri Lanka</span>
-                    </div>
-                </a>
-
                 <a href="tel:+94714880680" class="list-group-item d-flex align-items-center">
                     <img src="Images/icon/phone.png" alt="Phone Icon">
                     <div class="text-content">
@@ -665,7 +665,7 @@
                 <div style="border-radius: 30px; max-width: 95%; margin: 0 auto; padding: 20px; margin-top: 20px;">
                     <div class="profile-contact-icons13" style="grid-template-columns: 1fr;">
                         <div class="contact-icon-container">
-                            <a href="https://share.google/dXOl2w9w6xkbmPlmB" class="btn custom-save-button about-us-button" target="_blank" rel="noopener noreferrer">
+                            <a href="https://piotravels.com/about-us/" class="btn custom-save-button about-us-button" target="_blank" rel="noopener noreferrer">
                                 ABOUT US
                             </a>
                         </div>
@@ -776,7 +776,6 @@
                 phoneMobile: "+94 70 660 1313",
                 phoneMobile2: "+94 71 488 0680",
                 email: "info@piotravels.com",
-                address: "Chilaw Road, Wennappuwa, Sri Lanka",
                 website: "https://piotravels.com/",
                 profileImage: "https://tapilinq.com/profile_img/client_profile/piotravels-p.png"
             };
@@ -829,7 +828,6 @@
                 `TEL;TYPE=CELL:${contactData.phoneMobile2}`,
                 `EMAIL;TYPE=WORK:${contactData.email}`,
                 `URL:${contactData.website}`,
-                `ADR;TYPE=WORK:;;${contactData.address};;;`,
                 photoBase64 ? `PHOTO;ENCODING=b;TYPE=JPEG:${photoBase64}` : '',
                 "END:VCARD"
             ];
@@ -922,5 +920,5 @@
             }
         });
     </script>
-</body>
+</body> 
 </html>

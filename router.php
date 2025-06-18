@@ -231,6 +231,7 @@ $routes = [
     'duminda' => 'templates/duminda.php',
     'j1' => 'templates/j1.php',
     'fonseka' => 'templates/fonseka.php',
+    'thilak' => 'templates/thilak.php',
 ];
 
 // Handle the request
