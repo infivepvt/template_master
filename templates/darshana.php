@@ -162,7 +162,7 @@
                 Alpin Construction & Consultation
             </p>
             <p class="title" style="color: white; font-size: 13px;">
-                Inspired and powered by people
+                Inspired and powered by quality
             </p>
 
             <div class="contact-section">
@@ -213,7 +213,9 @@
 
         <section class="about-section">
             <h2 style="color: white;">About Me</h2>
-            <p style="color: white;">Process of seeking advice and guidance (consultation) from experts in the field of construction to plan, design, and execute building projects.</p>
+            <p style="color: white;">With over five years of hands-on experience in residential and commercial tile installation
+and plumbing work (since 1972), I have developed a solid foundation in delivering high-quality
+craftsmanship and ensuring customer satisfaction in every project.</p>
 
             <div class="image-gallery">
                 <img src="logo_img\client_logo\darshana-l.png" alt="Business man back view" style="height: 200px;;">
