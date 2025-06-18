@@ -1077,7 +1077,8 @@
 <body>
     <div class="d-flex justify-content-center mt-5">
         <div class="card custom-card15 shadow-lg" style="background-color: #000000;">
-            <div class="card-header custom-header text-center" style="background-image: url('banner_img/client_banner/j1-p.png'); height: 200px; opacity: 100%;">
+            <div class="card-header custom-header text-center"
+                style="background-image: url('banner_img/client_banner/j1-p.png'); height: 200px; opacity: 100%;">
                 <div class="profile-picture">
                     <img src="logo_img/client_logo/j1-l.png" alt="J1 Group" class="rounded-circle">
                 </div>
@@ -1095,11 +1096,13 @@
                 <br>
                 <br>
 
-                <div class="profile-header13" style="background-color:rgb(0, 0, 0); border-radius: 30px; max-width: 95%; margin: 0 auto; padding: 20px; margin-top: -50px;">
+                <div class="profile-header13"
+                    style="background-color:rgb(0, 0, 0); border-radius: 30px; max-width: 95%; margin: 0 auto; padding: 20px; margin-top: -50px;">
                     <div class="profile-contact-icons13">
                         <!-- Phone Work Button with Label -->
                         <div class="contact-icon-container">
-                            <button type="button" class="contact-icon-button" onclick="window.open('tel:+94776101565', '_self')">
+                            <button type="button" class="contact-icon-button"
+                                onclick="window.open('tel:+94776101565', '_self')">
                                 <i class="fas fa-phone contact-icon rotated-90"></i>
                             </button>
                             <p class="contact-icon-label">Mobile Number</p>
@@ -1107,7 +1110,8 @@
 
                         <!-- Office Number Button with Label -->
                         <div class="contact-icon-container">
-                            <button type="button" class="contact-icon-button" onclick="window.open('tel:+94765338259', '_self')">
+                            <button type="button" class="contact-icon-button"
+                                onclick="window.open('tel:+94765338259', '_self')">
                                 <i class="fas fa-fax contact-icon rotated-0"></i>
                             </button>
                             <p class="contact-icon-label">Office Number</p>
@@ -1115,7 +1119,8 @@
 
                         <!-- WhatsApp Button with Label -->
                         <div class="contact-icon-container">
-                            <button type="button" class="contact-icon-button" onclick="window.open('https://wa.me/+94765338259', '_blank')">
+                            <button type="button" class="contact-icon-button"
+                                onclick="window.open('https://wa.me/+94765338259', '_blank')">
                                 <i class="fab fa-whatsapp contact-icon rotated-0"></i>
                             </button>
                             <p class="contact-icon-label">WhatsApp</p>
@@ -1123,7 +1128,8 @@
 
                         <!-- Mobile 3 Button with Label -->
                         <div class="contact-icon-container">
-                            <button type="button" class="contact-icon-button" onclick="window.open('viber://chat?number=%2B94765338259', '_blank')">
+                            <button type="button" class="contact-icon-button"
+                                onclick="window.open('viber://chat?number=%2B94765338259', '_blank')">
                                 <i class="fab fa-viber contact-icon rotated-0"></i>
                             </button>
                             <p class="contact-icon-label">Viber</p>
@@ -1131,7 +1137,8 @@
 
                         <!-- Email Button with Label -->
                         <div class="contact-icon-container">
-                            <button type="button" class="contact-icon-button" onclick="window.open('mailto:info@j1group.com', '_self')">
+                            <button type="button" class="contact-icon-button"
+                                onclick="window.open('mailto:info@j1group.com', '_self')">
                                 <i class="fas fa-envelope contact-icon"></i>
                             </button>
                             <p class="contact-icon-label">Email</p>
@@ -1139,7 +1146,8 @@
 
                         <!-- Email 2 Button with Label -->
                         <div class="contact-icon-container">
-                            <button type="button" class="contact-icon-button" onclick="window.open('mailto:support@j1group.com', '_self')">
+                            <button type="button" class="contact-icon-button"
+                                onclick="window.open('mailto:support@j1group.com', '_self')">
                                 <i class="fas fa-envelope contact-icon"></i>
                             </button>
                             <p class="contact-icon-label">Support Email</p>
@@ -1147,10 +1155,11 @@
                     </div>
 
                     <!-- Company Details Section -->
-                    <div class="company-section" style="background-color: #1a1a1a; border-radius: 15px; padding: 15px; margin-top: 20px; color: #fff;">
+                    <div class="company-section"
+                        style="background-color: #1a1a1a; border-radius: 15px; padding: 15px; margin-top: 20px; color: #fff;">
                         <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 10px;">About J1 Group</h3>
                         <p style="mb-2">Address: Colombo Rd, Dummaladeniya, Wennapporuwa</p>
-                        <p style="font-size: 14px; margin-bottom: 10px;">Our Services:</p>
+                        <p style="font-size:14px;margin-bottom:10px;">Our Services:</p>
                         <ul style="list-style-type: none; padding: 0;">
                             <li style="margin-bottom: 5px;">1. J1 Car Rentals</li>
                             <li style="margin-bottom: 5px;">2. J1 Group Wedding</li>
@@ -1158,9 +1167,12 @@
                         </ul>
                         <p style="font-size: 14px; margin-top: 10px;">Our Websites:</p>
                         <ul style="list-style-type: none; padding: 0;">
-                            <li style="margin-bottom: 5px;"><a href="https://www.j1group.com" target="_blank" style="color: #007eff;">www.j1group.com</a></li>
-                            <li style="margin-bottom: 5px;"><a href="https://www.j1carrental.com" target="_blank" style="color: #007eff;">www.j1carrental.com</a></li>
-                            <li style="margin-bottom: 5px;"><a href="https://www.j1motors.com" target="_blank" style="color: #007eff;">www.j1motors.com</a></li>
+                            <li style="margin-bottom: 5px;"><a href="https://www.j1group.com" target="_blank"
+                                    style="color: #007eff;">www.j1group.com</a></li>
+                            <li style="margin-bottom: 5px;"><a href="https://www.j1carrental.com" target="_blank"
+                                    style="color: #007eff;">www.j1carrental.com</a></li>
+                            <li style="margin-bottom: 5px;"><a href="https://www.j1motors.com" target="_blank"
+                                    style="color: #007eff;">www.j1motors.com</a></li>
                         </ul>
                     </div>
 
@@ -1225,16 +1237,23 @@
                         </div>
                     </div>
 
-                    <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:15px; color:white;">CONNECT WITH SOCIAL MEDIA</p>
+                    <p class="fw" style="font-family: 'Montserrat', sans-serif; font-size:15px; color:white;">CONNECT
+                        WITH SOCIAL MEDIA</p>
                     <div class="d-flex flex-wrap justify-content-center">
-                        <a href="https://www.facebook.com/share/16R9BSVC7Q/" target="_blank" rel="noopener noreferrer" class="m-3">
-                            <img src="Images/Social_Media_Icon/facebook.png" alt="Facebook 1" style="width: 50px; height: 50px;">
+                        <a href="https://www.facebook.com/share/16R9BSVC7Q/" target="_blank" rel="noopener noreferrer"
+                            class="m-3">
+                            <img src="Images/Social_Media_Icon/facebook.png" alt="Facebook 1"
+                                style="width: 50px; height: 50px;">
                         </a>
-                        <a href="https://www.facebook.com/share/1Ad8cD4QLV/" target="_blank" rel="noopener noreferrer" class="m-3">
-                            <img src="Images/Social_Media_Icon/facebook.png" alt="Facebook 2" style="width: 50px; height: 50px;">
+                        <a href="https://www.facebook.com/share/1Ad8cD4QLV/" target="_blank" rel="noopener noreferrer"
+                            class="m-3">
+                            <img src="Images/Social_Media_Icon/facebook.png" alt="Facebook 2"
+                                style="width: 50px; height: 50px;">
                         </a>
-                        <a href="https://www.facebook.com/share/1919ympghp/" target="_blank" rel="noopener noreferrer" class="m-3">
-                            <img src="Images/Social_Media_Icon/facebook.png" alt="Facebook 3" style="width: 50px; height: 50px;">
+                        <a href="https://www.facebook.com/share/1919ympghp/" target="_blank" rel="noopener noreferrer"
+                            class="m-3">
+                            <img src="Images/Social_Media_Icon/facebook.png" alt="Facebook 3"
+                                style="width: 50px; height: 50px;">
                         </a>
                     </div>
 
@@ -1317,14 +1336,14 @@
         }
 
         // Close lightbox when clicking outside the image
-        document.getElementById('lightbox').addEventListener('click', function(e) {
+        document.getElementById('lightbox').addEventListener('click', function (e) {
             if (e.target === this) {
                 closeLightbox();
             }
         });
 
         // Keyboard navigation
-        document.addEventListener('keydown', function(e) {
+        document.addEventListener('keydown', function (e) {
             const lightbox = document.getElementById('lightbox');
             if (lightbox.style.display === 'flex') {
                 if (e.key === 'Escape') {
@@ -1338,7 +1357,7 @@
         });
 
         // Save to contacts functionality
-        document.querySelector('.custom-save-button').addEventListener('click', async function() {
+        document.querySelector('.custom-save-button').addEventListener('click', async function () {
             const contactData = {
                 firstName: "Dorit",
                 lastName: "Dimand",
